@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.com/CIGIHub/annual-report-2019.svg?branch=master)](https://travis-ci.com/CIGIHub/annual-report-2019)
 [![Coverage Status](https://coveralls.io/repos/github/CIGIHub/annual-report-2019/badge.svg)](https://coveralls.io/github/CIGIHub/annual-report-2019)
+[![Greenkeeper badge](https://badges.greenkeeper.io/CIGIHub/annual-report-2019.svg)](https://greenkeeper.io/)
 
 The Centre for International Governance Innovation's 2019 Digital Interactive Annual Report
 
