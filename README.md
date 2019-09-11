@@ -1,57 +1,34 @@
 # annual-report-2019
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
-
-## Prerequisites
-
-You will need the following things properly installed on your computer.
-
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+The Centre for International Governance Innovation's 2019 Digital Interactive Annual Report
 
 ## Installation
++ `git clone https://github.com/CIGIHub/annual-report-2018.git`
++ `cd annual-report-2018`
++ `npm install`
 
-* `git clone <repository-url>` this repository
-* `cd annual-report-2019`
-* `npm install`
+## Running/Development
++ `ember server`
++ Visit application at [http://localhost:4200](http://localhost4200).
 
-## Running / Development
+## Running Tests
++ `ember test`
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+## Deploying
++ Retrieve the commit hash using `git log`
++ It's best to clone this repo into `staging` and `production` directories, so it's easier to continue working on code while deploying
++ If you don't use separate directories, the `heroku` git remote name will clash
++ Staging
+  + `heroku git:remote -a cigi-ar2018-staging`
+  + `git push heroku staging:master`
+  + Deploys to Heroku app: https://dashboard.heroku.com/apps/cigi-ar2018-staging
++ Production
+  + `heroku git:remote -a cigi-ar2018`
+  + `git push heroku master`
+  + Deploys to Heroku app: https://dashboard.heroku.com/apps/cigi-ar2018
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+## Updating Data
++ Download the JSON from Drupal from http://admin.cigionline.org/annual-report/download/2018
++ Copy array to `vendor/nodes.js`, matching current format.
++ If the images in Cloudinary need to be updated, execute `npm run migrate-images`
+  + Once finished executing, the script will update `app/node-images.js`. You can review and test these changes locally before committing.
