@@ -1,20 +1,32 @@
+const eslintPluginNode = require('eslint-plugin-node');
+
 module.exports = {
   root: true,
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: [
-    'ember'
+    'ember',
   ],
   extends: [
+    'airbnb',
     'eslint:recommended',
-    'plugin:ember/recommended'
+    'plugin:ember/recommended',
   ],
   env: {
-    browser: true
+    browser: true,
   },
   rules: {
+    'array-callback-return': ['off'],
+    'func-names': ['off'],
+    'import/no-extraneous-dependencies': ['off'],
+    'import/no-unresolved': ['off'],
+    'prefer-arrow-callback': ['off'],
+    'prefer-object-spread': ['off'],
+    'quote-props': ['off'],
+    'space-before-function-paren': ['error', 'never'],
+    'strict': ['off'],
   },
   overrides: [
     // node files
@@ -27,23 +39,23 @@ module.exports = {
         'blueprints/*/index.js',
         'config/**/*.js',
         'lib/*/index.js',
-        'server/**/*.js'
+        'server/**/*.js',
       ],
       parserOptions: {
-        sourceType: 'script'
+        sourceType: 'script',
       },
       env: {
         browser: false,
-        node: true
+        node: true,
       },
       plugins: ['node'],
-      rules: Object.assign({}, require('eslint-plugin-node').configs.recommended.rules, {
+      rules: Object.assign({}, eslintPluginNode.configs.recommended.rules, {
         // add your custom rules and overrides for node files here
 
         // this can be removed once the following is fixed
         // https://github.com/mysticatea/eslint-plugin-node/issues/77
-        'node/no-unpublished-require': 'off'
-      })
-    }
-  ]
+        'node/no-unpublished-require': 'off',
+      }),
+    },
+  ],
 };
