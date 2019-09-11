@@ -1,5 +1,7 @@
 # annual-report-2019
 
+[![Build Status](https://travis-ci.com/CIGIHub/annual-report-2019.svg?branch=master)](https://travis-ci.com/CIGIHub/annual-report-2019)
+
 The Centre for International Governance Innovation's 2019 Digital Interactive Annual Report
 
 ## Installation
