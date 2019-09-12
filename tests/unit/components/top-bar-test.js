@@ -17,4 +17,12 @@ module('Unit | Component | top-bar', function(hooks) {
 
     assert.strictEqual(component.get('hideMenu'), false);
   });
+
+  test('should have correct share route for /', function(assert) {
+    const component = this.owner.factoryFor('component:top-bar').create();
+
+    component.set('currentRoute', 'index');
+
+    assert.strictEqual(component.get('shareRoute'), 'https://www.cigionline.org/interactives/2019annualreport/');
+  });
 });

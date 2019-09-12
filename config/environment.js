@@ -2,10 +2,10 @@
 
 module.exports = function(environment) {
   const ENV = {
-    modulePrefix: 'annual-report-2019',
-    environment,
-    rootURL: '/',
-    locationType: 'auto',
+    APP: {
+      // Here you can pass flags/options to your application instance
+      // when it is created
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -16,19 +16,15 @@ module.exports = function(environment) {
         Date: false,
       },
     },
-
-    APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
-    },
+    environment,
+    host: 'https://www.cigionline.org',
+    locationType: 'auto',
+    modulePrefix: 'annual-report-2019',
+    rootURL: '/',
   };
 
   if (environment === 'development') {
-    // ENV.APP.LOG_RESOLVER = true;
-    // ENV.APP.LOG_ACTIVE_GENERATION = true;
-    // ENV.APP.LOG_TRANSITIONS = true;
-    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.host = 'http://localhost:4200';
   }
 
   if (environment === 'test') {
@@ -41,10 +37,15 @@ module.exports = function(environment) {
 
     ENV.APP.rootElement = '#ember-testing';
     ENV.APP.autoboot = false;
+    ENV.rootURL = '/interactives/2019annualreport/';
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    ENV.rootURL = '/interactives/2019annualreport/';
+
+    if (process.env.STAGING) {
+      ENV.host = 'https://staging.cigionline.org';
+    }
   }
 
   return ENV;
