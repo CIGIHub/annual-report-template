@@ -13,6 +13,20 @@
     position: absolute;
   }
 
+  &.light-background {
+    .cigi-logo {
+      svg {
+        fill: $black;
+      }
+    }
+
+    .cigi-menu {
+      a {
+        color: $black;
+      }
+    }
+  }
+
   .cigi-logo {
     float: left;
 
@@ -22,12 +36,6 @@
 
       @media screen and (min-width: $med-screen-min) {
         height: 40px;
-      }
-    }
-
-    &.light-background {
-      svg {
-        fill: $black;
       }
     }
   }
