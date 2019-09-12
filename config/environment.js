@@ -4,6 +4,33 @@ module.exports = function(environment) {
   const ENV = {
     modulePrefix: 'annual-report-2019',
     environment,
+    fontawesome: {
+      icons: {
+        'free-brands-svg-icons': [
+          'facebook-square',
+          'linkedin-in',
+          'twitter',
+        ],
+        'pro-light-svg-icons': [
+          'arrow-right',
+          'bars',
+          'camera-retro',
+          'chart-bar',
+          'chevron-left',
+          'chevron-right',
+          'comment-alt-lines',
+          'download',
+          'envelope',
+          'file-alt',
+          'film',
+          'newspaper',
+          'search',
+          'share-alt',
+          'times',
+          'volume-up',
+        ],
+      },
+    },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
