@@ -51,6 +51,9 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    ENV.fastboot = {
+      hostWhitelist: [/^localhost:\d+$/],
+    };
     ENV.host = 'http://localhost:4200';
     ENV.rootURL = '/';
   }
@@ -68,6 +71,11 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.fastboot = {
+      hostWhitelist: [
+        'cigionline.org',
+      ],
+    };
     if (process.env.STAGING) {
       ENV.host = 'https://staging.cigionline.org';
     }

@@ -21,8 +21,16 @@ module.exports = function(defaults) {
 
   app.import('node_modules/foundation-sites/dist/css/foundation.css');
 
-  app.import('node_modules/foundation-sites/dist/js/plugins/foundation.core.js');
-  app.import('node_modules/foundation-sites/dist/js/plugins/foundation.util.mediaQuery.js');
+  app.import('node_modules/foundation-sites/dist/js/plugins/foundation.core.js', {
+    using: [{
+      transformation: 'fastbootShim',
+    }],
+  });
+  app.import('node_modules/foundation-sites/dist/js/plugins/foundation.util.mediaQuery.js', {
+    using: [{
+      transformation: 'fastbootShim',
+    }],
+  });
 
   return app.toTree();
 };
