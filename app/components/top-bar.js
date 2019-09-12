@@ -77,6 +77,12 @@ export default Component.extend({
 
       $('.scroll-arrow-up').fadeIn();
     },
+    facebookShare() {
+      FB.ui({
+        method: 'share',
+        href: get(this, 'shareRoute'),
+      });
+    },
     openMenu() {
       get(this, 'lightbox').showTableOfContents();
     },

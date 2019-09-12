@@ -17,6 +17,9 @@ module.exports = {
   env: {
     browser: true,
   },
+  globals: {
+    'FB': true,
+  },
   rules: {
     'array-callback-return': ['off'],
     'func-names': ['off'],
