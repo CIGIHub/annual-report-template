@@ -74,4 +74,25 @@ module('Unit | Component | top-bar', function(hooks) {
       'should have correct twitterShareLink',
     );
   });
+
+  test('should have correct share links for /a-bretton-woods-moment-for-the-digital-age', function(assert) {
+    const component = this.owner.factoryFor('component:top-bar').create();
+    set(component, 'router.currentRouteName', 'a-bretton-woods-moment-for-the-digital-age');
+
+    assert.strictEqual(
+      get(component, 'shareRoute'),
+      'https://www.cigionline.org/interactives/2019annualreport/a-bretton-woods-moment-for-the-digital-age',
+      'should have correct shareRoute',
+    );
+    assert.strictEqual(
+      get(component, 'linkedInShareLink'),
+      'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/a-bretton-woods-moment-for-the-digital-age',
+      'should have correct linkedInShareLink',
+    );
+    assert.strictEqual(
+      get(component, 'twitterShareLink'),
+      'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/a-bretton-woods-moment-for-the-digital-age',
+      'should have correct twitterShareLink',
+    );
+  });
 });
