@@ -13,14 +13,5 @@ module('Integration | Component | top-bar', function(hooks) {
     await render(hbs`<TopBar />`);
 
     assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <TopBar>
-        template block text
-      </TopBar>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
   });
 });
