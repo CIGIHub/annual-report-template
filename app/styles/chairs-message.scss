@@ -1,0 +1,120 @@
+@keyframes messageTitleFade {
+  0% {
+    opacity: 0;
+    top: 10px;
+  }
+
+  50% {
+    opacity: 0;
+    top: 10px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes messageLineExpand {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 0;
+  }
+
+  100% {
+    width: 100px;
+  }
+}
+
+@keyframes messageContentFade {
+  0% {
+    opacity: 0;
+    top: 10px;
+  }
+
+  66% {
+    opacity: 0;
+    top: 10px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.chairs-message-background {
+  background-color: $white;
+}
+
+.chairs-message-background-img {
+  background-size: cover;
+}
+
+.presidents-message-background-img {
+  background-position: center top;
+  background-size: cover;
+}
+
+.chairs-message {
+  color: $black;
+  position: relative;
+  top: 0%;
+  width: 100%;
+  z-index: 2;
+
+  @media screen and (max-width: $sm-screen-max) {
+    padding-bottom: 40px;
+    padding-top: 10px;
+  }
+
+  @media screen and (min-width: $med-screen-min) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-55%);
+  }
+
+  h1 {
+    animation-duration: 1000ms;
+    animation-name: messageTitleFade;
+    animation-timing-function: ease-in;
+    color: $black;
+    position: relative;
+  }
+
+  p {
+    animation-duration: 1500ms;
+    animation-name: messageContentFade;
+    animation-timing-function: ease-in;
+    color: $black;
+    position: relative;
+
+    @media screen and (min-width: $lg-screen-min) and (max-width: $lg-screen-max) {
+      font-size: 14px;
+      line-height: 1.3;
+    }
+  }
+
+  .cigi-red-line {
+    animation-duration: 1000ms;
+    animation-name: messageLineExpand;
+    animation-timing-function: ease-in-out;
+    border-top: 4px solid $cigi-red;
+    content: '';
+    display: block;
+    width: 100px;
+  }
+
+  .chair-name {
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 1rem;
+
+    @media screen and (min-width: $lg-screen-min) and (max-width: $lg-screen-max) {
+      font-size: 14px;
+    }
+  }
+}
