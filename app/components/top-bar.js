@@ -79,6 +79,7 @@ export default Component.extend({
       $('.scroll-arrow-up').fadeIn();
     },
     facebookShare() {
+      /* istanbul ignore next */
       FB.ui({
         method: 'share',
         href: get(this, 'shareRoute'),
