@@ -43,4 +43,6 @@ pageNotFound:
   paragraph1: 'The request page could not be found.'
   paragraph2: 'Please check the URL and try again.'
   title: '404: Page Not Found'
+presidentsMessage:
+  title: 'President’s Message'
 title: '2019 CIGI Annual Report'
