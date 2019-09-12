@@ -48,4 +48,6 @@ presidentsMessage:
 protectingElectionsFromForeignInterference:
   description: 'Amid growing evidence that foreign interference has influenced elections in several Western democracies in recent years, CIGI partnered with the Transatlantic Commission on Election Integrity (TCEI) — a bi-partisan group launched by the Alliance of Democracies Foundation — to produce a joint report on Canada’s readiness to defend against this threat.'
   title: 'Protecting Elections from Foreign Interference'
+tableOfContents:
+  title: 'Table of Contents'
 title: '2019 CIGI Annual Report'
