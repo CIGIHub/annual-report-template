@@ -21,4 +21,13 @@ export default Component.extend({
     const currentRoute = get(this, 'currentRoute').replace('.', '/').replace('index', '');
     return `${ENV.host}${ENV.rootURL}${currentRoute}`;
   }),
+
+  actions: {
+    closeMenu() {
+      get(this, 'lightbox').closeLightbox();
+    },
+    openMenu() {
+      get(this, 'lightbox').showTableOfContents();
+    },
+  },
 });

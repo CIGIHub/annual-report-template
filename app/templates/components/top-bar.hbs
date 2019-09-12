@@ -17,8 +17,14 @@
     <a>
       {{fa-icon "share-alt" prefix="fal" size="lg"}}
     </a>
-    <a>
-      {{fa-icon "bars" prefix="fal" size="lg"}}
-    </a>
+    {{#if menuIsOpen}}
+      <button class="close-menu-btn" {{action "closeMenu"}}>
+        {{fa-icon "times" prefix="fal" size="lg"}}
+      </button>
+    {{else}}
+      <button class="open-menu-btn {{if hideMenu "hide-menu"}}" {{action "openMenu"}}>
+        {{fa-icon "bars" prefix="fal" size="lg"}}
+      </button>
+    {{/if}}
   </div>
 </div>
