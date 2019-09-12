@@ -34,6 +34,9 @@ informingTheDebateAroundInternetSecurityAndTrust:
 mediaAndMassAtrocityTheRwandaGenocideAndBeyond:
   description: 'Published in April 2019 to coincide with the twenty-fifth anniversary of the Rwanda genocide, this book revisits the key issues of the media-genocide nexus in Rwanda and how reporting has changed with social media. Media and Mass Atrocity provides a critical, and often grim, review of the Rwanda genocide.'
   title: 'Media and Mass Atrocity: The Rwanda Genocide and Beyond'
+modelsForDataGovernance:
+  description: 'Data trusts are occupying a politically contested space and the private sector is taking note. As a result, the public dialogue is being shaped by large, well-financed interests trying to maximize data sharing. But, large-scale privately-driven data sharing is not the only way — or even the most important way — to use data trusts.'
+  title: 'Models for Data Governance'
 pageNotFound:
   paragraph1: 'The request page could not be found.'
   paragraph2: 'Please check the URL and try again.'
