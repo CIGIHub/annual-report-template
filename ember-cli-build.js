@@ -32,5 +32,13 @@ module.exports = function(defaults) {
     }],
   });
 
+  app.import('node_modules/lolex/lolex.js', {
+    using: [{
+      as: 'lolex',
+      transformation: 'amd',
+    }],
+    type: 'test',
+  });
+
   return app.toTree();
 };
