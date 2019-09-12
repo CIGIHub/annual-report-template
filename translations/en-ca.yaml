@@ -10,6 +10,8 @@ braidingLegalOrders:
 buildingCloserTiesBetweenCanadaAndIndia:
   description: 'With India now one of the world’s fastest-growing economies and Canada seeking to diversity its trade relationships, CIGI has partnered with Gateway House, a foreign policy think tank in Mumbai, on the Canada-India Track 1.5 Dialogue on Innovation, Growth and Prosperity, a three-year initiative to explore areas for closer relations between the two countries.'
   title: 'Building Closer Ties between Canada and India'
+chairsMessage:
+  title: 'Chair’s Message'
 description: 'Explore a year of research, opinion and expertise in CIGI’s interactive annual report.'
 pageNotFound:
   paragraph1: 'The request page could not be found.'
