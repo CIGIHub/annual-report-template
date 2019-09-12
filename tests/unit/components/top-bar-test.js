@@ -242,4 +242,25 @@ module('Unit | Component | top-bar', function(hooks) {
       'should have correct twitterShareLink',
     );
   });
+
+  test('should have correct share links for /governing-cyberspace-during-a-crisis-in-trust', function(assert) {
+    const component = this.owner.factoryFor('component:top-bar').create();
+    set(component, 'router.currentRouteName', 'governing-cyberspace-during-a-crisis-in-trust');
+
+    assert.strictEqual(
+      get(component, 'shareRoute'),
+      'https://www.cigionline.org/interactives/2019annualreport/governing-cyberspace-during-a-crisis-in-trust',
+      'should have correct shareRoute',
+    );
+    assert.strictEqual(
+      get(component, 'linkedInShareLink'),
+      'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/governing-cyberspace-during-a-crisis-in-trust',
+      'should have correct linkedInShareLink',
+    );
+    assert.strictEqual(
+      get(component, 'twitterShareLink'),
+      'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/governing-cyberspace-during-a-crisis-in-trust',
+      'should have correct twitterShareLink',
+    );
+  });
 });
