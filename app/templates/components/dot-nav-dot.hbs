@@ -1,3 +1,16 @@
 <li class="link-item">
-
+  <div class="dot-nav-tooltip">
+    <span>
+      {{menuItem.title}}
+    </span>
+  </div>
+  {{#if menuItem.current}}
+    <div class="current-page">
+      <div class="dot-circle"></div>
+    </div>
+  {{else}}
+    {{#link-to menuItem.route class="link-dot"}}
+      <div class="dot-circle"></div>
+    {{/link-to}}
+  {{/if}}
 </li>
