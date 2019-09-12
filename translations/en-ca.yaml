@@ -28,6 +28,9 @@ governingCyberspaceDuringACrisisInTrust:
 governingTheDigitalPublicSphere:
   description: 'The 2016 US election revealed both malicious uses of technology and structural problems in the digital infrastructure itself. Since then, there have been a striking number of cases of commercially and politically driven misinformation, foreign interference in elections, data breaches, cyber attacks, the proliferation of harmful speech, data exploitation and surveillance abuses.'
   title: 'Governing the Digital Public Sphere'
+informingTheDebateAroundInternetSecurityAndTrust:
+  description: 'Now in its fifth year, the CIGI-Ipsos Global Survey on Internet Security and Trust is the world’s largest and most comprehensive survey of its kind, involving more than 25,000 internet users in over two dozen countries.'
+  title: 'Informing the Debate around Internet Security and Trust'
 pageNotFound:
   paragraph1: 'The request page could not be found.'
   paragraph2: 'Please check the URL and try again.'
