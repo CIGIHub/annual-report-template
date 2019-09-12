@@ -17,14 +17,42 @@ module.exports = function(environment) {
       },
     },
     environment,
+    fontawesome: {
+      icons: {
+        'free-brands-svg-icons': [
+          'facebook-square',
+          'linkedin-in',
+          'twitter',
+        ],
+        'pro-light-svg-icons': [
+          'arrow-right',
+          'bars',
+          'camera-retro',
+          'chart-bar',
+          'chevron-left',
+          'chevron-right',
+          'comment-alt-lines',
+          'download',
+          'envelope',
+          'file-alt',
+          'film',
+          'newspaper',
+          'search',
+          'share-alt',
+          'times',
+          'volume-up',
+        ],
+      },
+    },
     host: 'https://www.cigionline.org',
     locationType: 'auto',
     modulePrefix: 'annual-report-2019',
-    rootURL: '/',
+    rootURL: '/interactives/2019annualreport/',
   };
 
   if (environment === 'development') {
     ENV.host = 'http://localhost:4200';
+    ENV.rootURL = '/';
   }
 
   if (environment === 'test') {
@@ -37,12 +65,9 @@ module.exports = function(environment) {
 
     ENV.APP.rootElement = '#ember-testing';
     ENV.APP.autoboot = false;
-    ENV.rootURL = '/interactives/2019annualreport/';
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/interactives/2019annualreport/';
-
     if (process.env.STAGING) {
       ENV.host = 'https://staging.cigionline.org';
     }
