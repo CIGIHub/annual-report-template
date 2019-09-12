@@ -44,6 +44,7 @@ export default Component.extend({
       get(this, 'lightbox').closeLightbox();
     },
     closeSocialMenu() {
+      /* istanbul ignore next */
       if (get(this, 'socialAnimationTimeout')) {
         clearTimeout(get(this, 'socialAnimationTimeout'));
         set(this, 'socialAnimationTimeout', null);
@@ -87,6 +88,7 @@ export default Component.extend({
       get(this, 'lightbox').showTableOfContents();
     },
     openSocialMenu() {
+      /* istanbul ignore next */
       if (get(this, 'socialAnimationTimeout')) {
         clearTimeout(get(this, 'socialAnimationTimeout'));
         set(this, 'socialAnimationTimeout', null);
@@ -100,6 +102,7 @@ export default Component.extend({
         'opacity': 1,
       }, 300);
 
+      /* istanbul ignore next */
       if ($(window).width() <= 425) {
         $('.scroll-arrow-up').css({
           'display': 'none',
