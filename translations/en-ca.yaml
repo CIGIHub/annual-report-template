@@ -1,2 +1,6 @@
 description: 'Explore a year of research, opinion and expertise in CIGI’s interactive annual report.'
+pageNotFound:
+  paragraph1: 'The request page could not be found.'
+  paragraph2: 'Please check the URL and try again.'
+  title: '404: Page Not Found'
 title: '2019 CIGI Annual Report'
