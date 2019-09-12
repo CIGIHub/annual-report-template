@@ -37,6 +37,8 @@ mediaAndMassAtrocityTheRwandaGenocideAndBeyond:
 modelsForDataGovernance:
   description: 'Data trusts are occupying a politically contested space and the private sector is taking note. As a result, the public dialogue is being shaped by large, well-financed interests trying to maximize data sharing. But, large-scale privately-driven data sharing is not the only way — or even the most important way — to use data trusts.'
   title: 'Models for Data Governance'
+outputsAndActivities:
+  title: 'Outputs and Activities'
 pageNotFound:
   paragraph1: 'The request page could not be found.'
   paragraph2: 'Please check the URL and try again.'
