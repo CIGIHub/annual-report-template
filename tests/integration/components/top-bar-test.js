@@ -12,6 +12,11 @@ module('Integration | Component | top-bar', function(hooks) {
 
   hooks.beforeEach(function() {
     this.clock = lolex.install();
+    this.owner.register('service:intl', Service.extend({
+      t() {
+        return '';
+      },
+    }));
     this.owner.register('service:lightbox', Service.extend({
       showLightbox: null,
       closeLightbox() {
@@ -24,13 +29,13 @@ module('Integration | Component | top-bar', function(hooks) {
   });
 
   test('it renders', async function(assert) {
-    await render(hbs`<TopBar />`);
+    await render(hbs`<TopBar @currentRoute="index" />`);
 
     assert.ok(this.element.querySelector('.cigi-top-bar'));
   });
 
   test('should show close menu button after clicking open menu button', async function(assert) {
-    await render(hbs`<TopBar />`);
+    await render(hbs`<TopBar @currentRoute="index" />`);
     assert.ok(
       this.element.querySelector('.open-menu-btn'),
       '[setup] should find open-menu-btn',
@@ -53,7 +58,7 @@ module('Integration | Component | top-bar', function(hooks) {
   });
 
   test('should show open menu button after clicking close menu button', async function(assert) {
-    await render(hbs`<TopBar />`);
+    await render(hbs`<TopBar @currentRoute="index" />`);
     await click('.open-menu-btn');
     assert.notOk(
       this.element.querySelector('.open-menu-btn'),
@@ -77,7 +82,7 @@ module('Integration | Component | top-bar', function(hooks) {
   });
 
   test('should show social menu after clicking open social menu button', async function(assert) {
-    await render(hbs`<TopBar />`);
+    await render(hbs`<TopBar @currentRoute="index" />`);
     assert.ok(
       this.element.querySelector('.open-social-menu-btn'),
       '[setup] should find open-social-menu-btn',
@@ -153,7 +158,7 @@ module('Integration | Component | top-bar', function(hooks) {
   });
 
   test('should close social menu after clicking close social menu button', async function(assert) {
-    await render(hbs`<TopBar />`);
+    await render(hbs`<TopBar @currentRoute="index" />`);
     await click('.open-social-menu-btn');
     await finishRender();
     this.clock.tick(305);

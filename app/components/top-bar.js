@@ -5,6 +5,7 @@ import { inject as service } from '@ember/service';
 import $ from 'jquery';
 
 export default Component.extend({
+  intl: service(),
   lightbox: service(),
   socialAnimationTimeout: null,
   socialMenuIsOpen: false,
@@ -14,6 +15,18 @@ export default Component.extend({
       return true;
     }
     return false;
+  }),
+
+  linkedInShareLink: computed('shareRoute', function() {
+    const shareRoute = get(this, 'shareRoute');
+    return `https://www.linkedin.com/shareArticle?mini=true&url=${shareRoute}`;
+  }),
+
+  twitterShareLink: computed('shareRoute', function() {
+    const shareRoute = get(this, 'shareRoute');
+    let shareTitle = get(this, 'intl').t('title');
+    shareTitle = shareTitle.replace(/ /g, '+');
+    return `https://twitter.com/intent/tweet?status=${shareTitle}+${shareRoute}`;
   }),
 
   menuIsOpen: computed('lightbox.showLightbox', function() {

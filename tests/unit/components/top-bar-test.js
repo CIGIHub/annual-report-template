@@ -7,6 +7,11 @@ module('Unit | Component | top-bar', function(hooks) {
   setupTest(hooks);
 
   hooks.beforeEach(function() {
+    this.owner.register('service:intl', Service.extend({
+      t() {
+        return '2019 CIGI Annual Report';
+      },
+    }));
     this.owner.register('service:lightbox', Service.extend({
       showLightbox: null,
     }));
@@ -46,10 +51,24 @@ module('Unit | Component | top-bar', function(hooks) {
     assert.strictEqual(get(component, 'menuIsOpen'), false);
   });
 
-  test('should have correct share route for /', function(assert) {
+  test('should have correct share links for /', function(assert) {
     const component = this.owner.factoryFor('component:top-bar').create();
     set(component, 'currentRoute', 'index');
 
-    assert.strictEqual(get(component, 'shareRoute'), 'https://www.cigionline.org/interactives/2019annualreport/');
+    assert.strictEqual(
+      get(component, 'shareRoute'),
+      'https://www.cigionline.org/interactives/2019annualreport/',
+      'should have correct shareRoute',
+    );
+    assert.strictEqual(
+      get(component, 'linkedInShareLink'),
+      'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/',
+      'should have correct linkedInShareLink',
+    );
+    assert.strictEqual(
+      get(component, 'twitterShareLink'),
+      'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/',
+      'should have correct twitterShareLink',
+    );
   });
 });
