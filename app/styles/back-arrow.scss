@@ -1,0 +1,47 @@
+.back-link {
+  display: block;
+  position: relative;
+
+  &:hover {
+    .underline {
+      background-size: 100% 100%;
+    }
+  }
+
+  p {
+    font-weight: 500;
+    line-height: 44px;
+  }
+
+  .back-link-icon {
+    background-color: $white;
+    border-radius: 50%;
+    height: 44px;
+    line-height: 50px;
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+    transition: background-color 500ms;
+    width: 44px;
+
+    &.event {
+      background-color: $timeline-event;
+    }
+
+    &.article {
+      background-color: $timeline-opinion;
+    }
+
+    &.publication {
+      background-color: $timeline-publication;
+    }
+  }
+
+  .underline {
+    background-image: linear-gradient(transparent calc(100% - 5px), $cigi-red 10px);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 500ms;
+    width: calc(100%);
+  }
+}

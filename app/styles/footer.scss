@@ -1,0 +1,78 @@
+@keyframes footerFade {
+  0% {
+    opacity: 0;
+    top: 10px;
+  }
+
+  66% {
+    opacity: 0;
+    top: 10px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.footer {
+  bottom: 8%;
+  left: 50%;
+  max-width: 1060px;
+  padding: 15px 10px;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 3;
+
+  @media screen and (min-width: $med-screen-min) {
+    padding: 20px 15px;
+  }
+
+  &.footer-dark {
+    .footer-icon {
+      border-color: $black;
+      color: $black;
+    }
+  }
+
+  .footer-icon {
+    animation-duration: 1500ms;
+    animation-name: footerFade;
+    animation-timing-function: ease-in;
+    border-color: $white;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    color: $white;
+    display: block;
+    font-size: 12px;
+    height: 38px;
+    line-height: 37px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 38px;
+  }
+
+  .footer-description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: 70px;
+    text-align: right;
+    top: 62%;
+    transform: translateY(-50%);
+    visibility: hidden;
+    width: 400px;
+
+    span {
+      background-color: $background-overlay;
+      padding: 2px 5px;
+    }
+  }
+}

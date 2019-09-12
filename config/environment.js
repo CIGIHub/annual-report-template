@@ -2,10 +2,10 @@
 
 module.exports = function(environment) {
   const ENV = {
-    modulePrefix: 'annual-report-2019',
-    environment,
-    rootURL: '/',
-    locationType: 'auto',
+    APP: {
+      // Here you can pass flags/options to your application instance
+      // when it is created
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -16,19 +16,43 @@ module.exports = function(environment) {
         Date: false,
       },
     },
-
-    APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+    environment,
+    fontawesome: {
+      icons: {
+        'free-brands-svg-icons': [
+          'facebook-square',
+          'linkedin-in',
+          'twitter',
+        ],
+        'pro-light-svg-icons': [
+          'arrow-right',
+          'bars',
+          'camera-retro',
+          'chart-bar',
+          'chevron-left',
+          'chevron-right',
+          'comment-alt-lines',
+          'download',
+          'envelope',
+          'file-alt',
+          'film',
+          'newspaper',
+          'search',
+          'share-alt',
+          'times',
+          'volume-up',
+        ],
+      },
     },
+    host: 'https://www.cigionline.org',
+    locationType: 'auto',
+    modulePrefix: 'annual-report-2019',
+    rootURL: '/interactives/2019annualreport/',
   };
 
   if (environment === 'development') {
-    // ENV.APP.LOG_RESOLVER = true;
-    // ENV.APP.LOG_ACTIVE_GENERATION = true;
-    // ENV.APP.LOG_TRANSITIONS = true;
-    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.host = 'http://localhost:4200';
+    ENV.rootURL = '/';
   }
 
   if (environment === 'test') {
@@ -44,7 +68,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    if (process.env.STAGING) {
+      ENV.host = 'https://staging.cigionline.org';
+    }
   }
 
   return ENV;

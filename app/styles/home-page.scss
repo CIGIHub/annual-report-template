@@ -1,0 +1,11 @@
+.home-page {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+
+  @media screen and (min-width: $med-screen-min) {
+    position: absolute;
+    top: 0;
+  }
+}
