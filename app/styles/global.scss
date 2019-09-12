@@ -18,6 +18,7 @@ body {
 }
 
 a,
+button,
 h1,
 h2,
 h3,
@@ -29,6 +30,16 @@ p {
   font-family: $font-primary, sans-serif;
   font-style: normal;
   font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+
+  &:active,
+  &:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
 }
 
 h1 {
