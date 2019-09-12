@@ -19,6 +19,9 @@ description: 'Explore a year of research, opinion and expertise in CIGI’s inte
 exploringTheFourInternetsAndTheGeopoliticsOfDigitalGovernance:
   description: 'While the internet may have originally been designed to be open and transparent, its entrenchment in our daily lives has led to competing views on the role it should play in society and how it should be governed.'
   title: 'Exploring the "Four Internets" and the Geopolitics of Digital Governance'
+financials:
+  auditorsReport:
+    title: 'Auditor’s Report'
 pageNotFound:
   paragraph1: 'The request page could not be found.'
   paragraph2: 'Please check the URL and try again.'

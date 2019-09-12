@@ -10,7 +10,6 @@ export default Route.extend({
   afterModel() {
     const title = `${get(this, 'intl').t('chairsMessage.title')} | ${get(this, 'intl').t('title')}`;
     set(this, 'headData.title', title);
-    set(this, 'headData.description', get(this, 'intl').t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}chairs-message/`);
   },
 });
