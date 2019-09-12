@@ -1,0 +1,189 @@
+@keyframes indexLogoYearFade {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes indexLogoTextFade {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes indexLogoYearFadeMobile {
+  0% {
+    opacity: 0;
+    top: 50px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes indexLogoTextFadeMobile {
+  0% {
+    opacity: 0;
+    top: -50px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes nagivationFadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  75% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.intro-logo {
+  font-family: $font-primary, sans-serif;
+  font-weight: 700;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-55%);
+
+  .year {
+    animation-duration: 1000ms;
+    animation-name: indexLogoYearFadeMobile;
+    animation-timing-function: ease-out;
+    color: $cigi-red;
+    font-size: 6em;
+    line-height: .7;
+    position: relative;
+
+    @media screen and (min-width: $med-screen-min) {
+      animation-duration: 1500ms;
+      animation-name: indexLogoYearFade;
+      animation-timing-function: ease-out;
+      float: left;
+      font-size: 5em;
+      letter-spacing: -3px;
+      line-height: .7;
+      margin-right: 3px;
+    }
+
+    @media screen and (min-width: $lg-screen-min) {
+      font-size: 8em;
+      letter-spacing: -5px;
+      line-height: .7;
+      margin-right: 5px;
+    }
+
+    // The letter spacing on the '1' is way too wide, this is a fix.
+    .special-spacing {
+      letter-spacing: -10px;
+      margin-left: -3px;
+      @media screen and (min-width: $med-screen-min) {
+        letter-spacing: -14px;
+        margin-left: -5px;
+      }
+      @media screen and (min-width: $lg-screen-min) {
+        letter-spacing: -23px;
+        margin-left: -10px;
+      }
+    }
+  }
+
+  .text {
+    animation-duration: 1000ms;
+    animation-name: indexLogoTextFadeMobile;
+    animation-timing-function: ease-out;
+    color: $white;
+    line-height: .9;
+    position: relative;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $med-screen-min) {
+      animation-duration: 1500ms;
+      animation-name: indexLogoTextFade;
+      animation-timing-function: ease-out;
+      float: right;
+    }
+
+    .annual {
+      font-size: 3.25em;
+
+      @media screen and (min-width: $med-screen-min) {
+        font-size: 2em;
+        margin-left: 2px;
+      }
+
+      @media screen and (min-width: $lg-screen-min) {
+        font-size: 3em;
+      }
+    }
+
+    .report {
+      font-size: 3.75em;
+
+      @media screen and (min-width: $med-screen-min) {
+        font-size: 2.25em;
+      }
+
+      @media screen and (min-width: $lg-screen-min) {
+        font-size: 3.5em;
+      }
+    }
+  }
+}
+
+.navigation-section {
+  animation-duration: 6000ms;
+  animation-name: nagivationFadeInOut;
+  animation-timing-function: ease-in;
+  bottom: 50px;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%) translateY(-55%);
+  width: 150px;
+
+  p {
+    font-size: 12px;
+  }
+
+  img {
+    &:nth-child(2) {
+      padding-right: 0.25em;
+    }
+  }
+
+  .up-down-icon {
+    transform: scale(0.8);
+  }
+
+  @media screen and (max-width: $med-screen-max) {
+    display: none;
+  }
+}

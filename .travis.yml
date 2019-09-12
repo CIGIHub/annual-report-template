@@ -21,6 +21,7 @@ install:
 script:
   - npm run lint:hbs
   - npm run lint:js
+  - npm run lint:sass
   - npm run test:travis
 after_success:
   - npm run coveralls
