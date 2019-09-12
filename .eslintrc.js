@@ -22,6 +22,7 @@ module.exports = {
     'func-names': ['off'],
     'import/no-extraneous-dependencies': ['off'],
     'import/no-unresolved': ['off'],
+    'no-underscore-dangle': ['off'],
     'prefer-arrow-callback': ['off'],
     'prefer-object-spread': ['off'],
     'quote-props': ['off'],
