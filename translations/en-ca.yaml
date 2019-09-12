@@ -25,6 +25,9 @@ financials:
 governingCyberspaceDuringACrisisInTrust:
   description: 'It is almost impossible to read the news without coming across a lead story cataloguing the latest cyber breach or misuse of data. The volume of these events lays bare the paradox of the digital economy and cyber security: technology has led to convenience, efficiency and wealth creation, but the push to digitize society quickly and relentlessly has meant building vulnerability into the core of the global economic model.'
   title: 'Governing Cyberspace during a Crisis in Trust'
+governingTheDigitalPublicSphere:
+  description: 'The 2016 US election revealed both malicious uses of technology and structural problems in the digital infrastructure itself. Since then, there have been a striking number of cases of commercially and politically driven misinformation, foreign interference in elections, data breaches, cyber attacks, the proliferation of harmful speech, data exploitation and surveillance abuses.'
+  title: 'Governing the Digital Public Sphere'
 pageNotFound:
   paragraph1: 'The request page could not be found.'
   paragraph2: 'Please check the URL and try again.'
