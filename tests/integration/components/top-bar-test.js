@@ -12,6 +12,6 @@ module('Integration | Component | top-bar', function(hooks) {
 
     await render(hbs`<TopBar />`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.ok(this.element.querySelector('.cigi-top-bar'));
   });
 });

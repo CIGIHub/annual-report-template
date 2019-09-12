@@ -16,11 +16,18 @@
   .cigi-logo {
     float: left;
 
-    img {
+    svg {
+      fill: $white;
       height: 30px;
 
       @media screen and (min-width: $med-screen-min) {
         height: 40px;
+      }
+    }
+
+    &.light-background {
+      svg {
+        fill: $black;
       }
     }
   }
