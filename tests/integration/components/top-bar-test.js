@@ -26,16 +26,19 @@ module('Integration | Component | top-bar', function(hooks) {
         set(this, 'showLightbox', 'tableofcontents');
       },
     }));
+    this.owner.register('service:router', Service.extend({
+      currentRouteName: '',
+    }));
   });
 
   test('it renders', async function(assert) {
-    await render(hbs`<TopBar @currentRoute="index" />`);
+    await render(hbs`<TopBar />`);
 
     assert.ok(this.element.querySelector('.cigi-top-bar'));
   });
 
   test('should show close menu button after clicking open menu button', async function(assert) {
-    await render(hbs`<TopBar @currentRoute="index" />`);
+    await render(hbs`<TopBar />`);
     assert.ok(
       this.element.querySelector('.open-menu-btn'),
       '[setup] should find open-menu-btn',
@@ -58,7 +61,7 @@ module('Integration | Component | top-bar', function(hooks) {
   });
 
   test('should show open menu button after clicking close menu button', async function(assert) {
-    await render(hbs`<TopBar @currentRoute="index" />`);
+    await render(hbs`<TopBar />`);
     await click('.open-menu-btn');
     assert.notOk(
       this.element.querySelector('.open-menu-btn'),
@@ -82,7 +85,7 @@ module('Integration | Component | top-bar', function(hooks) {
   });
 
   test('should show social menu after clicking open social menu button', async function(assert) {
-    await render(hbs`<TopBar @currentRoute="index" />`);
+    await render(hbs`<TopBar />`);
     assert.ok(
       this.element.querySelector('.open-social-menu-btn'),
       '[setup] should find open-social-menu-btn',
@@ -158,7 +161,7 @@ module('Integration | Component | top-bar', function(hooks) {
   });
 
   test('should close social menu after clicking close social menu button', async function(assert) {
-    await render(hbs`<TopBar @currentRoute="index" />`);
+    await render(hbs`<TopBar />`);
     await click('.open-social-menu-btn');
     await finishRender();
     this.clock.tick(305);

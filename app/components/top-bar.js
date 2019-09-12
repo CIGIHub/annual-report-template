@@ -7,11 +7,12 @@ import $ from 'jquery';
 export default Component.extend({
   intl: service(),
   lightbox: service(),
+  router: service(),
   socialAnimationTimeout: null,
   socialMenuIsOpen: false,
 
-  hideMenu: computed('currentRoute', function() {
-    if (get(this, 'currentRoute') === 'table-of-contents') {
+  hideMenu: computed('router.currentRouteName', function() {
+    if (get(this, 'router.currentRouteName') === 'table-of-contents') {
       return true;
     }
     return false;
@@ -33,8 +34,8 @@ export default Component.extend({
     return get(this, 'lightbox.showLightbox') === 'tableofcontents';
   }),
 
-  shareRoute: computed('currentRoute', function() {
-    const currentRoute = get(this, 'currentRoute').replace('.', '/').replace('index', '');
+  shareRoute: computed('router.currentRouteName', function() {
+    const currentRoute = get(this, 'router.currentRouteName').replace('.', '/').replace('index', '');
     return `${ENV.host}${ENV.rootURL}${currentRoute}`;
   }),
 

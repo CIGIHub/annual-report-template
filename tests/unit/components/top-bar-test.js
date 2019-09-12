@@ -15,11 +15,14 @@ module('Unit | Component | top-bar', function(hooks) {
     this.owner.register('service:lightbox', Service.extend({
       showLightbox: null,
     }));
+    this.owner.register('service:router', Service.extend({
+      currentRouteName: '',
+    }));
   });
 
   test('should hide menu when on table of contents route', function(assert) {
     const component = this.owner.factoryFor('component:top-bar').create();
-    set(component, 'currentRoute', 'table-of-contents');
+    set(component, 'router.currentRouteName', 'table-of-contents');
 
     assert.strictEqual(get(component, 'hideMenu'), true);
   });
@@ -53,7 +56,7 @@ module('Unit | Component | top-bar', function(hooks) {
 
   test('should have correct share links for /', function(assert) {
     const component = this.owner.factoryFor('component:top-bar').create();
-    set(component, 'currentRoute', 'index');
+    set(component, 'router.currentRouteName', 'index');
 
     assert.strictEqual(
       get(component, 'shareRoute'),
