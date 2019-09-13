@@ -21,7 +21,8 @@
     }
 
     .cigi-menu {
-      a {
+      a,
+      button {
         color: $black;
       }
     }
@@ -33,6 +34,7 @@
     svg {
       fill: $white;
       height: 30px;
+      transition: fill 500ms;
 
       @media screen and (min-width: $med-screen-min) {
         height: 40px;
@@ -52,7 +54,7 @@
       font-size: 14px;
       line-height: 30px;
       margin-left: 20px;
-      transition: color 500ms;
+      transition: color 250ms;
 
       @media screen and (min-width: $med-screen-min) {
         line-height: 40px;

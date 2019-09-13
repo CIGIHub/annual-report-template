@@ -13,6 +13,23 @@
     visibility: visible;
   }
 
+  &.light-background {
+    li {
+      .current-page,
+      .link-dot {
+        .dot-circle {
+          border-color: $black;
+        }
+      }
+
+      .current-page {
+        .dot-circle {
+          background-color: $black;
+        }
+      }
+    }
+  }
+
   li {
     height: 20px;
     position: relative;
