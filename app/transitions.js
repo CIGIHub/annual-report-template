@@ -1,6 +1,7 @@
 import ENV from 'annual-report-2019/config/environment';
 
 export default /* istanbul ignore next */ function() {
+  const customDuration = ENV.environment === 'test' ? 0 : 500;
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
@@ -8,21 +9,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -33,21 +34,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -58,21 +59,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -83,21 +84,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -108,21 +109,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -133,21 +134,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -158,21 +159,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -183,21 +184,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -208,21 +209,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -233,21 +234,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -258,21 +259,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -283,21 +284,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -308,21 +309,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -333,21 +334,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -358,21 +359,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -383,21 +384,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -408,21 +409,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -433,21 +434,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -458,21 +459,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -483,21 +484,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -508,21 +509,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -533,21 +534,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -558,21 +559,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -583,21 +584,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -608,21 +609,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -633,21 +634,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -658,21 +659,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -683,21 +684,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -708,21 +709,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -733,21 +734,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -758,21 +759,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -783,21 +784,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -808,21 +809,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -833,21 +834,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -858,21 +859,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -883,21 +884,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -908,21 +909,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -933,21 +934,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -958,21 +959,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -983,21 +984,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1008,21 +1009,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1033,21 +1034,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1058,21 +1059,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1083,21 +1084,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1108,21 +1109,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1133,21 +1134,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1158,21 +1159,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1183,21 +1184,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1208,21 +1209,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1233,21 +1234,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1258,21 +1259,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1283,21 +1284,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1308,21 +1309,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1333,21 +1334,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1358,21 +1359,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1383,21 +1384,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1408,21 +1409,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1433,21 +1434,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1458,21 +1459,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1483,21 +1484,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1508,21 +1509,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1533,21 +1534,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1558,21 +1559,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1583,21 +1584,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1608,21 +1609,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1633,21 +1634,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1658,21 +1659,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1683,21 +1684,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1708,21 +1709,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1733,21 +1734,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1758,21 +1759,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1783,21 +1784,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1808,21 +1809,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1833,21 +1834,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1858,21 +1859,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1883,21 +1884,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1908,21 +1909,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1933,21 +1934,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1958,21 +1959,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -1983,21 +1984,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2008,21 +2009,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2033,21 +2034,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2058,21 +2059,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2083,21 +2084,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2108,21 +2109,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2133,21 +2134,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2158,21 +2159,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2183,21 +2184,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2208,21 +2209,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2233,21 +2234,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2258,21 +2259,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2283,21 +2284,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2308,21 +2309,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2333,21 +2334,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2358,21 +2359,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2383,21 +2384,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2408,21 +2409,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2433,21 +2434,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2458,21 +2459,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2483,21 +2484,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2508,21 +2509,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2533,21 +2534,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2558,21 +2559,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2583,21 +2584,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2608,21 +2609,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2633,21 +2634,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2658,21 +2659,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2683,21 +2684,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2708,21 +2709,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2733,21 +2734,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2758,21 +2759,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2783,21 +2784,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2808,21 +2809,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2833,21 +2834,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2858,21 +2859,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2883,21 +2884,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2908,21 +2909,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2933,21 +2934,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2958,21 +2959,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -2983,21 +2984,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3008,21 +3009,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3033,21 +3034,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3058,21 +3059,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3083,21 +3084,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3108,21 +3109,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3133,21 +3134,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3158,21 +3159,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3183,21 +3184,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3208,21 +3209,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3233,21 +3234,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3258,21 +3259,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3283,21 +3284,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3308,21 +3309,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3333,21 +3334,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3358,21 +3359,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3383,21 +3384,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3408,21 +3409,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3433,21 +3434,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3458,21 +3459,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3483,21 +3484,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3508,21 +3509,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3533,21 +3534,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3558,21 +3559,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3583,21 +3584,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3608,21 +3609,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3633,21 +3634,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3658,21 +3659,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3683,21 +3684,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3708,21 +3709,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3733,21 +3734,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3758,21 +3759,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3783,21 +3784,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3808,21 +3809,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3833,21 +3834,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3858,21 +3859,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3883,21 +3884,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3908,21 +3909,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3933,21 +3934,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3958,21 +3959,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -3983,21 +3984,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4008,21 +4009,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4033,21 +4034,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4058,21 +4059,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4083,21 +4084,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4108,21 +4109,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4133,21 +4134,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4158,21 +4159,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4183,21 +4184,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4208,21 +4209,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4233,21 +4234,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4258,21 +4259,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4283,21 +4284,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4308,21 +4309,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4333,21 +4334,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4358,21 +4359,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4383,21 +4384,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4408,21 +4409,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4433,21 +4434,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4458,21 +4459,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4483,21 +4484,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4508,21 +4509,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4533,21 +4534,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4558,21 +4559,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4583,21 +4584,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4608,21 +4609,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4633,21 +4634,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4658,21 +4659,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4683,21 +4684,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
@@ -4707,21 +4708,21 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
     this.reverse('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', true, {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }, {
       use: ['crossFade', {
-        duration: ENV.environment === 'test' ? 0 : 500,
+        duration: customDuration,
       }],
     }),
   );
