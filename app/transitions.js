@@ -1,5 +1,6 @@
 import ENV from 'annual-report-2019/config/environment';
 
+/* istanbul ignore next */
 export default function() {
   this.transition(
     this.fromRoute('index'),
