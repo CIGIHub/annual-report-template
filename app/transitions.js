@@ -1,7 +1,6 @@
 import ENV from 'annual-report-2019/config/environment';
 
-/* istanbul ignore next */
-export default function() {
+export default /* istanbul ignore next */ function() {
   this.transition(
     this.fromRoute('index'),
     this.toRoute('table-of-contents'),
