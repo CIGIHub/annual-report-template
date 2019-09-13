@@ -30,7 +30,9 @@ export default function() {
             _this.toRoute(toRoute),
             _this.use('explode', {
               pickNew: '.background-row',
-              use: ['crossFadeSlide'],
+              use: ['crossFadeSlide', false, {
+                duration: ENV.environment === 'test' ? 0 : 500,
+              }],
             }, {
               use: ['crossFade', {
                 duration: ENV.environment === 'test' ? 0 : 500,
@@ -38,7 +40,9 @@ export default function() {
             }),
             _this.reverse('explode', {
               pickNew: '.background-row',
-              use: ['crossFadeSlide', true],
+              use: ['crossFadeSlide', true, {
+                duration: ENV.environment === 'test' ? 0 : 500,
+              }],
             }, {
               use: ['crossFade', {
                 duration: ENV.environment === 'test' ? 0 : 500,
