@@ -1,3 +1,5 @@
+import ENV from 'annual-report-2019/config/environment';
+
 import routeOrder from './route-order';
 
 export default function() {
@@ -30,13 +32,17 @@ export default function() {
               pickNew: '.background-row',
               use: ['crossFadeSlide'],
             }, {
-              use: ['crossFade', { duration: 500 }],
+              use: ['crossFade', {
+                duration: ENV.environment === 'test' ? 0 : 500,
+              }],
             }),
             _this.reverse('explode', {
               pickNew: '.background-row',
               use: ['crossFadeSlide', true],
             }, {
-              use: ['crossFade', { duration: 500 }],
+              use: ['crossFade', {
+                duration: ENV.environment === 'test' ? 0 : 500,
+              }],
             }),
           );
         }
