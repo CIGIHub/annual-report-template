@@ -1,4 +1,3 @@
-import ENV from 'annual-report-2019/config/environment';
 import { animate, stop, Promise } from 'liquid-fire';
 
 export default function(reverse, opts) {
