@@ -2,7 +2,9 @@
 import { animate, stop, Promise } from 'liquid-fire';
 
 export default /* istanbul ignore next */ function(reverse, opts) {
+  /* istanbul ignore next */
   stop(this.oldElement);
+  /* istanbul ignore next */
   return Promise.all([
     animate(this.oldElement, {
       'opacity': 0,
