@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import { animate, stop, Promise } from 'liquid-fire';
 
 export default /* istanbul ignore next */ function(reverse, opts) {
