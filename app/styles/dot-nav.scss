@@ -50,45 +50,27 @@
 
       .dot-circle {
         background-clip: content-box;
+        border-color: $white;
         border-radius: 50%;
         border-style: solid;
         border-width: 1px;
         height: 16px;
         margin: 0 2px;
         padding: 2px;
-        transition: height 250ms, margin 250ms, width 250ms;
+        transition: background-color 250ms, border-color 250ms, height 250ms, margin 250ms, width 250ms;
         width: 16px;
-      }
-
-      .dark-background {
-        border-color: $white;
-        transition: background-color 250ms, border-color 250ms;
-      }
-
-      .light-background {
-        border-color: $black;
-        transition: background-color 250ms, border-color 250ms;
       }
     }
 
     .current-page {
-      .dark-background {
+      .dot-circle {
         background-color: $white;
-      }
-
-      .light-background {
-        background-color: $black;
       }
     }
 
     .link-dot {
       &:hover {
-        .dark-background {
-          background-color: $cigi-red;
-          border-color: $cigi-red;
-        }
-
-        .light-background {
+        .dot-circle {
           background-color: $cigi-red;
           border-color: $cigi-red;
         }
