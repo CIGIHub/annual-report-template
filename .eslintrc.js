@@ -22,6 +22,7 @@ module.exports = {
   },
   rules: {
     'array-callback-return': ['off'],
+    'ember/no-side-effects': ['off'],
     'func-names': ['off'],
     'import/no-extraneous-dependencies': ['off'],
     'import/no-unresolved': ['off'],
