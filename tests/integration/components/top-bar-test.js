@@ -1,8 +1,8 @@
 import finishRender from 'annual-report-2019/tests/helpers/finish-render';
 import { set } from '@ember/object';
 import { setupRenderingTest } from 'ember-qunit';
-import { click, render } from '@ember/test-helpers';
 import Service from '@ember/service';
+import { click, render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 import lolex from 'lolex';
 import { module, test } from 'qunit';
