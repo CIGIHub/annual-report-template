@@ -61,6 +61,7 @@
     "eslint-plugin-node": "10.0.0",
     "eslint-plugin-react": "7.14.3",
     "foundation-sites": "6.5.3",
+    "liquid-fire": "0.30.0",
     "loader.js": "4.7.0",
     "lolex": "4.2.0",
     "qunit-dom": "0.9.0",
