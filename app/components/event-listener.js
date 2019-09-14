@@ -32,23 +32,27 @@ export default Component.extend({
     }
   },
 
-  /* istanbul ignore next */
   _getTouchCoordinates(e) {
+    /* istanbul ignore next */
     const coordinates = {};
+    /* istanbul ignore next */
     coordinates.y = typeof e.pageY !== 'undefined' && (e.pageY || e.pageX) ? e.pageY : e.touches[0].pageY;
+    /* istanbul ignore next */
     coordinates.x = typeof e.pageX !== 'undefined' && (e.pageY || e.pageX) ? e.pageX : e.touches[0].pageX;
 
+    /* istanbul ignore next */
     return coordinates;
   },
 
   /* istanbul ignore next *//* istanbul ignore next */
   _isReallyTouch(e) {
     // Don't move for mouse click and drag
+    /* istanbul ignore next */
     return typeof e.pointerType === 'undefined' || e.pointerType !== 'mouse';
   },
 
-  /* istanbul ignore next */
   _touchStartHandler(ev) {
+    /* istanbul ignore next */
     if (Foundation.MediaQuery.atLeast('medium')) {
       const e = ev.originalEvent;
       if (this._isReallyTouch(e)) {
@@ -59,8 +63,8 @@ export default Component.extend({
     }
   },
 
-  /* istanbul ignore next */
   _touchMoveHandler(ev) {
+    /* istanbul ignore next */
     if (Foundation.MediaQuery.atLeast('medium')) {
       const e = ev.originalEvent;
 
@@ -87,8 +91,8 @@ export default Component.extend({
     }
   },
 
-  /* istanbul ignore next */
   _keypressHandler(e) {
+    /* istanbul ignore next */
     if (Foundation.MediaQuery.atLeast('medium')) {
       if (!get(this, 'isTransitioning')) {
         if (e.keyCode === 38) {
@@ -100,8 +104,8 @@ export default Component.extend({
     }
   },
 
-  /* istanbul ignore next */
   _scrollHandler(e) {
+    /* istanbul ignore next */
     if (Foundation.MediaQuery.atLeast('medium')) {
       const getAverage = (elements, number) => {
         let sum = 0;
