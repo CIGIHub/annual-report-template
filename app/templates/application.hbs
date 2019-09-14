@@ -5,8 +5,8 @@
   {{dot-nav lightBackground=lightBackground}}
 {{/if}}
 {{#if showScrollArrowUp}}
-  <div class="scroll-arrow scroll-arrow-up {{if lightBackground "light-background"}}"></div>
+  <button class="scroll-arrow scroll-arrow-up-btn {{if lightBackground "light-background"}}" {{action "transitionBack"}}></button>
 {{/if}}
 {{#if showScrollArrowDown}}
-  <div class="scroll-arrow scroll-arrow-down {{if lightBackground "light-background"}}"></div>
+  <button class="scroll-arrow scroll-arrow-down-btn {{if lightBackground "light-background"}}" {{action "transitionNext"}}></button>
 {{/if}}
