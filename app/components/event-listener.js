@@ -19,6 +19,7 @@ export default Component.extend({
     });
 
     const isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0) || (navigator.maxTouchPoints));
+    /* istanbul ignore next */
     if (isTouch) {
       let pointerDown = 'MSPointerDown';
       let pointerMove = 'MSPointerMove';
@@ -31,6 +32,7 @@ export default Component.extend({
     }
   },
 
+  /* istanbul ignore next */
   _getTouchCoordinates(e) {
     const coordinates = {};
     coordinates.y = typeof e.pageY !== 'undefined' && (e.pageY || e.pageX) ? e.pageY : e.touches[0].pageY;
@@ -39,11 +41,13 @@ export default Component.extend({
     return coordinates;
   },
 
+  /* istanbul ignore next *//* istanbul ignore next */
   _isReallyTouch(e) {
     // Don't move for mouse click and drag
     return typeof e.pointerType === 'undefined' || e.pointerType !== 'mouse';
   },
 
+  /* istanbul ignore next */
   _touchStartHandler(ev) {
     if (Foundation.MediaQuery.atLeast('medium')) {
       const e = ev.originalEvent;
@@ -55,6 +59,7 @@ export default Component.extend({
     }
   },
 
+  /* istanbul ignore next */
   _touchMoveHandler(ev) {
     if (Foundation.MediaQuery.atLeast('medium')) {
       const e = ev.originalEvent;
@@ -82,6 +87,7 @@ export default Component.extend({
     }
   },
 
+  /* istanbul ignore next */
   _keypressHandler(e) {
     if (Foundation.MediaQuery.atLeast('medium')) {
       if (!get(this, 'isTransitioning')) {
@@ -94,6 +100,7 @@ export default Component.extend({
     }
   },
 
+  /* istanbul ignore next */
   _scrollHandler(e) {
     if (Foundation.MediaQuery.atLeast('medium')) {
       const getAverage = (elements, number) => {
