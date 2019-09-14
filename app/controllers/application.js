@@ -4,6 +4,7 @@ import {
   get,
   set,
 } from '@ember/object';
+import { later } from '@ember/runloop';
 import { inject as service } from '@ember/service';
 
 import routeOrder from '../route-order';
@@ -64,7 +65,7 @@ export default Controller.extend({
       ind -= 1;
       if (ind >= 0) {
         this.transitionToRoute(routeOrder[ind].route);
-        setTimeout(() => {
+        later(this, function() {
           set(this, 'isTransitioning', false);
         }, 1500);
       } else {
@@ -78,7 +79,7 @@ export default Controller.extend({
       ind += 1;
       if (ind > 0 && ind < routeOrder.length) {
         this.transitionToRoute(routeOrder[ind].route);
-        setTimeout(() => {
+        later(this, function() {
           set(this, 'isTransitioning', false);
         }, 1500);
       } else {

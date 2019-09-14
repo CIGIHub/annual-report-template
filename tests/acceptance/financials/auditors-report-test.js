@@ -1,6 +1,7 @@
-import { module, test } from 'qunit';
-import { visit, currentURL } from '@ember/test-helpers';
+import finishRender from 'annual-report-2019/tests/helpers/finish-render';
+import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
+import { module, test } from 'qunit';
 
 module('Acceptance | financials - auditors report', function(hooks) {
   setupApplicationTest(hooks);
@@ -8,7 +9,7 @@ module('Acceptance | financials - auditors report', function(hooks) {
   test('visiting /financials/auditors-report', async function(assert) {
     await visit('/financials/auditors-report');
 
-    assert.equal(currentURL(), '/financials/auditors-report');
+    assert.strictEqual(currentURL(), '/financials/auditors-report');
   });
 
   test('should have correct head title', async function(assert) {
@@ -40,6 +41,50 @@ module('Acceptance | financials - auditors report', function(hooks) {
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
       'https://www.cigionline.org/interactives/2019annualreport/financials/auditors-report/',
+    );
+  });
+
+  test('should transition to /timeline on scroll-arrow-up-btn click', async function(assert) {
+    await visit('/financials/auditors-report');
+    assert.strictEqual(
+      currentURL(),
+      '/financials/auditors-report',
+      '[setup] should be at route /financials/auditors-report',
+    );
+
+    assert.ok(
+      document.querySelector('.scroll-arrow-up-btn'),
+      'should find scroll-arrow-up-btn',
+    );
+    await click('.scroll-arrow-up-btn');
+    await finishRender();
+
+    assert.strictEqual(
+      currentURL(),
+      '/timeline',
+      'should be at route /timeline',
+    );
+  });
+
+  test('should transition to /thank-you on scroll-arrow-down-btn click', async function(assert) {
+    await visit('/financials/auditors-report');
+    assert.strictEqual(
+      currentURL(),
+      '/financials/auditors-report',
+      '[setup] should be at route /financials/auditors-report',
+    );
+
+    assert.ok(
+      document.querySelector('.scroll-arrow-down-btn'),
+      'should find scroll-arrow-down-btn',
+    );
+    await click('.scroll-arrow-down-btn');
+    await finishRender();
+
+    assert.strictEqual(
+      currentURL(),
+      '/thank-you',
+      'should be at route /thank-you',
     );
   });
 });
