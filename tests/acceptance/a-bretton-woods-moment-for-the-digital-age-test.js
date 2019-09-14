@@ -1,6 +1,7 @@
-import { module, test } from 'qunit';
-import { visit, currentURL } from '@ember/test-helpers';
+import finishRender from 'annual-report-2019/tests/helpers/finish-render';
+import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
+import { module, test } from 'qunit';
 
 module('Acceptance | a bretton woods moment for the digital age', function(hooks) {
   setupApplicationTest(hooks);
@@ -8,7 +9,7 @@ module('Acceptance | a bretton woods moment for the digital age', function(hooks
   test('visiting /a-bretton-woods-moment-for-the-digital-age', async function(assert) {
     await visit('/a-bretton-woods-moment-for-the-digital-age');
 
-    assert.equal(currentURL(), '/a-bretton-woods-moment-for-the-digital-age');
+    assert.strictEqual(currentURL(), '/a-bretton-woods-moment-for-the-digital-age');
   });
 
   test('should have correct head title', async function(assert) {
@@ -42,5 +43,31 @@ module('Acceptance | a bretton woods moment for the digital age', function(hooks
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
       'https://www.cigionline.org/interactives/2019annualreport/a-bretton-woods-moment-for-the-digital-age/',
     );
+  });
+
+  test('should transition to /protecting-elections-from-foreign-interference on scroll-arrow-up-btn-click', async function(assert) {
+    await visit('/a-bretton-woods-moment-for-the-digital-age');
+
+    assert.ok(
+      document.querySelector('.scroll-arrow-up-btn'),
+      'should find scroll-arrow-up-btn',
+    );
+    await click('.scroll-arrow-up-btn');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/protecting-elections-from-foreign-interference');
+  });
+
+  test('should transition to /informing-the-debate-around-internet-security-and-trust on scroll-arrow-down-btn-click', async function(assert) {
+    await visit('/a-bretton-woods-moment-for-the-digital-age');
+
+    assert.ok(
+      document.querySelector('.scroll-arrow-down-btn'),
+      'should find scroll-arrow-down-btn',
+    );
+    await click('.scroll-arrow-down-btn');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/informing-the-debate-around-internet-security-and-trust');
   });
 });

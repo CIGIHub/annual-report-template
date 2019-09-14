@@ -1,6 +1,7 @@
-import { module, test } from 'qunit';
-import { visit, currentURL } from '@ember/test-helpers';
+import finishRender from 'annual-report-2019/tests/helpers/finish-render';
+import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
+import { module, test } from 'qunit';
 
 module('Acceptance | thank you', function(hooks) {
   setupApplicationTest(hooks);
@@ -40,6 +41,28 @@ module('Acceptance | thank you', function(hooks) {
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
       'https://www.cigionline.org/interactives/2019annualreport/thank-you/',
+    );
+  });
+
+  test('should transition to /financials/auditor-report on scroll-arrow-up-btn click', async function(assert) {
+    await visit('/thank-you');
+
+    assert.ok(
+      document.querySelector('.scroll-arrow-up-btn'),
+      'should find scroll-arrow-up-btn',
+    );
+    await click('.scroll-arrow-up-btn');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/financials/auditors-report');
+  });
+
+  test('should not find scroll-arrow-down-btn', async function(assert) {
+    await visit('/thank-you');
+
+    assert.notOk(
+      document.querySelector('.scroll-arrow-down-btn'),
+      'should find scroll-arrow-down-btn',
     );
   });
 });

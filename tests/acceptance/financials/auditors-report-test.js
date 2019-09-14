@@ -46,11 +46,6 @@ module('Acceptance | financials - auditors report', function(hooks) {
 
   test('should transition to /timeline on scroll-arrow-up-btn click', async function(assert) {
     await visit('/financials/auditors-report');
-    assert.strictEqual(
-      currentURL(),
-      '/financials/auditors-report',
-      '[setup] should be at route /financials/auditors-report',
-    );
 
     assert.ok(
       document.querySelector('.scroll-arrow-up-btn'),
@@ -59,20 +54,11 @@ module('Acceptance | financials - auditors report', function(hooks) {
     await click('.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(
-      currentURL(),
-      '/timeline',
-      'should be at route /timeline',
-    );
+    assert.strictEqual(currentURL(), '/timeline');
   });
 
   test('should transition to /thank-you on scroll-arrow-down-btn click', async function(assert) {
     await visit('/financials/auditors-report');
-    assert.strictEqual(
-      currentURL(),
-      '/financials/auditors-report',
-      '[setup] should be at route /financials/auditors-report',
-    );
 
     assert.ok(
       document.querySelector('.scroll-arrow-down-btn'),
@@ -81,10 +67,6 @@ module('Acceptance | financials - auditors report', function(hooks) {
     await click('.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(
-      currentURL(),
-      '/thank-you',
-      'should be at route /thank-you',
-    );
+    assert.strictEqual(currentURL(), '/thank-you');
   });
 });

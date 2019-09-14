@@ -1,6 +1,7 @@
-import { module, test } from 'qunit';
-import { visit, currentURL } from '@ember/test-helpers';
+import finishRender from 'annual-report-2019/tests/helpers/finish-render';
+import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
+import { module, test } from 'qunit';
 
 module('Acceptance | a clarion call for protecting the worlds refugees', function(hooks) {
   setupApplicationTest(hooks);
@@ -41,5 +42,31 @@ module('Acceptance | a clarion call for protecting the worlds refugees', functio
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
       'https://www.cigionline.org/interactives/2019annualreport/a-clarion-call-for-protecting-the-worlds-refugees/',
     );
+  });
+
+  test('should transition to /building-closer-ties-between-canada-and-india on scroll-arrow-up-btn click', async function(assert) {
+    await visit('/a-clarion-call-for-protecting-the-worlds-refugees');
+
+    assert.ok(
+      document.querySelector('.scroll-arrow-up-btn'),
+      'should find scroll-arrow-up-btn',
+    );
+    await click('.scroll-arrow-up-btn');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/building-closer-ties-between-canada-and-india');
+  });
+
+  test('should transition to /governing-cyberspace-during-a-crisis-in-trust on scroll-arrow-down-btn click', async function(assert) {
+    await visit('/a-clarion-call-for-protecting-the-worlds-refugees');
+
+    assert.ok(
+      document.querySelector('.scroll-arrow-down-btn'),
+      'should find scroll-arrow-down-btn',
+    );
+    await click('.scroll-arrow-down-btn');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/governing-cyberspace-during-a-crisis-in-trust');
   });
 });

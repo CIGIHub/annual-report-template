@@ -1,6 +1,7 @@
-import { module, test } from 'qunit';
-import { visit, currentURL } from '@ember/test-helpers';
+import finishRender from 'annual-report-2019/tests/helpers/finish-render';
+import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
+import { module, test } from 'qunit';
 
 module('Acceptance | presidents message', function(hooks) {
   setupApplicationTest(hooks);
@@ -41,5 +42,31 @@ module('Acceptance | presidents message', function(hooks) {
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
       'https://www.cigionline.org/interactives/2019annualreport/presidents-message/',
     );
+  });
+
+  test('should transition to /chairs-message on scroll-arrow-up-btn click', async function(assert) {
+    await visit('/presidents-message');
+
+    assert.ok(
+      document.querySelector('.scroll-arrow-up-btn'),
+      'should find scroll-arrow-up-btn',
+    );
+    await click('.scroll-arrow-up-btn');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/chairs-message');
+  });
+
+  test('should transition to /building-closer-ties-between-canada-and-india on scroll-arrow-down-btn click', async function(assert) {
+    await visit('/presidents-message');
+
+    assert.ok(
+      document.querySelector('.scroll-arrow-down-btn'),
+      'should find scroll-arrow-down-btn',
+    );
+    await click('.scroll-arrow-down-btn');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/building-closer-ties-between-canada-and-india');
   });
 });
