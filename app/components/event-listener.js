@@ -19,11 +19,10 @@ export default Component.extend({
     });
 
     const isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0) || (navigator.maxTouchPoints));
-    /* istanbul ignore next */
+    /* istanbul ignore if */
     if (isTouch) {
       let pointerDown = 'MSPointerDown';
       let pointerMove = 'MSPointerMove';
-      /* istanbul ignore next */
       if (window.PointerEvent) {
         pointerDown = 'pointerdown';
         pointerMove = 'pointermove';
@@ -52,7 +51,7 @@ export default Component.extend({
   },
 
   _touchStartHandler(ev) {
-    /* istanbul ignore next */
+    /* istanbul ignore if */
     if (Foundation.MediaQuery.atLeast('medium')) {
       const e = ev.originalEvent;
       /* istanbul ignore next */
@@ -65,21 +64,18 @@ export default Component.extend({
   },
 
   _touchMoveHandler(ev) {
-    /* istanbul ignore next */
+    /* istanbul ignore if */
     if (Foundation.MediaQuery.atLeast('medium')) {
       const e = ev.originalEvent;
 
-      /* istanbul ignore next */
       if (this._isReallyTouch(e) && !get(this, 'isTransitioning')) {
         const touchCoordinates = this._getTouchCoordinates(e);
         const touchEndY = touchCoordinates.y;
         const touchEndX = touchCoordinates.x;
 
         // Only want to consider vertical swipes
-        /* istanbul ignore next */
         if (Math.abs(get(this, 'touchStartY') - touchEndY)
             > Math.abs(get(this, 'touchStartX') - touchEndX)) {
-          /* istanbul ignore next */
           if (Math.abs(get(this, 'touchStartY') - touchEndY)
               > ($(document).height() / (100 * 5))) {
             if (get(this, 'touchStartY') > touchEndY) {
@@ -96,7 +92,7 @@ export default Component.extend({
   },
 
   _keypressHandler(e) {
-    /* istanbul ignore next */
+    /* istanbul ignore if */
     if (Foundation.MediaQuery.atLeast('medium')) {
       if (!get(this, 'isTransitioning')) {
         if (e.keyCode === 38) {
@@ -109,7 +105,7 @@ export default Component.extend({
   },
 
   _scrollHandler(e) {
-    /* istanbul ignore next */
+    /* istanbul ignore if */
     if (Foundation.MediaQuery.atLeast('medium')) {
       const getAverage = (elements, number) => {
         let sum = 0;
@@ -120,11 +116,9 @@ export default Component.extend({
 
         return Math.ceil(sum / number);
       };
-      /* istanbul ignore next */
       const currentTime = new Date().getTime();
       const ev = e.originalEvent;
       const value = ev.wheelDelta || -ev.deltaY || -ev.detail;
-      /* istanbul ignore next */
       const delta = Math.max(-1, Math.min(1, value));
 
       const horizontalDetection = typeof ev.wheelDeltaX !== 'undefined'
@@ -145,15 +139,11 @@ export default Component.extend({
         set(this, 'scrollings', []);
       }
 
-      /* istanbul ignore next */
       const averageEnd = getAverage(get(this, 'scrollings'), 10);
-      /* istanbul ignore next */
       const averageMiddle = getAverage(get(this, 'scrollings'), 70);
-      /* istanbul ignore next */
       const isAccelerating = averageEnd >= averageMiddle;
 
       if (isAccelerating && isScrollingVertically) {
-        /* istanbul ignore next */
         if (delta < 0) {
           if (!get(this, 'isTransitioning')) {
             get(this, 'transitionNext')();
