@@ -42,6 +42,20 @@ export default Controller.extend({
     return get(this, 'dotNavShown') || onContentSlide;
   }),
 
+  showScrollArrowDown: computed('router.currentRouteName', function() {
+    const currentRouteName = get(this, 'router.currentRouteName');
+    return currentRouteName !== routeOrder[routeOrder.length - 1].route
+      && !routeOrder[routeOrder.length - 1].subRoutes.includes(currentRouteName)
+      && currentRouteName !== '404';
+  }),
+
+  showScrollArrowUp: computed('router.currentRouteName', function() {
+    const currentRouteName = get(this, 'router.currentRouteName');
+    return currentRouteName !== routeOrder[0].route
+      && !routeOrder[0].subRoutes.includes(currentRouteName)
+      && currentRouteName !== '404';
+  }),
+
   actions: {
     transitionBack() {
       set(this, 'isTransitioning', true);
