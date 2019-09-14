@@ -20,7 +20,7 @@ export default Component.extend({
 
     const isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0) || (navigator.maxTouchPoints));
     /* istanbul ignore if */
-    if (isTouch) {
+    if (/* istanbul ignore next */ isTouch) {
       let pointerDown = 'MSPointerDown';
       let pointerMove = 'MSPointerMove';
       if (window.PointerEvent) {
