@@ -1752,7 +1752,7 @@ export default /* istanbul ignore next */ function() {
       }],
     }),
   );
-  /* istanbul ignore next *//* istanbul ignore next */
+  /* istanbul ignore next */
   this.transition(
     this.fromRoute('building-closer-ties-between-canada-and-india'),
     this.toRoute('governing-cyberspace-during-a-crisis-in-trust'),
