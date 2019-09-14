@@ -1,6 +1,8 @@
 {{head-layout}}
 {{top-bar lightBackground=lightBackground}}
-{{liquid-outlet}}
+{{#event-listener isTransitioning=isTransitioning transitionBack=(action "transitionBack") transitionNext=(action "transitionNext")}}
+  {{liquid-outlet}}
+{{/event-listener}}
 {{#if showDotNav}}
   {{dot-nav lightBackground=lightBackground}}
 {{/if}}
