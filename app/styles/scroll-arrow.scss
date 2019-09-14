@@ -12,6 +12,7 @@
 }
 
 .scroll-arrow {
+  border-color: $white;
   border-style: solid;
   cursor: pointer;
   display: block;
@@ -27,7 +28,11 @@
     border-color: $cigi-red;
   }
 
-  &.scroll-arrow-up {
+  &.light-background {
+    border-color: $black;
+  }
+
+  &.scroll-arrow-up-btn {
     border-width: 1px 0 0 1px;
     top: 40px;
     transform: rotate(45deg) translateX(-75%);
@@ -37,7 +42,7 @@
     }
   }
 
-  &.scroll-arrow-down {
+  &.scroll-arrow-down-btn {
     border-width: 0 1px 1px 0;
     bottom: 10px;
     transform: rotate(45deg) translateX(-75%);

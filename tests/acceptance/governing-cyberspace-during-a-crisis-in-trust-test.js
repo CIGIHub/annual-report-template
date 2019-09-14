@@ -1,6 +1,7 @@
-import { module, test } from 'qunit';
-import { visit, currentURL } from '@ember/test-helpers';
+import finishRender from 'annual-report-2019/tests/helpers/finish-render';
+import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
+import { module, test } from 'qunit';
 
 module('Acceptance | governing cyberspace during a crisis in trust', function(hooks) {
   setupApplicationTest(hooks);
@@ -41,5 +42,31 @@ module('Acceptance | governing cyberspace during a crisis in trust', function(ho
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
       'https://www.cigionline.org/interactives/2019annualreport/governing-cyberspace-during-a-crisis-in-trust/',
     );
+  });
+
+  test('should transition to /a-clarion-call-for-protecting-the-worlds-refugees on scroll-arrow-up-btn click', async function(assert) {
+    await visit('/governing-cyberspace-during-a-crisis-in-trust');
+
+    assert.ok(
+      document.querySelector('.scroll-arrow-up-btn'),
+      'should find scroll-arrow-up-btn',
+    );
+    await click('.scroll-arrow-up-btn');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/a-clarion-call-for-protecting-the-worlds-refugees');
+  });
+
+  test('should transition to /governing-the-digital-public-sphere on scroll-arrow-down-btn click', async function(assert) {
+    await visit('/governing-cyberspace-during-a-crisis-in-trust');
+
+    assert.ok(
+      document.querySelector('.scroll-arrow-down-btn'),
+      'should find scroll-arrow-down-btn',
+    );
+    await click('.scroll-arrow-down-btn');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/governing-the-digital-public-sphere');
   });
 });

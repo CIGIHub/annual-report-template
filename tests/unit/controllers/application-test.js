@@ -218,6 +218,7 @@ module('Unit | Controller | application', function(hooks) {
   });
 
   // TEST COMPUTED: showDotNav
+
   test('should have showDotNav=false for /', function(assert) {
     const controller = this.owner.lookup('controller:application');
     set(controller, 'router.currentRouteName', 'index');
@@ -372,6 +373,66 @@ module('Unit | Controller | application', function(hooks) {
     set(controller, 'router.currentRouteName', 'timeline');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
+  });
+
+  // TEST COMPUTED: showScrollArrowDown
+
+  test('should have showScrollArrowDown=true for /', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'index');
+
+    assert.strictEqual(get(controller, 'showScrollArrowDown'), true);
+  });
+
+  test('should have showScrollArrowDown=true for /timeline', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'timeline');
+
+    assert.strictEqual(get(controller, 'showScrollArrowDown'), true);
+  });
+
+  test('should have showScrollArrowDown=false for /thank-you', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'thank-you');
+
+    assert.strictEqual(get(controller, 'showScrollArrowDown'), false);
+  });
+
+  test('should have showScrollArrowDown=false for /404', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', '404');
+
+    assert.strictEqual(get(controller, 'showScrollArrowDown'), false);
+  });
+
+  // TEST COMPUTED: showScrollArrowUp
+
+  test('should have showScrollArrowUp=false for /', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'index');
+
+    assert.strictEqual(get(controller, 'showScrollArrowUp'), false);
+  });
+
+  test('should have showScrollArrowUp=true for /table-of-contents', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'table-of-contents');
+
+    assert.strictEqual(get(controller, 'showScrollArrowUp'), true);
+  });
+
+  test('should have showScrollArrowUp=true for /thank-you', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'thank-you');
+
+    assert.strictEqual(get(controller, 'showScrollArrowUp'), true);
+  });
+
+  test('should have showScrollArrowUp=false for /404', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', '404');
+
+    assert.strictEqual(get(controller, 'showScrollArrowUp'), false);
   });
 
   // TEST ACTION: transitionBack

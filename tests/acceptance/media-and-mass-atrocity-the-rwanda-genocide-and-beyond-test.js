@@ -1,6 +1,7 @@
-import { module, test } from 'qunit';
-import { visit, currentURL } from '@ember/test-helpers';
+import finishRender from 'annual-report-2019/tests/helpers/finish-render';
+import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
+import { module, test } from 'qunit';
 
 module('Acceptance | media and mass atrocity the rwanda genocide and beyond', function(hooks) {
   setupApplicationTest(hooks);
@@ -41,5 +42,31 @@ module('Acceptance | media and mass atrocity the rwanda genocide and beyond', fu
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
       'https://www.cigionline.org/interactives/2019annualreport/media-and-mass-atrocity-the-rwanda-genocide-and-beyond/',
     );
+  });
+
+  test('should transition to /governing-the-digital-public-sphere on scroll-arrow-up-btn click', async function(assert) {
+    await visit('/media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+
+    assert.ok(
+      document.querySelector('.scroll-arrow-up-btn'),
+      'should find scroll-arrow-up-btn',
+    );
+    await click('.scroll-arrow-up-btn');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/governing-the-digital-public-sphere');
+  });
+
+  test('should transition to /braiding-legal-orders on scroll-arrow-down-btn click', async function(assert) {
+    await visit('/media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+
+    assert.ok(
+      document.querySelector('.scroll-arrow-down-btn'),
+      'should find scroll-arrow-down-btn',
+    );
+    await click('.scroll-arrow-down-btn');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/braiding-legal-orders');
   });
 });

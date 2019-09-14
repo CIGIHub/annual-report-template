@@ -76,7 +76,7 @@ export default Component.extend({
         });
       }, 300));
 
-      $('.scroll-arrow-up').fadeIn();
+      $('.scroll-arrow-up-btn').fadeIn();
     },
     facebookShare() {
       /* istanbul ignore next */
@@ -105,7 +105,7 @@ export default Component.extend({
 
       /* istanbul ignore next */
       if ($(window).width() <= 425) {
-        $('.scroll-arrow-up').css({
+        $('.scroll-arrow-up-btn').css({
           'display': 'none',
         });
       }
