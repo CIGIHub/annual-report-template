@@ -1,4 +1,6 @@
 {{head-layout}}
-{{top-bar}}
+{{top-bar lightBackground=lightBackground}}
 {{liquid-outlet}}
-{{dot-nav}}
+{{#if showDotNav}}
+  {{dot-nav lightBackground=lightBackground}}
+{{/if}}
