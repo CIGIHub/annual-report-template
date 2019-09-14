@@ -1,12 +1,14 @@
 import { get, set } from '@ember/object';
 import { setupTest } from 'ember-qunit';
 import Service from '@ember/service';
+import lolex from 'lolex';
 import { module, test } from 'qunit';
 
 module('Unit | Controller | application', function(hooks) {
   setupTest(hooks);
 
   hooks.beforeEach(function() {
+    this.clock = lolex.install();
     this.owner.register('service:lightbox', Service.extend({
       showLightbox: null,
     }));
@@ -370,5 +372,65 @@ module('Unit | Controller | application', function(hooks) {
     set(controller, 'router.currentRouteName', 'timeline');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
+  });
+
+  // TEST ACTION: transitionBack
+
+  test('should immediately clear isTransitioning for /', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    controller.transitionToRoute = function() {
+      return true;
+    };
+    set(controller, 'router.currentRouteName', 'index');
+
+    controller.send('transitionBack');
+
+    assert.strictEqual(get(controller, 'isTransitioning'), false);
+  });
+
+  test('should transition for 1500ms for /table-of-contents', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    controller.transitionToRoute = function() {
+      return true;
+    };
+    set(controller, 'router.currentRouteName', 'table-of-contents');
+
+    controller.send('transitionBack');
+
+    assert.strictEqual(get(controller, 'isTransitioning'), true);
+    this.clock.tick(1450);
+    assert.strictEqual(get(controller, 'isTransitioning'), true);
+    this.clock.tick(55);
+    assert.strictEqual(get(controller, 'isTransitioning'), false);
+  });
+
+  // TEST ACTION: transitionNext
+
+  test('should immediately clear isTransitioning for /thank-you', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    controller.transitionToRoute = function() {
+      return true;
+    };
+    set(controller, 'router.currentRouteName', 'thank-you');
+
+    controller.send('transitionNext');
+
+    assert.strictEqual(get(controller, 'isTransitioning'), false);
+  });
+
+  test('should transition for 1500ms for /timeline', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    controller.transitionToRoute = function() {
+      return true;
+    };
+    set(controller, 'router.currentRouteName', 'timeline');
+
+    controller.send('transitionNext');
+
+    assert.strictEqual(get(controller, 'isTransitioning'), true);
+    this.clock.tick(1450);
+    assert.strictEqual(get(controller, 'isTransitioning'), true);
+    this.clock.tick(55);
+    assert.strictEqual(get(controller, 'isTransitioning'), false);
   });
 });
