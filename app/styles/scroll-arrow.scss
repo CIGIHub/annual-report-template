@@ -12,6 +12,7 @@
 }
 
 .scroll-arrow {
+  border-color: $white;
   border-style: solid;
   cursor: pointer;
   display: block;
@@ -25,6 +26,10 @@
 
   &:hover {
     border-color: $cigi-red;
+  }
+
+  &.light-background {
+    border-color: $black;
   }
 
   &.scroll-arrow-up {
