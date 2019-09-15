@@ -10,5 +10,5 @@
   <button class="scroll-arrow scroll-arrow-up-btn {{if lightBackground "light-background"}}" {{action "transitionBack"}}></button>
 {{/if}}
 {{#if showScrollArrowDown}}
-  <button class="scroll-arrow scroll-arrow-down-btn {{if lightBackground "light-background"}}" {{action "transitionNext"}}></button>
+  <button class="scroll-arrow scroll-arrow-down-btn {{if lightBackground "light-background"}} {{if bounceScrollArrowDown "bounce"}}" {{action "transitionNext"}}></button>
 {{/if}}

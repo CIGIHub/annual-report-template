@@ -16,6 +16,11 @@ export default Controller.extend({
   dotNavShown: false,
   isTransitioning: false,
 
+  bounceScrollArrowDown: computed('router.currentRouteName', function() {
+    // Add bounce animation to down scroll arrow on home slide
+    return get(this, 'router.currentRouteName') === 'index';
+  }),
+
   lightBackground: computed('router.currentRouteName', 'lightbox.showLightbox', function() {
     const lightBackgroundRoute = [
       'chairs-message',

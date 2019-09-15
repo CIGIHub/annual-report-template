@@ -23,6 +23,148 @@ module('Unit | Controller | application', function(hooks) {
     assert.ok(controller);
   });
 
+  // TEST COMPUTED: bounceScrollArrowDown
+
+  test('should have bounceScrollArrowDown=true for /', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'index');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), true);
+  });
+
+  test('should have bounceScrollArrowDown=false for /a-bretton-woods-moment-for-the-digital-age', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'a-bretton-woods-moment-for-the-digital-age');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /a-clarion-call-for-protecting-the-worlds-refugees', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'a-clarion-call-for-protecting-the-worlds-refugees');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /braiding-legal-orders', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'braiding-legal-orders');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /building-closer-ties-between-canada-and-india', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'building-closer-ties-between-canada-and-india');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /chairs-message', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'chairs-message');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /curbing-cultural-appropriation-through-intellectual-property-law', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'curbing-cultural-appropriation-through-intellectual-property-law');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /exploring-the-four-internets-and-the-geopolitics-of-digital-governance', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /financials/auditors-report', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'financials.auditors-report');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /governing-cyberspace-during-a-crisis-in-trust', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'governing-cyberspace-during-a-crisis-in-trust');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /governing-the-digital-public-sphere', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'governing-the-digital-public-sphere');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /informing-the-debate-around-internet-security-and-trust', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'informing-the-debate-around-internet-security-and-trust');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /media-and-mass-atrocity-the-rwanda-genocide-and-beyond', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /models-for-data-governance', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'models-for-data-governance');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /outputs-and-activities', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'outputs-and-activities');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /presidents-message', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'presidents-message');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /protecting-elections-from-foreign-interference', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'protecting-elections-from-foreign-interference');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /table-of-contents', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'table-of-contents');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /thank-you', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'thank-you');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
+  test('should have bounceScrollArrowDown=false for /timeline', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'timeline');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
   // TEST COMPUTED: lightBackground
 
   test('should have lightBackground=false for /', function(assert) {
