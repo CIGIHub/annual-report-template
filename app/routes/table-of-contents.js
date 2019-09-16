@@ -7,6 +7,12 @@ export default Route.extend({
   headData: service(),
   intl: service(),
 
+  queryParams: {
+    acknowledgements: {
+      refreshModel: true,
+    },
+  },
+
   afterModel() {
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}table-of-contents/`);
   },
