@@ -31,7 +31,7 @@ export default Component.extend({
     const links = get(this, 'routes').slice(get(this, 'linksBreakAtIndex'));
     return links.map((link, index) => ({
       current: link.route === currentRouteName,
-      number: Math.max(index + get(this, 'linksBreakAtIndex') - 1, 1).toString().padStart(2, '0'),
+      number: (index + get(this, 'linksBreakAtIndex') + 1).toString().padStart(2, '0'),
       route: link.route,
       title: get(this, 'intl').t(link.title),
     }));
