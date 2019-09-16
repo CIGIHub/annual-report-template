@@ -9,7 +9,10 @@ export default Component.extend({
 
   linksBreakAtIndex: 10,
 
-  leftLinks: computed('router.currentRouteName', function() {
+  leftLinks: computed('routes.[]', 'linksBreakAtIndex', 'router.currentRouteName', function() {
+    if (!get(this, 'routes')) {
+      return [];
+    }
     const currentRouteName = get(this, 'router.currentRouteName');
     const links = get(this, 'routes').slice(0, get(this, 'linksBreakAtIndex'));
     return links.map((link, index) => ({
@@ -20,12 +23,15 @@ export default Component.extend({
     }));
   }),
 
-  rightLinks: computed('router.currentRouteName', function() {
+  rightLinks: computed('routes.[]', 'linksBreakAtIndex', 'router.currentRouteName', function() {
+    if (!get(this, 'routes')) {
+      return [];
+    }
     const currentRouteName = get(this, 'router.currentRouteName');
     const links = get(this, 'routes').slice(get(this, 'linksBreakAtIndex'));
     return links.map((link, index) => ({
       current: link.route === currentRouteName,
-      number: (index + get(this, 'linksBreakAtIndex') - 1).toString().padStart(2, '0'),
+      number: Math.max(index + get(this, 'linksBreakAtIndex') - 1, 1).toString().padStart(2, '0'),
       route: link.route,
       title: get(this, 'intl').t(link.title),
     }));
