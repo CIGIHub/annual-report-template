@@ -2,18 +2,16 @@ import Component from '@ember/component';
 import { computed, get, set } from '@ember/object';
 import { inject as service } from '@ember/service';
 
-import routeOrder from '../route-order';
-
 export default Component.extend({
   intl: service(),
   lightbox: service(),
   router: service(),
 
-  linksBreakAtIndex: 12,
+  linksBreakAtIndex: 10,
 
   leftLinks: computed('router.currentRouteName', function() {
     const currentRouteName = get(this, 'router.currentRouteName');
-    const links = routeOrder.slice(2, get(this, 'linksBreakAtIndex'));
+    const links = get(this, 'routes').slice(0, get(this, 'linksBreakAtIndex'));
     return links.map((link, index) => ({
       current: link.route === currentRouteName,
       number: (index + 1).toString().padStart(2, '0'),
@@ -24,7 +22,7 @@ export default Component.extend({
 
   rightLinks: computed('router.currentRouteName', function() {
     const currentRouteName = get(this, 'router.currentRouteName');
-    const links = routeOrder.slice(get(this, 'linksBreakAtIndex'));
+    const links = get(this, 'routes').slice(get(this, 'linksBreakAtIndex'));
     return links.map((link, index) => ({
       current: link.route === currentRouteName,
       number: (index + get(this, 'linksBreakAtIndex') - 1).toString().padStart(2, '0'),
