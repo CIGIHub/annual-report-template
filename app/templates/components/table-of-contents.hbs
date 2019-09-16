@@ -1,0 +1,209 @@
+<div class="background-row background-table-of-contents">
+  <div class="hover-reveal hover-reveal-gradient-right show-for-medium">
+  </div>
+</div>
+<div class="table-of-contents">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x hover-reveal-hide">
+      <div class="cell">
+        <h1>{{t "annualReport"}}</h1>
+      </div>
+    </div>
+    <div class="grid-x grid-margin-x hover-reveal-hide">
+      <div class="cell">
+        <div class="toc-content">
+          <div class="toc-menu">
+            {{#if showAcknowledgementsTab}}
+              <a {{action "hideAcknowledgements"}}>{{t "tableOfContents.title"}}</a>
+            {{else}}
+              {{t "tableOfContents.title"}}
+            {{/if}}
+            <span>/</span>
+            {{#if showAcknowledgementsTab}}
+              {{t "acknowledgements.title"}}
+            {{else}}
+              <a {{action "showAcknowledgements"}}>{{t "acknowledgements.title"}}</a>
+            {{/if}}
+          </div>
+          {{#if showAcknowledgementsTab}}
+            <div class="grid-x credits-content credits-border">
+              <div class="cell full">
+                <p class="credits-message">{{t "acknowledgements.paragraph"}}</p>
+              </div>
+            </div>
+            <div class="grid-x credits-content">
+              <div class="cell full">
+                <h4 class="credits-title">{{t "acknowledgements.board"}}</h4>
+              </div>
+            </div>
+            <div class="grid-x credits-content">
+              <div class="cell medium-auto small-3 credits-block">
+                <h5>{{t "acknowledgements.chairName"}}</h5>
+                <h6>{{t "acknowledgements.chair"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block">
+                <h5>{{t "acknowledgements.treasurerName"}}</h5>
+                <h6>{{t "acknowledgements.treasurer"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block">
+                <h5>{{t "acknowledgements.director1Name"}}</h5>
+                <h6>{{t "acknowledgements.director"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block">
+                <h5>{{t "acknowledgements.director2Name"}}</h5>
+                <h6>{{t "acknowledgements.director"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block">
+                <h5>{{t "acknowledgements.director3Name"}}</h5>
+                <h6>{{t "acknowledgements.director"}}</h6>
+              </div>
+              <div class="cell small-3 credits-block show-for-small-only">
+                <h5>{{t "acknowledgements.director4Name"}}</h5>
+                <h6>{{t "acknowledgements.director"}}</h6>
+              </div>
+            </div>
+            <div class="grid-x credits-content credits-border">
+              <div class="cell medium-auto credits-block show-for-medium">
+                <h5>{{t "acknowledgements.director4Name"}}</h5>
+                <h6>{{t "acknowledgements.director"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block">
+                <h5>{{t "acknowledgements.director5Name"}}</h5>
+                <h6>{{t "acknowledgements.director"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block">
+                <h5>{{t "acknowledgements.director6Name"}}</h5>
+                <h6>{{t "acknowledgements.director"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block">
+                <h5>{{t "acknowledgements.director7Name"}}</h5>
+                <h6>{{t "acknowledgements.director"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block"></div>
+            </div>
+            <div class="grid-x credits-content executive-title">
+              <div class="cell full">
+                <h4 class="credits-title">{{t "acknowledgements.executiveTitle"}}</h4>
+              </div>
+            </div>
+            <div class="grid-x credits-content executive-credits">
+              <div class="cell medium-auto small-3  credits-block">
+                <h5>{{t "acknowledgements.presidentName"}}</h5>
+                <h6>{{t "acknowledgements.president"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3  credits-block">
+                <h5>{{t "acknowledgements.deputyDirectorPropertyLawName"}}</h5>
+                <h6>{{t "acknowledgements.deputyDirectorPropertyLaw"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3  credits-block">
+                <h5>{{t "acknowledgements.cfoName"}}</h5>
+                <h6>{{t "acknowledgements.cfo"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block">
+                <h5>{{t "acknowledgements.directorGEName"}}</h5>
+                <h6>{{t "acknowledgements.directorGE"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block">
+                <h5>{{t "acknowledgements.directorGEInterimName"}}</h5>
+                <h6>{{t "acknowledgements.directorGE"}} {{t "acknowledgements.directorGEInterim"}}</h6>
+              </div>
+              <div class="cell small-3 credits-block show-for-small-only">
+                <h5>{{t "acknowledgements.directorILRPName"}}</h5>
+                <h6>{{t "acknowledgements.directorILRP"}}</h6>
+              </div>
+            </div>
+            <div class="grid-x credits-content executive-credits">
+              <div class="cell medium-auto credits-block show-for-medium">
+                <h5>{{t "acknowledgements.directorILRPName"}}</h5>
+                <h6>{{t "acknowledgements.directorILRP"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block">
+                <h5>{{t "acknowledgements.directorGSName"}}</h5>
+                <h6>{{t "acknowledgements.directorGS"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block">
+                <h5>{{t "acknowledgements.directorHRName"}}</h5>
+                <h6>{{t "acknowledgements.directorHR"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block">
+                <h5>{{t "acknowledgements.directorHRRetiredName"}}</h5>
+                <h6>{{t "acknowledgements.directorHR"}} {{t "acknowledgements.directorHRRetired"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block">
+                <h5>{{t "acknowledgements.deputyDirectorEnvironmentalLawName"}}</h5>
+                <h6>{{t "acknowledgements.deputyDirectorEnvironmentalLaw"}}</h6>
+              </div>
+              <div class="cell small-3 credits-block show-for-small-only">
+                <h5>{{t "acknowledgements.deputyDirectorEconomicLawName"}}</h5>
+                <h6>{{t "acknowledgements.deputyDirectorEconomicLaw"}}</h6>
+              </div>
+              <div class="cell small-3 credits-block show-for-small-only">
+                <h5>{{t "acknowledgements.directorEvaluationPartnershipsName"}}</h5>
+                <h6>{{t "acknowledgements.directorEvaluationPartnerships"}}</h6>
+              </div>
+            </div>
+            <div class="grid-x credits-content executive-credits">
+              <div class="cell medium-auto credits-block show-for-medium">
+                <h5>{{t "acknowledgements.deputyDirectorEconomicLawName"}}</h5>
+                <h6>{{t "acknowledgements.deputyDirectorEconomicLaw"}}</h6>
+              </div>
+              <div class="cell medium-auto credits-block show-for-medium">
+                <h5>{{t "acknowledgements.directorEvaluationPartnershipsName"}}</h5>
+                <h6>{{t "acknowledgements.directorEvaluationPartnerships"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block">
+                <h5>{{t "acknowledgements.managingDirectorName"}}</h5>
+                <h6>{{t "acknowledgements.managingDirector"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block">
+                <h5>{{t "acknowledgements.directorCommunicationsName"}}</h5>
+                <h6>{{t "acknowledgements.directorCommunications"}}</h6>
+              </div>
+              <div class="cell medium-auto small-3 credits-block"></div>
+            </div>
+          {{else}}
+            <div class="grid-x slide-content">
+              <div class="cell medium-5">
+                {{#each leftLinks as |leftLink|}}
+                  <div class="grid-x slide-link">
+                    <div class="cell small-1 medium-1">
+                      <p class="slide-number {{if leftLink.current "slide-current"}}">
+                        {{leftLink.number}}
+                      </p>
+                    </div>
+                    <div class="cell small-11 medium-11">
+                      {{#if leftLink.current}}
+                        <span>{{leftLink.title}}</span>
+                      {{else}}
+                        {{#link-to leftLink.route}} {{leftLink.title}} {{/link-to}}
+                      {{/if}}
+                    </div>
+                  </div>
+                {{/each}}
+              </div>
+              <div class="cell medium-2"></div>
+              <div class="cell medium-5">
+                {{#each rightLinks as |rightLink|}}
+                  <div class="grid-x slide-link">
+                    <div class="cell small-1 medium-1">
+                      <p class="slide-number {{if rightLink.current "slide-current"}}">
+                        {{rightLink.number}}
+                      </p>
+                    </div>
+                    <div class="cell small-11 medium-11">
+                      {{#if rightLink.current}}
+                        <span>{{rightLink.title}}</span>
+                      {{else}}
+                        {{#link-to rightLink.route}} {{rightLink.title}} {{/link-to}}
+                      {{/if}}
+                    </div>
+                  </div>
+                {{/each}}
+              </div>
+            </div>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
