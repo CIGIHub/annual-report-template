@@ -123,12 +123,13 @@
         margin: 0 5px;
       }
 
-      a {
+      button {
         background-image: linear-gradient(transparent calc(100% - 4px), $cigi-red 10px);
         background-repeat: no-repeat;
         background-size: 0% 100%;
         color: $white;
         font-weight: 600;
+        text-transform: uppercase;
         transition: background-size 500ms;
 
         &:hover {

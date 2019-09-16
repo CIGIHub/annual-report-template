@@ -20,6 +20,11 @@ module('Unit | Component | top-bar', function(hooks) {
     }));
   });
 
+  test('it exists', function(assert) {
+    const component = this.owner.factoryFor('component:top-bar').create();
+    assert.ok(component);
+  });
+
   test('should hide menu when on table of contents route', function(assert) {
     const component = this.owner.factoryFor('component:top-bar').create();
     set(component, 'router.currentRouteName', 'table-of-contents');
