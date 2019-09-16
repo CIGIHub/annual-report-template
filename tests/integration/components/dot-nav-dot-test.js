@@ -1,7 +1,8 @@
-import { module, test } from 'qunit';
+import { set } from '@ember/object';
 import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
+import { module, test } from 'qunit';
 
 module('Integration | Component | dot-nav-dot', function(hooks) {
   setupRenderingTest(hooks);
@@ -16,7 +17,7 @@ module('Integration | Component | dot-nav-dot', function(hooks) {
   });
 
   test('should show title', async function(assert) {
-    this.set('menuItem', {
+    set(this, 'menuItem', {
       current: false,
       route: 'presidents-message',
       title: 'President’s Message',
@@ -31,7 +32,7 @@ module('Integration | Component | dot-nav-dot', function(hooks) {
   });
 
   test('should show div element for current page', async function(assert) {
-    this.set('menuItem', {
+    set(this, 'menuItem', {
       current: true,
       route: 'presidents-message',
       title: 'President’s Message',
@@ -43,7 +44,7 @@ module('Integration | Component | dot-nav-dot', function(hooks) {
   });
 
   test('should show link element when not current page', async function(assert) {
-    this.set('menuItem', {
+    set(this, 'menuItem', {
       current: false,
       route: 'presidents-message',
       title: 'President’s Message',
