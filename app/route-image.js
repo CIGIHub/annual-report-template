@@ -2,6 +2,7 @@ import ENV from 'annual-report-2019/config/environment';
 
 export default (routeName) => {
   const backgroundImages = {
+    'a-bretton-woods-moment-for-the-digital-age': '3E6r1xmCHg1kIA7w/a-bretton-woods-moment-for-the-digital-age.jpg',
     'a-clarion-call-for-protecting-the-worlds-refugees': '3E6r1xmCHg1kIA7w/a-clarion-call-for-protecting-the-worlds-refugees.png',
     'braiding-legal-orders': '3E6r1xmCHg1kIA7w/braiding-legal-orders.jpg',
     'building-closer-ties-between-canada-and-india': '3E6r1xmCHg1kIA7w/building-closer-ties-between-canada-and-india.jpg',
