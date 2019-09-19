@@ -12,6 +12,7 @@ export default (routeName) => {
     'media-and-mass-atrocity-the-rwanda-genocide-and-beyond': '3E6r1xmCHg1kIA7w/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.jpg',
     'models-for-data-governance': '3E6r1xmCHg1kIA7w/models-for-data-governance.jpg',
     'presidents-message': '3E6r1xmCHg1kIA7w/presidents-message.jpg',
+    'thank-you': '3E6r1xmCHg1kIA7w/thank-you.jpg',
   };
 
   let host = 'https://www.cigionline.org';

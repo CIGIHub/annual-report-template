@@ -1,0 +1,47 @@
+<div class="background-row show-for-medium">
+  <div class="background-image" style={{backgroundStyle}}></div>
+  <div class="background-overlay hover-reveal-hide"></div>
+  <div class="background-gradient-overlay hover-reveal-hide"></div>
+</div>
+<div class="content-slide hover-reveal-hide">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell large-6">
+        <div class="slide-title">
+          <h1>{{t "thankYou.title"}}</h1>
+        </div>
+        <div class="content-links">
+          {{#each links as |link|}}
+            <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener">
+              <div class="float-left content-link-icon">
+                {{fa-icon link.icon prefix="fal" size="lg"}}
+              </div>
+              <h4>{{link.type}}</h4>
+              <p>
+                <span class="underline">{{{link.title}}}</span>
+              </p>
+            </a>
+          {{/each}}
+        </div>
+      </div>
+      <div class="cell large-6 paragraphs">
+        <div>
+          <p>{{t "thankYou.paragraph1"}}</p>
+          <p>{{t "thankYou.paragraph2"}}</p>
+          <p>{{t "thankYou.paragraph3"}}</p>
+        </div>
+        <div class="content-image show-for-small-only">
+          <img src="https://res.cloudinary.com/cigi/image/upload/v1539280529/Annual%20Report%202018/slides/image/thank-you.jpg" alt={{t "thankYou.staffPhoto"}}>
+        </div>
+        <div class="content-links-mobile hide-for-large">
+          {{#each links as |link|}}
+            <a class="clearfix content-link-mobile" href={{link.link}} target="_blank" rel="noopener">
+              {{{link.title}}}
+            </a>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{footer-photo}}
