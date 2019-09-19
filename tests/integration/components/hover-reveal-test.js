@@ -3,19 +3,19 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-module('Integration | Component | event-listener', function(hooks) {
+module('Integration | Component | hover-reveal', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
-    await render(hbs`<EventListener />`);
+    await render(hbs`<HoverReveal />`);
 
     assert.equal(this.element.textContent.trim(), '');
 
     // Template block usage:
     await render(hbs`
-      <EventListener>
+      <HoverReveal>
         template block text
-      </EventListener>
+      </HoverReveal>
     `);
 
     assert.equal(this.element.textContent.trim(), 'template block text');

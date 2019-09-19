@@ -30,13 +30,13 @@
   }
 
   &.footer-dark {
-    .footer-icon {
+    .footer-icon-btn {
       border-color: $black;
       color: $black;
     }
   }
 
-  .footer-icon {
+  .footer-icon-btn {
     animation-duration: 1500ms;
     animation-name: footerFade;
     animation-timing-function: ease-in;

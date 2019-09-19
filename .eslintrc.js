@@ -24,11 +24,11 @@ module.exports = {
   rules: {
     'array-callback-return': ['off'],
     'ember/avoid-leaking-state-in-ember-objects': ['off'],
+    'ember/no-observers': ['off'],
     'ember/no-side-effects': ['off'],
     'func-names': ['off'],
     'import/no-extraneous-dependencies': ['off'],
     'import/no-unresolved': ['off'],
-    'no-inline-styles': ['off'],
     'no-underscore-dangle': ['off'],
     'prefer-arrow-callback': ['off'],
     'prefer-object-spread': ['off'],
