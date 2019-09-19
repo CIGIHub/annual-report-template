@@ -15,7 +15,17 @@ export default Controller.extend({
   }),
 
   links: computed('intl.locale', function() {
-    return [];
+    return [{
+      icon: 'comment-alt-lines',
+      link: 'https://www.cigionline.org/articles/reporting-atrocity',
+      title: get(this, 'intl').t('mediaAndMassAtrocityTheRwandaGenocideAndBeyond.link2'),
+      type: get(this, 'intl').t('article'),
+    }, {
+      icon: 'film',
+      link: 'https://www.cigionline.org/multimedia/video-reporting-atrocity',
+      title: get(this, 'intl').t('mediaAndMassAtrocityTheRwandaGenocideAndBeyond.link3'),
+      type: get(this, 'intl').t('video'),
+    }];
   }),
 
   paragraphs: computed('intl.locale', function() {
