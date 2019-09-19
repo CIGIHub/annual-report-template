@@ -130,7 +130,17 @@ index:
   year9: '9'
 informingTheDebateAroundInternetSecurityAndTrust:
   description: 'Now in its fifth year, the CIGI-Ipsos Global Survey on Internet Security and Trust is the world’s largest and most comprehensive survey of its kind, involving more than 25,000 internet users in over two dozen countries.'
+  link1: 'Read the press release for the 2019 CIGI-Ipsos Global Survey on Internet Security and Trust.'
+  link2: 'View the full survey results.'
+  paragraph1: 'Now in its fifth year, the CIGI-Ipsos Global Survey on Internet Security and Trust is the world’s largest and most comprehensive survey of its kind, involving more than 25,000 internet users in over two dozen countries.'
+  paragraph2: 'Conducted by Ipsos on behalf of CIGI, in partnership with the Internet Society and the United Nations Conference on Trade and Development, the survey provides invaluable insight into the views of internet users on a range of topics.'
+  paragraph3: 'The 2019 survey results made headlines around world — especially in Canada, with coverage in The Globe and Mail, National Post, La Presse, CBC News Network, CTV National News and more.'
+  paragraph4: 'From findings on how many people have fallen for fake news (84% said they had at least once) to what’s causing people to distrust the internet (75% said social media companies, just behind cyber criminals at 81%), the survey provided governments, policy makers, industry leaders and others with a host of critical data to inform decisions and advance debate in the internet governance and cyber security space.'
+  quote:
+    quote: '“This year’s survey of global attitudes not only underscores the fragility of the internet, but also netizens’ growing discomfort with social media and the power these corporations wield over their daily lives.”'
+    source: 'Fen Osler Hampson'
   title: 'Informing the Debate around Internet Security and Trust'
+media: 'Media'
 mediaAndMassAtrocityTheRwandaGenocideAndBeyond:
   description: 'Published in April 2019 to coincide with the twenty-fifth anniversary of the Rwanda genocide, this book revisits the key issues of the media-genocide nexus in Rwanda and how reporting has changed with social media. Media and Mass Atrocity provides a critical, and often grim, review of the Rwanda genocide.'
   link2: 'Read Allan Thompson’s long form exploration of the relationship between technology and war reporting'
@@ -184,6 +194,7 @@ publications: 'Publications'
 report: 'Report'
 resource: 'Resource'
 series: 'Series'
+survey: 'Survey'
 tableOfContents:
   title: 'Table of Contents'
 thankYou:
