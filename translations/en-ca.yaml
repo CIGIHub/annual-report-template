@@ -101,6 +101,7 @@ curbingCulturalAppropriationThroughIntellectualPropertyLaw:
 description: 'Explore a year of research, opinion and expertise in CIGI’s interactive annual report.'
 download: 'Download'
 essay: 'Essay'
+events: 'Events'
 exploringTheFourInternetsAndTheGeopoliticsOfDigitalGovernance:
   description: 'While the internet may have originally been designed to be open and transparent, its entrenchment in our daily lives has led to competing views on the role it should play in society and how it should be governed.'
   link1: 'Read Kieron O’Hara and Wendy Hall’s paper, <em>Four Internets: The Geopolitics of Digital Governance</em>.'
@@ -172,7 +173,12 @@ modelsForDataGovernance:
   quote:
     quote: 'Large-scale data sharing is not the only way — or even the most important way — to use data trusts in the public interest.'
   title: 'Models for Data Governance'
+opinions: 'Opinions'
 outputsAndActivities:
+  eventLink: 'Learn more about the event'
+  opinionLink: 'Read opinion'
+  pageCount: 'Page {page} of {total}'
+  publicationLink: 'Read this publication'
   title: 'Outputs and Activities'
 pageNotFound:
   paragraph1: 'The request page could not be found.'
