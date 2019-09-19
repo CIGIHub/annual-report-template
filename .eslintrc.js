@@ -20,6 +20,7 @@ module.exports = {
   globals: {
     'FB': true,
     'Foundation': true,
+    'nodes': true,
   },
   rules: {
     'array-callback-return': ['off'],
