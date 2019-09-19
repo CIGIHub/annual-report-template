@@ -163,6 +163,16 @@ presidentsMessage:
   title: 'President’s Message'
 protectingElectionsFromForeignInterference:
   description: 'Amid growing evidence that foreign interference has influenced elections in several Western democracies in recent years, CIGI partnered with the Transatlantic Commission on Election Integrity (TCEI) — a bi-partisan group launched by the Alliance of Democracies Foundation — to produce a joint report on Canada’s readiness to defend against this threat.'
+  link1: 'Read the full report on Canada’s efforts to combat election interference'
+  link2: 'Watch Allan Rock discuss the growing trend of foreign interference in elections, and Canada’s response'
+  link3: 'Read Allan Rock’s article on why regulating social media is critical to election integrity'
+  paragraph1: 'Amid growing evidence that foreign interference has influenced elections in several Western democracies in recent years, CIGI partnered with the Transatlantic Commission on Election Integrity (TCEI) — a bi-partisan group launched by the Alliance of Democracies Foundation — to produce a joint report on Canada’s readiness to defend against this threat.'
+  paragraph2: 'Prepared by TCEI Commissioner and former Canadian justice minister Allan Rock, Election Risk Monitor: Canada praised Canada for the “positive and commendable steps” it has taken to safeguard its democratic process ahead of the 2019 federal election and highlighted its “global leadership role” in this area.'
+  paragraph3: 'However, the report warned that important gaps remain — particularly the need for regulations that would require social media companies to take concrete action to help stop the spread of disinformation, and that would impose major sanctions should they fail to comply.'
+  paragraph4: 'The report received media coverage across Canada from The Globe and Mail, National Post and CBC.ca, among others, and helped advance an important discussion on how Canada and other democracies can protect against foreign interference.'
+  quote:
+    quote: '“Crucial to the health of democracies is the ability to have a conversation among voters that is frank, direct, and based in truth and reality — not distorted by some malicious foreign actor who wants to undermine the strength of our country.”'
+    source: 'Allan Rock'
   title: 'Protecting Elections from Foreign Interference'
 publication: 'Publication'
 publications: 'Publications'
