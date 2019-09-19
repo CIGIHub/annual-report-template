@@ -6,7 +6,7 @@ module('Unit | Controller | a-clarion-call-for-protecting-the-worlds-refugees', 
 
   // Replace this with your real tests.
   test('it exists', function(assert) {
-    let controller = this.owner.lookup('controller:a-clarion-call-for-protecting-the-worlds-refugees');
+    const controller = this.owner.lookup('controller:a-clarion-call-for-protecting-the-worlds-refugees');
     assert.ok(controller);
   });
 });
