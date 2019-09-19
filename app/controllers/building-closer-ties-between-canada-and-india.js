@@ -12,6 +12,7 @@ export default Controller.extend({
     const backgroundUrl = routeImage('building-closer-ties-between-canada-and-india');
     return htmlSafe(`background-image: url('${backgroundUrl}');`);
   }),
+
   links: computed('intl.locale', function() {
     return [{
       icon: 'film',
@@ -30,6 +31,7 @@ export default Controller.extend({
       type: get(this, 'intl').t('resource'),
     }];
   }),
+
   paragraphs: computed('intl.locale', function() {
     return [
       get(this, 'intl').t('buildingCloserTiesBetweenCanadaAndIndia.paragraph1'),
@@ -38,6 +40,7 @@ export default Controller.extend({
       get(this, 'intl').t('buildingCloserTiesBetweenCanadaAndIndia.paragraph4'),
     ];
   }),
+
   title: computed('intl.locale', function() {
     return get(this, 'intl').t('buildingCloserTiesBetweenCanadaAndIndia.title');
   }),
