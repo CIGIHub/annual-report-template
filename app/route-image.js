@@ -8,6 +8,7 @@ export default (routeName) => {
     'chairs-message': '3E6r1xmCHg1kIA7w/chairs-message.jpg',
     'governing-cyberspace-during-a-crisis-in-trust': '3E6r1xmCHg1kIA7w/governing-cyberspace-during-a-crisis-in-trust.jpg',
     'media-and-mass-atrocity-the-rwanda-genocide-and-beyond': '3E6r1xmCHg1kIA7w/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.jpg',
+    'models-for-data-governance': '3E6r1xmCHg1kIA7w/models-for-data-governance.jpg',
     'presidents-message': '3E6r1xmCHg1kIA7w/presidents-message.jpg',
   };
 
