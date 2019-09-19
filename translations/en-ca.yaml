@@ -108,6 +108,16 @@ pageNotFound:
   paragraph2: 'Please check the URL and try again.'
   title: '404: Page Not Found'
 presidentsMessage:
+  paragraph1: 'Today we are witnessing dramatic changes brought on by big data, AI and automation in the workplace. More than just technological advances, these changes are fundamentally impacting our economies, democratic systems and even the fabric of our societies.'
+  paragraph2: 'As a think tank focused on innovation, we have quickly brought our attention to these changes. We are assessing not only the opportunities they present but also the very real risks to citizens’ rights, international relations and the institutions we depend on, many of which are already under attack from nationalist movements.'
+  paragraph3: 'Questions about online privacy and the ability for governments and other actors to meddle in democratic processes and hack institutions became increasingly relevant this year with revelations of data misuse by Cambridge Analytica and government-led misinformation campaigns. Public-private partnerships for bridging the gaps between self-regulation and other types of governance will be vital. CIGI’s work with Stanford’s Global Digital Policy Incubator, Heritage Canada and others will provide insights to protect citizens’ rights.'
+  paragraph4: 'The increasingly digitalized economy also poses new challenges to the future of how we work. Through recent research and our collaboration with the Group of Seven (G7) and Group of Twenty (G20) processes, we have proposed approaches to preparing for the impacts of increased automation and AI on workforces.'
+  paragraph5: 'CIGI continues to conduct in-depth research and explore policy options in many areas, all of which are affected in one way or another by the rapid changes we are seeing in the digital world driven by innovation and technological change: trade analysis on renegotiations of the North American Free Trade Agreement (NAFTA); women’s economic empowerment; research-based solutions to global refugee system challenges; and new work focused on trade, finance and other issues with China and India.'
+  paragraph6: 'I am proud that CIGI is a leader on tackling the fundamental issues of our times. We have truly become a digital think tank for a digital era.'
+  quote: '“Today we are witnessing dramatic changes brought on by big data, AI and automation in the workplace.”'
+  signature:
+    name: 'Rohinton P. Medhora'
+    title: 'President, CIGI'
   title: 'President’s Message'
 protectingElectionsFromForeignInterference:
   description: 'Amid growing evidence that foreign interference has influenced elections in several Western democracies in recent years, CIGI partnered with the Transatlantic Commission on Election Integrity (TCEI) — a bi-partisan group launched by the Alliance of Democracies Foundation — to produce a joint report on Canada’s readiness to defend against this threat.'
