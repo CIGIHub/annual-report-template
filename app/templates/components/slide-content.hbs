@@ -1,0 +1,140 @@
+<div class="slide-content grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="cell large-6">
+      <div class="slide-title">
+        <h1>
+          {{slideTitle}}
+        </h1>
+      </div>
+      <div class="content-links">
+        {{#each links as |link|}}
+          {{#if link.publicationLink}}
+            <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener">
+              <div class="float-left content-link-icon">
+                {{fa-icon "file-alt" prefix="fal" size="lg"}}
+              </div>
+              <div class="content-copy">
+                <h4>{{t "contentSlides.publication"}}</h4>
+                <p>
+                  <span class="underline">
+                    {{{link.title}}}
+                  </span>
+                </p>
+              </div>
+            </a>
+          {{else if link.listenLink}}
+            <button class="clearfix content-link show-for-large" {{action "showSoundCloudLightbox" link.trackId link.trackTitle link.trackDescription}}>
+              <div class="float-left content-link-icon">
+                {{fa-icon "volume-up" prefix="fal" size="lg"}}
+              </div>
+              <div class="content-copy">
+                <h4>{{t "contentSlides.listen"}}</h4>
+                <p>
+                  <span class="underline">
+                    {{{link.title}}}
+                  </span>
+                </p>
+              </div>
+            </button>
+          {{else if link.videoLink}}
+            <button class="clearfix content-link show-for-large" {{action "showYouTubeLightbox" link.videoId link.videoTitle link.videoDescription}}>
+              <div class="float-left content-link-icon">
+                {{fa-icon "film" prefix="fal" size="lg"}}
+              </div>
+              <div class="content-copy">
+                <h4>{{t "contentSlides.watch"}}</h4>
+                <p>
+                  <span class="underline">
+                    {{{link.title}}}
+                  </span>
+                </p>
+              </div>
+            </button>
+          {{else if link.watchSeriesLink}}
+            <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener">
+              <div class="float-left content-link-icon">
+                {{fa-icon "film" prefix="fal" size="lg"}}
+              </div>
+              <div class="content-copy">
+                <h4>{{t "contentSlides.watch"}}</h4>
+                <p>
+                  <span class="underline">
+                    {{{link.title}}}
+                  </span>
+                </p>
+              </div>
+            </a>
+          {{else if link.opinionLink}}
+            <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener">
+              <div class="float-left content-link-icon">
+                {{fa-icon "comment-alt-lines" prefix="fal" size="lg"}}
+              </div>
+              <div class="content-copy">
+                <h4>{{t "contentSlides.opinion"}}</h4>
+                <p>
+                  <span class="underline">
+                    {{{link.title}}}
+                  </span>
+                </p>
+              </div>
+            </a>
+          {{else if link.mediaLink}}
+            <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener">
+              <div class="float-left content-link-icon">
+                {{fa-icon "newspaper" prefix="fal" size="lg"}}
+              </div>
+              <div class="content-copy">
+                <h4>{{t "contentSlides.media"}}</h4>
+                <p>
+                  <span class="underline">
+                    {{{link.title}}}
+                  </span>
+                </p>
+              </div>
+            </a>
+          {{else if link.surveyLink}}
+            <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener">
+              <div class="float-left content-link-icon">
+                {{fa-icon "chart-bar" prefix="fal" size="lg"}}
+              </div>
+              <div class="content-copy">
+                <h4>{{t "contentSlides.survey"}}</h4>
+                <p>
+                  <span class="underline">
+                    {{{link.title}}}
+                  </span>
+                </p>
+              </div>
+            </a>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+    <div class="cell large-6 paragraphs">
+      <div>
+        {{#each paragraphs as |paragraph|}}
+          <p>
+            {{{paragraph}}}
+          </p>
+        {{/each}}
+      </div>
+      <div class="content-links-mobile hide-for-large">
+        {{#each links as |link|}}
+          {{#if link.videoLink}}
+            <a class="clearfix content-link-mobile" href={{link.link}} target="_blank" rel="noopener">
+              {{{link.title}}}
+            </a>
+          {{else if link.listenLink}}
+            <a class="clearfix content-link-mobile" href={{link.link}} target="_blank" rel="noopener">
+              {{{link.title}}}
+            </a>
+          {{else}}
+            <a class="clearfix content-link-mobile" href={{link.link}} target="_blank" rel="noopener">
+              {{{link.title}}}
+            </a>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
