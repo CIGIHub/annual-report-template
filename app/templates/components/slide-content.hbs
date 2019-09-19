@@ -34,19 +34,9 @@
       </div>
       <div class="content-links-mobile hide-for-large">
         {{#each links as |link|}}
-          {{#if link.videoLink}}
-            <a class="clearfix content-link-mobile" href={{link.link}} target="_blank" rel="noopener">
-              {{{link.title}}}
-            </a>
-          {{else if link.listenLink}}
-            <a class="clearfix content-link-mobile" href={{link.link}} target="_blank" rel="noopener">
-              {{{link.title}}}
-            </a>
-          {{else}}
-            <a class="clearfix content-link-mobile" href={{link.link}} target="_blank" rel="noopener">
-              {{{link.title}}}
-            </a>
-          {{/if}}
+          <a class="clearfix content-link-mobile" href={{link.link}} target="_blank" rel="noopener">
+            {{{link.title}}}
+          </a>
         {{/each}}
       </div>
     </div>

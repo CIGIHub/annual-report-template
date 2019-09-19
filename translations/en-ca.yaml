@@ -99,6 +99,7 @@ curbingCulturalAppropriationThroughIntellectualPropertyLaw:
     quote: 'There is a gray zone between harmful misuse and permissible inspiration that creates an ideal breeding ground for cultural appropriation. Putting an end to cultural appropriation would require reform to IP laws, principles and systems to better control cultural representation.'
   title: 'Curbing Cultural Appropriation Through Intellectual Property Law'
 description: 'Explore a year of research, opinion and expertise in CIGI’s interactive annual report.'
+download: 'Download'
 essay: 'Essay'
 exploringTheFourInternetsAndTheGeopoliticsOfDigitalGovernance:
   description: 'While the internet may have originally been designed to be open and transparent, its entrenchment in our daily lives has led to competing views on the role it should play in society and how it should be governed.'
@@ -177,6 +178,7 @@ pageNotFound:
   paragraph1: 'The request page could not be found.'
   paragraph2: 'Please check the URL and try again.'
   title: '404: Page Not Found'
+partners: 'Partners'
 presidentsMessage:
   paragraph1: 'Today we are witnessing dramatic changes brought on by big data, AI and automation in the workplace. More than just technological advances, these changes are fundamentally impacting our economies, democratic systems and even the fabric of our societies.'
   paragraph2: 'As a think tank focused on innovation, we have quickly brought our attention to these changes. We are assessing not only the opportunities they present but also the very real risks to citizens’ rights, international relations and the institutions we depend on, many of which are already under attack from nationalist movements.'
@@ -208,10 +210,18 @@ qa: 'Q&A'
 report: 'Report'
 resource: 'Resource'
 series: 'Series'
+subscribe: 'Subscribe'
 survey: 'Survey'
 tableOfContents:
   title: 'Table of Contents'
 thankYou:
+  link1: 'Download the Annual Report PDF.'
+  link2: 'Télécharger le Rapport annuel en français (PDF).'
+  link3: 'Subscribe to CIGI’s newsletter.'
+  link4: 'Learn more about CIGI and its partners.'
+  paragraph1: 'The stories in this year’s annual report highlight only some of the high-quality and innovative work produced by CIGI’s staff and many experts in Canada and around the world.'
+  paragraph2: 'Over the coming year, we will continue to produce timely and relevant work, from launching the final report and recommendations of the WRC, to tackling issues around cyber security in a new essay series. Exploring issues around IP, data governance and AI will remain a major focus, including innovative uses of AI for our own research analysis.'
+  paragraph3: 'Sign up for our newsletter to get the latest updates about new publications, opinion articles, events and multimedia content on topics from across our programs and research areas.'
   title: 'Thank You'
 timeline:
   title: 'Explore Timeline'
