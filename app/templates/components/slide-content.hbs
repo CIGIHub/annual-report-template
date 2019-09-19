@@ -8,105 +8,19 @@
       </div>
       <div class="content-links">
         {{#each links as |link|}}
-          {{#if link.publicationLink}}
-            <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener">
-              <div class="float-left content-link-icon">
-                {{fa-icon "file-alt" prefix="fal" size="lg"}}
-              </div>
-              <div class="content-copy">
-                <h4>{{t "contentSlides.publication"}}</h4>
-                <p>
-                  <span class="underline">
-                    {{{link.title}}}
-                  </span>
-                </p>
-              </div>
-            </a>
-          {{else if link.listenLink}}
-            <button class="clearfix content-link show-for-large" {{action "showSoundCloudLightbox" link.trackId link.trackTitle link.trackDescription}}>
-              <div class="float-left content-link-icon">
-                {{fa-icon "volume-up" prefix="fal" size="lg"}}
-              </div>
-              <div class="content-copy">
-                <h4>{{t "contentSlides.listen"}}</h4>
-                <p>
-                  <span class="underline">
-                    {{{link.title}}}
-                  </span>
-                </p>
-              </div>
-            </button>
-          {{else if link.videoLink}}
-            <button class="clearfix content-link show-for-large" {{action "showYouTubeLightbox" link.videoId link.videoTitle link.videoDescription}}>
-              <div class="float-left content-link-icon">
-                {{fa-icon "film" prefix="fal" size="lg"}}
-              </div>
-              <div class="content-copy">
-                <h4>{{t "contentSlides.watch"}}</h4>
-                <p>
-                  <span class="underline">
-                    {{{link.title}}}
-                  </span>
-                </p>
-              </div>
-            </button>
-          {{else if link.watchSeriesLink}}
-            <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener">
-              <div class="float-left content-link-icon">
-                {{fa-icon "film" prefix="fal" size="lg"}}
-              </div>
-              <div class="content-copy">
-                <h4>{{t "contentSlides.watch"}}</h4>
-                <p>
-                  <span class="underline">
-                    {{{link.title}}}
-                  </span>
-                </p>
-              </div>
-            </a>
-          {{else if link.opinionLink}}
-            <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener">
-              <div class="float-left content-link-icon">
-                {{fa-icon "comment-alt-lines" prefix="fal" size="lg"}}
-              </div>
-              <div class="content-copy">
-                <h4>{{t "contentSlides.opinion"}}</h4>
-                <p>
-                  <span class="underline">
-                    {{{link.title}}}
-                  </span>
-                </p>
-              </div>
-            </a>
-          {{else if link.mediaLink}}
-            <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener">
-              <div class="float-left content-link-icon">
-                {{fa-icon "newspaper" prefix="fal" size="lg"}}
-              </div>
-              <div class="content-copy">
-                <h4>{{t "contentSlides.media"}}</h4>
-                <p>
-                  <span class="underline">
-                    {{{link.title}}}
-                  </span>
-                </p>
-              </div>
-            </a>
-          {{else if link.surveyLink}}
-            <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener">
-              <div class="float-left content-link-icon">
-                {{fa-icon "chart-bar" prefix="fal" size="lg"}}
-              </div>
-              <div class="content-copy">
-                <h4>{{t "contentSlides.survey"}}</h4>
-                <p>
-                  <span class="underline">
-                    {{{link.title}}}
-                  </span>
-                </p>
-              </div>
-            </a>
-          {{/if}}
+          <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener">
+            <div class="float-left content-link-icon">
+              {{fa-icon link.icon prefix="fal" size="lg"}}
+            </div>
+            <div class="content-copy">
+              <h4>{{link.type}}</h4>
+              <p>
+                <span class="underline">
+                  {{{link.title}}}
+                </span>
+              </p>
+            </div>
+          </a>
         {{/each}}
       </div>
     </div>

@@ -2,6 +2,7 @@ import ENV from 'annual-report-2019/config/environment';
 
 export default (routeName) => {
   const backgroundImages = {
+    'building-closer-ties-between-canada-and-india': '3E6r1xmCHg1kIA7w/building-closer-ties-between-canada-and-india.jpg',
     'chairs-message': '3E6r1xmCHg1kIA7w/chairs-message.jpg',
     'presidents-message': '3E6r1xmCHg1kIA7w/presidents-message.jpg',
   };

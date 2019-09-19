@@ -55,6 +55,16 @@ braidingLegalOrders:
   title: 'Braiding Legal Orders'
 buildingCloserTiesBetweenCanadaAndIndia:
   description: 'With India now one of the world’s fastest-growing economies and Canada seeking to diversity its trade relationships, CIGI has partnered with Gateway House, a foreign policy think tank in Mumbai, on the Canada-India Track 1.5 Dialogue on Innovation, Growth and Prosperity, a three-year initiative to explore areas for closer relations between the two countries.'
+  link1: 'CIGI President Rohinton P. Medhora and Gateway House Executive Director Manjeet Kripalani discuss the Canada-India Track 1.5 Dialogue.'
+  link2: 'Read the Canada-India Track 1.5 Dialogue paper series on how to expand Canada-India relations.'
+  link3: 'Learn more about the Canada-India Track 1.5 Dialogue.'
+  paragraph1: 'With India now one of the world’s fastest-growing economies and Canada seeking to diversity its trade relationships, CIGI has partnered with Gateway House, a foreign policy think tank in Mumbai, on the Canada-India Track 1.5 Dialogue on Innovation, Growth and Prosperity, a three-year initiative to explore areas for closer relations between the two countries.'
+  paragraph2: 'In October 2018, CIGI hosted the inaugural meeting in Ottawa, which focused on bilateral opportunities in cyber security, geoengineering, climate leadership and economic relations. Vikas Swarup, High Commissioner of India to Canada, and Nadir Patel, High Commissioner of Canada to India, provided opening remarks, with Jim Carr, Canada’s Minister of International Trade Diversification, delivering the keynote address.'
+  paragraph3: 'There was also a reception on Parliament Hill, co-hosted by CIGI, Minister Bardish Chagger and Senator Marty Deacon, that included a welcome statement from Prime Minister Justin Trudeau, and was attended by Ministers Navdeep Bains and Bill Morneau, among others.'
+  paragraph4: 'The meeting helped to advance important discussions between Canada and India, and resulted in a series of papers that will help create policies to promote innovation and fuel the continued growth of Canada-India relations.'
+  quote:
+    quote: '“The India-Canada relationship is like a $20 bill on the floor — it’s waiting to be picked up, but no one has done so.”'
+    source: 'Rohinton P. Medhora'
   title: 'Building Closer Ties between Canada and India'
 chairsMessage:
   paragraph1: 'Innovations in our digital world have significant impacts on how we communicate, conduct business and function as a society. In less than a generation, technological advances to artificial intelligence (AI) systems, driven by a wealth of big data, have led to scientific and industrial progress but also raised fears of privacy violations and a culture of mass surveillance.'
@@ -122,6 +132,9 @@ presidentsMessage:
 protectingElectionsFromForeignInterference:
   description: 'Amid growing evidence that foreign interference has influenced elections in several Western democracies in recent years, CIGI partnered with the Transatlantic Commission on Election Integrity (TCEI) — a bi-partisan group launched by the Alliance of Democracies Foundation — to produce a joint report on Canada’s readiness to defend against this threat.'
   title: 'Protecting Elections from Foreign Interference'
+publication: 'Publication'
+publications: 'Publications'
+resource: 'Resource'
 tableOfContents:
   title: 'Table of Contents'
 thankYou:
@@ -129,3 +142,4 @@ thankYou:
 timeline:
   title: 'Explore Timeline'
 title: '2019 CIGI Annual Report'
+video: 'Video'
