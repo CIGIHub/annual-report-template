@@ -6,6 +6,7 @@ export default (routeName) => {
     'building-closer-ties-between-canada-and-india': '3E6r1xmCHg1kIA7w/building-closer-ties-between-canada-and-india.jpg',
     'chairs-message': '3E6r1xmCHg1kIA7w/chairs-message.jpg',
     'governing-cyberspace-during-a-crisis-in-trust': '3E6r1xmCHg1kIA7w/governing-cyberspace-during-a-crisis-in-trust.jpg',
+    'media-and-mass-atrocity-the-rwanda-genocide-and-beyond': '3E6r1xmCHg1kIA7w/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.jpg',
     'presidents-message': '3E6r1xmCHg1kIA7w/presidents-message.jpg',
   };
 
