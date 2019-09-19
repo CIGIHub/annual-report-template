@@ -13,6 +13,7 @@ export default Controller.extend({
     const backgroundUrl = routeImage('a-clarion-call-for-protecting-the-worlds-refugees');
     return htmlSafe(`background-image: url('${backgroundUrl}');`);
   }),
+
   links: computed('intl.locale', function() {
     return [{
       icon: 'file-alt',
@@ -31,15 +32,18 @@ export default Controller.extend({
       type: get(this, 'intl').t('report'),
     }];
   }),
+
   paragraphs: computed('intl.locale', function() {
     return [
       get(this, 'intl').t('aClarionCallForProtectingTheWorldsRefugees.paragraph1'),
       get(this, 'intl').t('aClarionCallForProtectingTheWorldsRefugees.paragraph2'),
     ];
   }),
+
   title: computed('intl.locale', function() {
     return get(this, 'intl').t('aClarionCallForProtectingTheWorldsRefugees.title');
   }),
+
   videoLink: computed(function() {
     let host = 'https://www.cigionline.org';
     if (ENV.environment !== 'production' || process.env.STAGING) {
