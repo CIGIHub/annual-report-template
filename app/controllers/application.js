@@ -25,6 +25,7 @@ export default Controller.extend({
     const lightBackgroundRoute = [
       'chairs-message',
       'financials.auditors-report',
+      'financials.balance-sheet',
       'outputs-and-activities',
       'presidents-message',
     ].includes(get(this, 'router.currentRouteName'));
@@ -67,7 +68,8 @@ export default Controller.extend({
     transitionBack() {
       set(this, 'isTransitioning', true);
       const currentRouteName = get(this, 'router.currentRouteName');
-      let ind = routeOrder.findIndex((route) => currentRouteName === route.route);
+      let ind = routeOrder.findIndex((route) => currentRouteName === route.route
+        || route.subRoutes.includes(currentRouteName));
       ind -= 1;
       if (ind >= 0) {
         this.transitionToRoute(routeOrder[ind].route);
@@ -81,7 +83,8 @@ export default Controller.extend({
     transitionNext() {
       set(this, 'isTransitioning', true);
       const currentRouteName = get(this, 'router.currentRouteName');
-      let ind = routeOrder.findIndex((route) => currentRouteName === route.route);
+      let ind = routeOrder.findIndex((route) => currentRouteName === route.route
+        || route.subRoutes.includes(currentRouteName));
       ind += 1;
       if (ind > 0 && ind < routeOrder.length) {
         this.transitionToRoute(routeOrder[ind].route);
