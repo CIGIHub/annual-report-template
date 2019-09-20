@@ -1,12 +1,13 @@
 import Controller from '@ember/controller';
-import { computed } from '@ember/object';
+import { computed, get } from '@ember/object';
+import { inject as service } from '@ember/service';
 import { htmlSafe } from '@ember/template';
 
-import routeImage from '../route-image';
-
 export default Controller.extend({
+  backgroundImage: service(),
+
   backgroundStyle: computed(function() {
-    const backgroundUrl = routeImage('chairs-message');
-    return htmlSafe(`background-image: url('${backgroundUrl}');`);
+    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getBackgroundImage('chairs-message');
+    return htmlSafe(`background-image: url('${fullUrl}'), url('${blurUrl}');`);
   }),
 });

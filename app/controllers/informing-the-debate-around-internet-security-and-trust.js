@@ -4,14 +4,13 @@ import { computed, get } from '@ember/object';
 import { inject as service } from '@ember/service';
 import { htmlSafe } from '@ember/template';
 
-import routeImage from '../route-image';
-
 export default Controller.extend({
+  backgroundImage: service(),
   intl: service(),
 
   backgroundStyle: computed(function() {
-    const backgroundUrl = routeImage('informing-the-debate-around-internet-security-and-trust');
-    return htmlSafe(`background-image: url('${backgroundUrl}');`);
+    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getBackgroundImage('informing-the-debate-around-internet-security-and-trust');
+    return htmlSafe(`background-image: url('${fullUrl}'), url('${blurUrl}');`);
   }),
 
   links: computed('intl.locale', function() {
@@ -46,6 +45,6 @@ export default Controller.extend({
     if (ENV.environment !== 'production' || ENV.staging) {
       host = 'https://staging.cigionline.org';
     }
-    return `${host}/interactives/2019annualreport/static/3E6r1xmCHg1kIA7w/informing-the-debate-around-internet-security-and-trust.mp4`;
+    return `${host}/interactives/2019annualreport/static/QxRVvOjENvAGLXLQ/informing-the-debate-around-internet-security-and-trust.mp4`;
   }),
 });
