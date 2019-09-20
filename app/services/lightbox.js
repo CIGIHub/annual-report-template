@@ -25,11 +25,4 @@ export default Service.extend({
   showTableOfContentsAcknowledgements() {
     set(this, 'subType', 'acknowledgements');
   },
-
-  showYouTubeLightbox(videoId, videoTitle, videoDescription) {
-    set(this, 'youTubeVideoId', videoId);
-    set(this, 'youTubeVideoTitle', videoTitle);
-    set(this, 'youTubeVideoDescription', videoDescription);
-    set(this, 'showLightbox', 'youtube');
-  },
 });
