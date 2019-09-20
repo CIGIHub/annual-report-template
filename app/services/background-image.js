@@ -57,6 +57,10 @@ export default Service.extend({
     return 'https://www.cigionline.org';
   }),
 
+  getAllBlurImages() {
+    return get(this, 'backgroundImages').map((backgroundImage) => backgroundImage.blurUrl);
+  },
+
   getBackgroundImage(routeName) {
     if (get(this, 'backgroundImages')[routeName]
         && get(this, 'backgroundImages')[routeName].blurUrl
