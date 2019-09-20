@@ -14,6 +14,10 @@ export default Service.extend({
     set(this, 'subType', null);
   },
 
+  showPublicationLightbox() {
+    set(this, 'subType', 'publication');
+  },
+
   showTableOfContents() {
     set(this, 'showLightbox', 'tableofcontents');
   },

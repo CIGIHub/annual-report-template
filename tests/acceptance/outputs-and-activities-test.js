@@ -69,4 +69,76 @@ module('Acceptance | outputs and activities', function(hooks) {
 
     assert.strictEqual(currentURL(), '/timeline');
   });
+
+  test('should have correct view buttons on /outputs-and-activities', async function(assert) {
+    await visit('/outputs-and-activities');
+    await finishRender();
+
+    assert.notOk(
+      document.querySelector('.view-publications-btn'),
+      'should not find view-publications-btn',
+    );
+    assert.ok(
+      document.querySelector('.view-opinions-btn'),
+      'should find view-opinions-btn',
+    );
+    assert.ok(
+      document.querySelector('.view-events-btn'),
+      'should find view-events-btn',
+    );
+  });
+
+  test('should have correct view buttons on /outputs-and-activities?type=publications', async function(assert) {
+    await visit('/outputs-and-activities?type=publications');
+    await finishRender();
+
+    assert.notOk(
+      document.querySelector('.view-publications-btn'),
+      'should not find view-publications-btn',
+    );
+    assert.ok(
+      document.querySelector('.view-opinions-btn'),
+      'should find view-opinions-btn',
+    );
+    assert.ok(
+      document.querySelector('.view-events-btn'),
+      'should find view-events-btn',
+    );
+  });
+
+  test('should have correct view buttons on /outputs-and-activities?type=opinions', async function(assert) {
+    await visit('/outputs-and-activities?type=opinions');
+    await finishRender();
+
+    assert.ok(
+      document.querySelector('.view-publications-btn'),
+      'should find view-publications-btn',
+    );
+    assert.notOk(
+      document.querySelector('.view-opinions-btn'),
+      'should not find view-opinions-btn',
+    );
+    assert.ok(
+      document.querySelector('.view-events-btn'),
+      'should find view-events-btn',
+    );
+  });
+
+  test('should have correct view buttons on /outputs-and-activities?type=events', async function(assert) {
+    await visit('/outputs-and-activities?type=events');
+    await finishRender();
+
+    assert.ok(
+      document.querySelector('.view-publications-btn'),
+      'should find view-publications-btn',
+    );
+    assert.ok(
+      document.querySelector('.view-opinions-btn'),
+      'should find view-opinions-btn',
+    );
+    assert.notOk(
+      document.querySelector('.view-events-btn'),
+      'should not find view-events-btn',
+    );
+  });
 });

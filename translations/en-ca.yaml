@@ -61,6 +61,7 @@ aClarionCallForProtectingTheWorldsRefugees:
   title: 'A Clarion Call for Protecting the World’s Refugees'
 annualReport: 'Annual Report'
 article: 'Article'
+back: 'Back'
 braidingLegalOrders:
   description: 'Braiding Legal Orders is the culmination of the ILRP’s research over the past three years on the implementation in Canada of the United Nations Declaration on the Rights of Indigenous Peoples (UNDRIP).'
   paragraph1: '<em>Braiding Legal Orders</em> is the culmination of the ILRP’s research over the past three years on the implementation in Canada of the United Nations Declaration on the Rights of Indigenous Peoples (UNDRIP). Indigenous law experts discuss the relationship between international law, Indigenous people’s own laws and Canada’s constitutional narratives. Like a braid that gains strength from many strands woven together, authors of the book encourage readers to imagine a process of braiding together strands of constitutional, international and Indigenous people’s own laws. On June 4, 2019, the Honourable Mary Jane McCallum, Senator, referenced CIGI’s work on UNDRIP to the Canadian Senate on the third reading of Bill C-69 as she encouraged her fellow colleagues to support the Bill. <em>Braiding Legal Orders</em> made the \#1 spot on Amazon’s bestseller list in the categories of international law and civil law.'
@@ -101,6 +102,7 @@ curbingCulturalAppropriationThroughIntellectualPropertyLaw:
 description: 'Explore a year of research, opinion and expertise in CIGI’s interactive annual report.'
 download: 'Download'
 essay: 'Essay'
+events: 'Events'
 exploringTheFourInternetsAndTheGeopoliticsOfDigitalGovernance:
   description: 'While the internet may have originally been designed to be open and transparent, its entrenchment in our daily lives has led to competing views on the role it should play in society and how it should be governed.'
   link1: 'Read Kieron O’Hara and Wendy Hall’s paper, <em>Four Internets: The Geopolitics of Digital Governance</em>.'
@@ -172,7 +174,12 @@ modelsForDataGovernance:
   quote:
     quote: 'Large-scale data sharing is not the only way — or even the most important way — to use data trusts in the public interest.'
   title: 'Models for Data Governance'
+opinions: 'Opinions'
 outputsAndActivities:
+  eventLink: 'Learn more about the event'
+  opinionLink: 'Read opinion'
+  pageCount: 'Page {page} of {total}'
+  publicationLink: 'Read this publication'
   title: 'Outputs and Activities'
 pageNotFound:
   paragraph1: 'The request page could not be found.'

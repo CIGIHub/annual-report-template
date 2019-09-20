@@ -20,6 +20,7 @@ module.exports = {
   globals: {
     'FB': true,
     'Foundation': true,
+    'nodes': true,
   },
   rules: {
     'array-callback-return': ['off'],
@@ -29,8 +30,11 @@ module.exports = {
     'func-names': ['off'],
     'import/no-extraneous-dependencies': ['off'],
     'import/no-unresolved': ['off'],
+    'no-restricted-globals': ['off'],
+    'no-restricted-syntax': ['off'],
     'no-underscore-dangle': ['off'],
     'prefer-arrow-callback': ['off'],
+    'prefer-destructuring': ['off'],
     'prefer-object-spread': ['off'],
     'quote-props': ['off'],
     'space-before-function-paren': ['error', 'never'],

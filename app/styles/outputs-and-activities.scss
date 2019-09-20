@@ -167,14 +167,17 @@
         margin: 0 5px;
       }
 
-      a {
+      button {
         background-image: linear-gradient(transparent calc(100% - 5px), $cigi-red 10px);
         background-repeat: no-repeat;
         background-size: 0% 100%;
         color: $black;
+        font-size: 12px;
+        font-style: normal;
         font-weight: 600;
+        line-height: 1.5;
+        text-transform: uppercase;
         transition: background-size 500ms;
-        width: calc(100%);
 
         &:hover {
           background-size: 100% 100%;
@@ -185,7 +188,7 @@
     .outputs-activities-pagination {
       float: right;
 
-      a {
+      button {
         &.page-number {
           background-image: linear-gradient(transparent calc(100% - 5px), $cigi-red 10px);
           background-repeat: no-repeat;
@@ -247,14 +250,17 @@
   }
 
   .outputs-activities-listing {
+    align-items: flex-start;
     animation-duration: 500ms;
     animation-name: pubListingFade;
     animation-timing-function: ease-in;
     border-bottom: 1px solid $grey-selected;
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 95px;
     margin-bottom: 10px;
     position: relative;
+    text-align: left;
 
     @media screen and (min-width: $med-screen-min) and (max-width: $lg-screen-max) {
       height: 80px;
@@ -369,6 +375,7 @@
       animation-duration: 1500ms;
       animation-name: pubOpenContentFade;
       animation-timing-function: ease-in-out;
+      display: flex;
     }
 
     .cigi-red-line {
