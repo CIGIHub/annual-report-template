@@ -3,17 +3,17 @@ import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Acceptance | financials - auditors report', function(hooks) {
+module('Acceptance | financials/notes', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('visiting /financials/auditors-report', async function(assert) {
-    await visit('/financials/auditors-report');
+  test('visiting /financials/notes', async function(assert) {
+    await visit('/financials/notes');
 
-    assert.strictEqual(currentURL(), '/financials/auditors-report');
+    assert.equal(currentURL(), '/financials/notes');
   });
 
   test('should have correct head title', async function(assert) {
-    await visit('/financials/auditors-report');
+    await visit('/financials/notes');
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
       'Financials | 2019 CIGI Annual Report',
@@ -21,7 +21,7 @@ module('Acceptance | financials - auditors report', function(hooks) {
   });
 
   test('should have correct head description', async function(assert) {
-    await visit('/financials/auditors-report');
+    await visit('/financials/notes');
     assert.strictEqual(
       document.querySelector('head meta[property="og:description"]').getAttribute('content'),
       'Explore a year of research, opinion and expertise in CIGI’s interactive annual report.',
@@ -29,7 +29,7 @@ module('Acceptance | financials - auditors report', function(hooks) {
   });
 
   test('should have correct head site name', async function(assert) {
-    await visit('/financials/auditors-report');
+    await visit('/financials/notes');
     assert.strictEqual(
       document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
       '2019 CIGI Annual Report',
@@ -37,15 +37,15 @@ module('Acceptance | financials - auditors report', function(hooks) {
   });
 
   test('should have correct head url', async function(assert) {
-    await visit('/financials/auditors-report');
+    await visit('/financials/notes');
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/financials/auditors-report/',
+      'https://www.cigionline.org/interactives/2019annualreport/financials/notes/',
     );
   });
 
   test('should transition to /timeline on scroll-arrow-up-btn click', async function(assert) {
-    await visit('/financials/auditors-report');
+    await visit('/financials/notes');
 
     assert.ok(
       document.querySelector('.scroll-arrow-up-btn'),
@@ -58,7 +58,7 @@ module('Acceptance | financials - auditors report', function(hooks) {
   });
 
   test('should transition to /thank-you on scroll-arrow-down-btn click', async function(assert) {
-    await visit('/financials/auditors-report');
+    await visit('/financials/notes');
 
     assert.ok(
       document.querySelector('.scroll-arrow-down-btn'),

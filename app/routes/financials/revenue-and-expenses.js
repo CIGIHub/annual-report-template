@@ -10,6 +10,6 @@ export default Route.extend({
   afterModel() {
     const title = `${get(this, 'intl').t('financials.title')} | ${get(this, 'intl').t('title')}`;
     set(this, 'headData.title', title);
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}financials/auditors-report/`);
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}financials/revenue-and-expenses/`);
   },
 });

@@ -220,6 +220,72 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
+  test('should have correct menu items for /financials/balance-sheet', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'financials.balance-sheet');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'financials.auditors-report') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /financials/notes', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'financials.notes');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'financials.auditors-report') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /financials/revenue-and-expenses', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'financials.revenue-and-expenses');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'financials.auditors-report') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
   test('should have correct menu items for /governing-cyberspace-during-a-crisis-in-trust', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
     set(component, 'router.currentRouteName', 'governing-cyberspace-during-a-crisis-in-trust');

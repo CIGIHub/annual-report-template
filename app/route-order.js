@@ -72,7 +72,11 @@ export default [{
   title: 'timeline.title',
 }, {
   route: 'financials.auditors-report',
-  subRoutes: [],
+  subRoutes: [
+    'financials.balance-sheet',
+    'financials.notes',
+    'financials.revenue-and-expenses',
+  ],
   title: 'financials.title',
 }, {
   route: 'thank-you',
