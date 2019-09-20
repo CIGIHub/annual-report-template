@@ -21,7 +21,6 @@
     "test:travis": "COVERAGE=true ember test"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-object-rest-spread": "7.5.5",
     "@ember/jquery": "0.6.1",
     "@ember/optional-features": "0.7.0",
     "@fortawesome/ember-fontawesome": "0.1.14",

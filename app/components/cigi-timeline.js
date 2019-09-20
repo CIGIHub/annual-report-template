@@ -384,10 +384,11 @@ export default Component.extend({
 
       timeline.append(bubble);
 
-      get(this, 'timelineNodes').push({
-        ...node,
+      const nodeCopy = {
         bubble,
-      });
+      };
+      Object.assign(nodeCopy, node);
+      get(this, 'timelineNodes').push(nodeCopy);
     });
 
     /* istanbul ignore next */
