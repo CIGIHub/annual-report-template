@@ -17,6 +17,9 @@ module.exports = function(defaults) {
       },
       iconPath: 'favicon.png',
     },
+    plugins: [
+      'transform-object-rest-spread',
+    ],
   });
 
   app.import('node_modules/foundation-sites/dist/css/foundation.css');
