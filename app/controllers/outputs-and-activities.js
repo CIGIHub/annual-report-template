@@ -76,10 +76,6 @@ export default Controller.extend({
     return get(this, 'currentType') === 'publications';
   }),
 
-  pageTitle: computed('i18n.locale', function() {
-    return get(this, 'i18n').t('cigiIn2018.title');
-  }),
-
   paginationPages: computed('currentPage', 'totalPages', function() {
     const currentPage = get(this, 'currentPage');
     const totalPages = get(this, 'totalPages');
@@ -107,16 +103,6 @@ export default Controller.extend({
     }));
   }),
 
-  publicationBackgroundImage: computed('publication', function() {
-    const publication = get(this, 'publication');
-
-    if (publication && publication.image) {
-      return `background-image background-${publication.id}`;
-    }
-
-    return null;
-  }),
-
   overlayStyle: computed('publication.id', function() {
     const publication = get(this, 'publication');
 
@@ -135,7 +121,7 @@ export default Controller.extend({
   }),
 
   totalPages: computed('totalObjects', function() {
-    return Math.ceil(get(this, 'totalObjects') / 16);
+    return Math.max(Math.ceil(get(this, 'totalObjects') / 16), 1);
   }),
 
   shortSummary: computed('publication.summary', function() {
