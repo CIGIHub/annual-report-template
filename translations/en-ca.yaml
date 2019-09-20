@@ -117,7 +117,182 @@ exploringTheFourInternetsAndTheGeopoliticsOfDigitalGovernance:
   title: 'Exploring the "Four Internets" and the Geopolitics of Digital Governance'
 financials:
   auditorsReport:
+    auditorResponsibility:
+      paragraph1: 'Our responsibility is to express an opinion on the summary financial statements based on our procedures, which were conducted in accordance with Canadian Auditing Standard 810, “Engagements to Report on Summary Financial Statements”.'
+      title: 'Auditor’s Responsibility'
+    managementResponsibility:
+      paragraph1: 'Management is responsible for the preparation of a summary of the financial statements on a basis developed by management, which includes removing the statement of cash flows, retaining major subtotals, totals and comparative information, and retaining the information from the audited financial statements dealing with matters having a pervasive or otherwise significant effect on the summary financial statements.'
+      title: 'Management’s Responsibility for the Summary Financial Statements'
+    opinion:
+      paragraph1: 'In our opinion, the summary financial statements derived from the financial statements of the Organization as at, and for the year ended, July 31, 2018 are a fair summary of those financial statements in accordance with the basis developed by management, which includes removing the statement of cash flows, retaining major subtotals, totals and comparative information, and retaining the information from the audited financial statements dealing with matters having a pervasive or otherwise significant effect on the summary financial statements.'
+      title: 'Opinion'
+    otherMatter:
+      paragraph1: 'The audited financial statements of the Organization are available upon request by contacting the Organization.'
+      title: 'Other matter'
+    report:
+      paragraph1: 'To the Directors of The Centre for International Governance Innovation,'
+      paragraph2: 'The accompanying summary financial statements, which comprise the summary balance sheet as at July 31, 2018 and the summary statement of revenue, expenses and changes in fund balances for the year then ended, and related notes, are derived from the financial statements of The Centre for International Governance Innovation (the “Organization”) as at, and for the year ended, July 31, 2018. We expressed an unmodified audit opinion on those financial statements in our report dated November 6, 2018. Those financial statements, and the summary financial statements, do not reflect the effects of events that occurred subsequent to the date of our report on those financial statements.'
+      paragraph3: 'The summary financial statements do not contain all the disclosures required by Canadian accounting standards for not-for-profit organizations. Reading the summary financial statements, therefore, is not a substitute for reading the audited financial statements of the Organization.'
+      title: 'Report of the Independent Auditors on the Summary Financial Statements'
+    signature:
+      alt: 'Auditor’s signature'
+      charteredAccountants: 'Chartered Professional Accountants'
+      date: 'Toronto, Ontario, November 6, 2018'
+      licensedPublicAccountants: 'Licensed Public Accountants'
     title: 'Auditor’s Report'
+  balanceSheet:
+    currentAssets:
+      accountsReceivable:
+        title: 'Accounts receivable'
+        total2017: '1,230,454'
+        total2018: '1,449,886'
+      cash:
+        title: 'Cash and cash equivalents'
+        total2017: '5,891,186'
+        total2018: '5,365,153'
+      portfolioInvestments:
+        title: 'Portfolio investments'
+        total2017: '123,966,744'
+        total2018: '121,220,809'
+      prepaidExpenses:
+        title: 'Prepaid expenses'
+        total2017: '1,112,903'
+        total2018: '424,190'
+      title: 'Current Assets'
+      total2017: '132,201,287'
+      total2018: '128,460,038'
+    currentLiabilities:
+      accountsPayable:
+        title: 'Accounts payable and accrued liabilities'
+        total2017: '1,160,906'
+        total2018: '1,358,661'
+      deferredRevenue:
+        title: 'Deferred revenue'
+        total2017: '285,599'
+        total2018: '1,048,783'
+      title: 'Current Liabilities'
+      unrealizedLoss:
+        title: 'Unrealized loss on forward contracts'
+        total2017: '2,546'
+        total2018: '174,518'
+    fundBalances:
+      capitalAssets:
+        title: 'Invested in capital assets'
+        total2017: '59,180,608'
+        total2018: '57,285,957'
+      externallyRestricted:
+        title: 'Externally restricted'
+        total2017: '107,825,622'
+        total2018: '100,044,972'
+      internallyRestricted:
+        title: 'Internally restricted'
+        total2017: '620,110'
+        total2018: '622,601'
+      title: 'Fund Balances'
+      unrestricted:
+        title: 'Unrestricted'
+        total2017: '22,605,814'
+        total2018: '25,499,509'
+    otherAssets:
+      leaseInducement:
+        title: 'Lease inducement'
+        total2017: '299,310'
+        total2018: '289,006'
+      property:
+        title: 'Property and equipment'
+        total2017: '59,180,608'
+        total2018: '57,285,957'
+      title: 'Other Assets'
+    summarizedBalanceSheet: 'Summarized Balance Sheet as at July 31, 2018'
+    title: 'Balance Sheet'
+    total2017: '2017 Total'
+    total2018: '2018 Total'
+    totalAssets:
+      title: 'Total Assets'
+      total2017: '191,681,205'
+      total2018: '186,035,001'
+    totalFundBalances:
+      title: 'Total Fund Balances'
+      total2017: '190,232,154'
+      total2018: '183,453,039'
+    totalLiabilities:
+      title: 'Total Liabilities'
+      total2017: '1,449,051'
+      total2018: '2,581,962'
+    totalLiabilitiesAndFundBalances:
+      title: 'Total Liabilities and Fund Balances'
+      total2017: '191,681,205'
+      total2018: '186,035,001'
+  notes:
+    paragraph1: 'Resources contributed for endowment are included in the Long Term Endowment Fund. Certain of such resources are to be held for a period of ten years or upon the dissolution, liquidation or winding up of the Organization, whichever occurs later. Certain of such resources contributed by the Federal Government of Canada is restricted in perpetuity. Investment income earned on resources of the Long Term Endowment Fund is reported in the Operating and Capital Fund.'
+    paragraph2: 'The Operating and Capital Funds account for the Organization’s program delivery, administrative activities, and non-campus related capital assets.'
+    paragraph3: 'The Africa Restricted Fund is focused on the effects of climate change on Africa’s security and socioeconomic development.'
+    paragraph4: 'The John Holmes Fund is focused on funding the operations of the library.'
+    paragraph5: 'The Campus Fund is a Organization initiative in collaboration with provincial and federal governments designed to house several graduate schools and programs. Two such initiatives are the Balsillie School of International Affairs (BSIA) and the ILRP. As a hub of different schools and programs, the Campus Fund cultivates an interdisciplinary learning environment focused on developing knowledge of global issues.'
+    title: 'Notes'
+    subtitle: 'Notes to the Summary Financial Statements'
+  revenueAndExpenses:
+    excessOfExpensesOverRevenue:
+      title: 'Excess of Revenue Over Expenses'
+      total2017: '(10,413,705)'
+      total2018: '(6,779,115)'
+    expenses:
+      administrative:
+        title: 'Administration'
+        total2017: '1,973,594'
+        total2018: '2,609,844'
+      amortization:
+        title: 'Amortization'
+        total2017: '2,713,660'
+        total2018: '2,084,159'
+      facilities:
+        title: 'Facilities'
+        total2017: '1,179,226'
+        total2018: '1,106,231'
+      research:
+        title: 'Research and conferences'
+        total2017: '15,931,107'
+        total2018: '15,953,738'
+      technicalSupport:
+        title: 'Technical support'
+        total2017: '781,789'
+        total2018: '966,608'
+      title: 'Expenses'
+      total2017: '22,579,376'
+      total2018: '22,720,580'
+    fundBalancesBeginning:
+      title: 'Fund Balances, Beginning of the Year'
+      total2017: '200,645,859'
+      total2018: '190,232,154'
+    fundBalancesEnd:
+      title: 'Fund Balances, End of the Year'
+      total2017: '190,232,154'
+      total2018: '183,453,039'
+    revenue:
+      donations: 'Donations and other Revenue'
+      grants:
+        title: 'Government and other grants'
+        total2017: '3,525,400'
+        total2018: '3,973,418'
+      investmentIncome:
+        title: 'Realized investment income'
+        total2017: '9,337,640'
+        total2018: '13,729,347'
+      other:
+        title: 'Other'
+        total2017: '1,319,422'
+        total2018: '1,411,683'
+      title: 'Revenue (Losses)'
+      total2017: '12,165,671'
+      total2018: '15,941,465'
+      unrealizedInvestmentIncome:
+        title: 'Unrealized investment gains (losses)'
+        total2017: '(2,016,791)'
+        total2018: '(3,172,983)'
+    statementOfRevenue: 'Summarized Statement of Revenue, Expenditures and Changes in Fund Balances for the year ended July 31, 2018'
+    title: 'Revenue and Expenses'
+    total2017: '2017 Total'
+    total2018: '2018 Total'
   title: 'Financials'
 governingCyberspaceDuringACrisisInTrust:
   description: 'It is almost impossible to read the news without coming across a lead story cataloguing the latest cyber breach or misuse of data. The volume of these events lays bare the paradox of the digital economy and cyber security: technology has led to convenience, efficiency and wealth creation, but the push to digitize society quickly and relentlessly has meant building vulnerability into the core of the global economic model.'
