@@ -150,7 +150,7 @@ export default Controller.extend({
   actions: {
     closePublication() {
       const self = this;
-      $.when($('.cigi-in-2018-overlay').animate({
+      $.when($('.outputs-activities-overlay').animate({
         'opacity': 0,
       }, 500)).done(() => {
         set(self, 'id', null);
