@@ -71,6 +71,7 @@ export default Controller.extend({
   }),
 
   searchChanged: observer('search', function() {
+    /* istanbul ignore next */
     if (!get(this, 'search')) {
       set(this, 'search', null);
     }
