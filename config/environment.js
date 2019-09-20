@@ -48,6 +48,7 @@ module.exports = function(environment) {
     locationType: 'auto',
     modulePrefix: 'annual-report-2019',
     rootURL: '/interactives/2019annualreport/',
+    staging: false,
   };
 
   if (environment === 'development') {
@@ -78,6 +79,7 @@ module.exports = function(environment) {
     };
     if (process.env.STAGING) {
       ENV.host = 'https://staging.cigionline.org';
+      ENV.staging = true;
     }
   }
 

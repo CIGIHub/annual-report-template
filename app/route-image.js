@@ -16,7 +16,7 @@ export default (routeName) => {
   };
 
   let host = 'https://www.cigionline.org';
-  if (ENV.environment !== 'production' || process.env.STAGING) {
+  if (ENV.environment !== 'production' || ENV.staging) {
     host = 'https://staging.cigionline.org';
   }
 

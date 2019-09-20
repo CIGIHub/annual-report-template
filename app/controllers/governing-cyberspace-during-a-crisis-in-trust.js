@@ -46,7 +46,7 @@ export default Controller.extend({
 
   videoLink: computed(function() {
     let host = 'https://www.cigionline.org';
-    if (ENV.environment !== 'production' || process.env.STAGING) {
+    if (ENV.environment !== 'production' || ENV.staging) {
       host = 'https://staging.cigionline.org';
     }
     return `${host}/interactives/2019annualreport/static/3E6r1xmCHg1kIA7w/governing-cyberspace-during-a-crisis-in-trust.mp4`;
