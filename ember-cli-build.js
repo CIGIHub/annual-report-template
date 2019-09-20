@@ -4,6 +4,11 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
+    babel: {
+      plugins: [
+        'transform-object-rest-spread',
+      ],
+    },
     'ember-cli-favicon': {
       enabled: process.env.EMBER_ENV !== 'test',
       faviconsConfig: {
@@ -17,9 +22,6 @@ module.exports = function(defaults) {
       },
       iconPath: 'favicon.png',
     },
-    plugins: [
-      'transform-object-rest-spread',
-    ],
   });
 
   app.import('node_modules/foundation-sites/dist/css/foundation.css');
