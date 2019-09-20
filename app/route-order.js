@@ -74,6 +74,7 @@ export default [{
   route: 'financials.auditors-report',
   subRoutes: [
     'financials.balance-sheet',
+    'financials.revenue-and-expenses',
   ],
   title: 'financials.title',
 }, {
