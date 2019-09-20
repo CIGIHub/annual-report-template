@@ -1,9 +1,10 @@
 import ENV from 'annual-report-2019/config/environment';
-import { set } from '@ember/object';
+import { get, set } from '@ember/object';
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 
 export default Route.extend({
+  assetLoader: service(),
   headData: service(),
   intl: service(),
 
@@ -11,6 +12,13 @@ export default Route.extend({
     acknowledgements: {
       refreshModel: true,
     },
+  },
+
+  beforeModel() {
+    if (!get(this, 'assetLoader.assetsLoaded')) {
+      return get(this, 'assetLoader').waitForAssets();
+    }
+    return true;
   },
 
   afterModel() {

@@ -57,6 +57,10 @@ export default Service.extend({
     return 'https://www.cigionline.org';
   }),
 
+  getAllBlurImages() {
+    return Object.keys(get(this, 'backgroundImages')).map((key) => `${get(this, 'imageHost')}/interactives/2019annualreport/static/${get(this, 'backgroundImages')[key].blurUrl}`);
+  },
+
   getBackgroundImage(routeName) {
     if (get(this, 'backgroundImages')[routeName]
         && get(this, 'backgroundImages')[routeName].blurUrl

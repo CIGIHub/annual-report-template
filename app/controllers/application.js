@@ -10,6 +10,7 @@ import { inject as service } from '@ember/service';
 import routeOrder from '../route-order';
 
 export default Controller.extend({
+  fastboot: service(),
   lightbox: service(),
   router: service(),
 

@@ -12,6 +12,7 @@ const opinions = nodes.filter((node) => node.type === 'article');
 const events = nodes.filter((node) => node.type === 'event');
 
 export default Route.extend({
+  assetLoader: service(),
   fastboot: service(),
   headData: service(),
   intl: service(),
@@ -24,6 +25,13 @@ export default Route.extend({
     search: {
       refreshModel: false,
     },
+  },
+
+  beforeModel() {
+    if (!get(this, 'assetLoader.assetsLoaded')) {
+      return get(this, 'assetLoader').waitForAssets();
+    }
+    return true;
   },
 
   model(params) {
