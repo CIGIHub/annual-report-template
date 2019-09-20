@@ -1,3 +1,4 @@
+import ENV from 'annual-report-2019/config/environment';
 import { computed, get, set } from '@ember/object';
 import { later } from '@ember/runloop';
 import Service, { inject as service } from '@ember/service';
@@ -21,7 +22,7 @@ export default Service.extend({
 
   init(...args) {
     this._super(args);
-    if (!get(this, 'fastboot.isFastBoot')) {
+    if (!get(this, 'fastboot.isFastBoot') && ENV.environment !== 'test') {
       get(this, 'backgroundImage').getAllBlurImages().forEach((blurImage) => {
         get(this, 'promises').push(this._loadAsset(blurImage));
       });

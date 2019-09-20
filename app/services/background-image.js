@@ -58,7 +58,7 @@ export default Service.extend({
   }),
 
   getAllBlurImages() {
-    return get(this, 'backgroundImages').map((backgroundImage) => backgroundImage.blurUrl);
+    return Object.keys(get(this, 'backgroundImages')).map((key) => `${get(this, 'imageHost')}/interactives/2019annualreport/static/${get(this, 'backgroundImages')[key].blurUrl}`);
   },
 
   getBackgroundImage(routeName) {
