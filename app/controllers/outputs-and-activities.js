@@ -68,10 +68,6 @@ export default Controller.extend({
     return get(this, 'currentType') === 'opinions';
   }),
 
-  isTypeStaff: computed('currentType', function() {
-    return get(this, 'currentType') === 'staff';
-  }),
-
   isTypePublications: computed('currentType', function() {
     return get(this, 'currentType') === 'publications';
   }),
@@ -163,11 +159,13 @@ export default Controller.extend({
       set(this, 'page', page);
     },
     setPage(page) {
-      set(this, 'page', page);
+      set(this, 'page', Math.min(page, get(this, 'totalPages')));
     },
     setType(type) {
-      set(this, 'page', null);
-      set(this, 'type', type);
+      if (['events', 'opinions', 'publications'].includes(type)) {
+        set(this, 'page', null);
+        set(this, 'type', type);
+      }
     },
   },
 });

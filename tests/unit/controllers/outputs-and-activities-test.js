@@ -1,9 +1,14 @@
 import { get, set } from '@ember/object';
 import { setupTest } from 'ember-qunit';
+import lolex from 'lolex';
 import { module, test } from 'qunit';
 
 module('Unit | Controller | outputs-and-activities', function(hooks) {
   setupTest(hooks);
+
+  hooks.beforeEach(function() {
+    this.clock = lolex.install();
+  });
 
   test('it exists', function(assert) {
     const controller = this.owner.lookup('controller:outputs-and-activities');
@@ -509,5 +514,190 @@ module('Unit | Controller | outputs-and-activities', function(hooks) {
     });
 
     assert.strictEqual(get(controller, 'totalPages'), 3);
+  });
+
+  test('should set id=null on closePublication action', function(assert) {
+    const controller = this.owner.lookup('controller:outputs-and-activities');
+    set(controller, 'id', 1);
+
+    controller.send('closePublication');
+    this.clock.tick(505);
+
+    assert.strictEqual(get(controller, 'id'), null);
+  });
+
+  test('should add page on nextPage action when page=null', function(assert) {
+    const controller = this.owner.lookup('controller:outputs-and-activities');
+    set(controller, 'page', null);
+    set(controller, 'model', {
+      totalObjects: 32,
+    });
+
+    controller.send('nextPage');
+
+    assert.strictEqual(get(controller, 'page'), 2);
+  });
+
+  test('should add page on nextPage action when page=1', function(assert) {
+    const controller = this.owner.lookup('controller:outputs-and-activities');
+    set(controller, 'page', 1);
+    set(controller, 'model', {
+      totalObjects: 32,
+    });
+
+    controller.send('nextPage');
+
+    assert.strictEqual(get(controller, 'page'), 2);
+  });
+
+  test('should do nothing on nextPage action when on last page', function(assert) {
+    const controller = this.owner.lookup('controller:outputs-and-activities');
+    set(controller, 'page', 2);
+    set(controller, 'model', {
+      totalObjects: 32,
+    });
+
+    controller.send('nextPage');
+
+    assert.strictEqual(get(controller, 'page'), 2);
+  });
+
+  test('should set id on openPublication action', function(assert) {
+    const controller = this.owner.lookup('controller:outputs-and-activities');
+    set(controller, 'id', null);
+
+    controller.send('openPublication', 1);
+    assert.strictEqual(get(controller, 'id'), 1);
+
+    controller.send('openPublication', 2);
+    assert.strictEqual(get(controller, 'id'), 2);
+  });
+
+  test('should set page=1 on previousPage action when page=null', function(assert) {
+    const controller = this.owner.lookup('controller:outputs-and-activities');
+    set(controller, 'page', null);
+    set(controller, 'model', {
+      totalObjects: 32,
+    });
+
+    controller.send('previousPage');
+
+    assert.strictEqual(get(controller, 'page'), 1);
+  });
+
+  test('should do nothing on previousPage action when page=1', function(assert) {
+    const controller = this.owner.lookup('controller:outputs-and-activities');
+    set(controller, 'page', 1);
+    set(controller, 'model', {
+      totalObjects: 32,
+    });
+
+    controller.send('previousPage');
+
+    assert.strictEqual(get(controller, 'page'), 1);
+  });
+
+  test('should subtract page on previousPage action when page=3', function(assert) {
+    const controller = this.owner.lookup('controller:outputs-and-activities');
+    set(controller, 'page', 3);
+    set(controller, 'model', {
+      totalObjects: 40,
+    });
+
+    controller.send('previousPage');
+
+    assert.strictEqual(get(controller, 'page'), 2);
+  });
+
+  test('should set page=1 on setPage action', function(assert) {
+    const controller = this.owner.lookup('controller:outputs-and-activities');
+    set(controller, 'page', 2);
+    set(controller, 'model', {
+      totalObjects: 56,
+    });
+
+    controller.send('setPage', 1);
+
+    assert.strictEqual(get(controller, 'page'), 1);
+  });
+
+  test('should set page=3 on setPage action', function(assert) {
+    const controller = this.owner.lookup('controller:outputs-and-activities');
+    set(controller, 'page', 2);
+    set(controller, 'model', {
+      totalObjects: 56,
+    });
+
+    controller.send('setPage', 3);
+
+    assert.strictEqual(get(controller, 'page'), 3);
+  });
+
+  test('should set to last page on setPage action when page > totalPages', function(assert) {
+    const controller = this.owner.lookup('controller:outputs-and-activities');
+    set(controller, 'page', 2);
+    set(controller, 'model', {
+      totalObjects: 56,
+    });
+
+    controller.send('setPage', 10);
+
+    assert.strictEqual(get(controller, 'page'), 4);
+  });
+
+  test('should set type=publications on setType action', function(assert) {
+    const controller = this.owner.lookup('controller:outputs-and-activities');
+    set(controller, 'page', 2);
+    set(controller, 'type', 'events');
+    set(controller, 'model', {
+      totalObjects: 56,
+    });
+
+    controller.send('setType', 'publications');
+
+    assert.strictEqual(get(controller, 'page'), null);
+    assert.strictEqual(get(controller, 'type'), 'publications');
+  });
+
+  test('should set type=opinions on setType action', function(assert) {
+    const controller = this.owner.lookup('controller:outputs-and-activities');
+    set(controller, 'page', 2);
+    set(controller, 'type', 'events');
+    set(controller, 'model', {
+      totalObjects: 56,
+    });
+
+    controller.send('setType', 'opinions');
+
+    assert.strictEqual(get(controller, 'page'), null);
+    assert.strictEqual(get(controller, 'type'), 'opinions');
+  });
+
+  test('should set type=events on setType action', function(assert) {
+    const controller = this.owner.lookup('controller:outputs-and-activities');
+    set(controller, 'page', 2);
+    set(controller, 'type', 'opinions');
+    set(controller, 'model', {
+      totalObjects: 56,
+    });
+
+    controller.send('setType', 'events');
+
+    assert.strictEqual(get(controller, 'page'), null);
+    assert.strictEqual(get(controller, 'type'), 'events');
+  });
+
+  test('should do nothing on setType action with invalid type', function(assert) {
+    const controller = this.owner.lookup('controller:outputs-and-activities');
+    set(controller, 'page', 2);
+    set(controller, 'type', 'opinions');
+    set(controller, 'model', {
+      totalObjects: 56,
+    });
+
+    controller.send('setType', 'invalidType');
+
+    assert.strictEqual(get(controller, 'page'), 2);
+    assert.strictEqual(get(controller, 'type'), 'opinions');
   });
 });
