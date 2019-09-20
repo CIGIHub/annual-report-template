@@ -5,7 +5,7 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
     babel: {
-      plugins: ['transform-object-rest-spread'],
+      plugins: ['@babel/plugin-proposal-object-rest-spread'],
     },
     'ember-cli-favicon': {
       enabled: process.env.EMBER_ENV !== 'test',
