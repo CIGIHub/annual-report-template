@@ -13,7 +13,7 @@
             {{#if isTypePublications}}
               {{t "publications"}}
             {{else}}
-              <button {{action "setType" "publications"}}>
+              <button class="view-publications-btn" {{action "setType" "publications"}}>
                 {{t "publications"}}
               </button>
             {{/if}}
@@ -21,7 +21,7 @@
             {{#if isTypeOpinions}}
               {{t "opinions"}}
             {{else}}
-              <button {{action "setType" "opinions"}}>
+              <button class="view-opinions-btn" {{action "setType" "opinions"}}>
                 {{t "opinions"}}
               </button>
             {{/if}}
@@ -29,7 +29,7 @@
             {{#if isTypeEvents}}
               {{t "events"}}
             {{else}}
-              <button {{action "setType" "events"}}>
+              <button class="view-events-btn" {{action "setType" "events"}}>
                 {{t "events"}}
               </button>
             {{/if}}
