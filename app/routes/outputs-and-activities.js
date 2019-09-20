@@ -30,6 +30,7 @@ export default Route.extend({
 
   model(params) {
     let page = 1;
+    /* istanbul ignore next */
     if (params.page && !isNaN(parseInt(params.page, 10))) {
       page = parseInt(params.page, 10);
     }
@@ -62,6 +63,7 @@ export default Route.extend({
     });
 
     let publication = null;
+    /* istanbul ignore next */
     if (params.id) {
       if (type === 'publications') {
         publication = publications.find((pub) => pub.id === params.id);
@@ -72,6 +74,7 @@ export default Route.extend({
       }
     }
 
+    /* istanbul ignore next */
     if (!get(this, 'fastboot.isFastBoot')) {
       if (publication) {
         get(this, 'lightbox').showPublicationLightbox();
@@ -95,12 +98,14 @@ export default Route.extend({
     return hash({
       objects: objects.slice((page - 1) * 16, ((page - 1) * 16) + 16).map((obj) => {
         set(obj, 'date_str', null);
+        /* istanbul ignore next */
         if (obj.published_date) {
           set(obj, 'date_str', moment(obj.published_date).format('MMMM D, YYYY'));
         } else if (obj.event_date) {
           set(obj, 'date_str', moment(obj.event_date).format('MMMM D, YYYY'));
         }
         set(obj, 'type_str', get(obj, 'type'));
+        /* istanbul ignore next */
         if (get(obj, 'subtype').length > 0) {
           set(obj, 'type_str', get(obj, 'subtype')[0]);
           if (get(obj, 'type_str') === 'Books') {
