@@ -26,7 +26,6 @@
     "@fortawesome/ember-fontawesome": "0.1.14",
     "@fortawesome/free-brands-svg-icons": "5.10.2",
     "@fortawesome/pro-light-svg-icons": "5.10.2",
-    "babel-plugin-transform-object-rest-spread": "6.26.0",
     "broccoli-asset-rev": "3.0.0",
     "coveralls": "3.0.6",
     "ember-ajax": "5.0.0",
