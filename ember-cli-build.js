@@ -6,7 +6,7 @@ module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
     babel: {
       plugins: [
-        'transform-object-rest-spread',
+        '@babel/plugin-proposal-object-rest-spread',
       ],
     },
     'ember-cli-favicon': {
