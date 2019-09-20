@@ -46,6 +46,7 @@ module('Acceptance | timeline', function(hooks) {
 
   test('should transition to /outputs-and-activities on scroll-arrow-up-btn click', async function(assert) {
     await visit('/timeline');
+    await finishRender();
 
     assert.ok(
       document.querySelector('.scroll-arrow-up-btn'),
@@ -59,6 +60,7 @@ module('Acceptance | timeline', function(hooks) {
 
   test('should transition to /financials/auditors-report on scroll-arrow-down-btn click', async function(assert) {
     await visit('/timeline');
+    await finishRender();
 
     assert.ok(
       document.querySelector('.scroll-arrow-down-btn'),
