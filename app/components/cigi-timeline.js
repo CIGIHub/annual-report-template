@@ -29,6 +29,7 @@ export default Component.extend({
   init(...args) {
     this._super(args);
 
+    /* istanbul ignore next */
     if (!get(this, 'fastboot.isFastBoot')) {
       $(window).on('resize', $.proxy(this.drawTimeline, this));
     }
@@ -41,6 +42,7 @@ export default Component.extend({
   },
 
   searchChanged: observer('search', function() {
+    /* istanbul ignore next */
     if (ENV.environment !== 'test') {
       if (get(this, 'searchTimeout')) {
         cancel(get(this, 'searchTimeout'));
@@ -53,11 +55,14 @@ export default Component.extend({
   }),
 
   runSearch() {
+    /* istanbul ignore next */
     let search = get(this, 'search');
+    /* istanbul ignore next */
     if (search) {
       search = search.toLowerCase();
     }
 
+    /* istanbul ignore next */
     for (const timelineNode of get(this, 'timelineNodes')) {
       if (!search
           || timelineNode.title.toLowerCase().includes(search)
@@ -93,6 +98,7 @@ export default Component.extend({
   },
 
   _canDrawCircle(matrix, x, y, r) {
+    /* istanbul ignore next */
     for (let i = x - r; i <= x + r; i += 1) {
       let x2 = i;
       if (x2 === x - r) {
@@ -108,11 +114,14 @@ export default Component.extend({
         }
       }
     }
+    /* istanbul ignore next */
     return true;
   },
 
   _drawCircle(matrix, x, y, r, removeCircle = false) {
+    /* istanbul ignore next */
     const matrixCopy = matrix;
+    /* istanbul ignore next */
     for (let i = x - r; i <= x + r; i += 1) {
       let x2 = i;
       if (x2 === x - r) {
@@ -129,22 +138,30 @@ export default Component.extend({
   },
 
   drawTimeline() {
+    /* istanbul ignore next */
     const self = this;
+    /* istanbul ignore next */
     const nodes = get(this, 'nodes');
+    /* istanbul ignore next */
     const timeline = this.$('.timeline');
 
+    /* istanbul ignore next */
     set(this, 'timelineNodes', []);
 
+    /* istanbul ignore next */
     if (typeof timeline === 'undefined') {
       return false;
     }
 
+    /* istanbul ignore next */
     timeline.addClass('show-for-large');
 
+    /* istanbul ignore next */
     if (!timeline.is(':visible')) {
       return false;
     }
 
+    /* istanbul ignore next */
     timeline.html(`
       <p class="date-marker date-marker-beg">2018</p>
       <p class="date-marker date-marker-end">2019</p>
@@ -179,12 +196,16 @@ export default Component.extend({
       <div class="timeline-line line-end"></div>
     `);
 
-
+    /* istanbul ignore next */
     const beginningOfYear = new Date('2018-08-01');
+    /* istanbul ignore next */
     const daysWidth = timeline.width() / 365;
+    /* istanbul ignore next */
     const timelineMiddle = get(this, 'timelineMiddle');
 
+    /* istanbul ignore next */
     const svgMatrix = Array(Math.floor(timeline.width()) + 1);
+    /* istanbul ignore next */
     for (let i = 0; i < (Math.floor(timeline.width()) + 1); i += 1) {
       svgMatrix[i] = Array((timelineMiddle * 2) + 1);
 
@@ -194,12 +215,19 @@ export default Component.extend({
     }
 
     // Find the max and min word counts to set as the largest/smallest bubbles.
+    /* istanbul ignore next */
     let eventMaxWordCount = 1;
+    /* istanbul ignore next */
     let eventMinWordCount = 100000;
+    /* istanbul ignore next */
     let opinionMaxWordCount = 1;
+    /* istanbul ignore next */
     let opinionMinWordCount = 100000;
+    /* istanbul ignore next */
     let publicationMaxWordCount = 1;
+    /* istanbul ignore next */
     let publicationMinWordCount = 100000;
+    /* istanbul ignore next */
     for (const node of nodes) {
       if (node.type === 'publication'
           && node.word_count > publicationMaxWordCount) {
@@ -228,6 +256,7 @@ export default Component.extend({
     }
 
     // Draw each publication as a bubble.
+    /* istanbul ignore next */
     nodes.forEach((node, ind) => {
       const nodeCopy = node;
       // Determine the radius.
@@ -277,6 +306,7 @@ export default Component.extend({
     });
 
     // Draw
+    /* istanbul ignore next */
     nodes.forEach((node) => {
       const bubble = $(document.createElement('div'));
       bubble.addClass('timeline-bubble');
@@ -360,13 +390,17 @@ export default Component.extend({
       });
     });
 
+    /* istanbul ignore next */
     this.runSearch();
 
+    /* istanbul ignore next */
     return true;
   },
 
   showNode(ev) {
+    /* istanbul ignore next */
     set(this, 'nodeId', ev.data);
+    /* istanbul ignore next */
     $.when($('.timeline').animate({
       'top': '40px',
     }, 500)).done(() => {
