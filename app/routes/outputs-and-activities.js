@@ -13,6 +13,7 @@ const events = nodes.filter((node) => node.type === 'event');
 export default Route.extend({
   fastboot: service(),
   headData: service(),
+  lightbox: service(),
   intl: service(),
 
   queryParams: {
