@@ -21,14 +21,15 @@ export default Controller.extend({
     return get(this, 'router.currentRouteName') === 'index';
   }),
 
-  lightBackground: computed('router.currentRouteName', 'lightbox.showLightbox', function() {
+  lightBackground: computed('router.currentRouteName', 'lightbox.{showLightbox,subType}', function() {
     const lightBackgroundRoute = [
       'chairs-message',
       'financials.auditors-report',
       'outputs-and-activities',
       'presidents-message',
     ].includes(get(this, 'router.currentRouteName'));
-    if (get(this, 'lightbox.showLightbox')) {
+    if (get(this, 'lightbox.showLightbox')
+        || get(this, 'lightbox.subType') === 'publication') {
       return false;
     }
     if (lightBackgroundRoute) {
