@@ -88,7 +88,7 @@ export default Route.extend({
           const authorString = get(node, 'authors').join(', ');
           set(node, 'author_str', authorString);
         }
-      } else if (get(this, 'lightbox.lightboxSubType') === 'publication') {
+      } else if (get(this, 'lightbox.subType') === 'publication') {
         get(this, 'lightbox').closeLightbox();
         $(document).ready(() => {
           run(() => {
