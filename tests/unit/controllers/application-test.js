@@ -94,6 +94,13 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
+  test('should have bounceScrollArrowDown=false for /financials/notes', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'financials.notes');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
   test('should have bounceScrollArrowDown=false for /financials/revenue-and-expenses', function(assert) {
     const controller = this.owner.lookup('controller:application');
     set(controller, 'router.currentRouteName', 'financials.revenue-and-expenses');
@@ -263,6 +270,14 @@ module('Unit | Controller | application', function(hooks) {
   test('should have lightBackground=true for /financials/balance-sheet', function(assert) {
     const controller = this.owner.lookup('controller:application');
     set(controller, 'router.currentRouteName', 'financials.balance-sheet');
+    set(controller, 'lightbox.showLightbox', null);
+
+    assert.strictEqual(get(controller, 'lightBackground'), true);
+  });
+
+  test('should have lightBackground=true for /financials/notes', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'financials.notes');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), true);
@@ -464,6 +479,13 @@ module('Unit | Controller | application', function(hooks) {
   test('should have showDotNav=true for /financials/balance-sheet', function(assert) {
     const controller = this.owner.lookup('controller:application');
     set(controller, 'router.currentRouteName', 'financials.balance-sheet');
+
+    assert.strictEqual(get(controller, 'showDotNav'), true);
+  });
+
+  test('should have showDotNav=true for /financials/notes', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'financials.notes');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });

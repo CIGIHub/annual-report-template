@@ -26,6 +26,7 @@ export default Controller.extend({
       'chairs-message',
       'financials.auditors-report',
       'financials.balance-sheet',
+      'financials.notes',
       'financials.revenue-and-expenses',
       'outputs-and-activities',
       'presidents-message',
