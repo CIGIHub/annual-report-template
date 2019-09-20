@@ -92,6 +92,7 @@ chairsMessage:
     name: 'Jim Balsillie'
     title: 'Chair, CIGI Board of Directors'
   title: 'Chair’s Message'
+clear: 'Clear'
 curbingCulturalAppropriationThroughIntellectualPropertyLaw:
   description: 'CIGI fellow Brigitte Vézina’s paper, Curbing Cultural Appropriation in the Fashion Industry calls on reform to intellectual property laws, as well as practical solutions for designers and consumers to put an end of cultural appropriation.'
   paragraph1: 'From luxury brands like Gucci and Louis Vuitton to mainstream retailers like Urban Outfitters, many brands have developed a noticeable appetite for all things traditional, ethnic and folklore. When traditional cultural expressions (TCEs)—a term developed by the World Intellectual Property Organization that describes patterns, motifs and other design features created by traditional or Indigenous cultures—are appropriated it can cause profound cultural, social and economic harm for those who the TCE belongs to.'
@@ -409,6 +410,8 @@ thankYou:
   staffPhoto: 'CIGI Staff Photo'
   title: 'Thank You'
 timeline:
+  back: 'Back to Timeline'
+  cannotBeDisplayed: 'The interactive timeline cannot be displayed on your mobile device. For the best experience, please view on a desktop browser.'
   title: 'Explore Timeline'
 title: '2019 CIGI Annual Report'
 video: 'Video'

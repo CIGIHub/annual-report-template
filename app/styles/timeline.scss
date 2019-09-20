@@ -512,12 +512,6 @@
       position: relative;
     }
 
-    .back-link {
-      animation-duration: 1500ms;
-      animation-name: timelineOpenContentFade;
-      animation-timing-function: ease-in-out;
-    }
-
     .read-link {
       animation-duration: 1500ms;
       animation-name: timelineOpenContentFade;
@@ -594,6 +588,12 @@
   position: absolute;
   width: 100%;
   z-index: 4;
+
+  .back-link {
+    animation-duration: 1500ms;
+    animation-name: timelineOpenContentFade;
+    animation-timing-function: ease-in-out;
+  }
 }
 
 .timeline-search-container {
@@ -635,6 +635,7 @@
   .clear-button {
     background-color: $grey-button;
     font-size: 12px;
+    height: 28px;
     padding: 6px 10px;
     text-transform: uppercase;
 
