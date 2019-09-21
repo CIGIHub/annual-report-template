@@ -42,6 +42,14 @@ export default Controller.extend({
     return false;
   }),
 
+  scrollableContentPage: computed('router.currentRouteName', function() {
+    return ![
+      'index',
+      'timeline',
+      'thank-you',
+    ].includes(get(this, 'router.currentRouteName'));
+  }),
+
   showDotNav: computed('dotNavShown', 'router.currentRouteName', function() {
     const onContentSlide = ![
       'index',
