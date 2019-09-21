@@ -2,10 +2,12 @@ import Controller from '@ember/controller';
 import {
   computed,
   get,
+  observer,
   set,
 } from '@ember/object';
 import { later } from '@ember/runloop';
 import { inject as service } from '@ember/service';
+import $ from 'jquery';
 
 import routeOrder from '../route-order';
 
@@ -73,6 +75,26 @@ export default Controller.extend({
     return currentRouteName !== routeOrder[0].route
       && !routeOrder[0].subRoutes.includes(currentRouteName)
       && currentRouteName !== '404';
+  }),
+
+  currentRouteNameChanged: observer('router.currentRouteName', function() {
+    /* istanbul ignore next */
+    if (!get(this, 'fastboot.isFastBoot')) {
+      if (get(this, 'lightbox.showLightbox')
+          || get(this, 'lightbox.subType') === 'publication') {
+        get(this, 'lightbox').closeLightbox();
+      }
+
+      // Dot-nav overlay
+      $('.overlay').stop(false, false).animate({
+        'opacity': 0,
+        'z-index': -1,
+      }, 500);
+      // Reset menu and dot-nav visibility if coming from timeline preview.
+      $('.cigi-top-bar, .dot-nav, .scroll-arrow, .social-1, .social-2, .social-3').css({
+        'visibility': '',
+      });
+    }
   }),
 
   actions: {
