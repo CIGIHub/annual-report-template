@@ -20,6 +20,7 @@ export default Component.extend({
   }),
 
   showLightboxChanged: observer('lightbox.showLightbox', function() {
+    /* istanbul ignore next */
     if (get(this, 'lightbox.showLightbox')) {
       $('.lightbox').css({
         'z-index': 5,
@@ -32,7 +33,7 @@ export default Component.extend({
       $('.dot-nav').css({
         'z-index': -1,
       });
-    } else {
+    } /* istanbul ignore next */ else {
       $('.lightbox').animate({
         'opacity': 0,
       }, 500).css({
