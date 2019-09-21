@@ -37,6 +37,7 @@ module.exports = {
     'prefer-arrow-callback': ['off'],
     'prefer-destructuring': ['off'],
     'prefer-object-spread': ['off'],
+    'prefer-rest-params': ['off'],
     'quote-props': ['off'],
     'space-before-function-paren': ['error', 'never'],
     'strict': ['off'],
