@@ -1,4 +1,10 @@
 {{head-layout}}
+<div class="background-row show-for-small-only">
+  <div class="background-image" style={{backgroundStyle}}></div>
+  {{#unless hideMobileOverlay}}
+    <div class="background-overlay hover-reveal-hide"></div>
+  {{/unless}}
+</div>
 {{top-bar lightBackground=lightBackground}}
 {{#event-listener isTransitioning=isTransitioning transitionBack=(action "transitionBack") transitionNext=(action "transitionNext")}}
   {{liquid-outlet}}
