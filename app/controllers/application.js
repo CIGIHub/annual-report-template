@@ -7,11 +7,13 @@ import {
 } from '@ember/object';
 import { later } from '@ember/runloop';
 import { inject as service } from '@ember/service';
+import { htmlSafe } from '@ember/template';
 import $ from 'jquery';
 
 import routeOrder from '../route-order';
 
 export default Controller.extend({
+  backgroundImage: service(),
   fastboot: service(),
   lightbox: service(),
   router: service(),
@@ -19,9 +21,46 @@ export default Controller.extend({
   dotNavShown: false,
   isTransitioning: false,
 
+  backgroundStyle: computed('router.currentRouteName', function() {
+    const currentRouteName = get(this, 'router.currentRouteName');
+    if ([
+      'table-of-contents',
+      'thank-you',
+    ].includes(currentRouteName)) {
+      return htmlSafe('background-color: #000;');
+    }
+    if ([
+      'chairs-message',
+      'financials.auditors-report',
+      'financials.balance-sheet',
+      'financials.notes',
+      'financials.revenue-and-expenses',
+      'outputs-and-activities',
+      'presidents-message',
+    ].includes(currentRouteName)) {
+      return htmlSafe('background-color: #fff;');
+    }
+
+    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getBackgroundImage(currentRouteName);
+    return htmlSafe(`background-image: url('${fullUrl}'), url('${blurUrl}');`);
+  }),
+
   bounceScrollArrowDown: computed('router.currentRouteName', function() {
     // Add bounce animation to down scroll arrow on home slide
     return get(this, 'router.currentRouteName') === 'index';
+  }),
+
+  hideMobileOverlay: computed('router.currentRouteName', function() {
+    return [
+      'chairs-message',
+      'outputs-and-activities',
+      'financials.auditors-report',
+      'financials.balance-sheet',
+      'financials.notes',
+      'financials.revenue-and-expenses',
+      'presidents-message',
+      'table-of-contents',
+    ].includes(get(this, 'router.currentRouteName'));
   }),
 
   lightBackground: computed('router.currentRouteName', 'lightbox.{showLightbox,subType}', function() {
