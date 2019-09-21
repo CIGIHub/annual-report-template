@@ -2,6 +2,8 @@
 {{top-bar lightBackground=lightBackground}}
 {{#event-listener isTransitioning=isTransitioning transitionBack=(action "transitionBack") transitionNext=(action "transitionNext")}}
   {{liquid-outlet}}
+  <div class="overlay"></div>
+  {{lightbox-overlay}}
 {{/event-listener}}
 {{#if showDotNav}}
   {{dot-nav lightBackground=lightBackground}}
