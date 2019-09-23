@@ -24,6 +24,10 @@ export default Service.extend({
       blurUrl: 'QxRVvOjENvAGLXLQ/chairs-message-blur.jpg',
       fullUrl: 'QxRVvOjENvAGLXLQ/chairs-message.jpg',
     },
+    'curbing-cultural-appropriation-through-intellectual-property-law': {
+      blurUrl: 'QxRVvOjENvAGLXLQ/curbing-cultural-appropriation-through-intellectual-property-law-blur.png',
+      fullUrl: 'QxRVvOjENvAGLXLQ/curbing-cultural-appropriation-through-intellectual-property-law.png',
+    },
     'governing-cyberspace-during-a-crisis-in-trust': {
       blurUrl: 'QxRVvOjENvAGLXLQ/governing-cyberspace-during-a-crisis-in-trust-blur.jpg',
       fullUrl: 'QxRVvOjENvAGLXLQ/governing-cyberspace-during-a-crisis-in-trust.jpg',
