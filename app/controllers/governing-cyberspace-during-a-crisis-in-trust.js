@@ -9,7 +9,7 @@ export default Controller.extend({
   intl: service(),
 
   backgroundStyle: computed(function() {
-    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getBackgroundImage('governing-cyberspace-during-a-crisis-in-trust');
+    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('governing-cyberspace-during-a-crisis-in-trust');
     return htmlSafe(`background-image: url('${fullUrl}'), url('${blurUrl}');`);
   }),
 

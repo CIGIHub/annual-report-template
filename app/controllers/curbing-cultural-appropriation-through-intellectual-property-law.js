@@ -9,7 +9,7 @@ export default Controller.extend({
   intl: service(),
 
   backgroundStyle: computed(function() {
-    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getBackgroundImage('curbing-cultural-appropriation-through-intellectual-property-law');
+    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('curbing-cultural-appropriation-through-intellectual-property-law');
     return htmlSafe(`background-image: url('${fullUrl}'), url('${blurUrl}');`);
   }),
 

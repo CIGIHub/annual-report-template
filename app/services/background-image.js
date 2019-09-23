@@ -69,7 +69,7 @@ export default Service.extend({
     return Object.keys(get(this, 'backgroundImages')).map((key) => `${get(this, 'imageHost')}/interactives/2019annualreport/static/${get(this, 'backgroundImages')[key].blurUrl}`);
   },
 
-  getBackgroundImage(routeName) {
+  getSlideBackgroundImage(routeName) {
     if (get(this, 'backgroundImages')[routeName]
         && get(this, 'backgroundImages')[routeName].blurUrl
         && get(this, 'backgroundImages')[routeName].fullUrl) {

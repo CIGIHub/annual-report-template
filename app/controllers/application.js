@@ -41,7 +41,7 @@ export default Controller.extend({
       return htmlSafe('background-color: #fff;');
     }
 
-    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getBackgroundImage(currentRouteName);
+    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getSlideBackgroundImage(currentRouteName);
     return htmlSafe(`background-image: url('${fullUrl}'), url('${blurUrl}');`);
   }),
 
