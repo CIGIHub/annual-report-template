@@ -3,14 +3,13 @@ import { computed, get } from '@ember/object';
 import { inject as service } from '@ember/service';
 import { htmlSafe } from '@ember/template';
 
-import routeImage from '../route-image';
-
 export default Controller.extend({
+  backgroundImage: service(),
   intl: service(),
 
   backgroundStyle: computed(function() {
-    const backgroundUrl = routeImage('a-bretton-woods-moment-for-the-digital-age');
-    return htmlSafe(`background-image: url('${backgroundUrl}');`);
+    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getBackgroundImage('a-bretton-woods-moment-for-the-digital-age');
+    return htmlSafe(`background-image: url('${fullUrl}'), url('${blurUrl}');`);
   }),
 
   links: computed('intl.locale', function() {
