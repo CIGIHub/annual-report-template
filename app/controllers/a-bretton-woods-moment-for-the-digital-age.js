@@ -8,7 +8,7 @@ export default Controller.extend({
   intl: service(),
 
   backgroundStyle: computed(function() {
-    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getBackgroundImage('a-bretton-woods-moment-for-the-digital-age');
+    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('a-bretton-woods-moment-for-the-digital-age');
     return htmlSafe(`background-image: url('${fullUrl}'), url('${blurUrl}');`);
   }),
 

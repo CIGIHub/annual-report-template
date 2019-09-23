@@ -6,11 +6,12 @@ import {
   set,
 } from '@ember/object';
 import { alias } from '@ember/object/computed';
-// import { htmlSafe } from '@ember/template';
+import { htmlSafe } from '@ember/template';
 import { inject as service } from '@ember/service';
 import $ from 'jquery';
 
 export default Controller.extend({
+  backgroundImage: service(),
   fastboot: service(),
   queryParams: ['id', 'search'],
 
@@ -29,19 +30,14 @@ export default Controller.extend({
     return get(this, 'node.type') === 'publication';
   }),
 
-  overlayStyle: computed('node.id', function() {
-    // const node = get(this, 'node');
+  overlayStyle: computed('node.id', /* istanbul ignore next */ function() {
+    const node = get(this, 'node');
 
-    // if (!get(this, 'fastboot.isFastBoot')
-    //     && node) {
-    //   let publicId = nodeImages['12895'].public_id.replace(' ', '%20');
-    //   let version = nodeImages['12895'].version;
-    //   if (node.image) {
-    //     publicId = nodeImages[node.id].public_id.replace(' ', '%20');
-    //     version = nodeImages[node.id].version;
-    //   }
-    //   return htmlSafe(`background-image: url('https://res.cloudinary.com/cigi/image/upload/h_1440,c_fill/v${version}/${publicId}.jpg'), url('https://res.cloudinary.com/cigi/image/upload/w_100,e_blur:100,c_scale/v${version}/${publicId}.jpg')`);
-    // }
+    if (!get(this, 'fastboot.isFastBoot')
+        && node) {
+      const { fullSizeUrl, thumbnailUrl } = get(this, 'backgroundImage').getNodeBackgroundImage(node.id);
+      return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}')`);
+    }
 
     return null;
   }),

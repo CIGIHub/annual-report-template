@@ -2,12 +2,13 @@ import Controller from '@ember/controller';
 import { computed, get, set } from '@ember/object';
 import { alias } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
-// import { htmlSafe } from '@ember/template';
+import { htmlSafe } from '@ember/template';
 import $ from 'jquery';
 
 // import nodeImages from '../node-images';
 
 export default Controller.extend({
+  backgroundImage: service(),
   fastboot: service(),
   intl: service(),
 
@@ -99,18 +100,13 @@ export default Controller.extend({
     }));
   }),
 
-  overlayStyle: computed('publication.id', function() {
+  overlayStyle: computed('publication.id', /* istanbul ignore next */ function() {
     const publication = get(this, 'publication');
 
     if (!get(this, 'fastboot.isFastBoot')
         && publication) {
-      // let publicId = nodeImages['12895'].public_id.replace(' ', '%20');
-      // let version = nodeImages['12895'].version;
-      // if (publication.image) {
-      //   publicId = nodeImages[publication.id].public_id.replace(' ', '%20');
-      //   version = nodeImages[publication.id].version;
-      // }
-      // return htmlSafe(`background-image: url('https://res.cloudinary.com/cigi/image/upload/h_1440,c_fill/v${version}/${publicId}.jpg'), url('https://res.cloudinary.com/cigi/image/upload/w_100,e_blur:100,c_scale/v${version}/${publicId}.jpg')`);
+      const { fullSizeUrl, thumbnailUrl } = get(this, 'backgroundImage').getNodeBackgroundImage(publication.id);
+      return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}')`);
     }
 
     return null;
@@ -120,7 +116,7 @@ export default Controller.extend({
     return Math.max(Math.ceil(get(this, 'totalObjects') / 16), 1);
   }),
 
-  shortSummary: computed('publication.summary', function() {
+  shortSummary: computed('publication.summary', /* istanbul ignore next */ function() {
     let summary = get(this, 'publication.summary');
     summary = summary.replace(/(\r\n\t|\n|\r\t)/gm, '');
     if (/^(.*?)[.?!]\s/.test(summary)) {

@@ -57,6 +57,7 @@ export default Service.extend({
       fullUrl: 'QxRVvOjENvAGLXLQ/thank-you.jpg',
     },
   },
+  nodeS3Directory: '41bbb41e5e574965',
 
   imageHost: computed(function() {
     if (ENV.environment !== 'production' || ENV.staging) {
@@ -69,7 +70,14 @@ export default Service.extend({
     return Object.keys(get(this, 'backgroundImages')).map((key) => `${get(this, 'imageHost')}/interactives/2019annualreport/static/${get(this, 'backgroundImages')[key].blurUrl}`);
   },
 
-  getBackgroundImage(routeName) {
+  getNodeBackgroundImage(nodeId) {
+    return {
+      fullSizeUrl: `${get(this, 'imageHost')}/interactives/2019annualreport/static/${get(this, 'nodeS3Directory')}/nodes/${nodeId}.jpg`,
+      thumbnailUrl: `${get(this, 'imageHost')}/interactives/2019annualreport/static/${get(this, 'nodeS3Directory')}/nodes/${nodeId}-thumbnail.jpg`,
+    };
+  },
+
+  getSlideBackgroundImage(routeName) {
     if (get(this, 'backgroundImages')[routeName]
         && get(this, 'backgroundImages')[routeName].blurUrl
         && get(this, 'backgroundImages')[routeName].fullUrl) {

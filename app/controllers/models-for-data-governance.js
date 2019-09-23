@@ -8,7 +8,7 @@ export default Controller.extend({
   intl: service(),
 
   backgroundStyle: computed(function() {
-    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getBackgroundImage('models-for-data-governance');
+    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('models-for-data-governance');
     return htmlSafe(`background-image: url('${fullUrl}'), url('${blurUrl}');`);
   }),
 

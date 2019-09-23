@@ -26,6 +26,10 @@ export default Service.extend({
       get(this, 'backgroundImage').getAllBlurImages().forEach((blurImage) => {
         get(this, 'promises').push(this._loadAsset(blurImage));
       });
+      nodes.forEach((node) => {
+        const { thumbnailUrl } = get(this, 'backgroundImage').getNodeBackgroundImage(node.id);
+        get(this, 'promises').push(this._loadAsset(thumbnailUrl));
+      });
     }
   },
 

@@ -9,7 +9,7 @@ export default Controller.extend({
   intl: service(),
 
   backgroundStyle: computed(function() {
-    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getBackgroundImage('media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
     return htmlSafe(`background-image: url('${fullUrl}'), url('${blurUrl}');`);
   }),
 
