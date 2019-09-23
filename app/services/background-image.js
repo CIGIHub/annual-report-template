@@ -44,6 +44,10 @@ export default Service.extend({
       blurUrl: 'QxRVvOjENvAGLXLQ/presidents-message-blur.jpg',
       fullUrl: 'QxRVvOjENvAGLXLQ/presidents-message.jpg',
     },
+    'protecting-elections-from-foreign-interference': {
+      blurUrl: 'QxRVvOjENvAGLXLQ/protecting-elections-from-foreign-interference-blur.jpg',
+      fullUrl: 'QxRVvOjENvAGLXLQ/protecting-elections-from-foreign-interference.jpg',
+    },
     'thank-you': {
       blurUrl: 'QxRVvOjENvAGLXLQ/thank-you-blur.jpg',
       fullUrl: 'QxRVvOjENvAGLXLQ/thank-you.jpg',
