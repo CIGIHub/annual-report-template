@@ -16,6 +16,7 @@
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "lint:sass": "sass-lint 'app/**/*.scss' -v -q",
+    "migrate-images": "node migrate-images",
     "start": "ember serve",
     "test": "ember test",
     "test:travis": "COVERAGE=true ember test"
@@ -29,6 +30,7 @@
     "aws-sdk": "2.533.0",
     "broccoli-asset-rev": "3.0.0",
     "coveralls": "3.0.6",
+    "dotenv": "8.1.0",
     "ember-ajax": "5.0.0",
     "ember-cli": "3.12.0",
     "ember-cli-app-version": "3.2.0",
