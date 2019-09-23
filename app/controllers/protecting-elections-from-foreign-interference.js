@@ -26,7 +26,7 @@ export default Controller.extend({
     }, {
       icon: 'comment-alt-lines',
       link: 'https://www.cigionline.org/articles/are-democracies-prepared-foreign-interference',
-      title: get(this, 'intl').t('protectingElectionsFromForeignInterference.link2'),
+      title: get(this, 'intl').t('protectingElectionsFromForeignInterference.link3'),
       type: get(this, 'intl').t('article'),
     }];
   }),
