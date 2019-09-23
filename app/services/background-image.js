@@ -24,6 +24,10 @@ export default Service.extend({
       blurUrl: 'QxRVvOjENvAGLXLQ/chairs-message-blur.jpg',
       fullUrl: 'QxRVvOjENvAGLXLQ/chairs-message.jpg',
     },
+    'curbing-cultural-appropriation-through-intellectual-property-law': {
+      blurUrl: 'QxRVvOjENvAGLXLQ/curbing-cultural-appropriation-through-intellectual-property-law-blur.png',
+      fullUrl: 'QxRVvOjENvAGLXLQ/curbing-cultural-appropriation-through-intellectual-property-law.png',
+    },
     'governing-cyberspace-during-a-crisis-in-trust': {
       blurUrl: 'QxRVvOjENvAGLXLQ/governing-cyberspace-during-a-crisis-in-trust-blur.jpg',
       fullUrl: 'QxRVvOjENvAGLXLQ/governing-cyberspace-during-a-crisis-in-trust.jpg',
@@ -43,6 +47,10 @@ export default Service.extend({
     'presidents-message': {
       blurUrl: 'QxRVvOjENvAGLXLQ/presidents-message-blur.jpg',
       fullUrl: 'QxRVvOjENvAGLXLQ/presidents-message.jpg',
+    },
+    'protecting-elections-from-foreign-interference': {
+      blurUrl: 'QxRVvOjENvAGLXLQ/protecting-elections-from-foreign-interference-blur.jpg',
+      fullUrl: 'QxRVvOjENvAGLXLQ/protecting-elections-from-foreign-interference.jpg',
     },
     'thank-you': {
       blurUrl: 'QxRVvOjENvAGLXLQ/thank-you-blur.jpg',
