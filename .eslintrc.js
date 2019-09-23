@@ -31,6 +31,7 @@ module.exports = {
     'func-names': ['off'],
     'import/no-extraneous-dependencies': ['off'],
     'import/no-unresolved': ['off'],
+    'no-await-in-loop': ['off'],
     'no-restricted-globals': ['off'],
     'no-restricted-syntax': ['off'],
     'no-underscore-dangle': ['off'],

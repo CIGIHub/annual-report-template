@@ -4,6 +4,7 @@ const AWS = require('aws-sdk');
 const crypto = require('crypto');
 const winston = require('winston');
 
+const convertAndUploadImage = require('./convert-and-upload-image');
 const nodes = require('../vendor/nodes');
 
 const logger = winston.createLogger({
@@ -24,22 +25,10 @@ if (process.argv.slice(2)
   s3Directory = process.argv.slice(2)[0];
 }
 
-// s3.putObject({
-//   Body: 'hello world',
-//   Bucket: 'annual-report-2019-static',
-//   Key: 'helloworld.txt',
-// }, function(err, data) {
-//   if (err) {
-//     console.log(err, err.stack);
-//   } else {
-//     console.log(data);
-//   }
-// });
-
 Promise.resolve().then(async() => {
-  logger.info('Uploading nodes...');
+  logger.info(`Uploading nodes to ${s3Directory}`);
   const ASYNC_LIMIT = 10;
-  const nodeImages = {};
+  // const nodeImages = {};
 
   // Create offsets to upload node images in batches of ASYNC_LIMIT
   const offsets = [];
@@ -51,7 +40,20 @@ Promise.resolve().then(async() => {
     const batchNodes = nodes.slice(offset, offset + ASYNC_LIMIT);
     const promises = [];
     for (const node of batchNodes) {
-      logger.info(`Uploading node ${node.id}`);
+      if (node.image) {
+        logger.info(`Uploading node ${node.id}`);
+        promises.push(convertAndUploadImage({
+          node,
+          s3,
+          s3Directory,
+        }));
+      } else {
+        logger.info(`No image for ${node.id}. Skipping...`);
+      }
     }
+
+    await Promise.all(promises);
   }
+}).then(() => {
+  logger.info(`Finished uploading to ${s3Directory}`);
 });
