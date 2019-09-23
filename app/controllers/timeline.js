@@ -30,7 +30,7 @@ export default Controller.extend({
     return get(this, 'node.type') === 'publication';
   }),
 
-  overlayStyle: computed('node.id', function() {
+  overlayStyle: computed('node.id', /* istanbul ignore next */ function() {
     const node = get(this, 'node');
 
     if (!get(this, 'fastboot.isFastBoot')

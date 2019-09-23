@@ -100,7 +100,7 @@ export default Controller.extend({
     }));
   }),
 
-  overlayStyle: computed('publication.id', function() {
+  overlayStyle: computed('publication.id', /* istanbul ignore next */ function() {
     const publication = get(this, 'publication');
 
     if (!get(this, 'fastboot.isFastBoot')
@@ -116,7 +116,7 @@ export default Controller.extend({
     return Math.max(Math.ceil(get(this, 'totalObjects') / 16), 1);
   }),
 
-  shortSummary: computed('publication.summary', function() {
+  shortSummary: computed('publication.summary', /* istanbul ignore next */ function() {
     let summary = get(this, 'publication.summary');
     summary = summary.replace(/(\r\n\t|\n|\r\t)/gm, '');
     if (/^(.*?)[.?!]\s/.test(summary)) {
