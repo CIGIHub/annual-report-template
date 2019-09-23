@@ -43,6 +43,7 @@ Promise.resolve().then(async() => {
       if (node.image) {
         logger.info(`Uploading node ${node.id}`);
         promises.push(convertAndUploadImage({
+          logger,
           node,
           s3,
           s3Directory,

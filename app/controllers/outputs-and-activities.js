@@ -1,8 +1,9 @@
+import ENV from 'annual-report-2019/config/environment';
 import Controller from '@ember/controller';
 import { computed, get, set } from '@ember/object';
 import { alias } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
-// import { htmlSafe } from '@ember/template';
+import { htmlSafe } from '@ember/template';
 import $ from 'jquery';
 
 // import nodeImages from '../node-images';
@@ -104,6 +105,11 @@ export default Controller.extend({
 
     if (!get(this, 'fastboot.isFastBoot')
         && publication) {
+      let host = 'https://www.cigionline.org';
+      if (ENV.environment !== 'production' || ENV.staging) {
+        host = 'https://staging.cigionline.org';
+      }
+      return htmlSafe(`background-image: url('${host}/interactives/2019annualreport/static/ea0304a1ba15e9a1/nodes/${publication.id}.jpg'), url('${host}/interactives/2019annualreport/static/ea0304a1ba15e9a1/nodes/${publication.id}-thumbnail.jpg')`);
       // let publicId = nodeImages['12895'].public_id.replace(' ', '%20');
       // let version = nodeImages['12895'].version;
       // if (publication.image) {
