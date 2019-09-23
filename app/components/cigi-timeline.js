@@ -11,6 +11,7 @@ import { inject as service } from '@ember/service';
 import $ from 'jquery';
 
 export default Component.extend({
+  backgroundImage: service(),
   fastboot: service(),
   nodeId: null,
   nodes: [],
@@ -332,18 +333,10 @@ export default Component.extend({
       previewImageContainer.addClass('preview-image-container');
       const previewImage = $(document.createElement('div'));
       previewImage.addClass('preview-image');
-      // let publicId = nodeImages['12895'].public_id.replace(' ', '%20');
-      // let version = nodeImages['12895'].version;
-      // if (node.image
-      //     && nodeImages[node.id]
-      //     && nodeImages[node.id].public_id
-      //     && nodeImages[node.id].version) {
-      //   publicId = nodeImages[node.id].public_id.replace(' ', '%20');
-      //   version = nodeImages[node.id].version;
-      // }
-      // previewImage.css({
-      //   'background-image': `url('https://res.cloudinary.com/cigi/image/upload/w_80,h_80,c_fill/v${version}/${publicId}.jpg')`,
-      // });
+      const { thumbnailUrl } = get(this, 'backgroundImage').getNodeBackgroundImage(node.id);
+      previewImage.css({
+        'background-image': `url('${thumbnailUrl}')`,
+      });
       previewImage.addClass(`timeline-${node.id}-thumbnail`);
       previewImageContainer.append(previewImage);
       preview.append(previewImageContainer);
