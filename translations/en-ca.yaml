@@ -399,6 +399,7 @@ subscribe: 'Subscribe'
 survey: 'Survey'
 tableOfContents:
   title: 'Table of Contents'
+telecharger: 'Télécharger'
 thankYou:
   link1: 'Download the Annual Report PDF.'
   link2: 'Télécharger le Rapport annuel en français (PDF).'
