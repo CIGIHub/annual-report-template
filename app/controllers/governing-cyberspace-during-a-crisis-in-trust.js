@@ -1,4 +1,3 @@
-import ENV from 'annual-report-2019/config/environment';
 import Controller from '@ember/controller';
 import { computed, get } from '@ember/object';
 import { inject as service } from '@ember/service';
@@ -44,10 +43,6 @@ export default Controller.extend({
   }),
 
   videoLink: computed(function() {
-    let host = 'https://www.cigionline.org';
-    if (ENV.environment !== 'production' || ENV.staging) {
-      host = 'https://staging.cigionline.org';
-    }
-    return `${host}/interactives/2019annualreport/static/QxRVvOjENvAGLXLQ/governing-cyberspace-during-a-crisis-in-trust.mp4`;
+    return `${get(this, 'backgroundImage.imageHost')}QxRVvOjENvAGLXLQ/governing-cyberspace-during-a-crisis-in-trust.mp4`;
   }),
 });

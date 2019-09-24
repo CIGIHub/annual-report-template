@@ -61,9 +61,9 @@ export default Service.extend({
 
   imageHost: computed(function() {
     if (ENV.environment !== 'production' || ENV.staging) {
-      return 'https://staging.cigionline.org';
+      return 'https://staging.cigionline.org/interactives/2019annualreport/static/';
     }
-    return 'https://www.cigionline.org';
+    return 'https://www.cigionline.org/interactives/2019annualreport/static/';
   }),
 
   getAllBlurImages() {
@@ -72,8 +72,8 @@ export default Service.extend({
 
   getNodeBackgroundImage(nodeId) {
     return {
-      fullSizeUrl: `${get(this, 'imageHost')}/interactives/2019annualreport/static/${get(this, 'nodeS3Directory')}/nodes/${nodeId}.jpg`,
-      thumbnailUrl: `${get(this, 'imageHost')}/interactives/2019annualreport/static/${get(this, 'nodeS3Directory')}/nodes/${nodeId}-thumbnail.jpg`,
+      fullSizeUrl: `${get(this, 'imageHost')}${get(this, 'nodeS3Directory')}/nodes/${nodeId}.jpg`,
+      thumbnailUrl: `${get(this, 'imageHost')}${get(this, 'nodeS3Directory')}/nodes/${nodeId}-thumbnail.jpg`,
     };
   },
 
@@ -82,8 +82,8 @@ export default Service.extend({
         && get(this, 'backgroundImages')[routeName].blurUrl
         && get(this, 'backgroundImages')[routeName].fullUrl) {
       return {
-        blurUrl: `${get(this, 'imageHost')}/interactives/2019annualreport/static/${get(this, 'backgroundImages')[routeName].blurUrl}`,
-        fullUrl: `${get(this, 'imageHost')}/interactives/2019annualreport/static/${get(this, 'backgroundImages')[routeName].fullUrl}`,
+        blurUrl: `${get(this, 'imageHost')}${get(this, 'backgroundImages')[routeName].blurUrl}`,
+        fullUrl: `${get(this, 'imageHost')}${get(this, 'backgroundImages')[routeName].fullUrl}`,
       };
     }
     return { blurUrl: null, fullUrl: null };
