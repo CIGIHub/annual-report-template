@@ -21,6 +21,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   afterModel() {
     const title = `${get(this, 'intl').t('presidentsMessage.title')} | ${get(this, 'intl').t('title')}`;
     set(this, 'headData.title', title);
+    set(this, 'headData.description', get(this, 'intl').t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}presidents-message/`);
     const backgroundImage = get(this, 'backgroundImage').getSlideBackgroundImage('presidents-message');
     if (backgroundImage && backgroundImage.fullSizeUrl) {

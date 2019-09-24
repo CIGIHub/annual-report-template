@@ -7,6 +7,7 @@ import { inject as service } from '@ember/service';
 
 export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   assetLoader: service(),
+  backgroundImage: service(),
   headData: service(),
   intl: service(),
 
@@ -24,6 +25,9 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   },
 
   afterModel() {
+    set(this, 'headData.title', get(this, 'intl').t('title'));
+    set(this, 'headData.description', get(this, 'intl').t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}table-of-contents/`);
+    set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.fullSizeUrl'));
   },
 });

@@ -14,6 +14,7 @@ const events = nodes.filter((node) => node.type === 'event');
 
 export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   assetLoader: service(),
+  backgroundImage: service(),
   fastboot: service(),
   headData: service(),
   lightbox: service(),
@@ -132,7 +133,9 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   afterModel() {
     const title = `${get(this, 'intl').t('outputsAndActivities.title')} | ${get(this, 'intl').t('title')}`;
     set(this, 'headData.title', title);
+    set(this, 'headData.description', get(this, 'intl').t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}outputs-and-activities/`);
+    set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.fullSizeUrl'));
   },
 
   resetController(controller) {
