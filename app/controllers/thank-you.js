@@ -12,6 +12,11 @@ export default Controller.extend({
     return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}');`);
   }),
 
+  staffPhoto: computed(function() {
+    const { fullSizeUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('thank-you');
+    return fullSizeUrl;
+  }),
+
   links: computed('intl.locale', function() {
     return [{
       icon: 'download',
