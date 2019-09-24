@@ -38,4 +38,8 @@ export default Controller.extend({
   title: computed('intl.locale', function() {
     return get(this, 'intl').t('exploringTheFourInternetsAndTheGeopoliticsOfDigitalGovernance.title');
   }),
+
+  videoLink: computed(function() {
+    return `${get(this, 'backgroundImage.imageHost')}QxRVvOjENvAGLXLQ/exploring-the-four-internets-and-the-geopolitics-of-digital-governance.mp4`;
+  }),
 });
