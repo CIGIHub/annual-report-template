@@ -8,8 +8,8 @@ export default Controller.extend({
   intl: service(),
 
   backgroundStyle: computed(function() {
-    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('thank-you');
-    return htmlSafe(`background-image: url('${fullUrl}'), url('${blurUrl}');`);
+    const { thumbnailUrl, fullSizeUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('thank-you');
+    return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}');`);
   }),
 
   links: computed('intl.locale', function() {

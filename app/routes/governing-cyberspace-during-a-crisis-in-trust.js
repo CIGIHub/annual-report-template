@@ -7,6 +7,7 @@ import { inject as service } from '@ember/service';
 
 export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   assetLoader: service(),
+  backgroundImage: service(),
   headData: service(),
   intl: service(),
 
@@ -22,5 +23,9 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.title', title);
     set(this, 'headData.description', get(this, 'intl').t('governingCyberspaceDuringACrisisInTrust.description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}governing-cyberspace-during-a-crisis-in-trust/`);
+    const backgroundImage = get(this, 'backgroundImage').getSlideBackgroundImage('governing-cyberspace-during-a-crisis-in-trust');
+    if (backgroundImage && backgroundImage.fullSizeUrl) {
+      set(this, 'headData.image', backgroundImage.fullSizeUrl);
+    }
   },
 });

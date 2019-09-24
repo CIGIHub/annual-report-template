@@ -5,56 +5,56 @@ import Service from '@ember/service';
 export default Service.extend({
   backgroundImages: {
     'a-bretton-woods-moment-for-the-digital-age': {
-      blurUrl: 'QxRVvOjENvAGLXLQ/a-bretton-woods-moment-for-the-digital-age-blur.jpg',
-      fullUrl: 'QxRVvOjENvAGLXLQ/a-bretton-woods-moment-for-the-digital-age.jpg',
+      fullSizeUrl: '4a7fcdebfbc4a053/slides/a-bretton-woods-moment-for-the-digital-age.jpg',
+      thumbnailUrl: '4a7fcdebfbc4a053/slides/a-bretton-woods-moment-for-the-digital-age-thumbnail.jpg',
     },
     'a-clarion-call-for-protecting-the-worlds-refugees': {
-      blurUrl: 'QxRVvOjENvAGLXLQ/a-clarion-call-for-protecting-the-worlds-refugees-blur.jpg',
-      fullUrl: 'QxRVvOjENvAGLXLQ/a-clarion-call-for-protecting-the-worlds-refugees.jpg',
+      fullSizeUrl: '4a7fcdebfbc4a053/slides/a-clarion-call-for-protecting-the-worlds-refugees.jpg',
+      thumbnailUrl: '4a7fcdebfbc4a053/slides/a-clarion-call-for-protecting-the-worlds-refugees-thumbnail.png',
     },
     'braiding-legal-orders': {
-      blurUrl: 'QxRVvOjENvAGLXLQ/braiding-legal-orders-blur.jpg',
-      fullUrl: 'QxRVvOjENvAGLXLQ/braiding-legal-orders.jpg',
+      fullSizeUrl: '4a7fcdebfbc4a053/slides/braiding-legal-orders.jpg',
+      thumbnailUrl: '4a7fcdebfbc4a053/slides/braiding-legal-orders-thumbnail.jpg',
     },
     'building-closer-ties-between-canada-and-india': {
-      blurUrl: 'QxRVvOjENvAGLXLQ/building-closer-ties-between-canada-and-india-blur.jpg',
-      fullUrl: 'QxRVvOjENvAGLXLQ/building-closer-ties-between-canada-and-india.jpg',
+      fullSizeUrl: '4a7fcdebfbc4a053/slides/building-closer-ties-between-canada-and-india.jpg',
+      thumbnailUrl: '4a7fcdebfbc4a053/slides/building-closer-ties-between-canada-and-india-thumbnail.jpg',
     },
     'chairs-message': {
-      blurUrl: 'QxRVvOjENvAGLXLQ/chairs-message-blur.jpg',
-      fullUrl: 'QxRVvOjENvAGLXLQ/chairs-message.jpg',
+      fullSizeUrl: '4a7fcdebfbc4a053/slides/chairs-message.jpg',
+      thumbnailUrl: '4a7fcdebfbc4a053/slides/chairs-message-thumbnail.jpg',
     },
     'curbing-cultural-appropriation-through-intellectual-property-law': {
-      blurUrl: '41bbb41e5e574965/curbing-cultural-appropriation-through-intellectual-property-law-blur.jpg',
-      fullUrl: '41bbb41e5e574965/curbing-cultural-appropriation-through-intellectual-property-law.jpg',
+      fullSizeUrl: '4a7fcdebfbc4a053/slides/curbing-cultural-appropriation-through-intellectual-property-law.jpg',
+      thumbnailUrl: '4a7fcdebfbc4a053/slides/curbing-cultural-appropriation-through-intellectual-property-law-thumbnail.jpg',
     },
     'governing-cyberspace-during-a-crisis-in-trust': {
-      blurUrl: 'QxRVvOjENvAGLXLQ/governing-cyberspace-during-a-crisis-in-trust-blur.jpg',
-      fullUrl: 'QxRVvOjENvAGLXLQ/governing-cyberspace-during-a-crisis-in-trust.jpg',
+      fullSizeUrl: '4a7fcdebfbc4a053/slides/governing-cyberspace-during-a-crisis-in-trust.jpg',
+      thumbnailUrl: '4a7fcdebfbc4a053/slides/governing-cyberspace-during-a-crisis-in-trust-thumbnail.jpg',
     },
     'informing-the-debate-around-internet-security-and-trust': {
-      blurUrl: 'QxRVvOjENvAGLXLQ/informing-the-debate-around-internet-security-and-trust-blur.jpg',
-      fullUrl: 'QxRVvOjENvAGLXLQ/informing-the-debate-around-internet-security-and-trust.jpg',
+      fullSizeUrl: '4a7fcdebfbc4a053/slides/informing-the-debate-around-internet-security-and-trust.jpg',
+      thumbnailUrl: '4a7fcdebfbc4a053/slides/informing-the-debate-around-internet-security-and-trust-thumbnail.jpg',
     },
     'media-and-mass-atrocity-the-rwanda-genocide-and-beyond': {
-      blurUrl: '41bbb41e5e574965/media-and-mass-atrocity-the-rwanda-genocide-and-beyond-blur.jpg',
-      fullUrl: '41bbb41e5e574965/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.jpg',
+      fullSizeUrl: '4a7fcdebfbc4a053/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.jpg',
+      thumbnailUrl: '4a7fcdebfbc4a053/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond-thumbnail.jpg',
     },
     'models-for-data-governance': {
-      blurUrl: 'QxRVvOjENvAGLXLQ/models-for-data-governance-blur.jpg',
-      fullUrl: 'QxRVvOjENvAGLXLQ/models-for-data-governance.jpg',
+      fullSizeUrl: '4a7fcdebfbc4a053/slides/models-for-data-governance.jpg',
+      thumbnailUrl: '4a7fcdebfbc4a053/slides/models-for-data-governance-thumbnail.jpg',
     },
     'presidents-message': {
-      blurUrl: 'QxRVvOjENvAGLXLQ/presidents-message-blur.jpg',
-      fullUrl: 'QxRVvOjENvAGLXLQ/presidents-message.jpg',
+      fullSizeUrl: '4a7fcdebfbc4a053/slides/presidents-message.jpg',
+      thumbnailUrl: '4a7fcdebfbc4a053/slides/presidents-message-thumbnail.jpg',
     },
     'protecting-elections-from-foreign-interference': {
-      blurUrl: 'QxRVvOjENvAGLXLQ/protecting-elections-from-foreign-interference-blur.jpg',
-      fullUrl: 'QxRVvOjENvAGLXLQ/protecting-elections-from-foreign-interference.jpg',
+      fullSizeUrl: '4a7fcdebfbc4a053/slides/protecting-elections-from-foreign-interference.jpg',
+      thumbnailUrl: '4a7fcdebfbc4a053/slides/protecting-elections-from-foreign-interference-thumbnail.jpg',
     },
     'thank-you': {
-      blurUrl: '41bbb41e5e574965/thank-you-blur.jpg',
-      fullUrl: '41bbb41e5e574965/thank-you.jpg',
+      fullSizeUrl: '4a7fcdebfbc4a053/slides/thank-you.jpg',
+      thumbnailUrl: '4a7fcdebfbc4a053/slides/thank-you-thumbnail.jpg',
     },
   },
   nodesMissingBackground: [
@@ -107,7 +107,7 @@ export default Service.extend({
   }),
 
   getAllBlurImages() {
-    return Object.keys(get(this, 'backgroundImages')).map((key) => `${get(this, 'imageHost')}/interactives/2019annualreport/static/${get(this, 'backgroundImages')[key].blurUrl}`);
+    return Object.keys(get(this, 'backgroundImages')).map((key) => `${get(this, 'imageHost')}${get(this, 'backgroundImages')[key].thumbnailUrl}`);
   },
 
   getNodeBackgroundImage(nodeId) {
@@ -122,13 +122,13 @@ export default Service.extend({
 
   getSlideBackgroundImage(routeName) {
     if (get(this, 'backgroundImages')[routeName]
-        && get(this, 'backgroundImages')[routeName].blurUrl
-        && get(this, 'backgroundImages')[routeName].fullUrl) {
+        && get(this, 'backgroundImages')[routeName].fullSizeUrl
+        && get(this, 'backgroundImages')[routeName].thumbnailUrl) {
       return {
-        blurUrl: `${get(this, 'imageHost')}${get(this, 'backgroundImages')[routeName].blurUrl}`,
-        fullUrl: `${get(this, 'imageHost')}${get(this, 'backgroundImages')[routeName].fullUrl}`,
+        fullSizeUrl: `${get(this, 'imageHost')}${get(this, 'backgroundImages')[routeName].fullSizeUrl}`,
+        thumbnailUrl: `${get(this, 'imageHost')}${get(this, 'backgroundImages')[routeName].thumbnailUrl}`,
       };
     }
-    return { blurUrl: null, fullUrl: null };
+    return { thumbnailUrl: null, fullSizeUrl: null };
   },
 });
