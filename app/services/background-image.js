@@ -25,8 +25,8 @@ export default Service.extend({
       fullUrl: 'QxRVvOjENvAGLXLQ/chairs-message.jpg',
     },
     'curbing-cultural-appropriation-through-intellectual-property-law': {
-      blurUrl: 'QxRVvOjENvAGLXLQ/curbing-cultural-appropriation-through-intellectual-property-law-blur.png',
-      fullUrl: 'QxRVvOjENvAGLXLQ/curbing-cultural-appropriation-through-intellectual-property-law.png',
+      blurUrl: '41bbb41e5e574965/curbing-cultural-appropriation-through-intellectual-property-law-blur.jpg',
+      fullUrl: '41bbb41e5e574965/curbing-cultural-appropriation-through-intellectual-property-law.jpg',
     },
     'governing-cyberspace-during-a-crisis-in-trust': {
       blurUrl: 'QxRVvOjENvAGLXLQ/governing-cyberspace-during-a-crisis-in-trust-blur.jpg',
