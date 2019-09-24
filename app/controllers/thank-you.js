@@ -8,8 +8,8 @@ export default Controller.extend({
   intl: service(),
 
   backgroundStyle: computed(function() {
-    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('thank-you');
-    return htmlSafe(`background-image: url('${fullUrl}'), url('${blurUrl}');`);
+    const { fullSizeUrl, thumbnailUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('thank-you');
+    return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}');`);
   }),
 
   links: computed('intl.locale', function() {
@@ -34,5 +34,10 @@ export default Controller.extend({
       title: get(this, 'intl').t('thankYou.link4'),
       type: get(this, 'intl').t('partners'),
     }];
+  }),
+
+  staffPhoto: computed(function() {
+    const { fullSizeUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('thank-you');
+    return fullSizeUrl;
   }),
 });

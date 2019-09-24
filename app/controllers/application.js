@@ -41,8 +41,8 @@ export default Controller.extend({
       return htmlSafe('background-color: #fff;');
     }
 
-    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getSlideBackgroundImage(currentRouteName);
-    return htmlSafe(`background-image: url('${fullUrl}'), url('${blurUrl}');`);
+    const { thumbnailUrl, fullSizeUrl } = get(this, 'backgroundImage').getSlideBackgroundImage(currentRouteName);
+    return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}');`);
   }),
 
   bounceScrollArrowDown: computed('router.currentRouteName', function() {

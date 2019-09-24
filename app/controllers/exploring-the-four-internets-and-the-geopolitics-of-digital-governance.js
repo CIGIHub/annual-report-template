@@ -8,8 +8,8 @@ export default Controller.extend({
   intl: service(),
 
   backgroundStyle: computed(function() {
-    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
-    return htmlSafe(`background-image: url('${fullUrl}'), url('${blurUrl}');`);
+    const { fullSizeUrl, thumbnailUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
+    return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}');`);
   }),
 
   links: computed('intl.locale', function() {
@@ -40,6 +40,6 @@ export default Controller.extend({
   }),
 
   videoLink: computed(function() {
-    return `${get(this, 'backgroundImage.imageHost')}QxRVvOjENvAGLXLQ/exploring-the-four-internets-and-the-geopolitics-of-digital-governance.mp4`;
+    return `${get(this, 'backgroundImage.imageHost')}4a7fcdebfbc4a053/slides/exploring-the-four-internets-and-the-geopolitics-of-digital-governance.mp4`;
   }),
 });

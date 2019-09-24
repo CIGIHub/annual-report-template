@@ -4,6 +4,7 @@ import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 
 export default Route.extend({
+  backgroundImage: service(),
   headData: service(),
   intl: service(),
 
@@ -17,5 +18,6 @@ export default Route.extend({
     set(this, 'headData.siteName', get(this, 'intl').t('title'));
     set(this, 'headData.description', get(this, 'intl').t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}`);
+    set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.fullSizeUrl'));
   },
 });

@@ -8,8 +8,8 @@ export default Controller.extend({
   intl: service(),
 
   backgroundStyle: computed(function() {
-    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
-    return htmlSafe(`background-image: url('${fullUrl}'), url('${blurUrl}');`);
+    const { fullSizeUrl, thumbnailUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+    return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}');`);
   }),
 
   links: computed('intl.locale', function() {
@@ -39,6 +39,6 @@ export default Controller.extend({
   }),
 
   videoLink: computed(function() {
-    return `${get(this, 'backgroundImage.imageHost')}41bbb41e5e574965/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.mp4`;
+    return `${get(this, 'backgroundImage.imageHost')}4a7fcdebfbc4a053/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.mp4`;
   }),
 });

@@ -7,7 +7,7 @@ export default Controller.extend({
   backgroundImage: service(),
 
   backgroundStyle: computed(function() {
-    const { blurUrl, fullUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('chairs-message');
-    return htmlSafe(`background-image: url('${fullUrl}'), url('${blurUrl}');`);
+    const { fullSizeUrl, thumbnailUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('chairs-message');
+    return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}');`);
   }),
 });

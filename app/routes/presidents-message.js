@@ -7,6 +7,7 @@ import { inject as service } from '@ember/service';
 
 export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   assetLoader: service(),
+  backgroundImage: service(),
   headData: service(),
   intl: service(),
 
@@ -21,5 +22,9 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     const title = `${get(this, 'intl').t('presidentsMessage.title')} | ${get(this, 'intl').t('title')}`;
     set(this, 'headData.title', title);
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}presidents-message/`);
+    const backgroundImage = get(this, 'backgroundImage').getSlideBackgroundImage('presidents-message');
+    if (backgroundImage && backgroundImage.fullSizeUrl) {
+      set(this, 'headData.image', backgroundImage.fullSizeUrl);
+    }
   },
 });
