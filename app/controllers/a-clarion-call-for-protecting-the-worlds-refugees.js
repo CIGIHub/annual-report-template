@@ -43,6 +43,6 @@ export default Controller.extend({
   }),
 
   videoLink: computed(function() {
-    return `${get(this, 'backgroundImage.imageHost')}QxRVvOjENvAGLXLQ/a-clarion-call-for-protecting-the-worlds-refugees.mp4`;
+    return `${get(this, 'backgroundImage.imageHost')}4a7fcdebfbc4a053/slides/a-clarion-call-for-protecting-the-worlds-refugees.mp4`;
   }),
 });

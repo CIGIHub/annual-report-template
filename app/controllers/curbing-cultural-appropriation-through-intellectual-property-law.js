@@ -28,6 +28,6 @@ export default Controller.extend({
   }),
 
   videoLink: computed(function() {
-    return `${get(this, 'backgroundImage.imageHost')}41bbb41e5e574965/curbing-cultural-appropriation-through-intellectual-property-law.mp4`;
+    return `${get(this, 'backgroundImage.imageHost')}4a7fcdebfbc4a053/slides/curbing-cultural-appropriation-through-intellectual-property-law.mp4`;
   }),
 });

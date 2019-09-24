@@ -38,6 +38,6 @@ export default Controller.extend({
   }),
 
   videoLink: computed(function() {
-    return `${get(this, 'backgroundImage.imageHost')}QxRVvOjENvAGLXLQ/models-for-data-governance.mp4`;
+    return `${get(this, 'backgroundImage.imageHost')}4a7fcdebfbc4a053/slides/models-for-data-governance.mp4`;
   }),
 });

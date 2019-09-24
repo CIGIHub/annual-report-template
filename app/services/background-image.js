@@ -9,7 +9,7 @@ export default Service.extend({
       thumbnailUrl: '4a7fcdebfbc4a053/slides/a-bretton-woods-moment-for-the-digital-age-thumbnail.jpg',
     },
     'a-clarion-call-for-protecting-the-worlds-refugees': {
-      fullSizeUrl: '4a7fcdebfbc4a053/slides/a-clarion-call-for-protecting-the-worlds-refugees.jpg',
+      fullSizeUrl: '4a7fcdebfbc4a053/slides/a-clarion-call-for-protecting-the-worlds-refugees.png',
       thumbnailUrl: '4a7fcdebfbc4a053/slides/a-clarion-call-for-protecting-the-worlds-refugees-thumbnail.png',
     },
     'braiding-legal-orders': {
