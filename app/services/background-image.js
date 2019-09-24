@@ -53,8 +53,8 @@ export default Service.extend({
       fullUrl: 'QxRVvOjENvAGLXLQ/protecting-elections-from-foreign-interference.jpg',
     },
     'thank-you': {
-      blurUrl: 'QxRVvOjENvAGLXLQ/thank-you-blur.jpg',
-      fullUrl: 'QxRVvOjENvAGLXLQ/thank-you.jpg',
+      blurUrl: '41bbb41e5e574965/thank-you-blur.jpg',
+      fullUrl: '41bbb41e5e574965/thank-you.jpg',
     },
   },
   nodeS3Directory: '41bbb41e5e574965',
