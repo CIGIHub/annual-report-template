@@ -22,7 +22,7 @@ export default Controller.extend({
       icon: 'download',
       link: '',
       title: get(this, 'intl').t('thankYou.link2'),
-      type: get(this, 'intl').t('download'),
+      type: get(this, 'intl').t('telecharger'),
     }, {
       icon: 'envelope',
       link: '',
