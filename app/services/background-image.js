@@ -57,7 +57,47 @@ export default Service.extend({
       fullUrl: '41bbb41e5e574965/thank-you.jpg',
     },
   },
-  nodeS3Directory: '41bbb41e5e574965',
+  nodesMissingBackground: [
+    '13840',
+    '14698',
+    '14715',
+    '14716',
+    '14844',
+    '14862',
+    '14863',
+    '14881',
+    '14882',
+    '14903',
+    '14914',
+    '14966',
+    '14967',
+    '15050',
+    '15054',
+    '15056',
+    '15058',
+    '15067',
+    '15117',
+    '15142',
+    '15149',
+    '15157',
+    '15158',
+    '15218',
+    '15234',
+    '15275',
+    '15286',
+    '15290',
+    '15337',
+    '15338',
+    '15364',
+  ],
+  nodeS3Directory: '4a7fcdebfbc4a053',
+
+  defaultBackground: computed(function() {
+    return {
+      fullSizeUrl: `${get(this, 'imageHost')}4a7fcdebfbc4a053/cigi-campus.jpg`,
+      thumbnailUrl: `${get(this, 'imageHost')}4a7fcdebfbc4a053/cigi-campus-thumbnail.jpg`,
+    };
+  }),
 
   imageHost: computed(function() {
     if (ENV.environment !== 'production' || ENV.staging) {
@@ -71,6 +111,9 @@ export default Service.extend({
   },
 
   getNodeBackgroundImage(nodeId) {
+    if (get(this, 'nodesMissingBackground').includes(nodeId)) {
+      return get(this, 'defaultBackground');
+    }
     return {
       fullSizeUrl: `${get(this, 'imageHost')}${get(this, 'nodeS3Directory')}/nodes/${nodeId}.jpg`,
       thumbnailUrl: `${get(this, 'imageHost')}${get(this, 'nodeS3Directory')}/nodes/${nodeId}-thumbnail.jpg`,
