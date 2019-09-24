@@ -600,7 +600,12 @@
   bottom: 120px;
   position: absolute;
   transform: translateY(-55%);
+  visibility: hidden;
   width: 100%;
+
+  @media (min-height: 675px) {
+    visibility: visible;
+  }
 
   .timeline-search {
     margin-right: 0;
