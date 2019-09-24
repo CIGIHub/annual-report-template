@@ -36,4 +36,8 @@ export default Controller.extend({
   title: computed('intl.locale', function() {
     return get(this, 'intl').t('modelsForDataGovernance.title');
   }),
+
+  videoLink: computed(function() {
+    return `${get(this, 'backgroundImage.imageHost')}QxRVvOjENvAGLXLQ/models-for-data-governance.mp4`;
+  }),
 });
