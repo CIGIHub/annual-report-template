@@ -37,8 +37,8 @@ export default Service.extend({
       fullUrl: 'QxRVvOjENvAGLXLQ/informing-the-debate-around-internet-security-and-trust.jpg',
     },
     'media-and-mass-atrocity-the-rwanda-genocide-and-beyond': {
-      blurUrl: 'QxRVvOjENvAGLXLQ/media-and-mass-atrocity-the-rwanda-genocide-and-beyond-blur.jpg',
-      fullUrl: 'QxRVvOjENvAGLXLQ/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.jpg',
+      blurUrl: '41bbb41e5e574965/media-and-mass-atrocity-the-rwanda-genocide-and-beyond-blur.jpg',
+      fullUrl: '41bbb41e5e574965/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.jpg',
     },
     'models-for-data-governance': {
       blurUrl: 'QxRVvOjENvAGLXLQ/models-for-data-governance-blur.jpg',
