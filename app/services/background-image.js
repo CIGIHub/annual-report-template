@@ -33,8 +33,8 @@ export default Service.extend({
       thumbnailUrl: '4a7fcdebfbc4a053/slides/governing-cyberspace-during-a-crisis-in-trust-thumbnail.jpg',
     },
     'informing-the-debate-around-internet-security-and-trust': {
-      fullSizeUrl: '4a7fcdebfbc4a053/slides/informing-the-debate-around-internet-security-and-trust.jpg',
-      thumbnailUrl: '4a7fcdebfbc4a053/slides/informing-the-debate-around-internet-security-and-trust-thumbnail.jpg',
+      fullSizeUrl: 'ea0304a1ba15e9a1/slides/informing-the-debate-around-internet-security-and-trust.jpg',
+      thumbnailUrl: 'ea0304a1ba15e9a1/slides/informing-the-debate-around-internet-security-and-trust-thumbnail.jpg',
     },
     'media-and-mass-atrocity-the-rwanda-genocide-and-beyond': {
       fullSizeUrl: '4a7fcdebfbc4a053/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.jpg',
