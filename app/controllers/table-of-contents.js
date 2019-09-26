@@ -1,9 +1,13 @@
 import Controller from '@ember/controller';
-
-import routeOrder from '../route-order';
+import { computed, get } from '@ember/object';
+import { inject as service } from '@ember/service';
 
 export default Controller.extend({
+  routeOrder: service(),
+
   queryParams: ['acknowledgements'],
 
-  routes: routeOrder.slice(2),
+  routes: computed('routeOrder.routes.[]', function() {
+    return get(this, 'routeOrder.routes').slice(2);
+  }),
 });
