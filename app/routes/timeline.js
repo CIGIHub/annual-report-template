@@ -20,6 +20,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   headData: service(),
   intl: service(),
   lightbox: service(),
+  routeOrder: service(),
 
   queryParams: {
     id: {
@@ -127,6 +128,15 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.description', get(this, 'intl').t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}timeline/`);
     set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.fullSizeUrl'));
+
+    // Load next route background
+    const nextRoute = get(this, 'routeOrder').getNextRoute('timeline');
+    if (nextRoute) {
+      const { fullSizeUrl } = get(this, 'backgroundImage').getSlideBackgroundImage(nextRoute);
+      if (fullSizeUrl) {
+        get(this, 'assetLoader').loadAsset(fullSizeUrl);
+      }
+    }
   },
 
   resetController(controller) {
