@@ -3,6 +3,7 @@ import { computed, get, set } from '@ember/object';
 import { inject as service } from '@ember/service';
 
 export default Component.extend({
+  backgroundImage: service(),
   intl: service(),
   lightbox: service(),
   router: service(),
@@ -40,6 +41,10 @@ export default Component.extend({
   showAcknowledgementsTab: computed('showAcknowledgements', 'lightbox.subType', function() {
     return get(this, 'showAcknowledgements')
       || get(this, 'lightbox.subType') === 'acknowledgements';
+  }),
+
+  videoLink: computed(function() {
+    return `${get(this, 'backgroundImage.imageHost')}4a7fcdebfbc4a053/slides/table-of-contents.mp4`;
   }),
 
   actions: {
