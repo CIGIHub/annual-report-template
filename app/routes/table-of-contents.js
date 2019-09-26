@@ -10,6 +10,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   backgroundImage: service(),
   headData: service(),
   intl: service(),
+  routeOrder: service(),
 
   queryParams: {
     acknowledgements: {
@@ -29,5 +30,14 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.description', get(this, 'intl').t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}table-of-contents/`);
     set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.fullSizeUrl'));
+
+    // Load next route background
+    const nextRoute = get(this, 'routeOrder').getNextRoute('table-of-contents');
+    if (nextRoute) {
+      const { fullSizeUrl } = get(this, 'backgroundImage').getSlideBackgroundImage(nextRoute);
+      if (fullSizeUrl) {
+        get(this, 'assetLoader').loadAsset(fullSizeUrl);
+      }
+    }
   },
 });

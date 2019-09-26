@@ -8,12 +8,13 @@ import {
 import { inject as service } from '@ember/service';
 import $ from 'jquery';
 
-import routeOrder from '../route-order';
-
 export default Component.extend({
   lightbox: service(),
+  routeOrder: service(),
 
-  routes: routeOrder.slice(2),
+  routes: computed('routeOrder.routes.[]', function() {
+    return get(this, 'routeOrder.routes').slice(2);
+  }),
 
   showTableOfContents: computed('lightbox.showLightbox', function() {
     return get(this, 'lightbox.showLightbox') === 'tableofcontents';

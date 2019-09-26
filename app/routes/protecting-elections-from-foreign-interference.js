@@ -10,6 +10,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   backgroundImage: service(),
   headData: service(),
   intl: service(),
+  routeOrder: service(),
 
   beforeModel() {
     if (!get(this, 'assetLoader.assetsLoaded')) {
@@ -26,6 +27,15 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     const backgroundImage = get(this, 'backgroundImage').getSlideBackgroundImage('protecting-elections-from-foreign-interference');
     if (backgroundImage && backgroundImage.fullSizeUrl) {
       set(this, 'headData.image', backgroundImage.fullSizeUrl);
+    }
+
+    // Load next route background
+    const nextRoute = get(this, 'routeOrder').getNextRoute('protecting-elections-from-foreign-interference');
+    if (nextRoute) {
+      const { fullSizeUrl } = get(this, 'backgroundImage').getSlideBackgroundImage(nextRoute);
+      if (fullSizeUrl) {
+        get(this, 'assetLoader').loadAsset(fullSizeUrl);
+      }
     }
   },
 });

@@ -10,12 +10,11 @@ import { inject as service } from '@ember/service';
 import { htmlSafe } from '@ember/template';
 import $ from 'jquery';
 
-import routeOrder from '../route-order';
-
 export default Controller.extend({
   backgroundImage: service(),
   fastboot: service(),
   lightbox: service(),
+  routeOrder: service(),
   router: service(),
 
   dotNavShown: false,
@@ -102,17 +101,18 @@ export default Controller.extend({
     return get(this, 'dotNavShown') || onContentSlide;
   }),
 
-  showScrollArrowDown: computed('router.currentRouteName', function() {
+  showScrollArrowDown: computed('router.currentRouteName', 'routeOrder.{lastRoute,lastSubRoutes.[]}', function() {
     const currentRouteName = get(this, 'router.currentRouteName');
-    return currentRouteName !== routeOrder[routeOrder.length - 1].route
-      && !routeOrder[routeOrder.length - 1].subRoutes.includes(currentRouteName)
+
+    return currentRouteName !== get(this, 'routeOrder.lastRoute')
+      && !get(this, 'routeOrder.lastSubRoutes').includes(currentRouteName)
       && currentRouteName !== '404';
   }),
 
-  showScrollArrowUp: computed('router.currentRouteName', function() {
+  showScrollArrowUp: computed('router.currentRouteName', 'routeOrder.{firstRoute,firstSubRoutes.[]}', function() {
     const currentRouteName = get(this, 'router.currentRouteName');
-    return currentRouteName !== routeOrder[0].route
-      && !routeOrder[0].subRoutes.includes(currentRouteName)
+    return currentRouteName !== get(this, 'routeOrder.firstRoute')
+      && !get(this, 'routeOrder.firstSubRoutes').includes(currentRouteName)
       && currentRouteName !== '404';
   }),
 
@@ -140,11 +140,9 @@ export default Controller.extend({
     transitionBack() {
       set(this, 'isTransitioning', true);
       const currentRouteName = get(this, 'router.currentRouteName');
-      let ind = routeOrder.findIndex((route) => currentRouteName === route.route
-        || route.subRoutes.includes(currentRouteName));
-      ind -= 1;
-      if (ind >= 0) {
-        this.transitionToRoute(routeOrder[ind].route);
+      const previousRoute = get(this, 'routeOrder').getPreviousRoute(currentRouteName);
+      if (previousRoute) {
+        this.transitionToRoute(previousRoute);
         later(this, function() {
           set(this, 'isTransitioning', false);
         }, 1500);
@@ -155,11 +153,9 @@ export default Controller.extend({
     transitionNext() {
       set(this, 'isTransitioning', true);
       const currentRouteName = get(this, 'router.currentRouteName');
-      let ind = routeOrder.findIndex((route) => currentRouteName === route.route
-        || route.subRoutes.includes(currentRouteName));
-      ind += 1;
-      if (ind > 0 && ind < routeOrder.length) {
-        this.transitionToRoute(routeOrder[ind].route);
+      const nextRoute = get(this, 'routeOrder').getNextRoute(currentRouteName);
+      if (nextRoute) {
+        this.transitionToRoute(nextRoute);
         later(this, function() {
           set(this, 'isTransitioning', false);
         }, 1500);
