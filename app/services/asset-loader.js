@@ -24,11 +24,11 @@ export default Service.extend({
     this._super(args);
     if (!get(this, 'fastboot.isFastBoot') && ENV.environment !== 'test') {
       get(this, 'backgroundImage').getAllBlurImages().forEach((blurImage) => {
-        get(this, 'promises').push(this._loadAsset(blurImage));
+        get(this, 'promises').push(this.loadAsset(blurImage));
       });
       nodes.forEach((node) => {
         const { thumbnailUrl } = get(this, 'backgroundImage').getNodeBackgroundImage(node.id);
-        get(this, 'promises').push(this._loadAsset(thumbnailUrl));
+        get(this, 'promises').push(this.loadAsset(thumbnailUrl));
       });
     }
   },
@@ -42,7 +42,7 @@ export default Service.extend({
     });
   },
 
-  _loadAsset(url) {
+  loadAsset(url) {
     const _this = this;
     return new Promise((resolve) => {
       const img = new Image();
