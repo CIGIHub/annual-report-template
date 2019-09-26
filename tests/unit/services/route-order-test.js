@@ -1,9 +1,16 @@
 import { get, set } from '@ember/object';
 import { setupTest } from 'ember-qunit';
+import Service from '@ember/service';
 import { module, test } from 'qunit';
 
 module('Unit | Service | route-order', function(hooks) {
   setupTest(hooks);
+
+  hooks.beforeEach(function() {
+    this.owner.register('service:router', Service.extend({
+      currentRouteName: '',
+    }));
+  });
 
   test('it exists', function(assert) {
     const service = this.owner.lookup('service:route-order');
@@ -214,7 +221,7 @@ module('Unit | Service | route-order', function(hooks) {
     ]);
   });
 
-  test('should return next route as table-of-contents when on first route', function(assert) {
+  test('should have nextRoute=table-of-contents when currentRouteName=index', function(assert) {
     const service = this.owner.lookup('service:route-order');
     set(service, 'routes', [{
       route: 'index',
@@ -259,11 +266,12 @@ module('Unit | Service | route-order', function(hooks) {
         'thank-you-subroute-3',
       ],
     }]);
+    set(service, 'router.currentRouteName', 'index');
 
-    assert.strictEqual(service.getNextRoute('index'), 'table-of-contents');
+    assert.strictEqual(get(service, 'nextRoute'), 'table-of-contents');
   });
 
-  test('should return next route as table-of-contents when on first subroute', function(assert) {
+  test('should have nextRoute=table-of-contents when currentRouteName=index-subroute-2', function(assert) {
     const service = this.owner.lookup('service:route-order');
     set(service, 'routes', [{
       route: 'index',
@@ -308,11 +316,12 @@ module('Unit | Service | route-order', function(hooks) {
         'thank-you-subroute-3',
       ],
     }]);
+    set(service, 'router.currentRouteName', 'index-subroute-2');
 
-    assert.strictEqual(service.getNextRoute('index-subroute-2'), 'table-of-contents');
+    assert.strictEqual(get(service, 'nextRoute'), 'table-of-contents');
   });
 
-  test('should return next route as current route when on last route', function(assert) {
+  test('should have nextRoute=null when currentRouteName=thank-you', function(assert) {
     const service = this.owner.lookup('service:route-order');
     set(service, 'routes', [{
       route: 'index',
@@ -357,11 +366,12 @@ module('Unit | Service | route-order', function(hooks) {
         'thank-you-subroute-3',
       ],
     }]);
+    set(service, 'router.currentRouteName', 'thank-you');
 
-    assert.strictEqual(service.getNextRoute('thank-you'), 'thank-you');
+    assert.strictEqual(get(service, 'nextRoute'), null);
   });
 
-  test('should return next route as current route when on last subroute', function(assert) {
+  test('should have nextRoute=null when currentRouteName=thank-you-subroute-2', function(assert) {
     const service = this.owner.lookup('service:route-order');
     set(service, 'routes', [{
       route: 'index',
@@ -406,11 +416,12 @@ module('Unit | Service | route-order', function(hooks) {
         'thank-you-subroute-3',
       ],
     }]);
+    set(service, 'router.currentRouteName', 'thank-you-subroute-2');
 
-    assert.strictEqual(service.getNextRoute('thank-you-subroute-2'), 'thank-you-subroute-2');
+    assert.strictEqual(get(service, 'nextRoute'), null);
   });
 
-  test('should return previous route as slide-3 when on last route', function(assert) {
+  test('should have previousRoute=slide-3 when currentRouteName=thank-you', function(assert) {
     const service = this.owner.lookup('service:route-order');
     set(service, 'routes', [{
       route: 'index',
@@ -455,11 +466,12 @@ module('Unit | Service | route-order', function(hooks) {
         'thank-you-subroute-3',
       ],
     }]);
+    set(service, 'router.currentRouteName', 'thank-you');
 
-    assert.strictEqual(service.getPreviousRoute('thank-you'), 'slide-3');
+    assert.strictEqual(get(service, 'previousRoute'), 'slide-3');
   });
 
-  test('should return previous route as slide-3 when on last subroute', function(assert) {
+  test('should have previousRoute=slide-3 when currentRouteName=thank-you-subroute-2', function(assert) {
     const service = this.owner.lookup('service:route-order');
     set(service, 'routes', [{
       route: 'index',
@@ -504,11 +516,12 @@ module('Unit | Service | route-order', function(hooks) {
         'thank-you-subroute-3',
       ],
     }]);
+    set(service, 'router.currentRouteName', 'thank-you-subroute-2');
 
-    assert.strictEqual(service.getPreviousRoute('thank-you-subroute-2'), 'slide-3');
+    assert.strictEqual(get(service, 'previousRoute'), 'slide-3');
   });
 
-  test('should return previous route as current route when on first route', function(assert) {
+  test('should have previousRoute=null when currentRouteName=index', function(assert) {
     const service = this.owner.lookup('service:route-order');
     set(service, 'routes', [{
       route: 'index',
@@ -553,11 +566,12 @@ module('Unit | Service | route-order', function(hooks) {
         'thank-you-subroute-3',
       ],
     }]);
+    set(service, 'router.currentRouteName', 'index');
 
-    assert.strictEqual(service.getPreviousRoute('index'), 'index');
+    assert.strictEqual(get(service, 'previousRoute'), null);
   });
 
-  test('should return previous route as current route when on first subroute', function(assert) {
+  test('should have previousRoute=null when currentRouteName=index-subroute-2', function(assert) {
     const service = this.owner.lookup('service:route-order');
     set(service, 'routes', [{
       route: 'index',
@@ -602,7 +616,8 @@ module('Unit | Service | route-order', function(hooks) {
         'thank-you-subroute-3',
       ],
     }]);
+    set(service, 'router.currentRouteName', 'index-subroute-2');
 
-    assert.strictEqual(service.getPreviousRoute('index-subroute-2'), 'index-subroute-2');
+    assert.strictEqual(get(service, 'previousRoute'), null);
   });
 });

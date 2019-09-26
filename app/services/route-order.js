@@ -1,7 +1,9 @@
 import { computed, get } from '@ember/object';
-import Service from '@ember/service';
+import Service, { inject as service } from '@ember/service';
 
 export default Service.extend({
+  router: service(),
+
   routes: [{
     route: 'index',
     subRoutes: [],
@@ -104,23 +106,25 @@ export default Service.extend({
     return get(this, 'routes')[get(this, 'routes').length - 1].subRoutes;
   }),
 
-  getNextRoute(currentRouteName) {
+  nextRoute: computed('router.currentRouteName', function() {
+    const currentRouteName = get(this, 'router.currentRouteName');
     let ind = get(this, 'routes').findIndex((route) => currentRouteName === route.route
       || route.subRoutes.includes(currentRouteName));
     ind += 1;
     if (ind > 0 && ind < get(this, 'routes.length')) {
       return get(this, 'routes')[ind].route;
     }
-    return currentRouteName;
-  },
+    return null;
+  }),
 
-  getPreviousRoute(currentRouteName) {
+  previousRoute: computed('router.currentRouteName', function() {
+    const currentRouteName = get(this, 'router.currentRouteName');
     let ind = get(this, 'routes').findIndex((route) => currentRouteName === route.route
       || route.subRoutes.includes(currentRouteName));
     ind -= 1;
     if (ind >= 0) {
       return get(this, 'routes')[ind].route;
     }
-    return currentRouteName;
-  },
+    return null;
+  }),
 });
