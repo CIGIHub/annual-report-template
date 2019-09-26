@@ -43,19 +43,22 @@ export default Service.extend({
   },
 
   loadAsset(url) {
-    const _this = this;
-    return new Promise((resolve) => {
-      const img = new Image();
+    if (!get(this, 'fastboot.isFastBoot') && ENV.environment !== 'test') {
+      const _this = this;
+      return new Promise((resolve) => {
+        const img = new Image();
 
-      const finallyFn = () => {
-        set(_this, 'resolvedAssetCount', (get(_this, 'resolvedAssetCount') + 1));
-        return resolve();
-      };
+        const finallyFn = () => {
+          set(_this, 'resolvedAssetCount', (get(_this, 'resolvedAssetCount') + 1));
+          return resolve();
+        };
 
-      img.onload = finallyFn;
-      img.onerror = finallyFn;
+        img.onload = finallyFn;
+        img.onerror = finallyFn;
 
-      img.src = url;
-    });
+        img.src = url;
+      });
+    }
+    return Promise.resolve();
   },
 });

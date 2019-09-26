@@ -111,7 +111,7 @@ export default Service.extend({
     if (ind > 0 && ind < get(this, 'routes.length')) {
       return get(this, 'routes')[ind].route;
     }
-    return currentRouteName;
+    return null;
   },
 
   getPreviousRoute(currentRouteName) {
@@ -121,6 +121,6 @@ export default Service.extend({
     if (ind >= 0) {
       return get(this, 'routes')[ind].route;
     }
-    return currentRouteName;
+    return null;
   },
 });

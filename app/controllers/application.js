@@ -141,26 +141,26 @@ export default Controller.extend({
       set(this, 'isTransitioning', true);
       const currentRouteName = get(this, 'router.currentRouteName');
       const previousRoute = get(this, 'routeOrder').getPreviousRoute(currentRouteName);
-      if (currentRouteName === previousRoute) {
-        set(this, 'isTransitioning', false);
-      } else {
+      if (previousRoute) {
         this.transitionToRoute(previousRoute);
         later(this, function() {
           set(this, 'isTransitioning', false);
         }, 1500);
+      } else {
+        set(this, 'isTransitioning', false);
       }
     },
     transitionNext() {
       set(this, 'isTransitioning', true);
       const currentRouteName = get(this, 'router.currentRouteName');
       const nextRoute = get(this, 'routeOrder').getNextRoute(currentRouteName);
-      if (currentRouteName === nextRoute) {
-        set(this, 'isTransitioning', false);
-      } else {
+      if (nextRoute) {
         this.transitionToRoute(nextRoute);
         later(this, function() {
           set(this, 'isTransitioning', false);
         }, 1500);
+      } else {
+        set(this, 'isTransitioning', false);
       }
     },
   },

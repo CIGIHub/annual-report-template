@@ -10,6 +10,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   backgroundImage: service(),
   headData: service(),
   intl: service(),
+  routeOrder: service(),
 
   beforeModel() {
     if (!get(this, 'assetLoader.assetsLoaded')) {
@@ -26,6 +27,15 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     const backgroundImage = get(this, 'backgroundImage').getSlideBackgroundImage('exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
     if (backgroundImage && backgroundImage.fullSizeUrl) {
       set(this, 'headData.image', backgroundImage.fullSizeUrl);
+    }
+
+    // Load next route background
+    const nextRoute = get(this, 'routeOrder').getNextRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
+    if (nextRoute) {
+      const { fullSizeUrl } = get(this, 'backgroundImage').getSlideBackgroundImage(nextRoute);
+      if (fullSizeUrl) {
+        get(this, 'assetLoader').loadAsset(fullSizeUrl);
+      }
     }
   },
 });
