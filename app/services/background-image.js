@@ -16,7 +16,7 @@ export default Service.extend({
     },
     'braiding-legal-orders': {
       fullSizeUrl: '5891adf417e60b71/slides/braiding-legal-orders.jpg',
-      ogUrl: '5891adf417e60b71/sldies/braiding-legal-orders-og.jpg',
+      ogUrl: '5891adf417e60b71/slides/braiding-legal-orders-og.jpg',
       thumbnailUrl: '5891adf417e60b71/slides/braiding-legal-orders-thumbnail.jpg',
     },
     'building-closer-ties-between-canada-and-india': {
