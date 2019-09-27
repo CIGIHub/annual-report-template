@@ -18,6 +18,6 @@ export default Route.extend({
     set(this, 'headData.siteName', get(this, 'intl').t('title'));
     set(this, 'headData.description', get(this, 'intl').t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}`);
-    set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.fullSizeUrl'));
+    set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.ogUrl'));
   },
 });

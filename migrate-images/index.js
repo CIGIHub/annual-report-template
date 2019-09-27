@@ -27,7 +27,7 @@ if (process.argv.slice(2)
 
 Promise.resolve().then(async() => {
   logger.info(`Uploading nodes to ${s3Directory}`);
-  const ASYNC_LIMIT = 10;
+  const ASYNC_LIMIT = 5;
   // const nodeImages = {};
 
   // Create offsets to upload node images in batches of ASYNC_LIMIT

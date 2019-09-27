@@ -25,8 +25,8 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.description', get(this, 'intl').t('buildingCloserTiesBetweenCanadaAndIndia.description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}building-closer-ties-between-canada-and-india/`);
     const backgroundImage = get(this, 'backgroundImage').getSlideBackgroundImage('building-closer-ties-between-canada-and-india');
-    if (backgroundImage && backgroundImage.fullSizeUrl) {
-      set(this, 'headData.image', backgroundImage.fullSizeUrl);
+    if (backgroundImage && backgroundImage.ogUrl) {
+      set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background

@@ -136,7 +136,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.title', title);
     set(this, 'headData.description', get(this, 'intl').t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}outputs-and-activities/`);
-    set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.fullSizeUrl'));
+    set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.ogUrl'));
 
     // Load next route background
     const nextRoute = get(this, 'routeOrder').getNextRoute('outputs-and-activities');

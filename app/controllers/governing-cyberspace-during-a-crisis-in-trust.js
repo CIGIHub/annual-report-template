@@ -43,6 +43,6 @@ export default Controller.extend({
   }),
 
   videoLink: computed(function() {
-    return `${get(this, 'backgroundImage.imageHost')}4a7fcdebfbc4a053/slides/governing-cyberspace-during-a-crisis-in-trust.mp4`;
+    return `${get(this, 'backgroundImage.imageHost')}5891adf417e60b71/slides/governing-cyberspace-during-a-crisis-in-trust.mp4`;
   }),
 });
