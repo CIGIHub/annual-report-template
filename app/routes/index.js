@@ -23,7 +23,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.title', get(this, 'intl').t('title'));
     set(this, 'headData.description', get(this, 'intl').t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}`);
-    set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.fullSizeUrl'));
+    set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.ogUrl'));
 
     // Load next route background
     const nextRoute = get(this, 'routeOrder').getNextRoute('index');

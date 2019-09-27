@@ -25,8 +25,8 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.description', get(this, 'intl').t('curbingCulturalAppropriationThroughIntellectualPropertyLaw.description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}curbing-cultural-appropriation-through-intellectual-property-law/`);
     const backgroundImage = get(this, 'backgroundImage').getSlideBackgroundImage('curbing-cultural-appropriation-through-intellectual-property-law');
-    if (backgroundImage && backgroundImage.fullSizeUrl) {
-      set(this, 'headData.image', backgroundImage.fullSizeUrl);
+    if (backgroundImage && backgroundImage.ogUrl) {
+      set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background

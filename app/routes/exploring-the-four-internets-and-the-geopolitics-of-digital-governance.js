@@ -25,8 +25,8 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.description', get(this, 'intl').t('exploringTheFourInternetsAndTheGeopoliticsOfDigitalGovernance.description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}exploring-the-four-internets-and-the-geopolitics-of-digital-governance/`);
     const backgroundImage = get(this, 'backgroundImage').getSlideBackgroundImage('exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
-    if (backgroundImage && backgroundImage.fullSizeUrl) {
-      set(this, 'headData.image', backgroundImage.fullSizeUrl);
+    if (backgroundImage && backgroundImage.ogUrl) {
+      set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background

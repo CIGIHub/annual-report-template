@@ -25,8 +25,8 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.description', get(this, 'intl').t('informingTheDebateAroundInternetSecurityAndTrust.description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}informing-the-debate-around-internet-security-and-trust/`);
     const backgroundImage = get(this, 'backgroundImage').getSlideBackgroundImage('informing-the-debate-around-internet-security-and-trust');
-    if (backgroundImage && backgroundImage.fullSizeUrl) {
-      set(this, 'headData.image', backgroundImage.fullSizeUrl);
+    if (backgroundImage && backgroundImage.ogUrl) {
+      set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background

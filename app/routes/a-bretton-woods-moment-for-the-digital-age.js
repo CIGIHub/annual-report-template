@@ -25,8 +25,8 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.description', get(this, 'intl').t('aBrettonWoodsMomentForTheDigitalAge.description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}a-bretton-woods-moment-for-the-digital-age/`);
     const backgroundImage = get(this, 'backgroundImage').getSlideBackgroundImage('a-bretton-woods-moment-for-the-digital-age');
-    if (backgroundImage && backgroundImage.fullSizeUrl) {
-      set(this, 'headData.image', backgroundImage.fullSizeUrl);
+    if (backgroundImage && backgroundImage.ogUrl) {
+      set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background

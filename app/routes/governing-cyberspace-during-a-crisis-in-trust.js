@@ -25,8 +25,8 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.description', get(this, 'intl').t('governingCyberspaceDuringACrisisInTrust.description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}governing-cyberspace-during-a-crisis-in-trust/`);
     const backgroundImage = get(this, 'backgroundImage').getSlideBackgroundImage('governing-cyberspace-during-a-crisis-in-trust');
-    if (backgroundImage && backgroundImage.fullSizeUrl) {
-      set(this, 'headData.image', backgroundImage.fullSizeUrl);
+    if (backgroundImage && backgroundImage.ogUrl) {
+      set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background

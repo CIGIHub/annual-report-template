@@ -39,6 +39,6 @@ export default Controller.extend({
   }),
 
   videoLink: computed(function() {
-    return `${get(this, 'backgroundImage.imageHost')}4a7fcdebfbc4a053/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.mp4`;
+    return `${get(this, 'backgroundImage.imageHost')}5891adf417e60b71/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.mp4`;
   }),
 });
