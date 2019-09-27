@@ -28,6 +28,10 @@ export default Service.extend({
       fullSizeUrl: '4a7fcdebfbc4a053/slides/curbing-cultural-appropriation-through-intellectual-property-law.jpg',
       thumbnailUrl: '4a7fcdebfbc4a053/slides/curbing-cultural-appropriation-through-intellectual-property-law-thumbnail.jpg',
     },
+    'exploring-the-four-internets-and-the-geopolitics-of-digital-governance': {
+      fullSizeUrl: 'ea0304a1ba15e9a1/slides/exploring-the-four-internets-and-the-geopolitics-of-digital-governance.jpg',
+      thumbnailUrl: 'ea0304a1ba15e9a1/slides/exploring-the-four-internets-and-the-geopolitics-of-digital-governance-thumbnail.jpg',
+    },
     'governing-cyberspace-during-a-crisis-in-trust': {
       fullSizeUrl: '4a7fcdebfbc4a053/slides/governing-cyberspace-during-a-crisis-in-trust.jpg',
       thumbnailUrl: '4a7fcdebfbc4a053/slides/governing-cyberspace-during-a-crisis-in-trust-thumbnail.jpg',
@@ -41,8 +45,8 @@ export default Service.extend({
       thumbnailUrl: '4a7fcdebfbc4a053/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond-thumbnail.jpg',
     },
     'models-for-data-governance': {
-      fullSizeUrl: '4a7fcdebfbc4a053/slides/models-for-data-governance.jpg',
-      thumbnailUrl: '4a7fcdebfbc4a053/slides/models-for-data-governance-thumbnail.jpg',
+      fullSizeUrl: 'ea0304a1ba15e9a1/slides/models-for-data-governance.jpg',
+      thumbnailUrl: 'ea0304a1ba15e9a1/slides/models-for-data-governance-thumbnail.jpg',
     },
     'presidents-message': {
       fullSizeUrl: '4a7fcdebfbc4a053/slides/presidents-message.jpg',
