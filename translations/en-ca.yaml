@@ -73,13 +73,12 @@ buildingCloserTiesBetweenCanadaAndIndia:
   link1: 'CIGI President Rohinton P. Medhora and Gateway House Executive Director Manjeet Kripalani discuss the Canada-India Track 1.5 Dialogue.'
   link2: 'Read the Canada-India Track 1.5 Dialogue paper series on how to expand Canada-India relations.'
   link3: 'Learn more about the Canada-India Track 1.5 Dialogue.'
-  paragraph1: 'With India now one of the world’s fastest-growing economies and Canada seeking to diversity its trade relationships, CIGI has partnered with Gateway House, a foreign policy think tank in Mumbai, on the Canada-India Track 1.5 Dialogue on Innovation, Growth and Prosperity, a three-year initiative to explore areas for closer relations between the two countries.'
-  paragraph2: 'In October 2018, CIGI hosted the inaugural meeting in Ottawa, which focused on bilateral opportunities in cyber security, geoengineering, climate leadership and economic relations. Vikas Swarup, High Commissioner of India to Canada, and Nadir Patel, High Commissioner of Canada to India, provided opening remarks, with Jim Carr, Canada’s Minister of International Trade Diversification, delivering the keynote address.'
-  paragraph3: 'There was also a reception on Parliament Hill, co-hosted by CIGI, Minister Bardish Chagger and Senator Marty Deacon, that included a welcome statement from Prime Minister Justin Trudeau, and was attended by Ministers Navdeep Bains and Bill Morneau, among others.'
-  paragraph4: 'The meeting helped to advance important discussions between Canada and India, and resulted in a series of papers that will help create policies to promote innovation and fuel the continued growth of Canada-India relations.'
+  paragraph1: 'With India now one of the world’s fastest-growing economies and Canada seeking to diversify its trade relationships, CIGI has partnered with Gateway House, a foreign policy think tank in Mumbai, on the Canada-India Track 1.5 Dialogue on Innovation, Growth and Prosperity, a three-year initiative to explore areas for closer relations between the two countries.'
+  paragraph2: 'In October 2018, CIGI hosted the inaugural meeting in Ottawa, which focused on bilateral opportunities in cyber security, geoengineering, climate leadership and economic relations. Vikas Swarup, High Commissioner of India to Canada, and Nadir Patel, High Commissioner of Canada to India, provided opening remarks. Jim Carr, Canada’s Minister of International Trade Diversification, delivered the keynote address and praised the thought leadership of CIGI and Gateway House on trade ties via social media.'
+  paragraph3: 'CIGI also co-hosted an event on Parliament Hill with Canadian Member of Parliament Bardish Chagger and Senator Marty Deacon that included a welcome statement from Prime Minister Justin Trudeau and was attended by Ministers Navdeep Bains and Bill Morneau.'
   quote:
     quote: '“The India-Canada relationship is like a $20 bill on the floor — it’s waiting to be picked up, but no one has done so.”'
-    source: 'Rohinton P. Medhora'
+    source: 'CIGI President Rohinton P. Medhora at the Canada-India Track 1.5 Dialogue meeting in Ottawa'
   title: 'Building Closer Ties between Canada and India'
 chairsMessage:
   paragraph1: 'Innovations in our digital world have significant impacts on how we communicate, conduct business and function as a society. In less than a generation, technological advances to artificial intelligence (AI) systems, driven by a wealth of big data, have led to scientific and industrial progress but also raised fears of privacy violations and a culture of mass surveillance.'
@@ -363,6 +362,7 @@ pageNotFound:
   paragraph1: 'The request page could not be found.'
   paragraph2: 'Please check the URL and try again.'
   title: '404: Page Not Found'
+paperSeries: 'Paper Series'
 partners: 'Partners'
 presidentsMessage:
   paragraph1: 'Today we are witnessing dramatic changes brought on by big data, AI and automation in the workplace. More than just technological advances, these changes are fundamentally impacting our economies, democratic systems and even the fabric of our societies.'

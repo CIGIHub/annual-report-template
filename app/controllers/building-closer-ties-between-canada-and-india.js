@@ -22,7 +22,7 @@ export default Controller.extend({
       icon: 'file-alt',
       link: 'https://www.cigionline.org/series/canada-india-track-15-dialogue',
       title: get(this, 'intl').t('buildingCloserTiesBetweenCanadaAndIndia.link2'),
-      type: get(this, 'intl').t('publications'),
+      type: get(this, 'intl').t('paperSeries'),
     }, {
       icon: 'file-alt',
       link: 'https://www.cigionline.org/activity/canada-india-track-15-dialogue-innovation-growth-and-prosperity',
@@ -36,7 +36,6 @@ export default Controller.extend({
       get(this, 'intl').t('buildingCloserTiesBetweenCanadaAndIndia.paragraph1'),
       get(this, 'intl').t('buildingCloserTiesBetweenCanadaAndIndia.paragraph2'),
       get(this, 'intl').t('buildingCloserTiesBetweenCanadaAndIndia.paragraph3'),
-      get(this, 'intl').t('buildingCloserTiesBetweenCanadaAndIndia.paragraph4'),
     ];
   }),
 
