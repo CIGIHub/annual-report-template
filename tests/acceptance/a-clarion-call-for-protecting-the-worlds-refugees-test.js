@@ -57,7 +57,7 @@ module('Acceptance | a clarion call for protecting the worlds refugees', functio
     assert.strictEqual(currentURL(), '/building-closer-ties-between-canada-and-india');
   });
 
-  test('should transition to /governing-cyberspace-during-a-crisis-in-trust on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /multilateral-institutions-mark-a-tumultuous-year on scroll-arrow-down-btn click', async function(assert) {
     await visit('/a-clarion-call-for-protecting-the-worlds-refugees');
 
     assert.ok(
@@ -67,6 +67,6 @@ module('Acceptance | a clarion call for protecting the worlds refugees', functio
     await click('.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/governing-cyberspace-during-a-crisis-in-trust');
+    assert.strictEqual(currentURL(), '/multilateral-institutions-mark-a-tumultuous-year');
   });
 });

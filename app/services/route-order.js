@@ -27,6 +27,10 @@ export default Service.extend({
     subRoutes: [],
     title: 'aClarionCallForProtectingTheWorldsRefugees.title',
   }, {
+    route: 'multilateral-institutions-mark-a-tumultuous-year',
+    subRoutes: [],
+    title: 'multilateralInstitutionsMarkATumultuousYear.title',
+  }, {
     route: 'governing-cyberspace-during-a-crisis-in-trust',
     subRoutes: [],
     title: 'governingCyberspaceDuringACrisisInTrust.title',

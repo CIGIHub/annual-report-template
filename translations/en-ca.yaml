@@ -61,6 +61,7 @@ aClarionCallForProtectingTheWorldsRefugees:
   title: 'A Clarion Call for Protecting the World’s Refugees'
 annualReport: 'Annual Report'
 article: 'Article'
+articleAndVideo: 'Article and Video'
 back: 'Back'
 braidingLegalOrders:
   description: 'Braiding Legal Orders is the culmination of the ILRP’s research over the past three years on the implementation in Canada of the United Nations Declaration on the Rights of Indigenous Peoples (UNDRIP).'
@@ -353,6 +354,17 @@ modelsForDataGovernance:
   quote:
     quote: 'Large-scale data sharing is not the only way — or even the most important way — to use data trusts in the public interest.'
   title: 'Models for Data Governance'
+multilateralInstitutionsMarkATumultuousYear:
+  description: 'In advance of the G20 summit in Buenos Aires, CIGI published an in-depth interview and companion video with former Canadian Prime Minister Paul Martin to discuss the history and future of the G20.'
+  link1: 'Read Randall Henning’s paper on regional arrangements and the IMF.'
+  link2: 'Read James Haley’s paper about Trump trade policy, exchange rate surveillance and the IMF.'
+  link3: 'On the anniversary of the G20 its architects reflect on “one of the great Canadian inventions.”'
+  paragraph1: 'This year marked the 75th anniversary of the Bretton Woods conference, which established the International Monetary Fund and the World Bank; it was also the 10th anniversary of the G20. In an era of increasing resentment toward globalization, CIGI’s work continued to demonstrate that strong multilateral cooperation is important for the global economy and essential for middle powers like Canada.'
+  paragraph2: 'CIGI marked the 75th anniversary of Bretton Woods with commentary from James A. Haley on how the IMF should adapt to changing times, as well as a paper from Randyll Henning on the relationship between the IMF and regional financial agreements. In advance of the G20 summit in Buenos Aires, CIGI published an in-depth interview and companion video with former Canadian Prime Minister Paul Martin to discuss the history and future of the G20. CIGI experts were on the ground for both the Buenos Aires and Osaka summits, offering insightful commentary to global and Canadian media outlets including Agence France-Presse, Bloomberg and the CBC.'
+  quote:
+    quote: '“People think that borders can keep problems out. But borders can’t keep climate change out. Borders could not keep the 2008 financial crisis out …. The only way this world is going to work is if we work together.”'
+    source: 'Former Canadian Prime Minister Paul Martin in CIGI’s G20 anniversary video.'
+  title: 'Multilateral Institutions Mark a Tumultuous Year'
 opinions: 'Opinions'
 outputsAndActivities:
   eventLink: 'Learn more about the event'
@@ -364,6 +376,7 @@ pageNotFound:
   paragraph1: 'The request page could not be found.'
   paragraph2: 'Please check the URL and try again.'
   title: '404: Page Not Found'
+paper: 'Paper'
 paperSeries: 'Paper Series'
 partners: 'Partners'
 presidentsMessage:
