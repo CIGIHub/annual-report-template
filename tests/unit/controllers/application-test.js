@@ -143,6 +143,13 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
+  test('should have bounceScrollArrowDown=false for /multilateral-institutions-mark-a-tumultuous-year', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'multilateral-institutions-mark-a-tumultuous-year');
+
+    assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
+  });
+
   test('should have bounceScrollArrowDown=false for /outputs-and-activities', function(assert) {
     const controller = this.owner.lookup('controller:application');
     set(controller, 'router.currentRouteName', 'outputs-and-activities');
@@ -300,6 +307,13 @@ module('Unit | Controller | application', function(hooks) {
   test('should have hideMobileOverlay=false for /models-for-data-governance', function(assert) {
     const controller = this.owner.lookup('controller:application');
     set(controller, 'router.currentRouteName', 'models-for-data-governance');
+
+    assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
+  });
+
+  test('should have hideMobileOverlay=false for /multilateral-institutions-mark-a-tumultuous-year', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'multilateral-institutions-mark-a-tumultuous-year');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -500,6 +514,14 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
+  test('should have lightBackground=false for /multilateral-institutions-mark-a-tumultuous-year', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'multilateral-institutions-mark-a-tumultuous-year');
+    set(controller, 'lightbox.showLightbox', null);
+
+    assert.strictEqual(get(controller, 'lightBackground'), false);
+  });
+
   test('should have lightBackground=true for /outputs-and-activities', function(assert) {
     const controller = this.owner.lookup('controller:application');
     set(controller, 'router.currentRouteName', 'outputs-and-activities');
@@ -685,6 +707,13 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
+  test('should have scrollableContentPage=true for /multilateral-institutions-mark-a-tumultuous-year', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'multilateral-institutions-mark-a-tumultuous-year');
+
+    assert.strictEqual(get(controller, 'scrollableContentPage'), true);
+  });
+
   test('should have scrollableContentPage=true for /outputs-and-activities', function(assert) {
     const controller = this.owner.lookup('controller:application');
     set(controller, 'router.currentRouteName', 'outputs-and-activities');
@@ -852,6 +881,13 @@ module('Unit | Controller | application', function(hooks) {
   test('should have showDotNav=true for /models-for-data-governance', function(assert) {
     const controller = this.owner.lookup('controller:application');
     set(controller, 'router.currentRouteName', 'models-for-data-governance');
+
+    assert.strictEqual(get(controller, 'showDotNav'), true);
+  });
+
+  test('should have showDotNav=true for /multilateral-institutions-mark-a-tumultuous-year', function(assert) {
+    const controller = this.owner.lookup('controller:application');
+    set(controller, 'router.currentRouteName', 'multilateral-institutions-mark-a-tumultuous-year');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
