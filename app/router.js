@@ -25,6 +25,7 @@ Router.map(function() {
   this.route('informing-the-debate-around-internet-security-and-trust');
   this.route('media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
   this.route('models-for-data-governance');
+  this.route('multilateral-institutions-mark-a-tumultuous-year');
   this.route('outputs-and-activities');
   this.route('presidents-message');
   this.route('protecting-elections-from-foreign-interference');
