@@ -104,6 +104,7 @@ description: 'Explore a year of research, opinion and expertise in CIGI’s inte
 download: 'Download'
 downloadPdf: 'Download PDF'
 essay: 'Essay'
+essaySeries: 'Essay Series'
 events: 'Events'
 exploringTheFourInternetsAndTheGeopoliticsOfDigitalGovernance:
   description: 'While the internet may have originally been designed to be open and transparent, its entrenchment in our daily lives has led to competing views on the role it should play in society and how it should be governed.'
@@ -299,12 +300,13 @@ financials:
 governingCyberspaceDuringACrisisInTrust:
   description: 'It is almost impossible to read the news without coming across a lead story cataloguing the latest cyber breach or misuse of data. The volume of these events lays bare the paradox of the digital economy and cyber security: technology has led to convenience, efficiency and wealth creation, but the push to digitize society quickly and relentlessly has meant building vulnerability into the core of the global economic model.'
   link1: 'Explore the full essay series'
-  link2: 'Read Melissa Hathaway’s essay on the risks associated with digital transformation '
-  link3: 'Watch Neil Desai’s video about challenges of policing cybercrime '
-  paragraph1: 'It is almost impossible to read the news without coming across a lead story cataloguing the latest cyber breach or misuse of data. The volume of these events lays bare the paradox of the digital economy and cyber security: technology has led to convenience, efficiency and wealth creation, but the push to digitize society quickly and relentlessly has meant building vulnerability into the core of the global economic model.'
-  paragraph2: 'With this paradox in mind, CIGI responded by bringing together policy makers, industry leaders and academics to create an essay series titled Governing Cyberspace during a Crisis in Trust. The digital essays and accompanying multimedia generated strong social engagement and notable traffic — more than 90,000 views combined in the first month of publication. The series was also printed as a magazine that was widely distributed to government officials and senior public servants.'
+  link2: 'Read Melissa Hathaway’s essay on the risks associated with digital transformation'
+  link3: 'Watch Neil Desai’s video about challenges of policing cybercrime'
+  paragraph1: 'Nearly every day we read news stories about the latest cyber attack, data breach or misuse of people’s personal data. With so many attacks online, balancing the benefits of our rapidly growing digital economy while attempting to ensure security online, not to mentioning instilling trust among users, has become a challenge. Technology has led to convenience, efficiency and wealth creation. But the push to digitize society quickly and relentlessly has meant building vulnerability into the core of the global economic model.'
+  paragraph2: 'With this paradox in mind, CIGI responded by bringing together policy makers, industry leaders and academics to create an essay series titled Governing Cyberspace during a Crisis in Trust. The digital essays and accompanying multimedia generated strong social engagement — in part through a lively Twitter chat — and notable website traffic: more than 90,000 views combined in the first month of publication. The series was also printed as a magazine that was widely distributed to government officials and senior public servants.'
   quote:
-    quote: 'Technology has led to convenience, efficiency and wealth creation, but the push to digitize society quickly and relentlessly has meant building vulnerability into the core of the global economic model.'
+    quote: '“Cyberspace presents both threats and opportunities — at the same time — and the collective challenge is to advance policy that can best maximize the opportunities while mitigating the threats in a constantly changing global environment.”'
+    source: 'Aaron Shull, in the Governing Cyberspace during a Crisis in Trust essay series.'
   title: 'Governing Cyberspace during a Crisis in Trust'
 governingTheDigitalPublicSphere:
   description: 'The 2016 US election revealed both malicious uses of technology and structural problems in the digital infrastructure itself. Since then, there have been a striking number of cases of commercially and politically driven misinformation, foreign interference in elections, data breaches, cyber attacks, the proliferation of harmful speech, data exploitation and surveillance abuses.'
@@ -394,7 +396,6 @@ publications: 'Publications'
 qa: 'Q&A'
 report: 'Report'
 resource: 'Resource'
-series: 'Series'
 subscribe: 'Subscribe'
 survey: 'Survey'
 tableOfContents:
