@@ -1,4 +1,4 @@
-import ENV from 'annual-report-2019/config/environment';
+import ENV from 'annual-report-template/config/environment';
 import Controller from '@ember/controller';
 import { computed } from '@ember/object';
 

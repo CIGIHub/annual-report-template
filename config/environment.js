@@ -46,7 +46,7 @@ module.exports = function(environment) {
     },
     host: 'https://www.cigionline.org',
     locationType: 'auto',
-    modulePrefix: 'annual-report-2019',
+    modulePrefix: 'annual-report-template',
     rootURL: '/interactives/2019annualreport/',
     staging: false,
   };

@@ -1,4 +1,4 @@
-import ENV from 'annual-report-2019/config/environment';
+import ENV from 'annual-report-template/config/environment';
 import { computed, get, set } from '@ember/object';
 import { later } from '@ember/runloop';
 import Service, { inject as service } from '@ember/service';

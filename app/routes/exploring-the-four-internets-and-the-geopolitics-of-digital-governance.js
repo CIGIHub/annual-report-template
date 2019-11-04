@@ -1,6 +1,6 @@
-import ENV from 'annual-report-2019/config/environment';
-import GoogleAnalyticsMixin from 'annual-report-2019/mixins/google-analytics';
-import ResetScrollMixin from 'annual-report-2019/mixins/reset-scroll';
+import ENV from 'annual-report-template/config/environment';
+import GoogleAnalyticsMixin from 'annual-report-template/mixins/google-analytics';
+import ResetScrollMixin from 'annual-report-template/mixins/reset-scroll';
 import { get, set } from '@ember/object';
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';

@@ -1,4 +1,4 @@
-import finishRender from 'annual-report-2019/tests/helpers/finish-render';
+import finishRender from 'annual-report-template/tests/helpers/finish-render';
 import { set } from '@ember/object';
 import { setupRenderingTest } from 'ember-qunit';
 import Service from '@ember/service';
