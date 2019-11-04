@@ -1,4 +1,4 @@
-import ENV from 'annual-report-2019/config/environment';
+import ENV from 'annual-report-template/config/environment';
 import Component from '@ember/component';
 import { computed, get, set } from '@ember/object';
 import { inject as service } from '@ember/service';

@@ -1,4 +1,4 @@
-import ENV from 'annual-report-2019/config/environment';
+import ENV from 'annual-report-template/config/environment';
 import { get } from '@ember/object';
 import Mixin from '@ember/object/mixin';
 import { inject as service } from '@ember/service';

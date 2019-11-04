@@ -1,8 +1,8 @@
 {
-  "name": "annual-report-2019",
+  "name": "annual-report-template",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for annual-report-2019 goes here",
+  "description": "Template for CIGI digital interactive annual report",
   "repository": "",
   "license": "MIT",
   "author": "",

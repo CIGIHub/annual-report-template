@@ -1,5 +1,5 @@
 import EmberObject from '@ember/object';
-import GoogleAnalyticsMixin from 'annual-report-2019/mixins/google-analytics';
+import GoogleAnalyticsMixin from 'annual-report-template/mixins/google-analytics';
 import { module, test } from 'qunit';
 
 module('Unit | Mixin | google-analytics', function() {
