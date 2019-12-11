@@ -27,7 +27,7 @@
     "@fortawesome/ember-fontawesome": "0.2.1",
     "@fortawesome/free-brands-svg-icons": "5.11.2",
     "@fortawesome/pro-light-svg-icons": "5.11.2",
-    "aws-sdk": "2.563.0",
+    "aws-sdk": "2.587.0",
     "broccoli-asset-rev": "3.0.0",
     "coveralls": "3.0.6",
     "dotenv": "8.2.0",
