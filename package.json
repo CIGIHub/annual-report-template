@@ -70,7 +70,7 @@
     "loader.js": "4.7.0",
     "lolex": "4.2.0",
     "qunit-dom": "0.9.0",
-    "sass": "1.22.12",
+    "sass": "1.24.1",
     "sass-lint": "1.13.1",
     "sharp": "0.23.2",
     "winston": "^3.2.1"
