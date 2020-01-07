@@ -24,7 +24,7 @@ export default Service.extend({
 
       later(this, function() {
         get(this, 'gtag')('event', 'page_view', {
-          'page_path': get(this, 'router.currentURL'),
+          'page_path': `${ENV.rootURL}${get(this, 'router.currentURL').replace('/', '')}`,
           'page_title': get(this, 'headData.title'),
         });
       }, 500);
