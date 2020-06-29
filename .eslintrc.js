@@ -1,10 +1,13 @@
-const eslintPluginNode = require('eslint-plugin-node');
+'use strict';
 
 module.exports = {
   root: true,
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
+    ecmaFeatures: {
+      legacyDecorators: true
+    }
   },
   plugins: [
     'ember',
@@ -64,13 +67,12 @@ module.exports = {
         node: true,
       },
       plugins: ['node'],
-      rules: Object.assign({}, eslintPluginNode.configs.recommended.rules, {
-        // add your custom rules and overrides for node files here
-
+      extends: ['plugin:node/recommended'],
+      rules: {
         // this can be removed once the following is fixed
         // https://github.com/mysticatea/eslint-plugin-node/issues/77
-        'node/no-unpublished-require': 'off',
-      }),
-    },
-  ],
+        'node/no-unpublished-require': 'off'
+      }
+    }
+  ]
 };
