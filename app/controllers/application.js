@@ -40,7 +40,7 @@ export default Controller.extend({
       return htmlSafe('background-color: #fff;');
     }
 
-    const { thumbnailUrl, fullSizeUrl } = get(this, 'backgroundImage').getSlideBackgroundImage(currentRouteName);
+    const { thumbnailUrl, fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(currentRouteName);
     return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}');`);
   }),
 
@@ -95,10 +95,10 @@ export default Controller.extend({
       'index',
       'table-of-contents',
     ].includes(get(this, 'router.currentRouteName'));
-    if (onContentSlide && !get(this, 'dotNavShown')) {
+    if (onContentSlide && !this.dotNavShown) {
       set(this, 'dotNavShown', true);
     }
-    return get(this, 'dotNavShown') || onContentSlide;
+    return this.dotNavShown || onContentSlide;
   }),
 
   showScrollArrowDown: computed('router.currentRouteName', 'routeOrder.{lastRoute,lastSubRoutes.[]}', function() {
@@ -121,7 +121,7 @@ export default Controller.extend({
     if (!get(this, 'fastboot.isFastBoot')) {
       if (get(this, 'lightbox.showLightbox')
           || get(this, 'lightbox.subType') === 'publication') {
-        get(this, 'lightbox').closeLightbox();
+        this.lightbox.closeLightbox();
       }
 
       // Dot-nav overlay
@@ -140,7 +140,7 @@ export default Controller.extend({
     transitionBack() {
       set(this, 'isTransitioning', true);
       const currentRouteName = get(this, 'router.currentRouteName');
-      const previousRoute = get(this, 'routeOrder').getPreviousRoute(currentRouteName);
+      const previousRoute = this.routeOrder.getPreviousRoute(currentRouteName);
       if (previousRoute) {
         this.transitionToRoute(previousRoute);
         later(this, function() {
@@ -153,7 +153,7 @@ export default Controller.extend({
     transitionNext() {
       set(this, 'isTransitioning', true);
       const currentRouteName = get(this, 'router.currentRouteName');
-      const nextRoute = get(this, 'routeOrder').getNextRoute(currentRouteName);
+      const nextRoute = this.routeOrder.getNextRoute(currentRouteName);
       if (nextRoute) {
         this.transitionToRoute(nextRoute);
         later(this, function() {

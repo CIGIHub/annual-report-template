@@ -68,22 +68,22 @@ export default Component.extend({
     if (Foundation.MediaQuery.atLeast('medium')) {
       const e = ev.originalEvent;
 
-      if (this._isReallyTouch(e) && !get(this, 'isTransitioning')) {
+      if (this._isReallyTouch(e) && !this.isTransitioning) {
         const touchCoordinates = this._getTouchCoordinates(e);
         const touchEndY = touchCoordinates.y;
         const touchEndX = touchCoordinates.x;
 
         // Only want to consider vertical swipes
-        if (Math.abs(get(this, 'touchStartY') - touchEndY)
-            > Math.abs(get(this, 'touchStartX') - touchEndX)) {
-          if (Math.abs(get(this, 'touchStartY') - touchEndY)
+        if (Math.abs(this.touchStartY - touchEndY)
+            > Math.abs(this.touchStartX - touchEndX)) {
+          if (Math.abs(this.touchStartY - touchEndY)
               > ($(document).height() / (100 * 5))) {
-            if (get(this, 'touchStartY') > touchEndY) {
+            if (this.touchStartY > touchEndY) {
               // Swiping up
-              get(this, 'transitionNext')();
-            } else if (touchEndY > get(this, 'touchStartY')) {
+              this.transitionNext();
+            } else if (touchEndY > this.touchStartY) {
               // Swiping down
-              get(this, 'transitionBack')();
+              this.transitionBack();
             }
           }
         }
@@ -94,11 +94,11 @@ export default Component.extend({
   _keypressHandler(e) {
     /* istanbul ignore if */
     if (Foundation.MediaQuery.atLeast('medium')) {
-      if (!get(this, 'isTransitioning')) {
+      if (!this.isTransitioning) {
         if (e.keyCode === 38) {
-          get(this, 'transitionBack')();
+          this.transitionBack();
         } else if (e.keyCode === 40) {
-          get(this, 'transitionNext')();
+          this.transitionNext();
         }
       }
     }
@@ -126,31 +126,31 @@ export default Component.extend({
       const isScrollingVertically = (Math.abs(ev.wheelDeltaX) < Math.abs(ev.wheelDelta))
         || (Math.abs(ev.deltaX) < Math.abs(ev.deltaY) || !horizontalDetection);
 
-      if (get(this, 'scrollings').length > 149) {
-        get(this, 'scrollings').shift();
+      if (this.scrollings.length > 149) {
+        this.scrollings.shift();
       }
 
-      get(this, 'scrollings').push(Math.abs(value));
+      this.scrollings.push(Math.abs(value));
 
-      const timeDiff = currentTime - get(this, 'lastScrollTime');
+      const timeDiff = currentTime - this.lastScrollTime;
       set(this, 'lastScrollTime', currentTime);
 
       if (timeDiff > 200) {
         set(this, 'scrollings', []);
       }
 
-      const averageEnd = getAverage(get(this, 'scrollings'), 10);
-      const averageMiddle = getAverage(get(this, 'scrollings'), 70);
+      const averageEnd = getAverage(this.scrollings, 10);
+      const averageMiddle = getAverage(this.scrollings, 70);
       const isAccelerating = averageEnd >= averageMiddle;
 
       if (isAccelerating && isScrollingVertically) {
         if (delta < 0) {
-          if (!get(this, 'isTransitioning')) {
-            get(this, 'transitionNext')();
+          if (!this.isTransitioning) {
+            this.transitionNext();
           }
         } else if (delta > 0) {
-          if (!get(this, 'isTransitioning')) {
-            get(this, 'transitionBack')();
+          if (!this.isTransitioning) {
+            this.transitionBack();
           }
         }
       }

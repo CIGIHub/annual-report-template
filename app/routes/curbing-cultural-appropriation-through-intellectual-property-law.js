@@ -14,27 +14,27 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
 
   beforeModel() {
     if (!get(this, 'assetLoader.assetsLoaded')) {
-      return get(this, 'assetLoader').waitForAssets();
+      return this.assetLoader.waitForAssets();
     }
     return true;
   },
 
   afterModel() {
-    const title = `${get(this, 'intl').t('curbingCulturalAppropriationThroughIntellectualPropertyLaw.title')} | ${get(this, 'intl').t('title')}`;
+    const title = `${this.intl.t('curbingCulturalAppropriationThroughIntellectualPropertyLaw.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
-    set(this, 'headData.description', get(this, 'intl').t('curbingCulturalAppropriationThroughIntellectualPropertyLaw.description'));
+    set(this, 'headData.description', this.intl.t('curbingCulturalAppropriationThroughIntellectualPropertyLaw.description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}curbing-cultural-appropriation-through-intellectual-property-law/`);
-    const backgroundImage = get(this, 'backgroundImage').getSlideBackgroundImage('curbing-cultural-appropriation-through-intellectual-property-law');
+    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('curbing-cultural-appropriation-through-intellectual-property-law');
     if (backgroundImage && backgroundImage.ogUrl) {
       set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background
-    const nextRoute = get(this, 'routeOrder').getNextRoute('curbing-cultural-appropriation-through-intellectual-property-law');
+    const nextRoute = this.routeOrder.getNextRoute('curbing-cultural-appropriation-through-intellectual-property-law');
     if (nextRoute) {
-      const { fullSizeUrl } = get(this, 'backgroundImage').getSlideBackgroundImage(nextRoute);
+      const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {
-        get(this, 'assetLoader').loadAsset(fullSizeUrl);
+        this.assetLoader.loadAsset(fullSizeUrl);
       }
     }
   },

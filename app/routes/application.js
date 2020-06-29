@@ -14,9 +14,9 @@ export default Route.extend({
   },
 
   afterModel() {
-    set(this, 'headData.title', get(this, 'intl').t('title'));
-    set(this, 'headData.siteName', get(this, 'intl').t('title'));
-    set(this, 'headData.description', get(this, 'intl').t('description'));
+    set(this, 'headData.title', this.intl.t('title'));
+    set(this, 'headData.siteName', this.intl.t('title'));
+    set(this, 'headData.description', this.intl.t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}`);
     set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.ogUrl'));
   },

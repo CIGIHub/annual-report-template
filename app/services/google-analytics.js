@@ -13,17 +13,17 @@ export default Service.extend({
     if (!get(this, 'fastboot.isFastBoot')
         && ENV.environment === 'production'
         && !ENV.staging) {
-      if (!get(this, 'gtag')) {
+      if (!this.gtag) {
         window.dataLayer = window.dataLayer || [];
         set(this, 'gtag', function() {
           window.dataLayer.push(arguments);
         });
-        get(this, 'gtag')('js', new Date());
-        get(this, 'gtag')('config', 'UA-830691-41');
+        this.gtag('js', new Date());
+        this.gtag('config', 'UA-830691-41');
       }
 
       later(this, function() {
-        get(this, 'gtag')('event', 'page_view', {
+        this.gtag('event', 'page_view', {
           'page_path': `${ENV.rootURL}${get(this, 'router.currentURL').replace('/', '')}`,
           'page_title': get(this, 'headData.title'),
         });

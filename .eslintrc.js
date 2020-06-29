@@ -2,20 +2,21 @@
 
 module.exports = {
   root: true,
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
-      legacyDecorators: true
-    }
+      legacyDecorators: true,
+    },
   },
   plugins: [
     'ember',
   ],
   extends: [
-    'airbnb',
     'eslint:recommended',
     'plugin:ember/recommended',
+    'airbnb',
   ],
   env: {
     browser: true,
@@ -27,13 +28,17 @@ module.exports = {
   },
   rules: {
     'array-callback-return': ['off'],
+    'class-methods-use-this': ['off'],
     'ember/avoid-leaking-state-in-ember-objects': ['off'],
+    'ember/no-jquery': ['off'],
     'ember/no-new-mixins': ['off'],
     'ember/no-observers': ['off'],
     'ember/no-side-effects': ['off'],
     'func-names': ['off'],
     'import/no-extraneous-dependencies': ['off'],
     'import/no-unresolved': ['off'],
+    'lines-between-class-members': ['off'],
+    'max-classes-per-file': ['off'],
     'no-await-in-loop': ['off'],
     'no-restricted-globals': ['off'],
     'no-restricted-syntax': ['off'],

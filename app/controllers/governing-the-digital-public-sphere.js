@@ -8,7 +8,7 @@ export default Controller.extend({
   intl: service(),
 
   backgroundStyle: computed(function() {
-    const { fullSizeUrl, thumbnailUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('governing-the-digital-public-sphere');
+    const { fullSizeUrl, thumbnailUrl } = this.backgroundImage.getSlideBackgroundImage('governing-the-digital-public-sphere');
     return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}');`);
   }),
 
@@ -18,12 +18,12 @@ export default Controller.extend({
 
   paragraphs: computed('intl.locale', function() {
     return [
-      get(this, 'intl').t('governingTheDigitalPublicSphere.paragraph1'),
-      get(this, 'intl').t('governingTheDigitalPublicSphere.paragraph2'),
+      this.intl.t('governingTheDigitalPublicSphere.paragraph1'),
+      this.intl.t('governingTheDigitalPublicSphere.paragraph2'),
     ];
   }),
 
   title: computed('intl.locale', function() {
-    return get(this, 'intl').t('governingTheDigitalPublicSphere.title');
+    return this.intl.t('governingTheDigitalPublicSphere.title');
   }),
 });

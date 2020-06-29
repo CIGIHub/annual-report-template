@@ -112,9 +112,9 @@ export default Service.extend({
 
   defaultBackground: computed(function() {
     return {
-      fullSizeUrl: `${get(this, 'imageHost')}5891adf417e60b71/cigi-campus.jpg`,
-      ogUrl: `${get(this, 'imageHost')}5891adf417e60b71/cigi-campus-og.jpg`,
-      thumbnailUrl: `${get(this, 'imageHost')}5891adf417e60b71/cigi-campus-thumbnail.jpg`,
+      fullSizeUrl: `${this.imageHost}5891adf417e60b71/cigi-campus.jpg`,
+      ogUrl: `${this.imageHost}5891adf417e60b71/cigi-campus-og.jpg`,
+      thumbnailUrl: `${this.imageHost}5891adf417e60b71/cigi-campus-thumbnail.jpg`,
     };
   }),
 
@@ -126,28 +126,28 @@ export default Service.extend({
   }),
 
   getAllBlurImages() {
-    return Object.keys(get(this, 'backgroundImages')).map((key) => `${get(this, 'imageHost')}${get(this, 'backgroundImages')[key].thumbnailUrl}`);
+    return Object.keys(this.backgroundImages).map((key) => `${this.imageHost}${this.backgroundImages[key].thumbnailUrl}`);
   },
 
   getNodeBackgroundImage(nodeId) {
-    if (get(this, 'nodesMissingBackground').includes(nodeId)) {
-      return get(this, 'defaultBackground');
+    if (this.nodesMissingBackground.includes(nodeId)) {
+      return this.defaultBackground;
     }
     return {
-      fullSizeUrl: `${get(this, 'imageHost')}${get(this, 'nodeS3Directory')}/nodes/${nodeId}.jpg`,
-      thumbnailUrl: `${get(this, 'imageHost')}${get(this, 'nodeS3Directory')}/nodes/${nodeId}-thumbnail.jpg`,
+      fullSizeUrl: `${this.imageHost}${this.nodeS3Directory}/nodes/${nodeId}.jpg`,
+      thumbnailUrl: `${this.imageHost}${this.nodeS3Directory}/nodes/${nodeId}-thumbnail.jpg`,
     };
   },
 
   getSlideBackgroundImage(routeName) {
-    if (get(this, 'backgroundImages')[routeName]
-        && get(this, 'backgroundImages')[routeName].fullSizeUrl
-        && get(this, 'backgroundImages')[routeName].ogUrl
-        && get(this, 'backgroundImages')[routeName].thumbnailUrl) {
+    if (this.backgroundImages[routeName]
+        && this.backgroundImages[routeName].fullSizeUrl
+        && this.backgroundImages[routeName].ogUrl
+        && this.backgroundImages[routeName].thumbnailUrl) {
       return {
-        fullSizeUrl: `${get(this, 'imageHost')}${get(this, 'backgroundImages')[routeName].fullSizeUrl}`,
-        ogUrl: `${get(this, 'imageHost')}${get(this, 'backgroundImages')[routeName].ogUrl}`,
-        thumbnailUrl: `${get(this, 'imageHost')}${get(this, 'backgroundImages')[routeName].thumbnailUrl}`,
+        fullSizeUrl: `${this.imageHost}${this.backgroundImages[routeName].fullSizeUrl}`,
+        ogUrl: `${this.imageHost}${this.backgroundImages[routeName].ogUrl}`,
+        thumbnailUrl: `${this.imageHost}${this.backgroundImages[routeName].thumbnailUrl}`,
       };
     }
     return { thumbnailUrl: null, ogUrl: null, fullSizeUrl: null };

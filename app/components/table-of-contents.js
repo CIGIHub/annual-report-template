@@ -11,35 +11,35 @@ export default Component.extend({
   linksBreakAtIndex: 10,
 
   leftLinks: computed('routes.[]', 'linksBreakAtIndex', 'router.currentRouteName', function() {
-    if (!get(this, 'routes')) {
+    if (!this.routes) {
       return [];
     }
     const currentRouteName = get(this, 'router.currentRouteName');
-    const links = get(this, 'routes').slice(0, get(this, 'linksBreakAtIndex'));
+    const links = this.routes.slice(0, this.linksBreakAtIndex);
     return links.map((link, index) => ({
       current: link.route === currentRouteName,
       number: (index + 1).toString().padStart(2, '0'),
       route: link.route,
-      title: get(this, 'intl').t(link.title),
+      title: this.intl.t(link.title),
     }));
   }),
 
   rightLinks: computed('routes.[]', 'linksBreakAtIndex', 'router.currentRouteName', function() {
-    if (!get(this, 'routes')) {
+    if (!this.routes) {
       return [];
     }
     const currentRouteName = get(this, 'router.currentRouteName');
-    const links = get(this, 'routes').slice(get(this, 'linksBreakAtIndex'));
+    const links = this.routes.slice(this.linksBreakAtIndex);
     return links.map((link, index) => ({
       current: link.route === currentRouteName,
-      number: (index + get(this, 'linksBreakAtIndex') + 1).toString().padStart(2, '0'),
+      number: (index + this.linksBreakAtIndex + 1).toString().padStart(2, '0'),
       route: link.route,
-      title: get(this, 'intl').t(link.title),
+      title: this.intl.t(link.title),
     }));
   }),
 
   showAcknowledgementsTab: computed('showAcknowledgements', 'lightbox.subType', function() {
-    return get(this, 'showAcknowledgements')
+    return this.showAcknowledgements
       || get(this, 'lightbox.subType') === 'acknowledgements';
   }),
 
@@ -49,11 +49,11 @@ export default Component.extend({
 
   actions: {
     hideAcknowledgements() {
-      get(this, 'lightbox').closeTableOfContentsAcknowledgements();
+      this.lightbox.closeTableOfContentsAcknowledgements();
       set(this, 'showAcknowledgements', null);
     },
     showAcknowledgements() {
-      get(this, 'lightbox').showTableOfContentsAcknowledgements();
+      this.lightbox.showTableOfContentsAcknowledgements();
       set(this, 'showAcknowledgements', true);
     },
   },

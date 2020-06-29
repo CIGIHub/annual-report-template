@@ -33,7 +33,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
 
   beforeModel() {
     if (!get(this, 'assetLoader.assetsLoaded')) {
-      return get(this, 'assetLoader').waitForAssets();
+      return this.assetLoader.waitForAssets();
     }
     return true;
   },
@@ -83,7 +83,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
         } else if (node.event_date) {
           set(node, 'date_str', moment(node.event_date).format('MMMM D, YYYY'));
         }
-        get(this, 'lightbox').showPublicationLightbox();
+        this.lightbox.showPublicationLightbox();
         $(document).ready(() => {
           run(() => {
             $('html, body').css({
@@ -101,7 +101,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
           set(node, 'author_str', authorString);
         }
       } else if (get(this, 'lightbox.subType') === 'publication') {
-        get(this, 'lightbox').closeLightbox();
+        this.lightbox.closeLightbox();
         $(document).ready(() => {
           run(() => {
             $('html, body').css({
@@ -123,18 +123,18 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   },
 
   afterModel() {
-    const title = `${get(this, 'intl').t('timeline.title')} | ${get(this, 'intl').t('title')}`;
+    const title = `${this.intl.t('timeline.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
-    set(this, 'headData.description', get(this, 'intl').t('description'));
+    set(this, 'headData.description', this.intl.t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}timeline/`);
     set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.ogUrl'));
 
     // Load next route background
-    const nextRoute = get(this, 'routeOrder').getNextRoute('timeline');
+    const nextRoute = this.routeOrder.getNextRoute('timeline');
     if (nextRoute) {
-      const { fullSizeUrl } = get(this, 'backgroundImage').getSlideBackgroundImage(nextRoute);
+      const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {
-        get(this, 'assetLoader').loadAsset(fullSizeUrl);
+        this.assetLoader.loadAsset(fullSizeUrl);
       }
     }
   },

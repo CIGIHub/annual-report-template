@@ -7,7 +7,7 @@ export default Component.extend({
 
   footerClass: computed('darkFooter', function() {
     const classNames = ['footer', 'clearfix', 'show-for-large'];
-    if (get(this, 'darkFooter')) {
+    if (this.darkFooter) {
       classNames.push('footer-dark');
     }
     return classNames.toString().replace(/,/g, ' ');
@@ -15,7 +15,7 @@ export default Component.extend({
 
   actions: {
     showBackground() {
-      set(this, 'revealToggle', !get(this, 'revealToggle'));
+      set(this, 'revealToggle', !this.revealToggle);
     },
   },
 });

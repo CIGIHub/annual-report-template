@@ -14,27 +14,27 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
 
   beforeModel() {
     if (!get(this, 'assetLoader.assetsLoaded')) {
-      return get(this, 'assetLoader').waitForAssets();
+      return this.assetLoader.waitForAssets();
     }
     return true;
   },
 
   afterModel() {
-    const title = `${get(this, 'intl').t('presidentsMessage.title')} | ${get(this, 'intl').t('title')}`;
+    const title = `${this.intl.t('presidentsMessage.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
-    set(this, 'headData.description', get(this, 'intl').t('description'));
+    set(this, 'headData.description', this.intl.t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}presidents-message/`);
-    const backgroundImage = get(this, 'backgroundImage').getSlideBackgroundImage('presidents-message');
+    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('presidents-message');
     if (backgroundImage && backgroundImage.ogUrl) {
       set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background
-    const nextRoute = get(this, 'routeOrder').getNextRoute('presidents-message');
+    const nextRoute = this.routeOrder.getNextRoute('presidents-message');
     if (nextRoute) {
-      const { fullSizeUrl } = get(this, 'backgroundImage').getSlideBackgroundImage(nextRoute);
+      const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {
-        get(this, 'assetLoader').loadAsset(fullSizeUrl);
+        this.assetLoader.loadAsset(fullSizeUrl);
       }
     }
   },

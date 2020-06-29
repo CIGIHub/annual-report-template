@@ -14,23 +14,23 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
 
   beforeModel() {
     if (!get(this, 'assetLoader.assetsLoaded')) {
-      return get(this, 'assetLoader').waitForAssets();
+      return this.assetLoader.waitForAssets();
     }
     return true;
   },
 
   afterModel() {
-    set(this, 'headData.title', get(this, 'intl').t('title'));
-    set(this, 'headData.description', get(this, 'intl').t('description'));
+    set(this, 'headData.title', this.intl.t('title'));
+    set(this, 'headData.description', this.intl.t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}`);
     set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.ogUrl'));
 
     // Load next route background
-    const nextRoute = get(this, 'routeOrder').getNextRoute('index');
+    const nextRoute = this.routeOrder.getNextRoute('index');
     if (nextRoute) {
-      const { fullSizeUrl } = get(this, 'backgroundImage').getSlideBackgroundImage(nextRoute);
+      const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {
-        get(this, 'assetLoader').loadAsset(fullSizeUrl);
+        this.assetLoader.loadAsset(fullSizeUrl);
       }
     }
   },

@@ -31,11 +31,11 @@ export default Controller.extend({
   }),
 
   overlayStyle: computed('node.id', /* istanbul ignore next */ function() {
-    const node = get(this, 'node');
+    const node = this.node;
 
     if (!get(this, 'fastboot.isFastBoot')
         && node) {
-      const { fullSizeUrl, thumbnailUrl } = get(this, 'backgroundImage').getNodeBackgroundImage(node.id);
+      const { fullSizeUrl, thumbnailUrl } = this.backgroundImage.getNodeBackgroundImage(node.id);
       return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}')`);
     }
 
@@ -43,8 +43,8 @@ export default Controller.extend({
   }),
 
   filteredNodes: computed('nodes.[]', 'search', function() {
-    let nodes = get(this, 'nodes');
-    const search = get(this, 'search');
+    let nodes = this.nodes;
+    const search = this.search;
     if (search) {
       nodes = nodes.filter((node) => node.title.toLowerCase().includes(search)
         || node.authors.join().toLowerCase().includes(search)
@@ -68,7 +68,7 @@ export default Controller.extend({
 
   searchChanged: observer('search', function() {
     /* istanbul ignore next */
-    if (!get(this, 'search')) {
+    if (!this.search) {
       set(this, 'search', null);
     }
   }),
@@ -90,8 +90,8 @@ export default Controller.extend({
       });
     },
     previousNode() {
-      const node = get(this, 'node');
-      const filteredNodes = get(this, 'filteredNodes');
+      const node = this.node;
+      const filteredNodes = this.filteredNodes;
 
       let ind = 0;
       for (let i = 0; i < filteredNodes.length; i += 1) {
@@ -109,8 +109,8 @@ export default Controller.extend({
       set(this, 'id', filteredNodes[ind].id);
     },
     nextNode() {
-      const node = get(this, 'node');
-      const filteredNodes = get(this, 'filteredNodes');
+      const node = this.node;
+      const filteredNodes = this.filteredNodes;
 
       let ind = 0;
       for (let i = 0; i < filteredNodes.length; i += 1) {

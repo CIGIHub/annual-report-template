@@ -8,7 +8,7 @@ export default Controller.extend({
   intl: service(),
 
   backgroundStyle: computed(function() {
-    const { fullSizeUrl, thumbnailUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('a-bretton-woods-moment-for-the-digital-age');
+    const { fullSizeUrl, thumbnailUrl } = this.backgroundImage.getSlideBackgroundImage('a-bretton-woods-moment-for-the-digital-age');
     return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}');`);
   }),
 
@@ -16,13 +16,13 @@ export default Controller.extend({
     return [{
       icon: 'film',
       link: 'https://www.cigionline.org/multimedia/jim-balsillie-imf-statistical-forum-and-q-christine-lagarde',
-      title: get(this, 'intl').t('aBrettonWoodsMomentForTheDigitalAge.link1'),
-      type: get(this, 'intl').t('video'),
+      title: this.intl.t('aBrettonWoodsMomentForTheDigitalAge.link1'),
+      type: this.intl.t('video'),
     }, {
       icon: 'file-alt',
       link: 'https://www.cigionline.org/publications/rethinking-policy-digital-world',
-      title: get(this, 'intl').t('aBrettonWoodsMomentForTheDigitalAge.link2'),
-      type: get(this, 'intl').t('publication'),
+      title: this.intl.t('aBrettonWoodsMomentForTheDigitalAge.link2'),
+      type: this.intl.t('publication'),
     }];
   }),
 
@@ -31,6 +31,6 @@ export default Controller.extend({
   }),
 
   title: computed('intl.locale', function() {
-    return get(this, 'intl').t('aBrettonWoodsMomentForTheDigitalAge.title');
+    return this.intl.t('aBrettonWoodsMomentForTheDigitalAge.title');
   }),
 });

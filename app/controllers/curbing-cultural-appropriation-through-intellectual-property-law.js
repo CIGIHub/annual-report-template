@@ -8,7 +8,7 @@ export default Controller.extend({
   intl: service(),
 
   backgroundStyle: computed(function() {
-    const { fullSizeUrl, thumbnailUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('curbing-cultural-appropriation-through-intellectual-property-law');
+    const { fullSizeUrl, thumbnailUrl } = this.backgroundImage.getSlideBackgroundImage('curbing-cultural-appropriation-through-intellectual-property-law');
     return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}');`);
   }),
 
@@ -18,13 +18,13 @@ export default Controller.extend({
 
   paragraphs: computed('intl.locale', function() {
     return [
-      get(this, 'intl').t('curbingCulturalAppropriationThroughIntellectualPropertyLaw.paragraph1'),
-      get(this, 'intl').t('curbingCulturalAppropriationThroughIntellectualPropertyLaw.paragraph2'),
+      this.intl.t('curbingCulturalAppropriationThroughIntellectualPropertyLaw.paragraph1'),
+      this.intl.t('curbingCulturalAppropriationThroughIntellectualPropertyLaw.paragraph2'),
     ];
   }),
 
   title: computed('intl.locale', function() {
-    return get(this, 'intl').t('curbingCulturalAppropriationThroughIntellectualPropertyLaw.title');
+    return this.intl.t('curbingCulturalAppropriationThroughIntellectualPropertyLaw.title');
   }),
 
   videoLink: computed(function() {

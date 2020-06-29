@@ -7,7 +7,7 @@ export default Mixin.create({
 
   actions: {
     didTransition() {
-      get(this, 'googleAnalytics').sendPageView();
+      this.googleAnalytics.sendPageView();
       return true;
     },
   },

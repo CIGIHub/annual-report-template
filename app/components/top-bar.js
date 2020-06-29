@@ -19,13 +19,13 @@ export default Component.extend({
   }),
 
   linkedInShareLink: computed('shareRoute', function() {
-    const shareRoute = get(this, 'shareRoute');
+    const shareRoute = this.shareRoute;
     return `https://www.linkedin.com/shareArticle?mini=true&url=${shareRoute}`;
   }),
 
   twitterShareLink: computed('shareRoute', function() {
-    const shareRoute = get(this, 'shareRoute');
-    let shareTitle = get(this, 'intl').t('title');
+    const shareRoute = this.shareRoute;
+    let shareTitle = this.intl.t('title');
     shareTitle = shareTitle.replace(/ /g, '+');
     return `https://twitter.com/intent/tweet?status=${shareTitle}+${shareRoute}`;
   }),
@@ -41,12 +41,12 @@ export default Component.extend({
 
   actions: {
     closeMenu() {
-      get(this, 'lightbox').closeLightbox();
+      this.lightbox.closeLightbox();
     },
     closeSocialMenu() {
       /* istanbul ignore next */
-      if (get(this, 'socialAnimationTimeout')) {
-        clearTimeout(get(this, 'socialAnimationTimeout'));
+      if (this.socialAnimationTimeout) {
+        clearTimeout(this.socialAnimationTimeout);
         set(this, 'socialAnimationTimeout', null);
       }
       set(this, 'socialMenuIsOpen', false);
@@ -82,16 +82,16 @@ export default Component.extend({
       /* istanbul ignore next */
       FB.ui({
         method: 'share',
-        href: get(this, 'shareRoute'),
+        href: this.shareRoute,
       });
     },
     openMenu() {
-      get(this, 'lightbox').showTableOfContents();
+      this.lightbox.showTableOfContents();
     },
     openSocialMenu() {
       /* istanbul ignore next */
-      if (get(this, 'socialAnimationTimeout')) {
-        clearTimeout(get(this, 'socialAnimationTimeout'));
+      if (this.socialAnimationTimeout) {
+        clearTimeout(this.socialAnimationTimeout);
         set(this, 'socialAnimationTimeout', null);
       }
       set(this, 'socialMenuIsOpen', true);

@@ -10,31 +10,31 @@ export default Component.extend({
 
   revealToggleChanged: observer('revealToggle', function() {
     /* istanbul ignore next */
-    if ((new Date()).valueOf() - get(this, 'lastAction') > 200) {
-      if (get(this, 'isRevealed')) {
-        if (get(this, 'quoteRevealTimeout')) {
-          clearTimeout(get(this, 'quoteRevealTimeout'));
+    if ((new Date()).valueOf() - this.lastAction > 200) {
+      if (this.isRevealed) {
+        if (this.quoteRevealTimeout) {
+          clearTimeout(this.quoteRevealTimeout);
           set(this, 'quoteRevealTimeout', null);
         }
 
         set(this, 'isRevealed', false);
         set(this, 'lastAction', (new Date()).valueOf());
-        const hideResult = get(this, 'hide')();
+        const hideResult = this.hide();
         set(this, 'textRevealTimeout', hideResult.textRevealTimeout);
-      } else if (!get(this, 'isRevealed')) {
-        if (get(this, 'textRevealTimeout')) {
-          clearTimeout(get(this, 'textRevealTimeout'));
+      } else if (!this.isRevealed) {
+        if (this.textRevealTimeout) {
+          clearTimeout(this.textRevealTimeout);
           set(this, 'textRevealTimeout', null);
         }
 
-        if (get(this, 'quoteRevealTimeout')) {
-          clearTimeout(get(this, 'quoteRevealTimeout'));
+        if (this.quoteRevealTimeout) {
+          clearTimeout(this.quoteRevealTimeout);
           set(this, 'quoteRevealTimeout', null);
         }
 
         set(this, 'isRevealed', true);
         set(this, 'lastAction', (new Date()).valueOf());
-        const revealResult = get(this, 'reveal')();
+        const revealResult = this.reveal();
         set(this, 'quoteRevealTimeout', revealResult.quoteRevealTimeout);
       }
     }
@@ -47,14 +47,14 @@ export default Component.extend({
 
   mouseEnter() {
     /* istanbul ignore next */
-    if (get(this, 'textRevealTimeout')) {
-      clearTimeout(get(this, 'textRevealTimeout'));
+    if (this.textRevealTimeout) {
+      clearTimeout(this.textRevealTimeout);
       set(this, 'textRevealTimeout', null);
     }
 
     /* istanbul ignore next */
-    if (get(this, 'quoteRevealTimeout')) {
-      clearTimeout(get(this, 'quoteRevealTimeout'));
+    if (this.quoteRevealTimeout) {
+      clearTimeout(this.quoteRevealTimeout);
       set(this, 'quoteRevealTimeout', null);
     }
 
@@ -63,15 +63,15 @@ export default Component.extend({
     /* istanbul ignore next */
     set(this, 'lastAction', (new Date()).valueOf());
     /* istanbul ignore next */
-    const revealResult = get(this, 'reveal')();
+    const revealResult = this.reveal();
     /* istanbul ignore next */
     set(this, 'quoteRevealTimeout', revealResult.quoteRevealTimeout);
   },
 
   mouseLeave() {
     /* istanbul ignore next */
-    if (get(this, 'quoteRevealTimeout')) {
-      clearTimeout(get(this, 'quoteRevealTimeout'));
+    if (this.quoteRevealTimeout) {
+      clearTimeout(this.quoteRevealTimeout);
       set(this, 'quoteRevealTimeout', null);
     }
 
@@ -80,7 +80,7 @@ export default Component.extend({
     /* istanbul ignore next */
     set(this, 'lastAction', (new Date()).valueOf());
     /* istanbul ignore next */
-    const hideResult = get(this, 'hide')();
+    const hideResult = this.hide();
     /* istanbul ignore next */
     set(this, 'textRevealTimeout', hideResult.textRevealTimeout);
   },

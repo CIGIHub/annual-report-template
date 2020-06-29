@@ -1,0 +1,5 @@
+<ul class="dot-nav show-for-large {{if @lightBackground "light-background"}}">
+  {{#each menuItems as |menuItem|}}
+    <DotNavDot @menuItem={{menuItem}} />
+  {{/each}}
+</ul>

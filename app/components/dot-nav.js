@@ -1,21 +1,20 @@
-import Component from '@ember/component';
-import { computed, get } from '@ember/object';
 import { inject as service } from '@ember/service';
+import Component from '@glimmer/component';
 
-export default Component.extend({
-  intl: service(),
-  routeOrder: service(),
-  router: service(),
+export default class DotNavComponent extends Component {
+  @service intl;
+  @service routeOrder;
+  @service router;
 
-  menuItems: computed('router.currentRouteName', function() {
+  get menuItems() {
     const _this = this;
-    const currentRoute = get(this, 'router.currentRouteName');
+    const currentRoute = this.router.currentRouteName;
 
-    return get(this, 'routeOrder.routes').map(function(route) {
+    return this.routeOrder.routes.map(function(route) {
       const menuItem = {
         current: false,
         route: route.route,
-        title: get(_this, 'intl').t(route.title),
+        title: _this.intl.t(route.title),
       };
       if (currentRoute === route.route
           || route.subRoutes.includes(currentRoute)) {
@@ -24,5 +23,5 @@ export default Component.extend({
 
       return menuItem;
     });
-  }),
-});
+  }
+}

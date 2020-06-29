@@ -24,7 +24,7 @@ module('Integration | Component | footer-photo', function(hooks) {
 
     await click('.footer-icon-btn');
 
-    assert.strictEqual(get(this, 'revealToggle'), true);
+    assert.strictEqual(this.revealToggle, true);
   });
 
   test('should set revealToggle=false on footer-icon-btn click when revealToggle=true', async function(assert) {
@@ -38,6 +38,6 @@ module('Integration | Component | footer-photo', function(hooks) {
 
     await click('.footer-icon-btn');
 
-    assert.strictEqual(get(this, 'revealToggle'), false);
+    assert.strictEqual(this.revealToggle, false);
   });
 });
