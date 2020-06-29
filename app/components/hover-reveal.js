@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import { get, observer, set } from '@ember/object';
+import { observer, set } from '@ember/object';
 import $ from 'jquery';
 
 export default Component.extend({
