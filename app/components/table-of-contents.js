@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import { computed, get, set } from '@ember/object';
+import { computed, set } from '@ember/object';
 import { inject as service } from '@ember/service';
 
 export default Component.extend({
@@ -14,7 +14,7 @@ export default Component.extend({
     if (!this.routes) {
       return [];
     }
-    const currentRouteName = get(this, 'router.currentRouteName');
+    const currentRouteName = this.router.currentRouteName;
     const links = this.routes.slice(0, this.linksBreakAtIndex);
     return links.map((link, index) => ({
       current: link.route === currentRouteName,
@@ -28,7 +28,7 @@ export default Component.extend({
     if (!this.routes) {
       return [];
     }
-    const currentRouteName = get(this, 'router.currentRouteName');
+    const currentRouteName = this.router.currentRouteName;
     const links = this.routes.slice(this.linksBreakAtIndex);
     return links.map((link, index) => ({
       current: link.route === currentRouteName,
@@ -40,11 +40,11 @@ export default Component.extend({
 
   showAcknowledgementsTab: computed('showAcknowledgements', 'lightbox.subType', function() {
     return this.showAcknowledgements
-      || get(this, 'lightbox.subType') === 'acknowledgements';
+      || this.lightbox.subType === 'acknowledgements';
   }),
 
-  videoLink: computed(function() {
-    return `${get(this, 'backgroundImage.imageHost')}5891adf417e60b71/slides/table-of-contents.mp4`;
+  videoLink: computed('backgroundImage.imageHost', function() {
+    return `${this.backgroundImage.imageHost}5891adf417e60b71/slides/table-of-contents.mp4`;
   }),
 
   actions: {

@@ -1,5 +1,5 @@
 import ENV from 'annual-report-template/config/environment';
-import { computed, get } from '@ember/object';
+import { computed } from '@ember/object';
 import Service from '@ember/service';
 
 export default Service.extend({
@@ -110,7 +110,7 @@ export default Service.extend({
   ],
   nodeS3Directory: '5891adf417e60b71',
 
-  defaultBackground: computed(function() {
+  defaultBackground: computed('imageHost', function() {
     return {
       fullSizeUrl: `${this.imageHost}5891adf417e60b71/cigi-campus.jpg`,
       ogUrl: `${this.imageHost}5891adf417e60b71/cigi-campus-og.jpg`,

@@ -1,6 +1,6 @@
 import Controller from '@ember/controller';
-import { computed, get, set } from '@ember/object';
-import { alias } from '@ember/object/computed';
+import { computed, set } from '@ember/object';
+import { alias, equal } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
 import { htmlSafe } from '@ember/template';
 import $ from 'jquery';
@@ -49,29 +49,17 @@ export default Controller.extend({
     return currentPage <= 1;
   }),
 
-  isArticle: computed('publication.type', function() {
-    return get(this, 'publication.type') === 'article';
-  }),
+  isArticle: equal('publication.type', 'article'),
 
-  isEvent: computed('publication.type', function() {
-    return get(this, 'publication.type') === 'event';
-  }),
+  isEvent: equal('publication.type', 'event'),
 
-  isPublication: computed('publication.type', function() {
-    return get(this, 'publication.type') === 'publication';
-  }),
+  isPublication: equal('publication.type', 'publication'),
 
-  isTypeEvents: computed('currentType', function() {
-    return this.currentType === 'events';
-  }),
+  isTypeEvents: equal('currentType', 'events'),
 
-  isTypeOpinions: computed('currentType', function() {
-    return this.currentType === 'opinions';
-  }),
+  isTypeOpinions: equal('currentType', 'opinions'),
 
-  isTypePublications: computed('currentType', function() {
-    return this.currentType === 'publications';
-  }),
+  isTypePublications: equal('currentType', 'publications'),
 
   paginationPages: computed('currentPage', 'totalPages', function() {
     const currentPage = this.currentPage;
@@ -100,12 +88,15 @@ export default Controller.extend({
     }));
   }),
 
-  overlayStyle: computed('publication.id', /* istanbul ignore next */ function() {
+  overlayStyle: computed('publication.id', 'fastboot.isFastBoot', /* istanbul ignore next */ function() {
     const publication = this.publication;
 
-    if (!get(this, 'fastboot.isFastBoot')
+    if (!this.fastboot.isFastBoot
         && publication) {
-      const { fullSizeUrl, thumbnailUrl } = this.backgroundImage.getNodeBackgroundImage(publication.id);
+      const {
+        fullSizeUrl,
+        thumbnailUrl,
+      } = this.backgroundImage.getNodeBackgroundImage(publication.id);
       return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}')`);
     }
 
@@ -117,7 +108,7 @@ export default Controller.extend({
   }),
 
   shortSummary: computed('publication.summary', /* istanbul ignore next */ function() {
-    let summary = get(this, 'publication.summary');
+    let summary = this.publication.summary;
     summary = summary.replace(/(\r\n\t|\n|\r\t)/gm, '');
     if (/^(.*?)[.?!]\s/.test(summary)) {
       return /^(.*?)[.?!]\s/.exec(summary)[0];

@@ -16,13 +16,13 @@ export default Service.extend({
     return Math.ceil((this.resolvedAssetCount / this.totalAssetCount) * 100);
   }),
 
-  totalAssetCount: computed('promises[]', function() {
+  totalAssetCount: computed('promises.length', function() {
     return this.promises.length || 1;
   }),
 
   init(...args) {
     this._super(args);
-    if (!get(this, 'fastboot.isFastBoot') && ENV.environment !== 'test') {
+    if (!this.fastboot.isFastBoot && ENV.environment !== 'test') {
       this.backgroundImage.getAllBlurImages().forEach((blurImage) => {
         this.promises.push(this.loadAsset(blurImage));
       });
@@ -43,7 +43,7 @@ export default Service.extend({
   },
 
   loadAsset(url) {
-    if (!get(this, 'fastboot.isFastBoot') && ENV.environment !== 'test') {
+    if (!this.fastboot.isFastBoot && ENV.environment !== 'test') {
       const _this = this;
       return new Promise((resolve) => {
         const img = new Image();

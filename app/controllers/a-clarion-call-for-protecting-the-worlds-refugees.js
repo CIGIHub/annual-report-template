@@ -1,5 +1,5 @@
 import Controller from '@ember/controller';
-import { computed, get } from '@ember/object';
+import { computed } from '@ember/object';
 import { inject as service } from '@ember/service';
 import { htmlSafe } from '@ember/template';
 
@@ -42,7 +42,7 @@ export default Controller.extend({
     return this.intl.t('aClarionCallForProtectingTheWorldsRefugees.title');
   }),
 
-  videoLink: computed(function() {
-    return `${get(this, 'backgroundImage.imageHost')}5891adf417e60b71/slides/a-clarion-call-for-protecting-the-worlds-refugees.mp4`;
+  videoLink: computed('backgroundImage.imageHost', function() {
+    return `${this.backgroundImage.imageHost}5891adf417e60b71/slides/a-clarion-call-for-protecting-the-worlds-refugees.mp4`;
   }),
 });

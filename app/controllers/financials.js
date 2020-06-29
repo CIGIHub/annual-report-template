@@ -1,6 +1,6 @@
 import ENV from 'annual-report-template/config/environment';
 import Controller from '@ember/controller';
-import { computed, get } from '@ember/object';
+import { computed } from '@ember/object';
 import { inject as service } from '@ember/service';
 
 export default Controller.extend({
@@ -10,7 +10,7 @@ export default Controller.extend({
   rootURL: ENV.rootURL,
 
   menuLinks: computed('router.currentRouteName', function() {
-    const currentRouteName = get(this, 'router.currentRouteName');
+    const currentRouteName = this.router.currentRouteName;
     const menuLinks = [{
       current: currentRouteName === 'financials.auditors-report',
       linkTo: 'financials.auditors-report',

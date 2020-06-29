@@ -1,10 +1,10 @@
 import Controller from '@ember/controller';
 import {
   computed,
-  get,
   observer,
   set,
 } from '@ember/object';
+import { equal } from '@ember/object/computed';
 import { later } from '@ember/runloop';
 import { inject as service } from '@ember/service';
 import { htmlSafe } from '@ember/template';
@@ -21,7 +21,7 @@ export default Controller.extend({
   isTransitioning: false,
 
   backgroundStyle: computed('router.currentRouteName', function() {
-    const currentRouteName = get(this, 'router.currentRouteName');
+    const currentRouteName = this.router.currentRouteName;
     if ([
       'table-of-contents',
       'thank-you',
@@ -40,14 +40,14 @@ export default Controller.extend({
       return htmlSafe('background-color: #fff;');
     }
 
-    const { thumbnailUrl, fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(currentRouteName);
+    const {
+      thumbnailUrl,
+      fullSizeUrl,
+    } = this.backgroundImage.getSlideBackgroundImage(currentRouteName);
     return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}');`);
   }),
 
-  bounceScrollArrowDown: computed('router.currentRouteName', function() {
-    // Add bounce animation to down scroll arrow on home slide
-    return get(this, 'router.currentRouteName') === 'index';
-  }),
+  bounceScrollArrowDown: equal('router.currentRouteName', 'index'),
 
   hideMobileOverlay: computed('router.currentRouteName', function() {
     return [
@@ -59,7 +59,7 @@ export default Controller.extend({
       'financials.revenue-and-expenses',
       'presidents-message',
       'table-of-contents',
-    ].includes(get(this, 'router.currentRouteName'));
+    ].includes(this.router.currentRouteName);
   }),
 
   lightBackground: computed('router.currentRouteName', 'lightbox.{showLightbox,subType}', function() {
@@ -71,9 +71,9 @@ export default Controller.extend({
       'financials.revenue-and-expenses',
       'outputs-and-activities',
       'presidents-message',
-    ].includes(get(this, 'router.currentRouteName'));
-    if (get(this, 'lightbox.showLightbox')
-        || get(this, 'lightbox.subType') === 'publication') {
+    ].includes(this.router.currentRouteName);
+    if (this.lightbox.showLightbox
+        || this.lightbox.subType === 'publication') {
       return false;
     }
     if (lightBackgroundRoute) {
@@ -87,14 +87,14 @@ export default Controller.extend({
       'index',
       'timeline',
       'thank-you',
-    ].includes(get(this, 'router.currentRouteName'));
+    ].includes(this.router.currentRouteName);
   }),
 
   showDotNav: computed('dotNavShown', 'router.currentRouteName', function() {
     const onContentSlide = ![
       'index',
       'table-of-contents',
-    ].includes(get(this, 'router.currentRouteName'));
+    ].includes(this.router.currentRouteName);
     if (onContentSlide && !this.dotNavShown) {
       set(this, 'dotNavShown', true);
     }
@@ -102,25 +102,25 @@ export default Controller.extend({
   }),
 
   showScrollArrowDown: computed('router.currentRouteName', 'routeOrder.{lastRoute,lastSubRoutes.[]}', function() {
-    const currentRouteName = get(this, 'router.currentRouteName');
+    const currentRouteName = this.router.currentRouteName;
 
-    return currentRouteName !== get(this, 'routeOrder.lastRoute')
-      && !get(this, 'routeOrder.lastSubRoutes').includes(currentRouteName)
+    return currentRouteName !== this.routeOrder.lastRoute
+      && !this.routeOrder.lastSubRoutes.includes(currentRouteName)
       && currentRouteName !== '404';
   }),
 
   showScrollArrowUp: computed('router.currentRouteName', 'routeOrder.{firstRoute,firstSubRoutes.[]}', function() {
-    const currentRouteName = get(this, 'router.currentRouteName');
-    return currentRouteName !== get(this, 'routeOrder.firstRoute')
-      && !get(this, 'routeOrder.firstSubRoutes').includes(currentRouteName)
+    const currentRouteName = this.router.currentRouteName;
+    return currentRouteName !== this.routeOrder.firstRoute
+      && !this.routeOrder.firstSubRoutes.includes(currentRouteName)
       && currentRouteName !== '404';
   }),
 
   currentRouteNameChanged: observer('router.currentRouteName', function() {
     /* istanbul ignore next */
-    if (!get(this, 'fastboot.isFastBoot')) {
-      if (get(this, 'lightbox.showLightbox')
-          || get(this, 'lightbox.subType') === 'publication') {
+    if (!this.fastboot.isFastBoot) {
+      if (this.lightbox.showLightbox
+          || this.lightbox.subType === 'publication') {
         this.lightbox.closeLightbox();
       }
 
@@ -139,7 +139,7 @@ export default Controller.extend({
   actions: {
     transitionBack() {
       set(this, 'isTransitioning', true);
-      const currentRouteName = get(this, 'router.currentRouteName');
+      const currentRouteName = this.router.currentRouteName;
       const previousRoute = this.routeOrder.getPreviousRoute(currentRouteName);
       if (previousRoute) {
         this.transitionToRoute(previousRoute);
@@ -152,7 +152,7 @@ export default Controller.extend({
     },
     transitionNext() {
       set(this, 'isTransitioning', true);
-      const currentRouteName = get(this, 'router.currentRouteName');
+      const currentRouteName = this.router.currentRouteName;
       const nextRoute = this.routeOrder.getNextRoute(currentRouteName);
       if (nextRoute) {
         this.transitionToRoute(nextRoute);

@@ -1,6 +1,7 @@
 import ENV from 'annual-report-template/config/environment';
 import Component from '@ember/component';
 import { computed, set } from '@ember/object';
+import { equal } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
 import $ from 'jquery';
 
@@ -30,9 +31,7 @@ export default Component.extend({
     return `https://twitter.com/intent/tweet?status=${shareTitle}+${shareRoute}`;
   }),
 
-  menuIsOpen: computed('lightbox.showLightbox', function() {
-    return this.lightbox.showLightbox === 'tableofcontents';
-  }),
+  menuIsOpen: equal('lightbox.showLightbox', 'tableofcontents'),
 
   shareRoute: computed('router.currentRouteName', function() {
     const currentRoute = this.router.currentRouteName.replace('.', '/').replace('index', '');

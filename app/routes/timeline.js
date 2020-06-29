@@ -1,7 +1,7 @@
 import ENV from 'annual-report-template/config/environment';
 import GoogleAnalyticsMixin from 'annual-report-template/mixins/google-analytics';
 import ResetScrollMixin from 'annual-report-template/mixins/reset-scroll';
-import { get, set } from '@ember/object';
+import { set } from '@ember/object';
 import Route from '@ember/routing/route';
 import { run } from '@ember/runloop';
 import { inject as service } from '@ember/service';
@@ -32,7 +32,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   },
 
   beforeModel() {
-    if (!get(this, 'assetLoader.assetsLoaded')) {
+    if (!this.assetLoader.assetsLoaded) {
       return this.assetLoader.waitForAssets();
     }
     return true;
@@ -60,7 +60,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
         set(n, 'date_str', moment(n.event_date).format('MMMM D, YYYY'));
       }
 
-      let summary = get(n, 'summary');
+      let summary = n.summary;
       summary = summary.replace(/(\r\n\t|\n|\r\t)/gm, '');
       if (/^(.*?)[.?!]\s/.test(summary)) {
         summary = /^(.*?)[.?!]\s/.exec(summary)[0];
@@ -73,7 +73,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
       node = nodes.find((n) => n.id === params.id);
     }
 
-    if (!get(this, 'fastboot.isFastBoot')) {
+    if (!this.fastboot.isFastBoot) {
       $('.timeline-bubble').removeClass('selected');
 
       if (node) {
@@ -97,10 +97,10 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
           });
         });
         if (node.type === 'publication' || node.type === 'article') {
-          const authorString = get(node, 'authors').join(', ');
+          const authorString = node.authors.join(', ');
           set(node, 'author_str', authorString);
         }
-      } else if (get(this, 'lightbox.subType') === 'publication') {
+      } else if (this.lightbox.subType === 'publication') {
         this.lightbox.closeLightbox();
         $(document).ready(() => {
           run(() => {
@@ -127,7 +127,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.title', title);
     set(this, 'headData.description', this.intl.t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}timeline/`);
-    set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.ogUrl'));
+    set(this, 'headData.image', this.backgroundImage.defaultBackground.ogUrl);
 
     // Load next route background
     const nextRoute = this.routeOrder.getNextRoute('timeline');

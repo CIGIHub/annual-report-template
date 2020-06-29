@@ -1,7 +1,7 @@
 import ENV from 'annual-report-template/config/environment';
 import GoogleAnalyticsMixin from 'annual-report-template/mixins/google-analytics';
 import ResetScrollMixin from 'annual-report-template/mixins/reset-scroll';
-import { get, set } from '@ember/object';
+import { set } from '@ember/object';
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 import $ from 'jquery';
@@ -34,7 +34,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   },
 
   beforeModel() {
-    if (!get(this, 'assetLoader.assetsLoaded')) {
+    if (!this.assetLoader.assetsLoaded) {
       return this.assetLoader.waitForAssets();
     }
     return true;
@@ -87,7 +87,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     }
 
     /* istanbul ignore next */
-    if (!get(this, 'fastboot.isFastBoot')) {
+    if (!this.fastboot.isFastBoot) {
       if (publication) {
         this.lightbox.showPublicationLightbox();
         $('html, body').css({
@@ -95,10 +95,10 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
           'overflow': 'hidden',
         });
         if (type === 'publications' || type === 'opinions') {
-          const authorString = get(publication, 'authors').join(', ');
+          const authorString = publication.authors.join(', ');
           set(publication, 'author_str', authorString);
         }
-      } else if (get(this, 'lightbox.subType') === 'publication') {
+      } else if (this.lightbox.subType === 'publication') {
         this.lightbox.closeLightbox();
         $('html, body').css({
           'height': '',
@@ -116,11 +116,11 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
         } else if (obj.event_date) {
           set(obj, 'date_str', moment(obj.event_date).format('MMMM D, YYYY'));
         }
-        set(obj, 'type_str', get(obj, 'type'));
+        set(obj, 'type_str', obj.type);
         /* istanbul ignore next */
-        if (get(obj, 'subtype').length > 0) {
-          set(obj, 'type_str', get(obj, 'subtype')[0]);
-          if (get(obj, 'type_str') === 'Books') {
+        if (obj.subtype.length > 0) {
+          set(obj, 'type_str', obj.subtype[0]);
+          if (obj.type_str === 'Books') {
             set(obj, 'is_italic', true);
           }
         }
@@ -136,7 +136,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.title', title);
     set(this, 'headData.description', this.intl.t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}outputs-and-activities/`);
-    set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.ogUrl'));
+    set(this, 'headData.image', this.backgroundImage.defaultBackground.ogUrl);
 
     // Load next route background
     const nextRoute = this.routeOrder.getNextRoute('outputs-and-activities');

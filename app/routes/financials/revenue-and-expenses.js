@@ -1,7 +1,7 @@
 import ENV from 'annual-report-template/config/environment';
 import GoogleAnalyticsMixin from 'annual-report-template/mixins/google-analytics';
 import ResetScrollMixin from 'annual-report-template/mixins/reset-scroll';
-import { get, set } from '@ember/object';
+import { set } from '@ember/object';
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 
@@ -13,7 +13,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   routeOrder: service(),
 
   beforeModel() {
-    if (!get(this, 'assetLoader.assetsLoaded')) {
+    if (!this.assetLoader.assetsLoaded) {
       return this.assetLoader.waitForAssets();
     }
     return true;
@@ -24,7 +24,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.title', title);
     set(this, 'headData.description', this.intl.t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}financials/revenue-and-expenses/`);
-    set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.ogUrl'));
+    set(this, 'headData.image', this.backgroundImage.defaultBackground.ogUrl);
 
     // Load next route background
     const nextRoute = this.routeOrder.getNextRoute('financials.revenue-and-expenses');

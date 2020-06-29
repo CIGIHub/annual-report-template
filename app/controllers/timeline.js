@@ -1,11 +1,10 @@
 import Controller from '@ember/controller';
 import {
   computed,
-  get,
   observer,
   set,
 } from '@ember/object';
-import { alias } from '@ember/object/computed';
+import { alias, equal } from '@ember/object/computed';
 import { htmlSafe } from '@ember/template';
 import { inject as service } from '@ember/service';
 import $ from 'jquery';
@@ -18,22 +17,16 @@ export default Controller.extend({
   node: alias('model.node'),
   nodes: alias('model.nodes'),
 
-  isArticle: computed('node.type', function() {
-    return get(this, 'node.type') === 'article';
-  }),
+  isArticle: equal('node.type', 'article'),
 
-  isEvent: computed('node.type', function() {
-    return get(this, 'node.type') === 'event';
-  }),
+  isEvent: equal('node.type', 'event'),
 
-  isPublication: computed('node.type', function() {
-    return get(this, 'node.type') === 'publication';
-  }),
+  isPublication: equal('node.type', 'publication'),
 
-  overlayStyle: computed('node.id', /* istanbul ignore next */ function() {
+  overlayStyle: computed('node.id', 'fastboot.isFastBoot', /* istanbul ignore next */ function() {
     const node = this.node;
 
-    if (!get(this, 'fastboot.isFastBoot')
+    if (!this.fastboot.isFastBoot
         && node) {
       const { fullSizeUrl, thumbnailUrl } = this.backgroundImage.getNodeBackgroundImage(node.id);
       return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}')`);

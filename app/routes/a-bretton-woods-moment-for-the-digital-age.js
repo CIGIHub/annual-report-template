@@ -1,7 +1,7 @@
 import ENV from 'annual-report-template/config/environment';
 import GoogleAnalyticsMixin from 'annual-report-template/mixins/google-analytics';
 import ResetScrollMixin from 'annual-report-template/mixins/reset-scroll';
-import { get, set } from '@ember/object';
+import { set } from '@ember/object';
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 
@@ -13,7 +13,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   routeOrder: service(),
 
   beforeModel() {
-    if (!get(this, 'assetLoader.assetsLoaded')) {
+    if (!this.assetLoader.assetsLoaded) {
       return this.assetLoader.waitForAssets();
     }
     return true;

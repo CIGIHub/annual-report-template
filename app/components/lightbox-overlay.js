@@ -4,6 +4,7 @@ import {
   observer,
   set,
 } from '@ember/object';
+import { equal } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
 import $ from 'jquery';
 
@@ -15,9 +16,7 @@ export default Component.extend({
     return this.routeOrder.routes.slice(2);
   }),
 
-  showTableOfContents: computed('lightbox.showLightbox', function() {
-    return this.lightbox.showLightbox === 'tableofcontents';
-  }),
+  showTableOfContents: equal('lightbox.showLightbox', 'tableofcontents'),
 
   showLightboxChanged: observer('lightbox.showLightbox', function() {
     /* istanbul ignore next */

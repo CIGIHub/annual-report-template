@@ -1,4 +1,4 @@
-import { computed, get } from '@ember/object';
+import { computed } from '@ember/object';
 import Service from '@ember/service';
 
 export default Service.extend({
@@ -112,7 +112,7 @@ export default Service.extend({
     let ind = this.routes.findIndex((route) => currentRouteName === route.route
       || route.subRoutes.includes(currentRouteName));
     ind += 1;
-    if (ind > 0 && ind < get(this, 'routes.length')) {
+    if (ind > 0 && ind < this.routes.length) {
       return this.routes[ind].route;
     }
     return null;
