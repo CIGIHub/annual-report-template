@@ -1,5 +1,4 @@
 import Component from '@ember/component';
-import { get } from '@ember/object';
 import $ from 'jquery';
 
 export default Component.extend({
@@ -7,7 +6,7 @@ export default Component.extend({
 
   mouseEnter() {
     /* istanbul ignore next */
-    if (!get(this, 'menuItem.current')) {
+    if (!this.menuItem.current) {
       /* istanbul ignore next */
       $('.overlay').stop(false, false).css({
         'z-index': 0,

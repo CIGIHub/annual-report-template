@@ -7,11 +7,11 @@ export default Component.extend({
   routeOrder: service(),
   router: service(),
 
-  menuItems: computed('router.currentRouteName', function() {
+  menuItems: computed('router.currentRouteName', 'routeOrder.routes', function() {
     const _this = this;
-    const currentRoute = get(this, 'router.currentRouteName');
+    const currentRoute = this.router.currentRouteName;
 
-    return get(this, 'routeOrder.routes').map(function(route) {
+    return this.routeOrder.routes.map(function(route) {
       const menuItem = {
         current: false,
         route: route.route,

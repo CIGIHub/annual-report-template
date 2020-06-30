@@ -1,10 +1,10 @@
 import Component from '@ember/component';
 import {
   computed,
-  get,
   observer,
   set,
 } from '@ember/object';
+import { equal } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
 import $ from 'jquery';
 
@@ -13,16 +13,14 @@ export default Component.extend({
   routeOrder: service(),
 
   routes: computed('routeOrder.routes.[]', function() {
-    return get(this, 'routeOrder.routes').slice(2);
+    return this.routeOrder.routes.slice(2);
   }),
 
-  showTableOfContents: computed('lightbox.showLightbox', function() {
-    return get(this, 'lightbox.showLightbox') === 'tableofcontents';
-  }),
+  showTableOfContents: equal('lightbox.showLightbox', 'tableofcontents'),
 
   showLightboxChanged: observer('lightbox.showLightbox', function() {
     /* istanbul ignore next */
-    if (get(this, 'lightbox.showLightbox')) {
+    if (this.lightbox.showLightbox) {
       $('.lightbox').css({
         'z-index': 5,
       }).animate({
