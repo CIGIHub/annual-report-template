@@ -12,8 +12,6 @@ import $ from 'jquery';
 export default Component.extend({
   backgroundImage: service(),
   fastboot: service(),
-  nodeId: null,
-  nodes: [],
   searchTimeout: null,
   timelineMiddle: 300,
   timelineNodes: [],

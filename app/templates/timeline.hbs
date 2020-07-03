@@ -57,7 +57,7 @@
   </div>
 </div>
 <div class="show-for-large">
-  {{cigi-timeline nodes=this.nodes nodeId=this.id search=this.search}}
+  <CigiTimeline @nodes={{this.nodes}} @nodeId={{this.id}} @search={{this.search}} />
   <div class="timeline-search-container">
     <div class="grid-container">
       <div class="grid-x grid-margin-x">
