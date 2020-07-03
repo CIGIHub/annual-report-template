@@ -179,7 +179,9 @@
                       {{#if leftLink.current}}
                         <span>{{leftLink.title}}</span>
                       {{else}}
-                        {{#link-to leftLink.route}} {{leftLink.title}} {{/link-to}}
+                        <LinkTo @route={{leftLink.route}}>
+                          {{leftLink.title}}
+                        </LinkTo>
                       {{/if}}
                     </div>
                   </div>
@@ -198,7 +200,9 @@
                       {{#if rightLink.current}}
                         <span>{{rightLink.title}}</span>
                       {{else}}
-                        {{#link-to rightLink.route}} {{rightLink.title}} {{/link-to}}
+                        <LinkTo @route={{rightLink.route}}>
+                          {{rightLink.title}}
+                        </LinkTo>
                       {{/if}}
                     </div>
                   </div>

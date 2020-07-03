@@ -15,9 +15,9 @@
                 {{#if menuLink.current}}
                   {{menuLink.title}}
                 {{else}}
-                  {{#link-to menuLink.linkTo}}
+                  <LinkTo @route={{menuLink.linkTo}}>
                     <span class="underline">{{menuLink.title}}</span>
-                  {{/link-to}}
+                  </LinkTo>
                 {{/if}}
                 {{#unless menuLink.last}}
                   <span class="menu-break">/</span>
