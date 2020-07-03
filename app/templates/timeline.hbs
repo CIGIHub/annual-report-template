@@ -37,7 +37,7 @@
       </div>
       {{#if search}}
         <div class="cell medium-2">
-          <button class="clear-button" {{action "clearSearch"}}>
+          <button type="button" class="clear-button" {{action "clearSearch"}}>
             {{fa-icon "times" prefix="fal" size="sm"}}
             {{t "clear"}}
           </button>
@@ -121,8 +121,8 @@
         <div class="grid-container">
           <div class="grid-x grid-margin-x">
             <div class="cell medium-8">
-              <button class="previous scroll-arrow scroll-arrow-left" {{action "previousNode"}}></button>
-              <button class="next scroll-arrow scroll-arrow-right" {{action "nextNode"}}></button>
+              <button type="button" class="previous scroll-arrow scroll-arrow-left" {{action "previousNode"}}></button>
+              <button type="button" class="next scroll-arrow scroll-arrow-right" {{action "nextNode"}}></button>
             </div>
           </div>
         </div>
@@ -131,7 +131,7 @@
         <div class="grid-container">
           <div class="grid-x grid-margin-x">
             <div class="cell medium-8">
-              <button class="clearfix back-link" {{action "closeNode"}}>
+              <button type="button" class="clearfix back-link" {{action "closeNode"}}>
                 <div class="float-left back-link-icon {{this.node.type}}">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0.22in" height="0.19in" viewBox="0 0 16 14">
                     <defs>

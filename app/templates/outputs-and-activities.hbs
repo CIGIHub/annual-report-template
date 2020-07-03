@@ -13,7 +13,7 @@
             {{#if this.isTypePublications}}
               {{t "publications"}}
             {{else}}
-              <button class="view-publications-btn" {{action "setType" "publications"}}>
+              <button type="button" class="view-publications-btn" {{action "setType" "publications"}}>
                 {{t "publications"}}
               </button>
             {{/if}}
@@ -21,7 +21,7 @@
             {{#if this.isTypeOpinions}}
               {{t "opinions"}}
             {{else}}
-              <button class="view-opinions-btn" {{action "setType" "opinions"}}>
+              <button type="button" class="view-opinions-btn" {{action "setType" "opinions"}}>
                 {{t "opinions"}}
               </button>
             {{/if}}
@@ -29,13 +29,13 @@
             {{#if this.isTypeEvents}}
               {{t "events"}}
             {{else}}
-              <button class="view-events-btn" {{action "setType" "events"}}>
+              <button type="button" class="view-events-btn" {{action "setType" "events"}}>
                 {{t "events"}}
               </button>
             {{/if}}
           </div>
           <div class="outputs-activities-pagination">
-            <button class="page-arrow {{if this.disablePrevious "disabled"}}" {{action "previousPage"}}>
+            <button type="button" class="page-arrow {{if this.disablePrevious "disabled"}}" {{action "previousPage"}}>
               {{fa-icon "chevron-left" prefix="fal" size="sm"}}
             </button>
             {{#each this.paginationPages as |paginationPage|}}
@@ -44,12 +44,12 @@
                   {{paginationPage.page}}
                 </span>
               {{else}}
-                <button class="page-number" {{action "setPage" paginationPage.page}}>
+                <button type="button" class="page-number" {{action "setPage" paginationPage.page}}>
                   {{paginationPage.page}}
                 </button>
               {{/if}}
             {{/each}}
-            <button class="page-arrow {{if this.disableNext "disabled"}}" {{action "nextPage"}}>
+            <button type="button" class="page-arrow {{if this.disableNext "disabled"}}" {{action "nextPage"}}>
               {{fa-icon "chevron-right" prefix="fal" size="sm"}}
             </button>
           </div>
@@ -71,7 +71,7 @@
               </span>
             </h5>
           </a>
-          <button class="outputs-activities-listing show-for-medium" {{action "openPublication" object.id}}>
+          <button type="button" class="outputs-activities-listing show-for-medium" {{action "openPublication" object.id}}>
             <h6>{{object.date_str}}<span>|</span>{{object.type_str}}</h6>
             <h5>
               <span class="underline">
@@ -101,7 +101,7 @@
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
           <div class="cell medium-10">
-            <button class="clearfix back-link" {{action "closePublication"}}>
+            <button type="button" class="clearfix back-link" {{action "closePublication"}}>
               <div class="float-left back-link-icon {{this.publication.type}}">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0.22in" height="0.19in" viewBox="0 0 16 14">
                   <defs>

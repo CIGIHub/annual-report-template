@@ -14,7 +14,7 @@
     </a>
   </div>
   <div class="cigi-menu">
-    <button class="social-1-btn" {{action "facebookShare"}}>
+    <button type="button" class="social-1-btn" {{action "facebookShare"}}>
       {{fa-icon "facebook-square" prefix="fab" size="lg"}}
     </button>
     <a class="social-2-btn" href={{twitterShareLink}} target="_blank" rel="noopener">
@@ -24,20 +24,20 @@
       {{fa-icon "linkedin-in" prefix="fab" size="lg"}}
     </a>
     {{#if this.socialMenuIsOpen}}
-      <button class="close-social-menu-btn" {{action "closeSocialMenu"}}>
+      <button type="button" class="close-social-menu-btn" {{action "closeSocialMenu"}}>
         {{fa-icon "arrow-right" prefix="fal" size="lg"}}
       </button>
     {{else}}
-      <button class="open-social-menu-btn" {{action "openSocialMenu"}}>
+      <button type="button" class="open-social-menu-btn" {{action "openSocialMenu"}}>
         {{fa-icon "share-alt" prefix="fal" size="lg"}}
       </button>
     {{/if}}
     {{#if this.menuIsOpen}}
-      <button class="close-menu-btn" {{action "closeMenu"}}>
+      <button type="button" class="close-menu-btn" {{action "closeMenu"}}>
         {{fa-icon "times" prefix="fal" size="lg"}}
       </button>
     {{else}}
-      <button class="open-menu-btn {{if hideMenu "hide-menu"}}" {{action "openMenu"}}>
+      <button type="button" class="open-menu-btn {{if hideMenu "hide-menu"}}" {{action "openMenu"}}>
         {{fa-icon "bars" prefix="fal" size="lg"}}
       </button>
     {{/if}}

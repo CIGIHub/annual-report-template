@@ -15,10 +15,10 @@
   <DotNav @lightBackground={{this.lightBackground}} />
 {{/if}}
 {{#if this.showScrollArrowUp}}
-  <button class="scroll-arrow scroll-arrow-up-btn {{if this.lightBackground "light-background"}}" {{action "transitionBack"}}></button>
+  <button type="button" class="scroll-arrow scroll-arrow-up-btn {{if this.lightBackground "light-background"}}" {{action "transitionBack"}}></button>
 {{/if}}
 {{#if this.showScrollArrowDown}}
-  <button class="scroll-arrow scroll-arrow-down-btn {{if this.lightBackground "light-background"}} {{if this.scrollableContentPage "scroll-arrow-after-content"}} {{if this.bounceScrollArrowDown "bounce"}}" {{action "transitionNext"}}></button>
+  <button type="button" class="scroll-arrow scroll-arrow-down-btn {{if this.lightBackground "light-background"}} {{if this.scrollableContentPage "scroll-arrow-after-content"}} {{if this.bounceScrollArrowDown "bounce"}}" {{action "transitionNext"}}></button>
 {{/if}}
 {{#if this.fastboot.isFastBoot}}
   {{loading-screen}}
