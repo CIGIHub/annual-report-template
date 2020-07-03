@@ -59,7 +59,7 @@
     <div class="grid-x grid-margin-x outputs-activities-content">
       {{#each this.objects as |object|}}
         <div class="cell small-12 medium-3">
-          <a class="outputs-activities-listing show-for-small-only" href={{object.url_landing_page}} target="_blank" rel="noopener">
+          <a class="outputs-activities-listing show-for-small-only" href={{object.url_landing_page}} target="_blank" rel="noopener noreferrer">
             <h6>{{object.date_str}}<span>|</span>{{object.type_str}}</h6>
             <h5>
               <span class="underline">
@@ -144,7 +144,7 @@
         </div>
         <div class="grid-x grid-margin-x">
           <div class="cell medium-10">
-            <a class="clearfix read-link" href={{this.publication.url_landing_page}} target="_blank" rel="noopener">
+            <a class="clearfix read-link" href={{this.publication.url_landing_page}} target="_blank" rel="noopener noreferrer">
               <div class="float-left read-link-icon">
                 {{fa-icon "file-alt" prefix="fal" size="lg"}}
               </div>

@@ -12,7 +12,7 @@
         </div>
         <div class="content-links">
           {{#each this.links as |link|}}
-            <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener">
+            <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener noreferrer">
               <div class="float-left content-link-icon">
                 {{fa-icon link.icon prefix="fal" size="lg"}}
               </div>
@@ -35,7 +35,7 @@
         </div>
         <div class="content-links-mobile hide-for-large">
           {{#each this.links as |link|}}
-            <a class="clearfix content-link-mobile" href={{link.link}} target="_blank" rel="noopener">
+            <a class="clearfix content-link-mobile" href={{link.link}} target="_blank" rel="noopener noreferrer">
               {{{link.title}}}
             </a>
           {{/each}}
