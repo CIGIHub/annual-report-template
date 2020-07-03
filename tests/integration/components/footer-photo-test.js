@@ -1,6 +1,5 @@
-import { set } from '@ember/object';
 import { setupRenderingTest } from 'ember-qunit';
-import { click, render } from '@ember/test-helpers';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 import { module, test } from 'qunit';
 
@@ -10,34 +9,19 @@ module('Integration | Component | footer-photo', function(hooks) {
   test('it renders', async function(assert) {
     await render(hbs`<FooterPhoto />`);
 
-    assert.ok(this.element.querySelector('.footer'));
+    assert.dom('.footer').exists();
+    assert.dom('.footer button').exists();
+    assert.dom('.footer button').hasClass('footer-icon-btn');
+    assert.dom('.footer .footer-description').doesNotExist();
   });
 
-  test('should set revealToggle=true on footer-icon-btn click when revealToggle=false', async function(assert) {
-    set(this, 'revealToggle', false);
+  test('it renders footer description', async function(assert) {
+    this.set('photoCredit', 'Hello world!');
 
-    await render(hbs`<FooterPhoto @revealToggle={{this.revealToggle}} />`);
-    assert.ok(
-      this.element.querySelector('.footer-icon-btn'),
-      'should find footer-icon-btn',
-    );
+    await render(hbs`<FooterPhoto @photoCredit={{this.photoCredit}} />`);
 
-    await click('.footer-icon-btn');
-
-    assert.strictEqual(this.revealToggle, true);
-  });
-
-  test('should set revealToggle=false on footer-icon-btn click when revealToggle=true', async function(assert) {
-    set(this, 'revealToggle', true);
-
-    await render(hbs`<FooterPhoto @revealToggle={{this.revealToggle}} />`);
-    assert.ok(
-      this.element.querySelector('.footer-icon-btn'),
-      'should find footer-icon-btn',
-    );
-
-    await click('.footer-icon-btn');
-
-    assert.strictEqual(this.revealToggle, false);
+    assert.dom('.footer').exists();
+    assert.dom('.footer .footer-description').exists();
+    assert.dom('.footer .footer-description').containsText('Hello world!');
   });
 });
