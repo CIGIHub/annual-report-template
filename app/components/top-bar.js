@@ -9,7 +9,6 @@ export default Component.extend({
   intl: service(),
   lightbox: service(),
   router: service(),
-  lightBackground: false,
   socialAnimationTimeout: null,
   socialMenuIsOpen: false,
 
