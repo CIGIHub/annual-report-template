@@ -1,5 +1,5 @@
-<div class={{footerClass}}>
-  {{#hover-reveal revealToggle=revealToggle}}
+<div class={{this.footerClass}}>
+  {{#hover-reveal revealToggle=this.revealToggle}}
     <button class="footer-icon-btn float-right" {{action "showBackground"}}>
       <div class="radial-progress">
         <div class="circle">
@@ -14,9 +14,9 @@
       {{fa-icon "camera-retro" prefix="fal" size="lg"}}
     </button>
   {{/hover-reveal}}
-  {{#if photoCredit}}
+  {{#if this.photoCredit}}
     <p class="footer-description float-right hover-text-reveal">
-      <span>{{{photoCredit}}}</span>
+      <span>{{{this.photoCredit}}}</span>
     </p>
   {{/if}}
 </div>

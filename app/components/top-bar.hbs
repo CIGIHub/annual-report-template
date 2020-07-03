@@ -1,4 +1,4 @@
-<div class="cigi-top-bar clearfix {{if lightBackground "light-background"}}">
+<div class="cigi-top-bar clearfix {{if this.lightBackground "light-background"}}">
   <div class="cigi-logo">
     <a href="https://www.cigionline.org">
       <svg class="show-for-large" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129.4 37.8">
@@ -23,7 +23,7 @@
     <a class="social-3-btn" href={{linkedInShareLink}} target="_blank" rel="noopener">
       {{fa-icon "linkedin-in" prefix="fab" size="lg"}}
     </a>
-    {{#if socialMenuIsOpen}}
+    {{#if this.socialMenuIsOpen}}
       <button class="close-social-menu-btn" {{action "closeSocialMenu"}}>
         {{fa-icon "arrow-right" prefix="fal" size="lg"}}
       </button>
@@ -32,7 +32,7 @@
         {{fa-icon "share-alt" prefix="fal" size="lg"}}
       </button>
     {{/if}}
-    {{#if menuIsOpen}}
+    {{#if this.menuIsOpen}}
       <button class="close-menu-btn" {{action "closeMenu"}}>
         {{fa-icon "times" prefix="fal" size="lg"}}
       </button>

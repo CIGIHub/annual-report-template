@@ -3,6 +3,7 @@ import { computed, set } from '@ember/object';
 
 export default Component.extend({
   darkFooter: false,
+  photoCredit: null,
   revealToggle: false,
 
   footerClass: computed('darkFooter', function() {

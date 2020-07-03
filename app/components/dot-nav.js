@@ -6,6 +6,7 @@ export default Component.extend({
   intl: service(),
   routeOrder: service(),
   router: service(),
+  lightBackground: false,
 
   menuItems: computed('router.currentRouteName', 'routeOrder.routes', function() {
     const _this = this;
