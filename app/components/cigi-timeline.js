@@ -141,7 +141,7 @@ export default Component.extend({
     /* istanbul ignore next */
     const nodes = this.nodes;
     /* istanbul ignore next */
-    const timeline = this.$('.timeline');
+    const timeline = $('.timeline');
 
     /* istanbul ignore next */
     set(this, 'timelineNodes', []);
