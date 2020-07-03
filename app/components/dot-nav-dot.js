@@ -4,7 +4,7 @@ import $ from 'jquery';
 export default Component.extend({
   mouseEnter() {
     /* istanbul ignore next */
-    if (!this.args.menuItem.current) {
+    if (!this.menuItem.current) {
       /* istanbul ignore next */
       $('.overlay').stop(false, false).css({
         'z-index': 0,
