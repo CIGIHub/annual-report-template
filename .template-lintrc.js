@@ -3,6 +3,7 @@
 module.exports = {
   extends: 'octane',
   rules: {
+    'no-action': false,
     'no-bare-strings': true,
     'no-inline-styles': false,
     'no-invalid-meta': false,
