@@ -1,5 +1,5 @@
 import ENV from 'annual-report-template/config/environment';
-import { get, set } from '@ember/object';
+import { set } from '@ember/object';
 import { later } from '@ember/runloop';
 import Service, { inject as service } from '@ember/service';
 
@@ -10,22 +10,22 @@ export default Service.extend({
   gtag: null,
 
   sendPageView() {
-    if (!get(this, 'fastboot.isFastBoot')
+    if (!this.fastboot.isFastBoot
         && ENV.environment === 'production'
         && !ENV.staging) {
-      if (!get(this, 'gtag')) {
+      if (!this.gtag) {
         window.dataLayer = window.dataLayer || [];
         set(this, 'gtag', function() {
           window.dataLayer.push(arguments);
         });
-        get(this, 'gtag')('js', new Date());
-        get(this, 'gtag')('config', 'UA-830691-41');
+        this.gtag('js', new Date());
+        this.gtag('config', 'UA-830691-41');
       }
 
       later(this, function() {
-        get(this, 'gtag')('event', 'page_view', {
-          'page_path': `${ENV.rootURL}${get(this, 'router.currentURL').replace('/', '')}`,
-          'page_title': get(this, 'headData.title'),
+        this.gtag('event', 'page_view', {
+          'page_path': `${ENV.rootURL}${this.router.currentURL.replace('/', '')}`,
+          'page_title': this.headData.title,
         });
       }, 500);
     }
