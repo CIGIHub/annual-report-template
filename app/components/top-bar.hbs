@@ -17,10 +17,10 @@
     <button type="button" class="social-1-btn" {{action "facebookShare"}}>
       {{fa-icon "facebook-square" prefix="fab" size="lg"}}
     </button>
-    <a class="social-2-btn" href={{twitterShareLink}} target="_blank" rel="noopener noreferrer">
+    <a class="social-2-btn" href={{this.twitterShareLink}} target="_blank" rel="noopener noreferrer">
       {{fa-icon "twitter" prefix="fab" size="lg"}}
     </a>
-    <a class="social-3-btn" href={{linkedInShareLink}} target="_blank" rel="noopener noreferrer">
+    <a class="social-3-btn" href={{this.linkedInShareLink}} target="_blank" rel="noopener noreferrer">
       {{fa-icon "linkedin-in" prefix="fab" size="lg"}}
     </a>
     {{#if this.socialMenuIsOpen}}
@@ -37,7 +37,7 @@
         {{fa-icon "times" prefix="fal" size="lg"}}
       </button>
     {{else}}
-      <button type="button" class="open-menu-btn {{if hideMenu "hide-menu"}}" {{action "openMenu"}}>
+      <button type="button" class="open-menu-btn {{if this.hideMenu "hide-menu"}}" {{action "openMenu"}}>
         {{fa-icon "bars" prefix="fal" size="lg"}}
       </button>
     {{/if}}

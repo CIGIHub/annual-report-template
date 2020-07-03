@@ -33,9 +33,9 @@
     <div class="grid-x grid-margin-x">
       <div class="cell medium-4 timeline-search">
         {{fa-icon "search" prefix="fal" size="sm"}}
-        {{input placeholder="search" value=search}}
+        {{input placeholder="search" value=this.search}}
       </div>
-      {{#if search}}
+      {{#if this.search}}
         <div class="cell medium-2">
           <button type="button" class="clear-button" {{action "clearSearch"}}>
             {{fa-icon "times" prefix="fal" size="sm"}}
