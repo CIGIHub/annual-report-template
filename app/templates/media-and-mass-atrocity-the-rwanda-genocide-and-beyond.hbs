@@ -6,6 +6,6 @@
   <div class="background-gradient-overlay hover-reveal-hide"></div>
 </div>
 <div class="content-slide hover-reveal-hide">
-  {{slide-content slideTitle=this.title paragraphs=this.paragraphs links=this.links}}
+  <SlideContent @slideTitle={{this.title}} @paragraphs={{this.paragraphs}} @links={{this.links}} />
 </div>
 <FooterPhoto />
