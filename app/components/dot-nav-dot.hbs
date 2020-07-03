@@ -1,4 +1,4 @@
-<li class={{if @menuItem.current "current-item" "link-item"}}>
+<li class={{if @menuItem.current "current-item" "link-item"}} {{on "mouseenter" this.handleMouseEnter}} {{on "mouseleave" this.handleMouseLeave}}>
   <div class="dot-nav-tooltip">
     <span>
       {{@menuItem.title}}

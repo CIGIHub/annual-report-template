@@ -28,6 +28,7 @@ module.exports = {
   },
   rules: {
     'array-callback-return': ['off'],
+    'class-methods-use-this': ['off'],
     'ember/avoid-leaking-state-in-ember-objects': ['off'],
     'ember/no-jquery': ['off'],
     'ember/no-mixins': ['off'],
