@@ -6,11 +6,11 @@
   {{/unless}}
 </div>
 <TopBar @lightBackground={{this.lightBackground}} />
-{{#event-listener isTransitioning=this.isTransitioning transitionBack=(action "transitionBack") transitionNext=(action "transitionNext")}}
+<EventListener @isTransitioning={{this.isTransitioning}} @transitionBack={{action "transitionBack"}} @transitionNext={{action "transitionNext"}}>
   {{liquid-outlet}}
   <div class="overlay"></div>
   {{lightbox-overlay}}
-{{/event-listener}}
+</EventListener>
 {{#if this.showDotNav}}
   <DotNav @lightBackground={{this.lightBackground}} />
 {{/if}}

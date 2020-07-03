@@ -7,10 +7,8 @@ module('Integration | Component | cigi-timeline', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
-
-    await render(hbs`<CigiTimeline />`);
+    this.set('nodes', []);
+    await render(hbs`<CigiTimeline @nodes={{this.nodes}} />`);
 
     assert.ok(this.element.querySelector('.timeline'));
   });
