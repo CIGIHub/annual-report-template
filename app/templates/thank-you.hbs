@@ -1,5 +1,5 @@
 <div class="background-row show-for-medium">
-  <div class="background-image" style={{backgroundStyle}}></div>
+  <div class="background-image" style={{this.backgroundStyle}}></div>
   <div class="background-overlay hover-reveal-hide"></div>
   <div class="background-gradient-overlay hover-reveal-hide"></div>
 </div>
@@ -11,7 +11,7 @@
           <h1>{{t "thankYou.title"}}</h1>
         </div>
         <div class="content-links">
-          {{#each links as |link|}}
+          {{#each this.links as |link|}}
             <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener">
               <div class="float-left content-link-icon">
                 {{fa-icon link.icon prefix="fal" size="lg"}}
@@ -31,10 +31,10 @@
           <p>{{t "thankYou.paragraph3"}}</p>
         </div>
         <div class="content-image show-for-small-only">
-          <img src={{staffPhoto}} alt={{t "thankYou.staffPhoto"}}>
+          <img src={{this.staffPhoto}} alt={{t "thankYou.staffPhoto"}}>
         </div>
         <div class="content-links-mobile hide-for-large">
-          {{#each links as |link|}}
+          {{#each this.links as |link|}}
             <a class="clearfix content-link-mobile" href={{link.link}} target="_blank" rel="noopener">
               {{{link.title}}}
             </a>

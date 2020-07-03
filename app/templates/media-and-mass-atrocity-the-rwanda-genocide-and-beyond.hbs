@@ -1,11 +1,11 @@
 <div class="background-row show-for-medium">
-  <div class="background-image" style={{backgroundStyle}}>
+  <div class="background-image" style={{this.backgroundStyle}}>
   </div>
-  {{video-background videoLink=videoLink}}
+  {{video-background videoLink=this.videoLink}}
   <div class="background-overlay hover-reveal-hide"></div>
   <div class="background-gradient-overlay hover-reveal-hide"></div>
 </div>
 <div class="content-slide hover-reveal-hide">
-  {{slide-content slideTitle=title paragraphs=paragraphs links=links}}
+  {{slide-content slideTitle=this.title paragraphs=this.paragraphs links=this.links}}
 </div>
 {{footer-photo}}

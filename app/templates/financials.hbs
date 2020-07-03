@@ -11,7 +11,7 @@
         <div class="grid-x grid-margin-x">
           <div class="cell">
             <div class="financials-menu">
-              {{#each menuLinks as |menuLink|}}
+              {{#each this.menuLinks as |menuLink|}}
                 {{#if menuLink.current}}
                   {{menuLink.title}}
                 {{else}}
@@ -24,7 +24,7 @@
                 {{/unless}}
               {{/each}}
               <div class="download-button">
-                <a href="{{rootURL}}assets/CIGI-FS2018.pdf" target="_blank" rel="noopener">
+                <a href="{{this.rootURL}}assets/CIGI-FS2018.pdf" target="_blank" rel="noopener">
                   {{fa-icon "download" prefix="fal" size="lg"}}
                   <span class="underline">{{t "downloadPdf"}}</span>
                 </a>

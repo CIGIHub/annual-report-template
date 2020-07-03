@@ -1,25 +1,25 @@
 {{head-layout}}
 <div class="background-row show-for-small-only">
-  <div class="background-image" style={{backgroundStyle}}></div>
-  {{#unless hideMobileOverlay}}
+  <div class="background-image" style={{this.backgroundStyle}}></div>
+  {{#unless this.hideMobileOverlay}}
     <div class="background-overlay hover-reveal-hide"></div>
   {{/unless}}
 </div>
-{{top-bar lightBackground=lightBackground}}
-{{#event-listener isTransitioning=isTransitioning transitionBack=(action "transitionBack") transitionNext=(action "transitionNext")}}
+{{top-bar lightBackground=this.lightBackground}}
+{{#event-listener isTransitioning=this.isTransitioning transitionBack=(action "transitionBack") transitionNext=(action "transitionNext")}}
   {{liquid-outlet}}
   <div class="overlay"></div>
   {{lightbox-overlay}}
 {{/event-listener}}
 {{#if showDotNav}}
-  {{dot-nav lightBackground=lightBackground}}
+  {{dot-nav lightBackground=this.lightBackground}}
 {{/if}}
-{{#if showScrollArrowUp}}
-  <button class="scroll-arrow scroll-arrow-up-btn {{if lightBackground "light-background"}}" {{action "transitionBack"}}></button>
+{{#if this.showScrollArrowUp}}
+  <button class="scroll-arrow scroll-arrow-up-btn {{if this.lightBackground "light-background"}}" {{action "transitionBack"}}></button>
 {{/if}}
-{{#if showScrollArrowDown}}
-  <button class="scroll-arrow scroll-arrow-down-btn {{if lightBackground "light-background"}} {{if scrollableContentPage "scroll-arrow-after-content"}} {{if bounceScrollArrowDown "bounce"}}" {{action "transitionNext"}}></button>
+{{#if this.showScrollArrowDown}}
+  <button class="scroll-arrow scroll-arrow-down-btn {{if this.lightBackground "light-background"}} {{if this.scrollableContentPage "scroll-arrow-after-content"}} {{if this.bounceScrollArrowDown "bounce"}}" {{action "transitionNext"}}></button>
 {{/if}}
-{{#if fastboot.isFastBoot}}
+{{#if this.fastboot.isFastBoot}}
   {{loading-screen}}
 {{/if}}
