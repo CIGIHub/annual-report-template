@@ -1,4 +1,4 @@
-{{head-layout}}
+<HeadLayout />
 <div class="background-row show-for-small-only">
   <div class="background-image" style={{this.backgroundStyle}}></div>
   {{#unless this.hideMobileOverlay}}
@@ -7,9 +7,9 @@
 </div>
 <TopBar @lightBackground={{this.lightBackground}} />
 <EventListener @isTransitioning={{this.isTransitioning}} @transitionBack={{action "transitionBack"}} @transitionNext={{action "transitionNext"}}>
-  {{liquid-outlet}}
+  <LiquidOutlet />
   <div class="overlay"></div>
-  {{lightbox-overlay}}
+  <LightboxOverlay />
 </EventListener>
 {{#if this.showDotNav}}
   <DotNav @lightBackground={{this.lightBackground}} />
