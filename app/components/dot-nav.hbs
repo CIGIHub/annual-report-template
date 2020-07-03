@@ -1,5 +1,5 @@
-<ul class="dot-nav show-for-large {{if this.lightBackground "light-background"}}">
+<ul class="dot-nav show-for-large {{if @lightBackground "light-background"}}">
   {{#each this.menuItems as |menuItem|}}
-    {{dot-nav-dot menuItem=menuItem}}
+    <DotNavDot @menuItem={{menuItem}} />
   {{/each}}
 </ul>

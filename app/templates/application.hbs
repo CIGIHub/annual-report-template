@@ -12,7 +12,7 @@
   {{lightbox-overlay}}
 {{/event-listener}}
 {{#if showDotNav}}
-  {{dot-nav lightBackground=this.lightBackground}}
+  <DotNav @lightBackground={{this.lightBackground}} />
 {{/if}}
 {{#if this.showScrollArrowUp}}
   <button class="scroll-arrow scroll-arrow-up-btn {{if this.lightBackground "light-background"}}" {{action "transitionBack"}}></button>
