@@ -13,29 +13,29 @@ export default Service.extend({
   resolvedAssetCount: 0,
 
   percentComplete: computed('resolvedAssetCount', 'totalAssetCount', function() {
-    return Math.ceil((get(this, 'resolvedAssetCount') / get(this, 'totalAssetCount')) * 100);
+    return Math.ceil((this.resolvedAssetCount / this.totalAssetCount) * 100);
   }),
 
-  totalAssetCount: computed('promises[]', function() {
-    return get(this, 'promises').length || 1;
+  totalAssetCount: computed('promises.length', function() {
+    return this.promises.length || 1;
   }),
 
   init(...args) {
     this._super(args);
-    if (!get(this, 'fastboot.isFastBoot') && ENV.environment !== 'test') {
-      get(this, 'backgroundImage').getAllBlurImages().forEach((blurImage) => {
-        get(this, 'promises').push(this.loadAsset(blurImage));
+    if (!this.fastboot.isFastBoot && ENV.environment !== 'test') {
+      this.backgroundImage.getAllBlurImages().forEach((blurImage) => {
+        this.promises.push(this.loadAsset(blurImage));
       });
       nodes.forEach((node) => {
-        const { thumbnailUrl } = get(this, 'backgroundImage').getNodeBackgroundImage(node.id);
-        get(this, 'promises').push(this.loadAsset(thumbnailUrl));
+        const { thumbnailUrl } = this.backgroundImage.getNodeBackgroundImage(node.id);
+        this.promises.push(this.loadAsset(thumbnailUrl));
       });
     }
   },
 
   waitForAssets() {
     const _this = this;
-    return all(get(this, 'promises')).then(() => new Promise((resolve) => {
+    return all(this.promises).then(() => new Promise((resolve) => {
       later(this, () => resolve(), 150);
     })).then(() => {
       set(_this, 'assetsLoaded', true);
@@ -43,7 +43,7 @@ export default Service.extend({
   },
 
   loadAsset(url) {
-    if (!get(this, 'fastboot.isFastBoot') && ENV.environment !== 'test') {
+    if (!this.fastboot.isFastBoot && ENV.environment !== 'test') {
       const _this = this;
       return new Promise((resolve) => {
         const img = new Image();

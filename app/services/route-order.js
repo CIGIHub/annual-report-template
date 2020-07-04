@@ -1,4 +1,4 @@
-import { computed, get } from '@ember/object';
+import { computed } from '@ember/object';
 import Service from '@ember/service';
 
 export default Service.extend({
@@ -93,37 +93,37 @@ export default Service.extend({
   }],
 
   firstRoute: computed('routes.[]', function() {
-    return get(this, 'routes')[0].route;
+    return this.routes[0].route;
   }),
 
   firstSubRoutes: computed('routes.[]', function() {
-    return get(this, 'routes')[0].subRoutes;
+    return this.routes[0].subRoutes;
   }),
 
   lastRoute: computed('routes.[]', function() {
-    return get(this, 'routes')[get(this, 'routes').length - 1].route;
+    return this.routes[this.routes.length - 1].route;
   }),
 
   lastSubRoutes: computed('routes.[]', function() {
-    return get(this, 'routes')[get(this, 'routes').length - 1].subRoutes;
+    return this.routes[this.routes.length - 1].subRoutes;
   }),
 
   getNextRoute(currentRouteName) {
-    let ind = get(this, 'routes').findIndex((route) => currentRouteName === route.route
+    let ind = this.routes.findIndex((route) => currentRouteName === route.route
       || route.subRoutes.includes(currentRouteName));
     ind += 1;
-    if (ind > 0 && ind < get(this, 'routes.length')) {
-      return get(this, 'routes')[ind].route;
+    if (ind > 0 && ind < this.routes.length) {
+      return this.routes[ind].route;
     }
     return null;
   },
 
   getPreviousRoute(currentRouteName) {
-    let ind = get(this, 'routes').findIndex((route) => currentRouteName === route.route
+    let ind = this.routes.findIndex((route) => currentRouteName === route.route
       || route.subRoutes.includes(currentRouteName));
     ind -= 1;
     if (ind >= 0) {
-      return get(this, 'routes')[ind].route;
+      return this.routes[ind].route;
     }
     return null;
   },

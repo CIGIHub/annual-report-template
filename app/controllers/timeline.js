@@ -1,11 +1,10 @@
 import Controller from '@ember/controller';
 import {
   computed,
-  get,
   observer,
   set,
 } from '@ember/object';
-import { alias } from '@ember/object/computed';
+import { alias, equal } from '@ember/object/computed';
 import { htmlSafe } from '@ember/template';
 import { inject as service } from '@ember/service';
 import $ from 'jquery';
@@ -18,24 +17,18 @@ export default Controller.extend({
   node: alias('model.node'),
   nodes: alias('model.nodes'),
 
-  isArticle: computed('node.type', function() {
-    return get(this, 'node.type') === 'article';
-  }),
+  isArticle: equal('node.type', 'article'),
 
-  isEvent: computed('node.type', function() {
-    return get(this, 'node.type') === 'event';
-  }),
+  isEvent: equal('node.type', 'event'),
 
-  isPublication: computed('node.type', function() {
-    return get(this, 'node.type') === 'publication';
-  }),
+  isPublication: equal('node.type', 'publication'),
 
-  overlayStyle: computed('node.id', /* istanbul ignore next */ function() {
-    const node = get(this, 'node');
+  overlayStyle: computed('node.id', 'fastboot.isFastBoot', /* istanbul ignore next */ function() {
+    const node = this.node;
 
-    if (!get(this, 'fastboot.isFastBoot')
+    if (!this.fastboot.isFastBoot
         && node) {
-      const { fullSizeUrl, thumbnailUrl } = get(this, 'backgroundImage').getNodeBackgroundImage(node.id);
+      const { fullSizeUrl, thumbnailUrl } = this.backgroundImage.getNodeBackgroundImage(node.id);
       return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}')`);
     }
 
@@ -43,8 +36,8 @@ export default Controller.extend({
   }),
 
   filteredNodes: computed('nodes.[]', 'search', function() {
-    let nodes = get(this, 'nodes');
-    const search = get(this, 'search');
+    let nodes = this.nodes;
+    const search = this.search;
     if (search) {
       nodes = nodes.filter((node) => node.title.toLowerCase().includes(search)
         || node.authors.join().toLowerCase().includes(search)
@@ -68,7 +61,7 @@ export default Controller.extend({
 
   searchChanged: observer('search', function() {
     /* istanbul ignore next */
-    if (!get(this, 'search')) {
+    if (!this.search) {
       set(this, 'search', null);
     }
   }),
@@ -90,8 +83,8 @@ export default Controller.extend({
       });
     },
     previousNode() {
-      const node = get(this, 'node');
-      const filteredNodes = get(this, 'filteredNodes');
+      const node = this.node;
+      const filteredNodes = this.filteredNodes;
 
       let ind = 0;
       for (let i = 0; i < filteredNodes.length; i += 1) {
@@ -109,8 +102,8 @@ export default Controller.extend({
       set(this, 'id', filteredNodes[ind].id);
     },
     nextNode() {
-      const node = get(this, 'node');
-      const filteredNodes = get(this, 'filteredNodes');
+      const node = this.node;
+      const filteredNodes = this.filteredNodes;
 
       let ind = 0;
       for (let i = 0; i < filteredNodes.length; i += 1) {

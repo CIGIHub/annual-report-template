@@ -33,11 +33,11 @@
     <div class="grid-x grid-margin-x">
       <div class="cell medium-4 timeline-search">
         {{fa-icon "search" prefix="fal" size="sm"}}
-        {{input placeholder="search" value=search}}
+        <Input @placeholder="search" @value={{this.search}} />
       </div>
-      {{#if search}}
+      {{#if this.search}}
         <div class="cell medium-2">
-          <button class="clear-button" {{action "clearSearch"}}>
+          <button type="button" class="clear-button" {{action "clearSearch"}}>
             {{fa-icon "times" prefix="fal" size="sm"}}
             {{t "clear"}}
           </button>
@@ -57,7 +57,7 @@
   </div>
 </div>
 <div class="show-for-large">
-  {{cigi-timeline nodes=nodes nodeId=id search=search}}
+  <CigiTimeline @nodes={{this.nodes}} @nodeId={{this.id}} @search={{this.search}} />
   <div class="timeline-search-container">
     <div class="grid-container">
       <div class="grid-x grid-margin-x">
@@ -66,14 +66,14 @@
       </div>
     </div>
   </div>
-  {{#if node}}
-    <div class="timeline-overlay background-image" style={{overlayStyle}}>
+  {{#if this.node}}
+    <div class="timeline-overlay background-image" style={{this.overlayStyle}}>
       <div class="timeline-overlay-container">
         <div class="grid-container">
 
           <div class="grid-x grid-margin-x">
             <div class="cell medium-10">
-              <h2>{{node.title}}</h2>
+              <h2>{{this.node.title}}</h2>
             </div>
           </div>
           <div class="grid-x grid-margin-x">
@@ -84,30 +84,30 @@
           <div class="grid-x grid-margin-x">
             <div class="cell medium-10">
               <h6 class="pub-date">
-                {{#unless isEvent}}
-                  {{node.author_str}}
+                {{#unless this.isEvent}}
+                  {{this.node.author_str}}
                   <br>
                 {{/unless}}
-                {{node.date_str}}
+                {{this.node.date_str}}
               </h6>
-              <p class="node-summary">{{{node.summary}}}</p>
+              <p class="node-summary">{{{this.node.summary}}}</p>
             </div>
           </div>
           <div class="grid-x grid-margin-x">
             <div class="cell medium-10">
-              <a class="clearfix read-link" href={{node.url_landing_page}} target="_blank" rel="noopener">
+              <a class="clearfix read-link" href={{this.node.url_landing_page}} target="_blank" rel="noopener noreferrer">
                 <div class="float-left read-link-icon">
                   {{fa-icon "file-alt" prefix="fal" size="lg"}}
                 </div>
                 <p>
                   <span class="underline">
-                    {{#if isArticle}}
+                    {{#if this.isArticle}}
                       {{t "outputsAndActivities.opinionLink"}}
                     {{/if}}
-                    {{#if isEvent}}
+                    {{#if this.isEvent}}
                       {{t "outputsAndActivities.eventLink"}}
                     {{/if}}
-                    {{#if isPublication}}
+                    {{#if this.isPublication}}
                       {{t "outputsAndActivities.publicationLink"}}
                     {{/if}}
                   </span>
@@ -121,8 +121,8 @@
         <div class="grid-container">
           <div class="grid-x grid-margin-x">
             <div class="cell medium-8">
-              <button class="previous scroll-arrow scroll-arrow-left" {{action "previousNode"}}></button>
-              <button class="next scroll-arrow scroll-arrow-right" {{action "nextNode"}}></button>
+              <button type="button" class="previous scroll-arrow scroll-arrow-left" {{action "previousNode"}}></button>
+              <button type="button" class="next scroll-arrow scroll-arrow-right" {{action "nextNode"}}></button>
             </div>
           </div>
         </div>
@@ -131,8 +131,8 @@
         <div class="grid-container">
           <div class="grid-x grid-margin-x">
             <div class="cell medium-8">
-              <button class="clearfix back-link" {{action "closeNode"}}>
-                <div class="float-left back-link-icon {{node.type}}">
+              <button type="button" class="clearfix back-link" {{action "closeNode"}}>
+                <div class="float-left back-link-icon {{this.node.type}}">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0.22in" height="0.19in" viewBox="0 0 16 14">
                     <defs>
                       <clipPath id="a" transform="translate(-256.98 -317)" style="fill: none;">

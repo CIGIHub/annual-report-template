@@ -1,5 +1,5 @@
 import ENV from 'annual-report-template/config/environment';
-import { get, set } from '@ember/object';
+import { set } from '@ember/object';
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 
@@ -14,10 +14,10 @@ export default Route.extend({
   },
 
   afterModel() {
-    set(this, 'headData.title', get(this, 'intl').t('title'));
-    set(this, 'headData.siteName', get(this, 'intl').t('title'));
-    set(this, 'headData.description', get(this, 'intl').t('description'));
+    set(this, 'headData.title', this.intl.t('title'));
+    set(this, 'headData.siteName', this.intl.t('title'));
+    set(this, 'headData.description', this.intl.t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}`);
-    set(this, 'headData.image', get(this, 'backgroundImage.defaultBackground.ogUrl'));
+    set(this, 'headData.image', this.backgroundImage.defaultBackground.ogUrl);
   },
 });

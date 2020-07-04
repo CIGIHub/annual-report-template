@@ -1,10 +1,14 @@
-const eslintPluginNode = require('eslint-plugin-node');
+'use strict';
 
 module.exports = {
   root: true,
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
+    ecmaFeatures: {
+      legacyDecorators: true,
+    },
   },
   plugins: [
     'ember',
@@ -24,13 +28,17 @@ module.exports = {
   },
   rules: {
     'array-callback-return': ['off'],
+    'class-methods-use-this': ['off'],
     'ember/avoid-leaking-state-in-ember-objects': ['off'],
+    'ember/no-jquery': ['off'],
+    'ember/no-mixins': ['off'],
     'ember/no-new-mixins': ['off'],
     'ember/no-observers': ['off'],
     'ember/no-side-effects': ['off'],
     'func-names': ['off'],
     'import/no-extraneous-dependencies': ['off'],
     'import/no-unresolved': ['off'],
+    'lines-between-class-members': ['off'],
     'no-await-in-loop': ['off'],
     'no-restricted-globals': ['off'],
     'no-restricted-syntax': ['off'],
@@ -64,13 +72,12 @@ module.exports = {
         node: true,
       },
       plugins: ['node'],
-      rules: Object.assign({}, eslintPluginNode.configs.recommended.rules, {
-        // add your custom rules and overrides for node files here
-
+      extends: ['plugin:node/recommended'],
+      rules: {
         // this can be removed once the following is fixed
         // https://github.com/mysticatea/eslint-plugin-node/issues/77
         'node/no-unpublished-require': 'off',
-      }),
+      },
     },
   ],
 };

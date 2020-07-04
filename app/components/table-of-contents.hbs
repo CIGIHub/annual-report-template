@@ -6,7 +6,7 @@
       </h3>
       <div class="hover-reveal-quote-line"></div>
     </div>
-    {{video-background videoLink=videoLink}}
+    <VideoBackground @videoLink={{this.videoLink}} />
   </div>
 </div>
 <div class="table-of-contents">
@@ -20,19 +20,19 @@
       <div class="cell">
         <div class="toc-content">
           <div class="toc-menu">
-            {{#if showAcknowledgementsTab}}
-              <button class="hide-acknowledgements-btn" {{action "hideAcknowledgements"}}>{{t "tableOfContents.title"}}</button>
+            {{#if this.showAcknowledgementsTab}}
+              <button type="button" class="hide-acknowledgements-btn" {{action "hideAcknowledgements"}}>{{t "tableOfContents.title"}}</button>
             {{else}}
               {{t "tableOfContents.title"}}
             {{/if}}
             <span>/</span>
-            {{#if showAcknowledgementsTab}}
+            {{#if this.showAcknowledgementsTab}}
               {{t "acknowledgements.title"}}
             {{else}}
-              <button class="show-acknowledgements-btn" {{action "showAcknowledgements"}}>{{t "acknowledgements.title"}}</button>
+              <button type="button" class="show-acknowledgements-btn" {{action "showAcknowledgements"}}>{{t "acknowledgements.title"}}</button>
             {{/if}}
           </div>
-          {{#if showAcknowledgementsTab}}
+          {{#if this.showAcknowledgementsTab}}
             <div class="grid-x credits-content credits-border">
               <div class="cell full">
                 <p class="credits-message">{{t "acknowledgements.paragraph"}}</p>
@@ -168,7 +168,7 @@
           {{else}}
             <div class="grid-x slide-content">
               <div class="cell medium-5">
-                {{#each leftLinks as |leftLink|}}
+                {{#each this.leftLinks as |leftLink|}}
                   <div class="grid-x slide-link">
                     <div class="cell small-1 medium-1">
                       <p class="slide-number {{if leftLink.current "slide-current"}}">
@@ -179,7 +179,9 @@
                       {{#if leftLink.current}}
                         <span>{{leftLink.title}}</span>
                       {{else}}
-                        {{#link-to leftLink.route}} {{leftLink.title}} {{/link-to}}
+                        <LinkTo @route={{leftLink.route}}>
+                          {{leftLink.title}}
+                        </LinkTo>
                       {{/if}}
                     </div>
                   </div>
@@ -187,7 +189,7 @@
               </div>
               <div class="cell medium-2"></div>
               <div class="cell medium-5">
-                {{#each rightLinks as |rightLink|}}
+                {{#each this.rightLinks as |rightLink|}}
                   <div class="grid-x slide-link">
                     <div class="cell small-1 medium-1">
                       <p class="slide-number {{if rightLink.current "slide-current"}}">
@@ -198,7 +200,9 @@
                       {{#if rightLink.current}}
                         <span>{{rightLink.title}}</span>
                       {{else}}
-                        {{#link-to rightLink.route}} {{rightLink.title}} {{/link-to}}
+                        <LinkTo @route={{rightLink.route}}>
+                          {{rightLink.title}}
+                        </LinkTo>
                       {{/if}}
                     </div>
                   </div>
@@ -211,4 +215,4 @@
     </div>
   </div>
 </div>
-{{footer-photo}}
+<FooterPhoto />

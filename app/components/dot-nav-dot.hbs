@@ -1,0 +1,16 @@
+<li class={{if @menuItem.current "current-item" "link-item"}} {{on "mouseenter" this.handleMouseEnter}} {{on "mouseleave" this.handleMouseLeave}}>
+  <div class="dot-nav-tooltip">
+    <span>
+      {{@menuItem.title}}
+    </span>
+  </div>
+  {{#if @menuItem.current}}
+    <div class="current-page">
+      <div class="dot-circle"></div>
+    </div>
+  {{else}}
+    <LinkTo @route={{@menuItem.route}} class="link-dot">
+      <div class="dot-circle"></div>
+    </LinkTo>
+  {{/if}}
+</li>

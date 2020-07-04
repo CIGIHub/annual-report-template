@@ -1,6 +1,6 @@
 import Controller from '@ember/controller';
-import { computed, get, set } from '@ember/object';
-import { alias } from '@ember/object/computed';
+import { computed, set } from '@ember/object';
+import { alias, equal } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
 import { htmlSafe } from '@ember/template';
 import $ from 'jquery';
@@ -20,62 +20,50 @@ export default Controller.extend({
 
   currentPage: computed('page', function() {
     let currentPage = 1;
-    if (get(this, 'page') && !isNaN(parseInt(get(this, 'page'), 10))) {
-      currentPage = parseInt(get(this, 'page'), 10);
+    if (this.page && !isNaN(parseInt(this.page, 10))) {
+      currentPage = parseInt(this.page, 10);
     }
     return currentPage;
   }),
 
   currentType: computed('type', function() {
     let currentType = 'publications';
-    if (get(this, 'type') && [
+    if (this.type && [
       'events',
       'opinions',
       'publications',
-    ].includes(get(this, 'type'))) {
-      currentType = get(this, 'type');
+    ].includes(this.type)) {
+      currentType = this.type;
     }
     return currentType;
   }),
 
   disableNext: computed('currentPage', 'totalPages', function() {
-    const currentPage = get(this, 'currentPage');
-    const totalPages = get(this, 'totalPages');
+    const currentPage = this.currentPage;
+    const totalPages = this.totalPages;
     return currentPage >= totalPages;
   }),
 
   disablePrevious: computed('currentPage', function() {
-    const currentPage = get(this, 'currentPage');
+    const currentPage = this.currentPage;
     return currentPage <= 1;
   }),
 
-  isArticle: computed('publication.type', function() {
-    return get(this, 'publication.type') === 'article';
-  }),
+  isArticle: equal('publication.type', 'article'),
 
-  isEvent: computed('publication.type', function() {
-    return get(this, 'publication.type') === 'event';
-  }),
+  isEvent: equal('publication.type', 'event'),
 
-  isPublication: computed('publication.type', function() {
-    return get(this, 'publication.type') === 'publication';
-  }),
+  isPublication: equal('publication.type', 'publication'),
 
-  isTypeEvents: computed('currentType', function() {
-    return get(this, 'currentType') === 'events';
-  }),
+  isTypeEvents: equal('currentType', 'events'),
 
-  isTypeOpinions: computed('currentType', function() {
-    return get(this, 'currentType') === 'opinions';
-  }),
+  isTypeOpinions: equal('currentType', 'opinions'),
 
-  isTypePublications: computed('currentType', function() {
-    return get(this, 'currentType') === 'publications';
-  }),
+  isTypePublications: equal('currentType', 'publications'),
 
   paginationPages: computed('currentPage', 'totalPages', function() {
-    const currentPage = get(this, 'currentPage');
-    const totalPages = get(this, 'totalPages');
+    const currentPage = this.currentPage;
+    const totalPages = this.totalPages;
     const pageNumbers = [currentPage];
     if (currentPage > 1) {
       for (const i of Array(Math.max(3, currentPage - (totalPages - 6))).keys()) {
@@ -100,12 +88,15 @@ export default Controller.extend({
     }));
   }),
 
-  overlayStyle: computed('publication.id', /* istanbul ignore next */ function() {
-    const publication = get(this, 'publication');
+  overlayStyle: computed('publication.id', 'fastboot.isFastBoot', /* istanbul ignore next */ function() {
+    const publication = this.publication;
 
-    if (!get(this, 'fastboot.isFastBoot')
+    if (!this.fastboot.isFastBoot
         && publication) {
-      const { fullSizeUrl, thumbnailUrl } = get(this, 'backgroundImage').getNodeBackgroundImage(publication.id);
+      const {
+        fullSizeUrl,
+        thumbnailUrl,
+      } = this.backgroundImage.getNodeBackgroundImage(publication.id);
       return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}')`);
     }
 
@@ -113,11 +104,11 @@ export default Controller.extend({
   }),
 
   totalPages: computed('totalObjects', function() {
-    return Math.max(Math.ceil(get(this, 'totalObjects') / 16), 1);
+    return Math.max(Math.ceil(this.totalObjects / 16), 1);
   }),
 
   shortSummary: computed('publication.summary', /* istanbul ignore next */ function() {
-    let summary = get(this, 'publication.summary');
+    let summary = this.publication.summary;
     summary = summary.replace(/(\r\n\t|\n|\r\t)/gm, '');
     if (/^(.*?)[.?!]\s/.test(summary)) {
       return /^(.*?)[.?!]\s/.exec(summary)[0];
@@ -135,8 +126,8 @@ export default Controller.extend({
       });
     },
     nextPage() {
-      let page = get(this, 'currentPage');
-      const totalPages = get(this, 'totalPages');
+      let page = this.currentPage;
+      const totalPages = this.totalPages;
       page += 1;
       if (page >= totalPages) {
         page = totalPages;
@@ -147,7 +138,7 @@ export default Controller.extend({
       set(this, 'id', id);
     },
     previousPage() {
-      let page = get(this, 'currentPage');
+      let page = this.currentPage;
       page -= 1;
       if (page <= 1) {
         page = 1;
@@ -155,7 +146,7 @@ export default Controller.extend({
       set(this, 'page', page);
     },
     setPage(page) {
-      set(this, 'page', Math.min(page, get(this, 'totalPages')));
+      set(this, 'page', Math.min(page, this.totalPages));
     },
     setType(type) {
       if (['events', 'opinions', 'publications'].includes(type)) {

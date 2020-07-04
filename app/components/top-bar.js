@@ -1,6 +1,7 @@
 import ENV from 'annual-report-template/config/environment';
 import Component from '@ember/component';
-import { computed, get, set } from '@ember/object';
+import { computed, set } from '@ember/object';
+import { equal } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
 import $ from 'jquery';
 
@@ -12,41 +13,39 @@ export default Component.extend({
   socialMenuIsOpen: false,
 
   hideMenu: computed('router.currentRouteName', function() {
-    if (get(this, 'router.currentRouteName') === 'table-of-contents') {
+    if (this.router.currentRouteName === 'table-of-contents') {
       return true;
     }
     return false;
   }),
 
   linkedInShareLink: computed('shareRoute', function() {
-    const shareRoute = get(this, 'shareRoute');
+    const shareRoute = this.shareRoute;
     return `https://www.linkedin.com/shareArticle?mini=true&url=${shareRoute}`;
   }),
 
   twitterShareLink: computed('shareRoute', function() {
-    const shareRoute = get(this, 'shareRoute');
-    let shareTitle = get(this, 'intl').t('title');
+    const shareRoute = this.shareRoute;
+    let shareTitle = this.intl.t('title');
     shareTitle = shareTitle.replace(/ /g, '+');
     return `https://twitter.com/intent/tweet?status=${shareTitle}+${shareRoute}`;
   }),
 
-  menuIsOpen: computed('lightbox.showLightbox', function() {
-    return get(this, 'lightbox.showLightbox') === 'tableofcontents';
-  }),
+  menuIsOpen: equal('lightbox.showLightbox', 'tableofcontents'),
 
   shareRoute: computed('router.currentRouteName', function() {
-    const currentRoute = get(this, 'router.currentRouteName').replace('.', '/').replace('index', '');
+    const currentRoute = this.router.currentRouteName.replace('.', '/').replace('index', '');
     return `${ENV.host}${ENV.rootURL}${currentRoute}`;
   }),
 
   actions: {
     closeMenu() {
-      get(this, 'lightbox').closeLightbox();
+      this.lightbox.closeLightbox();
     },
     closeSocialMenu() {
       /* istanbul ignore next */
-      if (get(this, 'socialAnimationTimeout')) {
-        clearTimeout(get(this, 'socialAnimationTimeout'));
+      if (this.socialAnimationTimeout) {
+        clearTimeout(this.socialAnimationTimeout);
         set(this, 'socialAnimationTimeout', null);
       }
       set(this, 'socialMenuIsOpen', false);
@@ -82,16 +81,16 @@ export default Component.extend({
       /* istanbul ignore next */
       FB.ui({
         method: 'share',
-        href: get(this, 'shareRoute'),
+        href: this.shareRoute,
       });
     },
     openMenu() {
-      get(this, 'lightbox').showTableOfContents();
+      this.lightbox.showTableOfContents();
     },
     openSocialMenu() {
       /* istanbul ignore next */
-      if (get(this, 'socialAnimationTimeout')) {
-        clearTimeout(get(this, 'socialAnimationTimeout'));
+      if (this.socialAnimationTimeout) {
+        clearTimeout(this.socialAnimationTimeout);
         set(this, 'socialAnimationTimeout', null);
       }
       set(this, 'socialMenuIsOpen', true);

@@ -2,7 +2,6 @@ import ENV from 'annual-report-template/config/environment';
 import Component from '@ember/component';
 import {
   computed,
-  get,
   observer,
   set,
 } from '@ember/object';
@@ -13,15 +12,13 @@ import $ from 'jquery';
 export default Component.extend({
   backgroundImage: service(),
   fastboot: service(),
-  nodeId: null,
-  nodes: [],
   searchTimeout: null,
   timelineMiddle: 300,
   timelineNodes: [],
 
   timelineClass: computed('nodeId', function() {
     const classNames = ['timeline'];
-    if (get(this, 'nodeId')) {
+    if (this.nodeId) {
       classNames.push('timeline-top');
     }
     return classNames.toString().replace(/,/g, ' ');
@@ -31,7 +28,7 @@ export default Component.extend({
     this._super(args);
 
     /* istanbul ignore next */
-    if (!get(this, 'fastboot.isFastBoot')) {
+    if (!this.fastboot.isFastBoot) {
       $(window).on('resize', $.proxy(this.drawTimeline, this));
     }
   },
@@ -45,8 +42,8 @@ export default Component.extend({
   searchChanged: observer('search', function() {
     /* istanbul ignore next */
     if (ENV.environment !== 'test') {
-      if (get(this, 'searchTimeout')) {
-        cancel(get(this, 'searchTimeout'));
+      if (this.searchTimeout) {
+        cancel(this.searchTimeout);
       }
       set(this, 'searchTimeout', later(this, function() {
         set(this, 'searchTimeout', null);
@@ -57,14 +54,14 @@ export default Component.extend({
 
   runSearch() {
     /* istanbul ignore next */
-    let search = get(this, 'search');
+    let search = this.search;
     /* istanbul ignore next */
     if (search) {
       search = search.toLowerCase();
     }
 
     /* istanbul ignore next */
-    for (const timelineNode of get(this, 'timelineNodes')) {
+    for (const timelineNode of this.timelineNodes) {
       if (!search
           || timelineNode.title.toLowerCase().includes(search)
           || timelineNode.authors.join().toLowerCase().includes(search)
@@ -142,9 +139,9 @@ export default Component.extend({
     /* istanbul ignore next */
     const self = this;
     /* istanbul ignore next */
-    const nodes = get(this, 'nodes');
+    const nodes = this.nodes;
     /* istanbul ignore next */
-    const timeline = this.$('.timeline');
+    const timeline = $('.timeline');
 
     /* istanbul ignore next */
     set(this, 'timelineNodes', []);
@@ -202,7 +199,7 @@ export default Component.extend({
     /* istanbul ignore next */
     const daysWidth = timeline.width() / 365;
     /* istanbul ignore next */
-    const timelineMiddle = get(this, 'timelineMiddle');
+    const timelineMiddle = this.timelineMiddle;
 
     /* istanbul ignore next */
     const svgMatrix = Array(Math.floor(timeline.width()) + 1);
@@ -333,7 +330,7 @@ export default Component.extend({
       previewImageContainer.addClass('preview-image-container');
       const previewImage = $(document.createElement('div'));
       previewImage.addClass('preview-image');
-      const { thumbnailUrl } = get(this, 'backgroundImage').getNodeBackgroundImage(node.id);
+      const { thumbnailUrl } = this.backgroundImage.getNodeBackgroundImage(node.id);
       previewImage.css({
         'background-image': `url('${thumbnailUrl}')`,
       });
@@ -381,7 +378,7 @@ export default Component.extend({
         bubble,
       };
       Object.assign(nodeCopy, node);
-      get(this, 'timelineNodes').push(nodeCopy);
+      this.timelineNodes.push(nodeCopy);
     });
 
     /* istanbul ignore next */
