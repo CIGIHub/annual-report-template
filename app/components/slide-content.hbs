@@ -3,12 +3,12 @@
     <div class="cell large-6">
       <div class="slide-title">
         <h1>
-          {{slideTitle}}
+          {{@slideTitle}}
         </h1>
       </div>
       <div class="content-links">
-        {{#each links as |link|}}
-          <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener">
+        {{#each @links as |link|}}
+          <a class="clearfix content-link show-for-large" href={{link.link}} target="_blank" rel="noopener noreferrer">
             <div class="float-left content-link-icon">
               {{fa-icon link.icon prefix="fal" size="lg"}}
             </div>
@@ -26,15 +26,15 @@
     </div>
     <div class="cell large-6 paragraphs">
       <div>
-        {{#each paragraphs as |paragraph|}}
+        {{#each @paragraphs as |paragraph|}}
           <p>
             {{{paragraph}}}
           </p>
         {{/each}}
       </div>
       <div class="content-links-mobile hide-for-large">
-        {{#each links as |link|}}
-          <a class="clearfix content-link-mobile" href={{link.link}} target="_blank" rel="noopener">
+        {{#each @links as |link|}}
+          <a class="clearfix content-link-mobile" href={{link.link}} target="_blank" rel="noopener noreferrer">
             {{{link.title}}}
           </a>
         {{/each}}

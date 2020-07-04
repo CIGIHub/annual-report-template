@@ -1,7 +1,7 @@
 <div class="lightbox">
-  {{#if showTableOfContents}}
+  {{#if this.showTableOfContents}}
     <div class="lightbox-table-of-contents">
-      {{table-of-contents routes=routes}}
+      <TableOfContents @routes={{this.routes}} />
     </div>
   {{/if}}
 </div>

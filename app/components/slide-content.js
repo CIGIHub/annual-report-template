@@ -1,16 +1,19 @@
 import Component from '@ember/component';
-import { get } from '@ember/object';
 import { inject as service } from '@ember/service';
 
 export default Component.extend({
   lightbox: service(),
 
+  links: [],
+  paragraphs: [],
+  slideTitle: '',
+
   actions: {
     closeLightbox() {
-      get(this, 'lightbox').closeLightbox();
+      this.lightbox.closeLightbox();
     },
     showYouTubeLightbox(videoId, videoTitle, videoDescription) {
-      get(this, 'lightbox').showYouTubeLightbox(videoId, videoTitle, videoDescription);
+      this.lightbox.showYouTubeLightbox(videoId, videoTitle, videoDescription);
     },
   },
 });

@@ -1,4 +1,4 @@
-import { get, set } from '@ember/object';
+import { set } from '@ember/object';
 import { setupRenderingTest } from 'ember-qunit';
 import Service from '@ember/service';
 import { click, render } from '@ember/test-helpers';
@@ -54,7 +54,7 @@ module('Integration | Component | table-of-contents', function(hooks) {
 
     await click('.show-acknowledgements-btn');
 
-    assert.strictEqual(get(this, 'showAcknowledgements'), true);
+    assert.strictEqual(this.showAcknowledgements, true);
   });
 
   test('should hide acknowledgements tab on hide-acknowledgements-btn click', async function(assert) {
@@ -72,6 +72,6 @@ module('Integration | Component | table-of-contents', function(hooks) {
 
     await click('.hide-acknowledgements-btn');
 
-    assert.strictEqual(get(this, 'showAcknowledgements'), null);
+    assert.strictEqual(this.showAcknowledgements, null);
   });
 });
