@@ -1,13 +1,14 @@
 import Component from '@ember/component';
-import { get } from '@ember/object';
+import { action } from '@ember/object';
 import $ from 'jquery';
 
-export default Component.extend({
-  menuItem: null,
-
-  mouseEnter() {
+export default class DotNavDotComponent extends Component {
+  @action
+  handleMouseEnter(e) {
     /* istanbul ignore next */
-    if (!get(this, 'menuItem.current')) {
+    e.preventDefault();
+    /* istanbul ignore next */
+    if (!this.menuItem.current) {
       /* istanbul ignore next */
       $('.overlay').stop(false, false).css({
         'z-index': 0,
@@ -15,13 +16,16 @@ export default Component.extend({
         'opacity': 1,
       }, 500);
     }
-  },
+  }
 
-  mouseLeave() {
+  @action
+  handleMouseLeave(e) {
+    /* istanbul ignore next */
+    e.preventDefault();
     /* istanbul ignore next */
     $('.overlay').stop(false, false).animate({
       'opacity': 0,
       'z-index': -1,
     }, 500);
-  },
-});
+  }
+}

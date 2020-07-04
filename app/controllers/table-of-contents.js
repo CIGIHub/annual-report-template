@@ -1,5 +1,5 @@
 import Controller from '@ember/controller';
-import { computed, get } from '@ember/object';
+import { computed } from '@ember/object';
 import { inject as service } from '@ember/service';
 
 export default Controller.extend({
@@ -8,6 +8,6 @@ export default Controller.extend({
   queryParams: ['acknowledgements'],
 
   routes: computed('routeOrder.routes.[]', function() {
-    return get(this, 'routeOrder.routes').slice(2);
+    return this.routeOrder.routes.slice(2);
   }),
 });

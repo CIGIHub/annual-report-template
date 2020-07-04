@@ -1,4 +1,4 @@
-<div class="cigi-top-bar clearfix {{if lightBackground "light-background"}}">
+<div class="cigi-top-bar clearfix {{if @lightBackground "light-background"}}">
   <div class="cigi-logo">
     <a href="https://www.cigionline.org">
       <svg class="show-for-large" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129.4 37.8">
@@ -14,30 +14,30 @@
     </a>
   </div>
   <div class="cigi-menu">
-    <button class="social-1-btn" {{action "facebookShare"}}>
+    <button type="button" class="social-1-btn" {{action "facebookShare"}}>
       {{fa-icon "facebook-square" prefix="fab" size="lg"}}
     </button>
-    <a class="social-2-btn" href={{twitterShareLink}} target="_blank" rel="noopener">
+    <a class="social-2-btn" href={{this.twitterShareLink}} target="_blank" rel="noopener noreferrer">
       {{fa-icon "twitter" prefix="fab" size="lg"}}
     </a>
-    <a class="social-3-btn" href={{linkedInShareLink}} target="_blank" rel="noopener">
+    <a class="social-3-btn" href={{this.linkedInShareLink}} target="_blank" rel="noopener noreferrer">
       {{fa-icon "linkedin-in" prefix="fab" size="lg"}}
     </a>
-    {{#if socialMenuIsOpen}}
-      <button class="close-social-menu-btn" {{action "closeSocialMenu"}}>
+    {{#if this.socialMenuIsOpen}}
+      <button type="button" class="close-social-menu-btn" {{action "closeSocialMenu"}}>
         {{fa-icon "arrow-right" prefix="fal" size="lg"}}
       </button>
     {{else}}
-      <button class="open-social-menu-btn" {{action "openSocialMenu"}}>
+      <button type="button" class="open-social-menu-btn" {{action "openSocialMenu"}}>
         {{fa-icon "share-alt" prefix="fal" size="lg"}}
       </button>
     {{/if}}
-    {{#if menuIsOpen}}
-      <button class="close-menu-btn" {{action "closeMenu"}}>
+    {{#if this.menuIsOpen}}
+      <button type="button" class="close-menu-btn" {{action "closeMenu"}}>
         {{fa-icon "times" prefix="fal" size="lg"}}
       </button>
     {{else}}
-      <button class="open-menu-btn {{if hideMenu "hide-menu"}}" {{action "openMenu"}}>
+      <button type="button" class="open-menu-btn {{if this.hideMenu "hide-menu"}}" {{action "openMenu"}}>
         {{fa-icon "bars" prefix="fal" size="lg"}}
       </button>
     {{/if}}

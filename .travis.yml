@@ -1,9 +1,9 @@
 ---
 language: node_js
 node_js:
-  - 10.16.3
+  - 12.17.0
 sudo: false
-dist: trusty
+dist: xenial
 addons:
   chrome: stable
 cache:

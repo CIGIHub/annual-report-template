@@ -1,5 +1,5 @@
 import Controller from '@ember/controller';
-import { computed, get } from '@ember/object';
+import { computed } from '@ember/object';
 import { inject as service } from '@ember/service';
 import { htmlSafe } from '@ember/template';
 
@@ -8,7 +8,7 @@ export default Controller.extend({
   intl: service(),
 
   backgroundStyle: computed(function() {
-    const { fullSizeUrl, thumbnailUrl } = get(this, 'backgroundImage').getSlideBackgroundImage('media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+    const { fullSizeUrl, thumbnailUrl } = this.backgroundImage.getSlideBackgroundImage('media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
     return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}');`);
   }),
 
@@ -16,29 +16,29 @@ export default Controller.extend({
     return [{
       icon: 'comment-alt-lines',
       link: 'https://www.cigionline.org/articles/reporting-atrocity',
-      title: get(this, 'intl').t('mediaAndMassAtrocityTheRwandaGenocideAndBeyond.link2'),
-      type: get(this, 'intl').t('article'),
+      title: this.intl.t('mediaAndMassAtrocityTheRwandaGenocideAndBeyond.link2'),
+      type: this.intl.t('article'),
     }, {
       icon: 'film',
       link: 'https://www.cigionline.org/multimedia/video-reporting-atrocity',
-      title: get(this, 'intl').t('mediaAndMassAtrocityTheRwandaGenocideAndBeyond.link3'),
-      type: get(this, 'intl').t('video'),
+      title: this.intl.t('mediaAndMassAtrocityTheRwandaGenocideAndBeyond.link3'),
+      type: this.intl.t('video'),
     }];
   }),
 
   paragraphs: computed('intl.locale', function() {
     return [
-      get(this, 'intl').t('mediaAndMassAtrocityTheRwandaGenocideAndBeyond.paragraph1'),
-      get(this, 'intl').t('mediaAndMassAtrocityTheRwandaGenocideAndBeyond.paragraph2'),
-      get(this, 'intl').t('mediaAndMassAtrocityTheRwandaGenocideAndBeyond.paragraph3'),
+      this.intl.t('mediaAndMassAtrocityTheRwandaGenocideAndBeyond.paragraph1'),
+      this.intl.t('mediaAndMassAtrocityTheRwandaGenocideAndBeyond.paragraph2'),
+      this.intl.t('mediaAndMassAtrocityTheRwandaGenocideAndBeyond.paragraph3'),
     ];
   }),
 
   title: computed('intl.locale', function() {
-    return get(this, 'intl').t('mediaAndMassAtrocityTheRwandaGenocideAndBeyond.title');
+    return this.intl.t('mediaAndMassAtrocityTheRwandaGenocideAndBeyond.title');
   }),
 
-  videoLink: computed(function() {
-    return `${get(this, 'backgroundImage.imageHost')}5891adf417e60b71/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.mp4`;
+  videoLink: computed('backgroundImage.imageHost', function() {
+    return `${this.backgroundImage.imageHost}5891adf417e60b71/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.mp4`;
   }),
 });
