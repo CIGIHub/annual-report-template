@@ -42,6 +42,7 @@ module('Unit | Component | table-of-contents', function(hooks) {
   test('should have no leftLinks with 1 route and linksBreakAtIndex=0', function(assert) {
     const component = this.owner.factoryFor('component:table-of-contents').create();
     set(component, 'routes', [{
+      number: '01',
       route: 'route-1',
       title: 'route-1-title',
     }]);
@@ -54,6 +55,7 @@ module('Unit | Component | table-of-contents', function(hooks) {
   test('should have correct leftLinks with 1 route and linksBreakAtIndex=1', function(assert) {
     const component = this.owner.factoryFor('component:table-of-contents').create();
     set(component, 'routes', [{
+      number: '01',
       route: 'route-1',
       title: 'route-1-title',
     }]);
@@ -71,12 +73,15 @@ module('Unit | Component | table-of-contents', function(hooks) {
   test('should have correct leftLinks with 3 routes and linksBreakAtIndex=1', function(assert) {
     const component = this.owner.factoryFor('component:table-of-contents').create();
     set(component, 'routes', [{
+      number: '01',
       route: 'route-1',
       title: 'route-1-title',
     }, {
+      number: '02',
       route: 'route-2',
       title: 'route-2-title',
     }, {
+      number: '03',
       route: 'route-3',
       title: 'route-3-title',
     }]);
@@ -94,12 +99,15 @@ module('Unit | Component | table-of-contents', function(hooks) {
   test('should have correct leftLinks with 3 routes and linksBreakAtIndex=2', function(assert) {
     const component = this.owner.factoryFor('component:table-of-contents').create();
     set(component, 'routes', [{
+      number: '01',
       route: 'route-1',
       title: 'route-1-title',
     }, {
+      number: '02',
       route: 'route-2',
       title: 'route-2-title',
     }, {
+      number: '03',
       route: 'route-3',
       title: 'route-3-title',
     }]);
@@ -122,12 +130,15 @@ module('Unit | Component | table-of-contents', function(hooks) {
   test('should have correct leftLinks with 3 routes and linksBreakAtIndex=3', function(assert) {
     const component = this.owner.factoryFor('component:table-of-contents').create();
     set(component, 'routes', [{
+      number: '01',
       route: 'route-1',
       title: 'route-1-title',
     }, {
+      number: '02',
       route: 'route-2',
       title: 'route-2-title',
     }, {
+      number: '03',
       route: 'route-3',
       title: 'route-3-title',
     }]);
@@ -155,12 +166,15 @@ module('Unit | Component | table-of-contents', function(hooks) {
   test('should have correct leftLinks with 3 routes including a current route', function(assert) {
     const component = this.owner.factoryFor('component:table-of-contents').create();
     set(component, 'routes', [{
+      number: '01',
       route: 'route-1',
       title: 'route-1-title',
     }, {
+      number: '02',
       route: 'route-2',
       title: 'route-2-title',
     }, {
+      number: '03',
       route: 'route-3',
       title: 'route-3-title',
     }]);
@@ -196,6 +210,7 @@ module('Unit | Component | table-of-contents', function(hooks) {
   test('should have correct rightLinks with 1 route and linksBreakAtIndex=0', function(assert) {
     const component = this.owner.factoryFor('component:table-of-contents').create();
     set(component, 'routes', [{
+      number: '01',
       route: 'route-1',
       title: 'route-1-title',
     }]);
@@ -213,6 +228,7 @@ module('Unit | Component | table-of-contents', function(hooks) {
   test('should have no rightLinks with 1 route and linksBreakAtIndex=1', function(assert) {
     const component = this.owner.factoryFor('component:table-of-contents').create();
     set(component, 'routes', [{
+      number: '01',
       route: 'route-1',
       title: 'route-1-title',
     }]);
@@ -225,12 +241,15 @@ module('Unit | Component | table-of-contents', function(hooks) {
   test('should have correct rightLinks with 3 routes and linksBreakAtIndex=0', function(assert) {
     const component = this.owner.factoryFor('component:table-of-contents').create();
     set(component, 'routes', [{
+      number: '01',
       route: 'route-1',
       title: 'route-1-title',
     }, {
+      number: '02',
       route: 'route-2',
       title: 'route-2-title',
     }, {
+      number: '03',
       route: 'route-3',
       title: 'route-3-title',
     }]);
@@ -258,12 +277,15 @@ module('Unit | Component | table-of-contents', function(hooks) {
   test('should have correct rightLinks with 3 routes and linksBreakAtIndex=1', function(assert) {
     const component = this.owner.factoryFor('component:table-of-contents').create();
     set(component, 'routes', [{
+      number: '01',
       route: 'route-1',
       title: 'route-1-title',
     }, {
+      number: '02',
       route: 'route-2',
       title: 'route-2-title',
     }, {
+      number: '03',
       route: 'route-3',
       title: 'route-3-title',
     }]);
@@ -286,12 +308,15 @@ module('Unit | Component | table-of-contents', function(hooks) {
   test('should have correct rightLinks with 3 routes and linksBreakAtIndex=2', function(assert) {
     const component = this.owner.factoryFor('component:table-of-contents').create();
     set(component, 'routes', [{
+      number: '01',
       route: 'route-1',
       title: 'route-1-title',
     }, {
+      number: '02',
       route: 'route-2',
       title: 'route-2-title',
     }, {
+      number: '03',
       route: 'route-3',
       title: 'route-3-title',
     }]);
@@ -309,12 +334,15 @@ module('Unit | Component | table-of-contents', function(hooks) {
   test('should have correct rightLinks with 3 routes including a current route', function(assert) {
     const component = this.owner.factoryFor('component:table-of-contents').create();
     set(component, 'routes', [{
+      number: '01',
       route: 'route-1',
       title: 'route-1-title',
     }, {
+      number: '02',
       route: 'route-2',
       title: 'route-2-title',
     }, {
+      number: '03',
       route: 'route-3',
       title: 'route-3-title',
     }]);
