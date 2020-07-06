@@ -10,7 +10,6 @@ Router.map(function() {
   this.route('a-bretton-woods-moment-for-the-digital-age');
   this.route('a-clarion-call-for-protecting-the-worlds-refugees');
   this.route('braiding-legal-orders');
-  this.route('building-closer-ties-between-canada-and-india');
   this.route('chairs-message');
   this.route('curbing-cultural-appropriation-through-intellectual-property-law');
   this.route('exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
@@ -29,6 +28,7 @@ Router.map(function() {
   this.route('outputs-and-activities');
   this.route('presidents-message');
   this.route('protecting-elections-from-foreign-interference');
+  this.route('slide-1', { path: '/slide1' });
   this.route('table-of-contents');
   this.route('thank-you');
   this.route('timeline');

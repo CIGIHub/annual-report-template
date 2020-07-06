@@ -52,9 +52,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /building-closer-ties-between-canada-and-india', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide1', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'building-closer-ties-between-canada-and-india');
+    set(controller, 'router.currentRouteName', 'slide1');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -220,9 +220,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /building-closer-ties-between-canada-and-india', function(assert) {
+  test('should have hideMobileOverlay=false for /slide1', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'building-closer-ties-between-canada-and-india');
+    set(controller, 'router.currentRouteName', 'slide1');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -394,9 +394,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /building-closer-ties-between-canada-and-india', function(assert) {
+  test('should have lightBackground=false for /slide1', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'building-closer-ties-between-canada-and-india');
+    set(controller, 'router.currentRouteName', 'slide1');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -616,9 +616,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /building-closer-ties-between-canada-and-india', function(assert) {
+  test('should have scrollableContentPage=true for /slide1', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'building-closer-ties-between-canada-and-india');
+    set(controller, 'router.currentRouteName', 'slide1');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -794,9 +794,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /building-closer-ties-between-canada-and-india', function(assert) {
+  test('should have showDotNav=true for /slide1', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'building-closer-ties-between-canada-and-india');
+    set(controller, 'router.currentRouteName', 'slide1');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });

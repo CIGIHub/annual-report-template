@@ -44,7 +44,7 @@ module('Acceptance | a clarion call for protecting the worlds refugees', functio
     );
   });
 
-  test('should transition to /building-closer-ties-between-canada-and-india on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /slide1 on scroll-arrow-up-btn click', async function(assert) {
     await visit('/a-clarion-call-for-protecting-the-worlds-refugees');
 
     assert.ok(
@@ -54,7 +54,7 @@ module('Acceptance | a clarion call for protecting the worlds refugees', functio
     await click('.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/building-closer-ties-between-canada-and-india');
+    assert.strictEqual(currentURL(), '/slide1');
   });
 
   test('should transition to /multilateral-institutions-mark-a-tumultuous-year on scroll-arrow-down-btn click', async function(assert) {

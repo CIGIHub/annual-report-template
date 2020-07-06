@@ -6,9 +6,10 @@ import { htmlSafe } from '@ember/template';
 export default Controller.extend({
   backgroundImage: service(),
   intl: service(),
+  router: service(),
 
   backgroundStyle: computed(function() {
-    const { fullSizeUrl, thumbnailUrl } = this.backgroundImage.getSlideBackgroundImage('building-closer-ties-between-canada-and-india');
+    const { fullSizeUrl, thumbnailUrl } = this.backgroundImage.getSlideBackgroundImage('slide-1');
     return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}');`);
   }),
 
@@ -16,30 +17,30 @@ export default Controller.extend({
     return [{
       icon: 'film',
       link: 'https://www.cigionline.org/multimedia/video-canada-india-track-15-dialogue-innovation-growth-and-prosperity',
-      title: this.intl.t('buildingCloserTiesBetweenCanadaAndIndia.link1'),
+      title: this.intl.t('slide1.link1'),
       type: this.intl.t('video'),
     }, {
       icon: 'file-alt',
       link: 'https://www.cigionline.org/series/canada-india-track-15-dialogue',
-      title: this.intl.t('buildingCloserTiesBetweenCanadaAndIndia.link2'),
+      title: this.intl.t('slide1.link2'),
       type: this.intl.t('paperSeries'),
     }, {
-      icon: 'file-alt',
-      link: 'https://www.cigionline.org/activity/canada-india-track-15-dialogue-innovation-growth-and-prosperity',
-      title: this.intl.t('buildingCloserTiesBetweenCanadaAndIndia.link3'),
-      type: this.intl.t('resource'),
+      icon: 'comment-alt-lines',
+      link: '',
+      title: this.intl.t('slide1.link3'),
+      type: this.intl.t('article'),
     }];
   }),
 
   paragraphs: computed('intl.locale', function() {
     return [
-      this.intl.t('buildingCloserTiesBetweenCanadaAndIndia.paragraph1'),
-      this.intl.t('buildingCloserTiesBetweenCanadaAndIndia.paragraph2'),
-      this.intl.t('buildingCloserTiesBetweenCanadaAndIndia.paragraph3'),
+      this.intl.t('slide1.paragraph1'),
+      this.intl.t('slide1.paragraph2'),
+      this.intl.t('slide1.paragraph3'),
     ];
   }),
 
   title: computed('intl.locale', function() {
-    return this.intl.t('buildingCloserTiesBetweenCanadaAndIndia.title');
+    return this.intl.t('slide1.title');
   }),
 });

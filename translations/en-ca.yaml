@@ -69,18 +69,6 @@ braidingLegalOrders:
   quote:
     quote: 'Only if the UN Declaration is implemented in a historically informed manner that allows Canada to reconsider the history for Indigenous self-determination will Canada be able to move towards a real nation-to-nation relationship with Indigenous peoples.'
   title: 'Braiding Legal Orders'
-buildingCloserTiesBetweenCanadaAndIndia:
-  description: 'With India now one of the world’s fastest-growing economies and Canada seeking to diversity its trade relationships, CIGI has partnered with Gateway House, a foreign policy think tank in Mumbai, on the Canada-India Track 1.5 Dialogue on Innovation, Growth and Prosperity, a three-year initiative to explore areas for closer relations between the two countries.'
-  link1: 'CIGI President Rohinton P. Medhora and Gateway House Executive Director Manjeet Kripalani discuss the Canada-India Track 1.5 Dialogue.'
-  link2: 'Read the Canada-India Track 1.5 Dialogue paper series on how to expand Canada-India relations.'
-  link3: 'Learn more about the Canada-India Track 1.5 Dialogue.'
-  paragraph1: 'With India now one of the world’s fastest-growing economies and Canada seeking to diversify its trade relationships, CIGI has partnered with Gateway House, a foreign policy think tank in Mumbai, on the Canada-India Track 1.5 Dialogue on Innovation, Growth and Prosperity, a three-year initiative to explore areas for closer relations between the two countries.'
-  paragraph2: 'In October 2018, CIGI hosted the inaugural meeting in Ottawa, which focused on bilateral opportunities in cyber security, geoengineering, climate leadership and economic relations. Vikas Swarup, High Commissioner of India to Canada, and Nadir Patel, High Commissioner of Canada to India, provided opening remarks. Jim Carr, Canada’s Minister of International Trade Diversification, delivered the keynote address and praised the thought leadership of CIGI and Gateway House on trade ties via social media.'
-  paragraph3: 'CIGI also co-hosted an event on Parliament Hill with Canadian Member of Parliament Bardish Chagger and Senator Marty Deacon that included a welcome statement from Prime Minister Justin Trudeau and was attended by Ministers Navdeep Bains and Bill Morneau.'
-  quote:
-    quote: '“The India-Canada relationship is like a $20 bill on the floor — it’s waiting to be picked up, but no one has done so.”'
-    source: 'CIGI President Rohinton P. Medhora at the Canada-India Track 1.5 Dialogue meeting in Ottawa'
-  title: 'Building Closer Ties between Canada and India'
 chairsMessage:
   paragraph1: 'Innovations in our digital world have significant impacts on how we communicate, conduct business and function as a society. In less than a generation, technological advances to artificial intelligence (AI) systems, driven by a wealth of big data, have led to scientific and industrial progress but also raised fears of privacy violations and a culture of mass surveillance.'
   paragraph2: 'These changes have come in such rapid succession — cryptocurrencies are quickly taking their place among financial services and AI systems based on big data have been blamed for misinformation campaigns — that they have outpaced current policies as well as global rules and regulations.'
@@ -409,6 +397,18 @@ publications: 'Publications'
 qa: 'Q&A'
 report: 'Report'
 resource: 'Resource'
+slide1:
+  description: 'Slide 1 Description English'
+  link1: 'Slide 1 Link 1 English'
+  link2: 'Slide 1 Link 2 English'
+  link3: 'Slide 1 Link 3 English'
+  paragraph1: 'Slide 1 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
+  paragraph2: 'Slide 1 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
+  paragraph3: 'Slide 1 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  quote:
+    quote: 'Slide 1 Quote English'
+    source: 'Slide 1 Source English'
+  title: 'Slide 1 Title English'
 subscribe: 'Subscribe'
 survey: 'Survey'
 tableOfContents:

@@ -110,13 +110,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /building-closer-ties-between-canada-and-india', function(assert) {
+  test('should have correct menu items for /slide1', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'building-closer-ties-between-canada-and-india');
+    set(component, 'router.currentRouteName', 'slide1');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'building-closer-ties-between-canada-and-india') {
+      if (menuItem.route === 'slide1') {
         assert.strictEqual(
           menuItem.current,
           true,

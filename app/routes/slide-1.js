@@ -20,17 +20,17 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   },
 
   afterModel() {
-    const title = `${this.intl.t('buildingCloserTiesBetweenCanadaAndIndia.title')} | ${this.intl.t('title')}`;
+    const title = `${this.intl.t('slide1.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
-    set(this, 'headData.description', this.intl.t('buildingCloserTiesBetweenCanadaAndIndia.description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}building-closer-ties-between-canada-and-india/`);
-    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('building-closer-ties-between-canada-and-india');
+    set(this, 'headData.description', this.intl.t('slide1.description'));
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}slide1/`);
+    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('slide-1');
     if (backgroundImage && backgroundImage.ogUrl) {
       set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('building-closer-ties-between-canada-and-india');
+    const nextRoute = this.routeOrder.getNextRoute('slide-1');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {

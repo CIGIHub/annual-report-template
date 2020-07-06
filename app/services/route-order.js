@@ -24,9 +24,9 @@ export default Service.extend({
     title: 'presidentsMessage.title',
   }, {
     number: '03',
-    route: 'building-closer-ties-between-canada-and-india',
+    route: 'slide-1',
     subRoutes: [],
-    title: 'buildingCloserTiesBetweenCanadaAndIndia.title',
+    title: 'slide1.title',
   }, {
     number: '04',
     route: 'a-clarion-call-for-protecting-the-worlds-refugees',
