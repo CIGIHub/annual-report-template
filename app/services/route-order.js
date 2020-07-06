@@ -130,8 +130,13 @@ export default Service.extend({
   }),
 
   getNextRoute(currentRouteName) {
-    let ind = this.routes.findIndex((route) => currentRouteName === route.route
-      || route.subRoutes.includes(currentRouteName));
+    let ind = -1;
+    this.routes.forEach((route, index) => {
+      if (currentRouteName === route.route
+          || route.subRoutes.includes(currentRouteName)) {
+        ind = index;
+      }
+    });
     ind += 1;
     if (ind > 0 && ind < this.routes.length) {
       return this.routes[ind].route;
@@ -140,8 +145,13 @@ export default Service.extend({
   },
 
   getPreviousRoute(currentRouteName) {
-    let ind = this.routes.findIndex((route) => currentRouteName === route.route
-      || route.subRoutes.includes(currentRouteName));
+    let ind = 0;
+    this.routes.forEach((route, index) => {
+      if (currentRouteName === route.route
+          || route.subRoutes.includes(currentRouteName)) {
+        ind = index;
+      }
+    });
     ind -= 1;
     if (ind >= 0) {
       return this.routes[ind].route;
