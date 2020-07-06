@@ -182,3 +182,24 @@ p {
 .no-padding-right {
   padding-right: 0 !important;
 }
+
+.vertical-title {
+  color: $white;
+  display: none;
+  font-size: 12px;
+  left: 10px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  transform: rotate(270deg) translateX(-50%);
+	transform-origin: left top 0;
+  transition: color 250ms;
+
+  @media screen and (min-width: 1140px) {
+    display: block;
+  }
+
+  &.light-background {
+    color: $black;
+  }
+}
