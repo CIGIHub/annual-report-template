@@ -29,9 +29,9 @@ export default Service.extend({
     title: 'slide1.title',
   }, {
     number: '04',
-    route: 'a-clarion-call-for-protecting-the-worlds-refugees',
+    route: 'slide-2',
     subRoutes: [],
-    title: 'aClarionCallForProtectingTheWorldsRefugees.title',
+    title: 'slide2.title',
   }, {
     number: '05',
     route: 'multilateral-institutions-mark-a-tumultuous-year',

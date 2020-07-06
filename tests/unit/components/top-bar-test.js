@@ -101,23 +101,23 @@ module('Unit | Component | top-bar', function(hooks) {
     );
   });
 
-  test('should have correct share links for /a-clarion-call-for-protecting-the-worlds-refugees', function(assert) {
+  test('should have correct share links for /slide2', function(assert) {
     const component = this.owner.factoryFor('component:top-bar').create();
-    set(component, 'router.currentRouteName', 'a-clarion-call-for-protecting-the-worlds-refugees');
+    set(component, 'router.currentRouteName', 'slide-2');
 
     assert.strictEqual(
       get(component, 'shareRoute'),
-      'https://www.cigionline.org/interactives/2019annualreport/a-clarion-call-for-protecting-the-worlds-refugees',
+      'https://www.cigionline.org/interactives/2019annualreport/slide-2',
       'should have correct shareRoute',
     );
     assert.strictEqual(
       get(component, 'linkedInShareLink'),
-      'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/a-clarion-call-for-protecting-the-worlds-refugees',
+      'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/slide-2',
       'should have correct linkedInShareLink',
     );
     assert.strictEqual(
       get(component, 'twitterShareLink'),
-      'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/a-clarion-call-for-protecting-the-worlds-refugees',
+      'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/slide-2',
       'should have correct twitterShareLink',
     );
   });

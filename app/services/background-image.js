@@ -9,20 +9,10 @@ export default Service.extend({
       ogUrl: '5ab09e92875a54ff/slides/a-bretton-woods-moment-for-the-digital-age-og.jpg',
       thumbnailUrl: '5ab09e92875a54ff/slides/a-bretton-woods-moment-for-the-digital-age-thumbnail.jpg',
     },
-    'a-clarion-call-for-protecting-the-worlds-refugees': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/a-clarion-call-for-protecting-the-worlds-refugees.png',
-      ogUrl: '5ab09e92875a54ff/slides/a-clarion-call-for-protecting-the-worlds-refugees-og.png',
-      thumbnailUrl: '5ab09e92875a54ff/slides/a-clarion-call-for-protecting-the-worlds-refugees-thumbnail.png',
-    },
     'braiding-legal-orders': {
       fullSizeUrl: '5ab09e92875a54ff/slides/braiding-legal-orders.jpg',
       ogUrl: '5ab09e92875a54ff/slides/braiding-legal-orders-og.jpg',
       thumbnailUrl: '5ab09e92875a54ff/slides/braiding-legal-orders-thumbnail.jpg',
-    },
-    'slide-1': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/building-closer-ties-between-canada-and-india.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/building-closer-ties-between-canada-and-india-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/building-closer-ties-between-canada-and-india-thumbnail.jpg',
     },
     'chairs-message': {
       fullSizeUrl: '5ab09e92875a54ff/slides/chairs-message.jpg',
@@ -68,6 +58,16 @@ export default Service.extend({
       fullSizeUrl: '5ab09e92875a54ff/slides/protecting-elections-from-foreign-interference.jpg',
       ogUrl: '5ab09e92875a54ff/slides/protecting-elections-from-foreign-interference-og.jpg',
       thumbnailUrl: '5ab09e92875a54ff/slides/protecting-elections-from-foreign-interference-thumbnail.jpg',
+    },
+    'slide-1': {
+      fullSizeUrl: '5ab09e92875a54ff/slides/building-closer-ties-between-canada-and-india.jpg',
+      ogUrl: '5ab09e92875a54ff/slides/building-closer-ties-between-canada-and-india-og.jpg',
+      thumbnailUrl: '5ab09e92875a54ff/slides/building-closer-ties-between-canada-and-india-thumbnail.jpg',
+    },
+    'slide-2': {
+      fullSizeUrl: '5ab09e92875a54ff/slides/a-clarion-call-for-protecting-the-worlds-refugees.png',
+      ogUrl: '5ab09e92875a54ff/slides/a-clarion-call-for-protecting-the-worlds-refugees-og.png',
+      thumbnailUrl: '5ab09e92875a54ff/slides/a-clarion-call-for-protecting-the-worlds-refugees-thumbnail.png',
     },
     'thank-you': {
       fullSizeUrl: '5ab09e92875a54ff/slides/thank-you.jpg',

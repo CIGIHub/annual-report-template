@@ -57,7 +57,7 @@ module('Acceptance | slide 1', function(hooks) {
     assert.strictEqual(currentURL(), '/presidents-message');
   });
 
-  test('should transition to /a-clarion-call-for-protecting-the-worlds-refugees on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /slide2 on scroll-arrow-down-btn click', async function(assert) {
     await visit('/slide1');
 
     assert.ok(
@@ -67,6 +67,6 @@ module('Acceptance | slide 1', function(hooks) {
     await click('.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/a-clarion-call-for-protecting-the-worlds-refugees');
+    assert.strictEqual(currentURL(), '/slide2');
   });
 });

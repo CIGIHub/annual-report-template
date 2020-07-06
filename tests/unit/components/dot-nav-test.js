@@ -66,13 +66,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /a-clarion-call-for-protecting-the-worlds-refugees', function(assert) {
+  test('should have correct menu items for /slide-2', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'a-clarion-call-for-protecting-the-worlds-refugees');
+    set(component, 'router.currentRouteName', 'slide-2');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'a-clarion-call-for-protecting-the-worlds-refugees') {
+      if (menuItem.route === 'slide-2') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -110,13 +110,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /slide1', function(assert) {
+  test('should have correct menu items for /slide-1', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'slide1');
+    set(component, 'router.currentRouteName', 'slide-1');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'slide1') {
+      if (menuItem.route === 'slide-1') {
         assert.strictEqual(
           menuItem.current,
           true,

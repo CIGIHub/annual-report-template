@@ -44,7 +44,7 @@ module('Acceptance | multilateral institutions mark a tumultuous year', function
     );
   });
 
-  test('should transition to /a-clarion-call-for-protecting-the-worlds-refugees on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /slide2 on scroll-arrow-up-btn click', async function(assert) {
     await visit('/multilateral-institutions-mark-a-tumultuous-year');
 
     assert.ok(
@@ -54,7 +54,7 @@ module('Acceptance | multilateral institutions mark a tumultuous year', function
     await click('.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/a-clarion-call-for-protecting-the-worlds-refugees');
+    assert.strictEqual(currentURL(), '/slide2');
   });
 
   test('should transition to /governing-cyberspace-during-a-crisis-in-trust on scroll-arrow-down-btn click', async function(assert) {

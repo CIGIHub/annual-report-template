@@ -1,11 +1,11 @@
 import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
 
-module('Unit | Route | a-clarion-call-for-protecting-the-worlds-refugees', function(hooks) {
+module('Unit | Route | slide-2', function(hooks) {
   setupTest(hooks);
 
   test('it exists', function(assert) {
-    const route = this.owner.lookup('route:a-clarion-call-for-protecting-the-worlds-refugees');
+    const route = this.owner.lookup('route:slide-2');
     assert.ok(route);
   });
 });
