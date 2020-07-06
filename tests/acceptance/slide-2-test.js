@@ -16,7 +16,7 @@ module('Acceptance | slide 2', function(hooks) {
     await visit('/slide2');
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
-      'A Clarion Call for Protecting the World’s Refugees | 2019 CIGI Annual Report',
+      'Slide 2 Title English | 2019 CIGI Annual Report',
     );
   });
 
@@ -24,7 +24,7 @@ module('Acceptance | slide 2', function(hooks) {
     await visit('/slide2');
     assert.strictEqual(
       document.querySelector('head meta[property="og:description"]').getAttribute('content'),
-      'Launched at the United Nations in New York City, the World Refugee Council’s report laid out 55 concrete actions to protect refugees and internally displaced persons and support the countries and local communities that host them.',
+      'Slide 2 Description English',
     );
   });
 

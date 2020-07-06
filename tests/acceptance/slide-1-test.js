@@ -16,7 +16,7 @@ module('Acceptance | slide 1', function(hooks) {
     await visit('/slide1');
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
-      'Building Closer Ties between Canada and India | 2019 CIGI Annual Report',
+      'Slide 1 Title English | 2019 CIGI Annual Report',
     );
   });
 
@@ -24,7 +24,7 @@ module('Acceptance | slide 1', function(hooks) {
     await visit('/slide1');
     assert.strictEqual(
       document.querySelector('head meta[property="og:description"]').getAttribute('content'),
-      'With India now one of the world’s fastest-growing economies and Canada seeking to diversity its trade relationships, CIGI has partnered with Gateway House, a foreign policy think tank in Mumbai, on the Canada-India Track 1.5 Dialogue on Innovation, Growth and Prosperity, a three-year initiative to explore areas for closer relations between the two countries.',
+      'Slide 1 Description English',
     );
   });
 
