@@ -59,9 +59,9 @@ export default Service.extend({
     title: 'slide7.title',
   }, {
     number: '10',
-    route: 'models-for-data-governance',
+    route: 'slide-8',
     subRoutes: [],
-    title: 'modelsForDataGovernance.title',
+    title: 'slide8.title',
   }, {
     number: '11',
     route: 'protecting-elections-from-foreign-interference',

@@ -69,7 +69,7 @@ module('Acceptance | slide 7', function(hooks) {
     assert.strictEqual(currentURL(), '/slide6');
   });
 
-  test('should transition to /models-for-data-governance on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /slide8 on scroll-arrow-down-btn click', async function(assert) {
     await visit('/slide7');
 
     assert.ok(
@@ -79,6 +79,6 @@ module('Acceptance | slide 7', function(hooks) {
     await click('.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/models-for-data-governance');
+    assert.strictEqual(currentURL(), '/slide8');
   });
 });

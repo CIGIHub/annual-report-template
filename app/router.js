@@ -18,7 +18,6 @@ Router.map(function() {
     this.route('revenue-and-expenses');
   });
   this.route('informing-the-debate-around-internet-security-and-trust');
-  this.route('models-for-data-governance');
   this.route('outputs-and-activities');
   this.route('presidents-message');
   this.route('protecting-elections-from-foreign-interference');
@@ -29,6 +28,7 @@ Router.map(function() {
   this.route('slide-5', { path: '/slide5' });
   this.route('slide-6', { path: '/slide6' });
   this.route('slide-7', { path: '/slide7' });
+  this.route('slide-8', { path: '/slide8' });
   this.route('table-of-contents');
   this.route('thank-you');
   this.route('timeline');

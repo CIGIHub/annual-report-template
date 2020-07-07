@@ -374,13 +374,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /models-for-data-governance', function(assert) {
+  test('should have correct menu items for /slide8', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'models-for-data-governance');
+    set(component, 'router.currentRouteName', 'slide-8');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'models-for-data-governance') {
+      if (menuItem.route === 'slide-8') {
         assert.strictEqual(
           menuItem.current,
           true,

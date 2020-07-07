@@ -1,11 +1,11 @@
 import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
 
-module('Unit | Route | models-for-data-governance', function(hooks) {
+module('Unit | Route | slide-8', function(hooks) {
   setupTest(hooks);
 
   test('it exists', function(assert) {
-    const route = this.owner.lookup('route:models-for-data-governance');
+    const route = this.owner.lookup('route:slide-8');
     assert.ok(route);
   });
 });

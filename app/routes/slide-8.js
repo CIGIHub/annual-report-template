@@ -20,17 +20,17 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   },
 
   afterModel() {
-    const title = `${this.intl.t('modelsForDataGovernance.title')} | ${this.intl.t('title')}`;
+    const title = `${this.intl.t('slide8.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
-    set(this, 'headData.description', this.intl.t('modelsForDataGovernance.description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}models-for-data-governance/`);
-    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('models-for-data-governance');
+    set(this, 'headData.description', this.intl.t('slide8.description'));
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}slide8/`);
+    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('slide-8');
     if (backgroundImage && backgroundImage.ogUrl) {
       set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('models-for-data-governance');
+    const nextRoute = this.routeOrder.getNextRoute('slide-8');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {

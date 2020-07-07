@@ -29,11 +29,6 @@ export default Service.extend({
       ogUrl: '5ab09e92875a54ff/slides/informing-the-debate-around-internet-security-and-trust-og.jpg',
       thumbnailUrl: '5ab09e92875a54ff/slides/informing-the-debate-around-internet-security-and-trust-thumbnail.jpg',
     },
-    'models-for-data-governance': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/models-for-data-governance.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/models-for-data-governance-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/models-for-data-governance-thumbnail.jpg',
-    },
     'presidents-message': {
       fullSizeUrl: '5ab09e92875a54ff/slides/presidents-message.jpg',
       ogUrl: '5ab09e92875a54ff/slides/presidents-message-og.jpg',
@@ -78,6 +73,11 @@ export default Service.extend({
       fullSizeUrl: '5ab09e92875a54ff/slides/braiding-legal-orders.jpg',
       ogUrl: '5ab09e92875a54ff/slides/braiding-legal-orders-og.jpg',
       thumbnailUrl: '5ab09e92875a54ff/slides/braiding-legal-orders-thumbnail.jpg',
+    },
+    'slide-8': {
+      fullSizeUrl: '5ab09e92875a54ff/slides/models-for-data-governance.jpg',
+      ogUrl: '5ab09e92875a54ff/slides/models-for-data-governance-og.jpg',
+      thumbnailUrl: '5ab09e92875a54ff/slides/models-for-data-governance-thumbnail.jpg',
     },
     'thank-you': {
       fullSizeUrl: '5ab09e92875a54ff/slides/thank-you.jpg',

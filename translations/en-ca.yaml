@@ -290,15 +290,6 @@ informingTheDebateAroundInternetSecurityAndTrust:
     source: 'Fen Osler Hampson'
   title: 'Informing the Debate around Internet Security and Trust'
 media: 'Media'
-modelsForDataGovernance:
-  description: 'Data trusts are occupying a politically contested space and the private sector is taking note. As a result, the public dialogue is being shaped by large, well-financed interests trying to maximize data sharing. But, large-scale privately-driven data sharing is not the only way — or even the most important way — to use data trusts.'
-  link1: 'Read Sean McDonald’s long form article on the application of data trusts'
-  link2: 'Watch Bianca Wylie and Sean McDonald explain the make-up and role of a data trust'
-  paragraph1: 'Data trusts are occupying a politically contested space and the private sector is taking note. As a result, the public dialogue is being shaped by large, well-financed interests trying to maximize data sharing. But, large-scale privately-driven data sharing is not the only way — or even the most important way — to use data trusts.'
-  paragraph2: 'In response to the data trust’s move away from obscurity, CIGI has contributed to the discussion on what, exactly, a data trust is, and how it can be used as a tool for effective data governance. A recent federal proposal to modernize PIPEDA cited Bianca Wylie and Sean McDonald’s multimedia approach to defining the role of a data trust in modern governance. Amid global calls for improved data governance frameworks, rethinking the data trust is just one step toward improved data use and management.'
-  quote:
-    quote: 'Large-scale data sharing is not the only way — or even the most important way — to use data trusts in the public interest.'
-  title: 'Models for Data Governance'
 opinions: 'Opinions'
 outputsAndActivities:
   eventLink: 'Learn more about the event'
@@ -427,6 +418,18 @@ slide7:
     quote: 'Slide 7 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 7 Source English'
   title: 'Slide 7 Title English'
+slide8:
+  description: 'Slide 8 Description English'
+  link1: 'Slide 8 Link 1 English'
+  link2: 'Slide 8 Link 2 English'
+  link3: 'Slide 8 Link 3 English'
+  paragraph1: 'Slide 8 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
+  paragraph2: 'Slide 8 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
+  paragraph3: 'Slide 8 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  quote:
+    quote: 'Slide 8 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
+    source: 'Slide 8 Source English'
+  title: 'Slide 8 Title English'
 subscribe: 'Subscribe'
 survey: 'Survey'
 tableOfContents:

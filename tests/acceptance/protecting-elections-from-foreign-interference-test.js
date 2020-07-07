@@ -56,7 +56,7 @@ module('Acceptance | protecting elections from foreign interference', function(h
     assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/protecting-elections-from-foreign-interference');
   });
 
-  test('should transition to /models-for-data-governance on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /slide8 on scroll-arrow-up-btn click', async function(assert) {
     await visit('/protecting-elections-from-foreign-interference');
 
     assert.ok(
@@ -66,7 +66,7 @@ module('Acceptance | protecting elections from foreign interference', function(h
     await click('.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/models-for-data-governance');
+    assert.strictEqual(currentURL(), '/slide8');
   });
 
   test('should transition to /a-bretton-woods-moment-for-the-digital-age on scroll-arrow-down-btn click', async function(assert) {
