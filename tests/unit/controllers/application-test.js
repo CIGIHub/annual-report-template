@@ -129,9 +129,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /media-and-mass-atrocity-the-rwanda-genocide-and-beyond', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide6', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+    set(controller, 'router.currentRouteName', 'slide-6');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -297,9 +297,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /media-and-mass-atrocity-the-rwanda-genocide-and-beyond', function(assert) {
+  test('should have hideMobileOverlay=false for /slide6', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+    set(controller, 'router.currentRouteName', 'slide-6');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -498,9 +498,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /media-and-mass-atrocity-the-rwanda-genocide-and-beyond', function(assert) {
+  test('should have lightBackground=false for /slide6', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+    set(controller, 'router.currentRouteName', 'slide-6');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -693,9 +693,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /media-and-mass-atrocity-the-rwanda-genocide-and-beyond', function(assert) {
+  test('should have scrollableContentPage=true for /slide6', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+    set(controller, 'router.currentRouteName', 'slide-6');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -871,9 +871,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /media-and-mass-atrocity-the-rwanda-genocide-and-beyond', function(assert) {
+  test('should have showDotNav=true for /slide6', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+    set(controller, 'router.currentRouteName', 'slide-6');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });

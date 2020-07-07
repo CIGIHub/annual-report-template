@@ -352,13 +352,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /media-and-mass-atrocity-the-rwanda-genocide-and-beyond', function(assert) {
+  test('should have correct menu items for /slide6', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+    set(component, 'router.currentRouteName', 'slide-6');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond') {
+      if (menuItem.route === 'slide-6') {
         assert.strictEqual(
           menuItem.current,
           true,

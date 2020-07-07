@@ -49,9 +49,9 @@ export default Service.extend({
     title: 'slide5.title',
   }, {
     number: '08',
-    route: 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond',
+    route: 'slide-6',
     subRoutes: [],
-    title: 'mediaAndMassAtrocityTheRwandaGenocideAndBeyond.title',
+    title: 'slide6.title',
   }, {
     number: '09',
     route: 'braiding-legal-orders',

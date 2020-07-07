@@ -34,11 +34,6 @@ export default Service.extend({
       ogUrl: '5ab09e92875a54ff/slides/informing-the-debate-around-internet-security-and-trust-og.jpg',
       thumbnailUrl: '5ab09e92875a54ff/slides/informing-the-debate-around-internet-security-and-trust-thumbnail.jpg',
     },
-    'media-and-mass-atrocity-the-rwanda-genocide-and-beyond': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond-thumbnail.jpg',
-    },
     'models-for-data-governance': {
       fullSizeUrl: '5ab09e92875a54ff/slides/models-for-data-governance.jpg',
       ogUrl: '5ab09e92875a54ff/slides/models-for-data-governance-og.jpg',
@@ -78,6 +73,11 @@ export default Service.extend({
       fullSizeUrl: '5ab09e92875a54ff/slides/innovation-nation-making-canada-a-leader-in-the-global-ideas-economy.jpg',
       ogUrl: '5ab09e92875a54ff/slides/innovation-nation-making-canada-a-leader-in-the-global-ideas-economy-og.jpg',
       thumbnailUrl: '5ab09e92875a54ff/slides/innovation-nation-making-canada-a-leader-in-the-global-ideas-economy-thumbnail.jpg',
+    },
+    'slide-6': {
+      fullSizeUrl: '5ab09e92875a54ff/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.jpg',
+      ogUrl: '5ab09e92875a54ff/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond-og.jpg',
+      thumbnailUrl: '5ab09e92875a54ff/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond-thumbnail.jpg',
     },
     'thank-you': {
       fullSizeUrl: '5ab09e92875a54ff/slides/thank-you.jpg',

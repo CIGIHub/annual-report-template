@@ -69,7 +69,7 @@ module('Acceptance | slide 5', function(hooks) {
     assert.strictEqual(currentURL(), '/slide4');
   });
 
-  test('should transition to /media-and-mass-atrocity-the-rwanda-genocide-and-beyond on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /slide6 on scroll-arrow-down-btn click', async function(assert) {
     await visit('/slide5');
 
     assert.ok(
@@ -79,6 +79,6 @@ module('Acceptance | slide 5', function(hooks) {
     await click('.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+    assert.strictEqual(currentURL(), '/slide6');
   });
 });
