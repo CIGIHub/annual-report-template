@@ -40,9 +40,9 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/slide-5-thumbnail.jpg',
     },
     'slide-6': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/slide-6.jpg',
+      ogUrl: 'template/slides/slide-6-og.jpg',
+      thumbnailUrl: 'template/slides/slide-6-thumbnail.jpg',
     },
     'slide-7': {
       fullSizeUrl: '5ab09e92875a54ff/slides/braiding-legal-orders.jpg',
