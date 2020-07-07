@@ -15,9 +15,9 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/presidents-message-thumbnail.jpg',
     },
     'slide-1': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/building-closer-ties-between-canada-and-india.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/building-closer-ties-between-canada-and-india-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/building-closer-ties-between-canada-and-india-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/slide-1.jpg',
+      ogUrl: 'template/slides/slide-1-og.jpg',
+      thumbnailUrl: 'template/slides/slide-1-thumbnail.jpg',
     },
     'slide-2': {
       fullSizeUrl: '5ab09e92875a54ff/slides/a-clarion-call-for-protecting-the-worlds-refugees.png',

@@ -138,8 +138,6 @@ module('Acceptance | table of contents', function(hooks) {
     await finishRender();
 
     assert.strictEqual(currentURL(), '/');
-
-    // Should still not display dot-nav
     assert.dom('ul.dot-nav').doesNotExist();
   });
 
@@ -150,8 +148,6 @@ module('Acceptance | table of contents', function(hooks) {
     await finishRender();
 
     assert.strictEqual(currentURL(), '/chairs-message');
-
-    // Should display dot-nav after navigating
     assert.dom('ul.dot-nav').exists();
   });
 });

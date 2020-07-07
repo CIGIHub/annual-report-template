@@ -16,7 +16,7 @@ module('Acceptance | slide 5', function(hooks) {
     await visit('/slide5');
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
-      'Governing the Digital Public Sphere | 2019 CIGI Annual Report',
+      'Slide 5 Title English | 2019 CIGI Annual Report',
     );
   });
 
@@ -24,7 +24,7 @@ module('Acceptance | slide 5', function(hooks) {
     await visit('/slide5');
     assert.strictEqual(
       document.querySelector('head meta[property="og:description"]').getAttribute('content'),
-      'The 2016 US election revealed both malicious uses of technology and structural problems in the digital infrastructure itself. Since then, there have been a striking number of cases of commercially and politically driven misinformation, foreign interference in elections, data breaches, cyber attacks, the proliferation of harmful speech, data exploitation and surveillance abuses.',
+      'Slide 5 Description English',
     );
   });
 

@@ -105,6 +105,7 @@ module('Acceptance | presidents message', function(hooks) {
     await finishRender();
 
     assert.strictEqual(currentURL(), '/chairs-message');
+    assert.dom('ul.dot-nav').exists();
   });
 
   test('should transition to /slide1 on scroll-arrow-down-btn click', async function(assert) {
@@ -114,5 +115,6 @@ module('Acceptance | presidents message', function(hooks) {
     await finishRender();
 
     assert.strictEqual(currentURL(), '/slide1');
+    assert.dom('ul.dot-nav').exists();
   });
 });

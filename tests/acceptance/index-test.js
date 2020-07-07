@@ -92,8 +92,6 @@ module('Acceptance | index', function(hooks) {
     await finishRender();
 
     assert.strictEqual(currentURL(), '/table-of-contents');
-
-    // Should still not display dot-nav
     assert.dom('ul.dot-nav').doesNotExist();
   });
 });

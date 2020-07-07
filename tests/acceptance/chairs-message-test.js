@@ -105,8 +105,6 @@ module('Acceptance | chairs message', function(hooks) {
     await finishRender();
 
     assert.strictEqual(currentURL(), '/table-of-contents');
-
-    // Should still display dot-nav
     assert.dom('ul.dot-nav').exists();
   });
 
@@ -117,5 +115,6 @@ module('Acceptance | chairs message', function(hooks) {
     await finishRender();
 
     assert.strictEqual(currentURL(), '/presidents-message');
+    assert.dom('ul.dot-nav').exists();
   });
 });
