@@ -50,9 +50,9 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/slide-7-thumbnail.jpg',
     },
     'slide-8': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/models-for-data-governance.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/models-for-data-governance-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/models-for-data-governance-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/slide-8.jpg',
+      ogUrl: 'template/slides/slide-8-og.jpg',
+      thumbnailUrl: 'template/slides/slide-8-thumbnail.jpg',
     },
     'slide-9': {
       fullSizeUrl: '5ab09e92875a54ff/slides/protecting-elections-from-foreign-interference.jpg',

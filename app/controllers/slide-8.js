@@ -44,6 +44,6 @@ export default Controller.extend({
   }),
 
   videoLink: computed('backgroundImage.imageHost', function() {
-    return `${this.backgroundImage.imageHost}5ab09e92875a54ff/slides/models-for-data-governance.mp4`;
+    return `${this.backgroundImage.imageHost}template/slides/slide-8.mp4`;
   }),
 });
