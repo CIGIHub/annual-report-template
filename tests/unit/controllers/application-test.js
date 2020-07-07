@@ -122,9 +122,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /informing-the-debate-around-internet-security-and-trust', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide11', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'informing-the-debate-around-internet-security-and-trust');
+    set(controller, 'router.currentRouteName', 'slide-11');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -290,9 +290,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /informing-the-debate-around-internet-security-and-trust', function(assert) {
+  test('should have hideMobileOverlay=false for /slide11', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'informing-the-debate-around-internet-security-and-trust');
+    set(controller, 'router.currentRouteName', 'slide-11');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -490,9 +490,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /informing-the-debate-around-internet-security-and-trust', function(assert) {
+  test('should have lightBackground=false for /slide11', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'informing-the-debate-around-internet-security-and-trust');
+    set(controller, 'router.currentRouteName', 'slide-11');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -686,9 +686,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /informing-the-debate-around-internet-security-and-trust', function(assert) {
+  test('should have scrollableContentPage=true for /slide11', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'informing-the-debate-around-internet-security-and-trust');
+    set(controller, 'router.currentRouteName', 'slide-11');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -864,9 +864,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /informing-the-debate-around-internet-security-and-trust', function(assert) {
+  test('should have showDotNav=true for /slide11', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'informing-the-debate-around-internet-security-and-trust');
+    set(controller, 'router.currentRouteName', 'slide-11');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });

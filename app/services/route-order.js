@@ -74,9 +74,9 @@ export default Service.extend({
     title: 'slide10.title',
   }, {
     number: '13',
-    route: 'informing-the-debate-around-internet-security-and-trust',
+    route: 'slide-11',
     subRoutes: [],
-    title: 'informingTheDebateAroundInternetSecurityAndTrust.title',
+    title: 'slide11.title',
   }, {
     number: '14',
     route: 'exploring-the-four-internets-and-the-geopolitics-of-digital-governance',

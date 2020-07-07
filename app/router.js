@@ -16,7 +16,6 @@ Router.map(function() {
     this.route('notes');
     this.route('revenue-and-expenses');
   });
-  this.route('informing-the-debate-around-internet-security-and-trust');
   this.route('outputs-and-activities');
   this.route('presidents-message');
   this.route('slide-1', { path: '/slide1' });
@@ -29,6 +28,7 @@ Router.map(function() {
   this.route('slide-8', { path: '/slide8' });
   this.route('slide-9', { path: '/slide9' });
   this.route('slide-10', { path: '/slide10' });
+  this.route('slide-11', { path: '/slide11' });
   this.route('table-of-contents');
   this.route('thank-you');
   this.route('timeline');

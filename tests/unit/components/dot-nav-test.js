@@ -330,13 +330,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /informing-the-debate-around-internet-security-and-trust', function(assert) {
+  test('should have correct menu items for /slide11', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'informing-the-debate-around-internet-security-and-trust');
+    set(component, 'router.currentRouteName', 'slide-11');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'informing-the-debate-around-internet-security-and-trust') {
+      if (menuItem.route === 'slide-11') {
         assert.strictEqual(
           menuItem.current,
           true,

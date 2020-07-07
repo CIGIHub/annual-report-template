@@ -56,7 +56,7 @@ module('Acceptance | exploring the four internets and the geopolitics of digital
     assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
   });
 
-  test('should transition to /informing-the-debate-around-internet-security-and-trust on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /slide11 on scroll-arrow-up-btn click', async function(assert) {
     await visit('/exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
 
     assert.ok(
@@ -66,7 +66,7 @@ module('Acceptance | exploring the four internets and the geopolitics of digital
     await click('.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/informing-the-debate-around-internet-security-and-trust');
+    assert.strictEqual(currentURL(), '/slide11');
   });
 
   test('should transition to /curbing-cultural-appropriation-through-intellectual-property-law on scroll-arrow-down-btn click', async function(assert) {

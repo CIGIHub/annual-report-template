@@ -70,7 +70,7 @@ module('Acceptance | slide 10', function(hooks) {
     assert.strictEqual(currentURL(), '/slide9');
   });
 
-  test('should transition to /informing-the-debate-around-internet-security-and-trust on scroll-arrow-down-btn-click', async function(assert) {
+  test('should transition to /slide11 on scroll-arrow-down-btn-click', async function(assert) {
     await visit('/slide10');
 
     assert.ok(
@@ -80,6 +80,6 @@ module('Acceptance | slide 10', function(hooks) {
     await click('.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/informing-the-debate-around-internet-security-and-trust');
+    assert.strictEqual(currentURL(), '/slide11');
   });
 });
