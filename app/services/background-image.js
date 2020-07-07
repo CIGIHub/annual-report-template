@@ -25,9 +25,9 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/slide-2-thumbnail.png',
     },
     'slide-3': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/multilateral-institutions-mark-a-tumultuous-year.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/multilateral-institutions-mark-a-tumultuous-year-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/multilateral-institutions-mark-a-tumultuous-year-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/slide-3.jpg',
+      ogUrl: 'template/slides/slide-3-og.jpg',
+      thumbnailUrl: 'template/slides/slide-3-thumbnail.jpg',
     },
     'slide-4': {
       fullSizeUrl: '5ab09e92875a54ff/slides/governing-cyberspace-during-a-crisis-in-trust.jpg',

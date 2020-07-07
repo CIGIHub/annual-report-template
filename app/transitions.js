@@ -130,6 +130,31 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
+    this.toRoute('slide-3'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('index'),
     this.toRoute('slide-4'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -580,6 +605,31 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
+    this.toRoute('slide-3'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('table-of-contents'),
     this.toRoute('slide-4'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -980,6 +1030,31 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
+    this.toRoute('slide-3'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('chairs-message'),
     this.toRoute('slide-4'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -1380,6 +1455,31 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
+    this.toRoute('slide-3'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('presidents-message'),
     this.toRoute('slide-4'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -1755,6 +1855,31 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-1'),
+    this.toRoute('slide-3'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-1'),
     this.toRoute('slide-4'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -2105,6 +2230,31 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-2'),
+    this.toRoute('slide-3'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-2'),
     this.toRoute('slide-4'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -2430,6 +2580,356 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-2'),
+    this.toRoute('thank-you'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-4'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-5'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-6'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-7'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-8'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-9'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-10'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-11'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-12'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-13'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-3'),
+    this.toRoute('outputs-and-activities'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-3'),
+    this.toRoute('timeline'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-3'),
+    this.toRoute('financials'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-3'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',
