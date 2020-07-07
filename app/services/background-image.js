@@ -30,9 +30,9 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/slide-3-thumbnail.jpg',
     },
     'slide-4': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/governing-cyberspace-during-a-crisis-in-trust.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/governing-cyberspace-during-a-crisis-in-trust-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/governing-cyberspace-during-a-crisis-in-trust-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/slide-4.jpg',
+      ogUrl: 'template/slides/slide-4-og.jpg',
+      thumbnailUrl: 'template/slides/slide-4-thumbnail.jpg',
     },
     'slide-5': {
       fullSizeUrl: '5ab09e92875a54ff/slides/innovation-nation-making-canada-a-leader-in-the-global-ideas-economy.jpg',
