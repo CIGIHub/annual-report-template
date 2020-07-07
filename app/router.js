@@ -8,7 +8,6 @@ export default class Router extends EmberRouter {
 
 Router.map(function() {
   this.route('chairs-message');
-  this.route('curbing-cultural-appropriation-through-intellectual-property-law');
   this.route('financials', function() {
     this.route('auditors-report');
     this.route('balance-sheet');
@@ -29,6 +28,7 @@ Router.map(function() {
   this.route('slide-10', { path: '/slide10' });
   this.route('slide-11', { path: '/slide11' });
   this.route('slide-12', { path: '/slide12' });
+  this.route('slide-13', { path: '/slide13' });
   this.route('table-of-contents');
   this.route('thank-you');
   this.route('timeline');

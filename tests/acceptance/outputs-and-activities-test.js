@@ -56,7 +56,7 @@ module('Acceptance | outputs and activities', function(hooks) {
     assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/outputs-and-activities');
   });
 
-  test('should transition to /curbing-cultural-appropriation-through-intellectual-property-law on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /slide13 on scroll-arrow-up-btn click', async function(assert) {
     await visit('/outputs-and-activities');
 
     assert.ok(
@@ -66,7 +66,7 @@ module('Acceptance | outputs and activities', function(hooks) {
     await click('.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/curbing-cultural-appropriation-through-intellectual-property-law');
+    assert.strictEqual(currentURL(), '/slide13');
   });
 
   test('should transition to /timeline on scroll-arrow-down-btn click', async function(assert) {

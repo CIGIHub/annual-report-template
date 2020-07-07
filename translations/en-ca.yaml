@@ -56,13 +56,6 @@ chairsMessage:
     title: 'Chair, CIGI Board of Directors'
   title: 'Chair’s Message'
 clear: 'Clear'
-curbingCulturalAppropriationThroughIntellectualPropertyLaw:
-  description: 'CIGI fellow Brigitte Vézina’s paper, Curbing Cultural Appropriation in the Fashion Industry calls on reform to intellectual property laws, as well as practical solutions for designers and consumers to put an end of cultural appropriation.'
-  paragraph1: 'From luxury brands like Gucci and Louis Vuitton to mainstream retailers like Urban Outfitters, many brands have developed a noticeable appetite for all things traditional, ethnic and folklore. When traditional cultural expressions (TCEs)—a term developed by the World Intellectual Property Organization that describes patterns, motifs and other design features created by traditional or Indigenous cultures—are appropriated it can cause profound cultural, social and economic harm for those who the TCE belongs to.'
-  paragraph2: 'CIGI fellow Brigitte Vézina’s paper, <em>Curbing Cultural Appropriation in the Fashion Industry</em> calls on reform to intellectual property laws, as well as practical solutions for designers and consumers to put an end of cultural appropriation. The paper garnered interest from engaged citizens to media interviews with the <em>Canadian Press</em> and <em>The Telegraph</em>.'
-  quote:
-    quote: 'There is a gray zone between harmful misuse and permissible inspiration that creates an ideal breeding ground for cultural appropriation. Putting an end to cultural appropriation would require reform to IP laws, principles and systems to better control cultural representation.'
-  title: 'Curbing Cultural Appropriation Through Intellectual Property Law'
 currency: '$'
 description: 'Explore a year of research, opinion and expertise in CIGI’s interactive annual report.'
 download: 'Download'
@@ -433,6 +426,18 @@ slide12:
     quote: 'Slide 12 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 12 Source English'
   title: 'Slide 12 Title English'
+slide13:
+  description: 'Slide 13 Description English'
+  link1: 'Slide 13 Link 1 English'
+  link2: 'Slide 13 Link 2 English'
+  link3: 'Slide 13 Link 3 English'
+  paragraph1: 'Slide 13 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
+  paragraph2: 'Slide 13 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
+  paragraph3: 'Slide 13 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  quote:
+    quote: 'Slide 13 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
+    source: 'Slide 13 Source English'
+  title: 'Slide 13 Title English'
 subscribe: 'Subscribe'
 survey: 'Survey'
 tableOfContents:

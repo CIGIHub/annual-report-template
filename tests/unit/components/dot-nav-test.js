@@ -154,13 +154,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /curbing-cultural-appropriation-through-intellectual-property-law', function(assert) {
+  test('should have correct menu items for /slide13', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'curbing-cultural-appropriation-through-intellectual-property-law');
+    set(component, 'router.currentRouteName', 'slide-13');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'curbing-cultural-appropriation-through-intellectual-property-law') {
+      if (menuItem.route === 'slide-13') {
         assert.strictEqual(
           menuItem.current,
           true,

@@ -84,9 +84,9 @@ export default Service.extend({
     title: 'slide12.title',
   }, {
     number: '15',
-    route: 'curbing-cultural-appropriation-through-intellectual-property-law',
+    route: 'slide-13',
     subRoutes: [],
-    title: 'curbingCulturalAppropriationThroughIntellectualPropertyLaw.title',
+    title: 'slide13.title',
   }, {
     number: '16',
     route: 'outputs-and-activities',

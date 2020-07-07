@@ -355,7 +355,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -805,7 +805,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1205,7 +1205,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1605,7 +1605,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1980,7 +1980,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-1'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2330,7 +2330,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-2'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2655,7 +2655,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-4'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2955,7 +2955,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-5'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3230,7 +3230,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-6'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3480,7 +3480,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-7'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3705,7 +3705,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-8'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3905,7 +3905,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-9'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -4080,7 +4080,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-10'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -4230,7 +4230,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-11'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -4355,7 +4355,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-12'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -4380,7 +4380,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-12'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -4504,7 +4504,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-13'),
     this.toRoute('outputs-and-activities'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4529,7 +4529,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-13'),
     this.toRoute('timeline'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4554,7 +4554,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-13'),
     this.toRoute('financials'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4579,7 +4579,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-13'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',

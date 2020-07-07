@@ -9,11 +9,6 @@ export default Service.extend({
       ogUrl: '5ab09e92875a54ff/slides/chairs-message-og.jpg',
       thumbnailUrl: '5ab09e92875a54ff/slides/chairs-message-thumbnail.jpg',
     },
-    'curbing-cultural-appropriation-through-intellectual-property-law': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/curbing-cultural-appropriation-through-intellectual-property-law.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/curbing-cultural-appropriation-through-intellectual-property-law-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/curbing-cultural-appropriation-through-intellectual-property-law-thumbnail.jpg',
-    },
     'presidents-message': {
       fullSizeUrl: '5ab09e92875a54ff/slides/presidents-message.jpg',
       ogUrl: '5ab09e92875a54ff/slides/presidents-message-og.jpg',
@@ -78,6 +73,11 @@ export default Service.extend({
       fullSizeUrl: '5ab09e92875a54ff/slides/exploring-the-four-internets-and-the-geopolitics-of-digital-governance.jpg',
       ogUrl: '5ab09e92875a54ff/slides/exploring-the-four-internets-and-the-geopolitics-of-digital-governance-og.jpg',
       thumbnailUrl: '5ab09e92875a54ff/slides/exploring-the-four-internets-and-the-geopolitics-of-digital-governance-thumbnail.jpg',
+    },
+    'slide-13': {
+      fullSizeUrl: '5ab09e92875a54ff/slides/curbing-cultural-appropriation-through-intellectual-property-law.jpg',
+      ogUrl: '5ab09e92875a54ff/slides/curbing-cultural-appropriation-through-intellectual-property-law-og.jpg',
+      thumbnailUrl: '5ab09e92875a54ff/slides/curbing-cultural-appropriation-through-intellectual-property-law-thumbnail.jpg',
     },
     'thank-you': {
       fullSizeUrl: '5ab09e92875a54ff/slides/thank-you.jpg',

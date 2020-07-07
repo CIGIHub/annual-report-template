@@ -20,17 +20,17 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   },
 
   afterModel() {
-    const title = `${this.intl.t('curbingCulturalAppropriationThroughIntellectualPropertyLaw.title')} | ${this.intl.t('title')}`;
+    const title = `${this.intl.t('slide13.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
-    set(this, 'headData.description', this.intl.t('curbingCulturalAppropriationThroughIntellectualPropertyLaw.description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}curbing-cultural-appropriation-through-intellectual-property-law/`);
-    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('curbing-cultural-appropriation-through-intellectual-property-law');
+    set(this, 'headData.description', this.intl.t('slide13.description'));
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}slide13/`);
+    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('slide-13');
     if (backgroundImage && backgroundImage.ogUrl) {
       set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('curbing-cultural-appropriation-through-intellectual-property-law');
+    const nextRoute = this.routeOrder.getNextRoute('slide-13');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {
