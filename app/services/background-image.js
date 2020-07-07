@@ -5,14 +5,14 @@ import Service from '@ember/service';
 export default Service.extend({
   backgroundImages: {
     'chairs-message': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/chairs-message.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/chairs-message-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/chairs-message-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/chairs-message.jpg',
+      ogUrl: 'template/slides/chairs-message-og.jpg',
+      thumbnailUrl: 'template/slides/chairs-message-thumbnail.jpg',
     },
     'presidents-message': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/presidents-message.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/presidents-message-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/presidents-message-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/presidents-message.jpg',
+      ogUrl: 'template/slides/presidents-message-og.jpg',
+      thumbnailUrl: 'template/slides/presidents-message-thumbnail.jpg',
     },
     'slide-1': {
       fullSizeUrl: '5ab09e92875a54ff/slides/building-closer-ties-between-canada-and-india.jpg',
@@ -118,13 +118,13 @@ export default Service.extend({
     '15338',
     '15364',
   ],
-  nodeS3Directory: '5ab09e92875a54ff',
+  nodeS3Directory: 'template',
 
   defaultBackground: computed('imageHost', function() {
     return {
-      fullSizeUrl: `${this.imageHost}5ab09e92875a54ff/cigi-campus.jpg`,
-      ogUrl: `${this.imageHost}5ab09e92875a54ff/cigi-campus-og.jpg`,
-      thumbnailUrl: `${this.imageHost}5ab09e92875a54ff/cigi-campus-thumbnail.jpg`,
+      fullSizeUrl: `${this.imageHost}template/cigi-campus.jpg`,
+      ogUrl: `${this.imageHost}template/cigi-campus-og.jpg`,
+      thumbnailUrl: `${this.imageHost}template/cigi-campus-thumbnail.jpg`,
     };
   }),
 
