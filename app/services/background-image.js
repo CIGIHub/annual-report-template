@@ -34,11 +34,6 @@ export default Service.extend({
       ogUrl: '5ab09e92875a54ff/slides/presidents-message-og.jpg',
       thumbnailUrl: '5ab09e92875a54ff/slides/presidents-message-thumbnail.jpg',
     },
-    'protecting-elections-from-foreign-interference': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/protecting-elections-from-foreign-interference.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/protecting-elections-from-foreign-interference-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/protecting-elections-from-foreign-interference-thumbnail.jpg',
-    },
     'slide-1': {
       fullSizeUrl: '5ab09e92875a54ff/slides/building-closer-ties-between-canada-and-india.jpg',
       ogUrl: '5ab09e92875a54ff/slides/building-closer-ties-between-canada-and-india-og.jpg',
@@ -78,6 +73,11 @@ export default Service.extend({
       fullSizeUrl: '5ab09e92875a54ff/slides/models-for-data-governance.jpg',
       ogUrl: '5ab09e92875a54ff/slides/models-for-data-governance-og.jpg',
       thumbnailUrl: '5ab09e92875a54ff/slides/models-for-data-governance-thumbnail.jpg',
+    },
+    'slide-9': {
+      fullSizeUrl: '5ab09e92875a54ff/slides/protecting-elections-from-foreign-interference.jpg',
+      ogUrl: '5ab09e92875a54ff/slides/protecting-elections-from-foreign-interference-og.jpg',
+      thumbnailUrl: '5ab09e92875a54ff/slides/protecting-elections-from-foreign-interference-thumbnail.jpg',
     },
     'thank-you': {
       fullSizeUrl: '5ab09e92875a54ff/slides/thank-you.jpg',

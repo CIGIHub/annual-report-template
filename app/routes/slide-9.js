@@ -20,17 +20,17 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   },
 
   afterModel() {
-    const title = `${this.intl.t('protectingElectionsFromForeignInterference.title')} | ${this.intl.t('title')}`;
+    const title = `${this.intl.t('slide9.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
-    set(this, 'headData.description', this.intl.t('protectingElectionsFromForeignInterference.description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}protecting-elections-from-foreign-interference/`);
-    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('protecting-elections-from-foreign-interference');
+    set(this, 'headData.description', this.intl.t('slide9.description'));
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}slide9/`);
+    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('slide-9');
     if (backgroundImage && backgroundImage.ogUrl) {
       set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('protecting-elections-from-foreign-interference');
+    const nextRoute = this.routeOrder.getNextRoute('slide-9');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {

@@ -440,13 +440,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /protecting-elections-from-foreign-interference', function(assert) {
+  test('should have correct menu items for /slide9', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'protecting-elections-from-foreign-interference');
+    set(component, 'router.currentRouteName', 'slide-9');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'protecting-elections-from-foreign-interference') {
+      if (menuItem.route === 'slide-9') {
         assert.strictEqual(
           menuItem.current,
           true,

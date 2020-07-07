@@ -57,7 +57,7 @@ module('Acceptance | a bretton woods moment for the digital age', function(hooks
     assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/a-bretton-woods-moment-for-the-digital-age');
   });
 
-  test('should transition to /protecting-elections-from-foreign-interference on scroll-arrow-up-btn-click', async function(assert) {
+  test('should transition to /slide9 on scroll-arrow-up-btn-click', async function(assert) {
     await visit('/a-bretton-woods-moment-for-the-digital-age');
 
     assert.ok(
@@ -67,7 +67,7 @@ module('Acceptance | a bretton woods moment for the digital age', function(hooks
     await click('.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/protecting-elections-from-foreign-interference');
+    assert.strictEqual(currentURL(), '/slide9');
   });
 
   test('should transition to /informing-the-debate-around-internet-security-and-trust on scroll-arrow-down-btn-click', async function(assert) {

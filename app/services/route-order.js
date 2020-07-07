@@ -64,9 +64,9 @@ export default Service.extend({
     title: 'slide8.title',
   }, {
     number: '11',
-    route: 'protecting-elections-from-foreign-interference',
+    route: 'slide-9',
     subRoutes: [],
-    title: 'protectingElectionsFromForeignInterference.title',
+    title: 'slide9.title',
   }, {
     number: '12',
     route: 'a-bretton-woods-moment-for-the-digital-age',

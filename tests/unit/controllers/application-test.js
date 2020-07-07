@@ -164,9 +164,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /protecting-elections-from-foreign-interference', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide9', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'protecting-elections-from-foreign-interference');
+    set(controller, 'router.currentRouteName', 'slide-9');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -332,9 +332,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
 
-  test('should have hideMobileOverlay=false for /protecting-elections-from-foreign-interference', function(assert) {
+  test('should have hideMobileOverlay=false for /slide9', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'protecting-elections-from-foreign-interference');
+    set(controller, 'router.currentRouteName', 'slide-9');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -554,9 +554,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /protecting-elections-from-foreign-interference', function(assert) {
+  test('should have lightBackground=false for /slide9', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'protecting-elections-from-foreign-interference');
+    set(controller, 'router.currentRouteName', 'slide-9');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -728,9 +728,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /protecting-elections-from-foreign-interference', function(assert) {
+  test('should have scrollableContentPage=true for /slide9', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'protecting-elections-from-foreign-interference');
+    set(controller, 'router.currentRouteName', 'slide-9');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -906,9 +906,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /protecting-elections-from-foreign-interference', function(assert) {
+  test('should have showDotNav=true for /slide9', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'protecting-elections-from-foreign-interference');
+    set(controller, 'router.currentRouteName', 'slide-9');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });

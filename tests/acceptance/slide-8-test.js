@@ -69,7 +69,7 @@ module('Acceptance | slide 8', function(hooks) {
     assert.strictEqual(currentURL(), '/slide7');
   });
 
-  test('should transition to /protecting-elections-from-foreign-interference on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /slide9 on scroll-arrow-down-btn click', async function(assert) {
     await visit('/slide8');
 
     assert.ok(
@@ -79,6 +79,6 @@ module('Acceptance | slide 8', function(hooks) {
     await click('.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/protecting-elections-from-foreign-interference');
+    assert.strictEqual(currentURL(), '/slide9');
   });
 });
