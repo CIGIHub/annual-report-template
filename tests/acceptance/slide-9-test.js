@@ -69,7 +69,7 @@ module('Acceptance | slide 9', function(hooks) {
     assert.strictEqual(currentURL(), '/slide8');
   });
 
-  test('should transition to /a-bretton-woods-moment-for-the-digital-age on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /slide10 on scroll-arrow-down-btn click', async function(assert) {
     await visit('/slide9');
 
     assert.ok(
@@ -79,6 +79,6 @@ module('Acceptance | slide 9', function(hooks) {
     await click('.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/a-bretton-woods-moment-for-the-digital-age');
+    assert.strictEqual(currentURL(), '/slide10');
   });
 });

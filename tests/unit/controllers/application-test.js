@@ -31,9 +31,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), true);
   });
 
-  test('should have bounceScrollArrowDown=false for /a-bretton-woods-moment-for-the-digital-age', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide10', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'a-bretton-woods-moment-for-the-digital-age');
+    set(controller, 'router.currentRouteName', 'slide-10');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -199,9 +199,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /a-bretton-woods-moment-for-the-digital-age', function(assert) {
+  test('should have hideMobileOverlay=false for /slide10', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'a-bretton-woods-moment-for-the-digital-age');
+    set(controller, 'router.currentRouteName', 'slide-10');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -370,9 +370,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /a-bretton-woods-moment-for-the-digital-age', function(assert) {
+  test('should have lightBackground=false for /slide10', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'a-bretton-woods-moment-for-the-digital-age');
+    set(controller, 'router.currentRouteName', 'slide-10');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -595,9 +595,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), false);
   });
 
-  test('should have scrollableContentPage=true for /a-bretton-woods-moment-for-the-digital-age', function(assert) {
+  test('should have scrollableContentPage=true for /slide10', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'a-bretton-woods-moment-for-the-digital-age');
+    set(controller, 'router.currentRouteName', 'slide-10');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -773,9 +773,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /a-bretton-woods-moment-for-the-digital-age', function(assert) {
+  test('should have showDotNav=true for /slide10', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'a-bretton-woods-moment-for-the-digital-age');
+    set(controller, 'router.currentRouteName', 'slide-10');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });

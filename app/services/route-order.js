@@ -69,9 +69,9 @@ export default Service.extend({
     title: 'slide9.title',
   }, {
     number: '12',
-    route: 'a-bretton-woods-moment-for-the-digital-age',
+    route: 'slide-10',
     subRoutes: [],
-    title: 'aBrettonWoodsMomentForTheDigitalAge.title',
+    title: 'slide10.title',
   }, {
     number: '13',
     route: 'informing-the-debate-around-internet-security-and-trust',

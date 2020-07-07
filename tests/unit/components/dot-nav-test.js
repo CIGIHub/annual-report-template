@@ -44,13 +44,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /a-bretton-woods-moment-for-the-digital-age', function(assert) {
+  test('should have correct menu items for /slide10', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'a-bretton-woods-moment-for-the-digital-age');
+    set(component, 'router.currentRouteName', 'slide-10');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'a-bretton-woods-moment-for-the-digital-age') {
+      if (menuItem.route === 'slide-10') {
         assert.strictEqual(
           menuItem.current,
           true,

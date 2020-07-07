@@ -4,11 +4,6 @@ import Service from '@ember/service';
 
 export default Service.extend({
   backgroundImages: {
-    'a-bretton-woods-moment-for-the-digital-age': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/a-bretton-woods-moment-for-the-digital-age.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/a-bretton-woods-moment-for-the-digital-age-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/a-bretton-woods-moment-for-the-digital-age-thumbnail.jpg',
-    },
     'chairs-message': {
       fullSizeUrl: '5ab09e92875a54ff/slides/chairs-message.jpg',
       ogUrl: '5ab09e92875a54ff/slides/chairs-message-og.jpg',
@@ -78,6 +73,11 @@ export default Service.extend({
       fullSizeUrl: '5ab09e92875a54ff/slides/protecting-elections-from-foreign-interference.jpg',
       ogUrl: '5ab09e92875a54ff/slides/protecting-elections-from-foreign-interference-og.jpg',
       thumbnailUrl: '5ab09e92875a54ff/slides/protecting-elections-from-foreign-interference-thumbnail.jpg',
+    },
+    'slide-10': {
+      fullSizeUrl: '5ab09e92875a54ff/slides/a-bretton-woods-moment-for-the-digital-age.jpg',
+      ogUrl: '5ab09e92875a54ff/slides/a-bretton-woods-moment-for-the-digital-age-og.jpg',
+      thumbnailUrl: '5ab09e92875a54ff/slides/a-bretton-woods-moment-for-the-digital-age-thumbnail.jpg',
     },
     'thank-you': {
       fullSizeUrl: '5ab09e92875a54ff/slides/thank-you.jpg',

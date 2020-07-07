@@ -7,7 +7,6 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-  this.route('a-bretton-woods-moment-for-the-digital-age');
   this.route('chairs-message');
   this.route('curbing-cultural-appropriation-through-intellectual-property-law');
   this.route('exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
@@ -29,6 +28,7 @@ Router.map(function() {
   this.route('slide-7', { path: '/slide7' });
   this.route('slide-8', { path: '/slide8' });
   this.route('slide-9', { path: '/slide9' });
+  this.route('slide-10', { path: '/slide10' });
   this.route('table-of-contents');
   this.route('thank-you');
   this.route('timeline');

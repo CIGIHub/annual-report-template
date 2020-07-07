@@ -20,17 +20,17 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   },
 
   afterModel() {
-    const title = `${this.intl.t('aBrettonWoodsMomentForTheDigitalAge.title')} | ${this.intl.t('title')}`;
+    const title = `${this.intl.t('slide10.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
-    set(this, 'headData.description', this.intl.t('aBrettonWoodsMomentForTheDigitalAge.description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}a-bretton-woods-moment-for-the-digital-age/`);
-    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('a-bretton-woods-moment-for-the-digital-age');
+    set(this, 'headData.description', this.intl.t('slide10.description'));
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}slide10/`);
+    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('slide-10');
     if (backgroundImage && backgroundImage.ogUrl) {
       set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('a-bretton-woods-moment-for-the-digital-age');
+    const nextRoute = this.routeOrder.getNextRoute('slide-10');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {

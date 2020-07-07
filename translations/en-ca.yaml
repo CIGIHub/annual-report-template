@@ -1,11 +1,3 @@
-aBrettonWoodsMomentForTheDigitalAge:
-  description: ''
-  link1: 'Watch Jim Balsillie and the IMF’s Christine Lagarde discuss measuring the digital economy.'
-  link2: 'Read Rohinton P. Medhora’s recommendations for rethinking policy in a digital age'
-  quote:
-    quote: '“Any data collected can be reprocessed and analyzed in new ways in the future that are unanticipated at the time of collection and this has major implications for the global economy and for democracy.”'
-    source: 'Jim Balsillie'
-  title: 'A Bretton Woods Moment for the Digital Age'
 acknowledgements:
   board: 'Board'
   cfo: 'Chief Financial Officer and Director of Operations'
@@ -429,6 +421,18 @@ slide9:
     quote: 'Slide 9 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 9 Source English'
   title: 'Slide 9 Title English'
+slide10:
+  description: 'Slide 10 Description English'
+  link1: 'Slide 10 Link 1 English'
+  link2: 'Slide 10 Link 2 English'
+  link3: 'Slide 10 Link 3 English'
+  paragraph1: 'Slide 10 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
+  paragraph2: 'Slide 10 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
+  paragraph3: 'Slide 10 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  quote:
+    quote: 'Slide 10 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
+    source: 'Slide 10 Source English'
+  title: 'Slide 10 Title English'
 subscribe: 'Subscribe'
 survey: 'Survey'
 tableOfContents:

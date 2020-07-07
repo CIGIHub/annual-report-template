@@ -56,7 +56,7 @@ module('Acceptance | informing the debate around internet security and trust', f
     assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/informing-the-debate-around-internet-security-and-trust');
   });
 
-  test('should transition to /a-bretton-woods-moment-for-the-digital-age on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /slide10 on scroll-arrow-up-btn click', async function(assert) {
     await visit('/informing-the-debate-around-internet-security-and-trust');
 
     assert.ok(
@@ -66,7 +66,7 @@ module('Acceptance | informing the debate around internet security and trust', f
     await click('.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/a-bretton-woods-moment-for-the-digital-age');
+    assert.strictEqual(currentURL(), '/slide10');
   });
 
   test('should transition to /exploring-the-four-internets-and-the-geopolitics-of-digital-governance on scroll-arrow-down-btn click', async function(assert) {

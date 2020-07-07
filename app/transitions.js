@@ -280,7 +280,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -730,7 +730,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1130,7 +1130,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1530,7 +1530,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1905,7 +1905,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-1'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2255,7 +2255,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-2'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2580,7 +2580,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-4'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2880,7 +2880,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-5'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3155,7 +3155,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-6'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3405,7 +3405,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-7'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3630,7 +3630,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-8'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3830,7 +3830,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-9'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -4029,7 +4029,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-10'),
     this.toRoute('informing-the-debate-around-internet-security-and-trust'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4054,7 +4054,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-10'),
     this.toRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4079,7 +4079,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-10'),
     this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4104,7 +4104,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-10'),
     this.toRoute('outputs-and-activities'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4129,7 +4129,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-10'),
     this.toRoute('timeline'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4154,7 +4154,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-10'),
     this.toRoute('financials'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4179,7 +4179,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-10'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',
