@@ -44,7 +44,19 @@ module('Acceptance | governing the digital public sphere', function(hooks) {
     );
   });
 
-  test('should transition to /governing-cyberspace-during-a-crisis-in-trust on scroll-arrow-up-btn click', async function(assert) {
+  test('should have correct twitter share link', async function(assert) {
+    await visit('/governing-the-digital-public-sphere');
+
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/governing-the-digital-public-sphere');
+  });
+
+  test('should have correct linkedin share link', async function(assert) {
+    await visit('/governing-the-digital-public-sphere');
+
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/governing-the-digital-public-sphere');
+  });
+
+  test('should transition to /slide4 on scroll-arrow-up-btn click', async function(assert) {
     await visit('/governing-the-digital-public-sphere');
 
     assert.ok(
@@ -54,7 +66,7 @@ module('Acceptance | governing the digital public sphere', function(hooks) {
     await click('.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/governing-cyberspace-during-a-crisis-in-trust');
+    assert.strictEqual(currentURL(), '/slide4');
   });
 
   test('should transition to /media-and-mass-atrocity-the-rwanda-genocide-and-beyond on scroll-arrow-down-btn click', async function(assert) {

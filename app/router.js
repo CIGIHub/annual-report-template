@@ -18,7 +18,6 @@ Router.map(function() {
     this.route('notes');
     this.route('revenue-and-expenses');
   });
-  this.route('governing-cyberspace-during-a-crisis-in-trust');
   this.route('governing-the-digital-public-sphere');
   this.route('informing-the-debate-around-internet-security-and-trust');
   this.route('media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
@@ -29,6 +28,7 @@ Router.map(function() {
   this.route('slide-1', { path: '/slide1' });
   this.route('slide-2', { path: '/slide2' });
   this.route('slide-3', { path: '/slide3' });
+  this.route('slide-4', { path: '/slide4' });
   this.route('table-of-contents');
   this.route('thank-you');
   this.route('timeline');

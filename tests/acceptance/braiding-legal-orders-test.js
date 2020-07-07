@@ -44,6 +44,18 @@ module('Acceptance | braiding legal orders', function(hooks) {
     );
   });
 
+  test('should have correct twitter share link', async function(assert) {
+    await visit('/braiding-legal-orders');
+
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/braiding-legal-orders');
+  });
+
+  test('should have correct linkedin share link', async function(assert) {
+    await visit('/braiding-legal-orders');
+
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/braiding-legal-orders');
+  });
+
   test('should transition to /media-and-mass-atrocity-the-rwanda-genocide-and-beyond on scroll-arrow-up-btn click', async function(assert) {
     await visit('/braiding-legal-orders');
 

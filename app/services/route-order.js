@@ -39,9 +39,9 @@ export default Service.extend({
     title: 'slide3.title',
   }, {
     number: '06',
-    route: 'governing-cyberspace-during-a-crisis-in-trust',
+    route: 'slide-4',
     subRoutes: [],
-    title: 'governingCyberspaceDuringACrisisInTrust.title',
+    title: 'slide4.title',
   }, {
     number: '07',
     route: 'governing-the-digital-public-sphere',

@@ -53,6 +53,18 @@ module('Acceptance | index', function(hooks) {
     );
   });
 
+  test('should have correct twitter share link', async function(assert) {
+    await visit('/');
+
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/');
+  });
+
+  test('should have correct linkedin share link', async function(assert) {
+    await visit('/');
+
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/');
+  });
+
   test('should transition to /table-of-contents on scroll-arrow-down-btn click', async function(assert) {
     await visit('/');
 

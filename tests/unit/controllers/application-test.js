@@ -108,9 +108,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /governing-cyberspace-during-a-crisis-in-trust', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide4', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-cyberspace-during-a-crisis-in-trust');
+    set(controller, 'router.currentRouteName', 'slide-4');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -276,9 +276,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
 
-  test('should have hideMobileOverlay=false for /governing-cyberspace-during-a-crisis-in-trust', function(assert) {
+  test('should have hideMobileOverlay=false for /slide4', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-cyberspace-during-a-crisis-in-trust');
+    set(controller, 'router.currentRouteName', 'slide-4');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -474,9 +474,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /governing-cyberspace-during-a-crisis-in-trust', function(assert) {
+  test('should have lightBackground=false for /slide4', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-cyberspace-during-a-crisis-in-trust');
+    set(controller, 'router.currentRouteName', 'slide-4');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -672,9 +672,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /governing-cyberspace-during-a-crisis-in-trust', function(assert) {
+  test('should have scrollableContentPage=true for /slide4', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-cyberspace-during-a-crisis-in-trust');
+    set(controller, 'router.currentRouteName', 'slide-4');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -850,9 +850,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /governing-cyberspace-during-a-crisis-in-trust', function(assert) {
+  test('should have showDotNav=true for /slide4', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-cyberspace-during-a-crisis-in-trust');
+    set(controller, 'router.currentRouteName', 'slide-4');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });

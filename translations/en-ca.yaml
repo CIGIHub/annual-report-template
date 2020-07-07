@@ -275,17 +275,6 @@ financials:
     total2017: '2017 Total'
     total2018: '2018 Total'
   title: 'Financials'
-governingCyberspaceDuringACrisisInTrust:
-  description: 'It is almost impossible to read the news without coming across a lead story cataloguing the latest cyber breach or misuse of data. The volume of these events lays bare the paradox of the digital economy and cyber security: technology has led to convenience, efficiency and wealth creation, but the push to digitize society quickly and relentlessly has meant building vulnerability into the core of the global economic model.'
-  link1: 'Explore the full essay series'
-  link2: 'Read Melissa Hathaway’s essay on the risks associated with digital transformation'
-  link3: 'Watch Neil Desai’s video about challenges of policing cybercrime'
-  paragraph1: 'Nearly every day we read news stories about the latest cyber attack, data breach or misuse of people’s personal data. With so many attacks online, balancing the benefits of our rapidly growing digital economy while attempting to ensure security online, not to mentioning instilling trust among users, has become a challenge. Technology has led to convenience, efficiency and wealth creation. But the push to digitize society quickly and relentlessly has meant building vulnerability into the core of the global economic model.'
-  paragraph2: 'With this paradox in mind, CIGI responded by bringing together policy makers, industry leaders and academics to create an essay series titled Governing Cyberspace during a Crisis in Trust. The digital essays and accompanying multimedia generated strong social engagement — in part through a lively Twitter chat — and notable website traffic: more than 90,000 views combined in the first month of publication. The series was also printed as a magazine that was widely distributed to government officials and senior public servants.'
-  quote:
-    quote: '“Cyberspace presents both threats and opportunities — at the same time — and the collective challenge is to advance policy that can best maximize the opportunities while mitigating the threats in a constantly changing global environment.”'
-    source: 'Aaron Shull, in the Governing Cyberspace during a Crisis in Trust essay series.'
-  title: 'Governing Cyberspace during a Crisis in Trust'
 governingTheDigitalPublicSphere:
   description: 'The 2016 US election revealed both malicious uses of technology and structural problems in the digital infrastructure itself. Since then, there have been a striking number of cases of commercially and politically driven misinformation, foreign interference in elections, data breaches, cyber attacks, the proliferation of harmful speech, data exploitation and surveillance abuses.'
   paragraph1: 'The 2016 US election revealed both malicious uses of technology and structural problems in the digital infrastructure itself. Since then, there have been a striking number of cases of commercially and politically driven misinformation, foreign interference in elections, data breaches, cyber attacks, the proliferation of harmful speech, data exploitation and surveillance abuses.'
@@ -411,6 +400,18 @@ slide3:
     quote: 'Slide 3 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 3 Source English'
   title: 'Slide 3 Title English'
+slide4:
+  description: 'Slide 4 Description English'
+  link1: 'Slide 4 Link 1 English'
+  link2: 'Slide 4 Link 2 English'
+  link3: 'Slide 4 Link 3 English'
+  paragraph1: 'Slide 4 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
+  paragraph2: 'Slide 4 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
+  paragraph3: 'Slide 4 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  quote:
+    quote: 'Slide 4 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
+    source: 'Slide 4 Source English'
+  title: 'Slide 4 Title English'
 subscribe: 'Subscribe'
 survey: 'Survey'
 tableOfContents:

@@ -44,6 +44,18 @@ module('Acceptance | protecting elections from foreign interference', function(h
     );
   });
 
+  test('should have correct twitter share link', async function(assert) {
+    await visit('/protecting-elections-from-foreign-interference');
+
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/protecting-elections-from-foreign-interference');
+  });
+
+  test('should have correct linkedin share link', async function(assert) {
+    await visit('/protecting-elections-from-foreign-interference');
+
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/protecting-elections-from-foreign-interference');
+  });
+
   test('should transition to /models-for-data-governance on scroll-arrow-up-btn click', async function(assert) {
     await visit('/protecting-elections-from-foreign-interference');
 

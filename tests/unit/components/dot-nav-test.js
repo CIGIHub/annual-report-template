@@ -286,13 +286,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /governing-cyberspace-during-a-crisis-in-trust', function(assert) {
+  test('should have correct menu items for /slide4', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'governing-cyberspace-during-a-crisis-in-trust');
+    set(component, 'router.currentRouteName', 'slide-4');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'governing-cyberspace-during-a-crisis-in-trust') {
+      if (menuItem.route === 'slide-4') {
         assert.strictEqual(
           menuItem.current,
           true,

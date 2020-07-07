@@ -57,7 +57,7 @@ module('Acceptance | slide 3', function(hooks) {
     assert.strictEqual(currentURL(), '/slide2');
   });
 
-  test('should transition to /governing-cyberspace-during-a-crisis-in-trust on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /slide4 on scroll-arrow-down-btn click', async function(assert) {
     await visit('/slide3');
 
     assert.ok(
@@ -67,6 +67,6 @@ module('Acceptance | slide 3', function(hooks) {
     await click('.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/governing-cyberspace-during-a-crisis-in-trust');
+    assert.strictEqual(currentURL(), '/slide4');
   });
 });

@@ -44,6 +44,18 @@ module('Acceptance | curbing cultural appropriation through intellectual propert
     );
   });
 
+  test('should have correct twitter share link', async function(assert) {
+    await visit('/curbing-cultural-appropriation-through-intellectual-property-law');
+
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/curbing-cultural-appropriation-through-intellectual-property-law');
+  });
+
+  test('should have correct linkedin share link', async function(assert) {
+    await visit('/curbing-cultural-appropriation-through-intellectual-property-law');
+
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/curbing-cultural-appropriation-through-intellectual-property-law');
+  });
+
   test('should transition to /exploring-the-four-internets-and-the-geopolitics-of-digital-governance on scroll-arrow-up-btn click', async function(assert) {
     await visit('/curbing-cultural-appropriation-through-intellectual-property-law');
 
