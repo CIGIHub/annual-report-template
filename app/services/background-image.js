@@ -35,9 +35,9 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/slide-4-thumbnail.jpg',
     },
     'slide-5': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/innovation-nation-making-canada-a-leader-in-the-global-ideas-economy.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/innovation-nation-making-canada-a-leader-in-the-global-ideas-economy-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/innovation-nation-making-canada-a-leader-in-the-global-ideas-economy-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/slide-5.jpg',
+      ogUrl: 'template/slides/slide-5-og.jpg',
+      thumbnailUrl: 'template/slides/slide-5-thumbnail.jpg',
     },
     'slide-6': {
       fullSizeUrl: '5ab09e92875a54ff/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.jpg',
