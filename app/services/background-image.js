@@ -69,6 +69,11 @@ export default Service.extend({
       ogUrl: '5ab09e92875a54ff/slides/a-clarion-call-for-protecting-the-worlds-refugees-og.png',
       thumbnailUrl: '5ab09e92875a54ff/slides/a-clarion-call-for-protecting-the-worlds-refugees-thumbnail.png',
     },
+    'slide-3': {
+      fullSizeUrl: '5ab09e92875a54ff/slides/multilateral-institutions-mark-a-tumultuous-year.jpg',
+      ogUrl: '5ab09e92875a54ff/slides/multilateral-institutions-mark-a-tumultuous-year-og.jpg',
+      thumbnailUrl: '5ab09e92875a54ff/slides/multilateral-institutions-mark-a-tumultuous-year-thumbnail.jpg',
+    },
     'thank-you': {
       fullSizeUrl: '5ab09e92875a54ff/slides/thank-you.jpg',
       ogUrl: '5ab09e92875a54ff/slides/thank-you-og.jpg',

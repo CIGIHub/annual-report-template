@@ -57,7 +57,7 @@ module('Acceptance | slide 2', function(hooks) {
     assert.strictEqual(currentURL(), '/slide1');
   });
 
-  test('should transition to /multilateral-institutions-mark-a-tumultuous-year on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /slide3 on scroll-arrow-down-btn click', async function(assert) {
     await visit('/slide2');
 
     assert.ok(
@@ -67,6 +67,6 @@ module('Acceptance | slide 2', function(hooks) {
     await click('.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/multilateral-institutions-mark-a-tumultuous-year');
+    assert.strictEqual(currentURL(), '/slide3');
   });
 });

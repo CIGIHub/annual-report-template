@@ -44,7 +44,7 @@ module('Acceptance | governing cyberspace during a crisis in trust', function(ho
     );
   });
 
-  test('should transition to /multilateral-institutions-mark-a-tumultuous-year on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /slide3 on scroll-arrow-up-btn click', async function(assert) {
     await visit('/governing-cyberspace-during-a-crisis-in-trust');
 
     assert.ok(
@@ -54,7 +54,7 @@ module('Acceptance | governing cyberspace during a crisis in trust', function(ho
     await click('.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/multilateral-institutions-mark-a-tumultuous-year');
+    assert.strictEqual(currentURL(), '/slide3');
   });
 
   test('should transition to /governing-the-digital-public-sphere on scroll-arrow-down-btn click', async function(assert) {

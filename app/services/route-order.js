@@ -34,9 +34,9 @@ export default Service.extend({
     title: 'slide2.title',
   }, {
     number: '05',
-    route: 'multilateral-institutions-mark-a-tumultuous-year',
+    route: 'slide-3',
     subRoutes: [],
-    title: 'multilateralInstitutionsMarkATumultuousYear.title',
+    title: 'slide3.title',
   }, {
     number: '06',
     route: 'governing-cyberspace-during-a-crisis-in-trust',

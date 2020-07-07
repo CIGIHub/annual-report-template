@@ -20,17 +20,17 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   },
 
   afterModel() {
-    const title = `${this.intl.t('multilateralInstitutionsMarkATumultuousYear.title')} | ${this.intl.t('title')}`;
+    const title = `${this.intl.t('slide3.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
-    set(this, 'headData.description', this.intl.t('multilateralInstitutionsMarkATumultuousYear.description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}multilateral-institutions-mark-a-tumultuous-year/`);
-    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('multilateral-institutions-mark-a-tumultuous-year');
+    set(this, 'headData.description', this.intl.t('slide3.description'));
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}slide3/`);
+    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('slide-3');
     if (backgroundImage && backgroundImage.ogUrl) {
       set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('multilateral-institutions-mark-a-tumultuous-year');
+    const nextRoute = this.routeOrder.getNextRoute('slide-3');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {

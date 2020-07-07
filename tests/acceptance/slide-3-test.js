@@ -3,33 +3,33 @@ import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Acceptance | multilateral institutions mark a tumultuous year', function(hooks) {
+module('Acceptance | slide 3', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('visiting /multilateral-institutions-mark-a-tumultuous-year', async function(assert) {
-    await visit('/multilateral-institutions-mark-a-tumultuous-year');
+  test('visiting /slide3', async function(assert) {
+    await visit('/slide3');
 
-    assert.equal(currentURL(), '/multilateral-institutions-mark-a-tumultuous-year');
+    assert.equal(currentURL(), '/slide3');
   });
 
   test('should have correct head title', async function(assert) {
-    await visit('/multilateral-institutions-mark-a-tumultuous-year');
+    await visit('/slide3');
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
-      'Multilateral Institutions Mark a Tumultuous Year | 2019 CIGI Annual Report',
+      'Slide 3 Title English | 2019 CIGI Annual Report',
     );
   });
 
   test('should have correct head description', async function(assert) {
-    await visit('/multilateral-institutions-mark-a-tumultuous-year');
+    await visit('/slide3');
     assert.strictEqual(
       document.querySelector('head meta[property="og:description"]').getAttribute('content'),
-      'In advance of the G20 summit in Buenos Aires, CIGI published an in-depth interview and companion video with former Canadian Prime Minister Paul Martin to discuss the history and future of the G20.',
+      'Slide 3 Description English',
     );
   });
 
   test('should have correct head site name', async function(assert) {
-    await visit('/multilateral-institutions-mark-a-tumultuous-year');
+    await visit('/slide3');
     assert.strictEqual(
       document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
       '2019 CIGI Annual Report',
@@ -37,15 +37,15 @@ module('Acceptance | multilateral institutions mark a tumultuous year', function
   });
 
   test('should have correct head url', async function(assert) {
-    await visit('/multilateral-institutions-mark-a-tumultuous-year');
+    await visit('/slide3');
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/multilateral-institutions-mark-a-tumultuous-year/',
+      'https://www.cigionline.org/interactives/2019annualreport/slide3/',
     );
   });
 
   test('should transition to /slide2 on scroll-arrow-up-btn click', async function(assert) {
-    await visit('/multilateral-institutions-mark-a-tumultuous-year');
+    await visit('/slide3');
 
     assert.ok(
       document.querySelector('.scroll-arrow-up-btn'),
@@ -58,7 +58,7 @@ module('Acceptance | multilateral institutions mark a tumultuous year', function
   });
 
   test('should transition to /governing-cyberspace-during-a-crisis-in-trust on scroll-arrow-down-btn click', async function(assert) {
-    await visit('/multilateral-institutions-mark-a-tumultuous-year');
+    await visit('/slide3');
 
     assert.ok(
       document.querySelector('.scroll-arrow-down-btn'),

@@ -23,12 +23,12 @@ Router.map(function() {
   this.route('informing-the-debate-around-internet-security-and-trust');
   this.route('media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
   this.route('models-for-data-governance');
-  this.route('multilateral-institutions-mark-a-tumultuous-year');
   this.route('outputs-and-activities');
   this.route('presidents-message');
   this.route('protecting-elections-from-foreign-interference');
   this.route('slide-1', { path: '/slide1' });
   this.route('slide-2', { path: '/slide2' });
+  this.route('slide-3', { path: '/slide3' });
   this.route('table-of-contents');
   this.route('thank-you');
   this.route('timeline');
