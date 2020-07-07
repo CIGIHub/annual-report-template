@@ -70,18 +70,6 @@ downloadPdf: 'Download PDF'
 essay: 'Essay'
 essaySeries: 'Essay Series'
 events: 'Events'
-exploringTheFourInternetsAndTheGeopoliticsOfDigitalGovernance:
-  description: 'While the internet may have originally been designed to be open and transparent, its entrenchment in our daily lives has led to competing views on the role it should play in society and how it should be governed.'
-  link1: 'Read Kieron O’Hara and Wendy Hall’s paper, <em>Four Internets: The Geopolitics of Digital Governance</em>.'
-  link2: 'Kieron O’Hara and Wendy Hall discuss the “four internets” and how geopolitics plays into these competing visions.'
-  paragraph1: 'While the internet may have originally been designed to be open and transparent, its entrenchment in our daily lives has led to competing views on the role it should play in society and how it should be governed.'
-  paragraph2: 'In this CIGI paper, <em>Four Internets: The Geopolitics of Digital Governance</em>, authors Kieron O’Hara and Wendy Hall argue that these competing views have led to at least four competing “internets” — each with its own vision and geopolitical champion:'
-  paragraph3: '-Silicon Valley’s Open Internet, which espouses the traditional openness and transparency that the internet’s creators had in mind<br />-Brussels’ Bourgeois Internet, where bad behaviour is minimized and privacy protected<br />-Beijing’s Authoritarian Internet, where surveillance and identification technologies ensure social cohesion and security<br />-Washington, DC’s Commercial Internet, which views online resources as private property that owners can monetize and exclude others from using'
-  paragraph4: 'Since its release, the paper has garnered significant attention, including media coverage from BBC News, the <em>Financial Times</em> and <em>The Telegraph</em>, and prompted considerable discussion on the challenges of establishing a common digital governance framework given these competing internet visions.'
-  quote:
-    quote: '"We need to be prepared for the internet that we know to evolve unpredictably, and work to ensure that it remains beneficial for humankind."'
-    source: 'Kieron O’Hara and Wendy Hall'
-  title: 'Exploring the "Four Internets" and the Geopolitics of Digital Governance'
 financials:
   auditorsReport:
     auditorResponsibility:
@@ -433,6 +421,18 @@ slide11:
     quote: 'Slide 11 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 11 Source English'
   title: 'Slide 11 Title English'
+slide12:
+  description: 'Slide 12 Description English'
+  link1: 'Slide 12 Link 1 English'
+  link2: 'Slide 12 Link 2 English'
+  link3: 'Slide 12 Link 3 English'
+  paragraph1: 'Slide 12 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
+  paragraph2: 'Slide 12 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
+  paragraph3: 'Slide 12 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  quote:
+    quote: 'Slide 12 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
+    source: 'Slide 12 Source English'
+  title: 'Slide 12 Title English'
 subscribe: 'Subscribe'
 survey: 'Survey'
 tableOfContents:

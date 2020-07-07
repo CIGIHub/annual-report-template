@@ -56,7 +56,7 @@ module('Acceptance | curbing cultural appropriation through intellectual propert
     assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/curbing-cultural-appropriation-through-intellectual-property-law');
   });
 
-  test('should transition to /exploring-the-four-internets-and-the-geopolitics-of-digital-governance on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /slide12 on scroll-arrow-up-btn click', async function(assert) {
     await visit('/curbing-cultural-appropriation-through-intellectual-property-law');
 
     assert.ok(
@@ -66,7 +66,7 @@ module('Acceptance | curbing cultural appropriation through intellectual propert
     await click('.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
+    assert.strictEqual(currentURL(), '/slide12');
   });
 
   test('should transition to /outputs-and-activities on scroll-arrow-down-btn click', async function(assert) {

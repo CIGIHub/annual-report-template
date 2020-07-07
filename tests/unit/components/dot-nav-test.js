@@ -176,13 +176,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /exploring-the-four-internets-and-the-geopolitics-of-digital-governance', function(assert) {
+  test('should have correct menu items for /slide12', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
+    set(component, 'router.currentRouteName', 'slide-12');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'exploring-the-four-internets-and-the-geopolitics-of-digital-governance') {
+      if (menuItem.route === 'slide-12') {
         assert.strictEqual(
           menuItem.current,
           true,

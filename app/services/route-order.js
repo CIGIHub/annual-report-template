@@ -79,9 +79,9 @@ export default Service.extend({
     title: 'slide11.title',
   }, {
     number: '14',
-    route: 'exploring-the-four-internets-and-the-geopolitics-of-digital-governance',
+    route: 'slide-12',
     subRoutes: [],
-    title: 'exploringTheFourInternetsAndTheGeopoliticsOfDigitalGovernance.title',
+    title: 'slide12.title',
   }, {
     number: '15',
     route: 'curbing-cultural-appropriation-through-intellectual-property-law',

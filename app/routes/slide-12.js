@@ -20,17 +20,17 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   },
 
   afterModel() {
-    const title = `${this.intl.t('exploringTheFourInternetsAndTheGeopoliticsOfDigitalGovernance.title')} | ${this.intl.t('title')}`;
+    const title = `${this.intl.t('slide12.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
-    set(this, 'headData.description', this.intl.t('exploringTheFourInternetsAndTheGeopoliticsOfDigitalGovernance.description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}exploring-the-four-internets-and-the-geopolitics-of-digital-governance/`);
-    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
+    set(this, 'headData.description', this.intl.t('slide12.description'));
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}slide12/`);
+    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('slide-12');
     if (backgroundImage && backgroundImage.ogUrl) {
       set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
+    const nextRoute = this.routeOrder.getNextRoute('slide-12');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {
