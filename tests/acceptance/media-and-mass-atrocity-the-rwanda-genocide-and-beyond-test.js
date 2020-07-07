@@ -56,7 +56,7 @@ module('Acceptance | media and mass atrocity the rwanda genocide and beyond', fu
     assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
   });
 
-  test('should transition to /governing-the-digital-public-sphere on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /slide5 on scroll-arrow-up-btn click', async function(assert) {
     await visit('/media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
 
     assert.ok(
@@ -66,7 +66,7 @@ module('Acceptance | media and mass atrocity the rwanda genocide and beyond', fu
     await click('.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/governing-the-digital-public-sphere');
+    assert.strictEqual(currentURL(), '/slide5');
   });
 
   test('should transition to /braiding-legal-orders on scroll-arrow-down-btn click', async function(assert) {

@@ -74,6 +74,11 @@ export default Service.extend({
       ogUrl: '5ab09e92875a54ff/slides/governing-cyberspace-during-a-crisis-in-trust-og.jpg',
       thumbnailUrl: '5ab09e92875a54ff/slides/governing-cyberspace-during-a-crisis-in-trust-thumbnail.jpg',
     },
+    'slide-5': {
+      fullSizeUrl: '5ab09e92875a54ff/slides/innovation-nation-making-canada-a-leader-in-the-global-ideas-economy.jpg',
+      ogUrl: '5ab09e92875a54ff/slides/innovation-nation-making-canada-a-leader-in-the-global-ideas-economy-og.jpg',
+      thumbnailUrl: '5ab09e92875a54ff/slides/innovation-nation-making-canada-a-leader-in-the-global-ideas-economy-thumbnail.jpg',
+    },
     'thank-you': {
       fullSizeUrl: '5ab09e92875a54ff/slides/thank-you.jpg',
       ogUrl: '5ab09e92875a54ff/slides/thank-you-og.jpg',

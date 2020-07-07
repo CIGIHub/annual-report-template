@@ -44,9 +44,9 @@ export default Service.extend({
     title: 'slide4.title',
   }, {
     number: '07',
-    route: 'governing-the-digital-public-sphere',
+    route: 'slide-5',
     subRoutes: [],
-    title: 'governingTheDigitalPublicSphere.title',
+    title: 'slide5.title',
   }, {
     number: '08',
     route: 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond',

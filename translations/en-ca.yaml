@@ -275,13 +275,6 @@ financials:
     total2017: '2017 Total'
     total2018: '2018 Total'
   title: 'Financials'
-governingTheDigitalPublicSphere:
-  description: 'The 2016 US election revealed both malicious uses of technology and structural problems in the digital infrastructure itself. Since then, there have been a striking number of cases of commercially and politically driven misinformation, foreign interference in elections, data breaches, cyber attacks, the proliferation of harmful speech, data exploitation and surveillance abuses.'
-  paragraph1: 'The 2016 US election revealed both malicious uses of technology and structural problems in the digital infrastructure itself. Since then, there have been a striking number of cases of commercially and politically driven misinformation, foreign interference in elections, data breaches, cyber attacks, the proliferation of harmful speech, data exploitation and surveillance abuses.'
-  paragraph2: 'At this inflection point — in which democracies are strained by technologies — there is a pressing need for policy makers, civil society and the private sector alike to put forth a coordinated effort to govern the digital public sphere. In response to this gap in regulation, CIGI has led discussion in Canada and internationally on frameworks for social media regulation and the impacts of misinformation, including testimony before the Grand Committee on Big Data, Privacy and Democracy.'
-  quote:
-    quote: 'At this inflection point — in which democracies are strained by technologies — there is a pressing need for a coordinated and comprehensive effort to govern the digital public sphere.'
-  title: 'Governing the Digital Public Sphere'
 home: 'Home'
 index:
   annual: 'Annual'
@@ -412,6 +405,18 @@ slide4:
     quote: 'Slide 4 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 4 Source English'
   title: 'Slide 4 Title English'
+slide5:
+  description: 'Slide 5 Description English'
+  link1: 'Slide 5 Link 1 English'
+  link2: 'Slide 5 Link 2 English'
+  link3: 'Slide 5 Link 3 English'
+  paragraph1: 'Slide 5 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
+  paragraph2: 'Slide 5 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
+  paragraph3: 'Slide 5 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  quote:
+    quote: 'Slide 5 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
+    source: 'Slide 5 Source English'
+  title: 'Slide 5 Title English'
 subscribe: 'Subscribe'
 survey: 'Survey'
 tableOfContents:

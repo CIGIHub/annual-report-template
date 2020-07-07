@@ -115,9 +115,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /governing-the-digital-public-sphere', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide5', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-the-digital-public-sphere');
+    set(controller, 'router.currentRouteName', 'slide-5');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -283,9 +283,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /governing-the-digital-public-sphere', function(assert) {
+  test('should have hideMobileOverlay=false for /slide5', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-the-digital-public-sphere');
+    set(controller, 'router.currentRouteName', 'slide-5');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -482,9 +482,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /governing-the-digital-public-sphere', function(assert) {
+  test('should have lightBackground=false for /slide5', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-the-digital-public-sphere');
+    set(controller, 'router.currentRouteName', 'slide-5');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -679,9 +679,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /governing-the-digital-public-sphere', function(assert) {
+  test('should have scrollableContentPage=true for /slide5', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-the-digital-public-sphere');
+    set(controller, 'router.currentRouteName', 'slide-5');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -857,9 +857,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /governing-the-digital-public-sphere', function(assert) {
+  test('should have showDotNav=true for /slide5', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-the-digital-public-sphere');
+    set(controller, 'router.currentRouteName', 'slide-5');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });

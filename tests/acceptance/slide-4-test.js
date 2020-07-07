@@ -3,7 +3,7 @@ import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Acceptance | governing cyberspace during a crisis in trust', function(hooks) {
+module('Acceptance | slide 4', function(hooks) {
   setupApplicationTest(hooks);
 
   test('visiting /slide4', async function(assert) {
@@ -69,7 +69,7 @@ module('Acceptance | governing cyberspace during a crisis in trust', function(ho
     assert.strictEqual(currentURL(), '/slide3');
   });
 
-  test('should transition to /governing-the-digital-public-sphere on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /slide5 on scroll-arrow-down-btn click', async function(assert) {
     await visit('/slide4');
 
     assert.ok(
@@ -79,6 +79,6 @@ module('Acceptance | governing cyberspace during a crisis in trust', function(ho
     await click('.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/governing-the-digital-public-sphere');
+    assert.strictEqual(currentURL(), '/slide5');
   });
 });

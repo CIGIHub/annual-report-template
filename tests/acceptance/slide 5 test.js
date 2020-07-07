@@ -3,17 +3,17 @@ import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Acceptance | governing the digital public sphere', function(hooks) {
+module('Acceptance | slide 5', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('visiting /governing-the-digital-public-sphere', async function(assert) {
-    await visit('/governing-the-digital-public-sphere');
+  test('visiting /slide5', async function(assert) {
+    await visit('/slide5');
 
-    assert.equal(currentURL(), '/governing-the-digital-public-sphere');
+    assert.equal(currentURL(), '/slide5');
   });
 
   test('should have correct head title', async function(assert) {
-    await visit('/governing-the-digital-public-sphere');
+    await visit('/slide5');
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
       'Governing the Digital Public Sphere | 2019 CIGI Annual Report',
@@ -21,7 +21,7 @@ module('Acceptance | governing the digital public sphere', function(hooks) {
   });
 
   test('should have correct head description', async function(assert) {
-    await visit('/governing-the-digital-public-sphere');
+    await visit('/slide5');
     assert.strictEqual(
       document.querySelector('head meta[property="og:description"]').getAttribute('content'),
       'The 2016 US election revealed both malicious uses of technology and structural problems in the digital infrastructure itself. Since then, there have been a striking number of cases of commercially and politically driven misinformation, foreign interference in elections, data breaches, cyber attacks, the proliferation of harmful speech, data exploitation and surveillance abuses.',
@@ -29,7 +29,7 @@ module('Acceptance | governing the digital public sphere', function(hooks) {
   });
 
   test('should have correct head site name', async function(assert) {
-    await visit('/governing-the-digital-public-sphere');
+    await visit('/slide5');
     assert.strictEqual(
       document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
       '2019 CIGI Annual Report',
@@ -37,27 +37,27 @@ module('Acceptance | governing the digital public sphere', function(hooks) {
   });
 
   test('should have correct head url', async function(assert) {
-    await visit('/governing-the-digital-public-sphere');
+    await visit('/slide5');
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/governing-the-digital-public-sphere/',
+      'https://www.cigionline.org/interactives/2019annualreport/slide5/',
     );
   });
 
   test('should have correct twitter share link', async function(assert) {
-    await visit('/governing-the-digital-public-sphere');
+    await visit('/slide5');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/governing-the-digital-public-sphere');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/slide5');
   });
 
   test('should have correct linkedin share link', async function(assert) {
-    await visit('/governing-the-digital-public-sphere');
+    await visit('/slide5');
 
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/governing-the-digital-public-sphere');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/slide5');
   });
 
   test('should transition to /slide4 on scroll-arrow-up-btn click', async function(assert) {
-    await visit('/governing-the-digital-public-sphere');
+    await visit('/slide5');
 
     assert.ok(
       document.querySelector('.scroll-arrow-up-btn'),
@@ -70,7 +70,7 @@ module('Acceptance | governing the digital public sphere', function(hooks) {
   });
 
   test('should transition to /media-and-mass-atrocity-the-rwanda-genocide-and-beyond on scroll-arrow-down-btn click', async function(assert) {
-    await visit('/governing-the-digital-public-sphere');
+    await visit('/slide5');
 
     assert.ok(
       document.querySelector('.scroll-arrow-down-btn'),

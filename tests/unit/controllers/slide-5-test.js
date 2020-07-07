@@ -1,11 +1,11 @@
 import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
 
-module('Unit | Controller | governing-the-digital-public-sphere', function(hooks) {
+module('Unit | Controller | slide-5', function(hooks) {
   setupTest(hooks);
 
   test('it exists', function(assert) {
-    const controller = this.owner.lookup('controller:governing-the-digital-public-sphere');
+    const controller = this.owner.lookup('controller:slide-5');
     assert.ok(controller);
   });
 });

@@ -20,17 +20,17 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   },
 
   afterModel() {
-    const title = `${this.intl.t('governingTheDigitalPublicSphere.title')} | ${this.intl.t('title')}`;
+    const title = `${this.intl.t('slide5.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
-    set(this, 'headData.description', this.intl.t('governingTheDigitalPublicSphere.description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}governing-the-digital-public-sphere/`);
-    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('governing-the-digital-public-sphere');
+    set(this, 'headData.description', this.intl.t('slide5.description'));
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}slide5/`);
+    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('slide-5');
     if (backgroundImage && backgroundImage.ogUrl) {
       set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('governing-the-digital-public-sphere');
+    const nextRoute = this.routeOrder.getNextRoute('slide-5');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {
