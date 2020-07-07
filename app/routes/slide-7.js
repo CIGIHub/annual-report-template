@@ -20,17 +20,17 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   },
 
   afterModel() {
-    const title = `${this.intl.t('braidingLegalOrders.title')} | ${this.intl.t('title')}`;
+    const title = `${this.intl.t('slide7.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
-    set(this, 'headData.description', this.intl.t('braidingLegalOrders.description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}braiding-legal-orders/`);
-    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('braiding-legal-orders');
+    set(this, 'headData.description', this.intl.t('slide7.description'));
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}slide7/`);
+    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('slide-7');
     if (backgroundImage && backgroundImage.ogUrl) {
       set(this, 'headData.image', backgroundImage.ogUrl);
     }
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('braiding-legal-orders');
+    const nextRoute = this.routeOrder.getNextRoute('slide-7');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {

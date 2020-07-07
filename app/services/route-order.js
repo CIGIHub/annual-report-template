@@ -54,9 +54,9 @@ export default Service.extend({
     title: 'slide6.title',
   }, {
     number: '09',
-    route: 'braiding-legal-orders',
+    route: 'slide-7',
     subRoutes: [],
-    title: 'braidingLegalOrders.title',
+    title: 'slide7.title',
   }, {
     number: '10',
     route: 'models-for-data-governance',

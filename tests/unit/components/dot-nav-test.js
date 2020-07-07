@@ -88,13 +88,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /braiding-legal-orders', function(assert) {
+  test('should have correct menu items for /slide7', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'braiding-legal-orders');
+    set(component, 'router.currentRouteName', 'slide-7');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'braiding-legal-orders') {
+      if (menuItem.route === 'slide-7') {
         assert.strictEqual(
           menuItem.current,
           true,

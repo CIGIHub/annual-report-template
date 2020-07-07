@@ -9,11 +9,6 @@ export default Service.extend({
       ogUrl: '5ab09e92875a54ff/slides/a-bretton-woods-moment-for-the-digital-age-og.jpg',
       thumbnailUrl: '5ab09e92875a54ff/slides/a-bretton-woods-moment-for-the-digital-age-thumbnail.jpg',
     },
-    'braiding-legal-orders': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/braiding-legal-orders.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/braiding-legal-orders-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/braiding-legal-orders-thumbnail.jpg',
-    },
     'chairs-message': {
       fullSizeUrl: '5ab09e92875a54ff/slides/chairs-message.jpg',
       ogUrl: '5ab09e92875a54ff/slides/chairs-message-og.jpg',
@@ -78,6 +73,11 @@ export default Service.extend({
       fullSizeUrl: '5ab09e92875a54ff/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.jpg',
       ogUrl: '5ab09e92875a54ff/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond-og.jpg',
       thumbnailUrl: '5ab09e92875a54ff/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond-thumbnail.jpg',
+    },
+    'slide-7': {
+      fullSizeUrl: '5ab09e92875a54ff/slides/braiding-legal-orders.jpg',
+      ogUrl: '5ab09e92875a54ff/slides/braiding-legal-orders-og.jpg',
+      thumbnailUrl: '5ab09e92875a54ff/slides/braiding-legal-orders-thumbnail.jpg',
     },
     'thank-you': {
       fullSizeUrl: '5ab09e92875a54ff/slides/thank-you.jpg',

@@ -69,7 +69,7 @@ module('Acceptance | slide 6', function(hooks) {
     assert.strictEqual(currentURL(), '/slide5');
   });
 
-  test('should transition to /braiding-legal-orders on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /slide7 on scroll-arrow-down-btn click', async function(assert) {
     await visit('/slide6');
 
     assert.ok(
@@ -79,6 +79,6 @@ module('Acceptance | slide 6', function(hooks) {
     await click('.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/braiding-legal-orders');
+    assert.strictEqual(currentURL(), '/slide7');
   });
 });

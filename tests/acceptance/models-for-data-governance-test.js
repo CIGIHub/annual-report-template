@@ -56,7 +56,7 @@ module('Acceptance | models for data governance', function(hooks) {
     assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/models-for-data-governance');
   });
 
-  test('should transition to /braiding-legal-orders on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /slide7 on scroll-arrow-up-btn click', async function(assert) {
     await visit('/models-for-data-governance');
 
     assert.ok(
@@ -66,7 +66,7 @@ module('Acceptance | models for data governance', function(hooks) {
     await click('.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/braiding-legal-orders');
+    assert.strictEqual(currentURL(), '/slide7');
   });
 
   test('should transition to /protecting-elections-from-foreign-interference on scroll-arrow-down-btn click', async function(assert) {

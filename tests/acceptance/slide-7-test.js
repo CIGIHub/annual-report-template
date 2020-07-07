@@ -3,33 +3,33 @@ import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Acceptance | braiding legal orders', function(hooks) {
+module('Acceptance | slide 7', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('visiting /braiding-legal-orders', async function(assert) {
-    await visit('/braiding-legal-orders');
+  test('visiting /slide7', async function(assert) {
+    await visit('/slide7');
 
-    assert.equal(currentURL(), '/braiding-legal-orders');
+    assert.equal(currentURL(), '/slide7');
   });
 
   test('should have correct head title', async function(assert) {
-    await visit('/braiding-legal-orders');
+    await visit('/slide7');
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
-      'Braiding Legal Orders | 2019 CIGI Annual Report',
+      'Slide 7 Title English | 2019 CIGI Annual Report',
     );
   });
 
   test('should have correct head description', async function(assert) {
-    await visit('/braiding-legal-orders');
+    await visit('/slide7');
     assert.strictEqual(
       document.querySelector('head meta[property="og:description"]').getAttribute('content'),
-      'Braiding Legal Orders is the culmination of the ILRP’s research over the past three years on the implementation in Canada of the United Nations Declaration on the Rights of Indigenous Peoples (UNDRIP).',
+      'Slide 7 Description English',
     );
   });
 
   test('should have correct head site name', async function(assert) {
-    await visit('/braiding-legal-orders');
+    await visit('/slide7');
     assert.strictEqual(
       document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
       '2019 CIGI Annual Report',
@@ -37,27 +37,27 @@ module('Acceptance | braiding legal orders', function(hooks) {
   });
 
   test('should have correct head url', async function(assert) {
-    await visit('/braiding-legal-orders');
+    await visit('/slide7');
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/braiding-legal-orders/',
+      'https://www.cigionline.org/interactives/2019annualreport/slide7/',
     );
   });
 
   test('should have correct twitter share link', async function(assert) {
-    await visit('/braiding-legal-orders');
+    await visit('/slide7');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/braiding-legal-orders');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/slide7');
   });
 
   test('should have correct linkedin share link', async function(assert) {
-    await visit('/braiding-legal-orders');
+    await visit('/slide7');
 
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/braiding-legal-orders');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/slide7');
   });
 
   test('should transition to /slide6 on scroll-arrow-up-btn click', async function(assert) {
-    await visit('/braiding-legal-orders');
+    await visit('/slide7');
 
     assert.ok(
       document.querySelector('.scroll-arrow-up-btn'),
@@ -70,7 +70,7 @@ module('Acceptance | braiding legal orders', function(hooks) {
   });
 
   test('should transition to /models-for-data-governance on scroll-arrow-down-btn click', async function(assert) {
-    await visit('/braiding-legal-orders');
+    await visit('/slide7');
 
     assert.ok(
       document.querySelector('.scroll-arrow-down-btn'),
