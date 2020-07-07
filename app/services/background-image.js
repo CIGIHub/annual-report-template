@@ -45,9 +45,9 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/slide-6-thumbnail.jpg',
     },
     'slide-7': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/braiding-legal-orders.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/braiding-legal-orders-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/braiding-legal-orders-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/slide-7.jpg',
+      ogUrl: 'template/slides/slide-7-og.jpg',
+      thumbnailUrl: 'template/slides/slide-7-thumbnail.jpg',
     },
     'slide-8': {
       fullSizeUrl: '5ab09e92875a54ff/slides/models-for-data-governance.jpg',
