@@ -4,75 +4,85 @@ import Service from '@ember/service';
 
 export default Service.extend({
   backgroundImages: {
-    'a-bretton-woods-moment-for-the-digital-age': {
-      fullSizeUrl: '5891adf417e60b71/slides/a-bretton-woods-moment-for-the-digital-age.jpg',
-      ogUrl: '5891adf417e60b71/slides/a-bretton-woods-moment-for-the-digital-age-og.jpg',
-      thumbnailUrl: '5891adf417e60b71/slides/a-bretton-woods-moment-for-the-digital-age-thumbnail.jpg',
-    },
-    'a-clarion-call-for-protecting-the-worlds-refugees': {
-      fullSizeUrl: '5891adf417e60b71/slides/a-clarion-call-for-protecting-the-worlds-refugees.png',
-      ogUrl: '5891adf417e60b71/slides/a-clarion-call-for-protecting-the-worlds-refugees-og.png',
-      thumbnailUrl: '5891adf417e60b71/slides/a-clarion-call-for-protecting-the-worlds-refugees-thumbnail.png',
-    },
-    'braiding-legal-orders': {
-      fullSizeUrl: '5891adf417e60b71/slides/braiding-legal-orders.jpg',
-      ogUrl: '5891adf417e60b71/slides/braiding-legal-orders-og.jpg',
-      thumbnailUrl: '5891adf417e60b71/slides/braiding-legal-orders-thumbnail.jpg',
-    },
-    'building-closer-ties-between-canada-and-india': {
-      fullSizeUrl: '5891adf417e60b71/slides/building-closer-ties-between-canada-and-india.jpg',
-      ogUrl: '5891adf417e60b71/slides/building-closer-ties-between-canada-and-india-og.jpg',
-      thumbnailUrl: '5891adf417e60b71/slides/building-closer-ties-between-canada-and-india-thumbnail.jpg',
-    },
     'chairs-message': {
-      fullSizeUrl: '5891adf417e60b71/slides/chairs-message.jpg',
-      ogUrl: '5891adf417e60b71/slides/chairs-message-og.jpg',
-      thumbnailUrl: '5891adf417e60b71/slides/chairs-message-thumbnail.jpg',
-    },
-    'curbing-cultural-appropriation-through-intellectual-property-law': {
-      fullSizeUrl: '5891adf417e60b71/slides/curbing-cultural-appropriation-through-intellectual-property-law.jpg',
-      ogUrl: '5891adf417e60b71/slides/curbing-cultural-appropriation-through-intellectual-property-law-og.jpg',
-      thumbnailUrl: '5891adf417e60b71/slides/curbing-cultural-appropriation-through-intellectual-property-law-thumbnail.jpg',
-    },
-    'exploring-the-four-internets-and-the-geopolitics-of-digital-governance': {
-      fullSizeUrl: '5891adf417e60b71/slides/exploring-the-four-internets-and-the-geopolitics-of-digital-governance.jpg',
-      ogUrl: '5891adf417e60b71/slides/exploring-the-four-internets-and-the-geopolitics-of-digital-governance-og.jpg',
-      thumbnailUrl: '5891adf417e60b71/slides/exploring-the-four-internets-and-the-geopolitics-of-digital-governance-thumbnail.jpg',
-    },
-    'governing-cyberspace-during-a-crisis-in-trust': {
-      fullSizeUrl: '5891adf417e60b71/slides/governing-cyberspace-during-a-crisis-in-trust.jpg',
-      ogUrl: '5891adf417e60b71/slides/governing-cyberspace-during-a-crisis-in-trust-og.jpg',
-      thumbnailUrl: '5891adf417e60b71/slides/governing-cyberspace-during-a-crisis-in-trust-thumbnail.jpg',
-    },
-    'informing-the-debate-around-internet-security-and-trust': {
-      fullSizeUrl: '5891adf417e60b71/slides/informing-the-debate-around-internet-security-and-trust.jpg',
-      ogUrl: '5891adf417e60b71/slides/informing-the-debate-around-internet-security-and-trust-og.jpg',
-      thumbnailUrl: '5891adf417e60b71/slides/informing-the-debate-around-internet-security-and-trust-thumbnail.jpg',
-    },
-    'media-and-mass-atrocity-the-rwanda-genocide-and-beyond': {
-      fullSizeUrl: '5891adf417e60b71/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond.jpg',
-      ogUrl: '5891adf417e60b71/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond-og.jpg',
-      thumbnailUrl: '5891adf417e60b71/slides/media-and-mass-atrocity-the-rwanda-genocide-and-beyond-thumbnail.jpg',
-    },
-    'models-for-data-governance': {
-      fullSizeUrl: '5891adf417e60b71/slides/models-for-data-governance.jpg',
-      ogUrl: '5891adf417e60b71/slides/models-for-data-governance-og.jpg',
-      thumbnailUrl: '5891adf417e60b71/slides/models-for-data-governance-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/chairs-message.jpg',
+      ogUrl: 'template/slides/chairs-message-og.jpg',
+      thumbnailUrl: 'template/slides/chairs-message-thumbnail.jpg',
     },
     'presidents-message': {
-      fullSizeUrl: '5891adf417e60b71/slides/presidents-message.jpg',
-      ogUrl: '5891adf417e60b71/slides/presidents-message-og.jpg',
-      thumbnailUrl: '5891adf417e60b71/slides/presidents-message-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/presidents-message.jpg',
+      ogUrl: 'template/slides/presidents-message-og.jpg',
+      thumbnailUrl: 'template/slides/presidents-message-thumbnail.jpg',
     },
-    'protecting-elections-from-foreign-interference': {
-      fullSizeUrl: '5891adf417e60b71/slides/protecting-elections-from-foreign-interference.jpg',
-      ogUrl: '5891adf417e60b71/slides/protecting-elections-from-foreign-interference-og.jpg',
-      thumbnailUrl: '5891adf417e60b71/slides/protecting-elections-from-foreign-interference-thumbnail.jpg',
+    'slide-1': {
+      fullSizeUrl: 'template/slides/slide-1.jpg',
+      ogUrl: 'template/slides/slide-1-og.jpg',
+      thumbnailUrl: 'template/slides/slide-1-thumbnail.jpg',
+    },
+    'slide-2': {
+      fullSizeUrl: 'template/slides/slide-2.png',
+      ogUrl: 'template/slides/slide-2-og.png',
+      thumbnailUrl: 'template/slides/slide-2-thumbnail.png',
+    },
+    'slide-3': {
+      fullSizeUrl: 'template/slides/slide-3.jpg',
+      ogUrl: 'template/slides/slide-3-og.jpg',
+      thumbnailUrl: 'template/slides/slide-3-thumbnail.jpg',
+    },
+    'slide-4': {
+      fullSizeUrl: 'template/slides/slide-4.jpg',
+      ogUrl: 'template/slides/slide-4-og.jpg',
+      thumbnailUrl: 'template/slides/slide-4-thumbnail.jpg',
+    },
+    'slide-5': {
+      fullSizeUrl: 'template/slides/slide-5.jpg',
+      ogUrl: 'template/slides/slide-5-og.jpg',
+      thumbnailUrl: 'template/slides/slide-5-thumbnail.jpg',
+    },
+    'slide-6': {
+      fullSizeUrl: 'template/slides/slide-6.jpg',
+      ogUrl: 'template/slides/slide-6-og.jpg',
+      thumbnailUrl: 'template/slides/slide-6-thumbnail.jpg',
+    },
+    'slide-7': {
+      fullSizeUrl: 'template/slides/slide-7.jpg',
+      ogUrl: 'template/slides/slide-7-og.jpg',
+      thumbnailUrl: 'template/slides/slide-7-thumbnail.jpg',
+    },
+    'slide-8': {
+      fullSizeUrl: 'template/slides/slide-8.jpg',
+      ogUrl: 'template/slides/slide-8-og.jpg',
+      thumbnailUrl: 'template/slides/slide-8-thumbnail.jpg',
+    },
+    'slide-9': {
+      fullSizeUrl: 'template/slides/slide-9.jpg',
+      ogUrl: 'template/slides/slide-9-og.jpg',
+      thumbnailUrl: 'template/slides/slide-9-thumbnail.jpg',
+    },
+    'slide-10': {
+      fullSizeUrl: 'template/slides/slide-10.jpg',
+      ogUrl: 'template/slides/slide-10-og.jpg',
+      thumbnailUrl: 'template/slides/slide-10-thumbnail.jpg',
+    },
+    'slide-11': {
+      fullSizeUrl: 'template/slides/slide-11.jpg',
+      ogUrl: 'template/slides/slide-11-og.jpg',
+      thumbnailUrl: 'template/slides/slide-11-thumbnail.jpg',
+    },
+    'slide-12': {
+      fullSizeUrl: 'template/slides/slide-12.jpg',
+      ogUrl: 'template/slides/slide-12-og.jpg',
+      thumbnailUrl: 'template/slides/slide-12-thumbnail.jpg',
+    },
+    'slide-13': {
+      fullSizeUrl: 'template/slides/slide-13.jpg',
+      ogUrl: 'template/slides/slide-13-og.jpg',
+      thumbnailUrl: 'template/slides/slide-13-thumbnail.jpg',
     },
     'thank-you': {
-      fullSizeUrl: '5891adf417e60b71/slides/thank-you.jpg',
-      ogUrl: '5891adf417e60b71/slides/thank-you-og.jpg',
-      thumbnailUrl: '5891adf417e60b71/slides/thank-you-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/thank-you.jpg',
+      ogUrl: 'template/slides/thank-you-og.jpg',
+      thumbnailUrl: 'template/slides/thank-you-thumbnail.jpg',
     },
   },
   nodesMissingBackground: [
@@ -108,13 +118,13 @@ export default Service.extend({
     '15338',
     '15364',
   ],
-  nodeS3Directory: '5891adf417e60b71',
+  nodeS3Directory: 'template',
 
   defaultBackground: computed('imageHost', function() {
     return {
-      fullSizeUrl: `${this.imageHost}5891adf417e60b71/cigi-campus.jpg`,
-      ogUrl: `${this.imageHost}5891adf417e60b71/cigi-campus-og.jpg`,
-      thumbnailUrl: `${this.imageHost}5891adf417e60b71/cigi-campus-thumbnail.jpg`,
+      fullSizeUrl: `${this.imageHost}template/cigi-campus.jpg`,
+      ogUrl: `${this.imageHost}template/cigi-campus-og.jpg`,
+      thumbnailUrl: `${this.imageHost}template/cigi-campus-thumbnail.jpg`,
     };
   }),
 
