@@ -55,9 +55,9 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/slide-8-thumbnail.jpg',
     },
     'slide-9': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/protecting-elections-from-foreign-interference.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/protecting-elections-from-foreign-interference-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/protecting-elections-from-foreign-interference-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/slide-9.jpg',
+      ogUrl: 'template/slides/slide-9-og.jpg',
+      thumbnailUrl: 'template/slides/slide-9-thumbnail.jpg',
     },
     'slide-10': {
       fullSizeUrl: '5ab09e92875a54ff/slides/a-bretton-woods-moment-for-the-digital-age.jpg',
