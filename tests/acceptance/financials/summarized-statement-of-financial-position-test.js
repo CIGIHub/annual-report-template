@@ -115,6 +115,7 @@ module('Acceptance | financials/summarized statement of financial position', fun
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/thank-you');assert.dom('ul.dot-nav').exists();
+    assert.strictEqual(currentURL(), '/thank-you');
+    assert.dom('ul.dot-nav').exists();
   });
 });
