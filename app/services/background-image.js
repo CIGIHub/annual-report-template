@@ -65,9 +65,9 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/slide-10-thumbnail.jpg',
     },
     'slide-11': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/informing-the-debate-around-internet-security-and-trust.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/informing-the-debate-around-internet-security-and-trust-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/informing-the-debate-around-internet-security-and-trust-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/slide-11.jpg',
+      ogUrl: 'template/slides/slide-11-og.jpg',
+      thumbnailUrl: 'template/slides/slide-11-thumbnail.jpg',
     },
     'slide-12': {
       fullSizeUrl: '5ab09e92875a54ff/slides/exploring-the-four-internets-and-the-geopolitics-of-digital-governance.jpg',
