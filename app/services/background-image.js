@@ -60,9 +60,9 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/slide-9-thumbnail.jpg',
     },
     'slide-10': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/a-bretton-woods-moment-for-the-digital-age.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/a-bretton-woods-moment-for-the-digital-age-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/a-bretton-woods-moment-for-the-digital-age-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/slide-10.jpg',
+      ogUrl: 'template/slides/slide-10-og.jpg',
+      thumbnailUrl: 'template/slides/slide-10-thumbnail.jpg',
     },
     'slide-11': {
       fullSizeUrl: '5ab09e92875a54ff/slides/informing-the-debate-around-internet-security-and-trust.jpg',
