@@ -28,6 +28,7 @@ module('Integration | Component | top-bar', function(hooks) {
     }));
     this.owner.register('service:router', Service.extend({
       currentRouteName: '',
+      currentURL: '',
     }));
   });
 

@@ -33,8 +33,8 @@ export default Component.extend({
 
   menuIsOpen: equal('lightbox.showLightbox', 'tableofcontents'),
 
-  shareRoute: computed('router.currentRouteName', function() {
-    const currentRoute = this.router.currentRouteName.replace('.', '/').replace('index', '');
+  shareRoute: computed('router.currentURL', function() {
+    const currentRoute = this.router.currentURL.replace('/', '');
     return `${ENV.host}${ENV.rootURL}${currentRoute}`;
   }),
 

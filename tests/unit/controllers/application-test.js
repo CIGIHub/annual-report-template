@@ -31,30 +31,30 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), true);
   });
 
-  test('should have bounceScrollArrowDown=false for /a-bretton-woods-moment-for-the-digital-age', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide10', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'a-bretton-woods-moment-for-the-digital-age');
+    set(controller, 'router.currentRouteName', 'slide-10');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /a-clarion-call-for-protecting-the-worlds-refugees', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide-2', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'a-clarion-call-for-protecting-the-worlds-refugees');
+    set(controller, 'router.currentRouteName', 'slide-2');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /braiding-legal-orders', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide7', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'braiding-legal-orders');
+    set(controller, 'router.currentRouteName', 'slide-7');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /building-closer-ties-between-canada-and-india', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide1', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'building-closer-ties-between-canada-and-india');
+    set(controller, 'router.currentRouteName', 'slide1');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -66,16 +66,16 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /curbing-cultural-appropriation-through-intellectual-property-law', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide13', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'curbing-cultural-appropriation-through-intellectual-property-law');
+    set(controller, 'router.currentRouteName', 'slide-13');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /exploring-the-four-internets-and-the-geopolitics-of-digital-governance', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide12', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
+    set(controller, 'router.currentRouteName', 'slide-12');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -87,65 +87,65 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /financials/balance-sheet', function(assert) {
+  test('should have bounceScrollArrowDown=false for /financials/summarized-statement-of-financial-position', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.balance-sheet');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-financial-position');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
   test('should have bounceScrollArrowDown=false for /financials/notes', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.notes');
+    set(controller, 'router.currentRouteName', 'fina  ncials.notes');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /financials/revenue-and-expenses', function(assert) {
+  test('should have bounceScrollArrowDown=false for /financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.revenue-and-expenses');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /governing-cyberspace-during-a-crisis-in-trust', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide4', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-cyberspace-during-a-crisis-in-trust');
+    set(controller, 'router.currentRouteName', 'slide-4');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /governing-the-digital-public-sphere', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide5', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-the-digital-public-sphere');
+    set(controller, 'router.currentRouteName', 'slide-5');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /informing-the-debate-around-internet-security-and-trust', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide11', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'informing-the-debate-around-internet-security-and-trust');
+    set(controller, 'router.currentRouteName', 'slide-11');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /media-and-mass-atrocity-the-rwanda-genocide-and-beyond', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide6', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+    set(controller, 'router.currentRouteName', 'slide-6');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /models-for-data-governance', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide8', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'models-for-data-governance');
+    set(controller, 'router.currentRouteName', 'slide-8');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /multilateral-institutions-mark-a-tumultuous-year', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide3', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'multilateral-institutions-mark-a-tumultuous-year');
+    set(controller, 'router.currentRouteName', 'slide-3');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -164,9 +164,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /protecting-elections-from-foreign-interference', function(assert) {
+  test('should have bounceScrollArrowDown=false for /slide9', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'protecting-elections-from-foreign-interference');
+    set(controller, 'router.currentRouteName', 'slide-9');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -199,30 +199,30 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /a-bretton-woods-moment-for-the-digital-age', function(assert) {
+  test('should have hideMobileOverlay=false for /slide10', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'a-bretton-woods-moment-for-the-digital-age');
+    set(controller, 'router.currentRouteName', 'slide-10');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /a-clarion-call-for-protecting-the-worlds-refugees', function(assert) {
+  test('should have hideMobileOverlay=false for /slide-2', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'a-clarion-call-for-protecting-the-worlds-refugees');
+    set(controller, 'router.currentRouteName', 'slide-2');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /braiding-legal-orders', function(assert) {
+  test('should have hideMobileOverlay=false for /slide7', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'braiding-legal-orders');
+    set(controller, 'router.currentRouteName', 'slide-7');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /building-closer-ties-between-canada-and-india', function(assert) {
+  test('should have hideMobileOverlay=false for /slide1', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'building-closer-ties-between-canada-and-india');
+    set(controller, 'router.currentRouteName', 'slide1');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -234,16 +234,16 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
 
-  test('should have hideMobileOverlay=false for /curbing-cultural-appropriation-through-intellectual-property-law', function(assert) {
+  test('should have hideMobileOverlay=false for /slide13', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'curbing-cultural-appropriation-through-intellectual-property-law');
+    set(controller, 'router.currentRouteName', 'slide-13');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /exploring-the-four-internets-and-the-geopolitics-of-digital-governance', function(assert) {
+  test('should have hideMobileOverlay=false for /slide12', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
+    set(controller, 'router.currentRouteName', 'slide-12');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -255,9 +255,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
 
-  test('should have hideMobileOverlay=true for /financials/balance-sheet', function(assert) {
+  test('should have hideMobileOverlay=true for /financials/summarized-statement-of-financial-position', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.balance-sheet');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-financial-position');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
@@ -269,51 +269,51 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
 
-  test('should have hideMobileOverlay=true for /financials/revenue-and-expenses', function(assert) {
+  test('should have hideMobileOverlay=true for /financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.revenue-and-expenses');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
 
-  test('should have hideMobileOverlay=false for /governing-cyberspace-during-a-crisis-in-trust', function(assert) {
+  test('should have hideMobileOverlay=false for /slide4', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-cyberspace-during-a-crisis-in-trust');
+    set(controller, 'router.currentRouteName', 'slide-4');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /governing-the-digital-public-sphere', function(assert) {
+  test('should have hideMobileOverlay=false for /slide5', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-the-digital-public-sphere');
+    set(controller, 'router.currentRouteName', 'slide-5');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /informing-the-debate-around-internet-security-and-trust', function(assert) {
+  test('should have hideMobileOverlay=false for /slide11', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'informing-the-debate-around-internet-security-and-trust');
+    set(controller, 'router.currentRouteName', 'slide-11');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /media-and-mass-atrocity-the-rwanda-genocide-and-beyond', function(assert) {
+  test('should have hideMobileOverlay=false for /slide6', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+    set(controller, 'router.currentRouteName', 'slide-6');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /models-for-data-governance', function(assert) {
+  test('should have hideMobileOverlay=false for /slide8', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'models-for-data-governance');
+    set(controller, 'router.currentRouteName', 'slide-8');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /multilateral-institutions-mark-a-tumultuous-year', function(assert) {
+  test('should have hideMobileOverlay=false for /slide3', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'multilateral-institutions-mark-a-tumultuous-year');
+    set(controller, 'router.currentRouteName', 'slide-3s');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -332,9 +332,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
 
-  test('should have hideMobileOverlay=false for /protecting-elections-from-foreign-interference', function(assert) {
+  test('should have hideMobileOverlay=false for /slide9', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'protecting-elections-from-foreign-interference');
+    set(controller, 'router.currentRouteName', 'slide-9');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -370,33 +370,33 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /a-bretton-woods-moment-for-the-digital-age', function(assert) {
+  test('should have lightBackground=false for /slide10', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'a-bretton-woods-moment-for-the-digital-age');
+    set(controller, 'router.currentRouteName', 'slide-10');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /a-clarion-call-for-protecting-the-worlds-refugees', function(assert) {
+  test('should have lightBackground=false for /slide-2', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'a-clarion-call-for-protecting-the-worlds-refugees');
+    set(controller, 'router.currentRouteName', 'slide-2');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /braiding-legal-orders', function(assert) {
+  test('should have lightBackground=false for /slide7', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'braiding-legal-orders');
+    set(controller, 'router.currentRouteName', 'slide-7');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /building-closer-ties-between-canada-and-india', function(assert) {
+  test('should have lightBackground=false for /slide1', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'building-closer-ties-between-canada-and-india');
+    set(controller, 'router.currentRouteName', 'slide1');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -418,17 +418,17 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /curbing-cultural-appropriation-through-intellectual-property-law', function(assert) {
+  test('should have lightBackground=false for /slide13', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'curbing-cultural-appropriation-through-intellectual-property-law');
+    set(controller, 'router.currentRouteName', 'slide-13');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /exploring-the-four-internets-and-the-geopolitics-of-digital-governance', function(assert) {
+  test('should have lightBackground=false for /slide12', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
+    set(controller, 'router.currentRouteName', 'slide-12');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -442,9 +442,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), true);
   });
 
-  test('should have lightBackground=true for /financials/balance-sheet', function(assert) {
+  test('should have lightBackground=true for /financials/summarized-statement-of-financial-position', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.balance-sheet');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-financial-position');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), true);
@@ -458,9 +458,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), true);
   });
 
-  test('should have lightBackground=true for /financials/revenue-and-expenses', function(assert) {
+  test('should have lightBackground=true for /financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.revenue-and-expenses');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), true);
@@ -474,49 +474,49 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /governing-cyberspace-during-a-crisis-in-trust', function(assert) {
+  test('should have lightBackground=false for /slide4', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-cyberspace-during-a-crisis-in-trust');
+    set(controller, 'router.currentRouteName', 'slide-4');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /governing-the-digital-public-sphere', function(assert) {
+  test('should have lightBackground=false for /slide5', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-the-digital-public-sphere');
+    set(controller, 'router.currentRouteName', 'slide-5');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /informing-the-debate-around-internet-security-and-trust', function(assert) {
+  test('should have lightBackground=false for /slide11', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'informing-the-debate-around-internet-security-and-trust');
+    set(controller, 'router.currentRouteName', 'slide-11');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /media-and-mass-atrocity-the-rwanda-genocide-and-beyond', function(assert) {
+  test('should have lightBackground=false for /slide6', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+    set(controller, 'router.currentRouteName', 'slide-6');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /models-for-data-governance', function(assert) {
+  test('should have lightBackground=false for /slide8', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'models-for-data-governance');
+    set(controller, 'router.currentRouteName', 'slide-8');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /multilateral-institutions-mark-a-tumultuous-year', function(assert) {
+  test('should have lightBackground=false for /slide3', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'multilateral-institutions-mark-a-tumultuous-year');
+    set(controller, 'router.currentRouteName', 'slide-3');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -554,9 +554,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /protecting-elections-from-foreign-interference', function(assert) {
+  test('should have lightBackground=false for /slide9', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'protecting-elections-from-foreign-interference');
+    set(controller, 'router.currentRouteName', 'slide-9');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -595,30 +595,30 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), false);
   });
 
-  test('should have scrollableContentPage=true for /a-bretton-woods-moment-for-the-digital-age', function(assert) {
+  test('should have scrollableContentPage=true for /slide10', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'a-bretton-woods-moment-for-the-digital-age');
+    set(controller, 'router.currentRouteName', 'slide-10');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /a-clarion-call-for-protecting-the-worlds-refugees', function(assert) {
+  test('should have scrollableContentPage=true for /slide-2', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'a-clarion-call-for-protecting-the-worlds-refugees');
+    set(controller, 'router.currentRouteName', 'slide-2');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /braiding-legal-orders', function(assert) {
+  test('should have scrollableContentPage=true for /slide7', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'braiding-legal-orders');
+    set(controller, 'router.currentRouteName', 'slide-7');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /building-closer-ties-between-canada-and-india', function(assert) {
+  test('should have scrollableContentPage=true for /slide1', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'building-closer-ties-between-canada-and-india');
+    set(controller, 'router.currentRouteName', 'slide1');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -630,16 +630,16 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /curbing-cultural-appropriation-through-intellectual-property-law', function(assert) {
+  test('should have scrollableContentPage=true for /slide13', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'curbing-cultural-appropriation-through-intellectual-property-law');
+    set(controller, 'router.currentRouteName', 'slide-13');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /exploring-the-four-internets-and-the-geopolitics-of-digital-governance', function(assert) {
+  test('should have scrollableContentPage=true for /slide12', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
+    set(controller, 'router.currentRouteName', 'slide-12');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -651,9 +651,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /financials/balance-sheet', function(assert) {
+  test('should have scrollableContentPage=true for /financials/summarized-statement-of-financial-position', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.balance-sheet');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-financial-position');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -665,51 +665,51 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /financials/revenue-and-expenses', function(assert) {
+  test('should have scrollableContentPage=true for /financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.revenue-and-expenses');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /governing-cyberspace-during-a-crisis-in-trust', function(assert) {
+  test('should have scrollableContentPage=true for /slide4', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-cyberspace-during-a-crisis-in-trust');
+    set(controller, 'router.currentRouteName', 'slide-4');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /governing-the-digital-public-sphere', function(assert) {
+  test('should have scrollableContentPage=true for /slide5', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-the-digital-public-sphere');
+    set(controller, 'router.currentRouteName', 'slide-5');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /informing-the-debate-around-internet-security-and-trust', function(assert) {
+  test('should have scrollableContentPage=true for /slide11', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'informing-the-debate-around-internet-security-and-trust');
+    set(controller, 'router.currentRouteName', 'slide-11');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /media-and-mass-atrocity-the-rwanda-genocide-and-beyond', function(assert) {
+  test('should have scrollableContentPage=true for /slide6', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+    set(controller, 'router.currentRouteName', 'slide-6');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /models-for-data-governance', function(assert) {
+  test('should have scrollableContentPage=true for /slide8', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'models-for-data-governance');
+    set(controller, 'router.currentRouteName', 'slide-8');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /multilateral-institutions-mark-a-tumultuous-year', function(assert) {
+  test('should have scrollableContentPage=true for /slide3', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'multilateral-institutions-mark-a-tumultuous-year');
+    set(controller, 'router.currentRouteName', 'slide-3');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -728,9 +728,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /protecting-elections-from-foreign-interference', function(assert) {
+  test('should have scrollableContentPage=true for /slide9', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'protecting-elections-from-foreign-interference');
+    set(controller, 'router.currentRouteName', 'slide-9');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -773,30 +773,30 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /a-bretton-woods-moment-for-the-digital-age', function(assert) {
+  test('should have showDotNav=true for /slide10', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'a-bretton-woods-moment-for-the-digital-age');
+    set(controller, 'router.currentRouteName', 'slide-10');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /a-clarion-call-for-protecting-the-worlds-refugees', function(assert) {
+  test('should have showDotNav=true for /slide-2', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'a-clarion-call-for-protecting-the-worlds-refugees');
+    set(controller, 'router.currentRouteName', 'slide-2');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /braiding-legal-orders', function(assert) {
+  test('should have showDotNav=true for /slide7', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'braiding-legal-orders');
+    set(controller, 'router.currentRouteName', 'slide-7');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /building-closer-ties-between-canada-and-india', function(assert) {
+  test('should have showDotNav=true for /slide1', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'building-closer-ties-between-canada-and-india');
+    set(controller, 'router.currentRouteName', 'slide1');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
@@ -808,16 +808,16 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /curbing-cultural-appropriation-through-intellectual-property-law', function(assert) {
+  test('should have showDotNav=true for /slide13', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'curbing-cultural-appropriation-through-intellectual-property-law');
+    set(controller, 'router.currentRouteName', 'slide-13');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /exploring-the-four-internets-and-the-geopolitics-of-digital-governance', function(assert) {
+  test('should have showDotNav=true for /slide12', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
+    set(controller, 'router.currentRouteName', 'slide-12');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
@@ -829,9 +829,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /financials/balance-sheet', function(assert) {
+  test('should have showDotNav=true for /financials/summarized-statement-of-financial-position', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.balance-sheet');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-financial-position');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
@@ -843,51 +843,51 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /financials/revenue-and-expenses', function(assert) {
+  test('should have showDotNav=true for /financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.revenue-and-expenses');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /governing-cyberspace-during-a-crisis-in-trust', function(assert) {
+  test('should have showDotNav=true for /slide4', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-cyberspace-during-a-crisis-in-trust');
+    set(controller, 'router.currentRouteName', 'slide-4');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /governing-the-digital-public-sphere', function(assert) {
+  test('should have showDotNav=true for /slide5', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'governing-the-digital-public-sphere');
+    set(controller, 'router.currentRouteName', 'slide-5');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /informing-the-debate-around-internet-security-and-trust', function(assert) {
+  test('should have showDotNav=true for /slide11', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'informing-the-debate-around-internet-security-and-trust');
+    set(controller, 'router.currentRouteName', 'slide-11');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /media-and-mass-atrocity-the-rwanda-genocide-and-beyond', function(assert) {
+  test('should have showDotNav=true for /slide6', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+    set(controller, 'router.currentRouteName', 'slide-6');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /models-for-data-governance', function(assert) {
+  test('should have showDotNav=true for /slide8', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'models-for-data-governance');
+    set(controller, 'router.currentRouteName', 'slide-8');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /multilateral-institutions-mark-a-tumultuous-year', function(assert) {
+  test('should have showDotNav=true for /slide3', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'multilateral-institutions-mark-a-tumultuous-year');
+    set(controller, 'router.currentRouteName', 'slide-3');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
@@ -906,9 +906,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /protecting-elections-from-foreign-interference', function(assert) {
+  test('should have showDotNav=true for /slide9', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'protecting-elections-from-foreign-interference');
+    set(controller, 'router.currentRouteName', 'slide-9');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
