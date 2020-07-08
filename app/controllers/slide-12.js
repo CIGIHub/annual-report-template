@@ -44,6 +44,6 @@ export default Controller.extend({
   }),
 
   videoLink: computed('backgroundImage.imageHost', function() {
-    return `${this.backgroundImage.imageHost}5ab09e92875a54ff/slides/exploring-the-four-internets-and-the-geopolitics-of-digital-governance.mp4`;
+    return `${this.backgroundImage.imageHost}template/slides/slide-12.mp4`;
   }),
 });

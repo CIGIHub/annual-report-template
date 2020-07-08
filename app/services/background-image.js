@@ -70,9 +70,9 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/slide-11-thumbnail.jpg',
     },
     'slide-12': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/exploring-the-four-internets-and-the-geopolitics-of-digital-governance.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/exploring-the-four-internets-and-the-geopolitics-of-digital-governance-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/exploring-the-four-internets-and-the-geopolitics-of-digital-governance-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/slide-12.jpg',
+      ogUrl: 'template/slides/slide-12-og.jpg',
+      thumbnailUrl: 'template/slides/slide-12-thumbnail.jpg',
     },
     'slide-13': {
       fullSizeUrl: '5ab09e92875a54ff/slides/curbing-cultural-appropriation-through-intellectual-property-law.jpg',
