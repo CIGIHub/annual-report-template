@@ -81,6 +81,16 @@ module('Acceptance | financials - auditors report', function(hooks) {
     assert.dom('.financials .financials-menu > a:nth-of-type(3)').containsText('Notes');
     assert.dom('.financials .financials-menu .download-button').exists();
     assert.dom('.financials .financials-menu .download-button a').containsText('Download PDF');
+
+    assert.dom('.cigi-top-bar').exists();
+    assert.dom('.cigi-top-bar').hasClass('light-background');
+    assert.dom('ul.dot-nav').exists();
+    assert.dom('ul.dot-nav').hasClass('light-background');
+    assert.dom('button.scroll-arrow-up-btn').exists();
+    assert.dom('button.scroll-arrow-up-btn').hasClass('light-background');
+    assert.dom('button.scroll-arrow-down-btn').exists();
+    assert.dom('button.scroll-arrow-down-btn').hasClass('light-background');
+    assert.dom('.footer').doesNotExist();
   });
 
   test('should transition to /timeline on scroll-arrow-up-btn click', async function(assert) {
