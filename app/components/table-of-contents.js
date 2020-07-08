@@ -16,9 +16,9 @@ export default Component.extend({
     }
     const currentRouteName = this.router.currentRouteName;
     const links = this.routes.slice(0, this.linksBreakAtIndex);
-    return links.map((link, index) => ({
+    return links.map((link) => ({
       current: link.route === currentRouteName,
-      number: (index + 1).toString().padStart(2, '0'),
+      number: link.number,
       route: link.route,
       title: this.intl.t(link.title),
     }));
@@ -30,9 +30,9 @@ export default Component.extend({
     }
     const currentRouteName = this.router.currentRouteName;
     const links = this.routes.slice(this.linksBreakAtIndex);
-    return links.map((link, index) => ({
+    return links.map((link) => ({
       current: link.route === currentRouteName,
-      number: (index + this.linksBreakAtIndex + 1).toString().padStart(2, '0'),
+      number: link.number,
       route: link.route,
       title: this.intl.t(link.title),
     }));
@@ -44,7 +44,7 @@ export default Component.extend({
   }),
 
   videoLink: computed('backgroundImage.imageHost', function() {
-    return `${this.backgroundImage.imageHost}5891adf417e60b71/slides/table-of-contents.mp4`;
+    return `${this.backgroundImage.imageHost}template/slides/table-of-contents.mp4`;
   }),
 
   actions: {

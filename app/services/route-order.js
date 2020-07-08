@@ -3,90 +3,111 @@ import Service from '@ember/service';
 
 export default Service.extend({
   routes: [{
+    number: '00',
     route: 'index',
     subRoutes: [],
     title: 'home',
   }, {
+    number: '00',
     route: 'table-of-contents',
     subRoutes: [],
     title: 'tableOfContents.title',
   }, {
+    number: '01',
     route: 'chairs-message',
     subRoutes: [],
     title: 'chairsMessage.title',
   }, {
+    number: '02',
     route: 'presidents-message',
     subRoutes: [],
     title: 'presidentsMessage.title',
   }, {
-    route: 'building-closer-ties-between-canada-and-india',
+    number: '03',
+    route: 'slide-1',
     subRoutes: [],
-    title: 'buildingCloserTiesBetweenCanadaAndIndia.title',
+    title: 'slide1.title',
   }, {
-    route: 'a-clarion-call-for-protecting-the-worlds-refugees',
+    number: '04',
+    route: 'slide-2',
     subRoutes: [],
-    title: 'aClarionCallForProtectingTheWorldsRefugees.title',
+    title: 'slide2.title',
   }, {
-    route: 'multilateral-institutions-mark-a-tumultuous-year',
+    number: '05',
+    route: 'slide-3',
     subRoutes: [],
-    title: 'multilateralInstitutionsMarkATumultuousYear.title',
+    title: 'slide3.title',
   }, {
-    route: 'governing-cyberspace-during-a-crisis-in-trust',
+    number: '06',
+    route: 'slide-4',
     subRoutes: [],
-    title: 'governingCyberspaceDuringACrisisInTrust.title',
+    title: 'slide4.title',
   }, {
-    route: 'governing-the-digital-public-sphere',
+    number: '07',
+    route: 'slide-5',
     subRoutes: [],
-    title: 'governingTheDigitalPublicSphere.title',
+    title: 'slide5.title',
   }, {
-    route: 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond',
+    number: '08',
+    route: 'slide-6',
     subRoutes: [],
-    title: 'mediaAndMassAtrocityTheRwandaGenocideAndBeyond.title',
+    title: 'slide6.title',
   }, {
-    route: 'braiding-legal-orders',
+    number: '09',
+    route: 'slide-7',
     subRoutes: [],
-    title: 'braidingLegalOrders.title',
+    title: 'slide7.title',
   }, {
-    route: 'models-for-data-governance',
+    number: '10',
+    route: 'slide-8',
     subRoutes: [],
-    title: 'modelsForDataGovernance.title',
+    title: 'slide8.title',
   }, {
-    route: 'protecting-elections-from-foreign-interference',
+    number: '11',
+    route: 'slide-9',
     subRoutes: [],
-    title: 'protectingElectionsFromForeignInterference.title',
+    title: 'slide9.title',
   }, {
-    route: 'a-bretton-woods-moment-for-the-digital-age',
+    number: '12',
+    route: 'slide-10',
     subRoutes: [],
-    title: 'aBrettonWoodsMomentForTheDigitalAge.title',
+    title: 'slide10.title',
   }, {
-    route: 'informing-the-debate-around-internet-security-and-trust',
+    number: '13',
+    route: 'slide-11',
     subRoutes: [],
-    title: 'informingTheDebateAroundInternetSecurityAndTrust.title',
+    title: 'slide11.title',
   }, {
-    route: 'exploring-the-four-internets-and-the-geopolitics-of-digital-governance',
+    number: '14',
+    route: 'slide-12',
     subRoutes: [],
-    title: 'exploringTheFourInternetsAndTheGeopoliticsOfDigitalGovernance.title',
+    title: 'slide12.title',
   }, {
-    route: 'curbing-cultural-appropriation-through-intellectual-property-law',
+    number: '15',
+    route: 'slide-13',
     subRoutes: [],
-    title: 'curbingCulturalAppropriationThroughIntellectualPropertyLaw.title',
+    title: 'slide13.title',
   }, {
+    number: '16',
     route: 'outputs-and-activities',
     subRoutes: [],
     title: 'outputsAndActivities.title',
   }, {
+    number: '17',
     route: 'timeline',
     subRoutes: [],
     title: 'timeline.title',
   }, {
+    number: '18',
     route: 'financials.auditors-report',
     subRoutes: [
-      'financials.balance-sheet',
       'financials.notes',
-      'financials.revenue-and-expenses',
+      'financials.summarized-statement-of-financial-position',
+      'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
     ],
     title: 'financials.title',
   }, {
+    number: '19',
     route: 'thank-you',
     subRoutes: [],
     title: 'thankYou.title',
@@ -109,8 +130,13 @@ export default Service.extend({
   }),
 
   getNextRoute(currentRouteName) {
-    let ind = this.routes.findIndex((route) => currentRouteName === route.route
-      || route.subRoutes.includes(currentRouteName));
+    let ind = -1;
+    this.routes.forEach((route, index) => {
+      if (currentRouteName === route.route
+          || route.subRoutes.includes(currentRouteName)) {
+        ind = index;
+      }
+    });
     ind += 1;
     if (ind > 0 && ind < this.routes.length) {
       return this.routes[ind].route;
@@ -119,8 +145,13 @@ export default Service.extend({
   },
 
   getPreviousRoute(currentRouteName) {
-    let ind = this.routes.findIndex((route) => currentRouteName === route.route
-      || route.subRoutes.includes(currentRouteName));
+    let ind = 0;
+    this.routes.forEach((route, index) => {
+      if (currentRouteName === route.route
+          || route.subRoutes.includes(currentRouteName)) {
+        ind = index;
+      }
+    });
     ind -= 1;
     if (ind >= 0) {
       return this.routes[ind].route;

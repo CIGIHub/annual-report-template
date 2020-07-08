@@ -80,7 +80,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('building-closer-ties-between-canada-and-india'),
+    this.toRoute('slide-1'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -105,7 +105,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
+    this.toRoute('slide-2'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -130,7 +130,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('governing-cyberspace-during-a-crisis-in-trust'),
+    this.toRoute('slide-3'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -155,7 +155,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('governing-the-digital-public-sphere'),
+    this.toRoute('slide-4'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -180,7 +180,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
+    this.toRoute('slide-5'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -205,7 +205,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('braiding-legal-orders'),
+    this.toRoute('slide-6'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -230,7 +230,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('models-for-data-governance'),
+    this.toRoute('slide-7'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -255,7 +255,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('protecting-elections-from-foreign-interference'),
+    this.toRoute('slide-8'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -280,7 +280,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.toRoute('slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -305,7 +305,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -330,7 +330,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.toRoute('slide-11'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -355,7 +355,32 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-12'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('index'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -530,7 +555,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
-    this.toRoute('building-closer-ties-between-canada-and-india'),
+    this.toRoute('slide-1'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -555,7 +580,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
-    this.toRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
+    this.toRoute('slide-2'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -580,7 +605,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
-    this.toRoute('governing-cyberspace-during-a-crisis-in-trust'),
+    this.toRoute('slide-3'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -605,7 +630,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
-    this.toRoute('governing-the-digital-public-sphere'),
+    this.toRoute('slide-4'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -630,7 +655,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
-    this.toRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
+    this.toRoute('slide-5'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -655,7 +680,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
-    this.toRoute('braiding-legal-orders'),
+    this.toRoute('slide-6'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -680,7 +705,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
-    this.toRoute('models-for-data-governance'),
+    this.toRoute('slide-7'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -705,7 +730,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
-    this.toRoute('protecting-elections-from-foreign-interference'),
+    this.toRoute('slide-8'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -730,7 +755,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.toRoute('slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -755,7 +780,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
-    this.toRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -780,7 +805,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
-    this.toRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.toRoute('slide-11'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -805,7 +830,32 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-12'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('table-of-contents'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -930,7 +980,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
-    this.toRoute('building-closer-ties-between-canada-and-india'),
+    this.toRoute('slide-1'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -955,7 +1005,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
-    this.toRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
+    this.toRoute('slide-2'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -980,7 +1030,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
-    this.toRoute('governing-cyberspace-during-a-crisis-in-trust'),
+    this.toRoute('slide-3'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1005,7 +1055,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
-    this.toRoute('governing-the-digital-public-sphere'),
+    this.toRoute('slide-4'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1030,7 +1080,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
-    this.toRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
+    this.toRoute('slide-5'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1055,7 +1105,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
-    this.toRoute('braiding-legal-orders'),
+    this.toRoute('slide-6'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1080,7 +1130,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
-    this.toRoute('models-for-data-governance'),
+    this.toRoute('slide-7'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1105,7 +1155,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
-    this.toRoute('protecting-elections-from-foreign-interference'),
+    this.toRoute('slide-8'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1130,7 +1180,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.toRoute('slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1155,7 +1205,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
-    this.toRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1180,7 +1230,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
-    this.toRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.toRoute('slide-11'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1205,7 +1255,32 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-12'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('chairs-message'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1330,7 +1405,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
-    this.toRoute('building-closer-ties-between-canada-and-india'),
+    this.toRoute('slide-1'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1355,7 +1430,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
-    this.toRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
+    this.toRoute('slide-2'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1380,7 +1455,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
-    this.toRoute('governing-cyberspace-during-a-crisis-in-trust'),
+    this.toRoute('slide-3'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1405,7 +1480,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
-    this.toRoute('governing-the-digital-public-sphere'),
+    this.toRoute('slide-4'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1430,7 +1505,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
-    this.toRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
+    this.toRoute('slide-5'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1455,7 +1530,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
-    this.toRoute('braiding-legal-orders'),
+    this.toRoute('slide-6'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1480,7 +1555,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
-    this.toRoute('models-for-data-governance'),
+    this.toRoute('slide-7'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1505,7 +1580,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
-    this.toRoute('protecting-elections-from-foreign-interference'),
+    this.toRoute('slide-8'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1530,7 +1605,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.toRoute('slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1555,7 +1630,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
-    this.toRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1580,7 +1655,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
-    this.toRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.toRoute('slide-11'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1605,7 +1680,32 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.toRoute('slide-12'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('presidents-message'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1729,8 +1829,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('building-closer-ties-between-canada-and-india'),
-    this.toRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
+    this.fromRoute('slide-1'),
+    this.toRoute('slide-2'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1754,8 +1854,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('building-closer-ties-between-canada-and-india'),
-    this.toRoute('governing-cyberspace-during-a-crisis-in-trust'),
+    this.fromRoute('slide-1'),
+    this.toRoute('slide-3'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1779,8 +1879,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('building-closer-ties-between-canada-and-india'),
-    this.toRoute('governing-the-digital-public-sphere'),
+    this.fromRoute('slide-1'),
+    this.toRoute('slide-4'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1804,8 +1904,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('building-closer-ties-between-canada-and-india'),
-    this.toRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
+    this.fromRoute('slide-1'),
+    this.toRoute('slide-5'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1829,8 +1929,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('building-closer-ties-between-canada-and-india'),
-    this.toRoute('braiding-legal-orders'),
+    this.fromRoute('slide-1'),
+    this.toRoute('slide-6'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1854,8 +1954,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('building-closer-ties-between-canada-and-india'),
-    this.toRoute('models-for-data-governance'),
+    this.fromRoute('slide-1'),
+    this.toRoute('slide-7'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1879,8 +1979,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('building-closer-ties-between-canada-and-india'),
-    this.toRoute('protecting-elections-from-foreign-interference'),
+    this.fromRoute('slide-1'),
+    this.toRoute('slide-8'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1904,8 +2004,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('building-closer-ties-between-canada-and-india'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-1'),
+    this.toRoute('slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1929,8 +2029,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('building-closer-ties-between-canada-and-india'),
-    this.toRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.fromRoute('slide-1'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1954,8 +2054,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('building-closer-ties-between-canada-and-india'),
-    this.toRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.fromRoute('slide-1'),
+    this.toRoute('slide-11'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1979,8 +2079,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('building-closer-ties-between-canada-and-india'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-1'),
+    this.toRoute('slide-12'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2004,7 +2104,32 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('building-closer-ties-between-canada-and-india'),
+    this.fromRoute('slide-1'),
+    this.toRoute('slide-13'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-1'),
     this.toRoute('outputs-and-activities'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -2029,7 +2154,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('building-closer-ties-between-canada-and-india'),
+    this.fromRoute('slide-1'),
     this.toRoute('timeline'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -2054,7 +2179,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('building-closer-ties-between-canada-and-india'),
+    this.fromRoute('slide-1'),
     this.toRoute('financials'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -2079,7 +2204,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('building-closer-ties-between-canada-and-india'),
+    this.fromRoute('slide-1'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -2104,8 +2229,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
-    this.toRoute('governing-cyberspace-during-a-crisis-in-trust'),
+    this.fromRoute('slide-2'),
+    this.toRoute('slide-3'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2129,8 +2254,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
-    this.toRoute('governing-the-digital-public-sphere'),
+    this.fromRoute('slide-2'),
+    this.toRoute('slide-4'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2154,8 +2279,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
-    this.toRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
+    this.fromRoute('slide-2'),
+    this.toRoute('slide-5'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2179,8 +2304,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
-    this.toRoute('braiding-legal-orders'),
+    this.fromRoute('slide-2'),
+    this.toRoute('slide-6'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2204,8 +2329,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
-    this.toRoute('models-for-data-governance'),
+    this.fromRoute('slide-2'),
+    this.toRoute('slide-7'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2229,8 +2354,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
-    this.toRoute('protecting-elections-from-foreign-interference'),
+    this.fromRoute('slide-2'),
+    this.toRoute('slide-8'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2254,8 +2379,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-2'),
+    this.toRoute('slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2279,8 +2404,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
-    this.toRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.fromRoute('slide-2'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2304,8 +2429,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
-    this.toRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.fromRoute('slide-2'),
+    this.toRoute('slide-11'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2329,8 +2454,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-2'),
+    this.toRoute('slide-12'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2354,7 +2479,32 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
+    this.fromRoute('slide-2'),
+    this.toRoute('slide-13'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-2'),
     this.toRoute('outputs-and-activities'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -2379,7 +2529,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
+    this.fromRoute('slide-2'),
     this.toRoute('timeline'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -2404,7 +2554,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
+    this.fromRoute('slide-2'),
     this.toRoute('financials'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -2429,7 +2579,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-clarion-call-for-protecting-the-worlds-refugees'),
+    this.fromRoute('slide-2'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -2454,8 +2604,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-cyberspace-during-a-crisis-in-trust'),
-    this.toRoute('governing-the-digital-public-sphere'),
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-4'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2479,8 +2629,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-cyberspace-during-a-crisis-in-trust'),
-    this.toRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-5'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2504,8 +2654,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-cyberspace-during-a-crisis-in-trust'),
-    this.toRoute('braiding-legal-orders'),
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-6'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2529,8 +2679,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-cyberspace-during-a-crisis-in-trust'),
-    this.toRoute('models-for-data-governance'),
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-7'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2554,8 +2704,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-cyberspace-during-a-crisis-in-trust'),
-    this.toRoute('protecting-elections-from-foreign-interference'),
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-8'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2579,8 +2729,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-cyberspace-during-a-crisis-in-trust'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2604,8 +2754,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-cyberspace-during-a-crisis-in-trust'),
-    this.toRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2629,8 +2779,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-cyberspace-during-a-crisis-in-trust'),
-    this.toRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-11'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2654,8 +2804,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-cyberspace-during-a-crisis-in-trust'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-12'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2679,7 +2829,32 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-cyberspace-during-a-crisis-in-trust'),
+    this.fromRoute('slide-3'),
+    this.toRoute('slide-13'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-3'),
     this.toRoute('outputs-and-activities'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -2704,7 +2879,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-cyberspace-during-a-crisis-in-trust'),
+    this.fromRoute('slide-3'),
     this.toRoute('timeline'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -2729,7 +2904,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-cyberspace-during-a-crisis-in-trust'),
+    this.fromRoute('slide-3'),
     this.toRoute('financials'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -2754,7 +2929,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-cyberspace-during-a-crisis-in-trust'),
+    this.fromRoute('slide-3'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -2779,8 +2954,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-the-digital-public-sphere'),
-    this.toRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
+    this.fromRoute('slide-4'),
+    this.toRoute('slide-5'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2804,8 +2979,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-the-digital-public-sphere'),
-    this.toRoute('braiding-legal-orders'),
+    this.fromRoute('slide-4'),
+    this.toRoute('slide-6'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2829,8 +3004,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-the-digital-public-sphere'),
-    this.toRoute('models-for-data-governance'),
+    this.fromRoute('slide-4'),
+    this.toRoute('slide-7'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2854,8 +3029,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-the-digital-public-sphere'),
-    this.toRoute('protecting-elections-from-foreign-interference'),
+    this.fromRoute('slide-4'),
+    this.toRoute('slide-8'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2879,8 +3054,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-the-digital-public-sphere'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-4'),
+    this.toRoute('slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2904,8 +3079,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-the-digital-public-sphere'),
-    this.toRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.fromRoute('slide-4'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2929,8 +3104,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-the-digital-public-sphere'),
-    this.toRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.fromRoute('slide-4'),
+    this.toRoute('slide-11'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2954,8 +3129,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-the-digital-public-sphere'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-4'),
+    this.toRoute('slide-12'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2979,7 +3154,32 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-the-digital-public-sphere'),
+    this.fromRoute('slide-4'),
+    this.toRoute('slide-13'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-4'),
     this.toRoute('outputs-and-activities'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3004,7 +3204,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-the-digital-public-sphere'),
+    this.fromRoute('slide-4'),
     this.toRoute('timeline'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3029,7 +3229,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-the-digital-public-sphere'),
+    this.fromRoute('slide-4'),
     this.toRoute('financials'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3054,7 +3254,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('governing-the-digital-public-sphere'),
+    this.fromRoute('slide-4'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3079,8 +3279,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
-    this.toRoute('braiding-legal-orders'),
+    this.fromRoute('slide-5'),
+    this.toRoute('slide-6'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3104,8 +3304,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
-    this.toRoute('models-for-data-governance'),
+    this.fromRoute('slide-5'),
+    this.toRoute('slide-7'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3129,8 +3329,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
-    this.toRoute('protecting-elections-from-foreign-interference'),
+    this.fromRoute('slide-5'),
+    this.toRoute('slide-8'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3154,8 +3354,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-5'),
+    this.toRoute('slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3179,8 +3379,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
-    this.toRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.fromRoute('slide-5'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3204,8 +3404,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
-    this.toRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.fromRoute('slide-5'),
+    this.toRoute('slide-11'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3229,8 +3429,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-5'),
+    this.toRoute('slide-12'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3254,7 +3454,32 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
+    this.fromRoute('slide-5'),
+    this.toRoute('slide-13'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-5'),
     this.toRoute('outputs-and-activities'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3279,7 +3504,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
+    this.fromRoute('slide-5'),
     this.toRoute('timeline'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3304,7 +3529,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
+    this.fromRoute('slide-5'),
     this.toRoute('financials'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3329,7 +3554,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('media-and-mass-atrocity-the-rwanda-genocide-and-beyond'),
+    this.fromRoute('slide-5'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3354,8 +3579,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('braiding-legal-orders'),
-    this.toRoute('models-for-data-governance'),
+    this.fromRoute('slide-6'),
+    this.toRoute('slide-7'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3379,8 +3604,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('braiding-legal-orders'),
-    this.toRoute('protecting-elections-from-foreign-interference'),
+    this.fromRoute('slide-6'),
+    this.toRoute('slide-8'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3404,8 +3629,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('braiding-legal-orders'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-6'),
+    this.toRoute('slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3429,8 +3654,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('braiding-legal-orders'),
-    this.toRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.fromRoute('slide-6'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3454,8 +3679,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('braiding-legal-orders'),
-    this.toRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.fromRoute('slide-6'),
+    this.toRoute('slide-11'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3479,8 +3704,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('braiding-legal-orders'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-6'),
+    this.toRoute('slide-12'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3504,7 +3729,32 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('braiding-legal-orders'),
+    this.fromRoute('slide-6'),
+    this.toRoute('slide-13'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-6'),
     this.toRoute('outputs-and-activities'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3529,7 +3779,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('braiding-legal-orders'),
+    this.fromRoute('slide-6'),
     this.toRoute('timeline'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3554,7 +3804,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('braiding-legal-orders'),
+    this.fromRoute('slide-6'),
     this.toRoute('financials'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3579,7 +3829,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('braiding-legal-orders'),
+    this.fromRoute('slide-6'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3604,8 +3854,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('models-for-data-governance'),
-    this.toRoute('protecting-elections-from-foreign-interference'),
+    this.fromRoute('slide-7'),
+    this.toRoute('slide-8'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3629,8 +3879,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('models-for-data-governance'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-7'),
+    this.toRoute('slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3654,8 +3904,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('models-for-data-governance'),
-    this.toRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.fromRoute('slide-7'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3679,8 +3929,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('models-for-data-governance'),
-    this.toRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.fromRoute('slide-7'),
+    this.toRoute('slide-11'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3704,8 +3954,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('models-for-data-governance'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-7'),
+    this.toRoute('slide-12'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3729,7 +3979,32 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('models-for-data-governance'),
+    this.fromRoute('slide-7'),
+    this.toRoute('slide-13'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-7'),
     this.toRoute('outputs-and-activities'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3754,7 +4029,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('models-for-data-governance'),
+    this.fromRoute('slide-7'),
     this.toRoute('timeline'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3779,7 +4054,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('models-for-data-governance'),
+    this.fromRoute('slide-7'),
     this.toRoute('financials'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3804,7 +4079,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('models-for-data-governance'),
+    this.fromRoute('slide-7'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3829,8 +4104,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('protecting-elections-from-foreign-interference'),
-    this.toRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-8'),
+    this.toRoute('slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3854,8 +4129,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('protecting-elections-from-foreign-interference'),
-    this.toRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.fromRoute('slide-8'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3879,8 +4154,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('protecting-elections-from-foreign-interference'),
-    this.toRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.fromRoute('slide-8'),
+    this.toRoute('slide-11'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3904,8 +4179,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('protecting-elections-from-foreign-interference'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-8'),
+    this.toRoute('slide-12'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3929,7 +4204,32 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('protecting-elections-from-foreign-interference'),
+    this.fromRoute('slide-8'),
+    this.toRoute('slide-13'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-8'),
     this.toRoute('outputs-and-activities'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3954,7 +4254,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('protecting-elections-from-foreign-interference'),
+    this.fromRoute('slide-8'),
     this.toRoute('timeline'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -3979,7 +4279,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('protecting-elections-from-foreign-interference'),
+    this.fromRoute('slide-8'),
     this.toRoute('financials'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4004,7 +4304,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('protecting-elections-from-foreign-interference'),
+    this.fromRoute('slide-8'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4029,8 +4329,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-bretton-woods-moment-for-the-digital-age'),
-    this.toRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.fromRoute('slide-9'),
+    this.toRoute('slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -4054,8 +4354,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-bretton-woods-moment-for-the-digital-age'),
-    this.toRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.fromRoute('slide-9'),
+    this.toRoute('slide-11'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -4079,8 +4379,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-bretton-woods-moment-for-the-digital-age'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-9'),
+    this.toRoute('slide-12'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -4104,7 +4404,32 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-9'),
+    this.toRoute('slide-13'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-9'),
     this.toRoute('outputs-and-activities'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4129,7 +4454,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-9'),
     this.toRoute('timeline'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4154,7 +4479,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-9'),
     this.toRoute('financials'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4179,7 +4504,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('a-bretton-woods-moment-for-the-digital-age'),
+    this.fromRoute('slide-9'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4204,8 +4529,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('informing-the-debate-around-internet-security-and-trust'),
-    this.toRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.fromRoute('slide-10'),
+    this.toRoute('slide-11'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -4229,8 +4554,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('informing-the-debate-around-internet-security-and-trust'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-10'),
+    this.toRoute('slide-12'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -4254,7 +4579,32 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.fromRoute('slide-10'),
+    this.toRoute('slide-13'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-10'),
     this.toRoute('outputs-and-activities'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4279,7 +4629,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.fromRoute('slide-10'),
     this.toRoute('timeline'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4304,7 +4654,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.fromRoute('slide-10'),
     this.toRoute('financials'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4329,7 +4679,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('informing-the-debate-around-internet-security-and-trust'),
+    this.fromRoute('slide-10'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4354,8 +4704,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-11'),
+    this.toRoute('slide-12'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -4379,8 +4729,8 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
-    this.toRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-11'),
+    this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -4404,7 +4754,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.fromRoute('slide-11'),
     this.toRoute('outputs-and-activities'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4429,7 +4779,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.fromRoute('slide-11'),
     this.toRoute('timeline'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4454,7 +4804,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.fromRoute('slide-11'),
     this.toRoute('financials'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4479,7 +4829,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('exploring-the-four-internets-and-the-geopolitics-of-digital-governance'),
+    this.fromRoute('slide-11'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4504,7 +4854,57 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-12'),
+    this.toRoute('slide-13'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-12'),
+    this.toRoute('slide-13'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-12'),
     this.toRoute('outputs-and-activities'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4529,7 +4929,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-12'),
     this.toRoute('timeline'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4554,7 +4954,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-12'),
     this.toRoute('financials'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4579,7 +4979,107 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('curbing-cultural-appropriation-through-intellectual-property-law'),
+    this.fromRoute('slide-12'),
+    this.toRoute('thank-you'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-13'),
+    this.toRoute('outputs-and-activities'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-13'),
+    this.toRoute('timeline'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-13'),
+    this.toRoute('financials'),
+    this.use('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', false, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+    this.reverse('explode', {
+      pickNew: '.background-row',
+      use: ['crossFadeSlide', true, {
+        duration: customDuration,
+      }],
+    }, {
+      use: ['crossFade', {
+        duration: customDuration,
+      }],
+    }),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('slide-13'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',
