@@ -75,14 +75,14 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/slide-12-thumbnail.jpg',
     },
     'slide-13': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/curbing-cultural-appropriation-through-intellectual-property-law.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/curbing-cultural-appropriation-through-intellectual-property-law-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/curbing-cultural-appropriation-through-intellectual-property-law-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/slide-13.jpg',
+      ogUrl: 'template/slides/slide-13-og.jpg',
+      thumbnailUrl: 'template/slides/slide-13-thumbnail.jpg',
     },
     'thank-you': {
-      fullSizeUrl: '5ab09e92875a54ff/slides/thank-you.jpg',
-      ogUrl: '5ab09e92875a54ff/slides/thank-you-og.jpg',
-      thumbnailUrl: '5ab09e92875a54ff/slides/thank-you-thumbnail.jpg',
+      fullSizeUrl: 'template/slides/thank-you.jpg',
+      ogUrl: 'template/slides/thank-you-og.jpg',
+      thumbnailUrl: 'template/slides/thank-you-thumbnail.jpg',
     },
   },
   nodesMissingBackground: [

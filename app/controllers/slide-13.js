@@ -44,6 +44,6 @@ export default Controller.extend({
   }),
 
   videoLink: computed('backgroundImage.imageHost', function() {
-    return `${this.backgroundImage.imageHost}5ab09e92875a54ff/slides/curbing-cultural-appropriation-through-intellectual-property-law.mp4`;
+    return `${this.backgroundImage.imageHost}template/slides/slide-13.mp4`;
   }),
 });
