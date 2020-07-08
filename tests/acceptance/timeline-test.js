@@ -124,6 +124,7 @@ module('Acceptance | timeline', function(hooks) {
     await finishRender();
 
     assert.strictEqual(currentURL(), '/outputs-and-activities');
+    assert.dom('ul.dot-nav').exists();
   });
 
   test('should transition to /financials/auditors-report on scroll-arrow-down-btn click', async function(assert) {
@@ -134,5 +135,6 @@ module('Acceptance | timeline', function(hooks) {
     await finishRender();
 
     assert.strictEqual(currentURL(), '/financials/auditors-report');
+    assert.dom('ul.dot-nav').exists();
   });
 });

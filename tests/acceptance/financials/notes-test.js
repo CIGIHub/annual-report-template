@@ -78,6 +78,7 @@ module('Acceptance | financials/notes', function(hooks) {
     await finishRender();
 
     assert.strictEqual(currentURL(), '/timeline');
+    assert.dom('ul.dot-nav').exists();
   });
 
   test('should transition to /thank-you on scroll-arrow-down-btn click', async function(assert) {
@@ -91,5 +92,6 @@ module('Acceptance | financials/notes', function(hooks) {
     await finishRender();
 
     assert.strictEqual(currentURL(), '/thank-you');
+    assert.dom('ul.dot-nav').exists();
   });
 });

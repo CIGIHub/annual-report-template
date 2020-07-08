@@ -78,6 +78,7 @@ module('Acceptance | financials/summarized statement of revenues and expenditure
     await finishRender();
 
     assert.strictEqual(currentURL(), '/timeline');
+    assert.dom('ul.dot-nav').exists();
   });
 
   test('should transition to /thank-you on scroll-arrow-down-btn click', async function(assert) {
@@ -87,5 +88,6 @@ module('Acceptance | financials/summarized statement of revenues and expenditure
     await finishRender();
 
     assert.strictEqual(currentURL(), '/thank-you');
+    assert.dom('ul.dot-nav').exists();
   });
 });
