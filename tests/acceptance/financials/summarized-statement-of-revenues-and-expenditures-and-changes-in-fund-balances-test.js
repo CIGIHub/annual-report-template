@@ -3,17 +3,17 @@ import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Acceptance | financials/balance sheet', function(hooks) {
+module('Acceptance | financials/summarized statement of revenues and expenditures and changes in fund balances', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('visiting /financials/balance-sheet', async function(assert) {
-    await visit('/financials/balance-sheet');
+  test('visiting /financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances', async function(assert) {
+    await visit('/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
-    assert.equal(currentURL(), '/financials/balance-sheet');
+    assert.equal(currentURL(), '/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
   });
 
   test('should have correct head title', async function(assert) {
-    await visit('/financials/balance-sheet');
+    await visit('/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
       'Financials | 2019 CIGI Annual Report',
@@ -21,7 +21,7 @@ module('Acceptance | financials/balance sheet', function(hooks) {
   });
 
   test('should have correct head description', async function(assert) {
-    await visit('/financials/balance-sheet');
+    await visit('/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
     assert.strictEqual(
       document.querySelector('head meta[property="og:description"]').getAttribute('content'),
       'Explore a year of research, opinion and expertise in CIGI’s interactive annual report.',
@@ -29,7 +29,7 @@ module('Acceptance | financials/balance sheet', function(hooks) {
   });
 
   test('should have correct head site name', async function(assert) {
-    await visit('/financials/balance-sheet');
+    await visit('/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
     assert.strictEqual(
       document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
       '2019 CIGI Annual Report',
@@ -37,27 +37,27 @@ module('Acceptance | financials/balance sheet', function(hooks) {
   });
 
   test('should have correct head url', async function(assert) {
-    await visit('/financials/balance-sheet');
+    await visit('/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/financials/balance-sheet/',
+      'https://www.cigionline.org/interactives/2019annualreport/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances/',
     );
   });
 
   test('should have correct twitter share link', async function(assert) {
-    await visit('/financials/balance-sheet');
+    await visit('/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/financials/balance-sheet');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
   });
 
   test('should have correct linkedin share link', async function(assert) {
-    await visit('/financials/balance-sheet');
+    await visit('/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/financials/balance-sheet');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
   });
 
   test('should transition to /timeline on scroll-arrow-up-btn click', async function(assert) {
-    await visit('/financials/balance-sheet');
+    await visit('/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
     assert.ok(
       document.querySelector('.scroll-arrow-up-btn'),
@@ -70,7 +70,7 @@ module('Acceptance | financials/balance sheet', function(hooks) {
   });
 
   test('should transition to /thank-you on scroll-arrow-down-btn click', async function(assert) {
-    await visit('/financials/balance-sheet');
+    await visit('/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
     assert.ok(
       document.querySelector('.scroll-arrow-down-btn'),

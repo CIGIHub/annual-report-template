@@ -87,23 +87,23 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /financials/balance-sheet', function(assert) {
+  test('should have bounceScrollArrowDown=false for /financials/summarized-statement-of-financial-position', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.balance-sheet');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-financial-position');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
   test('should have bounceScrollArrowDown=false for /financials/notes', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.notes');
+    set(controller, 'router.currentRouteName', 'fina  ncials.notes');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /financials/revenue-and-expenses', function(assert) {
+  test('should have bounceScrollArrowDown=false for /financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.revenue-and-expenses');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -255,9 +255,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
 
-  test('should have hideMobileOverlay=true for /financials/balance-sheet', function(assert) {
+  test('should have hideMobileOverlay=true for /financials/summarized-statement-of-financial-position', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.balance-sheet');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-financial-position');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
@@ -269,9 +269,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
 
-  test('should have hideMobileOverlay=true for /financials/revenue-and-expenses', function(assert) {
+  test('should have hideMobileOverlay=true for /financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.revenue-and-expenses');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
@@ -442,9 +442,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), true);
   });
 
-  test('should have lightBackground=true for /financials/balance-sheet', function(assert) {
+  test('should have lightBackground=true for /financials/summarized-statement-of-financial-position', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.balance-sheet');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-financial-position');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), true);
@@ -458,9 +458,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), true);
   });
 
-  test('should have lightBackground=true for /financials/revenue-and-expenses', function(assert) {
+  test('should have lightBackground=true for /financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.revenue-and-expenses');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), true);
@@ -651,9 +651,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /financials/balance-sheet', function(assert) {
+  test('should have scrollableContentPage=true for /financials/summarized-statement-of-financial-position', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.balance-sheet');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-financial-position');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -665,9 +665,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /financials/revenue-and-expenses', function(assert) {
+  test('should have scrollableContentPage=true for /financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.revenue-and-expenses');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -829,9 +829,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /financials/balance-sheet', function(assert) {
+  test('should have showDotNav=true for /financials/summarized-statement-of-financial-position', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.balance-sheet');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-financial-position');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
@@ -843,9 +843,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /financials/revenue-and-expenses', function(assert) {
+  test('should have showDotNav=true for /financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.revenue-and-expenses');
+    set(controller, 'router.currentRouteName', 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });

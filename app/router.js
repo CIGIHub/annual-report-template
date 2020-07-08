@@ -10,9 +10,11 @@ Router.map(function() {
   this.route('chairs-message');
   this.route('financials', function() {
     this.route('auditors-report');
-    this.route('balance-sheet');
     this.route('notes');
-    this.route('revenue-and-expenses');
+    this.route('summarized-statement-of-financial-position');
+    this.route(
+      'summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+    );
   });
   this.route('outputs-and-activities');
   this.route('presidents-message');

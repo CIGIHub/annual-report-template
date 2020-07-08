@@ -23,11 +23,11 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     const title = `${this.intl.t('financials.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
     set(this, 'headData.description', this.intl.t('description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}financials/revenue-and-expenses/`);
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}financials/summarized-statement-of-financial-position/`);
     set(this, 'headData.image', this.backgroundImage.defaultBackground.ogUrl);
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('financials.revenue-and-expenses');
+    const nextRoute = this.routeOrder.getNextRoute('financials.summarized-statement-of-financial-position');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {
