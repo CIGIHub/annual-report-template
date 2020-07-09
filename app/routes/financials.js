@@ -4,9 +4,9 @@ export default Route.extend({
   beforeModel(transition) {
     if (![
       'financials.auditors-report',
-      'financials.balance-sheet',
-      'financials.revenue-and-expenses',
       'financials.notes',
+      'financials.summarized-statement-of-financial-position',
+      'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
     ].includes(transition.targetName)) {
       this.replaceWith('financials.auditors-report');
     }

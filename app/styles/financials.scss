@@ -99,6 +99,7 @@
   p {
     color: $black;
     font-size: 14px;
+    margin-bottom: 0.5rem;
 
     @media screen and (min-width: $lg-screen-min) and (max-width: $lg-screen-max) {
       font-size: 13px;
@@ -182,8 +183,25 @@
     }
 
     .table-subtotal {
+      &.no-bottom-border {
+        .num-col {
+          border-bottom: 0;
+        }
+      }
+
+      &.no-top-border {
+        .num-col {
+          border-top: 0;
+        }
+      }
+
+      td {
+        font-weight: 500;
+      }
+
       .num-col {
         border-bottom: 1px solid $black;
+        border-top: 1px solid $black;
         font-weight: 500;
       }
     }
@@ -214,10 +232,6 @@
       td {
         font-weight: 500;
       }
-
-      .num-col {
-        border-top: 1px solid $black;
-      }
     }
   }
 
@@ -225,9 +239,9 @@
     border-bottom: 1px solid $black;
     color: $grey-selected;
     font-family: $font-primary, sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 10px;
     padding-bottom: 10px;
     text-transform: uppercase;
@@ -243,7 +257,7 @@
 
     a {
       color: $black;
-      font-weight: 600;
+      font-weight: 500;
 
       &:hover {
         .underline {
@@ -274,7 +288,7 @@
         margin: 0 3px 1px 0;
       }
 
-      @media screen and (min-width: $med-screen-min) {
+      @media screen and (min-width: $lg-screen-min) {
         float: right;
       }
     }

@@ -16,12 +16,12 @@ export default Controller.extend({
       linkTo: 'financials.auditors-report',
       title: this.intl.t('financials.auditorsReport.title'),
     }, {
-      current: currentRouteName === 'financials.balance-sheet',
-      linkTo: 'financials.balance-sheet',
+      current: currentRouteName === 'financials.summarized-statement-of-financial-position',
+      linkTo: 'financials.summarized-statement-of-financial-position',
       title: this.intl.t('financials.balanceSheet.title'),
     }, {
-      current: currentRouteName === 'financials.revenue-and-expenses',
-      linkTo: 'financials.revenue-and-expenses',
+      current: currentRouteName === 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+      linkTo: 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
       title: this.intl.t('financials.revenueAndExpenses.title'),
     }, {
       current: currentRouteName === 'financials.notes',
