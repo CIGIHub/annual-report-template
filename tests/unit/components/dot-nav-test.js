@@ -44,13 +44,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /a-bretton-woods-moment-for-the-digital-age', function(assert) {
+  test('should have correct menu items for /slide10', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'a-bretton-woods-moment-for-the-digital-age');
+    set(component, 'router.currentRouteName', 'slide-10');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'a-bretton-woods-moment-for-the-digital-age') {
+      if (menuItem.route === 'slide-10') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -66,13 +66,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /a-clarion-call-for-protecting-the-worlds-refugees', function(assert) {
+  test('should have correct menu items for /slide-2', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'a-clarion-call-for-protecting-the-worlds-refugees');
+    set(component, 'router.currentRouteName', 'slide-2');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'a-clarion-call-for-protecting-the-worlds-refugees') {
+      if (menuItem.route === 'slide-2') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -88,13 +88,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /braiding-legal-orders', function(assert) {
+  test('should have correct menu items for /slide7', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'braiding-legal-orders');
+    set(component, 'router.currentRouteName', 'slide-7');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'braiding-legal-orders') {
+      if (menuItem.route === 'slide-7') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -110,13 +110,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /building-closer-ties-between-canada-and-india', function(assert) {
+  test('should have correct menu items for /slide-1', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'building-closer-ties-between-canada-and-india');
+    set(component, 'router.currentRouteName', 'slide-1');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'building-closer-ties-between-canada-and-india') {
+      if (menuItem.route === 'slide-1') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -154,13 +154,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /curbing-cultural-appropriation-through-intellectual-property-law', function(assert) {
+  test('should have correct menu items for /slide13', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'curbing-cultural-appropriation-through-intellectual-property-law');
+    set(component, 'router.currentRouteName', 'slide-13');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'curbing-cultural-appropriation-through-intellectual-property-law') {
+      if (menuItem.route === 'slide-13') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -176,13 +176,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /exploring-the-four-internets-and-the-geopolitics-of-digital-governance', function(assert) {
+  test('should have correct menu items for /slide12', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'exploring-the-four-internets-and-the-geopolitics-of-digital-governance');
+    set(component, 'router.currentRouteName', 'slide-12');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'exploring-the-four-internets-and-the-geopolitics-of-digital-governance') {
+      if (menuItem.route === 'slide-12') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -220,9 +220,9 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /financials/balance-sheet', function(assert) {
+  test('should have correct menu items for /financials/summarized-statement-of-financial-position', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'financials.balance-sheet');
+    set(component, 'router.currentRouteName', 'financials.summarized-statement-of-financial-position');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
@@ -264,9 +264,9 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /financials/revenue-and-expenses', function(assert) {
+  test('should have correct menu items for /financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'financials.revenue-and-expenses');
+    set(component, 'router.currentRouteName', 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
@@ -286,13 +286,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /governing-cyberspace-during-a-crisis-in-trust', function(assert) {
+  test('should have correct menu items for /slide4', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'governing-cyberspace-during-a-crisis-in-trust');
+    set(component, 'router.currentRouteName', 'slide-4');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'governing-cyberspace-during-a-crisis-in-trust') {
+      if (menuItem.route === 'slide-4') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -308,13 +308,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /governing-the-digital-public-sphere', function(assert) {
+  test('should have correct menu items for /slide5', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'governing-the-digital-public-sphere');
+    set(component, 'router.currentRouteName', 'slide-5');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'governing-the-digital-public-sphere') {
+      if (menuItem.route === 'slide-5') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -330,13 +330,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /informing-the-debate-around-internet-security-and-trust', function(assert) {
+  test('should have correct menu items for /slide11', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'informing-the-debate-around-internet-security-and-trust');
+    set(component, 'router.currentRouteName', 'slide-11');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'informing-the-debate-around-internet-security-and-trust') {
+      if (menuItem.route === 'slide-11') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -352,13 +352,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /media-and-mass-atrocity-the-rwanda-genocide-and-beyond', function(assert) {
+  test('should have correct menu items for /slide6', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond');
+    set(component, 'router.currentRouteName', 'slide-6');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'media-and-mass-atrocity-the-rwanda-genocide-and-beyond') {
+      if (menuItem.route === 'slide-6') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -374,13 +374,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /models-for-data-governance', function(assert) {
+  test('should have correct menu items for /slide8', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'models-for-data-governance');
+    set(component, 'router.currentRouteName', 'slide-8');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'models-for-data-governance') {
+      if (menuItem.route === 'slide-8') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -440,13 +440,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /protecting-elections-from-foreign-interference', function(assert) {
+  test('should have correct menu items for /slide9', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'protecting-elections-from-foreign-interference');
+    set(component, 'router.currentRouteName', 'slide-9');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'protecting-elections-from-foreign-interference') {
+      if (menuItem.route === 'slide-9') {
         assert.strictEqual(
           menuItem.current,
           true,
