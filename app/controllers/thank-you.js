@@ -19,19 +19,14 @@ export default Controller.extend({
       title: this.intl.t('thankYou.link1'),
       type: this.intl.t('download'),
     }, {
-      icon: 'download',
-      link: '',
-      title: this.intl.t('thankYou.link2'),
-      type: this.intl.t('telecharger'),
-    }, {
       icon: 'envelope',
       link: '',
-      title: this.intl.t('thankYou.link3'),
+      title: this.intl.t('thankYou.link2'),
       type: this.intl.t('subscribe'),
     }, {
       icon: 'file-alt',
       link: '',
-      title: this.intl.t('thankYou.link4'),
+      title: this.intl.t('thankYou.link3'),
       type: this.intl.t('partners'),
     }];
   }),
