@@ -22,7 +22,8 @@ export default Controller.extend({
   backgroundStyle: computed('router.currentRouteName', function() {
     const currentRouteName = this.router.currentRouteName;
     if ([
-      'table-of-contents',
+      'en.table-of-contents',
+      'fr.table-des-matieres',
       'thank-you',
     ].includes(currentRouteName)) {
       return htmlSafe('background-color: #000;');
@@ -54,13 +55,14 @@ export default Controller.extend({
   hideMobileOverlay: computed('router.currentRouteName', function() {
     return [
       'chairs-message',
+      'en.table-of-contents',
+      'fr.table-des-matieres',
       'outputs-and-activities',
       'financials.auditors-report',
       'financials.notes',
       'financials.summarized-statement-of-financial-position',
       'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
       'presidents-message',
-      'table-of-contents',
     ].includes(this.router.currentRouteName);
   }),
 
@@ -98,8 +100,9 @@ export default Controller.extend({
     const onContentSlide = ![
       'index',
       'en.index',
+      'en.table-of-contents',
       'fr.index',
-      'table-of-contents',
+      'fr.table-des-matieres',
     ].includes(this.router.currentRouteName);
     if (onContentSlide && !this.dotNavShown) {
       set(this, 'dotNavShown', true);

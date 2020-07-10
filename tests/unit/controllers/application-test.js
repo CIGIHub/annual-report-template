@@ -171,9 +171,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /table-of-contents', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/table-of-contents', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'table-of-contents');
+    set(controller, 'router.currentRouteName', 'en.table-of-contents');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -339,9 +339,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=true for /table-of-contents', function(assert) {
+  test('should have hideMobileOverlay=true for /en/table-of-contents', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'table-of-contents');
+    set(controller, 'router.currentRouteName', 'en.table-of-contents');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
@@ -562,9 +562,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /table-of-contents', function(assert) {
+  test('should have lightBackground=false for /en/table-of-contents', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'table-of-contents');
+    set(controller, 'router.currentRouteName', 'en.table-of-contents');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -735,9 +735,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /table-of-contents', function(assert) {
+  test('should have scrollableContentPage=true for /en/table-of-contents', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'table-of-contents');
+    set(controller, 'router.currentRouteName', 'en.table-of-contents');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -913,17 +913,17 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=false for /table-of-contents', function(assert) {
+  test('should have showDotNav=false for /en/table-of-contents', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'table-of-contents');
+    set(controller, 'router.currentRouteName', 'en.table-of-contents');
 
     assert.strictEqual(get(controller, 'showDotNav'), false);
   });
 
-  test('should have showDotNav=true for /table-of-contents when the dot-nav has already been shown', function(assert) {
+  test('should have showDotNav=true for /en/table-of-contents when the dot-nav has already been shown', function(assert) {
     const controller = this.owner.lookup('controller:application');
     set(controller, 'dotNavShown', true);
-    set(controller, 'router.currentRouteName', 'table-of-contents');
+    set(controller, 'router.currentRouteName', 'en.table-of-contents');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
@@ -981,9 +981,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showScrollArrowUp'), false);
   });
 
-  test('should have showScrollArrowUp=true for /table-of-contents', function(assert) {
+  test('should have showScrollArrowUp=true for /en/table-of-contents', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'table-of-contents');
+    set(controller, 'router.currentRouteName', 'en.table-of-contents');
 
     assert.strictEqual(get(controller, 'showScrollArrowUp'), true);
   });
@@ -1016,12 +1016,12 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'isTransitioning'), false);
   });
 
-  test('should transition for 1500ms for /table-of-contents', function(assert) {
+  test('should transition for 1500ms for /en/table-of-contents', function(assert) {
     const controller = this.owner.lookup('controller:application');
     controller.transitionToRoute = function() {
       return true;
     };
-    set(controller, 'router.currentRouteName', 'table-of-contents');
+    set(controller, 'router.currentRouteName', 'en.table-of-contents');
 
     controller.send('transitionBack');
 

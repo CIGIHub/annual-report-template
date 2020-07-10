@@ -12,6 +12,12 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   intl: service(),
   routeOrder: service(),
 
+  queryParams: {
+    remerciements: {
+      refreshModel: true,
+    },
+  },
+
   beforeModel() {
     this.intl.setLocale('fr-ca');
     if (!this.assetLoader.assetsLoaded) {
@@ -23,13 +29,13 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   afterModel() {
     set(this, 'headData.title', this.intl.t('title'));
     set(this, 'headData.description', this.intl.t('description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}fr/`);
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}fr/table-des-matieres/`);
     set(this, 'headData.image', this.backgroundImage.defaultBackground.ogUrl);
     set(this, 'headData.siteName', this.intl.t('title'));
     set(this, 'headData.locale', 'fr_CA');
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('index');
+    const nextRoute = this.routeOrder.getNextRoute('fr.table-of-contents');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {

@@ -98,13 +98,13 @@ module('Acceptance | chairs message', function(hooks) {
     assert.dom('.footer').hasClass('footer-dark');
   });
 
-  test('should transition to /table-of-contents on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /en/table-of-contents on scroll-arrow-up-btn click', async function(assert) {
     await visit('/chairs-message');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/table-of-contents');
+    assert.strictEqual(currentURL(), '/en/table-of-contents');
     assert.dom('ul.dot-nav').exists();
   });
 

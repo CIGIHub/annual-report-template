@@ -65,7 +65,7 @@ module('Acceptance | en/index', function(hooks) {
   });
 
   test('should have correct slide content', async function(assert) {
-    await visit('/');
+    await visit('/en');
 
     assert.dom('.home-page').exists();
     assert.dom('.home-page .intro-logo').exists();
@@ -81,13 +81,13 @@ module('Acceptance | en/index', function(hooks) {
     assert.dom('.footer').doesNotExist();
   });
 
-  test('should transition to /table-of-contents on scroll-arrow-down-btn click', async function(assert) {
-    await visit('/');
+  test('should transition to /en/table-of-contents on scroll-arrow-down-btn click', async function(assert) {
+    await visit('/en');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/table-of-contents');
+    assert.strictEqual(currentURL(), '/en/table-of-contents');
     assert.dom('ul.dot-nav').doesNotExist();
   });
 });

@@ -5,7 +5,7 @@ export default Service.extend({
   intl: service(),
 
   routes: computed('intl.locale', function() {
-    const isFrenchLocale = this.intl && this.intl.locale && this.intl.locale[0] === 'en-fr';
+    const isFrenchLocale = this.intl && this.intl.locale && this.intl.locale[0] === 'fr-ca';
 
     return [{
       number: '00',
@@ -14,7 +14,7 @@ export default Service.extend({
       title: 'home',
     }, {
       number: '00',
-      route: 'table-of-contents',
+      route: isFrenchLocale ? 'fr.table-des-matieres' : 'en.table-of-contents',
       subRoutes: [],
       title: 'tableOfContents.title',
     }, {

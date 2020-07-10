@@ -41,7 +41,7 @@ module('Acceptance | fr/index', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:locale"]').getAttribute('content'),
-      'en_FR',
+      'fr_CA',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="fb:app_id"]').getAttribute('content'),
@@ -81,13 +81,13 @@ module('Acceptance | fr/index', function(hooks) {
     assert.dom('.footer').doesNotExist();
   });
 
-  test('should transiton to /table-of-contents on scroll-arrow-down-btn click', async function(assert) {
-    await visit('/');
+  test('should transiton to /fr/table-des-matieres on scroll-arrow-down-btn click', async function(assert) {
+    await visit('/fr');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/table-of-contents');
+    assert.strictEqual(currentURL(), '/fr/table-des-matieres');
     assert.dom('ul.dot-nav').doesNotExist();
   });
 });
