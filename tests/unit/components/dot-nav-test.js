@@ -22,13 +22,35 @@ module('Unit | Component | dot-nav', function(hooks) {
     assert.ok(component);
   });
 
-  test('should have correct menu items for /', function(assert) {
+  test('should have correct menu items for /en', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'index');
+    set(component, 'router.currentRouteName', 'en.index');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'index') {
+      if (menuItem.route === 'en.index') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /fr', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'fr.index');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'fr.index') {
         assert.strictEqual(
           menuItem.current,
           true,

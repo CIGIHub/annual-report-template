@@ -4,7 +4,6 @@ import {
   observer,
   set,
 } from '@ember/object';
-import { equal } from '@ember/object/computed';
 import { later } from '@ember/runloop';
 import { inject as service } from '@ember/service';
 import { htmlSafe } from '@ember/template';
@@ -48,7 +47,9 @@ export default Controller.extend({
   }),
 
   // Add bounce animation to down scroll arrow on home slide
-  bounceScrollArrowDown: equal('router.currentRouteName', 'index'),
+  bounceScrollArrowDown: computed('router.currentRouteName', function() {
+    return ['index', 'en.index', 'fr.index'].includes(this.router.currentRouteName);
+  }),
 
   hideMobileOverlay: computed('router.currentRouteName', function() {
     return [
@@ -86,6 +87,8 @@ export default Controller.extend({
   scrollableContentPage: computed('router.currentRouteName', function() {
     return ![
       'index',
+      'en.index',
+      'fr.index',
       'timeline',
       'thank-you',
     ].includes(this.router.currentRouteName);
@@ -94,6 +97,8 @@ export default Controller.extend({
   showDotNav: computed('dotNavShown', 'router.currentRouteName', function() {
     const onContentSlide = ![
       'index',
+      'en.index',
+      'fr.index',
       'table-of-contents',
     ].includes(this.router.currentRouteName);
     if (onContentSlide && !this.dotNavShown) {

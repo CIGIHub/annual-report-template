@@ -24,9 +24,9 @@ module('Unit | Controller | application', function(hooks) {
 
   // TEST COMPUTED: bounceScrollArrowDown
 
-  test('should have bounceScrollArrowDown=true for /', function(assert) {
+  test('should have bounceScrollArrowDown=true for /en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'index');
+    set(controller, 'router.currentRouteName', 'en.index');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), true);
   });
@@ -192,9 +192,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have hideMobileOverlay=false for /', function(assert) {
+  test('should have hideMobileOverlay=false for /en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'index');
+    set(controller, 'router.currentRouteName', 'en.index');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -362,9 +362,9 @@ module('Unit | Controller | application', function(hooks) {
 
   // TEST COMPUTED: lightBackground
 
-  test('should have lightBackground=false for /', function(assert) {
+  test('should have lightBackground=false for /en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'index');
+    set(controller, 'router.currentRouteName', 'en.index');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -588,9 +588,9 @@ module('Unit | Controller | application', function(hooks) {
 
   // TEST COMPUTED: scrollableContentPage
 
-  test('should have scrollableContentPage=false for /', function(assert) {
+  test('should have scrollableContentPage=false for /en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'index');
+    set(controller, 'router.currentRouteName', 'en.index');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), false);
   });
@@ -758,17 +758,17 @@ module('Unit | Controller | application', function(hooks) {
 
   // TEST COMPUTED: showDotNav
 
-  test('should have showDotNav=false for /', function(assert) {
+  test('should have showDotNav=false for /en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'index');
+    set(controller, 'router.currentRouteName', 'en.index');
 
     assert.strictEqual(get(controller, 'showDotNav'), false);
   });
 
-  test('should have showDotNav=true for / when the dot-nav has already been shown', function(assert) {
+  test('should have showDotNav=true for /en when the dot-nav has already been shown', function(assert) {
     const controller = this.owner.lookup('controller:application');
     set(controller, 'dotNavShown', true);
-    set(controller, 'router.currentRouteName', 'index');
+    set(controller, 'router.currentRouteName', 'en.index');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
@@ -944,9 +944,9 @@ module('Unit | Controller | application', function(hooks) {
 
   // TEST COMPUTED: showScrollArrowDown
 
-  test('should have showScrollArrowDown=true for /', function(assert) {
+  test('should have showScrollArrowDown=true for /en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'index');
+    set(controller, 'router.currentRouteName', 'en.index');
 
     assert.strictEqual(get(controller, 'showScrollArrowDown'), true);
   });
@@ -974,9 +974,9 @@ module('Unit | Controller | application', function(hooks) {
 
   // TEST COMPUTED: showScrollArrowUp
 
-  test('should have showScrollArrowUp=false for /', function(assert) {
+  test('should have showScrollArrowUp=false for /en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'index');
+    set(controller, 'router.currentRouteName', 'en.index');
 
     assert.strictEqual(get(controller, 'showScrollArrowUp'), false);
   });
@@ -1004,12 +1004,12 @@ module('Unit | Controller | application', function(hooks) {
 
   // TEST ACTION: transitionBack
 
-  test('should immediately clear isTransitioning for /', function(assert) {
+  test('should immediately clear isTransitioning for /en', function(assert) {
     const controller = this.owner.lookup('controller:application');
     controller.transitionToRoute = function() {
       return true;
     };
-    set(controller, 'router.currentRouteName', 'index');
+    set(controller, 'router.currentRouteName', 'en.index');
 
     controller.send('transitionBack');
 

@@ -131,13 +131,13 @@ module('Acceptance | table of contents', function(hooks) {
     assert.dom('.footer').doesNotHaveClass('.footer-dark');
   });
 
-  test('should transition to / on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /en on scroll-arrow-up-btn click', async function(assert) {
     await visit('/table-of-contents');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/');
+    assert.strictEqual(currentURL(), '/en');
     assert.dom('ul.dot-nav').doesNotExist();
   });
 
