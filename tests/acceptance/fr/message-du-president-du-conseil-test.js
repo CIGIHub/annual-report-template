@@ -108,13 +108,13 @@ module('Acceptance | fr/message du president du conseil', function(hooks) {
     assert.dom('ul.dot-nav').exists();
   });
 
-  test('should transition to /presidents-message on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /fr/message-du-directeur-executif on scroll-arrow-down-btn click', async function(assert) {
     await visit('/fr/message-du-president-du-conseil');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/presidents-message');
+    assert.strictEqual(currentURL(), '/fr/message-du-directeur-executif');
     assert.dom('ul.dot-nav').exists();
   });
 });

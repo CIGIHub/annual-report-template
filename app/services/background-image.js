@@ -16,11 +16,18 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/chairs-message-thumbnail.jpg',
     },
 
-    'presidents-message': {
+    // presidents-message
+    'en.presidents-message': {
       fullSizeUrl: 'template/slides/presidents-message.jpg',
       ogUrl: 'template/slides/presidents-message-og.jpg',
       thumbnailUrl: 'template/slides/presidents-message-thumbnail.jpg',
     },
+    'fr.message-du-directeur-executif': {
+      fullSizeUrl: 'template/slides/presidents-message.jpg',
+      ogUrl: 'template/slides/presidents-message-og.jpg',
+      thumbnailUrl: 'template/slides/presidents-message-thumbnail.jpg',
+    },
+
     'slide-1': {
       fullSizeUrl: 'template/slides/slide-1.jpg',
       ogUrl: 'template/slides/slide-1-og.jpg',

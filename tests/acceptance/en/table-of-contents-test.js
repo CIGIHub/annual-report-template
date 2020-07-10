@@ -36,10 +36,6 @@ module('Acceptance | en/table of contents', function(hooks) {
       'article',
     );
     assert.strictEqual(
-      document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
-      '2019 CIGI Annual Report',
-    );
-    assert.strictEqual(
       document.querySelector('head meta[property="og:image"]').getAttribute('content'),
       'https://staging.cigionline.org/interactives/2019annualreport/static/template/cigi-campus-og.jpg',
     );

@@ -36,10 +36,6 @@ module('Acceptance | fr/table des matieres', function(hooks) {
       'article',
     );
     assert.strictEqual(
-      document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
-      'Rapport annuel 2019',
-    );
-    assert.strictEqual(
       document.querySelector('head meta[property="og:image"]').getAttribute('content'),
       'https://staging.cigionline.org/interactives/2019annualreport/static/template/cigi-campus-og.jpg',
     );

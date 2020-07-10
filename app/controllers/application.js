@@ -30,13 +30,14 @@ export default Controller.extend({
     }
     if ([
       'en.chairs-message',
+      'en.presidents-message',
       'financials.auditors-report',
       'financials.notes',
       'financials.summarized-statement-of-financial-position',
       'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+      'fr.message-du-directeur-executif',
       'fr.message-du-president-du-conseil',
       'outputs-and-activities',
-      'presidents-message',
     ].includes(currentRouteName)) {
       return htmlSafe('background-color: #fff;');
     }
@@ -56,7 +57,9 @@ export default Controller.extend({
   hideMobileOverlay: computed('router.currentRouteName', function() {
     return [
       'en.chairs-message',
+      'en.presidents-message',
       'en.table-of-contents',
+      'fr.message-du-directeur-executif',
       'fr.message-du-president-du-conseil',
       'fr.table-des-matieres',
       'outputs-and-activities',
@@ -64,20 +67,20 @@ export default Controller.extend({
       'financials.notes',
       'financials.summarized-statement-of-financial-position',
       'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
-      'presidents-message',
     ].includes(this.router.currentRouteName);
   }),
 
   lightBackground: computed('router.currentRouteName', 'lightbox.{showLightbox,subType}', function() {
     const lightBackgroundRoute = [
       'en.chairs-message',
+      'en.presidents-message',
       'financials.auditors-report',
       'financials.notes',
       'financials.summarized-statement-of-financial-position',
       'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+      'fr.message-du-directeur-executif',
       'fr.message-du-president-du-conseil',
       'outputs-and-activities',
-      'presidents-message',
     ].includes(this.router.currentRouteName);
     if (this.lightbox.showLightbox
         || this.lightbox.subType === 'publication') {

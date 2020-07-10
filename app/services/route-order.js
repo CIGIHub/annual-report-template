@@ -24,7 +24,7 @@ export default Service.extend({
       title: 'chairsMessage.title',
     }, {
       number: '02',
-      route: 'presidents-message',
+      route: isFrenchLocale ? 'fr.message-du-directeur-executif' : 'en.presidents-message',
       subRoutes: [],
       title: 'presidentsMessage.title',
     }, {

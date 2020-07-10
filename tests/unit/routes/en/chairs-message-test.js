@@ -5,7 +5,7 @@ module('Unit | Route | en/chairs-message', function(hooks) {
   setupTest(hooks);
 
   test('it exists', function(assert) {
-    let route = this.owner.lookup('route:en/chairs-message');
+    const route = this.owner.lookup('route:en/chairs-message');
     assert.ok(route);
   });
 });

@@ -108,13 +108,13 @@ module('Acceptance | en/chairs message', function(hooks) {
     assert.dom('ul.dot-nav').exists();
   });
 
-  test('should transition to /presidents-message on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /en/presidents-message on scroll-arrow-down-btn click', async function(assert) {
     await visit('/en/chairs-message');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/presidents-message');
+    assert.strictEqual(currentURL(), '/en/presidents-message');
     assert.dom('ul.dot-nav').exists();
   });
 });

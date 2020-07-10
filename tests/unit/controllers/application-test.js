@@ -157,9 +157,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /presidents-message', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/presidents-message', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'presidents-message');
+    set(controller, 'router.currentRouteName', 'en.presidents-message');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -325,9 +325,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
 
-  test('should have hideMobileOverlay=true for /presidents-message', function(assert) {
+  test('should have hideMobileOverlay=true for /en/presidents-message', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'presidents-message');
+    set(controller, 'router.currentRouteName', 'en.presidents-message');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
@@ -538,17 +538,17 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=true for /presidents-message', function(assert) {
+  test('should have lightBackground=true for /en/presidents-message', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'presidents-message');
+    set(controller, 'router.currentRouteName', 'en.presidents-message');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), true);
   });
 
-  test('should have lightBackground=false for /presidents-message when the lightbox is active', function(assert) {
+  test('should have lightBackground=false for /en/presidents-message when the lightbox is active', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'presidents-message');
+    set(controller, 'router.currentRouteName', 'en.presidents-message');
     set(controller, 'lightbox.showLightbox', 'tableofcontents');
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -721,9 +721,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /presidents-message', function(assert) {
+  test('should have scrollableContentPage=true for /en/presidents-message', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'presidents-message');
+    set(controller, 'router.currentRouteName', 'en.presidents-message');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -899,9 +899,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /presidents-message', function(assert) {
+  test('should have showDotNav=true for /en/presidents-message', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'presidents-message');
+    set(controller, 'router.currentRouteName', 'en.presidents-message');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });

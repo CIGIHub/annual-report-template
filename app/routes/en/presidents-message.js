@@ -13,6 +13,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   routeOrder: service(),
 
   beforeModel() {
+    this.intl.setLocale('en-ca');
     if (!this.assetLoader.assetsLoaded) {
       return this.assetLoader.waitForAssets();
     }
@@ -23,14 +24,16 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     const title = `${this.intl.t('presidentsMessage.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
     set(this, 'headData.description', this.intl.t('description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}presidents-message/`);
-    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('presidents-message');
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}en/presidents-message/`);
+    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('en.presidents-message');
     if (backgroundImage && backgroundImage.ogUrl) {
       set(this, 'headData.image', backgroundImage.ogUrl);
     }
+    set(this, 'headData.siteName', this.intl.t('title'));
+    set(this, 'headData.locale', 'en_CA');
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('presidents-message');
+    const nextRoute = this.routeOrder.getNextRoute('en.presidents-message');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {

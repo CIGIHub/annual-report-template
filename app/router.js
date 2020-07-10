@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('chairs-message');
   this.route('en', function() {
     this.route('chairs-message');
+    this.route('presidents-message');
     this.route('table-of-contents');
   });
   this.route('financials', function() {
@@ -21,6 +22,7 @@ Router.map(function() {
     );
   });
   this.route('fr', function() {
+    this.route('message-du-directeur-executif');
     this.route('message-du-president-du-conseil');
     this.route('table-des-matieres');
   });
