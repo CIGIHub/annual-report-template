@@ -141,13 +141,13 @@ module('Acceptance | fr/table des matieres', function(hooks) {
     assert.dom('ul.dot-nav').doesNotExist();
   });
 
-  test('should transition to /chairs-message on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /fr/message-du-president-du-conseil on scroll-arrow-down-btn click', async function(assert) {
     await visit('/fr/table-des-matieres');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/chairs-message');
+    assert.strictEqual(currentURL(), '/fr/message-du-president-du-conseil');
     assert.dom('ul.dot-nav').exists();
   });
 });

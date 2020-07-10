@@ -29,11 +29,12 @@ export default Controller.extend({
       return htmlSafe('background-color: #000;');
     }
     if ([
-      'chairs-message',
+      'en.chairs-message',
       'financials.auditors-report',
       'financials.notes',
       'financials.summarized-statement-of-financial-position',
       'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+      'fr.message-du-president-du-conseil',
       'outputs-and-activities',
       'presidents-message',
     ].includes(currentRouteName)) {
@@ -54,8 +55,9 @@ export default Controller.extend({
 
   hideMobileOverlay: computed('router.currentRouteName', function() {
     return [
-      'chairs-message',
+      'en.chairs-message',
       'en.table-of-contents',
+      'fr.message-du-president-du-conseil',
       'fr.table-des-matieres',
       'outputs-and-activities',
       'financials.auditors-report',
@@ -68,11 +70,12 @@ export default Controller.extend({
 
   lightBackground: computed('router.currentRouteName', 'lightbox.{showLightbox,subType}', function() {
     const lightBackgroundRoute = [
-      'chairs-message',
+      'en.chairs-message',
       'financials.auditors-report',
       'financials.notes',
       'financials.summarized-statement-of-financial-position',
       'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+      'fr.message-du-president-du-conseil',
       'outputs-and-activities',
       'presidents-message',
     ].includes(this.router.currentRouteName);

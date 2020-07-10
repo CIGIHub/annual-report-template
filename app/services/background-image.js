@@ -4,11 +4,18 @@ import Service from '@ember/service';
 
 export default Service.extend({
   backgroundImages: {
-    'chairs-message': {
+    // chairs-message
+    'en.chairs-message': {
       fullSizeUrl: 'template/slides/chairs-message.jpg',
       ogUrl: 'template/slides/chairs-message-og.jpg',
       thumbnailUrl: 'template/slides/chairs-message-thumbnail.jpg',
     },
+    'fr.message-du-president-du-conseil': {
+      fullSizeUrl: 'template/slides/chairs-message.jpg',
+      ogUrl: 'template/slides/chairs-message-og.jpg',
+      thumbnailUrl: 'template/slides/chairs-message-thumbnail.jpg',
+    },
+
     'presidents-message': {
       fullSizeUrl: 'template/slides/presidents-message.jpg',
       ogUrl: 'template/slides/presidents-message-og.jpg',

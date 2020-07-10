@@ -59,9 +59,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /chairs-message', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/chairs-message', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'chairs-message');
+    set(controller, 'router.currentRouteName', 'en.chairs-message');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -227,9 +227,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=true for /chairs-message', function(assert) {
+  test('should have hideMobileOverlay=true for /en/chairs-message', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'chairs-message');
+    set(controller, 'router.currentRouteName', 'en.chairs-message');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
@@ -402,17 +402,17 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=true for /chairs-message', function(assert) {
+  test('should have lightBackground=true for /en/chairs-message', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'chairs-message');
+    set(controller, 'router.currentRouteName', 'en.chairs-message');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), true);
   });
 
-  test('should have lightBackground=false for /chairs-message when the lightbox is active', function(assert) {
+  test('should have lightBackground=false for /en/chairs-message when the lightbox is active', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'chairs-message');
+    set(controller, 'router.currentRouteName', 'en.chairs-message');
     set(controller, 'lightbox.showLightbox', 'tableofcontents');
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -623,9 +623,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /chairs-message', function(assert) {
+  test('should have scrollableContentPage=true for /en/chairs-message', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'chairs-message');
+    set(controller, 'router.currentRouteName', 'en.chairs-message');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -801,9 +801,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /chairs-message', function(assert) {
+  test('should have showDotNav=true for /en/chairs-message', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'chairs-message');
+    set(controller, 'router.currentRouteName', 'en.chairs-message');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });

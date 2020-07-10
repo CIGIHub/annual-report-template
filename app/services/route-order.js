@@ -19,7 +19,7 @@ export default Service.extend({
       title: 'tableOfContents.title',
     }, {
       number: '01',
-      route: 'chairs-message',
+      route: isFrenchLocale ? 'fr.message-du-president-du-conseil' : 'en.chairs-message',
       subRoutes: [],
       title: 'chairsMessage.title',
     }, {

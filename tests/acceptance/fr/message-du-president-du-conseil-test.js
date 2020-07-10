@@ -3,33 +3,33 @@ import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Acceptance | chairs message', function(hooks) {
+module('Acceptance | fr/message du president du conseil', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('visiting /chairs-message', async function(assert) {
-    await visit('/chairs-message');
+  test('visiting /fr/message-du-president-du-conseil', async function(assert) {
+    await visit('/fr/message-du-president-du-conseil');
 
-    assert.equal(currentURL(), '/chairs-message');
+    assert.equal(currentURL(), '/fr/message-du-president-du-conseil');
   });
 
   test('should have correct meta', async function(assert) {
-    await visit('/chairs-message');
+    await visit('/fr/message-du-president-du-conseil');
 
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
-      'Chair’s Message | 2019 CIGI Annual Report',
+      'Message du président du Conseil | Rapport annuel 2019',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:description"]').getAttribute('content'),
-      'Explore a year of research, opinion and expertise in CIGI’s interactive annual report.',
+      'Description French',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
-      '2019 CIGI Annual Report',
+      'Rapport annuel 2019',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/chairs-message/',
+      'https://www.cigionline.org/interactives/2019annualreport/fr/message-du-president-du-conseil/',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),
@@ -37,7 +37,7 @@ module('Acceptance | chairs message', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
-      '2019 CIGI Annual Report',
+      'Rapport annuel 2019',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:image"]').getAttribute('content'),
@@ -45,7 +45,7 @@ module('Acceptance | chairs message', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:locale"]').getAttribute('content'),
-      'en_CA',
+      'fr_CA',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="fb:app_id"]').getAttribute('content'),
@@ -62,29 +62,29 @@ module('Acceptance | chairs message', function(hooks) {
   });
 
   test('should have correct social links', async function(assert) {
-    await visit('/chairs-message');
+    await visit('/fr/message-du-president-du-conseil');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/chairs-message');
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/chairs-message');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+annuel+2019+https://www.cigionline.org/interactives/2019annualreport/fr/message-du-president-du-conseil');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/fr/message-du-president-du-conseil');
   });
 
   test('should have correct slide content', async function(assert) {
-    await visit('/chairs-message');
+    await visit('/fr/message-du-president-du-conseil');
 
     assert.dom('.chairs-message').exists();
-    assert.dom('.chairs-message .grid-x:nth-of-type(1) h1').containsText('Chair’s Message');
+    assert.dom('.chairs-message .grid-x:nth-of-type(1) h1').containsText('Message du président du Conseil');
     assert.dom('.chairs-message .grid-x .medium-6').exists({ count: 2 });
     assert.dom('.chairs-message .grid-x .medium-6 p').exists({ count: 6 });
-    assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(1) p:nth-of-type(1)').containsText('CM Paragraph 1');
-    assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(1) p:nth-of-type(2)').containsText('CM Paragraph 2');
-    assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(1) p:nth-of-type(3)').containsText('CM Paragraph 3');
-    assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(2) p:nth-of-type(1)').containsText('CM Paragraph 4');
-    assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(2) p:nth-of-type(2)').containsText('CM Paragraph 5');
+    assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(1) p:nth-of-type(1)').containsText('CM Paragraph 1 French');
+    assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(1) p:nth-of-type(2)').containsText('CM Paragraph 2 French');
+    assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(1) p:nth-of-type(3)').containsText('CM Paragraph 3 French');
+    assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(2) p:nth-of-type(1)').containsText('CM Paragraph 4 French');
+    assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(2) p:nth-of-type(2)').containsText('CM Paragraph 5 French');
     assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(2) p:nth-of-type(3) b').containsText('Jim Balsillie');
-    assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(2) p:nth-of-type(3) em').containsText('Chair, CIGI Board of Directors');
+    assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(2) p:nth-of-type(3) em').containsText('Président du conseil d’administration du CIGI');
     assert.dom('.hover-reveal').exists();
     assert.dom('.hover-reveal').hasAttribute('style', "background-image: url('https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/chairs-message.jpg'), url('https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/chairs-message-thumbnail.jpg');");
-    assert.dom('.hover-reveal .quote h3').containsText('CM Quote English');
+    assert.dom('.hover-reveal .quote h3').containsText('CM Quote French');
 
     assert.dom('.cigi-top-bar').exists();
     assert.dom('.cigi-top-bar').hasClass('light-background');
@@ -98,18 +98,18 @@ module('Acceptance | chairs message', function(hooks) {
     assert.dom('.footer').hasClass('footer-dark');
   });
 
-  test('should transition to /en/table-of-contents on scroll-arrow-up-btn click', async function(assert) {
-    await visit('/chairs-message');
+  test('should transition to /fr/table-des-matieres on scroll-arrow-up-btn click', async function(assert) {
+    await visit('/fr/message-du-president-du-conseil');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/en/table-of-contents');
+    assert.strictEqual(currentURL(), '/fr/table-des-matieres');
     assert.dom('ul.dot-nav').exists();
   });
 
   test('should transition to /presidents-message on scroll-arrow-down-btn click', async function(assert) {
-    await visit('/chairs-message');
+    await visit('/fr/message-du-president-du-conseil');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();

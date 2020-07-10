@@ -13,6 +13,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   routeOrder: service(),
 
   beforeModel() {
+    this.intl.setLocale('fr-ca');
     if (!this.assetLoader.assetsLoaded) {
       return this.assetLoader.waitForAssets();
     }
@@ -23,14 +24,16 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     const title = `${this.intl.t('chairsMessage.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
     set(this, 'headData.description', this.intl.t('description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}chairs-message/`);
-    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('chairs-message');
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}fr/message-du-president-du-conseil/`);
+    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('fr.message-du-president-du-conseil');
     if (backgroundImage && backgroundImage.ogUrl) {
       set(this, 'headData.image', backgroundImage.ogUrl);
     }
+    set(this, 'headData.siteName', this.intl.t('title'));
+    set(this, 'headData.locale', 'fr_CA');
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('chairs-message');
+    const nextRoute = this.routeOrder.getNextRoute('fr.message-du-president-du-conseil');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {

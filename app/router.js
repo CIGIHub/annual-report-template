@@ -9,6 +9,7 @@ export default class Router extends EmberRouter {
 Router.map(function() {
   this.route('chairs-message');
   this.route('en', function() {
+    this.route('chairs-message');
     this.route('table-of-contents');
   });
   this.route('financials', function() {
@@ -20,6 +21,7 @@ Router.map(function() {
     );
   });
   this.route('fr', function() {
+    this.route('message-du-president-du-conseil');
     this.route('table-des-matieres');
   });
   this.route('outputs-and-activities');
