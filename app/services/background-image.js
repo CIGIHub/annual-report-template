@@ -52,11 +52,18 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/slide-2-thumbnail.png',
     },
 
-    'slide-3': {
+    // slide-3
+    'en.slide-3': {
       fullSizeUrl: 'template/slides/slide-3.jpg',
       ogUrl: 'template/slides/slide-3-og.jpg',
       thumbnailUrl: 'template/slides/slide-3-thumbnail.jpg',
     },
+    'fr.slide-3': {
+      fullSizeUrl: 'template/slides/slide-3.jpg',
+      ogUrl: 'template/slides/slide-3-og.jpg',
+      thumbnailUrl: 'template/slides/slide-3-thumbnail.jpg',
+    },
+
     'slide-4': {
       fullSizeUrl: 'template/slides/slide-4.jpg',
       ogUrl: 'template/slides/slide-4-og.jpg',

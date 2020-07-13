@@ -13,6 +13,7 @@ Router.map(function() {
     this.route('presidents-message');
     this.route('slide-1', { path: '/slide1-en' });
     this.route('slide-2', { path: '/slide2-en' });
+    this.route('slide-3', { path: '/slide3-en' });
     this.route('table-of-contents');
   });
   this.route('financials', function() {
@@ -28,12 +29,10 @@ Router.map(function() {
     this.route('message-du-president-du-conseil');
     this.route('slide-1', { path: '/slide1-fr' });
     this.route('slide-2', { path: '/slide2-fr' });
+    this.route('slide-3', { path: '/slide3-fr' });
     this.route('table-des-matieres');
   });
   this.route('outputs-and-activities');
-  this.route('slide-1', { path: '/slide1' });
-  this.route('slide-2', { path: '/slide2' });
-  this.route('slide-3', { path: '/slide3' });
   this.route('slide-4', { path: '/slide4' });
   this.route('slide-5', { path: '/slide5' });
   this.route('slide-6', { path: '/slide6' });

@@ -109,13 +109,13 @@ module('Acceptance | slide 4', function(hooks) {
     assert.dom('.footer').doesNotHaveClass('footer-dark');
   });
 
-  test('should transition to /slide3 on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /en/slide3-en on scroll-arrow-up-btn click', async function(assert) {
     await visit('/slide4');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/slide3');
+    assert.strictEqual(currentURL(), '/en/slide3-en');
     assert.dom('ul.dot-nav').exists();
   });
 
