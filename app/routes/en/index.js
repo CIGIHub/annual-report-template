@@ -11,6 +11,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   headData: service(),
   intl: service(),
   routeOrder: service(),
+  router: service(),
 
   beforeModel() {
     this.intl.setLocale('en-ca');
@@ -23,7 +24,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   afterModel() {
     set(this, 'headData.title', this.intl.t('title'));
     set(this, 'headData.description', this.intl.t('description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}en/`);
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}${this.router.currentURL.replace('/', '')}`);
     set(this, 'headData.image', this.backgroundImage.defaultBackground.ogUrl);
     set(this, 'headData.siteName', this.intl.t('title'));
     set(this, 'headData.locale', 'en_CA');

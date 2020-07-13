@@ -3,17 +3,17 @@ import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Acceptance | slide 1', function(hooks) {
+module('Acceptance | en/slide 1', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('visiting /slide1', async function(assert) {
-    await visit('/slide1');
+  test('visiting /en/slide1-en', async function(assert) {
+    await visit('/en/slide1-en');
 
-    assert.equal(currentURL(), '/slide1');
+    assert.equal(currentURL(), '/en/slide1-en');
   });
 
   test('should have correct meta', async function(assert) {
-    await visit('/slide1');
+    await visit('/en/slide1-en');
 
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
@@ -29,15 +29,11 @@ module('Acceptance | slide 1', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/slide1/',
+      'https://www.cigionline.org/interactives/2019annualreport/en/slide1-en',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),
       'article',
-    );
-    assert.strictEqual(
-      document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
-      '2019 CIGI Annual Report',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:image"]').getAttribute('content'),
@@ -62,14 +58,14 @@ module('Acceptance | slide 1', function(hooks) {
   });
 
   test('should have correct social links', async function(assert) {
-    await visit('/slide1');
+    await visit('/en/slide1-en');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/slide1');
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/slide1');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/en/slide1-en');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/en/slide1-en');
   });
 
   test('should have correct slide content', async function(assert) {
-    await visit('/slide1');
+    await visit('/en/slide1-en');
 
     assert.dom('.slide-content').exists();
     assert.dom('.slide-content .slide-title h1').containsText('Slide 1 Title English');
@@ -111,7 +107,7 @@ module('Acceptance | slide 1', function(hooks) {
   });
 
   test('should transition to /en/presidents-message on scroll-arrow-up-btn click', async function(assert) {
-    await visit('/slide1');
+    await visit('/en/slide1-en');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
@@ -121,7 +117,7 @@ module('Acceptance | slide 1', function(hooks) {
   });
 
   test('should transition to /slide2 on scroll-arrow-down-btn click', async function(assert) {
-    await visit('/slide1');
+    await visit('/en/slide1-en');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();

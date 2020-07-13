@@ -29,7 +29,7 @@ module('Acceptance | fr/message du directeur executif', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/fr/message-du-directeur-executif/',
+      'https://www.cigionline.org/interactives/2019annualreport/fr/message-du-directeur-executif',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),
@@ -104,13 +104,13 @@ module('Acceptance | fr/message du directeur executif', function(hooks) {
     assert.dom('ul.dot-nav').exists();
   });
 
-  test('should transition to /slide1 on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /fr/slide1-fr on scroll-arrow-down-btn click', async function(assert) {
     await visit('/fr/message-du-directeur-executif');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/slide1');
+    assert.strictEqual(currentURL(), '/fr/slide1-fr');
     assert.dom('ul.dot-nav').exists();
   });
 });

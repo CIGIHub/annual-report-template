@@ -29,7 +29,7 @@ module('Acceptance | fr/message du president du conseil', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/fr/message-du-president-du-conseil/',
+      'https://www.cigionline.org/interactives/2019annualreport/fr/message-du-president-du-conseil',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),

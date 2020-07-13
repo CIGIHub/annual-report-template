@@ -22,11 +22,11 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   },
 
   afterModel() {
-    const title = `${this.intl.t('chairsMessage.title')} | ${this.intl.t('title')}`;
+    const title = `${this.intl.t('slide1.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
-    set(this, 'headData.description', this.intl.t('description'));
+    set(this, 'headData.description', this.intl.t('slide1.description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}${this.router.currentURL.replace('/', '')}`);
-    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('fr.message-du-president-du-conseil');
+    const backgroundImage = this.backgroundImage.getSlideBackgroundImage('fr.slide-1');
     if (backgroundImage && backgroundImage.ogUrl) {
       set(this, 'headData.image', backgroundImage.ogUrl);
     }
@@ -34,7 +34,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.locale', 'fr_CA');
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('fr.message-du-president-du-conseil');
+    const nextRoute = this.routeOrder.getNextRoute('fr.slide-1');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {

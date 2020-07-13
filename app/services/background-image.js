@@ -28,11 +28,18 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/presidents-message-thumbnail.jpg',
     },
 
-    'slide-1': {
+    // slide-1
+    'en.slide-1': {
       fullSizeUrl: 'template/slides/slide-1.jpg',
       ogUrl: 'template/slides/slide-1-og.jpg',
       thumbnailUrl: 'template/slides/slide-1-thumbnail.jpg',
     },
+    'fr.slide-1': {
+      fullSizeUrl: 'template/slides/slide-1.jpg',
+      ogUrl: 'template/slides/slide-1-og.jpg',
+      thumbnailUrl: 'template/slides/slide-1-thumbnail.jpg',
+    },
+
     'slide-2': {
       fullSizeUrl: 'template/slides/slide-2.png',
       ogUrl: 'template/slides/slide-2-og.png',

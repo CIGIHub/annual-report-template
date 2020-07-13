@@ -29,7 +29,7 @@ module('Acceptance | en/presidents message', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/en/presidents-message/',
+      'https://www.cigionline.org/interactives/2019annualreport/en/presidents-message',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),
@@ -104,13 +104,13 @@ module('Acceptance | en/presidents message', function(hooks) {
     assert.dom('ul.dot-nav').exists();
   });
 
-  test('should transition to /slide1 on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /en/slide1-en on scroll-arrow-down-btn click', async function(assert) {
     await visit('/en/presidents-message');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/slide1');
+    assert.strictEqual(currentURL(), '/en/slide1-en');
     assert.dom('ul.dot-nav').exists();
   });
 });

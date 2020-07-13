@@ -29,7 +29,7 @@ module('Acceptance | en/table of contents', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/en/table-of-contents/',
+      'https://www.cigionline.org/interactives/2019annualreport/en/table-of-contents',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),

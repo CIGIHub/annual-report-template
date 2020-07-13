@@ -29,7 +29,7 @@ module('Acceptance | fr/index', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/fr/',
+      'https://www.cigionline.org/interactives/2019annualreport/fr',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),

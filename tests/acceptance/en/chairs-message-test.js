@@ -29,7 +29,7 @@ module('Acceptance | en/chairs message', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/en/chairs-message/',
+      'https://www.cigionline.org/interactives/2019annualreport/en/chairs-message',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),

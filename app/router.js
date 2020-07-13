@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('en', function() {
     this.route('chairs-message');
     this.route('presidents-message');
+    this.route('slide-1', { path: '/slide1-en' });
     this.route('table-of-contents');
   });
   this.route('financials', function() {
@@ -24,10 +25,10 @@ Router.map(function() {
   this.route('fr', function() {
     this.route('message-du-directeur-executif');
     this.route('message-du-president-du-conseil');
+    this.route('slide-1', { path: '/slide1-fr' });
     this.route('table-des-matieres');
   });
   this.route('outputs-and-activities');
-  this.route('presidents-message');
   this.route('slide-1', { path: '/slide1' });
   this.route('slide-2', { path: '/slide2' });
   this.route('slide-3', { path: '/slide3' });

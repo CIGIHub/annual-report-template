@@ -29,7 +29,7 @@ export default Service.extend({
       title: 'presidentsMessage.title',
     }, {
       number: '03',
-      route: 'slide-1',
+      route: isFrenchLocale ? 'fr.slide-1' : 'en.slide-1',
       subRoutes: [],
       title: 'slide1.title',
     }, {
