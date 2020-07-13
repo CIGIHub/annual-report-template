@@ -1,4 +1,4 @@
-<div class="cigi-top-bar clearfix {{if @lightBackground "light-background"}}">
+<div class="cigi-top-bar {{if @lightBackground "light-background"}}">
   <div class="cigi-logo">
     <a href="https://www.cigionline.org">
       <svg class="show-for-large" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129.4 37.8">
@@ -31,6 +31,25 @@
       <button type="button" class="open-social-menu-btn" {{action "openSocialMenu"}}>
         {{fa-icon "share-alt" prefix="fal" size="lg"}}
       </button>
+    {{/if}}
+    {{#if isEnglishRoute}}
+      <span class="intl-selected">
+        EN
+      </span>
+    {{else}}
+      <LinkTo @route={{@translateRoute}} class="intl-link">
+        EN
+      </LinkTo>
+    {{/if}}
+    <span>/</span>
+    {{#if isFrenchRoute}}
+      <span class="intl-selected">
+        FR
+      </span>
+    {{else}}
+      <LinkTo @route={{@translateRoute}} class="intl-link">
+        FR
+      </LinkTo>
     {{/if}}
     {{#if this.menuIsOpen}}
       <button type="button" class="close-menu-btn" {{action "closeMenu"}}>

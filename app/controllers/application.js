@@ -131,6 +131,39 @@ export default Controller.extend({
       && currentRouteName !== '404';
   }),
 
+  translateRoute: computed('router.currentRouteName', function() {
+    const routeMapping = {
+      'en.chairs-message': 'fr.message-du-president-du-conseil',
+      'en.index': 'fr.index',
+      'en.presidents-message': 'fr.message-du-directeur-executif',
+      'en.slide-1': 'fr.slide-1',
+      'en.slide-2': 'fr.slide-2',
+      'en.slide-3': 'fr.slide-3',
+      'en.slide-4': 'fr.slide-4',
+      'en.slide-5': 'fr.slide-5',
+      'en.slide-6': 'fr.slide-6',
+      'en.slide-7': 'fr.slide-7',
+      'en.slide-8': 'fr.slide-8',
+      'en.table-of-contents': 'fr.table-des-matieres',
+      'fr.index': 'en.index',
+      'fr.message-du-directeur-executif': 'en.presidents-message',
+      'fr.message-du-president-du-conseil': 'en.chairs-message',
+      'fr.slide-1': 'en.slide-1',
+      'fr.slide-2': 'en.slide-2',
+      'fr.slide-3': 'en.slide-3',
+      'fr.slide-4': 'en.slide-4',
+      'fr.slide-5': 'en.slide-5',
+      'fr.slide-6': 'en.slide-6',
+      'fr.slide-7': 'en.slide-7',
+      'fr.slide-8': 'en.slide-8',
+      'fr.table-des-matieres': 'en.table-of-contents',
+    };
+    if (routeMapping[this.router.currentRouteName]) {
+      return routeMapping[this.router.currentRouteName];
+    }
+    return this.router.currentRouteName;
+  }),
+
   currentRouteNameChanged: observer('router.currentRouteName', function() {
     /* istanbul ignore next */
     if (!this.fastboot.isFastBoot) {

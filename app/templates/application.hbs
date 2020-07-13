@@ -5,7 +5,7 @@
     <div class="background-overlay hover-reveal-hide"></div>
   {{/unless}}
 </div>
-<TopBar @lightBackground={{this.lightBackground}} />
+<TopBar @lightBackground={{this.lightBackground}} @translateRoute={{this.translateRoute}} />
 <EventListener @isTransitioning={{this.isTransitioning}} @transitionBack={{action "transitionBack"}} @transitionNext={{action "transitionNext"}}>
   <LiquidOutlet />
   <div class="overlay"></div>

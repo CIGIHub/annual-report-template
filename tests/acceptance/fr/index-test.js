@@ -74,6 +74,10 @@ module('Acceptance | fr/index', function(hooks) {
 
     assert.dom('.cigi-top-bar').exists();
     assert.dom('.cigi-top-bar').doesNotHaveClass('light-background');
+    assert.dom('.intl-selected').exists({ count: 1 });
+    assert.dom('.intl-selected').containsText('FR');
+    assert.dom('.intl-link').exists({ count: 1 });
+    assert.dom('.intl-link').containsText('EN');
     assert.dom('ul.dot-nav').doesNotExist();
     assert.dom('button.scroll-arrow-up-btn').doesNotExist();
     assert.dom('button.scroll-arrow-down-btn').exists();
@@ -88,6 +92,16 @@ module('Acceptance | fr/index', function(hooks) {
     await finishRender();
 
     assert.strictEqual(currentURL(), '/fr/table-des-matieres');
+    assert.dom('ul.dot-nav').doesNotExist();
+  });
+
+  test('should transition to /en on intl-link click', async function(assert) {
+    await visit('/fr');
+
+    await click('.intl-link');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/en');
     assert.dom('ul.dot-nav').doesNotExist();
   });
 });

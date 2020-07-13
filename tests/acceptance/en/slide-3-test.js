@@ -96,6 +96,10 @@ module('Acceptance | en/slide 3', function(hooks) {
 
     assert.dom('.cigi-top-bar').exists();
     assert.dom('.cigi-top-bar').doesNotHaveClass('light-background');
+    assert.dom('.intl-selected').exists({ count: 1 });
+    assert.dom('.intl-selected').containsText('EN');
+    assert.dom('.intl-link').exists({ count: 1 });
+    assert.dom('.intl-link').containsText('FR');
     assert.dom('ul.dot-nav').exists();
     assert.dom('ul.dot-nav').doesNotHaveClass('light-background');
     assert.dom('button.scroll-arrow-up-btn').exists();
@@ -123,6 +127,16 @@ module('Acceptance | en/slide 3', function(hooks) {
     await finishRender();
 
     assert.strictEqual(currentURL(), '/en/slide4-en');
+    assert.dom('ul.dot-nav').exists();
+  });
+
+  test('should transition to /fr/slide3-fr on intl-link click', async function(assert) {
+    await visit('/en/slide3-en');
+
+    await click('.intl-link');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/fr/slide3-fr');
     assert.dom('ul.dot-nav').exists();
   });
 });

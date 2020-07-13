@@ -74,6 +74,10 @@ module('Acceptance | en/index', function(hooks) {
 
     assert.dom('.cigi-top-bar').exists();
     assert.dom('.cigi-top-bar').doesNotHaveClass('light-background');
+    assert.dom('.intl-selected').exists({ count: 1 });
+    assert.dom('.intl-selected').containsText('EN');
+    assert.dom('.intl-link').exists({ count: 1 });
+    assert.dom('.intl-link').containsText('FR');
     assert.dom('ul.dot-nav').doesNotExist();
     assert.dom('button.scroll-arrow-up-btn').doesNotExist();
     assert.dom('button.scroll-arrow-down-btn').exists();
@@ -88,6 +92,16 @@ module('Acceptance | en/index', function(hooks) {
     await finishRender();
 
     assert.strictEqual(currentURL(), '/en/table-of-contents');
+    assert.dom('ul.dot-nav').doesNotExist();
+  });
+
+  test('should transition to /fr on intl-link click', async function(assert) {
+    await visit('/en');
+
+    await click('.intl-link');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/fr');
     assert.dom('ul.dot-nav').doesNotExist();
   });
 });

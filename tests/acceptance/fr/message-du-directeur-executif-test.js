@@ -84,6 +84,10 @@ module('Acceptance | fr/message du directeur executif', function(hooks) {
 
     assert.dom('.cigi-top-bar').exists();
     assert.dom('.cigi-top-bar').hasClass('light-background');
+    assert.dom('.intl-selected').exists({ count: 1 });
+    assert.dom('.intl-selected').containsText('FR');
+    assert.dom('.intl-link').exists({ count: 1 });
+    assert.dom('.intl-link').containsText('EN');
     assert.dom('ul.dot-nav').exists();
     assert.dom('ul.dot-nav').hasClass('light-background');
     assert.dom('button.scroll-arrow-up-btn').exists();
@@ -111,6 +115,16 @@ module('Acceptance | fr/message du directeur executif', function(hooks) {
     await finishRender();
 
     assert.strictEqual(currentURL(), '/fr/slide1-fr');
+    assert.dom('ul.dot-nav').exists();
+  });
+
+  test('should transition to /en/presidents-message on intl-link click', async function(assert) {
+    await visit('/fr/message-du-directeur-executif');
+
+    await click('.intl-link');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/en/presidents-message');
     assert.dom('ul.dot-nav').exists();
   });
 });

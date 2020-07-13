@@ -19,6 +19,14 @@ export default Component.extend({
     return false;
   }),
 
+  isEnglishRoute: computed('router.currentRouteName', function() {
+    return this.router.currentRouteName.includes('en.');
+  }),
+
+  isFrenchRoute: computed('router.currentRouteName', function() {
+    return this.router.currentRouteName.includes('fr.');
+  }),
+
   linkedInShareLink: computed('shareRoute', function() {
     const shareRoute = this.shareRoute;
     return `https://www.linkedin.com/shareArticle?mini=true&url=${shareRoute}`;

@@ -118,6 +118,10 @@ module('Acceptance | en/table of contents', function(hooks) {
 
     assert.dom('.cigi-top-bar').exists();
     assert.dom('.cigi-top-bar').doesNotHaveClass('light-background');
+    assert.dom('.intl-selected').exists({ count: 1 });
+    assert.dom('.intl-selected').containsText('EN');
+    assert.dom('.intl-link').exists({ count: 1 });
+    assert.dom('.intl-link').containsText('FR');
     assert.dom('ul.dot-nav').doesNotExist();
     assert.dom('button.scroll-arrow-up-btn').exists();
     assert.dom('button.scroll-arrow-up-btn').doesNotHaveClass('light-background');
@@ -145,5 +149,15 @@ module('Acceptance | en/table of contents', function(hooks) {
 
     assert.strictEqual(currentURL(), '/en/chairs-message');
     assert.dom('ul.dot-nav').exists();
+  });
+
+  test('should transition to /fr/table-des-matieres on intl-link click', async function(assert) {
+    await visit('/en/table-of-contents');
+
+    await click('.intl-link');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/fr/table-des-matieres');
+    assert.dom('ul.dot-nav').doesNotExist();
   });
 });
