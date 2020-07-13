@@ -116,12 +116,12 @@ module('Acceptance | fr/slide 6', function(hooks) {
     assert.strictEqual(currentURL(), '/fr/slide5-fr');
   });
 
-  test('should transition to /slide7 on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /fr/slide7-fr on scroll-arrow-down-btn click', async function(assert) {
     await visit('/fr/slide6-fr');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/slide7');
+    assert.strictEqual(currentURL(), '/fr/slide7-fr');
   });
 });

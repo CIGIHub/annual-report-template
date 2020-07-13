@@ -59,7 +59,7 @@ export default Service.extend({
       title: 'slide6.title',
     }, {
       number: '09',
-      route: 'slide-7',
+      route: isFrenchLocale ? 'fr.slide-7' : 'en.slide-7',
       subRoutes: [],
       title: 'slide7.title',
     }, {
