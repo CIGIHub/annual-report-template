@@ -3,25 +3,25 @@ import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Acceptance | slide 9', function(hooks) {
+module('Acceptance | en/slide 8', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('visiting /slide9', async function(assert) {
-    await visit('/slide9');
+  test('visiting /en/slide8-en', async function(assert) {
+    await visit('/en/slide8-en');
 
-    assert.equal(currentURL(), '/slide9');
+    assert.equal(currentURL(), '/en/slide8-en');
   });
 
   test('should have correct meta', async function(assert) {
-    await visit('/slide9');
+    await visit('/en/slide8-en');
 
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
-      'Slide 9 Title English | 2019 CIGI Annual Report',
+      'Slide 8 Title English | 2019 CIGI Annual Report',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:description"]').getAttribute('content'),
-      'Slide 9 Description English',
+      'Slide 8 Description English',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
@@ -29,19 +29,15 @@ module('Acceptance | slide 9', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/slide9/',
+      'https://www.cigionline.org/interactives/2019annualreport/en/slide8-en',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),
       'article',
     );
     assert.strictEqual(
-      document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
-      '2019 CIGI Annual Report',
-    );
-    assert.strictEqual(
       document.querySelector('head meta[property="og:image"]').getAttribute('content'),
-      'https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/slide-9-og.jpg',
+      'https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/slide-8-og.jpg',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:locale"]').getAttribute('content'),
@@ -62,41 +58,41 @@ module('Acceptance | slide 9', function(hooks) {
   });
 
   test('should have correct social links', async function(assert) {
-    await visit('/slide9');
+    await visit('/en/slide8-en');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/slide9');
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/slide9');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/en/slide8-en');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/en/slide8-en');
   });
 
   test('should have correct slide content', async function(assert) {
-    await visit('/slide9');
+    await visit('/en/slide8-en');
 
     assert.dom('.slide-content').exists();
-    assert.dom('.slide-content .slide-title h1').containsText('Slide 9 Title English');
+    assert.dom('.slide-content .slide-title h1').containsText('Slide 8 Title English');
     assert.dom('.slide-content .content-links').exists();
     assert.dom('.slide-content .content-links a').exists({ count: 3 });
     assert.dom('.slide-content .content-links a:nth-of-type(1) .content-copy h4').containsText('Video');
-    assert.dom('.slide-content .content-links a:nth-of-type(1) .content-copy p').containsText('Slide 9 Link 1 English');
+    assert.dom('.slide-content .content-links a:nth-of-type(1) .content-copy p').containsText('Slide 8 Link 1 English');
     assert.dom('.slide-content .content-links a:nth-of-type(2) .content-copy h4').containsText('Paper Series');
-    assert.dom('.slide-content .content-links a:nth-of-type(2) .content-copy p').containsText('Slide 9 Link 2 English');
+    assert.dom('.slide-content .content-links a:nth-of-type(2) .content-copy p').containsText('Slide 8 Link 2 English');
     assert.dom('.slide-content .content-links a:nth-of-type(3) .content-copy h4').containsText('Article');
-    assert.dom('.slide-content .content-links a:nth-of-type(3) .content-copy p').containsText('Slide 9 Link 3 English');
+    assert.dom('.slide-content .content-links a:nth-of-type(3) .content-copy p').containsText('Slide 8 Link 3 English');
     assert.dom('.slide-content .content-links-mobile').exists();
     assert.dom('.slide-content .content-links-mobile a').exists({ count: 3 });
-    assert.dom('.slide-content .content-links-mobile a:nth-of-type(1)').containsText('Slide 9 Link 1 English');
-    assert.dom('.slide-content .content-links-mobile a:nth-of-type(2)').containsText('Slide 9 Link 2 English');
-    assert.dom('.slide-content .content-links-mobile a:nth-of-type(3)').containsText('Slide 9 Link 3 English');
+    assert.dom('.slide-content .content-links-mobile a:nth-of-type(1)').containsText('Slide 8 Link 1 English');
+    assert.dom('.slide-content .content-links-mobile a:nth-of-type(2)').containsText('Slide 8 Link 2 English');
+    assert.dom('.slide-content .content-links-mobile a:nth-of-type(3)').containsText('Slide 8 Link 3 English');
     assert.dom('.slide-content .paragraphs').exists();
     assert.dom('.slide-content .paragraphs p').exists({ count: 3 });
-    assert.dom('.slide-content .paragraphs p:nth-of-type(1)').containsText('Slide 9 Paragraph 1 English');
-    assert.dom('.slide-content .paragraphs p:nth-of-type(2)').containsText('Slide 9 Paragraph 2 English');
-    assert.dom('.slide-content .paragraphs p:nth-of-type(3)').containsText('Slide 9 Paragraph 3 English');
+    assert.dom('.slide-content .paragraphs p:nth-of-type(1)').containsText('Slide 8 Paragraph 1 English');
+    assert.dom('.slide-content .paragraphs p:nth-of-type(2)').containsText('Slide 8 Paragraph 2 English');
+    assert.dom('.slide-content .paragraphs p:nth-of-type(3)').containsText('Slide 8 Paragraph 3 English');
     assert.dom('.background-image').exists();
-    assert.dom('.background-image').hasAttribute('style', "background-image: url('https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/slide-9.jpg'), url('https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/slide-9-thumbnail.jpg');");
+    assert.dom('.background-image').hasAttribute('style', "background-image: url('https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/slide-8.jpg'), url('https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/slide-8-thumbnail.jpg');");
     assert.dom('.background-image .hover-reveal').exists();
     assert.dom('.background-image .hover-reveal .quote').exists();
-    assert.dom('.background-image .hover-reveal .quote h3.hover-reveal-quote').containsText('Slide 9 Quote English');
-    assert.dom('.background-image .hover-reveal .quote h4.hover-reveal-quote-source').containsText('Slide 9 Source English');
+    assert.dom('.background-image .hover-reveal .quote h3.hover-reveal-quote').containsText('Slide 8 Quote English');
+    assert.dom('.background-image .hover-reveal .quote h4.hover-reveal-quote-source').containsText('Slide 8 Source English');
 
     assert.dom('.cigi-top-bar').exists();
     assert.dom('.cigi-top-bar').doesNotHaveClass('light-background');
@@ -110,23 +106,23 @@ module('Acceptance | slide 9', function(hooks) {
     assert.dom('.footer').doesNotHaveClass('footer-dark');
   });
 
-  test('should transition to /en/slide8-en on scroll-arrow-up-btn click', async function(assert) {
-    await visit('/slide9');
+  test('should transition to /en/slide7-en on scroll-arrow-up-btn click', async function(assert) {
+    await visit('/en/slide8-en');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/en/slide8-en');
+    assert.strictEqual(currentURL(), '/en/slide7-en');
     assert.dom('ul.dot-nav').exists();
   });
 
-  test('should transition to /slide10 on scroll-arrow-down-btn click', async function(assert) {
-    await visit('/slide9');
+  test('should transition to /slide9 on scroll-arrow-down-btn click', async function(assert) {
+    await visit('/en/slide8-en');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/slide10');
+    assert.strictEqual(currentURL(), '/slide9');
     assert.dom('ul.dot-nav').exists();
   });
 });
