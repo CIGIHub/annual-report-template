@@ -64,11 +64,18 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/slide-3-thumbnail.jpg',
     },
 
-    'slide-4': {
+    // slide-4
+    'en.slide-4': {
       fullSizeUrl: 'template/slides/slide-4.jpg',
       ogUrl: 'template/slides/slide-4-og.jpg',
       thumbnailUrl: 'template/slides/slide-4-thumbnail.jpg',
     },
+    'fr.slide-4': {
+      fullSizeUrl: 'template/slides/slide-4.jpg',
+      ogUrl: 'template/slides/slide-4-og.jpg',
+      thumbnailUrl: 'template/slides/slide-4-thumbnail.jpg',
+    },
+
     'slide-5': {
       fullSizeUrl: 'template/slides/slide-5.jpg',
       ogUrl: 'template/slides/slide-5-og.jpg',

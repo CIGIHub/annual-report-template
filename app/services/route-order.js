@@ -44,7 +44,7 @@ export default Service.extend({
       title: 'slide3.title',
     }, {
       number: '06',
-      route: 'slide-4',
+      route: isFrenchLocale ? 'fr.slide-4' : 'en.slide-4',
       subRoutes: [],
       title: 'slide4.title',
     }, {
