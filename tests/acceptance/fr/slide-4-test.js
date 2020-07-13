@@ -116,13 +116,13 @@ module('Acceptance | fr/slide 4', function(hooks) {
     assert.dom('ul.dot-nav').exists();
   });
 
-  test('should transition to /slide5 on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /fr/slide5-fr on scroll-arrow-down-btn click', async function(assert) {
     await visit('/fr/slide4-fr');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/slide5');
+    assert.strictEqual(currentURL(), '/fr/slide5-fr');
     assert.dom('ul.dot-nav').exists();
   });
 });

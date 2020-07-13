@@ -15,6 +15,7 @@ Router.map(function() {
     this.route('slide-2', { path: '/slide2-en' });
     this.route('slide-3', { path: '/slide3-en' });
     this.route('slide-4', { path: '/slide4-en' });
+    this.route('slide-5', { path: '/slide5-en' });
     this.route('table-of-contents');
   });
   this.route('financials', function() {
@@ -32,6 +33,7 @@ Router.map(function() {
     this.route('slide-2', { path: '/slide2-fr' });
     this.route('slide-3', { path: '/slide3-fr' });
     this.route('slide-4', { path: '/slide4-fr' });
+    this.route('slide-5', { path: '/slide5-fr' });
     this.route('table-des-matieres');
   });
   this.route('outputs-and-activities');

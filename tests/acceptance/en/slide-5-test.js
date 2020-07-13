@@ -3,17 +3,17 @@ import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Acceptance | slide 5', function(hooks) {
+module('Acceptance | en/slide 5', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('visiting /slide5', async function(assert) {
-    await visit('/slide5');
+  test('visiting /en/slide5-en', async function(assert) {
+    await visit('/en/slide5-en');
 
-    assert.equal(currentURL(), '/slide5');
+    assert.equal(currentURL(), '/en/slide5-en');
   });
 
   test('should have correct meta', async function(assert) {
-    await visit('/slide5');
+    await visit('/en/slide5-en');
 
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
@@ -29,19 +29,43 @@ module('Acceptance | slide 5', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/slide5/',
+      'https://www.cigionline.org/interactives/2019annualreport/en/slide5-en',
+    );
+    assert.strictEqual(
+      document.querySelector('head meta[property="og:type"]').getAttribute('content'),
+      'article',
+    );
+    assert.strictEqual(
+      document.querySelector('head meta[property="og:image"]').getAttribute('content'),
+      'https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/slide-5-og.jpg',
+    );
+    assert.strictEqual(
+      document.querySelector('head meta[property="og:locale"]').getAttribute('content'),
+      'en_CA',
+    );
+    assert.strictEqual(
+      document.querySelector('head meta[property="fb:app_id"]').getAttribute('content'),
+      '995454813805233',
+    );
+    assert.strictEqual(
+      document.querySelector('head meta[property="twitter:card"]').getAttribute('content'),
+      'summary_large_image',
+    );
+    assert.strictEqual(
+      document.querySelector('head meta[property="twitter:site"]').getAttribute('content'),
+      '@CIGIOnline',
     );
   });
 
   test('should have correct social links', async function(assert) {
-    await visit('/slide5');
+    await visit('/en/slide5-en');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/slide5');
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/slide5');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/en/slide5-en');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/en/slide5-en');
   });
 
   test('should have correct slide content', async function(assert) {
-    await visit('/slide5');
+    await visit('/en/slide5-en');
 
     assert.dom('.slide-content').exists();
     assert.dom('.slide-content .slide-title h1').containsText('Slide 5 Title English');
@@ -83,7 +107,7 @@ module('Acceptance | slide 5', function(hooks) {
   });
 
   test('should transition to /en/slide4-en on scroll-arrow-up-btn click', async function(assert) {
-    await visit('/slide5');
+    await visit('/en/slide5-en');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
@@ -93,7 +117,7 @@ module('Acceptance | slide 5', function(hooks) {
   });
 
   test('should transition to /slide6 on scroll-arrow-down-btn click', async function(assert) {
-    await visit('/slide5');
+    await visit('/en/slide5-en');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
