@@ -93,13 +93,13 @@ module('Acceptance | outputs and activities', function(hooks) {
     assert.dom('.footer').doesNotExist();
   });
 
-  test('should transition to /slide13 on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /en/slide13-en on scroll-arrow-up-btn click', async function(assert) {
     await visit('/outputs-and-activities');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/slide13');
+    assert.strictEqual(currentURL(), '/en/slide13-en');
     assert.dom('ul.dot-nav').exists();
   });
 
