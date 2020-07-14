@@ -144,6 +144,7 @@ export default Controller.extend({
       'en.slide-6': 'fr.slide-6',
       'en.slide-7': 'fr.slide-7',
       'en.slide-8': 'fr.slide-8',
+      'en.slide-9': 'fr.slide-9',
       'en.table-of-contents': 'fr.table-des-matieres',
       'fr.index': 'en.index',
       'fr.message-du-directeur-executif': 'en.presidents-message',
@@ -156,6 +157,7 @@ export default Controller.extend({
       'fr.slide-6': 'en.slide-6',
       'fr.slide-7': 'en.slide-7',
       'fr.slide-8': 'en.slide-8',
+      'fr.slide-9': 'en.slide-9',
       'fr.table-des-matieres': 'en.table-of-contents',
     };
     if (routeMapping[this.router.currentRouteName]) {
