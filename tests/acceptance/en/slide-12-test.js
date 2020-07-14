@@ -3,17 +3,17 @@ import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Acceptance | slide 12', function(hooks) {
+module('Acceptance | en/slide 12', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('visiting /slide12', async function(assert) {
-    await visit('/slide12');
+  test('visiting /en/slide12-en', async function(assert) {
+    await visit('/en/slide12-en');
 
-    assert.equal(currentURL(), '/slide12');
+    assert.equal(currentURL(), '/en/slide12-en');
   });
 
   test('should have correct meta', async function(assert) {
-    await visit('/slide12');
+    await visit('/en/slide12-en');
 
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
@@ -29,15 +29,11 @@ module('Acceptance | slide 12', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/slide12/',
+      'https://www.cigionline.org/interactives/2019annualreport/en/slide12-en',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),
       'article',
-    );
-    assert.strictEqual(
-      document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
-      '2019 CIGI Annual Report',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:image"]').getAttribute('content'),
@@ -62,14 +58,14 @@ module('Acceptance | slide 12', function(hooks) {
   });
 
   test('should have correct social links', async function(assert) {
-    await visit('/slide12');
+    await visit('/en/slide12-en');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/slide12');
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/slide12');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/en/slide12-en');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/en/slide12-en');
   });
 
   test('should have correct slide content', async function(assert) {
-    await visit('/slide12');
+    await visit('/en/slide12-en');
 
     assert.dom('.slide-content').exists();
     assert.dom('.slide-content .slide-title h1').containsText('Slide 12 Title English');
@@ -100,6 +96,10 @@ module('Acceptance | slide 12', function(hooks) {
 
     assert.dom('.cigi-top-bar').exists();
     assert.dom('.cigi-top-bar').doesNotHaveClass('light-background');
+    assert.dom('.intl-selected').exists({ count: 1 });
+    assert.dom('.intl-selected').containsText('EN');
+    assert.dom('.intl-link').exists({ count: 1 });
+    assert.dom('.intl-link').containsText('FR');
     assert.dom('ul.dot-nav').exists();
     assert.dom('ul.dot-nav').doesNotHaveClass('light-background');
     assert.dom('button.scroll-arrow-up-btn').exists();
@@ -111,20 +111,32 @@ module('Acceptance | slide 12', function(hooks) {
   });
 
   test('should transition to /en/slide11-en on scroll-arrow-up-btn click', async function(assert) {
-    await visit('/slide12');
+    await visit('/en/slide12-en');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
 
     assert.strictEqual(currentURL(), '/en/slide11-en');
+    assert.dom('ul.dot-nav').exists();
   });
 
   test('should transition to /slide13 on scroll-arrow-down-btn click', async function(assert) {
-    await visit('/slide12');
+    await visit('/en/slide12-en');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
     assert.strictEqual(currentURL(), '/slide13');
+    assert.dom('ul.dot-nav').exists();
+  });
+
+  test('should transition to /fr/slide12-fr on intl-link click', async function(assert) {
+    await visit('/en/slide12-en');
+
+    await click('.intl-link');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/fr/slide12-fr');
+    assert.dom('ul.dot-nav').exists();
   });
 });
