@@ -110,13 +110,13 @@ module('Acceptance | slide 12', function(hooks) {
     assert.dom('.footer').doesNotHaveClass('footer-dark');
   });
 
-  test('should transition to /slide11 on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /en/slide11-en on scroll-arrow-up-btn click', async function(assert) {
     await visit('/slide12');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/slide11');
+    assert.strictEqual(currentURL(), '/en/slide11-en');
   });
 
   test('should transition to /slide13 on scroll-arrow-down-btn click', async function(assert) {

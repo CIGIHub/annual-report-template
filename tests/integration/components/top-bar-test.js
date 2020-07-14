@@ -13,6 +13,12 @@ module('Integration | Component | top-bar', function(hooks) {
   hooks.beforeEach(function() {
     this.clock = lolex.install();
     this.owner.register('service:intl', Service.extend({
+      off() {
+        return '';
+      },
+      on() {
+        return '';
+      },
       t() {
         return '';
       },
