@@ -32,23 +32,23 @@
         {{fa-icon "share-alt" prefix="fal" size="lg"}}
       </button>
     {{/if}}
-    {{#if isEnglishRoute}}
+    {{#if this.isEnglishRoute}}
       <span class="intl-selected">
-        EN
+        {{t "en"}}
       </span>
     {{else}}
       <LinkTo @route={{@translateRoute}} class="intl-link">
-        EN
+        {{t "en"}}
       </LinkTo>
     {{/if}}
     <span>/</span>
-    {{#if isFrenchRoute}}
+    {{#if this.isFrenchRoute}}
       <span class="intl-selected">
-        FR
+        {{t "fr"}}
       </span>
     {{else}}
       <LinkTo @route={{@translateRoute}} class="intl-link">
-        FR
+        {{t "fr"}}
       </LinkTo>
     {{/if}}
     {{#if this.menuIsOpen}}

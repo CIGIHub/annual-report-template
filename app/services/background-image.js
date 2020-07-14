@@ -136,11 +136,18 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/slide-9-thumbnail.jpg',
     },
 
-    'slide-10': {
+    // slide-10
+    'en.slide-10': {
       fullSizeUrl: 'template/slides/slide-10.jpg',
       ogUrl: 'template/slides/slide-10-og.jpg',
       thumbnailUrl: 'template/slides/slide-10-thumbnail.jpg',
     },
+    'fr.slide-10': {
+      fullSizeUrl: 'template/slides/slide-10.jpg',
+      ogUrl: 'template/slides/slide-10-og.jpg',
+      thumbnailUrl: 'template/slides/slide-10-thumbnail.jpg',
+    },
+
     'slide-11': {
       fullSizeUrl: 'template/slides/slide-11.jpg',
       ogUrl: 'template/slides/slide-11-og.jpg',
