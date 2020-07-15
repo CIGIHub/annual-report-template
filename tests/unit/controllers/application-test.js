@@ -31,30 +31,30 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), true);
   });
 
-  test('should have bounceScrollArrowDown=false for /slide10', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/slide10-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-10');
+    set(controller, 'router.currentRouteName', 'en.slide-10');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /slide-2', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/slide2-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-2');
+    set(controller, 'router.currentRouteName', 'en.slide-2');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /slide7', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/slide7-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-7');
+    set(controller, 'router.currentRouteName', 'en.slide-7');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /slide1', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/slide1-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide1');
+    set(controller, 'router.currentRouteName', 'en.slide-1');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -66,16 +66,16 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /slide13', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/slide13-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-13');
+    set(controller, 'router.currentRouteName', 'en.slide-13');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /slide12', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/slide12-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-12');
+    set(controller, 'router.currentRouteName', 'en.slide-12');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -108,51 +108,51 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /slide4', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/slide4-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-4');
+    set(controller, 'router.currentRouteName', 'en.slide-4');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /slide5', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/slide5-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-5');
+    set(controller, 'router.currentRouteName', 'en.slide-5');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /slide11', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/slide11-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-11');
+    set(controller, 'router.currentRouteName', 'en.slide-11');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /slide6', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/slide6-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-6');
+    set(controller, 'router.currentRouteName', 'en.slide-6');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /slide8', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/slide8-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-8');
+    set(controller, 'router.currentRouteName', 'en.slide-8');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /slide3', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/slide3-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-3');
+    set(controller, 'router.currentRouteName', 'en.slide-3');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /outputs-and-activities', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/outputs-and-activities', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'outputs-and-activities');
+    set(controller, 'router.currentRouteName', 'en.outputs-and-activities');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -164,9 +164,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /slide9', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/slide9-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-9');
+    set(controller, 'router.currentRouteName', 'en.slide-9');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -199,30 +199,30 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /slide10', function(assert) {
+  test('should have hideMobileOverlay=false for /en/slide10-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-10');
+    set(controller, 'router.currentRouteName', 'en.slide-10');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /slide-2', function(assert) {
+  test('should have hideMobileOverlay=false for /en/slide2-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-2');
+    set(controller, 'router.currentRouteName', 'en.slide-2');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /slide7', function(assert) {
+  test('should have hideMobileOverlay=false for /en/slide7-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-7');
+    set(controller, 'router.currentRouteName', 'en.slide-7');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /slide1', function(assert) {
+  test('should have hideMobileOverlay=false for /en/slide1-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide1');
+    set(controller, 'router.currentRouteName', 'en.slide-1');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -234,16 +234,16 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
 
-  test('should have hideMobileOverlay=false for /slide13', function(assert) {
+  test('should have hideMobileOverlay=false for /en/slide13-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-13');
+    set(controller, 'router.currentRouteName', 'en.slide-13');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /slide12', function(assert) {
+  test('should have hideMobileOverlay=false for /en/slide12-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-12');
+    set(controller, 'router.currentRouteName', 'en.slide-12');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -276,51 +276,51 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
 
-  test('should have hideMobileOverlay=false for /slide4', function(assert) {
+  test('should have hideMobileOverlay=false for /en/slide4-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-4');
+    set(controller, 'router.currentRouteName', 'en.slide-4');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /slide5', function(assert) {
+  test('should have hideMobileOverlay=false for /en/slide5-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-5');
+    set(controller, 'router.currentRouteName', 'en.slide-5');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /slide11', function(assert) {
+  test('should have hideMobileOverlay=false for /en/slide11-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-11');
+    set(controller, 'router.currentRouteName', 'en.slide-11');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /slide6', function(assert) {
+  test('should have hideMobileOverlay=false for /en/slide6-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-6');
+    set(controller, 'router.currentRouteName', 'en.slide-6');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /slide8', function(assert) {
+  test('should have hideMobileOverlay=false for /en/slide8-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-8');
+    set(controller, 'router.currentRouteName', 'en.slide-8');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /slide3', function(assert) {
+  test('should have hideMobileOverlay=false for /en/slide3-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-3s');
+    set(controller, 'router.currentRouteName', 'en.slide-3s');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=true for /outputs-and-activities', function(assert) {
+  test('should have hideMobileOverlay=true for /en/outputs-and-activities', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'outputs-and-activities');
+    set(controller, 'router.currentRouteName', 'en.outputs-and-activities');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
@@ -332,9 +332,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
 
-  test('should have hideMobileOverlay=false for /slide9', function(assert) {
+  test('should have hideMobileOverlay=false for /en/slide9-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-9');
+    set(controller, 'router.currentRouteName', 'en.slide-9');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -370,33 +370,33 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /slide10', function(assert) {
+  test('should have lightBackground=false for /en/slide10-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-10');
+    set(controller, 'router.currentRouteName', 'en.slide-10');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /slide-2', function(assert) {
+  test('should have lightBackground=false for /en/slide2-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-2');
+    set(controller, 'router.currentRouteName', 'en.slide-2');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /slide7', function(assert) {
+  test('should have lightBackground=false for /en/slide7-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-7');
+    set(controller, 'router.currentRouteName', 'en.slide-7');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /slide1', function(assert) {
+  test('should have lightBackground=false for /en/slide1-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide1');
+    set(controller, 'router.currentRouteName', 'en.slide-1');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -418,17 +418,17 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /slide13', function(assert) {
+  test('should have lightBackground=false for /en/slide13-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-13');
+    set(controller, 'router.currentRouteName', 'en.slide-13');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /slide12', function(assert) {
+  test('should have lightBackground=false for /en/slide12-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-12');
+    set(controller, 'router.currentRouteName', 'en.slide-12');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -474,65 +474,65 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /slide4', function(assert) {
+  test('should have lightBackground=false for /en/slide4-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-4');
+    set(controller, 'router.currentRouteName', 'en.slide-4');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /slide5', function(assert) {
+  test('should have lightBackground=false for /en/slide5-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-5');
+    set(controller, 'router.currentRouteName', 'en.slide-5');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /slide11', function(assert) {
+  test('should have lightBackground=false for /en/slide11-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-11');
+    set(controller, 'router.currentRouteName', 'en.slide-11');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /slide6', function(assert) {
+  test('should have lightBackground=false for /en/slide6-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-6');
+    set(controller, 'router.currentRouteName', 'en.slide-6');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /slide8', function(assert) {
+  test('should have lightBackground=false for /en/slide8-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-8');
+    set(controller, 'router.currentRouteName', 'en.slide-8');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /slide3', function(assert) {
+  test('should have lightBackground=false for /en/slide3-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-3');
+    set(controller, 'router.currentRouteName', 'en.slide-3');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=true for /outputs-and-activities', function(assert) {
+  test('should have lightBackground=true for /en/outputs-and-activities', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'outputs-and-activities');
+    set(controller, 'router.currentRouteName', 'en.outputs-and-activities');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), true);
   });
 
-  test('should have lightBackground=false for /outputs-and-activities when the lightbox is active', function(assert) {
+  test('should have lightBackground=false for /en/outputs-and-activities when the lightbox is active', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'outputs-and-activities');
+    set(controller, 'router.currentRouteName', 'en.outputs-and-activities');
     set(controller, 'lightbox.showLightbox', 'tableofcontents');
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -554,9 +554,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /slide9', function(assert) {
+  test('should have lightBackground=false for /en/slide9-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-9');
+    set(controller, 'router.currentRouteName', 'en.slide-9');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -595,30 +595,30 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), false);
   });
 
-  test('should have scrollableContentPage=true for /slide10', function(assert) {
+  test('should have scrollableContentPage=true for /en/slide10-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-10');
+    set(controller, 'router.currentRouteName', 'en.slide-10');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /slide-2', function(assert) {
+  test('should have scrollableContentPage=true for /en/slide2-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-2');
+    set(controller, 'router.currentRouteName', 'en.slide-2');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /slide7', function(assert) {
+  test('should have scrollableContentPage=true for /en/slide7-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-7');
+    set(controller, 'router.currentRouteName', 'en.slide-7');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /slide1', function(assert) {
+  test('should have scrollableContentPage=true for /en/slide1-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide1');
+    set(controller, 'router.currentRouteName', 'en.slide-1');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -630,16 +630,16 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /slide13', function(assert) {
+  test('should have scrollableContentPage=true for /en/slide13-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-13');
+    set(controller, 'router.currentRouteName', 'en.slide-13');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /slide12', function(assert) {
+  test('should have scrollableContentPage=true for /en/slide12-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-12');
+    set(controller, 'router.currentRouteName', 'en.slide-12');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -672,51 +672,51 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /slide4', function(assert) {
+  test('should have scrollableContentPage=true for /en/slide4-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-4');
+    set(controller, 'router.currentRouteName', 'en.slide-4');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /slide5', function(assert) {
+  test('should have scrollableContentPage=true for /en/slide5-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-5');
+    set(controller, 'router.currentRouteName', 'en.slide-5');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /slide11', function(assert) {
+  test('should have scrollableContentPage=true for /en/slide11-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-11');
+    set(controller, 'router.currentRouteName', 'en.slide-11');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /slide6', function(assert) {
+  test('should have scrollableContentPage=true for /en/slide6-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-6');
+    set(controller, 'router.currentRouteName', 'en.slide-6');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /slide8', function(assert) {
+  test('should have scrollableContentPage=true for /en/slide8-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-8');
+    set(controller, 'router.currentRouteName', 'en.slide-8');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /slide3', function(assert) {
+  test('should have scrollableContentPage=true for /en/slide3-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-3');
+    set(controller, 'router.currentRouteName', 'en.slide-3');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /outputs-and-activities', function(assert) {
+  test('should have scrollableContentPage=true for /en/outputs-and-activities', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'outputs-and-activities');
+    set(controller, 'router.currentRouteName', 'en.outputs-and-activities');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -728,9 +728,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /slide9', function(assert) {
+  test('should have scrollableContentPage=true for /en/slide9-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-9');
+    set(controller, 'router.currentRouteName', 'en.slide-9');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -773,30 +773,30 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /slide10', function(assert) {
+  test('should have showDotNav=true for /en/slide10-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-10');
+    set(controller, 'router.currentRouteName', 'en.slide-10');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /slide-2', function(assert) {
+  test('should have showDotNav=true for /en/slide2-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-2');
+    set(controller, 'router.currentRouteName', 'en.slide-2');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /slide7', function(assert) {
+  test('should have showDotNav=true for /en/slide7-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-7');
+    set(controller, 'router.currentRouteName', 'en.slide-7');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /slide1', function(assert) {
+  test('should have showDotNav=true for /en/slide1-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide1');
+    set(controller, 'router.currentRouteName', 'en.slide-1');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
@@ -808,16 +808,16 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /slide13', function(assert) {
+  test('should have showDotNav=true for /en/slide13-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-13');
+    set(controller, 'router.currentRouteName', 'en.slide-13');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /slide12', function(assert) {
+  test('should have showDotNav=true for /en/slide12-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-12');
+    set(controller, 'router.currentRouteName', 'en.slide-12');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
@@ -850,51 +850,51 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /slide4', function(assert) {
+  test('should have showDotNav=true for /en/slide4-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-4');
+    set(controller, 'router.currentRouteName', 'en.slide-4');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /slide5', function(assert) {
+  test('should have showDotNav=true for /en/slide5-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-5');
+    set(controller, 'router.currentRouteName', 'en.slide-5');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /slide11', function(assert) {
+  test('should have showDotNav=true for /en/slide11-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-11');
+    set(controller, 'router.currentRouteName', 'en.slide-11');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /slide6', function(assert) {
+  test('should have showDotNav=true for /en/slide6-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-6');
+    set(controller, 'router.currentRouteName', 'en.slide-6');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /slide8', function(assert) {
+  test('should have showDotNav=true for /en/slide8-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-8');
+    set(controller, 'router.currentRouteName', 'en.slide-8');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /slide3', function(assert) {
+  test('should have showDotNav=true for /en/slide3-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-3');
+    set(controller, 'router.currentRouteName', 'en.slide-3');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /outputs-and-activities', function(assert) {
+  test('should have showDotNav=true for /en/outputs-and-activities', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'outputs-and-activities');
+    set(controller, 'router.currentRouteName', 'en.outputs-and-activities');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
@@ -906,9 +906,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /slide9', function(assert) {
+  test('should have showDotNav=true for /en/slide9-en', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'slide-9');
+    set(controller, 'router.currentRouteName', 'en.slide-9');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });

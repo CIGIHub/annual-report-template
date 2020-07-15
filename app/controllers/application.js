@@ -30,6 +30,7 @@ export default Controller.extend({
     }
     if ([
       'en.chairs-message',
+      'en.outputs-and-activities',
       'en.presidents-message',
       'financials.auditors-report',
       'financials.notes',
@@ -37,7 +38,7 @@ export default Controller.extend({
       'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
       'fr.message-du-directeur-executif',
       'fr.message-du-president-du-conseil',
-      'outputs-and-activities',
+      'fr.outputs-and-activities',
     ].includes(currentRouteName)) {
       return htmlSafe('background-color: #fff;');
     }
@@ -57,12 +58,13 @@ export default Controller.extend({
   hideMobileOverlay: computed('router.currentRouteName', function() {
     return [
       'en.chairs-message',
+      'en.outputs-and-activities',
       'en.presidents-message',
       'en.table-of-contents',
       'fr.message-du-directeur-executif',
       'fr.message-du-president-du-conseil',
+      'fr.outputs-and-activities',
       'fr.table-des-matieres',
-      'outputs-and-activities',
       'financials.auditors-report',
       'financials.notes',
       'financials.summarized-statement-of-financial-position',
@@ -73,6 +75,7 @@ export default Controller.extend({
   lightBackground: computed('router.currentRouteName', 'lightbox.{showLightbox,subType}', function() {
     const lightBackgroundRoute = [
       'en.chairs-message',
+      'en.outputs-and-activities',
       'en.presidents-message',
       'financials.auditors-report',
       'financials.notes',
@@ -80,7 +83,7 @@ export default Controller.extend({
       'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
       'fr.message-du-directeur-executif',
       'fr.message-du-president-du-conseil',
-      'outputs-and-activities',
+      'fr.outputs-and-activities',
     ].includes(this.router.currentRouteName);
     if (this.lightbox.showLightbox
         || this.lightbox.subType === 'publication') {
@@ -135,6 +138,7 @@ export default Controller.extend({
     const routeMapping = {
       'en.chairs-message': 'fr.message-du-president-du-conseil',
       'en.index': 'fr.index',
+      'en.outputs-and-activities': 'fr.outputs-and-activities',
       'en.presidents-message': 'fr.message-du-directeur-executif',
       'en.slide-1': 'fr.slide-1',
       'en.slide-2': 'fr.slide-2',
@@ -153,6 +157,7 @@ export default Controller.extend({
       'fr.index': 'en.index',
       'fr.message-du-directeur-executif': 'en.presidents-message',
       'fr.message-du-president-du-conseil': 'en.chairs-message',
+      'fr.outputs-and-activities': 'en.outputs-and-activities',
       'fr.slide-1': 'en.slide-1',
       'fr.slide-2': 'en.slide-2',
       'fr.slide-3': 'en.slide-3',

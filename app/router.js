@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('chairs-message');
   this.route('en', function() {
     this.route('chairs-message');
+    this.route('outputs-and-activities');
     this.route('presidents-message');
     this.route('slide-1', { path: '/slide1-en' });
     this.route('slide-2', { path: '/slide2-en' });
@@ -37,6 +38,7 @@ Router.map(function() {
   this.route('fr', function() {
     this.route('message-du-directeur-executif');
     this.route('message-du-president-du-conseil');
+    this.route('outputs-and-activities');
     this.route('slide-1', { path: '/slide1-fr' });
     this.route('slide-2', { path: '/slide2-fr' });
     this.route('slide-3', { path: '/slide3-fr' });
@@ -52,10 +54,6 @@ Router.map(function() {
     this.route('slide-13', { path: '/slide13-fr' });
     this.route('table-des-matieres');
   });
-  this.route('outputs-and-activities');
-  this.route('slide-11', { path: '/slide11' });
-  this.route('slide-12', { path: '/slide12' });
-  this.route('slide-13', { path: '/slide13' });
   this.route('table-of-contents');
   this.route('thank-you');
   this.route('timeline');

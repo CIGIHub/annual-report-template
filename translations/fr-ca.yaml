@@ -63,7 +63,7 @@ downloadPdf: 'Download PDF'
 en: 'EN'
 essay: 'Essay'
 essaySeries: 'Essay Series'
-events: 'Events'
+events: 'Events French'
 financials:
   auditorsReport:
     auditedFinancialStatements:
@@ -260,13 +260,13 @@ index:
   year20: '20'
   year9: '9'
 media: 'Media'
-opinions: 'Opinions'
+opinions: 'Opinions French'
 outputsAndActivities:
   eventLink: 'Learn more about the event'
   opinionLink: 'Read opinion'
   pageCount: 'Page {page} of {total}'
   publicationLink: 'Read this publication'
-  title: 'Outputs and Activities'
+  title: 'Outputs and Activities French'
 pageNotFound:
   paragraph1: 'The request page could not be found.'
   paragraph2: 'Please check the URL and try again.'
@@ -286,7 +286,7 @@ presidentsMessage:
     title: 'Directeur exécutif du CIGI'
   title: 'Message du directeur exécutif'
 publication: 'Publication'
-publications: 'Publications'
+publications: 'Publications French'
 qa: 'Q&A'
 report: 'Report'
 resource: 'Resource'

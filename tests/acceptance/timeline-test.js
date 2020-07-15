@@ -116,14 +116,14 @@ module('Acceptance | timeline', function(hooks) {
     assert.dom('.footer').doesNotExist();
   });
 
-  test('should transition to /outputs-and-activities on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /en/outputs-and-activities on scroll-arrow-up-btn click', async function(assert) {
     await visit('/timeline');
     await finishRender();
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/outputs-and-activities');
+    assert.strictEqual(currentURL(), '/en/outputs-and-activities');
     assert.dom('ul.dot-nav').exists();
   });
 
