@@ -268,7 +268,7 @@ outputsAndActivities:
   publicationLink: 'Read this publication'
   title: 'Outputs and Activities French'
 pageNotFound:
-  paragraph1: 'The request page could not be found.'
+  paragraph1: 'The requested page could not be found.'
   paragraph2: 'Please check the URL and try again.'
   title: '404: Page Not Found'
 paper: 'Paper'
@@ -464,6 +464,6 @@ thankYou:
 timeline:
   back: 'Back to Timeline'
   cannotBeDisplayed: 'The interactive timeline cannot be displayed on your mobile device. For the best experience, please view on a desktop browser.'
-  title: 'Explore Timeline'
+  title: 'Explore Timeline French'
 title: 'Rapport annuel 2019'
 video: 'Video'

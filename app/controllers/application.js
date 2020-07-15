@@ -99,8 +99,9 @@ export default Controller.extend({
     return ![
       'index',
       'en.index',
+      'en.timeline',
       'fr.index',
-      'timeline',
+      'fr.timeline',
       'thank-you',
     ].includes(this.router.currentRouteName);
   }),
@@ -154,6 +155,7 @@ export default Controller.extend({
       'en.slide-12': 'fr.slide-12',
       'en.slide-13': 'fr.slide-13',
       'en.table-of-contents': 'fr.table-des-matieres',
+      'en.timeline': 'fr.timeline',
       'fr.index': 'en.index',
       'fr.message-du-directeur-executif': 'en.presidents-message',
       'fr.message-du-president-du-conseil': 'en.chairs-message',
@@ -172,6 +174,7 @@ export default Controller.extend({
       'fr.slide-12': 'en.slide-12',
       'fr.slide-13': 'en.slide-13',
       'fr.table-des-matieres': 'en.table-of-contents',
+      'fr.timeline': 'en.timeline',
     };
     if (routeMapping[this.router.currentRouteName]) {
       return routeMapping[this.router.currentRouteName];

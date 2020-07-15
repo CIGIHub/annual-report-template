@@ -21,6 +21,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   intl: service(),
   lightbox: service(),
   routeOrder: service(),
+  router: service(),
 
   queryParams: {
     id: {
@@ -32,6 +33,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   },
 
   beforeModel() {
+    this.intl.setLocale('fr-ca');
     if (!this.assetLoader.assetsLoaded) {
       return this.assetLoader.waitForAssets();
     }
@@ -126,11 +128,13 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     const title = `${this.intl.t('timeline.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
     set(this, 'headData.description', this.intl.t('description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}timeline/`);
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}${this.router.currentURL.replace('/', '')}`);
     set(this, 'headData.image', this.backgroundImage.defaultBackground.ogUrl);
+    set(this, 'headData.siteName', this.intl.t('title'));
+    set(this, 'headData.locale', 'fr_CA');
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('timeline');
+    const nextRoute = this.routeOrder.getNextRoute('fr.timeline');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {

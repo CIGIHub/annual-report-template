@@ -26,6 +26,7 @@ Router.map(function() {
     this.route('slide-12', { path: '/slide12-en' });
     this.route('slide-13', { path: '/slide13-en' });
     this.route('table-of-contents');
+    this.route('timeline');
   });
   this.route('financials', function() {
     this.route('auditors-report');
@@ -53,9 +54,8 @@ Router.map(function() {
     this.route('slide-12', { path: '/slide12-fr' });
     this.route('slide-13', { path: '/slide13-fr' });
     this.route('table-des-matieres');
+    this.route('timeline');
   });
-  this.route('table-of-contents');
   this.route('thank-you');
-  this.route('timeline');
   this.route('404', { path: '/*path' });
 });

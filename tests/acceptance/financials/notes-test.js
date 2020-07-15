@@ -67,7 +67,7 @@ module('Acceptance | financials/notes', function(hooks) {
     assert.dom('.footer').doesNotExist();
   });
 
-  test('should transition to /timeline on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /en/timeline on scroll-arrow-up-btn click', async function(assert) {
     await visit('/financials/notes');
 
     assert.ok(
@@ -77,7 +77,7 @@ module('Acceptance | financials/notes', function(hooks) {
     await click('.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/timeline');
+    assert.strictEqual(currentURL(), '/en/timeline');
     assert.dom('ul.dot-nav').exists();
   });
 

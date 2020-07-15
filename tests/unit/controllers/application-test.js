@@ -185,9 +185,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /timeline', function(assert) {
+  test('should have bounceScrollArrowDown=false for /en/timeline', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'timeline');
+    set(controller, 'router.currentRouteName', 'en.timeline');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -353,9 +353,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
 
-  test('should have hideMobileOverlay=false for /timeline', function(assert) {
+  test('should have hideMobileOverlay=false for /en/timeline', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'timeline');
+    set(controller, 'router.currentRouteName', 'en.timeline');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), false);
   });
@@ -578,9 +578,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), false);
   });
 
-  test('should have lightBackground=false for /timeline', function(assert) {
+  test('should have lightBackground=false for /en/timeline', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'timeline');
+    set(controller, 'router.currentRouteName', 'en.timeline');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), false);
@@ -749,9 +749,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), false);
   });
 
-  test('should have scrollableContentPage=false for /timeline', function(assert) {
+  test('should have scrollableContentPage=false for /en/timeline', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'timeline');
+    set(controller, 'router.currentRouteName', 'en.timeline');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), false);
   });
@@ -935,9 +935,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /timeline', function(assert) {
+  test('should have showDotNav=true for /en/timeline', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'timeline');
+    set(controller, 'router.currentRouteName', 'en.timeline');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
@@ -951,9 +951,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showScrollArrowDown'), true);
   });
 
-  test('should have showScrollArrowDown=true for /timeline', function(assert) {
+  test('should have showScrollArrowDown=true for /en/timeline', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'timeline');
+    set(controller, 'router.currentRouteName', 'en.timeline');
 
     assert.strictEqual(get(controller, 'showScrollArrowDown'), true);
   });
@@ -1046,12 +1046,12 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'isTransitioning'), false);
   });
 
-  test('should transition for 1500ms for /timeline', function(assert) {
+  test('should transition for 1500ms for /en/timeline', function(assert) {
     const controller = this.owner.lookup('controller:application');
     controller.transitionToRoute = function() {
       return true;
     };
-    set(controller, 'router.currentRouteName', 'timeline');
+    set(controller, 'router.currentRouteName', 'en.timeline');
 
     controller.send('transitionNext');
 

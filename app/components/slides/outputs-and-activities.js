@@ -7,7 +7,6 @@ import $ from 'jquery';
 export default class SlidesOutputsAndActivitiesComponent extends Component {
   @service backgroundImage;
   @service fastboot;
-  @service intl;
 
   get currentPage() {
     let currentPage = 1;

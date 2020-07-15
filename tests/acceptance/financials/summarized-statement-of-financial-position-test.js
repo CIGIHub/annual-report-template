@@ -99,13 +99,13 @@ module('Acceptance | financials/summarized statement of financial position', fun
     assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/financials/summarized-statement-of-financial-position');
   });
 
-  test('should transition to /timeline on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /en/timeline on scroll-arrow-up-btn click', async function(assert) {
     await visit('/financials/summarized-statement-of-financial-position');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/timeline');
+    assert.strictEqual(currentURL(), '/en/timeline');
     assert.dom('ul.dot-nav').exists();
   });
 

@@ -99,7 +99,7 @@ export default Service.extend({
       title: 'outputsAndActivities.title',
     }, {
       number: '17',
-      route: 'timeline',
+      route: isFrenchLocale ? 'fr.timeline' : 'en.timeline',
       subRoutes: [],
       title: 'timeline.title',
     }, {

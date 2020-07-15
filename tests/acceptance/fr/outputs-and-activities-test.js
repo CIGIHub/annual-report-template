@@ -80,6 +80,10 @@ module('Acceptance | fr/outputs and activities', function(hooks) {
 
     assert.dom('.cigi-top-bar').exists();
     assert.dom('.cigi-top-bar').hasClass('light-background');
+    assert.dom('.intl-selected').exists({ count: 1 });
+    assert.dom('.intl-selected').containsText('FR');
+    assert.dom('.intl-link').exists({ count: 1 });
+    assert.dom('.intl-link').containsText('EN');
     assert.dom('ul.dot-nav').exists();
     assert.dom('ul.dot-nav').hasClass('light-background');
     assert.dom('button.scroll-arrow-up-btn').exists();
@@ -99,13 +103,13 @@ module('Acceptance | fr/outputs and activities', function(hooks) {
     assert.dom('ul.dot-nav').exists();
   });
 
-  test('should transition to /timeline on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /fr/timeline on scroll-arrow-down-btn click', async function(assert) {
     await visit('/fr/outputs-and-activities');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/timeline');
+    assert.strictEqual(currentURL(), '/fr/timeline');
     assert.dom('ul.dot-nav').exists();
   });
 
