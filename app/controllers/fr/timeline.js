@@ -9,7 +9,7 @@ export default class FrTimelineController extends Controller {
   @alias('model.node') node;
   @alias('model.nodes') nodes;
   @tracked id = null;
-  @tracked search = null;
+  @tracked search = '';
 
   @action
   setId(id) {

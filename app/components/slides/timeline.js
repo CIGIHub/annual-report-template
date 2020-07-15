@@ -61,7 +61,7 @@ export default class SlidesTimelineComponent extends Component {
 
   @action
   clearSearch() {
-    this.args.setSearch(null);
+    this.args.setSearch('');
   }
 
   @action closeNode() {
