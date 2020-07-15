@@ -106,13 +106,13 @@ module('Acceptance | thank you', function(hooks) {
     assert.dom('.footer').doesNotHaveClass('footer-dark');
   });
 
-  test('should transition to /financials/auditor-report on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /en/financials/auditor-report on scroll-arrow-up-btn click', async function(assert) {
     await visit('/thank-you');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/financials/auditors-report');
+    assert.strictEqual(currentURL(), '/en/financials/auditors-report');
     assert.dom('ul.dot-nav').exists();
   });
 });

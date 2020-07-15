@@ -10,6 +10,9 @@ Router.map(function() {
   this.route('chairs-message');
   this.route('en', function() {
     this.route('chairs-message');
+    this.route('financials', function() {
+      this.route('auditors-report');
+    });
     this.route('outputs-and-activities');
     this.route('presidents-message');
     this.route('slide-1', { path: '/slide1-en' });
@@ -29,7 +32,6 @@ Router.map(function() {
     this.route('timeline');
   });
   this.route('financials', function() {
-    this.route('auditors-report');
     this.route('notes');
     this.route('summarized-statement-of-financial-position');
     this.route(
@@ -37,6 +39,9 @@ Router.map(function() {
     );
   });
   this.route('fr', function() {
+    this.route('finances', function() {
+      this.route('auditors-report');
+    });
     this.route('message-du-directeur-executif');
     this.route('message-du-president-du-conseil');
     this.route('outputs-and-activities');

@@ -30,12 +30,13 @@ export default Controller.extend({
     }
     if ([
       'en.chairs-message',
+      'en.financials.auditors-report',
       'en.outputs-and-activities',
       'en.presidents-message',
-      'financials.auditors-report',
       'financials.notes',
       'financials.summarized-statement-of-financial-position',
       'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+      'fr.finances.auditors-report',
       'fr.message-du-directeur-executif',
       'fr.message-du-president-du-conseil',
       'fr.outputs-and-activities',
@@ -58,14 +59,15 @@ export default Controller.extend({
   hideMobileOverlay: computed('router.currentRouteName', function() {
     return [
       'en.chairs-message',
+      'en.financials.auditors-report',
       'en.outputs-and-activities',
       'en.presidents-message',
       'en.table-of-contents',
+      'fr.finances.auditors-reports',
       'fr.message-du-directeur-executif',
       'fr.message-du-president-du-conseil',
       'fr.outputs-and-activities',
       'fr.table-des-matieres',
-      'financials.auditors-report',
       'financials.notes',
       'financials.summarized-statement-of-financial-position',
       'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
@@ -75,12 +77,13 @@ export default Controller.extend({
   lightBackground: computed('router.currentRouteName', 'lightbox.{showLightbox,subType}', function() {
     const lightBackgroundRoute = [
       'en.chairs-message',
+      'en.financials.auditors-report',
       'en.outputs-and-activities',
       'en.presidents-message',
-      'financials.auditors-report',
       'financials.notes',
       'financials.summarized-statement-of-financial-position',
       'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+      'fr.finances.auditors-report',
       'fr.message-du-directeur-executif',
       'fr.message-du-president-du-conseil',
       'fr.outputs-and-activities',
@@ -138,6 +141,7 @@ export default Controller.extend({
   translateRoute: computed('router.currentRouteName', function() {
     const routeMapping = {
       'en.chairs-message': 'fr.message-du-president-du-conseil',
+      'en.financials.auditors-report': 'fr.finances.auditors-report',
       'en.index': 'fr.index',
       'en.outputs-and-activities': 'fr.outputs-and-activities',
       'en.presidents-message': 'fr.message-du-directeur-executif',
@@ -156,6 +160,7 @@ export default Controller.extend({
       'en.slide-13': 'fr.slide-13',
       'en.table-of-contents': 'fr.table-des-matieres',
       'en.timeline': 'fr.timeline',
+      'fr.finances.auditors-report': 'en.financials.auditors-report',
       'fr.index': 'en.index',
       'fr.message-du-directeur-executif': 'en.presidents-message',
       'fr.message-du-president-du-conseil': 'en.chairs-message',

@@ -1,0 +1,39 @@
+<div class="background-row financials-background show-for-medium"></div>
+<div class="financials">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell">
+        <h1>{{t "financials.title"}}</h1>
+      </div>
+    </div>
+    <div class="grid-x grid-margin-x">
+      <div class="cell financials-container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell">
+            <div class="financials-menu">
+              {{#each this.menuLinks as |menuLink|}}
+                {{#if menuLink.current}}
+                  {{menuLink.title}}
+                {{else}}
+                  <LinkTo @route={{menuLink.linkTo}}>
+                    <span class="underline">{{menuLink.title}}</span>
+                  </LinkTo>
+                {{/if}}
+                {{#unless menuLink.last}}
+                  <span class="menu-break">/</span>
+                {{/unless}}
+              {{/each}}
+              <div class="download-button">
+                <a href="{{this.rootURL}}assets/CIGI-FS2018.pdf" target="_blank" rel="noopener noreferrer">
+                  {{fa-icon "download" prefix="fal" size="lg"}}
+                  <span class="underline">{{t "downloadPdf"}}</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <LiquidOutlet />
+      </div>
+    </div>
+  </div>
+</div>

@@ -126,13 +126,13 @@ module('Acceptance | fr/timeline', function(hooks) {
     assert.dom('ul.dot-nav').exists();
   });
 
-  test('should transition to /financials/auditors-report on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /fr/finances/auditors-report on scroll-arrow-down-btn click', async function(assert) {
     await visit('/fr/timeline');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/financials/auditors-report');
+    assert.strictEqual(currentURL(), '/fr/finances/auditors-report');
     assert.dom('ul.dot-nav').exists();
   });
 

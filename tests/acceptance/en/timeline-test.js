@@ -103,6 +103,10 @@ module('Acceptance | en/timeline', function(hooks) {
 
     assert.dom('.cigi-top-bar').exists();
     assert.dom('.cigi-top-bar').doesNotHaveClass('light-background');
+    assert.dom('.intl-selected').exists({ count: 1 });
+    assert.dom('.intl-selected').containsText('EN');
+    assert.dom('.intl-link').exists({ count: 1 });
+    assert.dom('.intl-link').containsText('FR');
     assert.dom('ul.dot-nav').exists();
     assert.dom('ul.dot-nav').doesNotHaveClass('light-background');
     assert.dom('button.scroll-arrow-up-btn').exists();
@@ -122,13 +126,13 @@ module('Acceptance | en/timeline', function(hooks) {
     assert.dom('ul.dot-nav').exists();
   });
 
-  test('should transition to /financials/auditors-report on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /en/financials/auditors-report on scroll-arrow-down-btn click', async function(assert) {
     await visit('/en/timeline');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/financials/auditors-report');
+    assert.strictEqual(currentURL(), '/en/financials/auditors-report');
     assert.dom('ul.dot-nav').exists();
   });
 

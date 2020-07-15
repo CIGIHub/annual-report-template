@@ -66,13 +66,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /slide10', function(assert) {
+  test('should have correct menu items for /en/slide10-en', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'slide-10');
+    set(component, 'router.currentRouteName', 'en.slide-10');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'slide-10') {
+      if (menuItem.route === 'en.slide-10') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -88,13 +88,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /slide-2', function(assert) {
+  test('should have correct menu items for /fr/slide10-fr', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'slide-2');
+    set(component, 'router.currentRouteName', 'fr.slide-10');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'slide-2') {
+      if (menuItem.route === 'fr.slide-10') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -110,13 +110,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /slide7', function(assert) {
+  test('should have correct menu items for /en/slide2-en', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'slide-7');
+    set(component, 'router.currentRouteName', 'en.slide-2');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'slide-7') {
+      if (menuItem.route === 'en.slide-2') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -132,13 +132,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /slide-1', function(assert) {
+  test('should have correct menu items for /fr/slide2-fr', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'slide-1');
+    set(component, 'router.currentRouteName', 'fr.slide-2');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'slide-1') {
+      if (menuItem.route === 'fr.slide-2') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -154,13 +154,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /chairs-message', function(assert) {
+  test('should have correct menu items for /en/slide7-en', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'chairs-message');
+    set(component, 'router.currentRouteName', 'en.slide-7');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'chairs-message') {
+      if (menuItem.route === 'en.slide-7') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -176,13 +176,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /slide13', function(assert) {
+  test('should have correct menu items for /fr/slide7-fr', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'slide-13');
+    set(component, 'router.currentRouteName', 'fr.slide-7');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'slide-13') {
+      if (menuItem.route === 'fr.slide-7') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -198,13 +198,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /slide12', function(assert) {
+  test('should have correct menu items for /en/slide1-en', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'slide-12');
+    set(component, 'router.currentRouteName', 'en.slide-1');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'slide-12') {
+      if (menuItem.route === 'en.slide-1') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -220,13 +220,167 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /financials/auditors-report', function(assert) {
+  test('should have correct menu items for /fr/slide1-fr', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'financials.auditors-report');
+    set(component, 'router.currentRouteName', 'fr.slide-1');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'financials.auditors-report') {
+      if (menuItem.route === 'fr.slide-1') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /en/chairs-message', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'en.chairs-message');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'en.chairs-message') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /fr/message-du-president-su-conseil', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'fr.message-du-president-su-conseil');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'fr.message-du-president-su-conseil') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /en/slide13-en', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'en.slide-13');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'en.slide-13') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /fr/slide13-fr', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'fr.slide-13');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'fr.slide-13') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /en/slide12-en', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'en.slide-12');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'en.slide-12') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /fr/slide12-fr', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'fr.slide-12');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'fr.slide-12') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /en/financials/auditors-report', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'en.financials.auditors-report');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'en.financials.auditors-report') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -248,7 +402,7 @@ module('Unit | Component | dot-nav', function(hooks) {
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'financials.auditors-report') {
+      if (menuItem.route === 'en.financials.auditors-report') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -270,7 +424,7 @@ module('Unit | Component | dot-nav', function(hooks) {
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'financials.auditors-report') {
+      if (menuItem.route === 'en.financials.auditors-report') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -292,7 +446,7 @@ module('Unit | Component | dot-nav', function(hooks) {
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'financials.auditors-report') {
+      if (menuItem.route === 'en.financials.auditors-report') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -308,13 +462,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /slide4', function(assert) {
+  test('should have correct menu items for /en/slide4-en', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'slide-4');
+    set(component, 'router.currentRouteName', 'en.slide-4');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'slide-4') {
+      if (menuItem.route === 'en.slide-4') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -330,13 +484,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /slide5', function(assert) {
+  test('should have correct menu items for /fr/slide4-fr', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'slide-5');
+    set(component, 'router.currentRouteName', 'fr.slide-4');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'slide-5') {
+      if (menuItem.route === 'fr.slide-4') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -352,13 +506,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /slide11', function(assert) {
+  test('should have correct menu items for /en/slide5-en', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'slide-11');
+    set(component, 'router.currentRouteName', 'en.slide-5');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'slide-11') {
+      if (menuItem.route === 'en.slide-5') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -374,13 +528,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /slide6', function(assert) {
+  test('should have correct menu items for /fr/slide5-fr', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'slide-6');
+    set(component, 'router.currentRouteName', 'fr.slide-5');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'slide-6') {
+      if (menuItem.route === 'fr.slide-5') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -396,13 +550,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /slide8', function(assert) {
+  test('should have correct menu items for /en/slide11-en', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'slide-8');
+    set(component, 'router.currentRouteName', 'en.slide-11');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'slide-8') {
+      if (menuItem.route === 'en.slide-11') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -418,13 +572,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /outputs-and-activities', function(assert) {
+  test('should have correct menu items for /fr/slide11-fr', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'outputs-and-activities');
+    set(component, 'router.currentRouteName', 'fr.slide-11');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'outputs-and-activities') {
+      if (menuItem.route === 'fr.slide-11') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -440,13 +594,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /presidents-message', function(assert) {
+  test('should have correct menu items for /en/slide6-en', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'presidents-message');
+    set(component, 'router.currentRouteName', 'en.slide-6');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'presidents-message') {
+      if (menuItem.route === 'en.slide-6') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -462,13 +616,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /slide9', function(assert) {
+  test('should have correct menu items for /fr/slide6-fr', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'slide-9');
+    set(component, 'router.currentRouteName', 'fr.slide-6');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'slide-9') {
+      if (menuItem.route === 'fr.slide-6') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -484,13 +638,211 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /table-of-contents', function(assert) {
+  test('should have correct menu items for /en/slide8-en', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'table-of-contents');
+    set(component, 'router.currentRouteName', 'en.slide-8');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'table-of-contents') {
+      if (menuItem.route === 'en.slide-8') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /fr/slide8-fr', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'fr.slide-8');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'fr.slide-8') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /en/outputs-and-activities', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'en.outputs-and-activities');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'en.outputs-and-activities') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /fr/outputs-and-activities', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'fr.outputs-and-activities');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'fr.outputs-and-activities') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /en/presidents-message', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'en.presidents-message');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'en.presidents-message') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /fr/message-du-directeur-executif', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'fr.message-du-directeur-executif');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'fr.message-du-directeur-executif') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /en/slide9-en', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'en.slide-9');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'en.slide-9') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /fr/slide9-fr', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'fr.slide-9');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'fr.slide-9') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /en/table-of-contents', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'en.table-of-contents');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'en.table-of-contents') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /fr/table-des-matieres', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'fr.table-des-matieres');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'fr.table-des-matieres') {
         assert.strictEqual(
           menuItem.current,
           true,
@@ -528,13 +880,35 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /timeline', function(assert) {
+  test('should have correct menu items for /en/timeline', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'timeline');
+    set(component, 'router.currentRouteName', 'en.timeline');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'timeline') {
+      if (menuItem.route === 'en.timeline') {
+        assert.strictEqual(
+          menuItem.current,
+          true,
+          `should have current=true for ${menuItem.route} route`,
+        );
+      } else {
+        assert.strictEqual(
+          menuItem.current,
+          false,
+          `should have current=false for ${menuItem.route} route`,
+        );
+      }
+    });
+  });
+
+  test('should have correct menu items for /fr/timeline', function(assert) {
+    const component = this.owner.factoryFor('component:dot-nav').create();
+    set(component, 'router.currentRouteName', 'fr.timeline');
+
+    const menuItems = get(component, 'menuItems');
+    menuItems.forEach(function(menuItem) {
+      if (menuItem.route === 'fr.timeline') {
         assert.strictEqual(
           menuItem.current,
           true,
