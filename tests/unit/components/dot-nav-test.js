@@ -396,9 +396,9 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /financials/summarized-statement-of-financial-position', function(assert) {
+  test('should have correct menu items for /en/financials/summarized-statement-of-financial-position', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'financials.summarized-statement-of-financial-position');
+    set(component, 'router.currentRouteName', 'en.financials.summarized-statement-of-financial-position');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {

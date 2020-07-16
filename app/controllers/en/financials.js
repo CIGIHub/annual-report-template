@@ -15,8 +15,8 @@ export default class EnFinancialsController extends Controller {
       linkTo: 'en.financials.auditors-report',
       title: this.intl.t('financials.auditorsReport.title'),
     }, {
-      current: currentRouteName === 'financials.summarized-statement-of-financial-position',
-      linkTo: 'financials.summarized-statement-of-financial-position',
+      current: currentRouteName === 'en.financials.summarized-statement-of-financial-position',
+      linkTo: 'en.financials.summarized-statement-of-financial-position',
       title: this.intl.t('financials.balanceSheet.title'),
     }, {
       current: currentRouteName === 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',

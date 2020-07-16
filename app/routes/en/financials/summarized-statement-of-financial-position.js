@@ -11,8 +11,10 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
   headData: service(),
   intl: service(),
   routeOrder: service(),
+  router: service(),
 
   beforeModel() {
+    this.intl.setLocale('en-ca');
     if (!this.assetLoader.assetsLoaded) {
       return this.assetLoader.waitForAssets();
     }
@@ -23,11 +25,13 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     const title = `${this.intl.t('financials.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
     set(this, 'headData.description', this.intl.t('description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}financials/summarized-statement-of-financial-position/`);
+    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}${this.router.currentURL.replace('/', '')}`);
     set(this, 'headData.image', this.backgroundImage.defaultBackground.ogUrl);
+    set(this, 'headData.siteName', this.intl.t('title'));
+    set(this, 'headData.locale', 'en_CA');
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('financials.summarized-statement-of-financial-position');
+    const nextRoute = this.routeOrder.getNextRoute('en.financials.summarized-statement-of-financial-position');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {

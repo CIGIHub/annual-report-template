@@ -15,8 +15,8 @@ export default class FrFinancesController extends Controller {
       linkTo: 'fr.finances.auditors-report',
       title: this.intl.t('financials.auditorsReport.title'),
     }, {
-      current: currentRouteName === 'financials.summarized-statement-of-financial-position',
-      linkTo: 'financials.summarized-statement-of-financial-position',
+      current: currentRouteName === 'fr.finances.sommaire-de-la-situation-financiere',
+      linkTo: 'fr.finances.sommaire-de-la-situation-financiere',
       title: this.intl.t('financials.balanceSheet.title'),
     }, {
       current: currentRouteName === 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
