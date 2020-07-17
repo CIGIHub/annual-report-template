@@ -101,6 +101,9 @@ Router.map(function() {
     this.route('slide-13', {
       path: '/slide13-en',
     });
+    this.route('slide-13-redirect', {
+      path: '/slide13-fr',
+    });
     this.route('table-of-contents');
     this.route('table-of-contents-redirect', {
       path: '/table-des-matieres',
@@ -199,6 +202,9 @@ Router.map(function() {
     });
     this.route('slide-13', {
       path: '/slide13-fr',
+    });
+    this.route('slide-13-redirect', {
+      path: '/slide13-en',
     });
     this.route('table-des-matieres');
     this.route('table-des-matieres-redirect', {
