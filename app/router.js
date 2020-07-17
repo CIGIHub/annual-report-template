@@ -95,6 +95,9 @@ Router.map(function() {
     this.route('slide-12', {
       path: '/slide12-en',
     });
+    this.route('slide-12-redirect', {
+      path: '/slide12-fr',
+    });
     this.route('slide-13', {
       path: '/slide13-en',
     });
@@ -190,6 +193,9 @@ Router.map(function() {
     });
     this.route('slide-12', {
       path: '/slide12-fr',
+    });
+    this.route('slide-12-redirect', {
+      path: '/slide12-en',
     });
     this.route('slide-13', {
       path: '/slide13-fr',
