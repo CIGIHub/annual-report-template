@@ -74,6 +74,7 @@ Router.map(function() {
     });
     this.route('thank-you');
     this.route('timeline');
+    this.route('slide-2-redirect');
   });
   this.route('fr', function() {
     this.route('finances', function() {
@@ -100,6 +101,9 @@ Router.map(function() {
     });
     this.route('slide-2', {
       path: '/slide2-fr',
+    });
+    this.route('slide-2-redirect', {
+      path: '/slide2-en',
     });
     this.route('slide-3', {
       path: '/slide3-fr',
