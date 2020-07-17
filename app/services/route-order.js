@@ -119,7 +119,7 @@ export default Service.extend({
       title: 'financials.title',
     }, {
       number: '19',
-      route: 'thank-you',
+      route: isFrenchLocale ? 'fr.merci' : 'en.thank-you',
       subRoutes: [],
       title: 'thankYou.title',
     }];

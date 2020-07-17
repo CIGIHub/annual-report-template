@@ -1,18 +1,17 @@
-import Controller from '@ember/controller';
-import { computed } from '@ember/object';
+import Component from '@glimmer/component';
 import { inject as service } from '@ember/service';
 import { htmlSafe } from '@ember/template';
 
-export default Controller.extend({
-  backgroundImage: service(),
-  intl: service(),
+export default class SlidesThankYouComponent extends Component {
+  @service backgroundImage;
+  @service intl;
 
-  backgroundStyle: computed(function() {
-    const { fullSizeUrl, thumbnailUrl } = this.backgroundImage.getSlideBackgroundImage('thank-you');
+  get backgroundStyle() {
+    const { fullSizeUrl, thumbnailUrl } = this.backgroundImage.getSlideBackgroundImage('en.thank-you');
     return htmlSafe(`background-image: url('${fullSizeUrl}'), url('${thumbnailUrl}');`);
-  }),
+  }
 
-  links: computed('intl.locale', function() {
+  get links() {
     return [{
       icon: 'download',
       link: '',
@@ -29,10 +28,10 @@ export default Controller.extend({
       title: this.intl.t('thankYou.link3'),
       type: this.intl.t('partners'),
     }];
-  }),
+  }
 
-  staffPhoto: computed(function() {
-    const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage('thank-you');
+  get staffPhoto() {
+    const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage('en.thank-you');
     return fullSizeUrl;
-  }),
-});
+  }
+}

@@ -1,11 +1,11 @@
 import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
 
-module('Unit | Route | thank-you', function(hooks) {
+module('Unit | Route | en/thank-you', function(hooks) {
   setupTest(hooks);
 
   test('it exists', function(assert) {
-    const route = this.owner.lookup('route:thank-you');
+    const route = this.owner.lookup('route:en/thank-you');
     assert.ok(route);
   });
 });

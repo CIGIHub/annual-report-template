@@ -184,7 +184,13 @@ export default Service.extend({
       thumbnailUrl: 'template/slides/slide-13-thumbnail.jpg',
     },
 
-    'thank-you': {
+    // thank-you
+    'en.thank-you': {
+      fullSizeUrl: 'template/slides/thank-you.jpg',
+      ogUrl: 'template/slides/thank-you-og.jpg',
+      thumbnailUrl: 'template/slides/thank-you-thumbnail.jpg',
+    },
+    'fr.merci': {
       fullSizeUrl: 'template/slides/thank-you.jpg',
       ogUrl: 'template/slides/thank-you-og.jpg',
       thumbnailUrl: 'template/slides/thank-you-thumbnail.jpg',

@@ -23,8 +23,9 @@ export default Controller.extend({
     const currentRouteName = this.router.currentRouteName;
     if ([
       'en.table-of-contents',
+      'en.thank-you',
+      'fr.merci',
       'fr.table-des-matieres',
-      'thank-you',
     ].includes(currentRouteName)) {
       return htmlSafe('background-color: #000;');
     }
@@ -111,10 +112,11 @@ export default Controller.extend({
     return ![
       'index',
       'en.index',
+      'en.thank-you',
       'en.timeline',
       'fr.index',
+      'fr.merci',
       'fr.timeline',
-      'thank-you',
     ].includes(this.router.currentRouteName);
   }),
 
@@ -171,12 +173,14 @@ export default Controller.extend({
       'en.slide-12': 'fr.slide-12',
       'en.slide-13': 'fr.slide-13',
       'en.table-of-contents': 'fr.table-des-matieres',
+      'en.thank-you': 'fr.merci',
       'en.timeline': 'fr.timeline',
       'fr.finances.auditors-report': 'en.financials.auditors-report',
       'fr.finances.notes': 'en.financials.notes',
       'fr.finances.sommaire-de-la-situation-financiere': 'en.financials.summarized-statement-of-financial-position',
       'fr.finances.sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds': 'en.financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
       'fr.index': 'en.index',
+      'fr.merci': 'en.thank-you',
       'fr.message-du-directeur-executif': 'en.presidents-message',
       'fr.message-du-president-du-conseil': 'en.chairs-message',
       'fr.outputs-and-activities': 'en.outputs-and-activities',

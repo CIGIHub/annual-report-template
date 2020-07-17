@@ -34,6 +34,7 @@ Router.map(function() {
     this.route('slide-12', { path: '/slide12-en' });
     this.route('slide-13', { path: '/slide13-en' });
     this.route('table-of-contents');
+    this.route('thank-you');
     this.route('timeline');
   });
   this.route('fr', function() {
@@ -43,6 +44,7 @@ Router.map(function() {
       this.route('sommaire-de-la-situation-financiere');
       this.route('sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
     });
+    this.route('merci');
     this.route('message-du-directeur-executif');
     this.route('message-du-president-du-conseil');
     this.route('outputs-and-activities');
@@ -62,6 +64,5 @@ Router.map(function() {
     this.route('table-des-matieres');
     this.route('timeline');
   });
-  this.route('thank-you');
   this.route('404', { path: '/*path' });
 });

@@ -109,13 +109,13 @@ module('Acceptance | fr/finances/sommaire des recettes et des depenses et evolut
     assert.dom('ul.dot-nav').exists();
   });
 
-  test('should transition to /thank-you on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /fr/merci on scroll-arrow-down-btn click', async function(assert) {
     await visit('/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/thank-you');
+    assert.strictEqual(currentURL(), '/fr/merci');
     assert.dom('ul.dot-nav').exists();
   });
 

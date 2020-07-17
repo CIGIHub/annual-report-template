@@ -105,13 +105,13 @@ module('Acceptance | en/financials/notes', function(hooks) {
     assert.dom('ul.dot-nav').exists();
   });
 
-  test('should transition to /thank-you on scroll-arrow-down-btn click', async function(assert) {
+  test('should transition to /en/thank-you on scroll-arrow-down-btn click', async function(assert) {
     await visit('/en/financials/notes');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/thank-you');
+    assert.strictEqual(currentURL(), '/en/thank-you');
     assert.dom('ul.dot-nav').exists();
   });
 
