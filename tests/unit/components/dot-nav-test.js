@@ -440,9 +440,9 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances', function(assert) {
+  test('should have correct menu items for /en/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
+    set(component, 'router.currentRouteName', 'en.financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {

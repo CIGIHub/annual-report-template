@@ -110,7 +110,9 @@ export default Service.extend({
         isFrenchLocale
           ? 'fr.finances.sommaire-de-la-situation-financiere'
           : 'en.financials.summarized-statement-of-financial-position',
-        'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+        isFrenchLocale
+          ? 'fr.finances.sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds'
+          : 'en.financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
       ],
       title: 'financials.title',
     }, {

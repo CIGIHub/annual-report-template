@@ -3,17 +3,17 @@ import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Acceptance | financials/summarized statement of revenues and expenditures and changes in fund balances', function(hooks) {
+module('Acceptance | en/financials/summarized statement of revenues and expenditures and changes in fund balances', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('visiting /financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances', async function(assert) {
-    await visit('/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
+  test('visiting /en/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances', async function(assert) {
+    await visit('/en/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
-    assert.equal(currentURL(), '/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
+    assert.equal(currentURL(), '/en/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
   });
 
   test('should have correct meta', async function(assert) {
-    await visit('/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
+    await visit('/en/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
@@ -29,19 +29,43 @@ module('Acceptance | financials/summarized statement of revenues and expenditure
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances/',
+      'https://www.cigionline.org/interactives/2019annualreport/en/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+    );
+    assert.strictEqual(
+      document.querySelector('head meta[property="og:type"]').getAttribute('content'),
+      'article',
+    );
+    assert.strictEqual(
+      document.querySelector('head meta[property="og:image"]').getAttribute('content'),
+      'https://staging.cigionline.org/interactives/2019annualreport/static/template/cigi-campus-og.jpg',
+    );
+    assert.strictEqual(
+      document.querySelector('head meta[property="og:locale"]').getAttribute('content'),
+      'en_CA',
+    );
+    assert.strictEqual(
+      document.querySelector('head meta[property="fb:app_id"]').getAttribute('content'),
+      '995454813805233',
+    );
+    assert.strictEqual(
+      document.querySelector('head meta[property="twitter:card"]').getAttribute('content'),
+      'summary_large_image',
+    );
+    assert.strictEqual(
+      document.querySelector('head meta[property="twitter:site"]').getAttribute('content'),
+      '@CIGIOnline',
     );
   });
 
   test('should have correct social links', async function(assert) {
-    await visit('/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
+    await visit('/en/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/en/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/en/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
   });
 
   test('should have correct slide content', async function(assert) {
-    await visit('/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
+    await visit('/en/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
     assert.dom('.financials').exists();
     assert.dom('.financials h1').containsText('Financials');
@@ -62,6 +86,10 @@ module('Acceptance | financials/summarized statement of revenues and expenditure
 
     assert.dom('.cigi-top-bar').exists();
     assert.dom('.cigi-top-bar').hasClass('light-background');
+    assert.dom('.intl-selected').exists({ count: 1 });
+    assert.dom('.intl-selected').containsText('EN');
+    assert.dom('.intl-link').exists({ count: 1 });
+    assert.dom('.intl-link').containsText('FR');
     assert.dom('ul.dot-nav').exists();
     assert.dom('ul.dot-nav').hasClass('light-background');
     assert.dom('button.scroll-arrow-up-btn').exists();
@@ -72,7 +100,7 @@ module('Acceptance | financials/summarized statement of revenues and expenditure
   });
 
   test('should transition to /en/timeline on scroll-arrow-up-btn click', async function(assert) {
-    await visit('/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
+    await visit('/en/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
@@ -82,12 +110,22 @@ module('Acceptance | financials/summarized statement of revenues and expenditure
   });
 
   test('should transition to /thank-you on scroll-arrow-down-btn click', async function(assert) {
-    await visit('/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
+    await visit('/en/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 
     assert.strictEqual(currentURL(), '/thank-you');
+    assert.dom('ul.dot-nav').exists();
+  });
+
+  test('should transition to /fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds on intl-link click', async function(assert) {
+    await visit('/en/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
+
+    await click('.intl-link');
+    await finishRender();
+
+    assert.strictEqual(currentURL(), '/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
     assert.dom('ul.dot-nav').exists();
   });
 });

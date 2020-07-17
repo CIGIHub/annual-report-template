@@ -20,8 +20,8 @@ export default Controller.extend({
       linkTo: 'en.financials.summarized-statement-of-financial-position',
       title: this.intl.t('financials.balanceSheet.title'),
     }, {
-      current: currentRouteName === 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
-      linkTo: 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+      current: currentRouteName === 'en.financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+      linkTo: 'en.financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
       title: this.intl.t('financials.revenueAndExpenses.title'),
     }, {
       current: currentRouteName === 'financials.notes',

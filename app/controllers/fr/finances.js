@@ -19,8 +19,8 @@ export default class FrFinancesController extends Controller {
       linkTo: 'fr.finances.sommaire-de-la-situation-financiere',
       title: this.intl.t('financials.balanceSheet.title'),
     }, {
-      current: currentRouteName === 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
-      linkTo: 'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+      current: currentRouteName === 'fr.finances.sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds',
+      linkTo: 'fr.finances.sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds',
       title: this.intl.t('financials.revenueAndExpenses.title'),
     }, {
       current: currentRouteName === 'financials.notes',

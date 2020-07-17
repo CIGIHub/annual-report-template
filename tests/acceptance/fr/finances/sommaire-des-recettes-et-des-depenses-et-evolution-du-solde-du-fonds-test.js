@@ -3,17 +3,17 @@ import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Acceptance | fr/finances/auditors report', function(hooks) {
+module('Acceptance | fr/finances/sommaire des recettes et des depenses et evolution du solde du fonds', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('visiting /fr/finances/auditors-report', async function(assert) {
-    await visit('/fr/finances/auditors-report');
+  test('visiting /fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds', async function(assert) {
+    await visit('/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
 
-    assert.equal(currentURL(), '/fr/finances/auditors-report');
+    assert.equal(currentURL(), '/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
   });
 
   test('should have correct meta', async function(assert) {
-    await visit('/fr/finances/auditors-report');
+    await visit('/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
 
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
@@ -29,7 +29,7 @@ module('Acceptance | fr/finances/auditors report', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/fr/finances/auditors-report',
+      'https://www.cigionline.org/interactives/2019annualreport/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),
@@ -58,25 +58,31 @@ module('Acceptance | fr/finances/auditors report', function(hooks) {
   });
 
   test('should have correct social links', async function(assert) {
-    await visit('/fr/finances/auditors-report');
+    await visit('/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+annuel+2019+https://www.cigionline.org/interactives/2019annualreport/fr/finances/auditors-report');
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/fr/finances/auditors-report');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+annuel+2019+https://www.cigionline.org/interactives/2019annualreport/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
   });
 
   test('should have correct slide content', async function(assert) {
-    await visit('/fr/finances/auditors-report');
+    await visit('/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
 
     assert.dom('.financials').exists();
     assert.dom('.financials h1').containsText('Finances');
     assert.dom('.financials .financials-menu').exists();
-    assert.dom('.financials .financials-menu').containsText('Auditor’s Report');
+    assert.dom('.financials .financials-menu').containsText('Sommaire des recettes et des dépenses et évolution du solde du fonds');
     assert.dom('.financials .financials-menu > a').exists({ count: 3 });
-    assert.dom('.financials .financials-menu > a:nth-of-type(1)').containsText('Sommaire de la situation financière');
-    assert.dom('.financials .financials-menu > a:nth-of-type(2)').containsText('Sommaire des recettes et des dépenses et évolution du solde du fonds');
+    assert.dom('.financials .financials-menu > a:nth-of-type(1)').containsText('Auditor’s Report');
+    assert.dom('.financials .financials-menu > a:nth-of-type(2)').containsText('Sommaire de la situation financière');
     assert.dom('.financials .financials-menu > a:nth-of-type(3)').containsText('Notes');
     assert.dom('.financials .financials-menu .download-button').exists();
     assert.dom('.financials .financials-menu .download-button a').containsText('Download PDF');
+    assert.dom('.financials .financials-content').exists();
+    assert.dom('.financials .financials-content .table-title').exists();
+    assert.dom('.financials .financials-content .table-title td').exists({ count: 5 });
+    assert.dom('.financials .financials-content .table-title td:nth-of-type(1)').containsText('Sommaire des recettes et des dépenses et évolution du solde du fonds pour l’année achevée le 31 juillet 2019');
+    assert.dom('.financials .financials-content .table-title td:nth-of-type(3)').containsText('Total 2019');
+    assert.dom('.financials .financials-content .table-title td:nth-of-type(5)').containsText('Total 2018');
 
     assert.dom('.cigi-top-bar').exists();
     assert.dom('.cigi-top-bar').hasClass('light-background');
@@ -94,7 +100,7 @@ module('Acceptance | fr/finances/auditors report', function(hooks) {
   });
 
   test('should transition to /fr/timeline on scroll-arrow-up-btn click', async function(assert) {
-    await visit('/fr/finances/auditors-report');
+    await visit('/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
@@ -104,7 +110,7 @@ module('Acceptance | fr/finances/auditors report', function(hooks) {
   });
 
   test('should transition to /thank-you on scroll-arrow-down-btn click', async function(assert) {
-    await visit('/fr/finances/auditors-report');
+    await visit('/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
@@ -113,13 +119,13 @@ module('Acceptance | fr/finances/auditors report', function(hooks) {
     assert.dom('ul.dot-nav').exists();
   });
 
-  test('should transition to /en/financials/auditors-report on intl-link click', async function(assert) {
-    await visit('/fr/finances/auditors-report');
+  test('should transition to /en/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances on intl-link click', async function(assert) {
+    await visit('/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
 
     await click('.intl-link');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/en/financials/auditors-report');
+    assert.strictEqual(currentURL(), '/en/financials/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances');
     assert.dom('ul.dot-nav').exists();
   });
 });

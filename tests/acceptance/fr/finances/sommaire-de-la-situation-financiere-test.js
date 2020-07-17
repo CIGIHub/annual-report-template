@@ -73,7 +73,7 @@ module('Acceptance | fr/finances/sommaire de la situation financiere', function(
     assert.dom('.financials .financials-menu').containsText('Sommaire de la situation financière');
     assert.dom('.financials .financials-menu > a').exists({ count: 3 });
     assert.dom('.financials .financials-menu > a:nth-of-type(1)').containsText('Auditor’s Report');
-    assert.dom('.financials .financials-menu > a:nth-of-type(2)').containsText('Summarized Statement of Revenues and Expenditures and Changes in Fund Balances');
+    assert.dom('.financials .financials-menu > a:nth-of-type(2)').containsText('Sommaire des recettes et des dépenses et évolution du solde du fonds');
     assert.dom('.financials .financials-menu > a:nth-of-type(3)').containsText('Notes');
     assert.dom('.financials .financials-menu .download-button').exists();
     assert.dom('.financials .financials-menu .download-button a').containsText('Download PDF');
