@@ -23,9 +23,9 @@ export default class EnFinancialsController extends Controller {
       linkTo: 'en.financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
       title: this.intl.t('financials.revenueAndExpenses.title'),
     }, {
-      current: currentRouteName === 'financials.notes',
+      current: currentRouteName === 'en.financials.notes',
       last: true,
-      linkTo: 'financials.notes',
+      linkTo: 'en.financials.notes',
       title: this.intl.t('financials.notes.title'),
     }];
 

@@ -23,9 +23,9 @@ export default class FrFinancesController extends Controller {
       linkTo: 'fr.finances.sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds',
       title: this.intl.t('financials.revenueAndExpenses.title'),
     }, {
-      current: currentRouteName === 'financials.notes',
+      current: currentRouteName === 'fr.finances.notes',
       last: true,
-      linkTo: 'financials.notes',
+      linkTo: 'fr.finances.notes',
       title: this.intl.t('financials.notes.title'),
     }];
 

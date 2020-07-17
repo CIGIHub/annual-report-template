@@ -94,9 +94,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
 
-  test('should have bounceScrollArrowDown=false for /financials/notes', function(assert) {
+  test('should have bounceScrollArrowDown=false for en./financials/notes', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'fina  ncials.notes');
+    set(controller, 'router.currentRouteName', 'en.financials.notes');
 
     assert.strictEqual(get(controller, 'bounceScrollArrowDown'), false);
   });
@@ -262,9 +262,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
 
-  test('should have hideMobileOverlay=true for /financials/notes', function(assert) {
+  test('should have hideMobileOverlay=true for /en/financials/notes', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.notes');
+    set(controller, 'router.currentRouteName', 'en.financials.notes');
 
     assert.strictEqual(get(controller, 'hideMobileOverlay'), true);
   });
@@ -450,9 +450,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'lightBackground'), true);
   });
 
-  test('should have lightBackground=true for /financials/notes', function(assert) {
+  test('should have lightBackground=true for /en/financials/notes', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.notes');
+    set(controller, 'router.currentRouteName', 'en.financials.notes');
     set(controller, 'lightbox.showLightbox', null);
 
     assert.strictEqual(get(controller, 'lightBackground'), true);
@@ -658,9 +658,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
 
-  test('should have scrollableContentPage=true for /financials/notes', function(assert) {
+  test('should have scrollableContentPage=true for /en/financials/notes', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.notes');
+    set(controller, 'router.currentRouteName', 'en.financials.notes');
 
     assert.strictEqual(get(controller, 'scrollableContentPage'), true);
   });
@@ -836,9 +836,9 @@ module('Unit | Controller | application', function(hooks) {
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });
 
-  test('should have showDotNav=true for /financials/notes', function(assert) {
+  test('should have showDotNav=true for /en/financials/notes', function(assert) {
     const controller = this.owner.lookup('controller:application');
-    set(controller, 'router.currentRouteName', 'financials.notes');
+    set(controller, 'router.currentRouteName', 'en.financials.notes');
 
     assert.strictEqual(get(controller, 'showDotNav'), true);
   });

@@ -12,6 +12,7 @@ Router.map(function() {
     this.route('chairs-message');
     this.route('financials', function() {
       this.route('auditors-report');
+      this.route('notes');
       this.route('summarized-statement-of-financial-position');
       this.route(
         'summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
@@ -35,12 +36,10 @@ Router.map(function() {
     this.route('table-of-contents');
     this.route('timeline');
   });
-  this.route('financials', function() {
-    this.route('notes');
-  });
   this.route('fr', function() {
     this.route('finances', function() {
       this.route('auditors-report');
+      this.route('notes');
       this.route('sommaire-de-la-situation-financiere');
       this.route('sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
     });

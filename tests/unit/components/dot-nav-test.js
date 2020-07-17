@@ -418,9 +418,9 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /financials/notes', function(assert) {
+  test('should have correct menu items for /en/financials/notes', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'financials.notes');
+    set(component, 'router.currentRouteName', 'en.financials.notes');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {

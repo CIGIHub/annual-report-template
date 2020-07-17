@@ -106,7 +106,9 @@ export default Service.extend({
       number: '18',
       route: isFrenchLocale ? 'fr.finances.auditors-report' : 'en.financials.auditors-report',
       subRoutes: [
-        'financials.notes',
+        isFrenchLocale
+          ? 'fr.finances.notes'
+          : 'en.financials.notes',
         isFrenchLocale
           ? 'fr.finances.sommaire-de-la-situation-financiere'
           : 'en.financials.summarized-statement-of-financial-position',
