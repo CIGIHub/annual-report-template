@@ -25,7 +25,9 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     const title = `${this.intl.t('presidentsMessage.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
     set(this, 'headData.description', this.intl.t('description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}${this.router.currentURL.replace('/', '')}`);
+    if (this.router && this.router.currentURL) {
+      set(this, 'headData.url', `${ENV.host}${ENV.rootURL}${this.router.currentURL.replace('/', '')}`);
+    }
     const backgroundImage = this.backgroundImage.getSlideBackgroundImage('fr.message-du-directeur-executif');
     if (backgroundImage && backgroundImage.ogUrl) {
       set(this, 'headData.image', backgroundImage.ogUrl);
