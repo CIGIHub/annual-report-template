@@ -137,7 +137,9 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     const title = `${this.intl.t('outputsAndActivities.title')} | ${this.intl.t('title')}`;
     set(this, 'headData.title', title);
     set(this, 'headData.description', this.intl.t('description'));
-    set(this, 'headData.url', `${ENV.host}${ENV.rootURL}${this.router.currentURL.replace('/', '')}`);
+    if (this.router && this.router.currentURL) {
+      set(this, 'headData.url', `${ENV.host}${ENV.rootURL}${this.router.currentURL.replace('/', '')}`);
+    }
     set(this, 'headData.image', this.backgroundImage.defaultBackground.ogUrl);
     set(this, 'headData.siteName', this.intl.t('title'));
     set(this, 'headData.locale', 'fr_CA');
