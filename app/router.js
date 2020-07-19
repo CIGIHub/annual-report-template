@@ -20,6 +20,13 @@ Router.map(function() {
       this.route('summarized-statement-of-financial-position-redirect', {
         path: '/sommaire-de-la-situation-financiere',
       });
+
+      this.route(
+        'summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances-redirect',
+        {
+          path: '/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds',
+        },
+      );
     });
     this.route('financials', function() {
       this.route('auditors-report');
@@ -133,6 +140,12 @@ Router.map(function() {
       this.route('sommaire-de-la-situation-financiere-redirect', {
         path: '/summarized-statement-of-financial-position',
       });
+      this.route(
+        'sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds-redirect',
+        {
+          path: '/summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+        },
+      );
     });
     this.route('merci');
     this.route('message-du-directeur-executif');
