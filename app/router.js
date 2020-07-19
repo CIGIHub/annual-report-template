@@ -17,6 +17,9 @@ Router.map(function() {
       this.route('auditors-report-redirect', {
         path: '/auditors-report',
       });
+      this.route('notes-redirect', {
+        path: '/notes',
+      });
       this.route('summarized-statement-of-financial-position-redirect', {
         path: '/sommaire-de-la-situation-financiere',
       });
@@ -136,6 +139,9 @@ Router.map(function() {
     this.route('financials', function() {
       this.route('auditors-report-redirect', {
         path: '/auditors-report',
+      });
+      this.route('notes-redirect', {
+        path: '/notes',
       });
       this.route('sommaire-de-la-situation-financiere-redirect', {
         path: '/summarized-statement-of-financial-position',
