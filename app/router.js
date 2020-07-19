@@ -127,6 +127,9 @@ Router.map(function() {
       path: '/table-des-matieres',
     });
     this.route('thank-you');
+    this.route('thank-you-redirect', {
+      path: '/merci',
+    });
     this.route('timeline');
   });
   this.route('fr', function() {
@@ -154,6 +157,9 @@ Router.map(function() {
       );
     });
     this.route('merci');
+    this.route('merci-redirect', {
+      path: '/thank-you',
+    });
     this.route('message-du-directeur-executif');
     this.route('message-du-directeur-executif-redirect', {
       path: '/presidents-message',
