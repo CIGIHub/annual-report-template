@@ -13,6 +13,11 @@ Router.map(function() {
     this.route('chairs-message-redirect', {
       path: '/message-du-president-du-conseil',
     });
+    this.route('finances', function() {
+      this.route('auditors-report-redirect', {
+        path: '/auditors-report',
+      });
+    });
     this.route('financials', function() {
       this.route('auditors-report');
       this.route('notes');
@@ -60,7 +65,7 @@ Router.map(function() {
       path: '/slide6-en',
     });
     this.route('slide-6-redirect', {
-      path: '/slide-6-fr',
+      path: '/slide6-fr',
     });
     this.route('slide-7', {
       path: '/slide7-en',
@@ -118,6 +123,11 @@ Router.map(function() {
       this.route('sommaire-de-la-situation-financiere');
       this.route('sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
     });
+    this.route('financials', function() {
+      this.route('auditors-report-redirect', {
+        path: '/auditors-report',
+      });
+    });
     this.route('merci');
     this.route('message-du-directeur-executif');
     this.route('message-du-directeur-executif-redirect', {
@@ -162,7 +172,7 @@ Router.map(function() {
       path: '/slide6-fr',
     });
     this.route('slide-6-redirect', {
-      path: '/slide-6-en',
+      path: '/slide6-en',
     });
     this.route('slide-7', {
       path: '/slide7-fr',
