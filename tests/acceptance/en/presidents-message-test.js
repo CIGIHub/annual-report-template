@@ -29,7 +29,7 @@ module('Acceptance | en/presidents message', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/en/presidents-message',
+      'https://www.cigionline.org/interactives/annualreporttemplate/en/presidents-message',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),
@@ -37,7 +37,7 @@ module('Acceptance | en/presidents message', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:image"]').getAttribute('content'),
-      'https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/presidents-message-og.jpg',
+      'https://staging.cigionline.org/interactives/annualreporttemplate/static/template/slides/presidents-message-og.jpg',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:locale"]').getAttribute('content'),
@@ -60,8 +60,8 @@ module('Acceptance | en/presidents message', function(hooks) {
   test('should have correct social links', async function(assert) {
     await visit('/en/presidents-message');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/en/presidents-message');
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/en/presidents-message');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/annualreporttemplate/en/presidents-message');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/annualreporttemplate/en/presidents-message');
   });
 
   test('should have correct slide content', async function(assert) {
@@ -79,7 +79,7 @@ module('Acceptance | en/presidents message', function(hooks) {
     assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(2) p:nth-of-type(3) b').containsText('Rohinton P. Medhora');
     assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(2) p:nth-of-type(3) em').containsText('President, CIGI');
     assert.dom('.hover-reveal').exists();
-    assert.dom('.hover-reveal').hasAttribute('style', "background-image: url('https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/presidents-message.jpg'), url('https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/presidents-message-thumbnail.jpg');");
+    assert.dom('.hover-reveal').hasAttribute('style', "background-image: url('https://staging.cigionline.org/interactives/annualreporttemplate/static/template/slides/presidents-message.jpg'), url('https://staging.cigionline.org/interactives/annualreporttemplate/static/template/slides/presidents-message-thumbnail.jpg');");
     assert.dom('.hover-reveal .quote h3').containsText('PM Quote English');
 
     assert.dom('.cigi-top-bar').exists();

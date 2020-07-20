@@ -29,7 +29,7 @@ module('Acceptance | fr/finances/sommaire des recettes et des depenses et evolut
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds',
+      'https://www.cigionline.org/interactives/annualreporttemplate/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),
@@ -37,7 +37,7 @@ module('Acceptance | fr/finances/sommaire des recettes et des depenses et evolut
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:image"]').getAttribute('content'),
-      'https://staging.cigionline.org/interactives/2019annualreport/static/template/cigi-campus-og.jpg',
+      'https://staging.cigionline.org/interactives/annualreporttemplate/static/template/cigi-campus-og.jpg',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:locale"]').getAttribute('content'),
@@ -60,8 +60,8 @@ module('Acceptance | fr/finances/sommaire des recettes et des depenses et evolut
   test('should have correct social links', async function(assert) {
     await visit('/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+annuel+2019+https://www.cigionline.org/interactives/2019annualreport/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+annuel+2019+https://www.cigionline.org/interactives/annualreporttemplate/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/annualreporttemplate/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
   });
 
   test('should have correct slide content', async function(assert) {

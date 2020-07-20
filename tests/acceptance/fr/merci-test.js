@@ -29,7 +29,7 @@ module('Acceptance | fr/merci', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/fr/merci',
+      'https://www.cigionline.org/interactives/annualreporttemplate/fr/merci',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),
@@ -37,7 +37,7 @@ module('Acceptance | fr/merci', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:image"]').getAttribute('content'),
-      'https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/thank-you-og.jpg',
+      'https://staging.cigionline.org/interactives/annualreporttemplate/static/template/slides/thank-you-og.jpg',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:locale"]').getAttribute('content'),
@@ -60,8 +60,8 @@ module('Acceptance | fr/merci', function(hooks) {
   test('should have correct social links', async function(assert) {
     await visit('/fr/merci');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+annuel+2019+https://www.cigionline.org/interactives/2019annualreport/fr/merci');
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/fr/merci');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+annuel+2019+https://www.cigionline.org/interactives/annualreporttemplate/fr/merci');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/annualreporttemplate/fr/merci');
   });
 
   test('should have correct slide content', async function(assert) {
@@ -88,7 +88,7 @@ module('Acceptance | fr/merci', function(hooks) {
     assert.dom('.content-slide .paragraphs p:nth-of-type(2)').containsText('Thank You Paragraph 2 French');
     assert.dom('.content-slide .paragraphs p:nth-of-type(3)').containsText('Thank You Paragraph 3 French');
     assert.dom('.background-row.show-for-medium .background-image').exists();
-    assert.dom('.background-row.show-for-medium .background-image').hasAttribute('style', "background-image: url('https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/thank-you.jpg'), url('https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/thank-you-thumbnail.jpg');");
+    assert.dom('.background-row.show-for-medium .background-image').hasAttribute('style', "background-image: url('https://staging.cigionline.org/interactives/annualreporttemplate/static/template/slides/thank-you.jpg'), url('https://staging.cigionline.org/interactives/annualreporttemplate/static/template/slides/thank-you-thumbnail.jpg');");
     assert.dom('.background-row.show-for-medium .background-image .hover-reveal').doesNotExist();
 
     assert.dom('.cigi-top-bar').exists();

@@ -13,7 +13,7 @@ module.exports = function(defaults) {
         icons: {
           coast: false,
         },
-        path: process.env.EMBER_ENV === 'development' ? '/' : '/interactives/2019annualreport/assets/favicon',
+        path: process.env.EMBER_ENV === 'development' ? '/' : '/interactives/annualreporttemplate/assets/favicon',
       },
       iconPath: 'favicon.png',
     },
