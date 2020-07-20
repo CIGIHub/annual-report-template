@@ -29,7 +29,7 @@ module('Acceptance | en/chairs message', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/annualreporttemplate/en/chairs-message',
+      'https://www.cigionline.org/interactives/2019annualreport/en/chairs-message',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),
@@ -41,7 +41,7 @@ module('Acceptance | en/chairs message', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:image"]').getAttribute('content'),
-      'https://staging.cigionline.org/interactives/annualreporttemplate/static/template/slides/chairs-message-og.jpg',
+      'https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/chairs-message-og.jpg',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:locale"]').getAttribute('content'),
@@ -64,8 +64,8 @@ module('Acceptance | en/chairs message', function(hooks) {
   test('should have correct social links', async function(assert) {
     await visit('/en/chairs-message');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/annualreporttemplate/en/chairs-message');
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/annualreporttemplate/en/chairs-message');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/en/chairs-message');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/en/chairs-message');
   });
 
   test('should have correct slide content', async function(assert) {
@@ -83,7 +83,7 @@ module('Acceptance | en/chairs message', function(hooks) {
     assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(2) p:nth-of-type(3) b').containsText('Jim Balsillie');
     assert.dom('.chairs-message .grid-x:nth-of-type(2) .medium-6:nth-of-type(2) p:nth-of-type(3) em').containsText('Chair, CIGI Board of Directors');
     assert.dom('.hover-reveal').exists();
-    assert.dom('.hover-reveal').hasAttribute('style', "background-image: url('https://staging.cigionline.org/interactives/annualreporttemplate/static/template/slides/chairs-message.jpg'), url('https://staging.cigionline.org/interactives/annualreporttemplate/static/template/slides/chairs-message-thumbnail.jpg');");
+    assert.dom('.hover-reveal').hasAttribute('style', "background-image: url('https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/chairs-message.jpg'), url('https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/chairs-message-thumbnail.jpg');");
     assert.dom('.hover-reveal .quote h3').containsText('CM Quote English');
 
     assert.dom('.cigi-top-bar').exists();

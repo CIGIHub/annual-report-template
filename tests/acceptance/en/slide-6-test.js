@@ -29,7 +29,7 @@ module('Acceptance | en/slide 6', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/annualreporttemplate/en/slide6-en',
+      'https://www.cigionline.org/interactives/2019annualreport/en/slide6-en',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),
@@ -41,7 +41,7 @@ module('Acceptance | en/slide 6', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:image"]').getAttribute('content'),
-      'https://staging.cigionline.org/interactives/annualreporttemplate/static/template/slides/slide-6-og.jpg',
+      'https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/slide-6-og.jpg',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:locale"]').getAttribute('content'),
@@ -64,8 +64,8 @@ module('Acceptance | en/slide 6', function(hooks) {
   test('should have correct social links', async function(assert) {
     await visit('/en/slide6-en');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/annualreporttemplate/en/slide6-en');
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/annualreporttemplate/en/slide6-en');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=2019+CIGI+Annual+Report+https://www.cigionline.org/interactives/2019annualreport/en/slide6-en');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/en/slide6-en');
   });
 
   test('should have correct slide content', async function(assert) {
@@ -92,7 +92,7 @@ module('Acceptance | en/slide 6', function(hooks) {
     assert.dom('.slide-content .paragraphs p:nth-of-type(2)').containsText('Slide 6 Paragraph 2 English');
     assert.dom('.slide-content .paragraphs p:nth-of-type(3)').containsText('Slide 6 Paragraph 3 English');
     assert.dom('.background-image').exists();
-    assert.dom('.background-image').hasAttribute('style', "background-image: url('https://staging.cigionline.org/interactives/annualreporttemplate/static/template/slides/slide-6.jpg'), url('https://staging.cigionline.org/interactives/annualreporttemplate/static/template/slides/slide-6-thumbnail.jpg');");
+    assert.dom('.background-image').hasAttribute('style', "background-image: url('https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/slide-6.jpg'), url('https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/slide-6-thumbnail.jpg');");
     assert.dom('.background-image .hover-reveal').exists();
     assert.dom('.background-image .hover-reveal .quote').exists();
     assert.dom('.background-image .hover-reveal .quote h3.hover-reveal-quote').containsText('Slide 6 Quote English');

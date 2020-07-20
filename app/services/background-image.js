@@ -241,9 +241,9 @@ export default Service.extend({
 
   imageHost: computed(function() {
     if (ENV.environment !== 'production' || ENV.staging) {
-      return 'https://staging.cigionline.org/interactives/annualreporttemplate/static/';
+      return 'https://staging.cigionline.org/interactives/2019annualreport/static/';
     }
-    return 'https://www.cigionline.org/interactives/annualreporttemplate/static/';
+    return 'https://www.cigionline.org/interactives/2019annualreport/static/';
   }),
 
   getAllBlurImages() {

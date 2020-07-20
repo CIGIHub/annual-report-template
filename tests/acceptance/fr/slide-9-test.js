@@ -29,7 +29,7 @@ module('Acceptance | fr/slide 9', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/annualreporttemplate/fr/slide9-fr',
+      'https://www.cigionline.org/interactives/2019annualreport/fr/slide9-fr',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),
@@ -37,7 +37,7 @@ module('Acceptance | fr/slide 9', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:image"]').getAttribute('content'),
-      'https://staging.cigionline.org/interactives/annualreporttemplate/static/template/slides/slide-9-og.jpg',
+      'https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/slide-9-og.jpg',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:locale"]').getAttribute('content'),
@@ -60,8 +60,8 @@ module('Acceptance | fr/slide 9', function(hooks) {
   test('should have correct social links', async function(assert) {
     await visit('/fr/slide9-fr');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+annuel+2019+https://www.cigionline.org/interactives/annualreporttemplate/fr/slide9-fr');
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/annualreporttemplate/fr/slide9-fr');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+annuel+2019+https://www.cigionline.org/interactives/2019annualreport/fr/slide9-fr');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/fr/slide9-fr');
   });
 
   test('should have correct slide content', async function(assert) {
@@ -88,7 +88,7 @@ module('Acceptance | fr/slide 9', function(hooks) {
     assert.dom('.slide-content .paragraphs p:nth-of-type(2)').containsText('Slide 9 Paragraph 2 French');
     assert.dom('.slide-content .paragraphs p:nth-of-type(3)').containsText('Slide 9 Paragraph 3 French');
     assert.dom('.background-image').exists();
-    assert.dom('.background-image').hasAttribute('style', "background-image: url('https://staging.cigionline.org/interactives/annualreporttemplate/static/template/slides/slide-9.jpg'), url('https://staging.cigionline.org/interactives/annualreporttemplate/static/template/slides/slide-9-thumbnail.jpg');");
+    assert.dom('.background-image').hasAttribute('style', "background-image: url('https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/slide-9.jpg'), url('https://staging.cigionline.org/interactives/2019annualreport/static/template/slides/slide-9-thumbnail.jpg');");
     assert.dom('.background-image .hover-reveal').exists();
     assert.dom('.background-image .hover-reveal .quote').exists();
     assert.dom('.background-image .hover-reveal .quote h3.hover-reveal-quote').containsText('Slide 9 Quote French');
