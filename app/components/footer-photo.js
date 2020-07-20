@@ -1,13 +1,19 @@
+import ENV from 'annual-report-template/config/environment';
 import { action, set } from '@ember/object';
+import { inject as service } from '@ember/service';
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import $ from 'jquery';
 
 export default class FooterPhotoComponent extends Component {
+  @service intl;
+  @service router;
   @tracked revealToggle = false;
+  @tracked socialMenuIsOpen = false;
   isRevealed = false;
   lastAction = 0;
   quoteRevealTimeout = null;
+  socialAnimationTimeout = null;
   textRevealTimeout = null;
 
   get footerClass() {
@@ -16,6 +22,33 @@ export default class FooterPhotoComponent extends Component {
       classNames.push('footer-dark');
     }
     return classNames.toString().replace(/,/g, ' ');
+  }
+
+  get linkedInShareLink() {
+    const shareRoute = this.shareRoute;
+    return `https://www.linkedin.com/shareArticle?mini=true&url=${shareRoute}`;
+  }
+
+  get twitterShareLink() {
+    const shareRoute = this.shareRoute;
+    let shareTitle = this.intl.t('title');
+    shareTitle = shareTitle.replace(/ /g, '+');
+    return `https://twitter.com/intent/tweet?status=${shareTitle}+${shareRoute}`;
+  }
+
+  get shareRoute() {
+    const currentRoute = this.router.currentURL.replace('/', '');
+    return `${ENV.host}${ENV.rootURL}${currentRoute}`;
+  }
+
+  get showPhotoCredit() {
+    let showPhotoCredit = false;
+    if (this.args
+        && this.args.hasReveal
+        && this.args.photoCredit) {
+      showPhotoCredit = true;
+    }
+    return showPhotoCredit;
   }
 
   hide() {
@@ -38,7 +71,7 @@ export default class FooterPhotoComponent extends Component {
       'width': 0,
     }, 500);
     /* istanbul ignore next */
-    $('.cigi-top-bar, .dot-nav, .scroll-arrow, .hover-reveal-hide, .vertical-title').stop(false, false).animate({
+    $('.cigi-top-bar, .dot-nav, .scroll-arrow, .hover-reveal-hide, .vertical-title, .cigi-social').stop(false, false).animate({
       'opacity': 1,
     }, 500);
     /* istanbul ignore next */
@@ -68,7 +101,7 @@ export default class FooterPhotoComponent extends Component {
       'top': '50%',
     }, 750);
     /* istanbul ignore next */
-    $('.cigi-top-bar, .dot-nav, .scroll-arrow, .hover-reveal-hide, .vertical-title').stop(false, false).animate({
+    $('.cigi-top-bar, .dot-nav, .scroll-arrow, .hover-reveal-hide, .vertical-title, .cigi-social').stop(false, false).animate({
       'opacity': 0,
     }, 500);
     /* istanbul ignore next */
@@ -135,6 +168,69 @@ export default class FooterPhotoComponent extends Component {
     const hideResult = this.hide();
     /* istanbul ignore next */
     set(this, 'textRevealTimeout', hideResult.textRevealTimeout);
+  }
+
+  @action
+  closeSocialMenu() {
+    if (this.socialAnimationTimeout) {
+      clearTimeout(this.socialAnimationTimeout);
+      this.socialAnimationTimeout = null;
+    }
+    this.socialMenuIsOpen = false;
+
+    $('.cigi-social').animate({
+      'width': '40px',
+    });
+    $('.social-1-btn, .social-2-btn, .social-3-btn').animate({
+      'left': '0px',
+      'opacity': 0,
+    }, 300);
+
+    this.socialAnimationTimeout = setTimeout(function() {
+      $('.social-1-btn, .social-2-btn, .social-3-btn').css({
+        'visibility': 'hidden',
+      });
+    }, 300);
+  }
+
+  @action
+  facebookShare() {
+    /* istanbul ignore next */
+    FB.ui({
+      method: 'share',
+      href: this.shareRoute,
+    });
+  }
+
+  @action
+  openSocialMenu() {
+    if (this.socialAnimationTimeout) {
+      clearTimeout(this.socialAnimationTimeout);
+      this.socialAnimationTimeout = null;
+    }
+    this.socialMenuIsOpen = true;
+
+    $('.cigi-social').animate({
+      'width': '160px',
+    }, 300);
+    $('.social-1-btn').css({
+      'visibility': 'visible',
+    }).animate({
+      'left': '0px',
+      'opacity': 1,
+    }, 300);
+    $('.social-2-btn').css({
+      'visibility': 'visible',
+    }).animate({
+      'left': '40px',
+      'opacity': 1,
+    }, 300);
+    $('.social-3-btn').css({
+      'visibility': 'visible',
+    }).animate({
+      'left': '80px',
+      'opacity': 1,
+    }, 300);
   }
 
   @action

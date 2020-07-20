@@ -104,6 +104,8 @@ module('Acceptance | fr/merci', function(hooks) {
     assert.dom('button.scroll-arrow-down-btn').doesNotExist();
     assert.dom('.footer').exists();
     assert.dom('.footer').doesNotHaveClass('footer-dark');
+    assert.dom('.footer button.footer-icon-btn').exists();
+    assert.dom('.footer button.open-social-menu-btn').exists();
   });
 
   test('should transition to /fr/finances/auditors-report on scroll-arrow-up-btn click', async function(assert) {

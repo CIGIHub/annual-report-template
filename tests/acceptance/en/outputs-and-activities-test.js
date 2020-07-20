@@ -90,7 +90,10 @@ module('Acceptance | en/outputs and activities', function(hooks) {
     assert.dom('button.scroll-arrow-up-btn').hasClass('light-background');
     assert.dom('button.scroll-arrow-down-btn').exists();
     assert.dom('button.scroll-arrow-down-btn').hasClass('light-background');
-    assert.dom('.footer').doesNotExist();
+    assert.dom('.footer').exists();
+    assert.dom('.footer').hasClass('footer-dark');
+    assert.dom('.footer button.footer-icon-btn').doesNotExist();
+    assert.dom('.footer button.open-social-menu-btn').exists();
   });
 
   test('should transition to /en/slide13-en on scroll-arrow-up-btn click', async function(assert) {

@@ -100,6 +100,8 @@ module('Acceptance | en/chairs message', function(hooks) {
     assert.dom('button.scroll-arrow-down-btn').hasClass('light-background');
     assert.dom('.footer').exists();
     assert.dom('.footer').hasClass('footer-dark');
+    assert.dom('.footer button.footer-icon-btn').exists();
+    assert.dom('.footer button.open-social-menu-btn').exists();
   });
 
   test('should transition to /en/table-of-contents on scroll-arrow-up-btn click', async function(assert) {

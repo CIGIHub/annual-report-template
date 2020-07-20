@@ -82,7 +82,10 @@ module('Acceptance | en/index', function(hooks) {
     assert.dom('button.scroll-arrow-up-btn').doesNotExist();
     assert.dom('button.scroll-arrow-down-btn').exists();
     assert.dom('button.scroll-arrow-down-btn').doesNotHaveClass('light-background');
-    assert.dom('.footer').doesNotExist();
+    assert.dom('.footer').exists();
+    assert.dom('.footer').doesNotHaveClass('footer-dark');
+    assert.dom('.footer button.footer-icon-btn').doesNotExist();
+    assert.dom('.footer button.open-social-menu-btn').exists();
   });
 
   test('should transition to /en/table-of-contents on scroll-arrow-down-btn click', async function(assert) {

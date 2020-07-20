@@ -16,7 +16,10 @@
 }
 
 .footer {
+  align-items: center;
   bottom: 8%;
+  display: flex;
+  justify-content: flex-end;
   left: 50%;
   max-width: 1060px;
   padding: 15px 10px;
@@ -33,6 +36,13 @@
     .footer-icon-btn {
       border-color: $black;
       color: $black;
+    }
+
+    .cigi-social {
+      a,
+      button {
+        color: $black;
+      }
     }
   }
 
@@ -73,6 +83,40 @@
     span {
       background-color: $background-overlay;
       padding: 2px 5px;
+    }
+  }
+
+  .cigi-social {
+    animation-duration: 1500ms;
+    animation-name: footerFade;
+    animation-timing-function: ease-in;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    position: relative;
+    width: 40px;
+
+    a,
+    button {
+      color: $white;
+      font-size: 14px;
+      margin-left: 20px;
+      transition: color 250ms;
+
+      &:hover {
+        color: $cigi-red;
+      }
+    }
+
+    .social-1-btn,
+    .social-2-btn,
+    .social-3-btn {
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      visibility: hidden;
     }
   }
 }

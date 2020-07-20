@@ -128,7 +128,9 @@ module('Acceptance | en/table of contents', function(hooks) {
     assert.dom('button.scroll-arrow-down-btn').exists();
     assert.dom('button.scroll-arrow-down-btn').doesNotHaveClass('light-background');
     assert.dom('.footer').exists();
-    assert.dom('.footer').doesNotHaveClass('.footer-dark');
+    assert.dom('.footer').doesNotHaveClass('footer-dark');
+    assert.dom('.footer button.footer-icon-btn').exists();
+    assert.dom('.footer button.open-social-menu-btn').exists();
   });
 
   test('should transition to /en on scroll-arrow-up-btn click', async function(assert) {
