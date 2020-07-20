@@ -110,6 +110,7 @@ module('Acceptance | en/slide 9', function(hooks) {
     assert.dom('.footer').doesNotHaveClass('footer-dark');
     assert.dom('.footer button.footer-icon-btn').exists();
     assert.dom('.footer button.open-social-menu-btn').exists();
+    assert.dom('.footer .footer-description').containsText('Slide 9 Photo Credit English');
   });
 
   test('should transition to /en/slide8-en on scroll-arrow-up-btn click', async function(assert) {

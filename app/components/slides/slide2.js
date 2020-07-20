@@ -38,6 +38,10 @@ export default class SlidesSlide2Component extends Component {
     ];
   }
 
+  get photoCredit() {
+    return this.intl.t('slide2.photoCredit');
+  }
+
   get title() {
     return this.intl.t('slide2.title');
   }
