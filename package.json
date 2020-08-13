@@ -68,7 +68,7 @@
     "eslint-plugin-import": "2.22.0",
     "eslint-plugin-jsx-a11y": "6.3.1",
     "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-react": "7.20.3",
+    "eslint-plugin-react": "7.20.6",
     "foundation-sites": "6.6.3",
     "liquid-fire": "0.31.0",
     "loader.js": "4.7.0",
