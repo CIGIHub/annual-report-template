@@ -37,6 +37,7 @@ module.exports = {
     'ember/no-observers': ['off'],
     'ember/no-side-effects': ['off'],
     'func-names': ['off'],
+    'import/extensions': ['off'],
     'import/no-extraneous-dependencies': ['off'],
     'import/no-unresolved': ['off'],
     'lines-between-class-members': ['off'],
