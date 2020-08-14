@@ -17,7 +17,7 @@ module('Acceptance | fr/slide 9', function(hooks) {
 
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
-      'Slide 9 Title French | Rapport annuel 2019',
+      'Slide 9 Title French | Rapport Annuel du CIGI 2019',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:description"]').getAttribute('content'),
@@ -25,7 +25,7 @@ module('Acceptance | fr/slide 9', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
-      'Rapport annuel 2019',
+      'Rapport Annuel du CIGI 2019',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
@@ -60,7 +60,7 @@ module('Acceptance | fr/slide 9', function(hooks) {
   test('should have correct social links', async function(assert) {
     await visit('/fr/slide9-fr');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+annuel+2019+https://www.cigionline.org/interactives/2019annualreport/fr/slide9-fr');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+Annuel+du+CIGI+2019+https://www.cigionline.org/interactives/2019annualreport/fr/slide9-fr');
     assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/fr/slide9-fr');
   });
 

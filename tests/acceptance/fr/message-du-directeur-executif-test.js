@@ -17,15 +17,15 @@ module('Acceptance | fr/message du directeur executif', function(hooks) {
 
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
-      'Message du directeur exécutif | Rapport annuel 2019',
+      'Message du directeur exécutif | Rapport Annuel du CIGI 2019',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:description"]').getAttribute('content'),
-      'Description French',
+      'Découvrez une année entière de publications et de textes d’opinion en consultant Rapport annuel interactif du CIGI.',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
-      'Rapport annuel 2019',
+      'Rapport Annuel du CIGI 2019',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
@@ -60,7 +60,7 @@ module('Acceptance | fr/message du directeur executif', function(hooks) {
   test('should have correct social links', async function(assert) {
     await visit('/fr/message-du-directeur-executif');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+annuel+2019+https://www.cigionline.org/interactives/2019annualreport/fr/message-du-directeur-executif');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+Annuel+du+CIGI+2019+https://www.cigionline.org/interactives/2019annualreport/fr/message-du-directeur-executif');
     assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/fr/message-du-directeur-executif');
   });
 

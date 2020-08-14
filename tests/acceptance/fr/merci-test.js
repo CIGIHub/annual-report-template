@@ -17,15 +17,15 @@ module('Acceptance | fr/merci', function(hooks) {
 
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
-      'Merci | Rapport annuel 2019',
+      'Merci | Rapport Annuel du CIGI 2019',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:description"]').getAttribute('content'),
-      'Description French',
+      'Découvrez une année entière de publications et de textes d’opinion en consultant Rapport annuel interactif du CIGI.',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
-      'Rapport annuel 2019',
+      'Rapport Annuel du CIGI 2019',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
@@ -60,7 +60,7 @@ module('Acceptance | fr/merci', function(hooks) {
   test('should have correct social links', async function(assert) {
     await visit('/fr/merci');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+annuel+2019+https://www.cigionline.org/interactives/2019annualreport/fr/merci');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+Annuel+du+CIGI+2019+https://www.cigionline.org/interactives/2019annualreport/fr/merci');
     assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/fr/merci');
   });
 
@@ -71,7 +71,7 @@ module('Acceptance | fr/merci', function(hooks) {
     assert.dom('.content-slide .slide-title h1').containsText('Merci');
     assert.dom('.content-slide .content-links').exists();
     assert.dom('.content-slide .content-links a').exists({ count: 3 });
-    assert.dom('.content-slide .content-links a:nth-of-type(1) h4').containsText('Download');
+    assert.dom('.content-slide .content-links a:nth-of-type(1) h4').containsText('Télécharger');
     assert.dom('.content-slide .content-links a:nth-of-type(1) p').containsText('Thank You Link 1 French');
     assert.dom('.content-slide .content-links a:nth-of-type(2) h4').containsText('Subscribe');
     assert.dom('.content-slide .content-links a:nth-of-type(2) p').containsText('Thank You Link 2 French');

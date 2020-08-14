@@ -17,15 +17,15 @@ module('Acceptance | fr/finances/sommaire des recettes et des depenses et evolut
 
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
-      'Finances | Rapport annuel 2019',
+      'Finances | Rapport Annuel du CIGI 2019',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:description"]').getAttribute('content'),
-      'Description French',
+      'Découvrez une année entière de publications et de textes d’opinion en consultant Rapport annuel interactif du CIGI.',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:site_name"]').getAttribute('content'),
-      'Rapport annuel 2019',
+      'Rapport Annuel du CIGI 2019',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
@@ -60,7 +60,7 @@ module('Acceptance | fr/finances/sommaire des recettes et des depenses et evolut
   test('should have correct social links', async function(assert) {
     await visit('/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+annuel+2019+https://www.cigionline.org/interactives/2019annualreport/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+Annuel+du+CIGI+2019+https://www.cigionline.org/interactives/2019annualreport/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
     assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/fr/finances/sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
   });
 
@@ -76,7 +76,7 @@ module('Acceptance | fr/finances/sommaire des recettes et des depenses et evolut
     assert.dom('.financials .financials-menu > a:nth-of-type(2)').containsText('Sommaire de la situation financière');
     assert.dom('.financials .financials-menu > a:nth-of-type(3)').containsText('Notes');
     assert.dom('.financials .financials-menu .download-button').exists();
-    assert.dom('.financials .financials-menu .download-button a').containsText('Download PDF');
+    assert.dom('.financials .financials-menu .download-button a').containsText('Télécharger le rapport');
     assert.dom('.financials .financials-content').exists();
     assert.dom('.financials .financials-content .table-title').exists();
     assert.dom('.financials .financials-content .table-title td').exists({ count: 5 });
