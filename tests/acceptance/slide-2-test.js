@@ -61,7 +61,6 @@ module('Acceptance | slide 2', function(hooks) {
     );
   });
 
-
   test('should have correct social links', async function(assert) {
     await visit('/slide2');
 
