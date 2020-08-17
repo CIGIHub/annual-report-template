@@ -477,6 +477,7 @@ thankYou:
 timeline:
   back: 'Back to Timeline'
   cannotBeDisplayed: 'The interactive timeline cannot be displayed on your mobile device. For the best experience, please view on a desktop browser.'
+  search: 'Search'
   title: 'Explore Timeline'
 title: '2019 CIGI Annual Report'
 video: 'Video'

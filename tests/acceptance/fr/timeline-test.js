@@ -17,7 +17,7 @@ module('Acceptance | fr/timeline', function(hooks) {
 
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
-      'Explore Timeline French | Rapport Annuel du CIGI 2019',
+      'Explorer le calendrier interactif | Rapport Annuel du CIGI 2019',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:description"]').getAttribute('content'),
@@ -68,19 +68,19 @@ module('Acceptance | fr/timeline', function(hooks) {
     await visit('/fr/timeline');
 
     assert.dom('.timeline-container.show-for-large').exists();
-    assert.dom('.timeline-container.show-for-large h1').containsText('Explore Timeline French');
+    assert.dom('.timeline-container.show-for-large h1').containsText('Explorer le calendrier interactif');
     assert.dom('.timeline-container.show-for-large .opinions-label').exists();
-    assert.dom('.timeline-container.show-for-large .opinions-label .timeline-bubble-label').containsText('Opinions French');
+    assert.dom('.timeline-container.show-for-large .opinions-label .timeline-bubble-label').containsText('Textes d’opinion');
     assert.dom('.timeline-container.show-for-large .publications-label').exists();
-    assert.dom('.timeline-container.show-for-large .publications-label .timeline-bubble-label').containsText('Publications French');
+    assert.dom('.timeline-container.show-for-large .publications-label .timeline-bubble-label').containsText('Publications');
     assert.dom('.timeline-container.show-for-large .events-label').exists();
-    assert.dom('.timeline-container.show-for-large .events-label .timeline-bubble-label').containsText('Events French');
+    assert.dom('.timeline-container.show-for-large .events-label .timeline-bubble-label').containsText('Événements');
     assert.dom('.timeline-search-container').exists();
     assert.dom('.timeline-search-container .timeline-search').exists();
     assert.dom('.timeline-search-container .timeline-search input').exists();
-    assert.dom('.timeline-search-container .timeline-search input').hasAttribute('placeholder', 'search');
+    assert.dom('.timeline-search-container .timeline-search input').hasAttribute('placeholder', 'Chercher');
     assert.dom('.timeline-container.hide-for-large').exists();
-    assert.dom('.timeline-container.hide-for-large h1').containsText('Explore Timeline French');
+    assert.dom('.timeline-container.hide-for-large h1').containsText('Explorer le calendrier interactif');
     assert.dom('.timeline-container.hide-for-large p').containsText('The interactive timeline cannot be displayed on your mobile device. For the best experience, please view on a desktop browser.');
     assert.dom('.timeline').exists();
     assert.dom('.timeline p.date-marker-beg').containsText('2018');

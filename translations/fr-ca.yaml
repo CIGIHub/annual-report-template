@@ -55,7 +55,7 @@ chairsMessage:
     name: 'Jim Balsillie'
     title: 'Président du conseil d’administration du CIGI'
   title: 'Message du président du Conseil'
-clear: 'Clear'
+clear: 'Effacer'
 currency: '$'
 description: 'Découvrez une année entière de publications et de textes d’opinion en consultant Rapport annuel interactif du CIGI.'
 download: 'Télécharger'
@@ -63,7 +63,7 @@ downloadPdf: 'Télécharger le rapport'
 en: 'EN'
 essay: 'Essay'
 essaySeries: 'Essay Series'
-events: 'Events French'
+events: 'Événements'
 financials:
   auditorsReport:
     auditedFinancialStatements:
@@ -260,7 +260,7 @@ index:
   year20: '20'
   year9: '9'
 media: 'Media'
-opinions: 'Opinions French'
+opinions: 'Textes d’opinion'
 outputsAndActivities:
   eventLink: 'Learn more about the event'
   opinionLink: 'Read opinion'
@@ -286,7 +286,7 @@ presidentsMessage:
     title: 'Directeur exécutif du CIGI'
   title: 'Message du directeur exécutif'
 publication: 'Publication'
-publications: 'Publications French'
+publications: 'Publications'
 qa: 'Q&A'
 report: 'Report'
 resource: 'Resource'
@@ -477,6 +477,7 @@ thankYou:
 timeline:
   back: 'Back to Timeline'
   cannotBeDisplayed: 'The interactive timeline cannot be displayed on your mobile device. For the best experience, please view on a desktop browser.'
-  title: 'Explore Timeline French'
+  search: 'Chercher'
+  title: 'Explorer le calendrier interactif'
 title: 'Rapport Annuel du CIGI 2019'
 video: 'Video'

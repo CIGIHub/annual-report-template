@@ -71,9 +71,9 @@ module('Acceptance | fr/publications et activites', function(hooks) {
     assert.dom('.outputs-activities .grid-x').exists({ count: 4 });
     assert.dom('.outputs-activities .grid-x:nth-of-type(1) h1').containsText('Publications et activités');
     assert.dom('.outputs-activities .grid-x:nth-of-type(2) .publications-menu').exists();
-    assert.dom('.outputs-activities .grid-x:nth-of-type(2) .publications-menu').containsText('Publications French');
-    assert.dom('.outputs-activities .grid-x:nth-of-type(2) .publications-menu button.view-opinions-btn').containsText('Opinions French');
-    assert.dom('.outputs-activities .grid-x:nth-of-type(2) .publications-menu button.view-events-btn').containsText('Events French');
+    assert.dom('.outputs-activities .grid-x:nth-of-type(2) .publications-menu').containsText('Publications');
+    assert.dom('.outputs-activities .grid-x:nth-of-type(2) .publications-menu button.view-opinions-btn').containsText('Textes d’opinion');
+    assert.dom('.outputs-activities .grid-x:nth-of-type(2) .publications-menu button.view-events-btn').containsText('Événements');
     assert.dom('.outputs-activities .grid-x:nth-of-type(2) .outputs-activities-pagination').exists();
     assert.dom('.outputs-activities .grid-x:nth-of-type(3) .cell').exists({ count: 16 });
     assert.dom('.outputs-activities .grid-x:nth-of-type(4) .page-count').containsText('Page 1 de 6');
@@ -131,9 +131,9 @@ module('Acceptance | fr/publications et activites', function(hooks) {
 
     assert.dom('.view-publications-btn').doesNotExist();
     assert.dom('.view-opinions-btn').exists();
-    assert.dom('.view-opinions-btn').containsText('Opinions French');
+    assert.dom('.view-opinions-btn').containsText('Textes d’opinion');
     assert.dom('.view-events-btn').exists();
-    assert.dom('.view-events-btn').containsText('Events French');
+    assert.dom('.view-events-btn').containsText('Événements');
   });
 
   test('should have correct menu buttons on /fr/publications-et-activites?type=publications', async function(assert) {
@@ -141,28 +141,28 @@ module('Acceptance | fr/publications et activites', function(hooks) {
 
     assert.dom('.view-publications-btn').doesNotExist();
     assert.dom('.view-opinions-btn').exists();
-    assert.dom('.view-opinions-btn').containsText('Opinions French');
+    assert.dom('.view-opinions-btn').containsText('Textes d’opinion');
     assert.dom('.view-events-btn').exists();
-    assert.dom('.view-events-btn').containsText('Events French');
+    assert.dom('.view-events-btn').containsText('Événements');
   });
 
   test('should have correct menu buttons on /fr/publications-et-activites?type=opinions', async function(assert) {
     await visit('/fr/publications-et-activites?type=opinions');
 
     assert.dom('.view-publications-btn').exists();
-    assert.dom('.view-publications-btn').containsText('Publications French');
+    assert.dom('.view-publications-btn').containsText('Publications');
     assert.dom('.view-opinions-btn').doesNotExist();
     assert.dom('.view-events-btn').exists();
-    assert.dom('.view-events-btn').containsText('Events French');
+    assert.dom('.view-events-btn').containsText('Événements');
   });
 
   test('should have correct menu buttons on /fr/publications-et-activites?type=events', async function(assert) {
     await visit('/fr/publications-et-activites?type=events');
 
     assert.dom('.view-publications-btn').exists();
-    assert.dom('.view-publications-btn').containsText('Publications French');
+    assert.dom('.view-publications-btn').containsText('Publications');
     assert.dom('.view-opinions-btn').exists();
-    assert.dom('.view-opinions-btn').containsText('Opinions French');
+    assert.dom('.view-opinions-btn').containsText('Textes d’opinion');
     assert.dom('.view-events-btn').doesNotExist();
   });
 });

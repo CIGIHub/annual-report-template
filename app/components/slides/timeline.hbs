@@ -33,7 +33,7 @@
     <div class="grid-x grid-margin-x">
       <div class="cell medium-4 timeline-search">
         {{fa-icon "search" prefix="fal" size="sm"}}
-        <Input @placeholder="search" @value={{@search}} />
+        <Input @placeholder={{t "timeline.search"}} @value={{@search}} />
       </div>
       {{#if @search}}
         <div class="cell medium-2">

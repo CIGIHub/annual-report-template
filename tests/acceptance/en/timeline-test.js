@@ -78,7 +78,7 @@ module('Acceptance | en/timeline', function(hooks) {
     assert.dom('.timeline-search-container').exists();
     assert.dom('.timeline-search-container .timeline-search').exists();
     assert.dom('.timeline-search-container .timeline-search input').exists();
-    assert.dom('.timeline-search-container .timeline-search input').hasAttribute('placeholder', 'search');
+    assert.dom('.timeline-search-container .timeline-search input').hasAttribute('placeholder', 'Search');
     assert.dom('.timeline-container.hide-for-large').exists();
     assert.dom('.timeline-container.hide-for-large h1').containsText('Explore Timeline');
     assert.dom('.timeline-container.hide-for-large p').containsText('The interactive timeline cannot be displayed on your mobile device. For the best experience, please view on a desktop browser.');
