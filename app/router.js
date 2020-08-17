@@ -40,6 +40,9 @@ Router.map(function() {
       );
     });
     this.route('outputs-and-activities');
+    this.route('outputs-and-activities-redirect', {
+      path: '/publications-et-activites',
+    });
     this.route('presidents-message');
     this.route('presidents-message-redirect', {
       path: '/message-du-directeur-executif',
@@ -169,6 +172,9 @@ Router.map(function() {
       path: '/chairs-message',
     });
     this.route('publications-et-activites');
+    this.route('publications-et-activites-redirect', {
+      path: '/outputs-and-activities',
+    });
     this.route('slide-1', {
       path: '/slide1-fr',
     });

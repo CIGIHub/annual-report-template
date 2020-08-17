@@ -129,7 +129,6 @@ module('Acceptance | en/slide 6', function(hooks) {
   test('should transition to /en/slide7-en on scroll-arrow-down-btn click', async function(assert) {
     await visit('/en/slide6-en');
 
-
     await click('button.scroll-arrow-down-btn');
     await finishRender();
 

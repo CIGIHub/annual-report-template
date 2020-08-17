@@ -67,7 +67,6 @@ module('Acceptance | fr/slide 6', function(hooks) {
   test('should have correct slide content', async function(assert) {
     await visit('/fr/slide6-fr');
 
-
     assert.dom('.slide-content').exists();
     assert.dom('.slide-content .slide-title h1').containsText('Slide 6 Title French');
     assert.dom('.slide-content .content-links').exists();
