@@ -12,6 +12,7 @@ import $ from 'jquery';
 export default Component.extend({
   backgroundImage: service(),
   fastboot: service(),
+  intl: service(),
   searchTimeout: null,
   timelineMiddle: 300,
   timelineNodes: [],
@@ -165,31 +166,31 @@ export default Component.extend({
       <p class="date-marker date-marker-end">2019</p>
       <div class="timeline-line line-start"></div>
       <div class="ticks">
-        <div class="tick">AUG</div>
+        <div class="tick">${this.intl.t('timeline.august')}</div>
         <div class="tick line">&nbsp;</div>
-        <div class="tick line">SEP</div>
+        <div class="tick line">${this.intl.t('timeline.september')}</div>
         <div class="tick line">&nbsp;</div>
-        <div class="tick line">OCT</div>
+        <div class="tick line">${this.intl.t('timeline.october')}</div>
         <div class="tick line">&nbsp;</div>
-        <div class="tick line">NOV</div>
+        <div class="tick line">${this.intl.t('timeline.november')}</div>
         <div class="tick line">&nbsp;</div>
-        <div class="tick line">DEC</div>
+        <div class="tick line">${this.intl.t('timeline.december')}</div>
         <div class="tick line">&nbsp;</div>
-        <div class="tick line">JAN</div>
+        <div class="tick line">${this.intl.t('timeline.january')}</div>
         <div class="tick line">&nbsp;</div>
-        <div class="tick line">FEB</div>
+        <div class="tick line">${this.intl.t('timeline.february')}</div>
         <div class="tick line">&nbsp;</div>
-        <div class="tick line">MAR</div>
+        <div class="tick line">${this.intl.t('timeline.march')}</div>
         <div class="tick line">&nbsp;</div>
-        <div class="tick line">APR</div>
+        <div class="tick line">${this.intl.t('timeline.april')}</div>
         <div class="tick line">&nbsp;</div>
-        <div class="tick line">MAY</div>
+        <div class="tick line">${this.intl.t('timeline.may')}</div>
         <div class="tick line">&nbsp;</div>
-        <div class="tick line">JUN</div>
+        <div class="tick line">${this.intl.t('timeline.june')}</div>
         <div class="tick line">&nbsp;</div>
-        <div class="tick line">JUL</div>
+        <div class="tick line">${this.intl.t('timeline.july')}</div>
         <div class="tick line">&nbsp;</div>
-        <div class="tick">AUG</div>
+        <div class="tick">${this.intl.t('timeline.august')}</div>
       </div>
       <div class="timeline-line line-end"></div>
     `);
