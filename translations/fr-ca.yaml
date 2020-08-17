@@ -93,7 +93,7 @@ financials:
     summary:
       paragraph1: 'The summary financial statements do not contain all the disclosures required by Canadian accounting standards for not-for-profit organizations. Reading the summary financial statements, therefore, is not a substitute for reading the audited financial statements of the Organization.'
       title: 'Summary Financial Statements'
-    title: 'Auditor’s Report'
+    title: 'Rapport des vérificateurs'
   balanceSheet:
     currentAssets:
       accountsReceivable:

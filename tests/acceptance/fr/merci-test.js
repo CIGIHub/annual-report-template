@@ -108,13 +108,13 @@ module('Acceptance | fr/merci', function(hooks) {
     assert.dom('.footer button.open-social-menu-btn').exists();
   });
 
-  test('should transition to /fr/finances/auditors-report on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /fr/finances/rapport-des-verificateurs on scroll-arrow-up-btn click', async function(assert) {
     await visit('/fr/merci');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/fr/finances/auditors-report');
+    assert.strictEqual(currentURL(), '/fr/finances/rapport-des-verificateurs');
     assert.dom('ul.dot-nav').exists();
   });
 

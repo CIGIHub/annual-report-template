@@ -104,7 +104,7 @@ export default Service.extend({
       title: 'timeline.title',
     }, {
       number: '18',
-      route: isFrenchLocale ? 'fr.finances.auditors-report' : 'en.financials.auditors-report',
+      route: isFrenchLocale ? 'fr.finances.rapport-des-verificateurs' : 'en.financials.auditors-report',
       subRoutes: [
         isFrenchLocale
           ? 'fr.finances.notes'

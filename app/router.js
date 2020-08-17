@@ -15,7 +15,7 @@ Router.map(function() {
     });
     this.route('finances', function() {
       this.route('auditors-report-redirect', {
-        path: '/auditors-report',
+        path: '/rapport-des-verificateurs',
       });
       this.route('notes-redirect', {
         path: '/notes',
@@ -137,17 +137,17 @@ Router.map(function() {
   });
   this.route('fr', function() {
     this.route('finances', function() {
-      this.route('auditors-report');
       this.route('notes');
+      this.route('rapport-des-verificateurs');
       this.route('sommaire-de-la-situation-financiere');
       this.route('sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds');
     });
     this.route('financials', function() {
-      this.route('auditors-report-redirect', {
-        path: '/auditors-report',
-      });
       this.route('notes-redirect', {
         path: '/notes',
+      });
+      this.route('rapport-des-verificateurs-redirect', {
+        path: '/auditors-report',
       });
       this.route('sommaire-de-la-situation-financiere-redirect', {
         path: '/summarized-statement-of-financial-position',

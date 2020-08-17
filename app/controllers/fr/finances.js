@@ -11,8 +11,8 @@ export default class FrFinancesController extends Controller {
   get menuLinks() {
     const currentRouteName = this.router.currentRouteName;
     const menuLinks = [{
-      current: currentRouteName === 'fr.finances.auditors-report',
-      linkTo: 'fr.finances.auditors-report',
+      current: currentRouteName === 'fr.finances.rapport-des-verificateurs',
+      linkTo: 'fr.finances.rapport-des-verificateurs',
       title: this.intl.t('financials.auditorsReport.title'),
     }, {
       current: currentRouteName === 'fr.finances.sommaire-de-la-situation-financiere',

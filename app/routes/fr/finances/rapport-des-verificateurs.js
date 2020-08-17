@@ -33,7 +33,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.locale', 'fr_CA');
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('fr.finances.auditors-report');
+    const nextRoute = this.routeOrder.getNextRoute('fr.finances.rapport-des-verificateurs');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {

@@ -3,17 +3,17 @@ import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Acceptance | fr/finances/auditors report', function(hooks) {
+module('Acceptance | fr/finances/rapport-des-verificateurs', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('visiting /fr/finances/auditors-report', async function(assert) {
-    await visit('/fr/finances/auditors-report');
+  test('visiting /fr/finances/rapport-des-verificateurs', async function(assert) {
+    await visit('/fr/finances/rapport-des-verificateurs');
 
-    assert.equal(currentURL(), '/fr/finances/auditors-report');
+    assert.equal(currentURL(), '/fr/finances/rapport-des-verificateurs');
   });
 
   test('should have correct meta', async function(assert) {
-    await visit('/fr/finances/auditors-report');
+    await visit('/fr/finances/rapport-des-verificateurs');
 
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
@@ -29,7 +29,7 @@ module('Acceptance | fr/finances/auditors report', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/fr/finances/auditors-report',
+      'https://www.cigionline.org/interactives/2019annualreport/fr/finances/rapport-des-verificateurs',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),
@@ -58,19 +58,19 @@ module('Acceptance | fr/finances/auditors report', function(hooks) {
   });
 
   test('should have correct social links', async function(assert) {
-    await visit('/fr/finances/auditors-report');
+    await visit('/fr/finances/rapport-des-verificateurs');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+Annuel+du+CIGI+2019+https://www.cigionline.org/interactives/2019annualreport/fr/finances/auditors-report');
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/fr/finances/auditors-report');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+Annuel+du+CIGI+2019+https://www.cigionline.org/interactives/2019annualreport/fr/finances/rapport-des-verificateurs');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/fr/finances/rapport-des-verificateurs');
   });
 
   test('should have correct slide content', async function(assert) {
-    await visit('/fr/finances/auditors-report');
+    await visit('/fr/finances/rapport-des-verificateurs');
 
     assert.dom('.financials').exists();
     assert.dom('.financials h1').containsText('Finances');
     assert.dom('.financials .financials-menu').exists();
-    assert.dom('.financials .financials-menu').containsText('Auditor’s Report');
+    assert.dom('.financials .financials-menu').containsText('Rapport des vérificateurs');
     assert.dom('.financials .financials-menu > a').exists({ count: 3 });
     assert.dom('.financials .financials-menu > a:nth-of-type(1)').containsText('Sommaire de la situation financière');
     assert.dom('.financials .financials-menu > a:nth-of-type(2)').containsText('Sommaire des recettes et des dépenses et évolution du solde du fonds');
@@ -97,7 +97,7 @@ module('Acceptance | fr/finances/auditors report', function(hooks) {
   });
 
   test('should transition to /fr/timeline on scroll-arrow-up-btn click', async function(assert) {
-    await visit('/fr/finances/auditors-report');
+    await visit('/fr/finances/rapport-des-verificateurs');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
@@ -107,7 +107,7 @@ module('Acceptance | fr/finances/auditors report', function(hooks) {
   });
 
   test('should transition to /fr/merci on scroll-arrow-down-btn click', async function(assert) {
-    await visit('/fr/finances/auditors-report');
+    await visit('/fr/finances/rapport-des-verificateurs');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
@@ -117,7 +117,7 @@ module('Acceptance | fr/finances/auditors report', function(hooks) {
   });
 
   test('should transition to /en/financials/auditors-report on intl-link click', async function(assert) {
-    await visit('/fr/finances/auditors-report');
+    await visit('/fr/finances/rapport-des-verificateurs');
 
     await click('.intl-link');
     await finishRender();

@@ -116,13 +116,13 @@ module('Acceptance | en/financials/auditors report', function(hooks) {
     assert.dom('ul.dot-nav').exists();
   });
 
-  test('should transition to /fr/finances/auditors-report on intl-link click', async function(assert) {
+  test('should transition to /fr/finances/rapport-des-verificateurs on intl-link click', async function(assert) {
     await visit('/en/financials/auditors-report');
 
     await click('.intl-link');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/fr/finances/auditors-report');
+    assert.strictEqual(currentURL(), '/fr/finances/rapport-des-verificateurs');
     assert.dom('ul.dot-nav').exists();
   });
 });
