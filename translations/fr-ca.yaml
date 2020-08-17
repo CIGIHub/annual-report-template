@@ -264,9 +264,9 @@ opinions: 'Opinions French'
 outputsAndActivities:
   eventLink: 'Learn more about the event'
   opinionLink: 'Read opinion'
-  pageCount: 'Page {page} of {total}'
+  pageCount: 'Page {page} de {total}'
   publicationLink: 'Read this publication'
-  title: 'Outputs and Activities French'
+  title: 'Publications et activités'
 pageNotFound:
   paragraph1: 'The requested page could not be found.'
   paragraph2: 'Please check the URL and try again.'

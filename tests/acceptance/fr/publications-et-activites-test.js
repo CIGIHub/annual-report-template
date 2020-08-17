@@ -3,21 +3,21 @@ import { click, currentURL, visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import { module, test } from 'qunit';
 
-module('Acceptance | fr/outputs and activities', function(hooks) {
+module('Acceptance | fr/publications et activites', function(hooks) {
   setupApplicationTest(hooks);
 
-  test('visiting /fr/outputs-and-activities', async function(assert) {
-    await visit('/fr/outputs-and-activities');
+  test('visiting /fr/publications-et-activites', async function(assert) {
+    await visit('/fr/publications-et-activites');
 
-    assert.equal(currentURL(), '/fr/outputs-and-activities');
+    assert.equal(currentURL(), '/fr/publications-et-activites');
   });
 
   test('should have correct meta', async function(assert) {
-    await visit('/fr/outputs-and-activities');
+    await visit('/fr/publications-et-activites');
 
     assert.strictEqual(
       document.querySelector('head meta[property="og:title"]').getAttribute('content'),
-      'Outputs and Activities French | Rapport Annuel du CIGI 2019',
+      'Publications et activités | Rapport Annuel du CIGI 2019',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:description"]').getAttribute('content'),
@@ -29,7 +29,7 @@ module('Acceptance | fr/outputs and activities', function(hooks) {
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:url"]').getAttribute('content'),
-      'https://www.cigionline.org/interactives/2019annualreport/fr/outputs-and-activities',
+      'https://www.cigionline.org/interactives/2019annualreport/fr/publications-et-activites',
     );
     assert.strictEqual(
       document.querySelector('head meta[property="og:type"]').getAttribute('content'),
@@ -58,25 +58,25 @@ module('Acceptance | fr/outputs and activities', function(hooks) {
   });
 
   test('should have correct social links', async function(assert) {
-    await visit('/fr/outputs-and-activities');
+    await visit('/fr/publications-et-activites');
 
-    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+Annuel+du+CIGI+2019+https://www.cigionline.org/interactives/2019annualreport/fr/outputs-and-activities');
-    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/fr/outputs-and-activities');
+    assert.dom('.social-2-btn').hasAttribute('href', 'https://twitter.com/intent/tweet?status=Rapport+Annuel+du+CIGI+2019+https://www.cigionline.org/interactives/2019annualreport/fr/publications-et-activites');
+    assert.dom('.social-3-btn').hasAttribute('href', 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.cigionline.org/interactives/2019annualreport/fr/publications-et-activites');
   });
 
   test('should have correct slide content', async function(assert) {
-    await visit('/fr/outputs-and-activities');
+    await visit('/fr/publications-et-activites');
 
     assert.dom('.outputs-activities').exists();
     assert.dom('.outputs-activities .grid-x').exists({ count: 4 });
-    assert.dom('.outputs-activities .grid-x:nth-of-type(1) h1').containsText('Outputs and Activities French');
+    assert.dom('.outputs-activities .grid-x:nth-of-type(1) h1').containsText('Publications et activités');
     assert.dom('.outputs-activities .grid-x:nth-of-type(2) .publications-menu').exists();
     assert.dom('.outputs-activities .grid-x:nth-of-type(2) .publications-menu').containsText('Publications French');
     assert.dom('.outputs-activities .grid-x:nth-of-type(2) .publications-menu button.view-opinions-btn').containsText('Opinions French');
     assert.dom('.outputs-activities .grid-x:nth-of-type(2) .publications-menu button.view-events-btn').containsText('Events French');
     assert.dom('.outputs-activities .grid-x:nth-of-type(2) .outputs-activities-pagination').exists();
     assert.dom('.outputs-activities .grid-x:nth-of-type(3) .cell').exists({ count: 16 });
-    assert.dom('.outputs-activities .grid-x:nth-of-type(4) .page-count').containsText('Page 1 of 6');
+    assert.dom('.outputs-activities .grid-x:nth-of-type(4) .page-count').containsText('Page 1 de 6');
 
     assert.dom('.cigi-top-bar').exists();
     assert.dom('.cigi-top-bar').hasClass('light-background');
@@ -97,7 +97,7 @@ module('Acceptance | fr/outputs and activities', function(hooks) {
   });
 
   test('should transition to /fr/slide13-fr on scroll-arrow-up-btn click', async function(assert) {
-    await visit('/fr/outputs-and-activities');
+    await visit('/fr/publications-et-activites');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
@@ -107,7 +107,7 @@ module('Acceptance | fr/outputs and activities', function(hooks) {
   });
 
   test('should transition to /fr/timeline on scroll-arrow-down-btn click', async function(assert) {
-    await visit('/fr/outputs-and-activities');
+    await visit('/fr/publications-et-activites');
 
     await click('button.scroll-arrow-down-btn');
     await finishRender();
@@ -117,7 +117,7 @@ module('Acceptance | fr/outputs and activities', function(hooks) {
   });
 
   test('should transition to /en/outputs-and-activities on intl-link click', async function(assert) {
-    await visit('/fr/outputs-and-activities');
+    await visit('/fr/publications-et-activites');
 
     await click('.intl-link');
     await finishRender();
@@ -126,8 +126,8 @@ module('Acceptance | fr/outputs and activities', function(hooks) {
     assert.dom('ul.dot-nav').exists();
   });
 
-  test('should have correct menu buttons on /fr/outputs-and-activities', async function(assert) {
-    await visit('/fr/outputs-and-activities');
+  test('should have correct menu buttons on /fr/publications-et-activites', async function(assert) {
+    await visit('/fr/publications-et-activites');
 
     assert.dom('.view-publications-btn').doesNotExist();
     assert.dom('.view-opinions-btn').exists();
@@ -136,8 +136,8 @@ module('Acceptance | fr/outputs and activities', function(hooks) {
     assert.dom('.view-events-btn').containsText('Events French');
   });
 
-  test('should have correct menu buttons on /fr/outputs-and-activities?type=publications', async function(assert) {
-    await visit('/fr/outputs-and-activities?type=publications');
+  test('should have correct menu buttons on /fr/publications-et-activites?type=publications', async function(assert) {
+    await visit('/fr/publications-et-activites?type=publications');
 
     assert.dom('.view-publications-btn').doesNotExist();
     assert.dom('.view-opinions-btn').exists();
@@ -146,8 +146,8 @@ module('Acceptance | fr/outputs and activities', function(hooks) {
     assert.dom('.view-events-btn').containsText('Events French');
   });
 
-  test('should have correct menu buttons on /fr/outputs-and-activities?type=opinions', async function(assert) {
-    await visit('/fr/outputs-and-activities?type=opinions');
+  test('should have correct menu buttons on /fr/publications-et-activites?type=opinions', async function(assert) {
+    await visit('/fr/publications-et-activites?type=opinions');
 
     assert.dom('.view-publications-btn').exists();
     assert.dom('.view-publications-btn').containsText('Publications French');
@@ -156,8 +156,8 @@ module('Acceptance | fr/outputs and activities', function(hooks) {
     assert.dom('.view-events-btn').containsText('Events French');
   });
 
-  test('should have correct menu buttons on /fr/outputs-and-activities?type=events', async function(assert) {
-    await visit('/fr/outputs-and-activities?type=events');
+  test('should have correct menu buttons on /fr/publications-et-activites?type=events', async function(assert) {
+    await visit('/fr/publications-et-activites?type=events');
 
     assert.dom('.view-publications-btn').exists();
     assert.dom('.view-publications-btn').containsText('Publications French');

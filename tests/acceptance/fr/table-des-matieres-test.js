@@ -108,7 +108,7 @@ module('Acceptance | fr/table des matieres', function(hooks) {
     assert.dom('.table-of-contents .grid-container > .grid-x:nth-of-type(2) .toc-content .slide-content > .cell:nth-of-type(3) .slide-link:nth-of-type(5) p.slide-number').containsText('15');
     assert.dom('.table-of-contents .grid-container > .grid-x:nth-of-type(2) .toc-content .slide-content > .cell:nth-of-type(3) .slide-link:nth-of-type(5) a').containsText('Slide 13 Title French');
     assert.dom('.table-of-contents .grid-container > .grid-x:nth-of-type(2) .toc-content .slide-content > .cell:nth-of-type(3) .slide-link:nth-of-type(6) p.slide-number').containsText('16');
-    assert.dom('.table-of-contents .grid-container > .grid-x:nth-of-type(2) .toc-content .slide-content > .cell:nth-of-type(3) .slide-link:nth-of-type(6) a').containsText('Outputs and Activities');
+    assert.dom('.table-of-contents .grid-container > .grid-x:nth-of-type(2) .toc-content .slide-content > .cell:nth-of-type(3) .slide-link:nth-of-type(6) a').containsText('Publications et activités');
     assert.dom('.table-of-contents .grid-container > .grid-x:nth-of-type(2) .toc-content .slide-content > .cell:nth-of-type(3) .slide-link:nth-of-type(7) p.slide-number').containsText('17');
     assert.dom('.table-of-contents .grid-container > .grid-x:nth-of-type(2) .toc-content .slide-content > .cell:nth-of-type(3) .slide-link:nth-of-type(7) a').containsText('Explore Timeline');
     assert.dom('.table-of-contents .grid-container > .grid-x:nth-of-type(2) .toc-content .slide-content > .cell:nth-of-type(3) .slide-link:nth-of-type(8) p.slide-number').containsText('18');

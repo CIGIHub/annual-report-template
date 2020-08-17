@@ -145,7 +145,7 @@ export default Route.extend(GoogleAnalyticsMixin, ResetScrollMixin, {
     set(this, 'headData.locale', 'fr_CA');
 
     // Load next route background
-    const nextRoute = this.routeOrder.getNextRoute('fr.outputs-and-activities');
+    const nextRoute = this.routeOrder.getNextRoute('fr.publications-et-activites');
     if (nextRoute) {
       const { fullSizeUrl } = this.backgroundImage.getSlideBackgroundImage(nextRoute);
       if (fullSizeUrl) {

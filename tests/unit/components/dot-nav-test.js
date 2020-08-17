@@ -704,13 +704,13 @@ module('Unit | Component | dot-nav', function(hooks) {
     });
   });
 
-  test('should have correct menu items for /fr/outputs-and-activities', function(assert) {
+  test('should have correct menu items for /fr/publications-et-activites', function(assert) {
     const component = this.owner.factoryFor('component:dot-nav').create();
-    set(component, 'router.currentRouteName', 'fr.outputs-and-activities');
+    set(component, 'router.currentRouteName', 'fr.publications-et-activites');
 
     const menuItems = get(component, 'menuItems');
     menuItems.forEach(function(menuItem) {
-      if (menuItem.route === 'fr.outputs-and-activities') {
+      if (menuItem.route === 'fr.publications-et-activites') {
         assert.strictEqual(
           menuItem.current,
           true,

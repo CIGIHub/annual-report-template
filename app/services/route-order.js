@@ -94,7 +94,7 @@ export default Service.extend({
       title: 'slide13.title',
     }, {
       number: '16',
-      route: isFrenchLocale ? 'fr.outputs-and-activities' : 'en.outputs-and-activities',
+      route: isFrenchLocale ? 'fr.publications-et-activites' : 'en.outputs-and-activities',
       subRoutes: [],
       title: 'outputsAndActivities.title',
     }, {

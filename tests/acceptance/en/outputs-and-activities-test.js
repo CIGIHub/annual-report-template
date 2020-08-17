@@ -116,13 +116,13 @@ module('Acceptance | en/outputs and activities', function(hooks) {
     assert.dom('ul.dot-nav').exists();
   });
 
-  test('should transition to /fr/outputs-and-activities on intl-link click', async function(assert) {
+  test('should transition to /fr/publications-et-activites on intl-link click', async function(assert) {
     await visit('/en/outputs-and-activities');
 
     await click('.intl-link');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/fr/outputs-and-activities');
+    assert.strictEqual(currentURL(), '/fr/publications-et-activites');
     assert.dom('ul.dot-nav').exists();
   });
 

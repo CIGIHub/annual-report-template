@@ -43,7 +43,7 @@ export default Controller.extend({
       'fr.finances.sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds',
       'fr.message-du-directeur-executif',
       'fr.message-du-president-du-conseil',
-      'fr.outputs-and-activities',
+      'fr.publications-et-activites',
     ].includes(currentRouteName)) {
       return htmlSafe('background-color: #fff;');
     }
@@ -76,7 +76,7 @@ export default Controller.extend({
       'fr.finances.sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds',
       'fr.message-du-directeur-executif',
       'fr.message-du-president-du-conseil',
-      'fr.outputs-and-activities',
+      'fr.publications-et-activites',
       'fr.table-des-matieres',
     ].includes(this.router.currentRouteName);
   }),
@@ -96,7 +96,7 @@ export default Controller.extend({
       'fr.finances.sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds',
       'fr.message-du-directeur-executif',
       'fr.message-du-president-du-conseil',
-      'fr.outputs-and-activities',
+      'fr.publications-et-activites',
     ].includes(this.router.currentRouteName);
     if (this.lightbox.showLightbox
         || this.lightbox.subType === 'publication') {
@@ -157,7 +157,7 @@ export default Controller.extend({
       'en.financials.summarized-statement-of-financial-position': 'fr.finances.sommaire-de-la-situation-financiere',
       'en.financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances': 'fr.finances.sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds',
       'en.index': 'fr.index',
-      'en.outputs-and-activities': 'fr.outputs-and-activities',
+      'en.outputs-and-activities': 'fr.publications-et-activites',
       'en.presidents-message': 'fr.message-du-directeur-executif',
       'en.slide-1': 'fr.slide-1',
       'en.slide-2': 'fr.slide-2',
@@ -183,7 +183,7 @@ export default Controller.extend({
       'fr.merci': 'en.thank-you',
       'fr.message-du-directeur-executif': 'en.presidents-message',
       'fr.message-du-president-du-conseil': 'en.chairs-message',
-      'fr.outputs-and-activities': 'en.outputs-and-activities',
+      'fr.publications-et-activites': 'en.outputs-and-activities',
       'fr.slide-1': 'en.slide-1',
       'fr.slide-2': 'en.slide-2',
       'fr.slide-3': 'en.slide-3',

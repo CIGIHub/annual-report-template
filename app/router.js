@@ -168,7 +168,7 @@ Router.map(function() {
     this.route('message-du-president-du-conseil-redirect', {
       path: '/chairs-message',
     });
-    this.route('outputs-and-activities');
+    this.route('publications-et-activites');
     this.route('slide-1', {
       path: '/slide1-fr',
     });

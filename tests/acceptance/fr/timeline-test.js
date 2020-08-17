@@ -119,13 +119,13 @@ module('Acceptance | fr/timeline', function(hooks) {
     assert.dom('.footer button.open-social-menu-btn').exists();
   });
 
-  test('should transition to /fr/outputs-and-activities on scroll-arrow-up-btn click', async function(assert) {
+  test('should transition to /fr/publications-et-activites on scroll-arrow-up-btn click', async function(assert) {
     await visit('/fr/timeline');
 
     await click('button.scroll-arrow-up-btn');
     await finishRender();
 
-    assert.strictEqual(currentURL(), '/fr/outputs-and-activities');
+    assert.strictEqual(currentURL(), '/fr/publications-et-activites');
     assert.dom('ul.dot-nav').exists();
   });
 

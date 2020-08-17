@@ -3,7 +3,7 @@ import { action } from '@ember/object';
 import { alias } from '@ember/object/computed';
 import { tracked } from '@glimmer/tracking';
 
-export default class FrOutputsAndActivitiesController extends Controller {
+export default class FrPublicationsEtActivitesController extends Controller {
   queryParams = ['id', 'page', 'type'];
 
   @alias('model.objects') objects;
