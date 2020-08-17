@@ -81,7 +81,7 @@ module('Acceptance | fr/timeline', function(hooks) {
     assert.dom('.timeline-search-container .timeline-search input').hasAttribute('placeholder', 'Chercher');
     assert.dom('.timeline-container.hide-for-large').exists();
     assert.dom('.timeline-container.hide-for-large h1').containsText('Explorer le calendrier interactif');
-    assert.dom('.timeline-container.hide-for-large p').containsText('The interactive timeline cannot be displayed on your mobile device. For the best experience, please view on a desktop browser.');
+    assert.dom('.timeline-container.hide-for-large p').containsText('Cette page ne peut pas être affichée. Veuillez utiliser un navigateur de bureau.');
     assert.dom('.timeline').exists();
     assert.dom('.timeline p.date-marker-beg').containsText('2018');
     assert.dom('.timeline p.date-marker-end').containsText('2019');
