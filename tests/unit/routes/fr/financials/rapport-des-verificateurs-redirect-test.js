@@ -5,7 +5,7 @@ module('Unit | Route | fr/financials/rapport-des-verificateurs-redirect', functi
   setupTest(hooks);
 
   test('it exists', function(assert) {
-    let route = this.owner.lookup('route:fr/financials/rapport-des-verificateurs-redirect');
+    const route = this.owner.lookup('route:fr/financials/rapport-des-verificateurs-redirect');
     assert.ok(route);
   });
 });
