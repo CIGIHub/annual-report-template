@@ -30,6 +30,7 @@ module('Integration | Component | table-of-contents', function(hooks) {
     }));
     this.owner.register('service:router', Service.extend({
       currentRouteName: '',
+      currentURL: '',
     }));
   });
 

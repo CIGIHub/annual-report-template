@@ -1,4 +1,4 @@
-<div class="cigi-top-bar clearfix {{if @lightBackground "light-background"}}">
+<div class="cigi-top-bar {{if @lightBackground "light-background"}}">
   <div class="cigi-logo">
     <a href="https://www.cigionline.org">
       <svg class="show-for-large" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129.4 37.8">
@@ -14,23 +14,24 @@
     </a>
   </div>
   <div class="cigi-menu">
-    <button type="button" class="social-1-btn" {{action "facebookShare"}}>
-      {{fa-icon "facebook-square" prefix="fab" size="lg"}}
-    </button>
-    <a class="social-2-btn" href={{this.twitterShareLink}} target="_blank" rel="noopener noreferrer">
-      {{fa-icon "twitter" prefix="fab" size="lg"}}
-    </a>
-    <a class="social-3-btn" href={{this.linkedInShareLink}} target="_blank" rel="noopener noreferrer">
-      {{fa-icon "linkedin-in" prefix="fab" size="lg"}}
-    </a>
-    {{#if this.socialMenuIsOpen}}
-      <button type="button" class="close-social-menu-btn" {{action "closeSocialMenu"}}>
-        {{fa-icon "arrow-right" prefix="fal" size="lg"}}
-      </button>
+    {{#if this.isEnglishRoute}}
+      <span class="intl-selected">
+        {{t "en"}}
+      </span>
     {{else}}
-      <button type="button" class="open-social-menu-btn" {{action "openSocialMenu"}}>
-        {{fa-icon "share-alt" prefix="fal" size="lg"}}
-      </button>
+      <LinkTo @route={{@translateRoute}} class="intl-link">
+        {{t "en"}}
+      </LinkTo>
+    {{/if}}
+    <span>/</span>
+    {{#if this.isFrenchRoute}}
+      <span class="intl-selected">
+        {{t "fr"}}
+      </span>
+    {{else}}
+      <LinkTo @route={{@translateRoute}} class="intl-link">
+        {{t "fr"}}
+      </LinkTo>
     {{/if}}
     {{#if this.menuIsOpen}}
       <button type="button" class="close-menu-btn" {{action "closeMenu"}}>
