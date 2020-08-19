@@ -30,6 +30,7 @@ module.exports = {
     'array-callback-return': ['off'],
     'class-methods-use-this': ['off'],
     'ember/avoid-leaking-state-in-ember-objects': ['off'],
+    'ember/jquery-ember-run': ['off'],
     'ember/no-jquery': ['off'],
     'ember/no-mixins': ['off'],
     'ember/no-new-mixins': ['off'],

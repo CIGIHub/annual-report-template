@@ -1,6 +1,11 @@
 <div class={{this.footerClass}}>
-  <div {{on "mouseenter" this.handleMouseEnter}} {{on "mouseleave" this.handleMouseLeave}}>
-    <button type="button" class="footer-icon-btn float-right" {{action "showBackground"}}>
+  {{#if this.showPhotoCredit}}
+    <p class="footer-description float-right hover-text-reveal">
+      <span>{{{@photoCredit}}}</span>
+    </p>
+  {{/if}}
+  {{#if @hasReveal}}
+    <button type="button" class="footer-icon-btn" {{action "showBackground"}} {{on "mouseenter" this.handleMouseEnter}} {{on "mouseleave" this.handleMouseLeave}}>
       <div class="radial-progress">
         <div class="circle">
           <div class="mask left">
@@ -13,10 +18,25 @@
       </div>
       {{fa-icon "camera-retro" prefix="fal" size="lg"}}
     </button>
-  </div>
-  {{#if @photoCredit}}
-    <p class="footer-description float-right hover-text-reveal">
-      <span>{{{@photoCredit}}}</span>
-    </p>
   {{/if}}
+  <div class="cigi-social">
+    <button type="button" class="social-1-btn" {{action "facebookShare"}}>
+      {{fa-icon "facebook-square" prefix="fab" size="lg"}}
+    </button>
+    <a class="social-2-btn" href={{this.twitterShareLink}} target="_blank" rel="noopener noreferrer">
+      {{fa-icon "twitter" prefix="fab" size="lg"}}
+    </a>
+    <a class="social-3-btn" href={{this.linkedInShareLink}} target="_blank" rel="noopener noreferrer">
+      {{fa-icon "linkedin-in" prefix="fab" size="lg"}}
+    </a>
+    {{#if this.socialMenuIsOpen}}
+      <button type="button" class="close-social-menu-btn" {{action "closeSocialMenu"}}>
+        {{fa-icon "arrow-right" prefix="fal" size="lg"}}
+      </button>
+    {{else}}
+      <button type="button" class="open-social-menu-btn" {{action "openSocialMenu"}}>
+        {{fa-icon "share-alt" prefix="fal" size="lg"}}
+      </button>
+    {{/if}}
+  </div>
 </div>

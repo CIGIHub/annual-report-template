@@ -19,5 +19,6 @@ export default Route.extend({
     set(this, 'headData.description', this.intl.t('description'));
     set(this, 'headData.url', `${ENV.host}${ENV.rootURL}`);
     set(this, 'headData.image', this.backgroundImage.defaultBackground.ogUrl);
+    set(this, 'headData.locale', 'en_CA');
   },
 });
