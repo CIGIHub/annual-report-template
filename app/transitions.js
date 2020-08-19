@@ -1500,4 +1500,1480 @@ export default /* istanbul ignore next */ function() {
     this.use('explode', crossFadeSlide, crossFade),
     this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
   );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.table-des-matieres'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.message-du-president-du-conseil'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.message-du-directeur-executif'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.slide-1'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.slide-2'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.slide-3'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.slide-4'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.slide-5'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.slide-6'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.slide-7'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.slide-8'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.slide-9'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.slide-10'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.slide-11'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.slide-12'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.slide-13'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.index'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.message-du-president-du-conseil'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.message-du-directeur-executif'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.slide-1'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.slide-2'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.slide-3'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.slide-4'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.slide-5'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.slide-6'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.slide-7'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.slide-8'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.slide-9'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.slide-10'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.slide-11'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.slide-12'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.slide-13'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.table-des-matieres'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.slide-1'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.slide-2'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.slide-3'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.slide-4'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.slide-5'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.slide-6'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.slide-7'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.slide-8'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.slide-9'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.slide-10'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.slide-11'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.slide-12'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.slide-13'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-president-du-conseil'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.slide-1'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.slide-2'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.slide-3'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.slide-4'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.slide-5'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.slide-6'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.slide-7'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.slide-8'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.slide-9'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.slide-10'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.slide-11'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.slide-12'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.slide-13'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.message-du-directeur-executif'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-1'),
+    this.toRoute('fr.slide-2'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-1'),
+    this.toRoute('fr.slide-3'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-1'),
+    this.toRoute('fr.slide-4'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-1'),
+    this.toRoute('fr.slide-5'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-1'),
+    this.toRoute('fr.slide-6'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-1'),
+    this.toRoute('fr.slide-7'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-1'),
+    this.toRoute('fr.slide-8'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-1'),
+    this.toRoute('fr.slide-9'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-1'),
+    this.toRoute('fr.slide-10'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-1'),
+    this.toRoute('fr.slide-11'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-1'),
+    this.toRoute('fr.slide-12'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-1'),
+    this.toRoute('fr.slide-13'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-1'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-1'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-1'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-1'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-2'),
+    this.toRoute('fr.slide-3'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-2'),
+    this.toRoute('fr.slide-4'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-2'),
+    this.toRoute('fr.slide-5'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-2'),
+    this.toRoute('fr.slide-6'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-2'),
+    this.toRoute('fr.slide-7'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-2'),
+    this.toRoute('fr.slide-8'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-2'),
+    this.toRoute('fr.slide-9'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-2'),
+    this.toRoute('fr.slide-10'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-2'),
+    this.toRoute('fr.slide-11'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-2'),
+    this.toRoute('fr.slide-12'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-2'),
+    this.toRoute('fr.slide-13'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-2'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-2'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-2'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-2'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-3'),
+    this.toRoute('fr.slide-4'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-3'),
+    this.toRoute('fr.slide-5'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-3'),
+    this.toRoute('fr.slide-6'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-3'),
+    this.toRoute('fr.slide-7'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-3'),
+    this.toRoute('fr.slide-8'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-3'),
+    this.toRoute('fr.slide-9'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-3'),
+    this.toRoute('fr.slide-10'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-3'),
+    this.toRoute('fr.slide-11'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-3'),
+    this.toRoute('fr.slide-12'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-3'),
+    this.toRoute('fr.slide-13'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-3'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-3'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-3'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-3'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-4'),
+    this.toRoute('fr.slide-5'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-4'),
+    this.toRoute('fr.slide-6'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-4'),
+    this.toRoute('fr.slide-7'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-4'),
+    this.toRoute('fr.slide-8'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-4'),
+    this.toRoute('fr.slide-9'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-4'),
+    this.toRoute('fr.slide-10'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-4'),
+    this.toRoute('fr.slide-11'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-4'),
+    this.toRoute('fr.slide-12'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-4'),
+    this.toRoute('fr.slide-13'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-4'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-4'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-4'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-4'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-5'),
+    this.toRoute('fr.slide-6'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-5'),
+    this.toRoute('fr.slide-7'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-5'),
+    this.toRoute('fr.slide-8'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-5'),
+    this.toRoute('fr.slide-9'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-5'),
+    this.toRoute('fr.slide-10'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-5'),
+    this.toRoute('fr.slide-11'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-5'),
+    this.toRoute('fr.slide-12'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-5'),
+    this.toRoute('fr.slide-13'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-5'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-5'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-5'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-5'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-6'),
+    this.toRoute('fr.slide-7'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-6'),
+    this.toRoute('fr.slide-8'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-6'),
+    this.toRoute('fr.slide-9'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-6'),
+    this.toRoute('fr.slide-10'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-6'),
+    this.toRoute('fr.slide-11'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-6'),
+    this.toRoute('fr.slide-12'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-6'),
+    this.toRoute('fr.slide-13'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-6'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-6'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-6'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-6'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-7'),
+    this.toRoute('fr.slide-8'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-7'),
+    this.toRoute('fr.slide-9'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-7'),
+    this.toRoute('fr.slide-10'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-7'),
+    this.toRoute('fr.slide-11'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-7'),
+    this.toRoute('fr.slide-12'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-7'),
+    this.toRoute('fr.slide-13'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-7'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-7'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-7'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-7'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-8'),
+    this.toRoute('fr.slide-9'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-8'),
+    this.toRoute('fr.slide-10'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-8'),
+    this.toRoute('fr.slide-11'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-8'),
+    this.toRoute('fr.slide-12'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-8'),
+    this.toRoute('fr.slide-13'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-8'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-8'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-8'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-8'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-9'),
+    this.toRoute('fr.slide-10'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-9'),
+    this.toRoute('fr.slide-11'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-9'),
+    this.toRoute('fr.slide-12'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-9'),
+    this.toRoute('fr.slide-13'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-9'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-9'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-9'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-9'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-10'),
+    this.toRoute('fr.slide-11'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-10'),
+    this.toRoute('fr.slide-12'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-10'),
+    this.toRoute('fr.slide-13'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-10'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-10'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-10'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-10'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-11'),
+    this.toRoute('fr.slide-12'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-11'),
+    this.toRoute('fr.slide-13'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-11'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-11'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-11'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-11'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-12'),
+    this.toRoute('fr.slide-13'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-12'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-12'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-12'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-12'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-13'),
+    this.toRoute('fr.publications-et-activites'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-13'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-13'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.slide-13'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.publications-et-activites'),
+    this.toRoute('fr.timeline'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.publications-et-activites'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.timeline'),
+    this.toRoute('fr.finances'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.timeline'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
+
+  /* istanbul ignore next */
+  this.transition(
+    this.fromRoute('fr.finances'),
+    this.toRoute('fr.merci'),
+    this.use('explode', crossFadeSlide, crossFade),
+    this.reverse('explode', crossFadeSlideReverse, crossFadeReverse),
+  );
 }
