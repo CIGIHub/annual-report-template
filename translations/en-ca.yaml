@@ -60,6 +60,7 @@ currency: '$'
 description: 'Explore a year of research, opinion and expertise in CIGI’s interactive annual report.'
 download: 'Download'
 downloadPdf: 'Download PDF'
+en: 'EN'
 essay: 'Essay'
 essaySeries: 'Essay Series'
 events: 'Events'
@@ -249,6 +250,7 @@ financials:
     total2018: '2018 Total'
     total2019: '2019 Total'
   title: 'Financials'
+fr: 'FR'
 home: 'Home'
 index:
   annual: 'Annual'
@@ -266,7 +268,7 @@ outputsAndActivities:
   publicationLink: 'Read this publication'
   title: 'Outputs and Activities'
 pageNotFound:
-  paragraph1: 'The request page could not be found.'
+  paragraph1: 'The requested page could not be found.'
   paragraph2: 'Please check the URL and try again.'
   title: '404: Page Not Found'
 paper: 'Paper'
@@ -296,6 +298,7 @@ slide1:
   paragraph1: 'Slide 1 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
   paragraph2: 'Slide 1 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
   paragraph3: 'Slide 1 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  photoCredit: 'Slide 1 Photo Credit English'
   quote:
     quote: 'Slide 1 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 1 Source English'
@@ -308,6 +311,7 @@ slide2:
   paragraph1: 'Slide 2 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
   paragraph2: 'Slide 2 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
   paragraph3: 'Slide 2 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  photoCredit: 'Slide 2 Photo Credit English'
   quote:
     quote: 'Slide 2 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 2 Source English'
@@ -320,6 +324,7 @@ slide3:
   paragraph1: 'Slide 3 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
   paragraph2: 'Slide 3 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
   paragraph3: 'Slide 3 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  photoCredit: 'Slide 3 Photo Credit English'
   quote:
     quote: 'Slide 3 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 3 Source English'
@@ -332,6 +337,7 @@ slide4:
   paragraph1: 'Slide 4 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
   paragraph2: 'Slide 4 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
   paragraph3: 'Slide 4 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  photoCredit: 'Slide 4 Photo Credit English'
   quote:
     quote: 'Slide 4 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 4 Source English'
@@ -344,6 +350,7 @@ slide5:
   paragraph1: 'Slide 5 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
   paragraph2: 'Slide 5 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
   paragraph3: 'Slide 5 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  photoCredit: 'Slide 5 Photo Credit English'
   quote:
     quote: 'Slide 5 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 5 Source English'
@@ -356,6 +363,7 @@ slide6:
   paragraph1: 'Slide 6 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
   paragraph2: 'Slide 6 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
   paragraph3: 'Slide 6 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  photoCredit: 'Slide 6 Photo Credit English'
   quote:
     quote: 'Slide 6 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 6 Source English'
@@ -368,6 +376,7 @@ slide7:
   paragraph1: 'Slide 7 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
   paragraph2: 'Slide 7 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
   paragraph3: 'Slide 7 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  photoCredit: 'Slide 7 Photo Credit English'
   quote:
     quote: 'Slide 7 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 7 Source English'
@@ -380,6 +389,7 @@ slide8:
   paragraph1: 'Slide 8 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
   paragraph2: 'Slide 8 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
   paragraph3: 'Slide 8 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  photoCredit: 'Slide 8 Photo Credit English'
   quote:
     quote: 'Slide 8 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 8 Source English'
@@ -392,6 +402,7 @@ slide9:
   paragraph1: 'Slide 9 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
   paragraph2: 'Slide 9 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
   paragraph3: 'Slide 9 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  photoCredit: 'Slide 9 Photo Credit English'
   quote:
     quote: 'Slide 9 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 9 Source English'
@@ -404,6 +415,7 @@ slide10:
   paragraph1: 'Slide 10 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
   paragraph2: 'Slide 10 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
   paragraph3: 'Slide 10 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  photoCredit: 'Slide 10 Photo Credit English'
   quote:
     quote: 'Slide 10 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 10 Source English'
@@ -416,6 +428,7 @@ slide11:
   paragraph1: 'Slide 11 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
   paragraph2: 'Slide 11 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
   paragraph3: 'Slide 11 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  photoCredit: 'Slide 11 Photo Credit English'
   quote:
     quote: 'Slide 11 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 11 Source English'
@@ -428,6 +441,7 @@ slide12:
   paragraph1: 'Slide 12 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
   paragraph2: 'Slide 12 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
   paragraph3: 'Slide 12 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  photoCredit: 'Slide 12 Photo Credit English'
   quote:
     quote: 'Slide 12 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 12 Source English'
@@ -440,6 +454,7 @@ slide13:
   paragraph1: 'Slide 13 Paragraph 1 English. Justo nec ultrices dui sapien eget mi proin. Nunc congue nisi vitae suscipit tellus. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Dictum sit amet justo donec enim diam vulputate. Blandit libero volutpat sed cras ornare. Vitae congue eu consequat ac felis donec. Quam nulla porttitor massa id.'
   paragraph2: 'Slide 13 Paragraph 2 English. Vitae tempus quam pellentesque nec nam aliquam sem et tortor. Mattis rhoncus urna neque viverra. In cursus turpis massa tincidunt dui ut ornare. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Sapien eget mi proin sed libero enim sed faucibus turpis.'
   paragraph3: 'Slide 13 Paragraph 3 English. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Dignissim sodales ut eu sem integer vitae justo. Neque sodales ut etiam sit amet nisl purus in. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Commodo sed egestas egestas fringilla. Leo duis ut diam quam nulla porttitor massa id neque. Est velit egestas dui id ornare arcu odio ut.'
+  photoCredit: 'Slide 13 Photo Credit English'
   quote:
     quote: 'Slide 13 Quote English. Dignissim diam quis enim lobortis scelerisque fermentum. Donec adipiscing tristique risus nec feugiat in. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.'
     source: 'Slide 13 Source English'
@@ -460,8 +475,21 @@ thankYou:
   staffPhoto: 'CIGI Staff Photo'
   title: 'Thank You'
 timeline:
+  april: 'APR'
+  august: 'AUG'
   back: 'Back to Timeline'
   cannotBeDisplayed: 'The interactive timeline cannot be displayed on your mobile device. For the best experience, please view on a desktop browser.'
+  december: 'DEC'
+  february: 'FEB'
+  january: 'JAN'
+  july: 'JUL'
+  june: 'JUN'
+  march: 'MAR'
+  may: 'MAY'
+  november: 'NOV'
+  october: 'OCT'
+  search: 'Search'
+  september: 'SEP'
   title: 'Explore Timeline'
 title: '2019 CIGI Annual Report'
 video: 'Video'
