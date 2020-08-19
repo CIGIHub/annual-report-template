@@ -4,82 +4,193 @@ import Service from '@ember/service';
 
 export default Service.extend({
   backgroundImages: {
-    'chairs-message': {
+    // chairs-message
+    'en.chairs-message': {
       fullSizeUrl: 'template/slides/chairs-message.jpg',
       ogUrl: 'template/slides/chairs-message-og.jpg',
       thumbnailUrl: 'template/slides/chairs-message-thumbnail.jpg',
     },
-    'presidents-message': {
+    'fr.message-du-president-du-conseil': {
+      fullSizeUrl: 'template/slides/chairs-message.jpg',
+      ogUrl: 'template/slides/chairs-message-og.jpg',
+      thumbnailUrl: 'template/slides/chairs-message-thumbnail.jpg',
+    },
+
+    // presidents-message
+    'en.presidents-message': {
       fullSizeUrl: 'template/slides/presidents-message.jpg',
       ogUrl: 'template/slides/presidents-message-og.jpg',
       thumbnailUrl: 'template/slides/presidents-message-thumbnail.jpg',
     },
-    'slide-1': {
+    'fr.message-du-directeur-executif': {
+      fullSizeUrl: 'template/slides/presidents-message.jpg',
+      ogUrl: 'template/slides/presidents-message-og.jpg',
+      thumbnailUrl: 'template/slides/presidents-message-thumbnail.jpg',
+    },
+
+    // slide-1
+    'en.slide-1': {
       fullSizeUrl: 'template/slides/slide-1.jpg',
       ogUrl: 'template/slides/slide-1-og.jpg',
       thumbnailUrl: 'template/slides/slide-1-thumbnail.jpg',
     },
-    'slide-2': {
+    'fr.slide-1': {
+      fullSizeUrl: 'template/slides/slide-1.jpg',
+      ogUrl: 'template/slides/slide-1-og.jpg',
+      thumbnailUrl: 'template/slides/slide-1-thumbnail.jpg',
+    },
+
+    // slide-2
+    'en.slide-2': {
       fullSizeUrl: 'template/slides/slide-2.png',
       ogUrl: 'template/slides/slide-2-og.png',
       thumbnailUrl: 'template/slides/slide-2-thumbnail.png',
     },
-    'slide-3': {
+    'fr.slide-2': {
+      fullSizeUrl: 'template/slides/slide-2.png',
+      ogUrl: 'template/slides/slide-2-og.png',
+      thumbnailUrl: 'template/slides/slide-2-thumbnail.png',
+    },
+
+    // slide-3
+    'en.slide-3': {
       fullSizeUrl: 'template/slides/slide-3.jpg',
       ogUrl: 'template/slides/slide-3-og.jpg',
       thumbnailUrl: 'template/slides/slide-3-thumbnail.jpg',
     },
-    'slide-4': {
+    'fr.slide-3': {
+      fullSizeUrl: 'template/slides/slide-3.jpg',
+      ogUrl: 'template/slides/slide-3-og.jpg',
+      thumbnailUrl: 'template/slides/slide-3-thumbnail.jpg',
+    },
+
+    // slide-4
+    'en.slide-4': {
       fullSizeUrl: 'template/slides/slide-4.jpg',
       ogUrl: 'template/slides/slide-4-og.jpg',
       thumbnailUrl: 'template/slides/slide-4-thumbnail.jpg',
     },
-    'slide-5': {
+    'fr.slide-4': {
+      fullSizeUrl: 'template/slides/slide-4.jpg',
+      ogUrl: 'template/slides/slide-4-og.jpg',
+      thumbnailUrl: 'template/slides/slide-4-thumbnail.jpg',
+    },
+
+    // slide-5
+    'en.slide-5': {
       fullSizeUrl: 'template/slides/slide-5.jpg',
       ogUrl: 'template/slides/slide-5-og.jpg',
       thumbnailUrl: 'template/slides/slide-5-thumbnail.jpg',
     },
-    'slide-6': {
+    'fr.slide-5': {
+      fullSizeUrl: 'template/slides/slide-5.jpg',
+      ogUrl: 'template/slides/slide-5-og.jpg',
+      thumbnailUrl: 'template/slides/slide-5-thumbnail.jpg',
+    },
+
+    // slide-6
+    'en.slide-6': {
       fullSizeUrl: 'template/slides/slide-6.jpg',
       ogUrl: 'template/slides/slide-6-og.jpg',
       thumbnailUrl: 'template/slides/slide-6-thumbnail.jpg',
     },
-    'slide-7': {
+    'fr.slide-6': {
+      fullSizeUrl: 'template/slides/slide-6.jpg',
+      ogUrl: 'template/slides/slide-6-og.jpg',
+      thumbnailUrl: 'template/slides/slide-6-thumbnail.jpg',
+    },
+
+    // slide-7
+    'en.slide-7': {
       fullSizeUrl: 'template/slides/slide-7.jpg',
       ogUrl: 'template/slides/slide-7-og.jpg',
       thumbnailUrl: 'template/slides/slide-7-thumbnail.jpg',
     },
-    'slide-8': {
+    'fr.slide-7': {
+      fullSizeUrl: 'template/slides/slide-7.jpg',
+      ogUrl: 'template/slides/slide-7-og.jpg',
+      thumbnailUrl: 'template/slides/slide-7-thumbnail.jpg',
+    },
+
+    // slide-8
+    'en.slide-8': {
       fullSizeUrl: 'template/slides/slide-8.jpg',
       ogUrl: 'template/slides/slide-8-og.jpg',
       thumbnailUrl: 'template/slides/slide-8-thumbnail.jpg',
     },
-    'slide-9': {
+    'fr.slide-8': {
+      fullSizeUrl: 'template/slides/slide-8.jpg',
+      ogUrl: 'template/slides/slide-8-og.jpg',
+      thumbnailUrl: 'template/slides/slide-8-thumbnail.jpg',
+    },
+
+    // slide-9
+    'en.slide-9': {
       fullSizeUrl: 'template/slides/slide-9.jpg',
       ogUrl: 'template/slides/slide-9-og.jpg',
       thumbnailUrl: 'template/slides/slide-9-thumbnail.jpg',
     },
-    'slide-10': {
+    'fr.slide-9': {
+      fullSizeUrl: 'template/slides/slide-9.jpg',
+      ogUrl: 'template/slides/slide-9-og.jpg',
+      thumbnailUrl: 'template/slides/slide-9-thumbnail.jpg',
+    },
+
+    // slide-10
+    'en.slide-10': {
       fullSizeUrl: 'template/slides/slide-10.jpg',
       ogUrl: 'template/slides/slide-10-og.jpg',
       thumbnailUrl: 'template/slides/slide-10-thumbnail.jpg',
     },
-    'slide-11': {
+    'fr.slide-10': {
+      fullSizeUrl: 'template/slides/slide-10.jpg',
+      ogUrl: 'template/slides/slide-10-og.jpg',
+      thumbnailUrl: 'template/slides/slide-10-thumbnail.jpg',
+    },
+
+    // slide-11
+    'en.slide-11': {
       fullSizeUrl: 'template/slides/slide-11.jpg',
       ogUrl: 'template/slides/slide-11-og.jpg',
       thumbnailUrl: 'template/slides/slide-11-thumbnail.jpg',
     },
-    'slide-12': {
+    'fr.slide-11': {
+      fullSizeUrl: 'template/slides/slide-11.jpg',
+      ogUrl: 'template/slides/slide-11-og.jpg',
+      thumbnailUrl: 'template/slides/slide-11-thumbnail.jpg',
+    },
+
+    // slide-12
+    'en.slide-12': {
       fullSizeUrl: 'template/slides/slide-12.jpg',
       ogUrl: 'template/slides/slide-12-og.jpg',
       thumbnailUrl: 'template/slides/slide-12-thumbnail.jpg',
     },
-    'slide-13': {
+    'fr.slide-12': {
+      fullSizeUrl: 'template/slides/slide-12.jpg',
+      ogUrl: 'template/slides/slide-12-og.jpg',
+      thumbnailUrl: 'template/slides/slide-12-thumbnail.jpg',
+    },
+
+    // slide-13
+    'en.slide-13': {
       fullSizeUrl: 'template/slides/slide-13.jpg',
       ogUrl: 'template/slides/slide-13-og.jpg',
       thumbnailUrl: 'template/slides/slide-13-thumbnail.jpg',
     },
-    'thank-you': {
+    'fr.slide-13': {
+      fullSizeUrl: 'template/slides/slide-13.jpg',
+      ogUrl: 'template/slides/slide-13-og.jpg',
+      thumbnailUrl: 'template/slides/slide-13-thumbnail.jpg',
+    },
+
+    // thank-you
+    'en.thank-you': {
+      fullSizeUrl: 'template/slides/thank-you.jpg',
+      ogUrl: 'template/slides/thank-you-og.jpg',
+      thumbnailUrl: 'template/slides/thank-you-thumbnail.jpg',
+    },
+    'fr.merci': {
       fullSizeUrl: 'template/slides/thank-you.jpg',
       ogUrl: 'template/slides/thank-you-og.jpg',
       thumbnailUrl: 'template/slides/thank-you-thumbnail.jpg',

@@ -72,6 +72,22 @@
   top: 50%;
   transform: translateX(-50%) translateY(-55%);
 
+  @media screen and (min-width: $med-screen-min) {
+    display: flex;
+  }
+
+  &.intro-french {
+    .text {
+      .annual {
+        font-size: 3.4em;
+      }
+
+      .report {
+        font-size: 3.2em;
+      }
+    }
+  }
+
   .year {
     animation-duration: 1000ms;
     animation-name: indexLogoYearFadeMobile;
@@ -85,7 +101,6 @@
       animation-duration: 1500ms;
       animation-name: indexLogoYearFade;
       animation-timing-function: ease-out;
-      float: left;
       font-size: 5em;
       letter-spacing: -3px;
       line-height: .7;
@@ -127,7 +142,6 @@
       animation-duration: 1500ms;
       animation-name: indexLogoTextFade;
       animation-timing-function: ease-out;
-      float: right;
     }
 
     .annual {

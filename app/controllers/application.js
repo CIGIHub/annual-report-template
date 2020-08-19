@@ -4,7 +4,6 @@ import {
   observer,
   set,
 } from '@ember/object';
-import { equal } from '@ember/object/computed';
 import { later } from '@ember/runloop';
 import { inject as service } from '@ember/service';
 import { htmlSafe } from '@ember/template';
@@ -23,19 +22,28 @@ export default Controller.extend({
   backgroundStyle: computed('router.currentRouteName', function() {
     const currentRouteName = this.router.currentRouteName;
     if ([
-      'table-of-contents',
-      'thank-you',
+      'en.table-of-contents',
+      'en.thank-you',
+      'fr.merci',
+      'fr.table-des-matieres',
     ].includes(currentRouteName)) {
       return htmlSafe('background-color: #000;');
     }
     if ([
-      'chairs-message',
-      'financials.auditors-report',
-      'financials.notes',
-      'financials.summarized-statement-of-financial-position',
-      'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
-      'outputs-and-activities',
-      'presidents-message',
+      'en.chairs-message',
+      'en.financials.auditors-report',
+      'en.financials.notes',
+      'en.financials.summarized-statement-of-financial-position',
+      'en.financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+      'en.outputs-and-activities',
+      'en.presidents-message',
+      'fr.finances.notes',
+      'fr.finances.rapport-des-verificateurs',
+      'fr.finances.sommaire-de-la-situation-financiere',
+      'fr.finances.sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds',
+      'fr.message-du-directeur-executif',
+      'fr.message-du-president-du-conseil',
+      'fr.publications-et-activites',
     ].includes(currentRouteName)) {
       return htmlSafe('background-color: #fff;');
     }
@@ -48,30 +56,47 @@ export default Controller.extend({
   }),
 
   // Add bounce animation to down scroll arrow on home slide
-  bounceScrollArrowDown: equal('router.currentRouteName', 'index'),
+  bounceScrollArrowDown: computed('router.currentRouteName', function() {
+    return ['index', 'en.index', 'fr.index'].includes(this.router.currentRouteName);
+  }),
 
   hideMobileOverlay: computed('router.currentRouteName', function() {
     return [
-      'chairs-message',
-      'outputs-and-activities',
-      'financials.auditors-report',
-      'financials.notes',
-      'financials.summarized-statement-of-financial-position',
-      'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
-      'presidents-message',
-      'table-of-contents',
+      'en.chairs-message',
+      'en.financials.auditors-report',
+      'en.financials.notes',
+      'en.financials.summarized-statement-of-financial-position',
+      'en.financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+      'en.outputs-and-activities',
+      'en.presidents-message',
+      'en.table-of-contents',
+      'fr.finances.notes',
+      'fr.finances.rapport-des-verificateurs',
+      'fr.finances.sommaire-de-la-situation-financiere',
+      'fr.finances.sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds',
+      'fr.message-du-directeur-executif',
+      'fr.message-du-president-du-conseil',
+      'fr.publications-et-activites',
+      'fr.table-des-matieres',
     ].includes(this.router.currentRouteName);
   }),
 
   lightBackground: computed('router.currentRouteName', 'lightbox.{showLightbox,subType}', function() {
     const lightBackgroundRoute = [
-      'chairs-message',
-      'financials.auditors-report',
-      'financials.notes',
-      'financials.summarized-statement-of-financial-position',
-      'financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
-      'outputs-and-activities',
-      'presidents-message',
+      'en.chairs-message',
+      'en.financials.auditors-report',
+      'en.financials.notes',
+      'en.financials.summarized-statement-of-financial-position',
+      'en.financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+      'en.outputs-and-activities',
+      'en.presidents-message',
+      'fr.finances.notes',
+      'fr.finances.rapport-des-verificateurs',
+      'fr.finances.sommaire-de-la-situation-financiere',
+      'fr.finances.sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds',
+      'fr.message-du-directeur-executif',
+      'fr.message-du-president-du-conseil',
+      'fr.publications-et-activites',
     ].includes(this.router.currentRouteName);
     if (this.lightbox.showLightbox
         || this.lightbox.subType === 'publication') {
@@ -86,15 +111,22 @@ export default Controller.extend({
   scrollableContentPage: computed('router.currentRouteName', function() {
     return ![
       'index',
-      'timeline',
-      'thank-you',
+      'en.index',
+      'en.thank-you',
+      'en.timeline',
+      'fr.index',
+      'fr.merci',
+      'fr.timeline',
     ].includes(this.router.currentRouteName);
   }),
 
   showDotNav: computed('dotNavShown', 'router.currentRouteName', function() {
     const onContentSlide = ![
       'index',
-      'table-of-contents',
+      'en.index',
+      'en.table-of-contents',
+      'fr.index',
+      'fr.table-des-matieres',
     ].includes(this.router.currentRouteName);
     if (onContentSlide && !this.dotNavShown) {
       set(this, 'dotNavShown', true);
@@ -115,6 +147,63 @@ export default Controller.extend({
     return currentRouteName !== this.routeOrder.firstRoute
       && !this.routeOrder.firstSubRoutes.includes(currentRouteName)
       && currentRouteName !== '404';
+  }),
+
+  translateRoute: computed('router.currentRouteName', function() {
+    const routeMapping = {
+      'en.chairs-message': 'fr.message-du-president-du-conseil',
+      'en.financials.auditors-report': 'fr.finances.rapport-des-verificateurs',
+      'en.financials.notes': 'fr.finances.notes',
+      'en.financials.summarized-statement-of-financial-position': 'fr.finances.sommaire-de-la-situation-financiere',
+      'en.financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances': 'fr.finances.sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds',
+      'en.index': 'fr.index',
+      'en.outputs-and-activities': 'fr.publications-et-activites',
+      'en.presidents-message': 'fr.message-du-directeur-executif',
+      'en.slide-1': 'fr.slide-1',
+      'en.slide-2': 'fr.slide-2',
+      'en.slide-3': 'fr.slide-3',
+      'en.slide-4': 'fr.slide-4',
+      'en.slide-5': 'fr.slide-5',
+      'en.slide-6': 'fr.slide-6',
+      'en.slide-7': 'fr.slide-7',
+      'en.slide-8': 'fr.slide-8',
+      'en.slide-9': 'fr.slide-9',
+      'en.slide-10': 'fr.slide-10',
+      'en.slide-11': 'fr.slide-11',
+      'en.slide-12': 'fr.slide-12',
+      'en.slide-13': 'fr.slide-13',
+      'en.table-of-contents': 'fr.table-des-matieres',
+      'en.thank-you': 'fr.merci',
+      'en.timeline': 'fr.timeline',
+      'fr.finances.notes': 'en.financials.notes',
+      'fr.finances.rapport-des-verificateurs': 'en.financials.auditors-report',
+      'fr.finances.sommaire-de-la-situation-financiere': 'en.financials.summarized-statement-of-financial-position',
+      'fr.finances.sommaire-des-recettes-et-des-depenses-et-evolution-du-solde-du-fonds': 'en.financials.summarized-statement-of-revenues-and-expenditures-and-changes-in-fund-balances',
+      'fr.index': 'en.index',
+      'fr.merci': 'en.thank-you',
+      'fr.message-du-directeur-executif': 'en.presidents-message',
+      'fr.message-du-president-du-conseil': 'en.chairs-message',
+      'fr.publications-et-activites': 'en.outputs-and-activities',
+      'fr.slide-1': 'en.slide-1',
+      'fr.slide-2': 'en.slide-2',
+      'fr.slide-3': 'en.slide-3',
+      'fr.slide-4': 'en.slide-4',
+      'fr.slide-5': 'en.slide-5',
+      'fr.slide-6': 'en.slide-6',
+      'fr.slide-7': 'en.slide-7',
+      'fr.slide-8': 'en.slide-8',
+      'fr.slide-9': 'en.slide-9',
+      'fr.slide-10': 'en.slide-10',
+      'fr.slide-11': 'en.slide-11',
+      'fr.slide-12': 'en.slide-12',
+      'fr.slide-13': 'en.slide-13',
+      'fr.table-des-matieres': 'en.table-of-contents',
+      'fr.timeline': 'en.timeline',
+    };
+    if (routeMapping[this.router.currentRouteName]) {
+      return routeMapping[this.router.currentRouteName];
+    }
+    return this.router.currentRouteName;
   }),
 
   currentRouteNameChanged: observer('router.currentRouteName', function() {
