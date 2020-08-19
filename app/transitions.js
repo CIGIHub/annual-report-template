@@ -280,7 +280,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('slide-9'),
+    this.toRoute('en.slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -305,7 +305,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('index'),
-    this.toRoute('slide-10'),
+    this.toRoute('en.slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -755,7 +755,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
-    this.toRoute('slide-9'),
+    this.toRoute('en.slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -780,7 +780,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('table-of-contents'),
-    this.toRoute('slide-10'),
+    this.toRoute('en.slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1180,7 +1180,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
-    this.toRoute('slide-9'),
+    this.toRoute('en.slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1205,7 +1205,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('chairs-message'),
-    this.toRoute('slide-10'),
+    this.toRoute('en.slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1605,7 +1605,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
-    this.toRoute('slide-9'),
+    this.toRoute('en.slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -1630,7 +1630,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('presidents-message'),
-    this.toRoute('slide-10'),
+    this.toRoute('en.slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2005,7 +2005,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-1'),
-    this.toRoute('slide-9'),
+    this.toRoute('en.slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2030,7 +2030,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-1'),
-    this.toRoute('slide-10'),
+    this.toRoute('en.slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2380,7 +2380,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-2'),
-    this.toRoute('slide-9'),
+    this.toRoute('en.slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2405,7 +2405,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-2'),
-    this.toRoute('slide-10'),
+    this.toRoute('en.slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2730,7 +2730,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-3'),
-    this.toRoute('slide-9'),
+    this.toRoute('en.slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -2755,7 +2755,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-3'),
-    this.toRoute('slide-10'),
+    this.toRoute('en.slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3055,7 +3055,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-4'),
-    this.toRoute('slide-9'),
+    this.toRoute('en.slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3080,7 +3080,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-4'),
-    this.toRoute('slide-10'),
+    this.toRoute('en.slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3355,7 +3355,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-5'),
-    this.toRoute('slide-9'),
+    this.toRoute('en.slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3380,7 +3380,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-5'),
-    this.toRoute('slide-10'),
+    this.toRoute('en.slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3630,7 +3630,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-6'),
-    this.toRoute('slide-9'),
+    this.toRoute('en.slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3655,7 +3655,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-6'),
-    this.toRoute('slide-10'),
+    this.toRoute('en.slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3880,7 +3880,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-7'),
-    this.toRoute('slide-9'),
+    this.toRoute('en.slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -3905,7 +3905,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-7'),
-    this.toRoute('slide-10'),
+    this.toRoute('en.slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -4105,7 +4105,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-8'),
-    this.toRoute('slide-9'),
+    this.toRoute('en.slide-9'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -4130,7 +4130,7 @@ export default /* istanbul ignore next */ function() {
   /* istanbul ignore next */
   this.transition(
     this.fromRoute('slide-8'),
-    this.toRoute('slide-10'),
+    this.toRoute('en.slide-10'),
     this.use('explode', {
       pickNew: '.background-row',
       use: ['crossFadeSlide', false, {
@@ -4329,32 +4329,15 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('slide-9'),
-    this.toRoute('slide-10'),
-    this.use('explode', {
-      pickNew: '.background-row',
-      use: ['crossFadeSlide', false, {
-        duration: customDuration,
-      }],
-    }, {
-      use: ['crossFade', {
-        duration: customDuration,
-      }],
-    }),
-    this.reverse('explode', {
-      pickNew: '.background-row',
-      use: ['crossFadeSlide', true, {
-        duration: customDuration,
-      }],
-    }, {
-      use: ['crossFade', {
-        duration: customDuration,
-      }],
-    }),
+    this.fromRoute('en.slide-9'),
+    this.toRoute('en.slide-10'),
+    this.use('toLeft'),
+    this.reverse('toRight'),
+    this.debug(),
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('slide-9'),
+    this.fromRoute('en.slide-9'),
     this.toRoute('slide-11'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4379,7 +4362,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('slide-9'),
+    this.fromRoute('en.slide-9'),
     this.toRoute('slide-12'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4404,7 +4387,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('slide-9'),
+    this.fromRoute('en.slide-9'),
     this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4429,7 +4412,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('slide-9'),
+    this.fromRoute('en.slide-9'),
     this.toRoute('outputs-and-activities'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4454,7 +4437,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('slide-9'),
+    this.fromRoute('en.slide-9'),
     this.toRoute('timeline'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4479,7 +4462,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('slide-9'),
+    this.fromRoute('en.slide-9'),
     this.toRoute('financials'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4504,7 +4487,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('slide-9'),
+    this.fromRoute('en.slide-9'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4529,7 +4512,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('slide-10'),
+    this.fromRoute('en.slide-10'),
     this.toRoute('slide-11'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4554,7 +4537,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('slide-10'),
+    this.fromRoute('en.slide-10'),
     this.toRoute('slide-12'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4579,7 +4562,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('slide-10'),
+    this.fromRoute('en.slide-10'),
     this.toRoute('slide-13'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4604,7 +4587,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('slide-10'),
+    this.fromRoute('en.slide-10'),
     this.toRoute('outputs-and-activities'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4629,7 +4612,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('slide-10'),
+    this.fromRoute('en.slide-10'),
     this.toRoute('timeline'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4654,7 +4637,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('slide-10'),
+    this.fromRoute('en.slide-10'),
     this.toRoute('financials'),
     this.use('explode', {
       pickNew: '.background-row',
@@ -4679,7 +4662,7 @@ export default /* istanbul ignore next */ function() {
   );
   /* istanbul ignore next */
   this.transition(
-    this.fromRoute('slide-10'),
+    this.fromRoute('en.slide-10'),
     this.toRoute('thank-you'),
     this.use('explode', {
       pickNew: '.background-row',

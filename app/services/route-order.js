@@ -64,12 +64,12 @@ export default Service.extend({
     title: 'slide8.title',
   }, {
     number: '11',
-    route: 'slide-9',
+    route: 'en.slide-9',
     subRoutes: [],
     title: 'slide9.title',
   }, {
     number: '12',
-    route: 'slide-10',
+    route: 'en.slide-10',
     subRoutes: [],
     title: 'slide10.title',
   }, {

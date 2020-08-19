@@ -35,4 +35,9 @@ Router.map(function() {
   this.route('thank-you');
   this.route('timeline');
   this.route('404', { path: '/*path' });
+
+  this.route('en', function() {
+    this.route('slide-9');
+    this.route('slide-10');
+  });
 });
