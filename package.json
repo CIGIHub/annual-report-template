@@ -31,7 +31,7 @@
     "@fortawesome/pro-light-svg-icons": "5.14.0",
     "@glimmer/component": "1.0.1",
     "@glimmer/tracking": "1.0.1",
-    "aws-sdk": "2.735.0",
+    "aws-sdk": "2.918.0",
     "babel-eslint": "10.1.0",
     "broccoli-asset-rev": "3.0.0",
     "coveralls": "3.1.0",
